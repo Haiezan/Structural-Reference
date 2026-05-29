@@ -577,6 +577,86 @@ th {
   background: var(--panel);
 }
 
+.qr-dock {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+}
+
+.qr-dock details {
+  width: min(300px, calc(100vw - 36px));
+}
+
+.qr-dock summary {
+  display: block;
+  margin-left: auto;
+  width: max-content;
+  cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line));
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow);
+  font-weight: 700;
+}
+
+.qr-panel {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow);
+}
+
+.qr-item,
+.qr-donate {
+  display: grid;
+  gap: 8px;
+  text-align: center;
+}
+
+.qr-item img {
+  width: 128px;
+  height: 128px;
+  justify-self: center;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.qr-item span,
+.qr-donate p,
+.qr-donate figcaption {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.qr-donate > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.qr-donate figure {
+  margin: 0;
+}
+
+.qr-donate img {
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
 @media (max-width: 1180px) {
   .reader {
     grid-template-columns: 280px minmax(0, 1fr);
@@ -624,6 +704,11 @@ th {
 
   .doc-column {
     padding: 18px;
+  }
+
+  .qr-dock {
+    right: 12px;
+    bottom: 12px;
   }
 }
 

@@ -11,6 +11,7 @@ const docsRoot = path.join(dataRoot, 'docs');
 const assetsRoot = path.join(publicRoot, 'assets', 'abaqus');
 
 const skipDirs = new Set(['.git', 'graphics']);
+const skipMarkdownFiles = new Set(['jserror.md']);
 
 function slugify(value) {
   return value
@@ -52,7 +53,7 @@ async function listFiles(dir, ext = '') {
       const full = path.join(current, entry.name);
       if (entry.isDirectory()) {
         if (!skipDirs.has(entry.name)) await walk(full);
-      } else if (!ext || entry.name.toLowerCase().endsWith(ext)) {
+      } else if ((!ext || entry.name.toLowerCase().endsWith(ext)) && !skipMarkdownFiles.has(entry.name.toLowerCase())) {
         out.push(full);
       }
     }

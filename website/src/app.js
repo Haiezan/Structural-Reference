@@ -317,6 +317,31 @@ function renderShell(content) {
       </nav>
     </header>
     ${content}
+    <aside class="qr-dock" aria-label="关注和捐赠">
+      <details>
+        <summary>关注 / 捐赠</summary>
+        <div class="qr-panel">
+          <div class="qr-item">
+            <strong>微信公众号</strong>
+            <img src="./img/wechater.jpg" alt="微信公众号二维码" loading="lazy">
+            <span>欢迎扫码关注，反馈bug</span>
+          </div>
+          <div class="qr-donate">
+            <p>欢迎捐赠</p>
+            <div>
+              <figure>
+                <img src="./img/wechat-QR.jpg" alt="微信捐赠二维码" loading="lazy">
+                <figcaption>微信</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/alipay-QR.jpg" alt="支付宝捐赠二维码" loading="lazy">
+                <figcaption>支付宝</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </details>
+    </aside>
   `;
   bindShell();
 }
