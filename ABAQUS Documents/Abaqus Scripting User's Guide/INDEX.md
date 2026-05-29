@@ -10,27 +10,6 @@
 
 ## 双语目录对照 / Bilingual Table of Contents
 
-### AP01
-*C 布局提示*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| C 布局提示 | A Icons | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
-
-### AP02
-*B 颜色与RGB值*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| B 颜色与RGB值 | B Colors and RGB values | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
-
-### AP03
-*A 图标*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A 图标 | C Layout hints | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
-
 ### PT01
 *概述*
 
@@ -175,6 +154,28 @@
 图片资源位于 `graphics/` 目录。
 
 ---
+
+### AP01
+*C 布局提示*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| C 布局提示 | A Icons | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
+
+### AP02
+*B 颜色与RGB值*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| B 颜色与RGB值 | B Colors and RGB values | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
+
+### AP03
+*A 图标*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A 图标 | C Layout hints | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
+
 
 ## 版权声明 / Copyright Notice
 

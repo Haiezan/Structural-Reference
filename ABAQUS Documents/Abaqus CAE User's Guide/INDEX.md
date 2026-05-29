@@ -10,47 +10,13 @@
 
 ## 双语目录对照 / Bilingual Table of Contents
 
-### AP01
-*A 关键字支持*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A 关键字支持 | A Keyword support | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
-| A.1 Abaqus关键字浏览器表格 | A.1 Abaqus keyword browser table | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
-| A.2 Keyword support from the input file reader | A.2 Keyword support from the input file reader | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
-
-### AP02
-*B 特殊单元类型*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| B 特殊单元类型 | B Special element types | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
-
-### AP03
-*C 特殊图形符号*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| C 特殊图形符号 | C Special graphical symbols | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
-| C.1 用于表示规定条件的符号 | C.1 Symbols used to represent prescribed conditions | [ap03s01.md](./chs/ap03s01.md) | [ap03s01.md](./eng/ap03s01.md) |
-| C.2 用于表示相互作用、约束和连接器的符号 | C.2 Symbols used to represent interactions, constraints, and connectors | [ap03s02.md](./chs/ap03s02.md) | [ap03s02.md](./eng/ap03s02.md) |
-| C.3 用于表示特殊工程特征的符号 | C.3 Symbols used to represent special engineering features | [ap03s03.md](./chs/ap03s03.md) | [ap03s03.md](./eng/ap03s03.md) |
-| C.4 Visualization 模块中使用的符号 | C.4 Symbols used in the Visualization module | [ap03s04.md](./chs/ap03s04.md) | [ap03s04.md](./eng/ap03s04.md) |
-
-### AP04
-*D 单元和输出变量支持*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| D 单元和输出变量支持 | D Element and output variable support | [ap04.md](./chs/ap04.md) | [ap04.md](./eng/ap04.md) |
-
 ### PT01
 *1 使用本指南*
 
 | 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
 |-----------------|-----------------|-----------------|-----------------|
-| 1 使用本指南 | Interacting with Abaqus/CAE | [pt01.md](./chs/pt01.md) | [pt01.md](./eng/pt01.md) |
-| 与 Abaqus/CAE 交互 | 1 Using this guide | [pt01ch01.md](./chs/pt01ch01.md) | [pt01ch01.md](./eng/pt01ch01.md) |
+| 与 Abaqus/CAE 交互 | Interacting with Abaqus/CAE | [pt01.md](./chs/pt01.md) | [pt01.md](./eng/pt01.md) |
+| 1 使用本指南 | 1 Using this guide | [pt01ch01.md](./chs/pt01ch01.md) | [pt01ch01.md](./eng/pt01ch01.md) |
 | 1.1 本指南概述 | 1.1 Overview of this guide | [pt01ch01s01.md](./chs/pt01ch01s01.md) | [pt01ch01s01.md](./eng/pt01ch01s01.md) |
 | 1.2 排版约定 | 1.2 Typographical conventions | [pt01ch01s02.md](./chs/pt01ch01s02.md) | [pt01ch01s02.md](./eng/pt01ch01s02.md) |
 | 1.3 基本鼠标操作 | 1.3 Basic mouse actions | [pt01ch01s03.md](./chs/pt01ch01s03.md) | [pt01ch01s03.md](./eng/pt01ch01s03.md) |
@@ -2152,6 +2118,41 @@
 图片资源位于 `graphics/` 目录。
 
 ---
+
+### AP01
+*A 关键字支持*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A 关键字支持 | A Keyword support | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
+| A.1 Abaqus关键字浏览器表格 | A.1 Abaqus keyword browser table | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
+| A.2 Keyword support from the input file reader | A.2 Keyword support from the input file reader | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
+
+### AP02
+*B 特殊单元类型*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| B 特殊单元类型 | B Special element types | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
+
+### AP03
+*C 特殊图形符号*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| C 特殊图形符号 | C Special graphical symbols | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
+| C.1 用于表示规定条件的符号 | C.1 Symbols used to represent prescribed conditions | [ap03s01.md](./chs/ap03s01.md) | [ap03s01.md](./eng/ap03s01.md) |
+| C.2 用于表示相互作用、约束和连接器的符号 | C.2 Symbols used to represent interactions, constraints, and connectors | [ap03s02.md](./chs/ap03s02.md) | [ap03s02.md](./eng/ap03s02.md) |
+| C.3 用于表示特殊工程特征的符号 | C.3 Symbols used to represent special engineering features | [ap03s03.md](./chs/ap03s03.md) | [ap03s03.md](./eng/ap03s03.md) |
+| C.4 Visualization 模块中使用的符号 | C.4 Symbols used in the Visualization module | [ap03s04.md](./chs/ap03s04.md) | [ap03s04.md](./eng/ap03s04.md) |
+
+### AP04
+*D 单元和输出变量支持*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| D 单元和输出变量支持 | D Element and output variable support | [ap04.md](./chs/ap04.md) | [ap04.md](./eng/ap04.md) |
+
 
 ## 版权声明 / Copyright Notice
 

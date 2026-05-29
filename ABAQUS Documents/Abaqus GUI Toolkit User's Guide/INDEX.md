@@ -10,29 +10,6 @@
 
 ## 双语目录对照 / Bilingual Table of Contents
 
-### AP01
-*A 示例文件*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A 示例文件 | A Example Files | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
-| A.1 悬挂起重机架 | A.1 Overhead hoist frame | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
-| A.2 连接吊环 | A.2 Connecting lug | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
-| A.3 斜板 | A.3 Skew plate | [ap01s03.md](./chs/ap01s03.md) | [ap01s03.md](./eng/ap01s03.md) |
-| A.4 轻型货物起重机 | A.4 Cargo crane | [ap01s04.md](./chs/ap01s04.md) | [ap01s04.md](./eng/ap01s04.md) |
-| A.5 轻型货物起重机——动态载荷 | A.5 Cargo crane – dynamic loading | [ap01s05.md](./chs/ap01s05.md) | [ap01s05.md](./eng/ap01s05.md) |
-| A.6 非线性斜板 | A.6 Nonlinear skew plate | [ap01s06.md](./chs/ap01s06.md) | [ap01s06.md](./eng/ap01s06.md) |
-| A.7 杆中的应力波传播 | A.7 Stress wave propagation in a bar | [ap01s07.md](./chs/ap01s07.md) | [ap01s07.md](./eng/ap01s07.md) |
-| A.8 带塑性的连接吊环 | A.8 Connecting lug with plasticity | [ap01s08.md](./chs/ap01s08.md) | [ap01s08.md](./eng/ap01s08.md) |
-| A.9 加筋板上的爆炸载荷 | A.9 加筋板上的爆炸载荷 | [ap01s09.md](./chs/ap01s09.md) | [ap01s09.md](./eng/ap01s09.md) |
-| A.10 轴对称支架 | A.10 轴对称支架 | [ap01s10.md](./chs/ap01s10.md) | [ap01s10.md](./eng/ap01s10.md) |
-| A.11 超弹性材料数据的拟合测试 | A.11 超弹性材料数据的拟合测试 | [ap01s11.md](./chs/ap01s11.md) | [ap01s11.md](./eng/ap01s11.md) |
-| A.12 管道系统的振动 | A.12 管道系统的振动 | [ap01s12.md](./chs/ap01s12.md) | [ap01s12.md](./eng/ap01s12.md) |
-| A.13 使用 Abaqus/Standard 成型通道 | A.13 使用 Abaqus/Standard 成型通道 | [ap01s13.md](./chs/ap01s13.md) | [ap01s13.md](./eng/ap01s13.md) |
-| A.14 搭接接头的剪切 | A.14 搭接接头的剪切 | [ap01s14.md](./chs/ap01s14.md) | [ap01s14.md](./eng/ap01s14.md) |
-| A.15 电路板跌落试验 | A.15 电路板跌落试验 | [ap01s15.md](./chs/ap01s15.md) | [ap01s15.md](./eng/ap01s15.md) |
-| A.16 使用 Abaqus/Explicit 成型通道 | A.16 使用 Abaqus/Explicit 成型通道 | [ap01s16.md](./chs/ap01s16.md) | [ap01s16.md](./eng/ap01s16.md) |
-
 ### CH01
 *1.2 Abaqus入门*
 
@@ -232,6 +209,30 @@
 图片资源位于 `graphics/` 目录。
 
 ---
+
+### AP01
+*A 示例文件*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A 示例文件 | A Example Files | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
+| A.1 悬挂起重机架 | A.1 Overhead hoist frame | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
+| A.2 连接吊环 | A.2 Connecting lug | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
+| A.3 斜板 | A.3 Skew plate | [ap01s03.md](./chs/ap01s03.md) | [ap01s03.md](./eng/ap01s03.md) |
+| A.4 轻型货物起重机 | A.4 Cargo crane | [ap01s04.md](./chs/ap01s04.md) | [ap01s04.md](./eng/ap01s04.md) |
+| A.5 轻型货物起重机——动态载荷 | A.5 Cargo crane – dynamic loading | [ap01s05.md](./chs/ap01s05.md) | [ap01s05.md](./eng/ap01s05.md) |
+| A.6 非线性斜板 | A.6 Nonlinear skew plate | [ap01s06.md](./chs/ap01s06.md) | [ap01s06.md](./eng/ap01s06.md) |
+| A.7 杆中的应力波传播 | A.7 Stress wave propagation in a bar | [ap01s07.md](./chs/ap01s07.md) | [ap01s07.md](./eng/ap01s07.md) |
+| A.8 带塑性的连接吊环 | A.8 Connecting lug with plasticity | [ap01s08.md](./chs/ap01s08.md) | [ap01s08.md](./eng/ap01s08.md) |
+| A.9 加筋板上的爆炸载荷 | A.9 加筋板上的爆炸载荷 | [ap01s09.md](./chs/ap01s09.md) | [ap01s09.md](./eng/ap01s09.md) |
+| A.10 轴对称支架 | A.10 轴对称支架 | [ap01s10.md](./chs/ap01s10.md) | [ap01s10.md](./eng/ap01s10.md) |
+| A.11 超弹性材料数据的拟合测试 | A.11 超弹性材料数据的拟合测试 | [ap01s11.md](./chs/ap01s11.md) | [ap01s11.md](./eng/ap01s11.md) |
+| A.12 管道系统的振动 | A.12 管道系统的振动 | [ap01s12.md](./chs/ap01s12.md) | [ap01s12.md](./eng/ap01s12.md) |
+| A.13 使用 Abaqus/Standard 成型通道 | A.13 使用 Abaqus/Standard 成型通道 | [ap01s13.md](./chs/ap01s13.md) | [ap01s13.md](./eng/ap01s13.md) |
+| A.14 搭接接头的剪切 | A.14 搭接接头的剪切 | [ap01s14.md](./chs/ap01s14.md) | [ap01s14.md](./eng/ap01s14.md) |
+| A.15 电路板跌落试验 | A.15 电路板跌落试验 | [ap01s15.md](./chs/ap01s15.md) | [ap01s15.md](./eng/ap01s15.md) |
+| A.16 使用 Abaqus/Explicit 成型通道 | A.16 使用 Abaqus/Explicit 成型通道 | [ap01s16.md](./chs/ap01s16.md) | [ap01s16.md](./eng/ap01s16.md) |
+
 
 ## 版权声明 / Copyright Notice
 

@@ -10,20 +10,6 @@
 
 ## 双语目录对照 / Bilingual Table of Contents
 
-### AP01
-*A.1 悬挂起重机架*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A.1 悬挂起重机架 | A.4 Cargo crane | [AP01s01-Conventions.md](./chs/AP01s01-Conventions.md) | [AP01s01-Conventions.md](./eng/AP01s01-Conventions.md) |
-| A.2 连接吊环 | A.2 Connecting lug | [AP01s02-General.md](./chs/AP01s02-General.md) | [AP01s02-General.md](./eng/AP01s02-General.md) |
-| A.3 斜面板 | A.3 Skew plate | [AP01s03-Geometry.md](./chs/AP01s03-Geometry.md) | [AP01s03-Geometry.md](./eng/AP01s03-Geometry.md) |
-| A.4 货物起重机 | A.1 Overhead hoist frame | [AP01s04-Materials.md](./chs/AP01s04-Materials.md) | [AP01s04-Materials.md](./eng/AP01s04-Materials.md) |
-| A.5 货物起重机——动态加载 | A.5 Cargo crane – dynamic loading | [AP01s05-Analysis.md](./chs/AP01s05-Analysis.md) | [AP01s05-Analysis.md](./eng/AP01s05-Analysis.md) |
-|  | A.6 Nonlinear skew plate | [AP01s06-Results.md](./chs/AP01s06-Results.md) | [AP01s06-Results.md](./eng/AP01s06-Results.md) |
-| A.7 应力波在杆中的传播 | A.7 Stress wave propagation in a bar | [AP01s07-Summary.md](./chs/AP01s07-Summary.md) | [AP01s07-Summary.md](./eng/AP01s07-Summary.md) |
-| A.8 带塑性功能的连接耳环 | A.8 Connecting lug with plasticity | [AP01s08-Tabulated.md](./chs/AP01s08-Tabulated.md) | [AP01s08-Tabulated.md](./eng/AP01s08-Tabulated.md) |
-
 ### OTHER
 *1.1 Abaqus产品*
 
@@ -138,6 +124,21 @@
 图片资源位于 `graphics/` 目录。
 
 ---
+
+### AP01
+*A.1 悬挂起重机架*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A.1 悬挂起重机架 | A.4 Cargo crane | [AP01s01-Conventions.md](./chs/AP01s01-Conventions.md) | [AP01s01-Conventions.md](./eng/AP01s01-Conventions.md) |
+| A.2 连接吊环 | A.2 Connecting lug | [AP01s02-General.md](./chs/AP01s02-General.md) | [AP01s02-General.md](./eng/AP01s02-General.md) |
+| A.3 斜面板 | A.3 Skew plate | [AP01s03-Geometry.md](./chs/AP01s03-Geometry.md) | [AP01s03-Geometry.md](./eng/AP01s03-Geometry.md) |
+| A.4 货物起重机 | A.1 Overhead hoist frame | [AP01s04-Materials.md](./chs/AP01s04-Materials.md) | [AP01s04-Materials.md](./eng/AP01s04-Materials.md) |
+| A.5 货物起重机——动态加载 | A.5 Cargo crane – dynamic loading | [AP01s05-Analysis.md](./chs/AP01s05-Analysis.md) | [AP01s05-Analysis.md](./eng/AP01s05-Analysis.md) |
+|  | A.6 Nonlinear skew plate | [AP01s06-Results.md](./chs/AP01s06-Results.md) | [AP01s06-Results.md](./eng/AP01s06-Results.md) |
+| A.7 应力波在杆中的传播 | A.7 Stress wave propagation in a bar | [AP01s07-Summary.md](./chs/AP01s07-Summary.md) | [AP01s07-Summary.md](./eng/AP01s07-Summary.md) |
+| A.8 带塑性功能的连接耳环 | A.8 Connecting lug with plasticity | [AP01s08-Tabulated.md](./chs/AP01s08-Tabulated.md) | [AP01s08-Tabulated.md](./eng/AP01s08-Tabulated.md) |
+
 
 ## 版权声明 / Copyright Notice
 

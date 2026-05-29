@@ -92,6 +92,40 @@ function sectionKey(value) {
   return match ? match[1] : '';
 }
 
+function appendixKey(value) {
+  const normalized = value.replace(/\u00a0/g, ' ').trim();
+  const match = normalized.match(/^([A-Z])(?:\b|\.)/);
+  return match ? match[1].charCodeAt(0) - 64 : 0;
+}
+
+function relFallbackOrder(rel) {
+  const normalized = rel.replace(/\\/g, '/');
+  if (/^book\d*\.md$/i.test(normalized)) return [0, 0, normalized];
+  if (/^jserror\.md$/i.test(normalized)) return [0, 1, normalized];
+  const appendix = normalized.match(/^ap(\d+)/i);
+  if (appendix) return [3, Number(appendix[1]), normalized];
+  return [1, 0, normalized];
+}
+
+function docOrder(rel, title) {
+  const appendix = appendixKey(title);
+  if (appendix) return [3, appendix, rel.replace(/\\/g, '/')];
+
+  return relFallbackOrder(rel);
+}
+
+function compareOrder(a, b) {
+  const length = Math.max(a.length, b.length);
+  for (let i = 0; i < length; i += 1) {
+    const av = a[i] ?? 0;
+    const bv = b[i] ?? 0;
+    if (typeof av === 'number' && typeof bv === 'number' && av !== bv) return av - bv;
+    const text = String(av).localeCompare(String(bv), 'en', { numeric: true });
+    if (text) return text;
+  }
+  return 0;
+}
+
 function stripMarkdown(markdown) {
   return markdown
     .replace(/```[\s\S]*?```/g, ' ')
@@ -104,6 +138,20 @@ function stripMarkdown(markdown) {
 
 function searchText(en, zh, titleEn, titleZh) {
   return `${titleEn} ${titleZh} ${stripMarkdown(en)} ${stripMarkdown(zh)}`.slice(0, 14000);
+}
+
+async function indexOrderMap(moduleDir) {
+  const indexPath = path.join(moduleDir, 'INDEX.md');
+  if (!(await exists(indexPath))) return new Map();
+  const content = await fs.readFile(indexPath, 'utf8');
+  const order = new Map();
+  const linkPattern = /\]\(\.\/eng\/([^)]+\.md)\)/g;
+  let match;
+  while ((match = linkPattern.exec(content))) {
+    const rel = decodeURIComponent(match[1]).replace(/\//g, path.sep);
+    if (!order.has(rel)) order.set(rel, order.size);
+  }
+  return order;
 }
 
 async function main() {
@@ -128,6 +176,7 @@ async function main() {
     const chsDir = path.join(moduleDir, 'chs');
     const engFiles = await listFiles(engDir, '.md');
     const chsFiles = await listFiles(chsDir, '.md');
+    const indexOrder = await indexOrderMap(moduleDir);
     const chsRecords = [];
     for (const file of chsFiles) {
       const rel = path.relative(chsDir, file);
@@ -147,13 +196,21 @@ async function main() {
     await copyDir(path.join(moduleDir, 'graphics'), path.join(assetsRoot, moduleSlug, 'graphics'));
 
     const docs = [];
+    const engRecords = [];
     for (const enPath of engFiles) {
       const rel = path.relative(engDir, enPath);
-      const relPosix = rel.split(path.sep).join('/');
       const english = await fs.readFile(enPath, 'utf8');
+      const titleEn = firstHeading(english, rel.replace(/\.md$/i, ''));
+      const fallback = docOrder(rel, titleEn);
+      const order = fallback[0] === 0 ? [-1, ...fallback] : indexOrder.has(rel) ? [0, indexOrder.get(rel)] : [1, ...fallback];
+      engRecords.push({ rel, english, titleEn, order });
+    }
+
+    for (const item of engRecords.sort((a, b) => compareOrder(a.order, b.order))) {
+      const { rel, english, titleEn } = item;
+      const relPosix = rel.split(path.sep).join('/');
       const baseName = relPosix.replace(/\.md$/i, '');
       const id = `${moduleSlug}--${slugify(baseName) || String(totalDocs + 1)}`;
-      const titleEn = firstHeading(english, baseName);
       const sameRel = chsByRel.get(rel);
       const exactTitle = chsByTitle.get(normalizeTitle(titleEn));
       const sectionMatches = chsBySection.get(sectionKey(titleEn)) || [];

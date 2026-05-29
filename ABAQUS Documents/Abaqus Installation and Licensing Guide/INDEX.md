@@ -10,65 +10,6 @@
 
 ## 双语目录对照 / Bilingual Table of Contents
 
-### AP01
-*A.1 系统软件*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A.1 系统软件 | A System requirements notes | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
-| A.2 磁盘空间 | A.1 System software | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
-| A.3 内存 | A.2 Disk space | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
-| B Abaqus 发布目录和文件 | A.3 Memory | [ap01s03.md](./chs/ap01s03.md) | [ap01s03.md](./eng/ap01s03.md) |
-| A.4 编译器 | A.4 Compilers | [ap01s04.md](./chs/ap01s04.md) | [ap01s04.md](./eng/ap01s04.md) |
-| A.5 MPI | A.5 MPI | [ap01s05.md](./chs/ap01s05.md) | [ap01s05.md](./eng/ap01s05.md) |
-
-### AP02
-*B.1 SIMULIA 父目录*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| B.1 SIMULIA 父目录 | B Abaqus release directories and files | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
-| B.2 Abaqus 父目录 | B.1 The SIMULIA parent directory | [ap02s01.md](./chs/ap02s01.md) | [ap02s01.md](./eng/ap02s01.md) |
-| C 配置 Abaqus 文档 | B.2 The Abaqus parent directory | [ap02s02.md](./chs/ap02s02.md) | [ap02s02.md](./eng/ap02s02.md) |
-
-### AP03
-*A 系统要求说明*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| A 系统要求说明 | C Configuring Abaqus documentation | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
-| D 访问远程文件系统进行安装和执行 | C.1 Using an existing non-Abaqus web server | [ap03s01.md](./chs/ap03s01.md) | [ap03s01.md](./eng/ap03s01.md) |
-| C.2 安装后设置文档 URL | C.2 Setting the documentation URL after installation | [ap03s02.md](./chs/ap03s02.md) | [ap03s02.md](./eng/ap03s02.md) |
-
-### AP04
-*C.1 使用现有的非 Abaqus Web 服务器*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| C.1 使用现有的非 Abaqus Web 服务器 | D Accessing remote file systems for installation and execution | [ap04.md](./chs/ap04.md) | [ap04.md](./eng/ap04.md) |
-| D.1 从远程安装 DVD 访问安装文件 | D.1 Accessing the installation files from a remotely mounted DVD | [ap04s01.md](./chs/ap04s01.md) | [ap04s01.md](./eng/ap04s01.md) |
-| D.2 Windows 客户端安装 | D.2 Client installation for Windows | [ap04s02.md](./chs/ap04s02.md) | [ap04s02.md](./eng/ap04s02.md) |
-| D.3 在 Linux 上远程运行 Abaqus | D.3 Running Abaqus remotely on Linux | [ap04s03.md](./chs/ap04s03.md) | [ap04s03.md](./eng/ap04s03.md) |
-| D.4 使用网络 ODB 连接器 | D.4 Using a network ODB connector | [ap04s04.md](./chs/ap04s04.md) | [ap04s04.md](./eng/ap04s04.md) |
-
-### AP05
-*E 验证过程*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| E 验证过程 | E Verification procedure | [ap05.md](./chs/ap05.md) | [ap05.md](./eng/ap05.md) |
-
-### AP06
-*F 排除 Abaqus FLEXnet 许可故障*
-
-| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
-|-----------------|-----------------|-----------------|-----------------|
-| F 排除 Abaqus FLEXnet 许可故障 | F Troubleshooting Abaqus FLEXnet licensing | [ap06.md](./chs/ap06.md) | [ap06.md](./eng/ap06.md) |
-| F.1 常见问题 | F.1 General questions | [ap06s01.md](./chs/ap06s01.md) | [ap06s01.md](./eng/ap06s01.md) |
-| F.2 FLEXnet 许可证服务器操作 | F.2 FLEXnet license server operation | [ap06s02.md](./chs/ap06s02.md) | [ap06s02.md](./eng/ap06s02.md) |
-| F.3 特殊情况 | F.3 Special situations | [ap06s03.md](./chs/ap06s03.md) | [ap06s03.md](./eng/ap06s03.md) |
-| F.4 其他许可问题和疑问 | F.4 Other licensing questions and problems | [ap06s04.md](./chs/ap06s04.md) | [ap06s04.md](./eng/ap06s04.md) |
-
 ### CH01
 *1 概述*
 
@@ -133,6 +74,66 @@
 图片资源位于 `graphics/` 目录。
 
 ---
+
+### AP01
+*A.1 系统软件*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A.1 系统软件 | A System requirements notes | [ap01.md](./chs/ap01.md) | [ap01.md](./eng/ap01.md) |
+| A.2 磁盘空间 | A.1 System software | [ap01s01.md](./chs/ap01s01.md) | [ap01s01.md](./eng/ap01s01.md) |
+| A.3 内存 | A.2 Disk space | [ap01s02.md](./chs/ap01s02.md) | [ap01s02.md](./eng/ap01s02.md) |
+| B Abaqus 发布目录和文件 | A.3 Memory | [ap01s03.md](./chs/ap01s03.md) | [ap01s03.md](./eng/ap01s03.md) |
+| A.4 编译器 | A.4 Compilers | [ap01s04.md](./chs/ap01s04.md) | [ap01s04.md](./eng/ap01s04.md) |
+| A.5 MPI | A.5 MPI | [ap01s05.md](./chs/ap01s05.md) | [ap01s05.md](./eng/ap01s05.md) |
+
+### AP02
+*B.1 SIMULIA 父目录*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| B.1 SIMULIA 父目录 | B Abaqus release directories and files | [ap02.md](./chs/ap02.md) | [ap02.md](./eng/ap02.md) |
+| B.2 Abaqus 父目录 | B.1 The SIMULIA parent directory | [ap02s01.md](./chs/ap02s01.md) | [ap02s01.md](./eng/ap02s01.md) |
+| C 配置 Abaqus 文档 | B.2 The Abaqus parent directory | [ap02s02.md](./chs/ap02s02.md) | [ap02s02.md](./eng/ap02s02.md) |
+
+### AP03
+*A 系统要求说明*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| A 系统要求说明 | C Configuring Abaqus documentation | [ap03.md](./chs/ap03.md) | [ap03.md](./eng/ap03.md) |
+| D 访问远程文件系统进行安装和执行 | C.1 Using an existing non-Abaqus web server | [ap03s01.md](./chs/ap03s01.md) | [ap03s01.md](./eng/ap03s01.md) |
+| C.2 安装后设置文档 URL | C.2 Setting the documentation URL after installation | [ap03s02.md](./chs/ap03s02.md) | [ap03s02.md](./eng/ap03s02.md) |
+
+### AP04
+*C.1 使用现有的非 Abaqus Web 服务器*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| C.1 使用现有的非 Abaqus Web 服务器 | D Accessing remote file systems for installation and execution | [ap04.md](./chs/ap04.md) | [ap04.md](./eng/ap04.md) |
+| D.1 从远程安装 DVD 访问安装文件 | D.1 Accessing the installation files from a remotely mounted DVD | [ap04s01.md](./chs/ap04s01.md) | [ap04s01.md](./eng/ap04s01.md) |
+| D.2 Windows 客户端安装 | D.2 Client installation for Windows | [ap04s02.md](./chs/ap04s02.md) | [ap04s02.md](./eng/ap04s02.md) |
+| D.3 在 Linux 上远程运行 Abaqus | D.3 Running Abaqus remotely on Linux | [ap04s03.md](./chs/ap04s03.md) | [ap04s03.md](./eng/ap04s03.md) |
+| D.4 使用网络 ODB 连接器 | D.4 Using a network ODB connector | [ap04s04.md](./chs/ap04s04.md) | [ap04s04.md](./eng/ap04s04.md) |
+
+### AP05
+*E 验证过程*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| E 验证过程 | E Verification procedure | [ap05.md](./chs/ap05.md) | [ap05.md](./eng/ap05.md) |
+
+### AP06
+*F 排除 Abaqus FLEXnet 许可故障*
+
+| 中文标题 Chinese | 英文标题 English | 中文文件 Chinese | 英文文件 English |
+|-----------------|-----------------|-----------------|-----------------|
+| F 排除 Abaqus FLEXnet 许可故障 | F Troubleshooting Abaqus FLEXnet licensing | [ap06.md](./chs/ap06.md) | [ap06.md](./eng/ap06.md) |
+| F.1 常见问题 | F.1 General questions | [ap06s01.md](./chs/ap06s01.md) | [ap06s01.md](./eng/ap06s01.md) |
+| F.2 FLEXnet 许可证服务器操作 | F.2 FLEXnet license server operation | [ap06s02.md](./chs/ap06s02.md) | [ap06s02.md](./eng/ap06s02.md) |
+| F.3 特殊情况 | F.3 Special situations | [ap06s03.md](./chs/ap06s03.md) | [ap06s03.md](./eng/ap06s03.md) |
+| F.4 其他许可问题和疑问 | F.4 Other licensing questions and problems | [ap06s04.md](./chs/ap06s04.md) | [ap06s04.md](./eng/ap06s04.md) |
+
 
 ## 版权声明 / Copyright Notice
 
