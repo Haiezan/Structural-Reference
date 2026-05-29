@@ -1,8 +1,8 @@
-# 49.21 ResponseSpectrumStep 对象
+# 49.23 StaticLinearPerturbationStep 对象
 
-ResponseSpectrumStep 对象用于基于用户提供的响应谱和系统的固有模态计算位移和应力的峰值估计。
+StaticLinearPerturbationStep 对象用于指示静态步骤应作为线性扰动载荷步骤进行分析。
 
-ResponseSpectrumStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+StaticLinearPerturbationStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.21.1 ResponseSpectrumStep(...)
+### 49.23.1 StaticLinearPerturbationStep(...)
 
-此方法创建一个 ResponseSpectrumStep 对象。
+此方法创建一个 StaticLinearPerturbationStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].ResponseSpectrumStep
+mdb.models[*name*].StaticLinearPerturbationStep
 ```
 
 **必需参数**
@@ -31,43 +31,19 @@ mdb.models[*name*].ResponseSpectrumStep
 
 一个字符串，指定前一步的名称。新步骤将出现在分析步骤列表中该步骤之后。
 
-*components*
-
-一个 [ResponseSpectrumComponentArray](pt01ch50pyo15.md) 对象。
-
 **可选参数**
 
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
-*comp*
+*matrixSolver*
 
-一个 SymbolicConstant，指定求和分量的顺序和方法。可选值为 SINGLE_DIRECTION、MULTIPLE_DIRECTION_ABSOLUTE_SUM、MULTIPLE_DIRECTION_SRSS_SUM、MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE 和 MULTIPLE_DIRECTION_FORTY_PERCENT_RULE。默认值为 SINGLE_DIRECTION。
+一个 SymbolicConstant，指定求解器类型。可选值为 DIRECT 和 ITERATIVE。默认值为 DIRECT。
 
-*sum*
+*matrixStorage*
 
-一个 SymbolicConstant，指定用于求和分量的方法。可选值为 ABS、CQC、NRL、SRSS、TENP、DSC 和 GRP。默认值为 ABS。
-
-*directDamping*
-
-一个 [DirectDamping](pt01ch50pyo04.md) 对象。
-
-*compositeDamping*
-
-一个 [CompositeDamping](pt01ch50pyo01.md) 对象。
-
-*rayleighDamping*
-
-一个 [RayleighDamping](pt01ch50pyo11.md) 对象。
-
-*directDampingByFrequency*
-
-一个 [DirectDampingByFrequency](pt01ch50pyo05.md) 对象。
-
-*rayleighDampingByFrequency*
-
-一个 [RayleighDampingByFrequency](pt01ch50pyo12.md) 对象。
+一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
 
 *maintainAttributes*
 
@@ -75,15 +51,15 @@ mdb.models[*name*].ResponseSpectrumStep
 
 **返回值**
 
-一个 ResponseSpectrumStep 对象。
+一个 StaticLinearPerturbationStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.21.2 setValues(...)
+### 49.23.2 setValues(...)
 
-此方法修改 ResponseSpectrumStep 对象。
+此方法修改 StaticLinearPerturbationStep 对象。
 
 **必需参数**
 
@@ -91,7 +67,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [ResponseSpectrumStep](pt01ch49pyo21.md#ker-responsespectrumstep-responsespectrumstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [StaticLinearPerturbationStep](pt01ch49pyo23.md#ker-staticlinearperturbationstep-staticlinearperturbatio-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
 
 **返回值**
 
@@ -101,21 +77,21 @@ RangeError。
 
 RangeError。
 
-### 49.21.3 成员
+### 49.23.3 成员
 
-ResponseSpectrumStep 对象可以具有以下成员：
+StaticLinearPerturbationStep 对象可以具有以下成员：
 
 *name*
 
 一个字符串，指定存储库键。
 
-*comp*
+*matrixSolver*
 
-一个 SymbolicConstant，指定求和分量的顺序和方法。可选值为 SINGLE_DIRECTION、MULTIPLE_DIRECTION_ABSOLUTE_SUM、MULTIPLE_DIRECTION_SRSS_SUM、MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE 和 MULTIPLE_DIRECTION_FORTY_PERCENT_RULE。默认值为 SINGLE_DIRECTION。
+一个 SymbolicConstant，指定求解器类型。可选值为 DIRECT 和 ITERATIVE。默认值为 DIRECT。
 
-*sum*
+*matrixStorage*
 
-一个 SymbolicConstant，指定用于求和分量的方法。可选值为 ABS、CQC、NRL、SRSS、TENP、DSC 和 GRP。默认值为 ABS。
+一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
 
 *previous*
 
@@ -124,38 +100,6 @@ ResponseSpectrumStep 对象可以具有以下成员：
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
-
-*components*
-
-一个 [ResponseSpectrumComponentArray](pt01ch50pyo15.md) 对象。
-
-*directDamping*
-
-一个 [DirectDamping](pt01ch50pyo04.md) 对象。
-
-*compositeDamping*
-
-一个 [CompositeDamping](pt01ch50pyo01.md) 对象。
-
-*rayleighDamping*
-
-一个 [RayleighDamping](pt01ch50pyo11.md) 对象。
-
-*directDampingByFrequency*
-
-一个 [DirectDampingByFrequency](pt01ch50pyo05.md) 对象。
-
-*rayleighDampingByFrequency*
-
-一个 [RayleighDampingByFrequency](pt01ch50pyo12.md) 对象。
-
-*structuralDamping*
-
-一个 [StructuralDamping](pt01ch50pyo20.md) 对象。
-
-*structuralDampingByFrequency*
-
-一个 [StructuralDampingByFrequency](pt01ch50pyo21.md) 对象。
 
 *explicit*
 
@@ -260,8 +204,8 @@ ResponseSpectrumStep 对象可以具有以下成员：
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.21.4 对应的分析关键字
+### 49.23.4 对应的分析关键字
 
-| [*RESPONSE SPECTRUM](../key/key-link.md#usb-kws-hresponspec) |
+| [*STATIC](../key/key-link.md#usb-kws-hstatic) |
 | --- |
 | [*STEP](../key/key-link.md#usb-kws-hstep) |

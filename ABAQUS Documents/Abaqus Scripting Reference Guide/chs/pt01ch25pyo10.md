@@ -1,86 +1,78 @@
-# 25.9 CavityRadiationProp 对象
+# 25.10 CavityRadiationState 对象
 
-CavityRadiationProp 对象是交互属性，定义作为温度和场变量函数的发射率。
+CavityRadiationState 对象存储 [CavityRadiation](pt01ch25pyo08.md) 对象的传播数据。CavityRadiation 对象会为每个步骤内部创建一个此对象的实例。该实例也会由 CavityRadiation 对象内部删除。
 
-CavityRadiationProp 对象派生自 [InteractionProperty](pt01ch25pyo48.md) 对象。
+CavityRadiationState 对象没有构造函数或方法。
+
+CavityRadiationState 对象派生自 [InteractionState](pt01ch25pyo49.md) 对象。
 
 **访问**
 
 ```
 import interaction
-mdb.models[*name*].interactionProperties[*name*]
+mdb.models[*name*].steps[*name*].interactionStates[*name*]
 ```
 
-### 25.9.1 CavityRadiationProp(...)
+### 25.10.1 成员
 
-此方法创建一个 CavityRadiationProp 对象。
+CavityRadiationState 对象具有以下成员：
 
-**路径**
+*blocking*
 
-```
-mdb.models[*name*].CavityRadiationProp
-```
+ SymbolicConstant，指定视角因子计算中要执行的阻挡检查。可能的值为 BLOCKING_ALL、NO_BLOCKING 和 PARTIAL_BLOCKING。
 
-**必需参数**
+*blockingState*
 
-*name*
+ SymbolicConstant，指定 blocking 成员的传播状态。可能的值为 UNSET、SET、UNCHANGED 和 FREED。
 
-字符串，指定交互属性存储库键。
+*blockingSurfacesState*
 
-**可选参数**
+ SymbolicConstant，指定 *blockingSurfaces* 成员的传播状态。可能的值为 UNSET、SET、UNCHANGED 和 FREED。
 
-*temperatureDependency*
+*rangeOfView*
 
-布尔值，指定数据是否依赖于温度。默认值为 OFF。
+浮点数，指定超出此距离后不需要计算视角因子的距离，因为表面被认为彼此太远而无法"看见"（由于其他表面的阻挡）。
 
-*dependencies*
+*rangeOfViewState*
 
-整数，指定场变量依赖项的数量。默认值为 0。
+ SymbolicConstant，指定 *rangeOfView* 成员的传播状态。可能的值为 UNSET、SET、UNCHANGED 和 FREED。
 
-*property*
+*surfaceReflection*
 
-浮点数序列的序列，指定以下内容：
-- 发射率，![](../graphics/ker_eqn00062.gif)。
-- 温度（如果数据依赖于温度）。
-- 第一个场变量的值（如果数据依赖于场变量）。
-- 第二个场变量的值。
-- 依此类推。
+布尔值，指定是否在腔体辐射计算中包含反射。默认值为 ON。
 
-**返回值**
+*surfaceReflectionState*
 
-CavityRadiationProp 对象。
+ SymbolicConstant，指定 *surfaceReflection* 成员的传播状态。可能的值为 UNSET、SET、UNCHANGED 和 FREED。
 
-**异常**
+*viewfactorAccuracyTol*
 
-无。
+浮点数，指定视角因子计算的可接受容差。
 
-### 25.9.2 setValues(...)
+*viewfactorAccuracyTolState*
 
-此方法修改 CavityRadiationProp 对象。
+ SymbolicConstant，指定 *viewfactorAccuracyTol* 成员的传播状态。可能的值为 UNSET、SET、UNCHANGED 和 FREED。
 
-**必需参数**
+*blockingSurfaces*
 
-无。
+字符串元组，指定在腔体内部提供阻挡的表面。
 
-**可选参数**
+*status*
 
-`setValues` 的可选参数与 [CavityRadiationProp](pt01ch25pyo09.md#ker-cavityradiationprop-cavityradiationprop-pyc) 方法的参数相同，但 *name* 参数除外。
+ SymbolicConstant，指定 [InteractionState](pt01ch25pyo49.md) 对象的传播状态。可能的值为：
+- NOT_YET_ACTIVE
+- CREATED
+- PROPAGATED
+- MODIFIED
+- DEACTIVATED
+- NO_LONGER_ACTIVE
+- TYPE_NOT_APPLICABLE
+- INSTANCE_NOT_APPLICABLE
+- BUILT_INTO_BASE_STATE
 
-**返回值**
+### 25.10.2 对应的分析关键字
 
-无。
-
-**异常**
-
-无。
-
-### 25.9.3 成员
-
-CavityRadiationProp 对象的成员与 [CavityRadiationProp](pt01ch25pyo09.md#ker-cavityradiationprop-cavityradiationprop-pyc) 方法的参数具有相同的名称和描述。
-
-### 25.9.4 对应的分析关键字
-
-| [*EMISSIVITY](../key/key-link.md#usb-kws-memissivity) |
+| [*RADIATION VIEWFACTOR](#) |
 | --- |
 
 

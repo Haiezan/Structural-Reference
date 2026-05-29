@@ -1,22 +1,23 @@
-# FXCheckButton
+# FXButton
 
 
 
 
 
-复选按钮是一个三态按钮。通常，它为 True 或 False，每次按下时在 True 和 False 之间切换。可以设置第三种状态 MAYBE 以表示用户尚未做出选择或状态不明确。当按下时，复选按钮向其目标发送 SEL_COMMAND，消息数据表示复选按钮的状态。
-![](../graphics/gui-fxcheckbutton.png)
+按钮提供一个带有可选图标和/或文本标签的按钮。当按下时，按钮 widget 向其目标发送 SEL_COMMAND。
+![](../graphics/gui-fxbutton.png)
 
-### FXCheckButton(p, text, tgt=None, sel=0, opts=CHECKBUTTON_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+### FXButton(p, text, ic=None, tgt=None, sel=0, opts=BUTTON_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
 
-构造新的复选按钮。
+构造带有文本和图标的按钮。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
 | p | FXComposite |  | |
 | text | String |  | |
+| ic | FXIcon | None | |
 | tgt | FXObject | None | |
 | sel | Int | 0 | |
-| opts | Int | CHECKBUTTON_NORMAL | |
+| opts | Int | BUTTON_NORMAL | |
 | x | Int | 0 | |
 | y | Int | 0 | |
 | w | Int | 0 | |
@@ -28,42 +29,63 @@
 
 ### canFocus()
 
-因为复选按钮可以接收焦点，所以返回 True。
+因为按钮可以接收焦点，所以返回 True。
 
 从 FXWindow 重新实现。
 
-### getCheck()
+在 AFXFlyoutItem 中重新实现。
 
-获取复选按钮状态（True、False 或 MAYBE）。
+### getButtonStyle()
 
-在 AFXCheckButton 中重新实现。
+获取按钮样式标志。
 
-### getDefaultHeight()
+### getState()
 
-获取默认高度。
+获取按钮状态。
 
-从 FXLabel 重新实现。
+### setButtonStyle(style)
 
-### getDefaultWidth()
-
-获取默认宽度。
-
-从 FXLabel 重新实现。
-
-### setCheck(state=True)
-
-设置复选按钮状态（True、False 或 MAYBE）。
+设置按钮样式标志。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| state | Bool | True | |
+| style | Int |  | |
+
+### setDefault(enable=True)
+
+设置为默认按钮。
+
+从 FXWindow 重新实现。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| enable | Bool | True | |
+
+### setState(s)
+
+设置按钮状态。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| s | Int |  | |
 
 ### 全局标志
 
-### **CheckButton 样式**
+### **按钮状态位**
 
-| **CHECKBUTTON_AUTOGRAY** | 更新时自动变灰。 |
+| **STATE_UP** | 按钮弹起。 |
 | --- | --- |
-| **CHECKBUTTON_AUTOHIDE** | 更新时自动隐藏。 |
+| **STATE_DOWN** | 按钮按下。 |
+| **STATE_ENGAGED** | 按钮处于接合状态。 |
+| **STATE_UNCHECKED** | 与 STATE_UP 相同（用于复选按钮或单选按钮）。 |
+| **STATE_CHECKED** | 与 STATE_ENGAGED 相同（用于复选按钮或单选按钮）。 |
+
+### **按钮标志**
+
+| **BUTTON_AUTOGRAY** | 更新时自动变灰。 |
+| --- | --- |
+| **BUTTON_AUTOHIDE** | 更新时自动隐藏按钮。 |
+| **BUTTON_TOOLBAR** | 工具栏样式按钮【平面外观】。 |
+| **BUTTON_DEFAULT** | 接收焦点时可能成为默认按钮。 |
+| **BUTTON_INITIAL** | 此按钮是初始默认按钮。 |
+| **BUTTON_NORMAL** | 正常按钮样式。 |
 
 
 

@@ -1,12 +1,12 @@
-# *SUBSTRUCTURE DIRECTORY
+# *SUBSTRUCTURE COPY
 
 
 
 
 
-### *SUBSTRUCTURE DIRECTORY列出关于子结构库中子结构的信息。
+### *SUBSTRUCTURE COPY复制子结构定义。
 
-此选项用于提供关于存储在子结构库中的子结构的信息摘要。
+此选项用于将子结构定义从一个库复制到另一个库，或在同一库内从一个子结构标识符复制到另一个。
 
 **产品：**Abaqus/Standard
 
@@ -20,9 +20,23 @@
 
 ### **必需参数：**
 
-LIBRARY
+NEW TYPE
 
-将此参数设置为子结构库的名称。
+将此参数设置为正在创建的子结构的TYPE标识符。
+
+OLD TYPE
+
+将此参数设置为正在复制的子结构的TYPE标识符。
+
+### **可选参数：**
+
+NEW LIBRARY
+
+将此参数设置为存储子结构的子结构库名称。默认库名称为*jobname*。
+
+OLD LIBRARY
+
+将此参数设置为正在从中复制子结构的子结构库名称。默认库名称为*jobname*。
 
 **此选项没有关联的数据行。**
 

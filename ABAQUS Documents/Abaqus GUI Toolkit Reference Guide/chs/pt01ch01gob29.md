@@ -1,107 +1,113 @@
-# AFXKeyword
+# AFXList
 
 
 
 
 
-此类是所有命令关键字的抽象基类。
-![](../graphics/gui-afxkeyword.png)
+此类是一个列表组件，用于在可滚动窗口中显示项目。
+![](../graphics/gui-afxlist.png)
 
-### AFXKeyword(command, name, isRequired=False)
+### AFXList(p, nvis, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0)
 
 构造函数。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| command | AFXCommand |  | 宿主命令，如果为 NULL 则创建不与命令关联的关键字。 |
-| name | String |  | 关键字名称。 |
-| isRequired | Bool | False | 如果关键字是命令的必需参数，则为 True。 |
+| p | FXComposite |  | 父组件。 |
+| nvis | Int |  | 可见项目数量。 |
+| tgt | FXObject | None | 消息目标。 |
+| sel | Int | 0 | 消息ID。 |
+| opts | Int | 0 | 选项和提示。 |
+| x | Int | 0 | 起点X坐标。 |
+| y | Int | 0 | 起点Y坐标。 |
+| w | Int | 0 | 组件宽度。 |
+| h | Int | 0 | 组件高度。 |
 
-### activate()
+### appendItem(text, icon=None, sel=0)
 
-激活关键字；活动关键字将在命令生成期间被处理。
-
-### deactivate()
-
-停用关键字；非活动关键字在命令生成期间不会被处理。
-
-### getCommandSnippet()
-
-根据关键字的当前值返回命令代码片段。
-
-### getName()
-
-返回关键字名称。
-
-### getSetupCommands()
-
-返回关键字的变量初始化命令（作为生成命令字符串的一部分）。
-
-### getTypeName()
-
-返回关键字类型名称。
-
-在 AFXBoolKeyword、AFXComSymConstKeyword、AFXComTableKeyword、AFXFloatKeyword、AFXIntKeyword、AFXObjectKeyword、AFXStringKeyword、AFXSymConstKeyword、AFXTogglableKeyword、AFXTupleKeyword 和 AFXTableKeyword 中实现。
-
-### getValueAsString()
-
-返回表示当前关键字值的文本字符串。
-
-在 AFXBoolKeyword、AFXComSymConstKeyword、AFXComTableKeyword、AFXFloatKeyword、AFXIntKeyword、AFXObjectKeyword、AFXStringKeyword、AFXSymConstKeyword、AFXTogglableKeyword 和 AFXTupleKeyword 中实现。
-
-### isActive()
-
-如果关键字处于活动状态则返回 True。
-
-### isRequired()
-
-如果关键字是宿主命令的必需参数则返回 True；否则如果关键字是可选的则返回 False。
-
-### isValueChanged()
-
-如果关键字值与其之前的值不同则返回 True。
-
-在 AFXBoolKeyword、AFXComSymConstKeyword、AFXComTableKeyword、AFXFloatKeyword、AFXIntKeyword、AFXObjectKeyword、AFXStringKeyword、AFXTogglableKeyword 和 AFXTupleKeyword 中实现。
-
-### setRequired(val)
-
-将此对象设置为宿主命令的必需关键字。
+在列表末尾添加一个新项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| val | Bool |  |  |
+| text | String |  |  |
+| icon | FXIcon | None |  |
+| sel | Int | 0 |  |
 
-### setSetupCommands(cmds)
+### disable()
 
-设置关键字所需的变量初始化命令。
+禁用列表。
+
+从 FXWindow 重实现。
+
+### enable()
+
+启用列表。
+
+从 FXWindow 重实现。
+
+### getAutoCommit()
+
+返回自动提交标志。
+
+### getDefaultHeight()
+
+返回列表的默认高度。
+
+从 FXList 重实现。
+
+### getItemIndexForData(data)
+
+返回具有关联数据的第一个项目的索引，如果未找到则返回 -1。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| cmds | String |  |  |
+| data |  |  |  |
 
-### setValueToDefault(ignoreUnspecified=False)
+### getItemProvider()
 
-将关键字值设置为其默认值。
+返回列表项目的提供器。
+
+### getSingleSelection()
+
+返回唯一选中项目的索引。如果选中多个项目或没有选中项目，则返回 -1。
+
+### insertItem(index, text, icon=None, sel=0)
+
+在给定索引处插入一个新项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| ignoreUnspecified | Bool | False | 如果默认值未指定，则忽略设置值。 |
+| index | Int |  |  |
+| text | String |  |  |
+| icon | FXIcon | None |  |
+| sel | Int | 0 |  |
 
-### setValueToPrevious()
+### replaceItem(index, text, icon=None, sel=0)
 
-将关键字值设置为其之前的值。
+替换给定索引处的项目。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| index | Int |  |  |
+| text | String |  |  |
+| icon | FXIcon | None |  |
+| sel | Int | 0 |  |
 
-在 AFXBoolKeyword、AFXComSymConstKeyword、AFXComTableKeyword、AFXFloatKeyword、AFXIntKeyword、AFXObjectKeyword、AFXStringKeyword、AFXTogglableKeyword 和 AFXTupleKeyword 中实现。
+### setAutoCommit(commit)
 
-### syncPreviousValue()
+设置处理双击的自动提交选项。默认情况下此选项处于开启状态。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| commit | Bool |  |  |
 
-将关键字的之前的值设置为其当前值。
+### setItemProvider(cp)
 
-在 AFXBoolKeyword、AFXComSymConstKeyword、AFXComTableKeyword、AFXFloatKeyword、AFXIntKeyword、AFXObjectKeyword、AFXStringKeyword、AFXTogglableKeyword 和 AFXTupleKeyword 中实现。
+设置列表项目的提供器。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| cp | FXObject |  |  |
 
-### 类标志
+### 全局标志
 
-### **消息ID。**
+### **AFX 列表选项的标志。**
 
-| **ID_ACTIVATE** | 用于激活关键字。 |
+| **AFXLIST_NO_AUTOCOMMIT** | 双击时不自动提交。 |
 | --- | --- |
-| **ID_DEACTIVATE** | 用于停用关键字。 |
 
 
 

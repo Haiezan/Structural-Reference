@@ -1,90 +1,145 @@
-# *SUBMODEL
+# *STEP
 
 
 
 
 
-### *SUBMODEL在子模型分析中指定驱动边界节点。
+### *STEP开始一个步。
 
-此选项用于指定子模型的"驱动区域"总列表。
+此选项用于开始每个步定义。它必须后跟过程定义选项。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据
+**类型：**历史数据
 
-**级别：**部件、部件实例、装配
+**级别：**模型
 
-**Abaqus/CAE：**Load模块和模型属性
+**Abaqus/CAE：**Step模块
 
 ##### **参考：**
 
-- ["Submodeling: overview," Section 10.2.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-asubmodeloverview)
+- ["Defining an analysis," Section 6.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aover)
+- ["Convergence criteria for nonlinear problems," Section 7.2.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aconvergcriteria)
+- ["Design sensitivity analysis," Section 19.1.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-adsa)
+- [*END STEP](ch05abk20.md)
 
-### **可选的互斥参数：**
-
-ACOUSTIC TO STRUCTURE
-
-如果子模型将在指定表面被全局耦合声学-结构模型的声压驱动，则包含此参数。
-
-SHELL TO SOLID
-
-如果实体单元子模型将被全局壳模型驱动，则包含此参数。如果包含此参数，所有驱动节点必须在实体单元上，且必须位于全局模型中用壳单元建模的区域中。如果在任何[*SUBMODEL](ch18abk38.md)选项上包含了此参数，则必须在输入文件的所有[*SUBMODEL](ch18abk38.md)选项上包含此参数。
-
-### **SHELL TO SOLID子模型时的必需参数：**
-
-SHELL THICKNESS
-
-如果在全局模型的[*SHELL SECTION](ch18abk15.md)或[*SHELL GENERAL SECTION](ch18abk14.md)选项上未使用OFFSET参数，则将此参数设置为全局模型中壳厚度的最大值（以模型使用的单位给出）。如果在全局模型中使用了OFFSET参数，则将此参数设置为从参考表面到顶部或底部壳表面的最大距离的两倍。
+### 在Abaqus/Standard分析中开始一个步
 
 ### **可选参数：**
 
-ABSOLUTE EXTERIOR TOLERANCE
+AMPLITUDE
 
-将此参数设置为子模型的驱动节点可能位于全局模型元素区域外部的绝对值（以模型使用的单位给出）。如果未使用此参数或其值为0.0，则适用EXTERIOR TOLERANCE。对于壳到实体子模型，驱动节点可以位于由SHELL THICKNESS参数值的一半加上外部容差定义的区域内。
+此参数定义步期间载荷幅值的默认幅值变化。
 
-EXTERIOR TOLERANCE
+如果载荷要在步开始时立即应用并在整个步中保持恒定，则设置AMPLITUDE=STEP。
 
-将此参数设置为全局模型中平均单元尺寸的分数，子模型的驱动节点可能位于全局模型元素区域外部。默认值为0.05。对于壳到实体子模型，驱动节点可以位于由SHELL THICKNESS参数值的一半加上外部容差定义的区域内。
+如果载荷幅值要在步中从上一步结束时的值（或分析开始时的零）线性变化到载荷选项给出的值，则设置AMPLITUDE=RAMP。
 
-如果用户指定了两个容差参数，Abaqus使用更严格的容差。
+如果省略此参数，则默认幅值选择取决于所选过程，如["Defining an analysis," Section 6.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aover)所示。默认幅值变化可以通过在载荷选项上使用AMPLITUDE参数（["Amplitude curves," Section 34.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-prc-pamplitude)）为各个载荷覆盖。
 
-GLOBAL ELSET
+此参数很少需要，改变默认值可能导致问题。例如，没有实际时间尺度的过程（如[*STATIC](ch18abk31.md)选项）中的自动载荷增量方案通过增加归一化时间尺度来逐渐应用载荷。AMPLITUDE=STEP的使用指定整个载荷将立即应用，因此如果载荷导致强非线性响应，Abaqus/Standard可能无法选择合适的小增量。
 
-将此参数设置为全局模型中将搜索其响应将用于驱动子模型的元素的单元集名称。如果省略此参数，Abaqus将搜索位于子模型附近的所有全局模型元素。
+CONVERT SDI
 
-当声压作用于壳的两侧时，此参数必须与ACOUSTIC TO STRUCTURE参数一起使用。
+此参数决定如何在非线性分析期间考虑严重不连续性（如接触变化）。
 
-INTERSECTION ONLY
+设置CONVERT SDI=YES（默认）以使用局部收敛准则确定是否需要新迭代。Abaqus/Standard将确定与严重不连续性相关的最大穿透和估计力误差，并检查这些误差是否在容差范围内。因此，如果严重不连续性很小，解决方案可能会收敛。
 
-包含此参数以指定Abaqus忽略在考虑外部搜索容差后发现位于全局模型元素区域外部的驱动节点。
+设置CONVERT SDI=NO以在迭代期间发生严重不连续性时强制进行新迭代，无论穿透和力误差的大小如何。此选项还更改一些时间增量参数，并使用不同准则确定是进行另一次迭代还是以更小的增量大小进行新尝试。
 
-此参数只能与TYPE=NODE一起使用。此参数不能与ACOUSTIC TO STRUCTURE或SHELL TO SOLID参数一起使用。
+如果省略CONVERT SDI参数，Abaqus/Standard将使用在前一个通用分析步中指定的值。重启分析的第一个新步除外，无论前一步中的设置如何，它都将默认使用CONVERT SDI=YES。
 
-TYPE
+此参数与传热分析和线性扰动步无关，将被忽略。
 
-此参数仅适用于Abaqus/Standard分析。它决定全局模型到子模型的通信是通过节点还是通过表面进行。
+DSA
 
-设置TYPE=NODE（默认）用于基于节点的子模型。基于节点的子模型定义将伴随[*BOUNDARY](ch02abk12.md)，SUBMODEL定义。
+此参数仅适用于Abaqus/Design。
 
-设置TYPE=SURFACE用于基于表面的子模型。此参数设置不能与ACOUSTIC TO STRUCTURE、SHELL TO SOLID或SHELL THICKNESS参数一起使用。基于表面的子模型定义将伴随[*DSLOAD](ch04abk42.md)，SUBMODEL定义。
+设置DSA=YES以激活步的设计敏感性分析。一旦在通用步中激活DSA，它将保持活动状态在所有后续通用步中，直到在后续通用步中通过设置DSA=NO停用它。一旦在扰动步中激活DSA，它将保持活动状态在所有后续连续扰动步中，直到在后续连续扰动步中停用它。但是，如果在不支持DSA的过程中激活DSA，则DSA将被停用，直到通过设置DSA=YES再次激活。
 
-### **定义一般和壳到实体子模型驱动边界的数据行：**
+EXTRAPOLATION
+
+此参数仅对非线性分析有用。
+
+设置EXTRAPOLATION=LINEAR（[*DYNAMIC](ch04abk43.md)，APPLICATION=TRANSIENT FIDELITY以外的过程的默认设置）以指示过程本质上是单调的，因此Abaqus/Standard应使用前一个增量解的100%线性外推（在时间上）来开始当前增量的非线性方程求解（Riks方法使用1%外推）。
+
+设置EXTRAPOLATION=PARABOLIC以指示过程应使用前两个增量解的二次基于位移的外推（在时间上）来开始当前增量的非线性方程求解。
+
+设置EXTRAPOLATION=VELOCITY PARABOLIC（仅适用于[*DYNAMIC](ch04abk43.md)过程，且是[*DYNAMIC](ch04abk43.md) APPLICATION=TRANSIENT FIDELITY过程的默认设置）以指示过程应使用前增量解的二次基于速度的外推（在时间上）来开始当前增量的非线性方程求解。
+
+设置EXTRAPOLATION=NO以抑制任何外推。
+
+INC
+
+将此参数设置为步中的最大增量数（或对于直接循环分析，为单个载荷循环）。此值仅是上限。默认值为100。
+
+INC参数在不能使用自动增量的过程中没有影响（例如[*BUCKLE](ch02abk16.md)、[*STEADY STATE DYNAMICS](ch18abk34.md)和[*MODAL DYNAMIC](ch13abk18.md)）。
+
+NAME
+
+将此参数设置为将用于在输出数据库中引用步的标签。同一输入文件中的步名称必须唯一。原始输入文件中的步名称可以在重启输入文件中重复使用。
+
+NLGEOM
+
+省略此参数或设置NLGEOM=NO以在当前步中执行几何线性分析。包含此参数或设置NLGEOM=YES以指示应在步期间考虑几何非线性（仅适用于应力分析、完全耦合热应力分析和耦合热电应力分析）。一旦NLGEOM选项被开启，它将在分析中所有后续步中保持活动状态。
+
+PERTURBATION
+
+包含此参数以指示这是一个线性扰动步。对于此类分析，Abaqus/Standard期望给出载荷、边界和温度变化，结果将是相对于前一步的变化。*在使用此选项之前，请阅读["General and linear perturbation procedures," Section 6.1.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-alinearnonlinear)、["Mesh-to-mesh solution mapping," Section 12.4.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-amapsolution)和["Applying loads: overview," Section 34.4.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-prc-ploading)中的讨论。*
+
+SOLVER
+
+设置SOLVER=ITERATIVE以使用迭代线性方程求解器。*在使用此选项之前，请阅读["Iterative linear equation solver," Section 6.1.6 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aitrsolveroverview)中的讨论。*
+
+如果省略此参数，则使用默认直接稀疏求解器。
+
+UNSYMM
+
+设置UNSYMM=YES以指示应使用非对称矩阵存储和求解。
+
+设置UNSYMM=NO以指示应使用对称存储和求解。
+
+此参数的默认值取决于所使用的模型和过程选项。用户仅在某些情况下允许更改默认值。如果在这种情况下未使用UNSYMM参数，Abaqus/Standard将使用在前一个通用分析步中指定的值。有关使用此参数的更详细讨论，请参见["Defining an analysis," Section 6.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aover)。
+
+### **可选数据行：**
 
 **第一行：**
 
-根据需要重复此数据行。
+副标题可以有多行，但只有第一行的前80个字符将被保存并打印为副标题。
 
-### **定义声学到结构子模型驱动边界的数据行：**
+### 在Abaqus/Explicit分析中开始一个步
+
+### **可选参数：**
+
+NAME
+
+将此参数设置为用于在输出数据库中标识步的名称。同一输入文件中的步名称必须唯一。
+
+NLGEOM
+
+设置NLGEOM=YES（默认）以指示应在步期间考虑几何非线性（仅适用于应力分析和完全耦合热应力分析）。一旦NLGEOM选项被开启，它将在分析中所有后续步中保持活动状态。设置NLGEOM=NO以在当前步中执行几何线性分析。
+
+在Abaqus/Explicit分析中，NLGEOM参数的默认值是YES，除非Abaqus/Explicit分析是导入分析，在这种情况下，NLGEOM参数的默认值与导入时参数的值相同。
+
+### **可选数据行：**
 
 **第一行：**
 
-根据需要重复此数据行。
+副标题可以有多行，但只有第一行的前80个字符将被保存并打印为副标题。
 
-### **定义基于表面子模型驱动表面的数据行：**
+### 在Abaqus/CFD分析中开始一个步
+
+### **可选参数：**
+
+NAME
+
+将此参数设置为用于在输出数据库中标识步的名称。同一输入文件中的步名称必须唯一。
+
+### **可选数据行：**
 
 **第一行：**
 
-根据需要重复此数据行。
+副标题可以有多行，但只有第一行的前80个字符将被保存并打印为副标题。
 
 
 

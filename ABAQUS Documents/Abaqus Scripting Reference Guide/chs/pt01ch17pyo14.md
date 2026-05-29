@@ -1,4 +1,4 @@
-# 17.13 LoadDisplayOptions 对象
+# 17.14 MeshDisplayOptions 对象
 
 
 
@@ -8,24 +8,26 @@
 
 
 
-LoadDisplayOptions 对象存储指定如何在特定视口中显示装配的设置，当
+MeshDisplayOptions 对象存储指定如何在特定视口中显示装配的设置，当
 
 ```
-session.viewports[*name*].assemblyDisplay.loads=ON
+session.viewports[*name*].assemblyDisplay.mesh=ON
 ```
 
-LoadDisplayOptions 对象没有构造函数。创建新视口时，设置从当前视口复制。
+MeshDisplayOptions 对象没有构造函数。创建新视口时，设置从当前视口复制。
 
 **访问**
 
 ```
-session.viewports[*name*].assemblyDisplay.loadOptions
-session.viewports[*name*].layers[*name*].assemblyDisplay.loadOptions
+session.viewports[*name*].assemblyDisplay.meshOptions
+session.viewports[*name*].layers[*name*].assemblyDisplay.meshOptions
+session.viewports[*name*].layers[*name*].partDisplay.meshOptions
+session.viewports[*name*].partDisplay.meshOptions
 ```
 
-### 17.13.1 setValues(...)
+### 17.14.1 setValues(...)
 
-此方法修改 LoadDisplayOptions 对象。
+此方法修改 MeshDisplayOptions 对象。
 
 **必需参数**
 
@@ -33,125 +35,40 @@ session.viewports[*name*].layers[*name*].assemblyDisplay.loadOptions
 
 **可选参数**
 
-*concentratedForce*
+*nodeLabels*
 
-一个 Boolean，指定是否显示集中力符号。默认值为 ON。
+一个 Boolean，指定是否显示节点标签。默认值为 OFF。
 
-*moment*
+*elementLabels*
 
-一个 Boolean，指定是否显示力矩符号。默认值为 ON。
+一个 Boolean，指定是否显示单元标签。默认值为 OFF。
 
-*pressure*
+*meshVisibleEdges*
 
-一个 Boolean，指定是否显示压力符号。默认值为 ON。
+一个 SymbolicConstant，指定如何绘制网格的边缘。可能的值为：
+- ALL，指定显示所有边缘。
+- EXTERIOR，指定仅显示外部边缘。
+- FEATURE，指定基于 *featureAngle* 显示边缘。
+- FREE，指定仅显示自由边缘。
+- NONE，指定不显示边缘。
 
-*pipePressure*
+默认值为 EXTERIOR。
 
-一个 Boolean，指定是否显示管道压力符号。默认值为 ON。
+*featureAngle*
 
-*bodyForce*
+一个 Float，指定用于计算特征边缘图的角度（度）。可能的值为 0 ≤ *featureAngle* ≤ 90。默认值为 20.0。
 
-一个 Boolean，指定是否显示体力符号。默认值为 ON。
+*meshEdgesInShaded*
 
-*lineLoad*
+一个 Boolean，指定是否在着色模式下显示网格边缘。默认值为 ON。
 
-一个 Boolean，指定是否显示线载荷符号。默认值为 ON。
+*meshTechnique*
 
-*gravity*
+一个 Boolean，指定是否根据分配给区域的网格技术对装配区域进行颜色编码。此参数在 partDisplay 中被忽略。默认值为 OFF。
 
-一个 Boolean，指定是否显示重力符号。默认值为 ON。
+*seeds*
 
-*boltLoad*
-
-一个 Boolean，指定是否显示螺栓载荷符号。默认值为 ON。
-
-*pegLoad*
-
-一个 Boolean，指定是否显示 PEG 载荷符号。默认值为 ON。
-
-*connectorForce*
-
-一个 Boolean，指定是否显示连接器力符号。默认值为 ON。
-
-*connectorMoment*
-
-一个 Boolean，指定是否显示连接器力矩符号。默认值为 ON。
-
-*inertiaRelief*
-
-一个 Boolean，指定是否显示惯性释放符号。默认值为 ON。
-
-*rotationalIntertiaLoad*
-
-一个 Boolean，指定是否显示转动惯性载荷符号。默认值为 ON。
-
-*coriolisForce*
-
-一个 Boolean，指定是否显示科里奥利力符号。默认值为 ON。
-
-*bodyHeatFlux*
-
-一个 Boolean，指定是否显示体热通量符号。默认值为 ON。
-
-*surfaceHeatFlux*
-
-一个 Boolean，指定是否显示面热通量符号。默认值为 ON。
-
-*concentratedHeatFlux*
-
-一个 Boolean，指定是否显示集中热通量符号。默认值为 ON。
-
-*concentratedPoreFluid*
-
-一个 Boolean，指定是否显示集中孔隙流体符号。默认值为 ON。
-
-*surfacePoreFluid*
-
-一个 Boolean，指定是否显示面孔隙流体符号。默认值为 ON。
-
-*hydroFluidFlow*
-
-一个 Boolean，指定是否显示流体流动符号。默认值为 ON。
-
-*concentratedCharge*
-
-一个 Boolean，指定是否显示集中电荷符号。默认值为 ON。
-
-*concentratedCurrent*
-
-一个 Boolean，指定是否显示集中电流符号。默认值为 ON。
-
-*surfaceCharge*
-
-一个 Boolean，指定是否显示面电荷符号。默认值为 ON。
-
-*surfaceCurrent*
-
-一个 Boolean，指定是否显示面电流符号。默认值为 ON。
-
-*bodyCharge*
-
-一个 Boolean，指定是否显示体电荷符号。默认值为 ON。
-
-*bodyCurrent*
-
-一个 Boolean，指定是否显示体电流符号。默认值为 ON。
-
-*inwardVolAccel*
-
-一个 Boolean，指定是否显示内向体积加速度符号。默认值为 ON。
-
-*bodyConcentrationFlux*
-
-一个 Boolean，指定是否显示体浓度通量符号。默认值为 ON。
-
-*surfaceConcentrationFlux*
-
-一个 Boolean，指定是否显示面浓度通量符号。默认值为 ON。
-
-*concentratedConcentrationFlux*
-
-一个 Boolean，指定是否显示集中浓度通量符号。默认值为 ON。
+一个 Boolean，指定是否显示种子。此参数在 partDisplay 中被忽略。默认值为 OFF。
 
 **返回值**
 
@@ -161,9 +78,9 @@ session.viewports[*name*].layers[*name*].assemblyDisplay.loadOptions
 
 RangeError。
 
-### 17.13.2 成员
+### 17.14.2 成员
 
-LoadDisplayOptions 对象的成员与 [setValues](pt01ch17pyo13.md#ker-loaddisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
+MeshDisplayOptions 对象的成员与 [setValues](pt01ch17pyo14.md#ker-meshdisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
 
 
 

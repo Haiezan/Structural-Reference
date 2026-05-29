@@ -1,54 +1,42 @@
-# *SORPTION
+# *SOLUTION TECHNIQUE
 
 
 
 
 
-### *SORPTION定义吸收和解吸行为。
+### *SOLUTION TECHNIQUE指定替代求解方法。
 
-此选项用于在耦合湿润液体流动和多孔介质应力分析中定义部分饱和多孔介质的吸收和解吸行为。
+此选项用于指定准牛顿方法代替标准牛顿方法求解非线性方程，或为耦合温度-位移和耦合热电过程指定分离求解方案。
 
 **产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据
+**类型：**历史数据
 
-**级别：**模型
+**级别：**步
 
-**Abaqus/CAE：**Property模块
+**Abaqus/CAE：**Step模块
 
 ##### **参考：**
 
-- ["Sorption," Section 26.6.4 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-mat-csorption)
+- ["Fully coupled thermal-stress analysis," Section 6.5.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-acouptempdisp)
+- ["Coupled thermal-electrical analysis," Section 6.7.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-ajouleheating)
+- ["Convergence criteria for nonlinear problems," Section 7.2.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aconvergcriteria)
 
-### **可选参数：**
-
-LAW
-
-设置LAW=LOG以通过分析对数形式定义吸收或解吸行为。
-
-设置LAW=TABULAR（默认）以表格形式定义吸收或解吸行为。
+### **必需参数：**
 
 TYPE
 
-设置TYPE=ABSORPTION（默认）以定义吸收行为。
+设置TYPE=QUASI-NEWTON以指定准牛顿求解方法。
 
-设置TYPE=EXSORPTION以定义解吸行为（这必须是对同一材料的选项重复使用）。
+设置TYPE=SEPARATED以指定完全耦合过程中各个场的线性化方程将被解耦并分别求解每个场。此选项只能与[*COUPLED THERMAL-ELECTRICAL](ch03abk82.md)过程和没有ELECTRICAL参数的[*COUPLED TEMPERATURE-DISPLACEMENT](ch03abk81.md)过程一起指定。
 
-设置TYPE=SCANNING以定义扫描线（这必须是对同一材料的选项重复使用）。
+### **可选参数：**
 
-### **TYPE=ABSORPTION或TYPE=EXSORPTION且LAW=TABULAR时的数据行：**
+REFORM KERNEL
 
-**第一行：**
+此参数只能与TYPE=QUASI-NEWTON一起使用。将此参数设置为在重新形成核矩阵之前允许的准牛顿迭代次数。默认值为REFORM KERNEL=8。
 
-根据需要重复此数据行，以从 ![](../graphics/key_eqn01079.gif) 到 ![](../graphics/key_eqn00897.gif) 在 *s* 的递增值中定义 ![](../graphics/key_eqn00847.gif) 和 *s* 之间的关系。必须至少指定两行数据。
-
-### **TYPE=ABSORPTION或TYPE=EXSORPTION且LAW=LOG时的数据行：**
-
-**第一行（也是唯一行）：**
-
-### **TYPE=SCANNING时的数据行：**
-
-**第一行（也是唯一行）：**
+**此选项没有关联的数据行。**
 
 
 

@@ -1,8 +1,8 @@
-# 49.24 StaticRiksStep 对象
+# 49.25 StaticStep 对象
 
-StaticRiksStep 对象用于指示该步骤应使用修正 Riks 方法作为静态载荷步骤进行分析，适用于比例加载情况。
+StaticStep 对象用于指示该步骤应作为静态载荷步骤进行分析。
 
-StaticRiksStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+StaticStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.24.1 StaticRiksStep(...)
+### 49.25.1 StaticStep(...)
 
-此方法创建一个 StaticRiksStep 对象。
+此方法创建一个 StaticStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].StaticRiksStep
+mdb.models[*name*].StaticStep
 ```
 
 **必需参数**
@@ -37,33 +37,25 @@ mdb.models[*name*].StaticRiksStep
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
+*timePeriod*
+
+一个 Float，指定总时间周期。默认值为 1.0。
+
 *nlgeom*
 
 一个布尔值，指定是否允许几何非线性。默认值为 OFF。
 
+*stabilizationMethod*
+
+一个 SymbolicConstant，指定稳定化类型。可选值为 NONE、DISSIPATED_ENERGY_FRACTION 和 DAMPING_FACTOR。默认值为 NONE。
+
+*stabilizationMagnitude*
+
+一个 Float，如果问题可能不稳定且 *stabilizationMethod* 不为 NONE，则指定自动阻尼算法的阻尼强度。默认值为 210-4。
+
 *adiabatic*
 
 一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
-
-*maxLPF*
-
-`None` 或一个 Float，指定载荷比例系数的最大值。默认值为 `None`。
-
-*nodeOn*
-
-一个布尔值，指定是否监测节点的最终位移值。默认值为 OFF。
-
-*maximumDisplacement*
-
-一个 Float，指定节点处和自由度处的总位移（或旋转）值，如果在增量期间越过该值，则在当前增量结束步骤。当 *nodeOn*=ON 时需要此参数。默认值为 0.0。
-
-*dof*
-
-一个 Int，指定被监测的自由度。当 *nodeOn*=ON 时需要此参数。默认值为 0。
-
-*region*
-
-一个 [Region](pt01ch45pyo03.md) 对象，指定正在监测最终位移值的顶点。当 *nodeOn*=ON 时需要此参数。
 
 *timeIncrementationMethod*
 
@@ -73,25 +65,29 @@ mdb.models[*name*].StaticRiksStep
 
 一个 Int，指定步骤中的最大增量数。默认值为 100。
 
-*totalArcLength*
+*initialInc*
 
-一个 Float，指定与此步骤中的载荷相关的总载荷比例系数。默认值为 1.0。
+一个 Float，指定初始时间增量。默认值为步骤的总时间周期。
 
-*initialArcInc*
+*minInc*
 
-一个 Float，指定初始载荷比例系数。默认值为步骤的总载荷比例系数。
+一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期乘以 10-5 中的较小值。
 
-*minArcInc*
+*maxInc*
 
-一个 Float，指定允许的最小弧长增量。默认值为建议的初始载荷比例系数或步骤的总载荷比例系数乘以 105 中的较小值。
+一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
 
-*maxArcInc*
+*matrixSolver*
 
-一个 Float，指定允许的最大弧长增量。默认值为步骤的总载荷比例系数。
+一个 SymbolicConstant，指定求解器类型。可选值为 DIRECT 和 ITERATIVE。默认值为 DIRECT。
 
 *matrixStorage*
 
 一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
+
+*amplitude*
+
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 RAMP。
 
 *extrapolation*
 
@@ -99,7 +95,7 @@ mdb.models[*name*].StaticRiksStep
 
 *fullyPlastic*
 
-一个字符串，指定被监测完全塑性行为的区域名称。默认值为空字符串。
+一个字符串，指定被监测完全塑性行为的区域。默认值为空字符串。
 
 *noStop*
 
@@ -113,23 +109,39 @@ mdb.models[*name*].StaticRiksStep
 
 *useLongTermSolution*
 
-一个布尔值，指定是否获取时域粘弹性或双层粘塑性的完全松弛长期弹性解或长期弹塑性解。默认值为 OFF。
+一个布尔值，指定是否获取时域粘弹性或双层粘塑性 long-term elastic-plastic solution 的完全松弛 long-term elastic solution。默认值为 OFF。
+
+*solutionTechnique*
+
+一个 SymbolicConstant，指定用于求解非线性方程的技术。可选值为 FULL_NEWTON 和 QUASI_NEWTON。默认值为 FULL_NEWTON。
+
+*reformKernel*
+
+一个 Int，指定在核矩阵重新形成之前允许的准牛顿迭代次数。默认值为 8。
 
 *convertSDI*
 
 一个 SymbolicConstant，指定在迭代期间发生严重不连续时是否强制进行新迭代。可选值为 PROPAGATED、CONVERT_SDI_OFF 和 CONVERT_SDI_ON。默认值为 PROPAGATED。
 
+*adaptiveDampingRatio*
+
+一个 Float，指定最大允许的稳定化能量与总应变能量的比率，仅在 *stabilizationMethod* 不为 NONE 时可以使用。默认值为 0.05。
+
+*continueDampingFactors*
+
+一个布尔值，指定此步骤是否从前一个通用步骤的结果中继承阻尼因子。此参数必须与 *adaptiveDampingRatio* 参数一起使用。默认值为 OFF。
+
 **返回值**
 
-一个 StaticRiksStep 对象。
+一个 StaticStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.24.2 setValues(...)
+### 49.25.2 setValues(...)
 
-此方法修改 StaticRiksStep 对象。
+此方法修改 StaticStep 对象。
 
 **必需参数**
 
@@ -137,7 +149,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [StaticRiksStep](pt01ch49pyo24.md#ker-staticriksstep-staticriksstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [StaticStep](pt01ch49pyo25.md#ker-staticstep-staticstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
 
 **返回值**
 
@@ -147,37 +159,33 @@ RangeError。
 
 RangeError。
 
-### 49.24.3 成员
+### 49.25.3 成员
 
-StaticRiksStep 对象可以具有以下成员：
+StaticStep 对象可以具有以下成员：
 
 *name*
 
 一个字符串，指定存储库键。
 
+*timePeriod*
+
+一个 Float，指定总时间周期。默认值为 1.0。
+
 *nlgeom*
 
 一个布尔值，指定是否允许几何非线性。默认值为 OFF。
 
+*stabilizationMethod*
+
+一个 SymbolicConstant，指定稳定化类型。可选值为 NONE、DISSIPATED_ENERGY_FRACTION 和 DAMPING_FACTOR。默认值为 NONE。
+
+*stabilizationMagnitude*
+
+一个 Float，如果问题可能不稳定且 *stabilizationMethod* 不为 NONE，则指定自动阻尼算法的阻尼强度。默认值为 210-4。
+
 *adiabatic*
 
 一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
-
-*maxLPF*
-
-`None` 或一个 Float，指定载荷比例系数的最大值。默认值为 `None`。
-
-*nodeOn*
-
-一个布尔值，指定是否监测节点的最终位移值。默认值为 OFF。
-
-*maximumDisplacement*
-
-一个 Float，指定节点处和自由度处的总位移（或旋转）值，如果在增量期间越过该值，则在当前增量结束步骤。当 *nodeOn*=ON 时需要此参数。默认值为 0.0。
-
-*dof*
-
-一个 Int，指定被监测的自由度。当 *nodeOn*=ON 时需要此参数。默认值为 0。
 
 *timeIncrementationMethod*
 
@@ -187,25 +195,29 @@ StaticRiksStep 对象可以具有以下成员：
 
 一个 Int，指定步骤中的最大增量数。默认值为 100。
 
-*totalArcLength*
+*initialInc*
 
-一个 Float，指定与此步骤中的载荷相关的总载荷比例系数。默认值为 1.0。
+一个 Float，指定初始时间增量。默认值为步骤的总时间周期。
 
-*initialArcInc*
+*minInc*
 
-一个 Float，指定初始载荷比例系数。默认值为步骤的总载荷比例系数。
+一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期乘以 10-5 中的较小值。
 
-*minArcInc*
+*maxInc*
 
-一个 Float，指定允许的最小弧长增量。默认值为建议的初始载荷比例系数或步骤的总载荷比例系数乘以 105 中的较小值。
+一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
 
-*maxArcInc*
+*matrixSolver*
 
-一个 Float，指定允许的最大弧长增量。默认值为步骤的总载荷比例系数。
+一个 SymbolicConstant，指定求解器类型。可选值为 DIRECT 和 ITERATIVE。默认值为 DIRECT。
 
 *matrixStorage*
 
 一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
+
+*amplitude*
+
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 RAMP。
 
 *extrapolation*
 
@@ -221,9 +233,25 @@ StaticRiksStep 对象可以具有以下成员：
 
 一个布尔值，指定是否获取时域粘弹性或双层粘塑性的完全松弛长期弹性解或长期弹塑性解。默认值为 OFF。
 
+*solutionTechnique*
+
+一个 SymbolicConstant，指定用于求解非线性方程的技术。可选值为 FULL_NEWTON 和 QUASI_NEWTON。默认值为 FULL_NEWTON。
+
+*reformKernel*
+
+一个 Int，指定在核矩阵重新形成之前允许的准牛顿迭代次数。默认值为 8。
+
 *convertSDI*
 
 一个 SymbolicConstant，指定在迭代期间发生严重不连续时是否强制进行新迭代。可选值为 PROPAGATED、CONVERT_SDI_OFF 和 CONVERT_SDI_ON。默认值为 PROPAGATED。
+
+*adaptiveDampingRatio*
+
+一个 Float，指定最大允许的稳定化能量与总应变能量的比率，仅在 *stabilizationMethod* 不为 NONE 时可以使用。默认值为 0.05。
+
+*continueDampingFactors*
+
+一个布尔值，指定此步骤是否从前一个通用步骤的结果中继承阻尼因子。此参数必须与 *adaptiveDampingRatio* 参数一起使用。默认值为 OFF。
 
 *previous*
 
@@ -235,11 +263,7 @@ StaticRiksStep 对象可以具有以下成员：
 
 *fullyPlastic*
 
-一个字符串，指定被监测完全塑性行为的区域名称。默认值为空字符串。
-
-*region*
-
-一个 [Region](pt01ch45pyo03.md) 对象，指定正在监测最终位移值的顶点。当 *nodeOn*=ON 时需要此参数。
+一个字符串，指定被监测完全塑性行为的区域。默认值为空字符串。
 
 *explicit*
 
@@ -344,7 +368,7 @@ StaticRiksStep 对象可以具有以下成员：
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.24.4 对应的分析关键字
+### 49.25.4 对应的分析关键字
 
 | [*STATIC](../key/key-link.md#usb-kws-hstatic) |
 | --- |

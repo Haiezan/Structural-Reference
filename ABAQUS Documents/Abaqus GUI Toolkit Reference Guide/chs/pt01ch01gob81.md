@@ -1,4 +1,4 @@
-# FXIconItem
+# FXHorizontalSeparator
 
 
 
@@ -8,24 +8,46 @@
 
 
 
-图标项
-![](../graphics/gui-fxiconitem.png)
+水平分隔符
+![](../graphics/gui-fxhorizontalseparator.png)
+
+### FXHorizontalSeparator(p, opts=SEPARATOR_GROOVE| LAYOUT_FILL_X, x=0, y=0, w=0, h=0, pl=1, pr=1, pt=0, pb=0)
+
+构造函数。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| p | FXComposite |  |  |
+| opts | Int | SEPARATOR_GROOVE| LAYOUT_FILL_X |  |
+| x | Int | 0 |  |
+| y | Int | 0 |  |
+| w | Int | 0 |  |
+| h | Int | 0 |  |
+| pl | Int | 1 |  |
+| pr | Int | 1 |  |
+| pt | Int | 0 |  |
+| pb | Int | 0 |  |
+
+### getDefaultHeight()
+
+返回默认高度。
+
+从 FXFrame 重新实现。
+
+### getDefaultWidth()
+
+返回默认宽度。
+
+从 FXFrame 重新实现。
 
 ### 全局标志
 
-### **图标列表样式**
+### **分隔符选项**
 
-| **ICONLIST_EXTENDEDSELECT** | 扩展选择模式。 |
+| **SEPARATOR_NONE** | 无可见内容。 |
 | --- | --- |
-| **ICONLIST_SINGLESELECT** | 最多选择一个项。 |
-| **ICONLIST_BROWSESELECT** | 必须恰好选择一个项。 |
-| **ICONLIST_MULTIPLESELECT** | 多重选择模式。 |
-| **ICONLIST_AUTOSIZE** | 自动调整项间距大小。 |
-| **ICONLIST_DETAILED** | 列表模式。 |
-| **ICONLIST_MINI_ICONS** | 小图标模式。 |
-| **ICONLIST_BIG_ICONS** | 大图标模式。 |
-| **ICONLIST_ROWS** | 按行模式。 |
-| **ICONLIST_COLUMNS** | 按列模式。 |
+| **SEPARATOR_GROOVE** | 蚀刻凹槽效果。 |
+| **SEPARATOR_RIDGE** | 浮雕脊效果。 |
+| **SEPARATOR_LINE** | 简单线条。 |
 
 
 

@@ -1,30 +1,40 @@
-# 50.14 RayleighDampingComponent 对象
+# 50.15 ResponseSpectrumComponent 对象
 
-RayleighDampingComponent 对象用于定义一系列模态的 Rayleigh 阻尼。
+ResponseSpectrumComponent 是 ResponseSpectrumComponentArray 的一个元素。
 
 **访问**
 
 ```
 import step
-mdb.models[*name*].steps[*name*].rayleighDamping.components[*i*]
+mdb.models[*name*].steps[*name*].components[*i*]
 ```
 
-### 50.14.1 成员
+### 50.15.1 成员
 
-RayleighDampingComponent 对象具有以下成员：
+ResponseSpectrumComponent 对象具有以下成员：
 
-*start*
+*x*
 
-一个 Int，指定范围最低模态的模态号。
+一个 Float，指定 X 方向余弦。
 
-*end*
+*y*
 
-一个 Int，指定范围最高模态的模态号。
+一个 Float，指定 Y 方向余弦。
 
-*alpha*
+*z*
 
-一个 Float，指定质量比例阻尼 ![](../graphics/ker_eqn00423.gif)。
+一个 Float，指定 Z 方向余弦。
 
-*beta*
+*scale*
 
-一个 Float，指定刚度比例阻尼 ![](../graphics/ker_eqn00424.gif)。
+一个 Float，指定比例因子。
+
+*timeDuration*
+
+一个 Float，指定动态事件的持续时间，即创建此响应谱的时间。
+
+**注意：**此参数仅在与 DSC 模态求和规则一起使用时才被忽略。
+
+*respSpectrum*
+
+一个字符串，指定与关键字 [*SPECTRUM](../key/key-link.md#usb-kws-mspectrum) 一起指定的响应谱的名称。

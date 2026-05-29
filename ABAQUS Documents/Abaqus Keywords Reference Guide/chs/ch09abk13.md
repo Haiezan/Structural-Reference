@@ -1,39 +1,33 @@
-# *INCLUDE
+# *INCIDENT WAVE REFLECTION
 
 
 
 
 
 
-### *INCLUDE引用包含 Abaqus 输入数据的外部文件。
+### *INCIDENT WAVE REFLECTION定义由入射波场引起的表面反射载荷。
 
-此选项用于引用包含部分 Abaqus 输入文件的外部文件。
+此选项用于定义反射的入射波场。它必须与 [*INCIDENT WAVE INTERACTION](ch09abk10.md) 选项（施加入射波载荷的首选界面）或 [*INCIDENT WAVE](ch09abk08.md) 选项（替代界面）一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  
 
-**类型：** 模型或历史数据  
+**类型：** 历史数据  
 
-**级别：** 零件、零件实例、装配、模型、步骤  
-
-**Abaqus/CAE：** Abaqus/CAE 中的多个输入数据选项提供了引用外部文件的功能；例如，材料编辑器可以从 ASCII 文件读取材料特性。
+**级别：** 步骤  
 
 ##### **参考文献：**
 
-- ["在 Abaqus 中定义模型，" Abaqus Analysis User's Guide 第 1.3.1 节](../usb/usb-link.md#usb-int-imodel)
+- ["声学和冲击载荷，" Abaqus Analysis User's Guide 第 34.4.6 节](../usb/usb-link.md#usb-prc-pacoustic)
+- [*INCIDENT WAVE INTERACTION](ch09abk10.md)
+- [*INCIDENT WAVE](ch09abk08.md)
 
-### **必需参数：**
+**此选项没有关联的参数。**
 
-INPUT
+### **定义入射波反射的数据行：**
 
-将此参数设置为包含输入数据的文件名。请参阅 ["输入语法规则，" Abaqus Analysis User's Guide 第 1.2.1 节](../usb/usb-link.md#usb-int-iinputsyntax)，了解此类文件名的语法。
+**第一行：**
 
-### **可选参数：**
-
-PASSWORD
-
-当外部文件已加密时，将此参数设置为文件的密码。密码区分大小写。
-
-**此选项没有关联的数据行。**
+根据需要重复此数据行，以描述反射入射波的平面。
 
 
 

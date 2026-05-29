@@ -1,4 +1,4 @@
-# 17.11 Light 对象
+# 17.10 InteractionDisplayOptions 对象
 
 
 
@@ -8,20 +8,25 @@
 
 
 
-Light 对象存储控制当 *renderStyle* 设置为 SHADED 时如何照亮对象的设置。
+InteractionDisplayOptions 对象存储指定如何在特定视口中显示装配的设置，当
 
-Light 对象没有构造函数；Abaqus 在启动会话时将它们作为 *defaultLightOptions* 和 *lightOptions* 对象的一部分创建。
+```
+session.viewports[*name*].assemblyDisplay.interactions=ON
+```
+
+InteractionDisplayOptions 对象没有构造函数。创建新视口时，设置从当前视口复制。
 
 **访问**
 
 ```
-session.defaultLightOptions.lights[*i*]
-session.viewports[*name*].lightOptions.lights[*i*]
+session.viewports[*name*].assemblyDisplay.interactionOptions
+session.viewports[*name*].layers[*name*].assemblyDisplay\
+.interactionOptions
 ```
 
-### 17.11.1 setValues(...)
+### 17.10.1 setValues(...)
 
-此方法修改 Light 对象。
+此方法修改 InteractionDisplayOptions 对象。
 
 **必需参数**
 
@@ -29,35 +34,37 @@ session.viewports[*name*].lightOptions.lights[*i*]
 
 **可选参数**
 
-*enabled*
+*surfaceContact*
 
-一个 Boolean，指定灯是打开还是关闭。默认值为 OFF。
+一个 Boolean，指定是否显示面接触符号。默认值为 ON。
 
-*type*
+*selfContact*
 
-一个 SymbolicConstant，指定如何计算灯的效果。可能的值为：
-- DIRECTIONAL，指定用于从灯到顶点方向的恒定向量的方向。
-- POINT，指定将为每个顶点计算从灯到顶点的向量。
+一个 Boolean，指定是否显示自接触符号。默认值为 ON。
 
-默认值为 DIRECTIONAL。
+*elasticFoundation*
 
-当设置为 *type*=DIRECTIONAL 时，使用从灯到顶点的恒定向量。当 *type*=POINT 时，结果更真实，因为会计算每个顶点从灯到顶点的实际向量。整体性能会下降。
+一个 Boolean，指定是否显示弹性基础符号。默认值为 ON。
 
-*latitude*
+*actuatorSensor*
 
-一个 Float，指定灯高于或低于相机的 altitude。可能的值为 -90.0 ≤ *latitude* ≤ 90.0。默认值为 0.0。
+一个 Boolean，指定是否显示执行器/传感器符号。默认值为 ON。
 
-*longitude*
+*radiationAmbient*
 
-一个 Float，指定灯相对于相机的东西位置。可能的值为 -90.0 ≤ *longitude* ≤ 90.0。默认值为 0.0。
+一个 Boolean，指定是否显示面对环境辐射符号。默认值为 ON。
 
-*diffuseColor*
+*filmCondition*
 
-一个 String，指定此光源添加到场景的颜色。初始值为 70% 灰色。有效颜色字符串列表在 *session* 对象的 *colors* 映射中。
+一个 Boolean，指定是否显示面薄膜条件符号。默认值为 ON。
 
-*specularColor*
+*concentratedRadiationToAmbient*
 
-一个 String，指定此光源创建的镜面高光的颜色。初始值为 36% 灰色。有效颜色字符串列表在 *session* 对象的 *colors* 映射中。
+一个 Boolean，指定是否显示集中辐射到环境符号。默认值为 ON。
+
+*concentratedFilmCondition*
+
+一个 Boolean，指定是否显示集中薄膜条件符号。默认值为 ON。
 
 **返回值**
 
@@ -67,9 +74,9 @@ session.viewports[*name*].lightOptions.lights[*i*]
 
 RangeError。
 
-### 17.11.2 成员
+### 17.10.2 成员
 
-Light 对象的成员与 [setValues](pt01ch17pyo11.md#ker-light-setvalues-pyc) 方法的参数具有相同的名称和描述。
+InteractionDisplayOptions 对象的成员与 [setValues](pt01ch17pyo10.md#ker-interactiondisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
 
 
 

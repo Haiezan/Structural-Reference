@@ -1,80 +1,58 @@
-# *SUBSTRUCTURE GENERATE
+# *SUBSTRUCTURE MATRIX OUTPUT
 
 
 
 
 
-### *SUBSTRUCTURE GENERATE子结构生成分析。
+### *SUBSTRUCTURE MATRIX OUTPUT将子结构的恢复矩阵、缩减刚度矩阵、质量矩阵、载荷情况向量和重力载荷向量写入文件。
 
-此选项用于指示该步应作为子结构生成步进行分析。
+此选项用于将子结构的恢复矩阵、缩减刚度矩阵、质量矩阵、载荷情况向量和重力载荷向量写入文件。它只能用于[*SUBSTRUCTURE GENERATE](ch18abk42.md)分析。
 
-**产品：**Abaqus/Standard  Abaqus/CAE
+**产品：**Abaqus/Standard
 
 **类型：**历史数据
 
 **级别：**此选项在以部件实例装配定义的模型中不受支持。
 
-**Abaqus/CAE：**Step模块
-
 ##### **参考：**
 
 - ["Defining substructures," Section 10.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-asuperelementdef)
 
-### **必需参数：**
-
-TYPE
-
-将此参数设置为要分配给子结构库中此子结构的标识符。标识符必须是*Z*后跟不超过9999的数字。
-
-子结构标识符在库中必须唯一。如果库中已存在具有此相同标识符的子结构，则除非指定了OVERWRITE参数，否则分析将终止并显示错误消息。
-
 ### **可选参数：**
 
-ELSET
+FILE NAME
 
-如果需要单元输出恢复，则在选择性恢复节点集中仅包含所有单元节点通常是不够的，因为单元可以具有Abaqus内部节点。
+此参数旨在与OUTPUT FILE=USER DEFINED一起使用。
 
-将此参数设置为包含要恢复结果的子结构区域中所有元素的元素集名称。
+将此参数设置为将写入数据的文件名称（不带扩展名）。扩展名`.mtx`将被添加到用户提供的文件名中；有关此类文件名的语法，请参见["Input syntax rules," Section 1.2.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-iinputsyntax)。
+
+如果省略OUTPUT FILE参数或设置为RESULTS FILE，则FILE NAME参数的使用会覆盖OUTPUT FILE设置；数据将被写入指定文件，而不是结果（`.fil`）文件。
 
 GRAVITY LOAD
 
-设置GRAVITY LOAD=YES以计算子结构的重力载荷向量。默认值为GRAVITY LOAD=NO。
+设置GRAVITY LOAD=YES以写入子结构重力载荷向量（仅在通过[*SUBSTRUCTURE GENERATE](ch18abk42.md)选项请求重力载荷向量时可用）。默认值为GRAVITY LOAD=NO。
 
-LIBRARY
+MASS
 
-将此参数设置为将写入子结构数据的子结构库名称。有关此类库名称的语法，请参见["Input syntax rules," Section 1.2.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-iinputsyntax)。默认库名称为*jobname*。
+设置MASS=YES以写入子结构质量矩阵（仅在通过[*SUBSTRUCTURE GENERATE](ch18abk42.md)选项请求质量矩阵时可用）。默认值为MASS=NO。
 
-MASS MATRIX
+OUTPUT FILE
 
-设置MASS MATRIX=YES以计算子结构的缩减质量矩阵。默认值为MASS MATRIX=NO。
+设置OUTPUT FILE=RESULTS FILE（默认）以将数据以["Results file output format," Section 5.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-out-fformat)中指定的格式写入结果（`.fil`）文件。
 
-NSET
-
-将此参数设置为包含要恢复结果的子结构节点的节点集名称。此节点集必须包含可以在子结构使用分析中请求节点输出的所有节点。
-
-如果省略NSET参数但使用了ELSET参数，则生成与指定元素集中所有单元节点对应的恢复矩阵。如果同时使用了NSET和ELSET参数，则生成节点集与元素集中所有元素的所有单元节点的并集的恢复矩阵。如果同时省略了NSET和ELSET参数，则生成所有消除节点的恢复矩阵（默认情况）。
-
-OVERWRITE
-
-包含此参数以覆盖库中具有相同TYPE标识符的现有子结构。默认是不覆盖。
-
-PROPERTY EVALUATION
-
-将此参数设置为在子结构生成期间评估粘弹性、弹簧和阻尼器频率相关属性的频率。如果省略此参数，Abaqus/Standard将在零频率评估与频率相关弹簧和阻尼器相关的刚度，并且不会考虑[*SUBSTRUCTURE GENERATE](ch18abk42.md)步中频域粘弹性的刚度贡献。
+设置OUTPUT FILE=USER DEFINED以将结果以[*USER ELEMENT](ch20abk07.md)，LINEAR选项（["User-defined elements," Section 32.15.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-euserelem)）的格式写入用户指定的文件。文件名使用FILE NAME参数指定。
 
 RECOVERY MATRIX
 
-设置RECOVERY MATRIX=NO以指定在此子结构中不可用单元或节点信息输出。默认值为RECOVERY MATRIX=YES，表示对于大多数分析过程可以恢复已消除变量。
+设置RECOVERY MATRIX=YES以写入子结构恢复矩阵（仅在通过[*SUBSTRUCTURE GENERATE](ch18abk42.md)选项请求恢复矩阵时可用）。默认值为RECOVERY MATRIX=NO。
 
-如果RECOVERY MATRIX=NO，则忽略NSET和ELSET参数。
+SLOAD
 
-STRUCTURAL DAMPING MATRIX
+设置SLOAD=YES以写入子结构载荷情况向量。默认值为SLOAD=NO。
 
-设置STRUCTURAL DAMPING MATRIX=YES以计算子结构的缩减结构阻尼矩阵。默认值为STRUCTURAL DAMPING MATRIX=NO。
+STIFFNESS
 
-VISCOUS DAMPING MATRIX
-
-设置VISCOUS DAMPING MATRIX=YES以计算子结构的缩减粘性阻尼矩阵。默认值为VISCOUS DAMPING MATRIX=NO。
+设置STIFFNESS=YES以写入子结构刚度矩阵。默认值为STIFFNESS=NO。
 
 **此选项没有关联的数据行。**
 

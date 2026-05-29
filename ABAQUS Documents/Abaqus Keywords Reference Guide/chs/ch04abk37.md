@@ -1,50 +1,50 @@
-# *DSECHARGE
+# *DSA CONTROLS
 
 
 
 
 
-### *DSECHARGE为压电分析输入分布电荷表面。
+### *DSA CONTROLS设置DSA求解控制。
 
-此选项用于在压电元件下方的表面上输入分布电荷表面。
+此选项可用于控制DSA计算的精度或效率。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Design  
 
-**类型：**历史数据 
+**类型：**模型数据或历史数据  
 
-**级别：**步骤
-
-**Abaqus/CAE：**载荷模块
+**级别：**模型、步骤
 
 ##### **参考：**
 
-- ["压电分析，" Abaqus分析用户指南第6.7.2节](../usb/usb-link.md#usb-anl-apiezoelectric)
+- ["设计灵敏度分析，" Abaqus分析用户指南第19.1.1节](../usb/usb-link.md#usb-anl-adsa)
 
 ### **可选参数：**
 
-AMPLITUDE
+FORMULATION
 
-将此参数设置为振幅曲线的名称，该曲线定义步骤期间分布电荷的大小。如果省略此参数，则参考值将在步骤开始时立即应用或线性地跨越步骤应用，具体取决于分配给 [*STEP](ch18abk36.md) 选项上 AMPLITUDE 参数的值（["定义分析，" Abaqus分析用户指南第6.1.2节](../usb/usb-link.md#usb-anl-aover)）。
+使用此参数在多增量分析中选择设计灵敏度分析公式类型。如果用作历史数据，则此参数将被忽略。
 
-OP
+设置 FORMULATION=INCREMENTAL（默认）以选择增量设计灵敏度分析。
 
-设置 OP=MOD（默认）以保留现有的 [*DSECHARGE](ch04abk38.md)s，此选项定义要添加或修改的电荷。如果应该移除模型上所有现有的 [*DSECHARGE](ch04abk38.md)s，设置 OP=NEW。
+设置 FORMULATION=TOTAL 以选择总设计灵敏度分析。
 
-### **矩阵生成和直接解稳态动力学分析的可选、互斥参数：**
+RESET
 
-IMAGINARY
+包含此参数以将值重置为模型数据选项上指定的值，或者如果不存在模型数据选项，则重置为原始默认值。此操作在将任何其他更改应用于值之前生效。
 
-包含此参数以定义载荷的虚部（异相）。
+SIZING FREQUENCY
 
-REAL
+将此参数设置为执行默认扰动 sizing算法的频率（增量（静态步骤）或模式（频率步骤））。对于执行DSA计算的每个步骤的第一个增量或第一个特征模式，即使 SIZING FREQUENCY 设置为0，算法也将始终执行。默认值为 SIZING FREQUENCY=0。
 
-包含此参数（默认）以定义载荷的实部（同相）。
+TOLERANCE
 
-### **定义分布电荷的数据行：**
+将此参数设置为要与默认扰动 sizing算法一起使用的容差。默认值为 TOLERANCE=![](../graphics/key_eqn00636.gif)。
+
+### **覆盖选定设计参数的默认扰动 sizing算法的数据行（对于这些设计参数，SIZING FREQUENCY 和 TOLERANCE 参数将被忽略）：**
 
 **第一行：**
 
-根据需要重复此数据行，以定义各个表面的分布电荷。
+为每个要覆盖默认算法的设计参数重复此数据行。
 
 
 

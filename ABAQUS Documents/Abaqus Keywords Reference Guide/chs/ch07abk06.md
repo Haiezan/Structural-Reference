@@ -1,15 +1,13 @@
-# *GAP HEAT GENERATION
+# *GAP RADIATION
 
 
 
 
 
 
-### *GAP HEAT GENERATION引入由于界面能量耗散而产生的热量。
+### *GAP RADIATION在表面之间引入热辐射。
 
-此选项用于修改默认的间隙热生成模型，以耗散由非热表面相互作用（如摩擦滑动或电流）产生的能量。默认是将所有耗散的能量转换为热量，并将其均匀分配给两个相互作用的表面。
-
-[*GAP HEAT GENERATION](ch07abk05.md) 选项必须与 [*SURFACE INTERACTION](ch18abk50.md) 选项一起使用，或在 Abaqus/Standard 分析中与 [*GAP](ch07abk01.md) 选项一起使用。
+此选项用于在紧密相邻的表面之间提供辐射热传递。它必须与 [*SURFACE INTERACTION](ch18abk50.md) 选项一起使用，或在 Abaqus/Standard 分析中与 [*GAP](ch07abk01.md) 选项一起使用。
 
 **产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
@@ -21,18 +19,20 @@
 
 ##### **参考文献：**
 
-- ["摩擦行为，" Abaqus Analysis User's Guide 第 37.1.5 节](../usb/usb-link.md#usb-cni-afriction)
 - ["热接触特性，" Abaqus Analysis User's Guide 第 37.2.1 节](../usb/usb-link.md#usb-cni-athermalinteraction)
-- ["电接触特性，" Abaqus Analysis User's Guide 第 37.3.1 节](../usb/usb-link.md#usb-cni-ajouleheatinteraction)
 - [*GAP](ch07abk01.md)
 - [*INTERFACE](ch09abk22.md)
 - [*SURFACE INTERACTION](ch18abk50.md)
 
 **此选项没有关联的参数。**
 
-### **定义间隙热生成的数据行：**
+### **定义辐射热传递的表面常数的数据行：**
 
-**第一（也是唯一）行：**
+**第一行：**
+
+**第二行：**
+
+根据需要重复此数据行，以定义视角因子对间隙的依赖关系。
 
 
 

@@ -1,28 +1,30 @@
-# 60.88 SaturationDependence 对象
+# 60.89 ShearRetention 对象
 
-SaturationDependence 对象用于指定材料渗透率对润湿液体饱和度的依赖关系。
+ShearRetention 对象用于定义与 [Concrete](pt02ch60pyo18.md) 模型中裂纹表面相关的剪切模量 reduction，作为裂纹间拉伸应变的函数。
 
 **访问**
 
 ```
-materialApi.materials()[*name*].permeability().saturationDependence()
+materialApi.materials()[*name*].concrete().shearRetention()
 ```
 
-### 60.88.1 SaturationDependence(...)
+### 60.89.1 ShearRetention(...)
 
-此方法创建一个 SaturationDependence 对象。
+此方法创建一个 ShearRetention 对象。
 
 **路径**
 
 ```
-materialApi.materials()[*name*].permeability().SaturationDependence
+materialApi.materials()[*name*].concrete().ShearRetention
 ```
 
 **原型**
 
 ```
-odb_SaturationDependence&
-SaturationDependence(const odb_SequenceSequenceDouble& table);
+odb_ShearRetention&
+ShearRetention(const odb_SequenceSequenceDouble& table,
+               bool temperatureDependency,
+               int dependencies);
 ```
 
 **必需参数**
@@ -33,26 +35,38 @@ SaturationDependence(const odb_SequenceSequenceDouble& table);
 
 **可选参数**
 
-无。
+*temperatureDependency*
+
+一个布尔值，指定数据是否依赖温度。默认值为 false。
+
+*dependencies*
+
+一个整数，指定场变量依赖数量。默认值为 0。
 
 **表数据**
 
-- ![](../graphics/ker_eqn00362.gif]。（无量纲。）
-- 饱和度，![](../graphics/ker_eqn00234.gif]。（无量纲。）
+- 干混凝土的 ![](../graphics/ker_eqn00363.gif)。默认值为 1.0。
+- 干混凝土的 ![](../graphics/ker_eqn00364.gif)。默认值为一个非常大的数（完全剪切保持）。
+- 湿混凝土的 ![](../graphics/ker_eqn00363.gif)。默认值为 1.0。
+- 湿混凝土的 ![](../graphics/ker_eqn00364.gif)。默认值为一个非常大的数（完全剪切保持）。
+- 温度（如果数据依赖温度）。
+- 第一个场变量的值（如果数据依赖场变量）。
+- 第二个场变量的值。
+- 依此类推。
 
 **返回值**
 
-一个 SaturationDependence 对象。
+一个 ShearRetention 对象。
 
 **异常**
 
 RangeError。
 
-### 60.88.2 成员
+### 60.89.2 成员
 
-SaturationDependence 对象的成员与 [SaturationDependence](pt02ch60pyo88.md#ker-saturationdependence-saturationdependence-cpp) 方法的参数具有相同的名称和描述。
+ShearRetention 对象的成员与 [ShearRetention](pt02ch60pyo89.md#ker-shearretention-shearretention-cpp) 方法的参数具有相同的名称和描述。
 
-### 60.88.3 对应的分析关键字
+### 60.89.3 对应的分析关键字
 
-| [*PERMEABILITY](../key/key-link.md#usb-kws-mpermeabil) |
+| [*SHEAR RETENTION](../key/key-link.md#usb-kws-mshearretention) |
 | --- |

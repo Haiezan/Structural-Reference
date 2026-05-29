@@ -1,53 +1,87 @@
-# 31.13 MeshStats 对象
+# 31.12 MeshEdgeArray 对象
 
-MeshStats 对象是用于保存网格统计信息的查询对象，由 `getMeshStats` 命令返回。此对象没有任何方法。
+MeshEdgeArray 是 [MeshEdge](pt01ch31pyo04.md) 对象的序列。
 
 **访问**
 
 ```
-import mesh
+import part
+mdb.models[*name*].parts[*name*].elementEdges
+import assembly
+mdb.models[*name*].rootAssembly.allinstances.elementEdges
+mdb.models[*name*].rootAssembly.instances[*name*].elementEdges
 ```
 
-### 31.13.1 成员
+### 31.12.1 MeshEdgeArray(...)
 
-MeshStats 对象具有以下成员：
+此方法创建一个 MeshEdgeArray 对象。
 
-*numPointElems*
+**路径**
 
-一个整数，指定点元素的数量。
+```
+mesh.MeshEdgeArray
+```
 
-*numLineElems*
+**必要参数**
 
-一个整数，指定线元素的数量。
+*edges*
 
-*numQuadElems*
+[MeshEdge](pt01ch31pyo04.md) 对象列表。
 
-一个整数，指定四边形元素的数量。
+**可选参数**
 
-*numTriElems*
+无。
 
-一个整数，指定三角形元素的数量。
+**返回值**
 
-*numHexElems*
+MeshEdgeArray 对象。
 
-一个整数，指定六面体元素的数量。
+**异常**
 
-*numWedgeElems*
+无。
 
-一个整数，指定楔形元素的数量。
+### 31.12.2 getSequenceFromMask(...)
 
-*numTetElems*
+此方法返回使用指定 *mask* 标识的 MeshEdgeArray 中的对象。当涉及大量对象时，此方法效率很高。
 
-一个整数，指定四面体元素的数量。
+**必要参数**
 
-*numPyramidElems*
+*mask*
 
-一个整数，指定金字塔形元素的数量。
+一个字符串，指定对象或多个对象。
 
-*numNodes*
+**可选参数**
 
-一个整数，指定节点的数量。
+无。
 
-*numMeshedRegions*
+**返回值**
 
-一个整数，指定包含网格的区域数量。
+MeshEdgeArray 对象。
+
+**异常**
+
+如果结果序列为空，则引发异常。
+
+```
+Error: The mask results in an empty sequence
+```
+
+### 31.12.3 getMask()
+
+此方法返回指定对象或多个对象的字符串。
+
+**参数**
+
+无。
+
+**返回值**
+
+一个字符串，指定对象或多个对象。
+
+**异常**
+
+无。
+
+### 31.12.4 成员
+
+MeshEdgeArray 对象没有成员。

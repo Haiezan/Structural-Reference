@@ -1,18 +1,18 @@
-# 50.5 DirectDampingByFrequency 对象
+# 50.4 DirectDamping 对象
 
-DirectDampingByFrequency 对象包含直接阻尼参数。
+DirectDamping 对象包含直接模态阻尼参数。
 
 **访问**
 
 ```
 import step
-mdb.models[*name*].steps[*name*].directDampingByFrequency
+mdb.models[*name*].steps[*name*].directDamping
 ```
 
-### 50.5.1 成员
+### 50.4.1 成员
 
-DirectDampingByFrequency 对象可以具有以下成员：
+DirectDamping 对象可以具有以下成员：
 
 *components*
 
-一个 [DirectDampingByFrequencyComponentArray](pt01ch50pyo06.md) 对象。
+一个 [DirectDampingComponentArray](pt01ch50pyo07.md) 对象。

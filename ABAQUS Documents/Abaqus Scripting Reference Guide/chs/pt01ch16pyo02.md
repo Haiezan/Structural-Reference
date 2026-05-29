@@ -1,123 +1,27 @@
-# 16.1 DisplayGroup 对象
+# 16.2 DisplayGroupInstance 对象
 
-DisplayGroup 对象用于选择视口中显示的实体子集。
+DisplayGroupInstance 对象存储在视口中显示的实体的 ID。DisplayGroupInstance 对象没有构造函数。当您设置要在视口中绘制的显示组时，Abaqus/CAE 为每个显示组创建一个 DisplayGroupInstance 对象，并将其放入 [DisplayGroupInstanceRepository](pt01ch16pyo03.md) 对象中。
 
 **访问权限**
 
 ```
-session.displayGroups[*name*]
 import assembly
-session.viewports[*name*].assemblyDisplay.displayGroup
-session.viewports[*name*].layers[*name*].assemblyDisplay.displayGroup
+session.viewports[*name*].assemblyDisplay.displayGroupInstances[*name*]
+session.viewports[*name*].layers[*name*].assemblyDisplay\
+.displayGroupInstances[*name*]
 import visualization
-session.viewports[*name*].layers[*name*].odbDisplay.displayGroup
+session.viewports[*name*].layers[*name*].odbDisplay\
+.displayGroupInstances[*name*]
 import part
-session.viewports[*name*].layers[*name*].partDisplay.displayGroup
-session.viewports[*name*].odbDisplay.displayGroup
-session.viewports[*name*].partDisplay.displayGroup
+session.viewports[*name*].layers[*name*].partDisplay\
+.displayGroupInstances[*name*]
+session.viewports[*name*].odbDisplay.displayGroupInstances[*name*]
+session.viewports[*name*].partDisplay.displayGroupInstances[*name*]
 ```
 
-### 16.1.1 DisplayGroup(...)
+### 16.2.1 nodes()
 
-此方法创建一个 DisplayGroup 对象。
-
-**路径**
-
-```
-session.DisplayGroup
-```
-
-**必需参数**
-
-*name*
-
-字符串，指定存储库键。
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定显示组中的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-DisplayGroup 对象。
-
-**异常**
-
-InvalidNameError。
-
-### 16.1.2 add(...)
-
-此方法将指定项添加到显示组。
-
-**必需参数**
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定要添加到显示组的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 16.1.3 either(...)
-
-此方法重新定义显示组仅为 *leaf* 参数和显示组共有的那些项。
-
-**必需参数**
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定要从显示组中排除的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 16.1.4 intersect(...)
-
-此方法重新定义显示组仅为 *leaf* 参数和显示组共有的那些项。
-
-**必需参数**
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定要包含在显示组中的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 16.1.5 redoLast()
-
-此方法重做显示组上最后一个撤销的操作。
+此方法用于获取 DisplayGroupInstance 对象中存在的节点列表。它返回一个 Dictionary 对象，其键为部件实例名称，其值为属于该部件实例并包含在 DisplayGroupInstance 对象中的用户节点标签列表。此方法仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。
 
 **参数**
 
@@ -125,59 +29,15 @@ InvalidNameError。
 
 **返回值**
 
-无。
+Dictionary 对象。
 
 **异常**
 
 无。
 
-### 16.1.6 remove(...)
+### 16.2.2 elements()
 
-此方法从显示组中移除指定项。
-
-**必需参数**
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定要从显示组中移除的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 16.1.7 replace(...)
-
-此方法用指定项替换显示组的内容。
-
-**必需参数**
-
-*leaf*
-
-[Leaf](pt01ch16pyo04.md) 对象，指定要替换当前显示组内容的项。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 16.1.8 undoLast()
-
-此方法撤销对显示组执行的最后一个操作。
+此方法返回 DisplayGroupInstance 对象中存在的元素列表。`elements` 方法返回一个 Dictionary 对象，使用部件实例名称作为键。Dictionary 对象中项的值是属于该部件实例并包含在 DisplayGroupInstance 对象中的用户元素标签列表。此方法仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。
 
 **参数**
 
@@ -185,37 +45,47 @@ InvalidNameError。
 
 **返回值**
 
+Dictionary 对象。
+
+**异常**
+
+无。
+
+### 16.2.3 setValues(...)
+
+此方法修改 DisplayGroupInstance 对象。`setValues` 方法仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。
+
+**必需参数**
+
+无。
+
+**可选参数**
+
+*lockOptions*
+
+布尔值，指定存储在 DisplayGroupInstance 对象上的显示选项是否应与视口显示选项的更改同步。此成员仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。默认值为 OFF。
+
+**返回值**
+
 无。
 
 **异常**
 
 无。
 
-### 16.1.9 成员
+### 16.2.4 成员
 
-DisplayGroup 对象具有以下成员：
-
-*canUndo*
-
-布尔值，指定是否可以撤销。
-
-*canRedo*
-
-布尔值，指定是否可以重做。
+DisplayGroupInstance 对象可以具有以下成员：
 
 *name*
 
 字符串，指定存储库键。
 
-*module*
+*lockOptions*
 
-符号常量，指定创建显示组的模块。可能的值为 PART、ASSEMBLY、PART_ASSEMBLY、ODB 和 ALL。
+布尔值，指定存储在 DisplayGroupInstance 对象上的显示选项是否应与视口显示选项的更改同步。此成员仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。默认值为 OFF。
 
-*modelName*
+*odbDisplayOptions*
 
-字符串，指定当模块基于部件或装配时，显示组所属模型的名称。
-
-*partName*
-
-字符串，指定当模块基于部件时，显示组所属部件的名称。
+[OdbDisplayOptions](pt01ch40pyo18.md) 对象，指定此成员仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。
 

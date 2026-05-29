@@ -1,4 +1,4 @@
-# 57.6 HexagonalProfile 对象
+# 57.5 GeneralizedProfile 对象
 
 
 
@@ -6,9 +6,9 @@
 
 
 
-HexagonalProfile 对象定义六边形轮廓的属性。
+GeneralizedProfile 对象通过其面积、惯性矩等定义轮廓的属性。
 
-HexagonalProfile 对象派生自 [Profile](pt02ch57pyo01.md) 对象。
+GeneralizedProfile 对象派生自 [Profile](pt02ch57pyo01.md) 对象。
 
 **访问**
 
@@ -16,23 +16,28 @@ HexagonalProfile 对象派生自 [Profile](pt02ch57pyo01.md) 对象。
 sectionApi.profiles()[*name*]
 ```
 
-### 57.6.1 HexagonalProfile(...)
+### 57.5.1 GeneralizedProfile(...)
 
-此方法创建 HexagonalProfile 对象。
+此方法创建 GeneralizedProfile 对象。
 
 **路径**
 
 ```
-sectionApi.HexagonalProfile
+sectionApi.GeneralizedProfile
 ```
 
 **原型**
 
 ```
-odb_HexagonalProfile&
-HexagonalProfile(const odb_String& name,
-                 double r,
-                 double t);
+odb_GeneralizedProfile&
+GeneralizedProfile(const odb_String& name,
+                   double area,
+                   double i11,
+                   double i12,
+                   double i22,
+                   double j,
+                   double gammaO,
+                   double gammaW);
 ```
 
 **必需参数**
@@ -41,13 +46,33 @@ HexagonalProfile(const odb_String& name,
 
 一个 odb_String，指定 repository 键。
 
-*r*
+*area*
 
-一个正 Double，指定六边形轮廓的 *r* 尺寸（外半径）。有关更多信息，请参阅《Abaqus Analysis User's Guide》第 29.3.9 节["梁截面库"](../usb/usb-link.md#usb-elm-ebeamcrosssectlib)。
+一个 Double，指定轮廓的横截面积。
 
-*t*
+*i11*
 
-一个正 Double，指定六边形轮廓的 *t* 尺寸（壁厚），*t < (sqrt(3)/2)r*。
+一个 Double，指定关于1轴弯曲的惯性矩，![](../graphics/ker_eqn00019.gif)。
+
+*i12*
+
+一个 Double，指定交叉弯曲的惯性矩，![](../graphics/ker_eqn00020.gif)。
+
+*i22*
+
+一个 Double，指定关于2轴弯曲的惯性矩，![](../graphics/ker_eqn00021.gif)。
+
+*j*
+
+一个 Double，指定扭转常数，![](../graphics/ker_eqn00022.gif)。
+
+*gammaO*
+
+一个 Double，指定扇性矩，![](../graphics/ker_eqn00023.gif)。
+
+*gammaW*
+
+一个 Double，指定翘曲常数，![](../graphics/ker_eqn00024.gif)。
 
 **可选参数**
 
@@ -55,18 +80,18 @@ None。
 
 **返回值**
 
-HexagonalProfile 对象。
+GeneralizedProfile 对象。
 
 **异常**
 
 RangeError。
 
-### 57.6.2 成员
+### 57.5.2 成员
 
-HexagonalProfile 对象具有与 [HexagonalProfile](pt02ch57pyo06.md#ker-hexagonalprofile-hexagonalprofile-cpp) 方法的参数具有相同名称和描述的成员。
+GeneralizedProfile 对象具有与 [GeneralizedProfile](pt02ch57pyo05.md#ker-generalizedprofile-generalizedprofile-cpp) 方法的参数具有相同名称和描述的成员。
 
-### 57.6.3 对应的分析关键字
+### 57.5.3 对应的分析关键字
 
-| [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=HEX |
+| [*BEAM GENERAL SECTION*](../key/key-link.md#usb-kws-mbeamgensect), SECTION=GENERAL or NONLINEAR GENERAL |
 | --- |
 

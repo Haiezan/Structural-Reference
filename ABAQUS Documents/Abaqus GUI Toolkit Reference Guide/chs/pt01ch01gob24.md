@@ -1,81 +1,115 @@
-# AFXIntKeyword
+# AFXGuiObjectManager
 
 
 
 
 
-此类专为具有整数值的命令关键字而设计。
-![](../graphics/gui-afxintkeyword.png)
+此类是菜单栏、工具栏和工具箱中 GUI 组件管理的基础类。
+![](../graphics/gui-afxguiobjectmanager.png)
 
-### AFXIntKeyword(command, name, isRequired=False, defaultValue=INT_DEFAULT, evalExpression=True)
+### AFXGuiObjectManager()
 
 构造函数。
+
+### AFXGuiObjectManager(source)
+
+未定义的复制构造函数（此类不具有复制语义）。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| command | AFXCommand |  | 宿主命令。 |
-| name | String |  | 关键字名称。 |
-| isRequired | Bool | False | 如果关键字是命令的必需参数，则为 True。 |
-| defaultValue | Int | INT_DEFAULT | 默认值。 |
-| evalExpression | Bool | True | 如果关键字支持表达式求值，则为 True。 |
+| source | AFXGuiObjectManager |  | 要复制的对象。 |
 
-### getTypeName()
+### getDialog(widgetAlias)
 
-返回关键字类型的名称。
-
-实现 AFXKeyword。
-
-在 AFXSymConstKeyword 中重新实现。
-
-### getValue()
-
-返回关键字的当前值。
-
-### getValueAsString()
-
-返回表示关键字当前值的文本字符串。
-
-实现 AFXKeyword。
-
-在 AFXSymConstKeyword 中重新实现。
-
-### isValueChanged()
-
-如果关键字值与其之前的值不同，则返回 True。
-
-实现 AFXKeyword。
-
-### setDefaultValue(defaultValue)
-
-设置关键字的默认值。
+返回具有指定窗口部件键的对话框。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| defaultValue | Int |  | 默认值。 |
+| widgetAlias | String |  | 对话框别名。 |
 
-### setValue(newValue)
+### getKernelInitializationCommand()
 
-设置关键字的当前值。
+返回应为 kernel 中相应模块或工具集发送初始化命令的命令。在 GUI 模块首次切换到时由模块管理器调用。
+
+### getToolbarGroup(name)
+
+返回由给定名称参数指定的工具栏组。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| newValue | Int |  | 新值。 |
+| name | String |  | 一个指定要获取的工具栏的 String。 |
 
-### setValueToDefault(ignoreUnspecified=False)
+### hide(location)
 
-将关键字值设置为其默认值。
+隐藏菜单栏、工具栏和工具箱中的 GUI 组件。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| ignoreUnspecified | Bool | False | 如果默认值为指定，则忽略设置值。 |
+| location | Int |  | GUI 组件所在的位置。 |
 
-### setValueToPrevious()
+### registerAndShowDialog(dialog)
 
-将关键字值设置为其之前的值。
+注册给定的对话框及其窗口部件键，并提交该对话框。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| dialog | AFXDialog |  | 对话框。 |
 
-实现 AFXKeyword。
+### registerAndShowModalDialog(dialog)
 
-### syncPreviousValue()
+注册给定的对话框及其窗口部件键，并将其作为模态对话框提交。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| dialog | AFXDialog |  | 对话框。 |
 
-将关键字的前一个值设置为其当前值。
+### registerShortcutFunction(text, tgt, sel, ic=None, tipText='', displayedName='', typesToDisplay=0)
 
-实现 AFXKeyword。
+注册快捷方式函数；此函数将在 GUI 中可用，以便用户可以为其分配快捷键。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| text | String |  | 用于在 GUI 中标识该函数的标签；要指定快捷键，请使用 "\t" 将其与标签分开。 |
+| tgt | FXObject |  | 消息目标。 |
+| sel | Int |  | 消息 ID。 |
+| ic | FXIcon | None | 快捷键图标 |
+| tipText | String | '' | 用于底部工具提示的文本 |
+| displayedName | String | '' | 此函数所属模块的名称。 |
+| typesToDisplay | Int | 0 | 指定模块中显示的对象类型的标志；参见 AFXModuleGui。 |
+
+### sendCommandString(command, writeToReplay=True, writeToJournal=False)
+
+发送给定的命令字符串（可以包含多个命令，用命令分隔符分隔）。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| command | String |  | 命令字符串。 |
+| writeToReplay | Bool | True | 如果命令应写入重放文件，则为 True；否则为 False。 |
+| writeToJournal | Bool | False | 如果命令应写入日志文件，则为 True；否则为 False。 |
+
+### show(location)
+
+显示菜单栏、工具栏和工具箱中的 GUI 组件。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| location | Int |  | GUI 组件所在的位置。 |
+
+### unregisterDialog(widgetAlias)
+
+从管理器中取消注册具有给定窗口部件键的对话框。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| widgetAlias | String |  | 对话框别名。 |
+
+### 类标志
+
+### **消息 ID。**
+
+| **ID_DESTROY_DIALOGS** | 用于销毁对话框。 |
+| --- | --- |
+
+### 全局标志
+
+### **GUI 位置的标志。**
+
+| **GUI_IN_NONE** | GUI 在标准位置没有组件。 |
+| --- | --- |
+| **GUI_IN_MENUBAR** | GUI 在菜单栏中有组件。 |
+| **GUI_IN_TOOL_PANE** | GUI 在 Tools 下拉窗格中有组件。 |
+| **GUI_IN_TOOLBAR** | GUI 在工具栏中有组件。 |
+| **GUI_IN_TOOLBOX** | GUI 在工具箱中有组件。 |
 
 
 

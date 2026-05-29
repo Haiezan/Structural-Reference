@@ -1,22 +1,26 @@
-# 50.24 SubstructureGenerateFrequency 对象
+# 50.23 StructuralDampingComponent 对象
 
-SubstructureGenerateFrequency 对象用于定义在模态动力学分析中使用的模态。这些模态从指定的频率范围（包括频率边界）中选择。
+StructuralDampingComponent 对象用于定义一系列模态的结构阻尼。
 
 **访问**
 
 ```
 import step
-mdb.models[*name*].steps[*name*].frequencyRange[*i*]
+mdb.models[*name*].steps[*name*].structuralDamping.components[*i*]
 ```
 
-### 50.24.1 成员
+### 50.23.1 成员
 
-SubstructureGenerateFrequency 对象具有以下成员：
+StructuralDampingComponent 对象具有以下成员：
 
-*lower*
+*start*
 
-一个 Float，指定频率范围的下限（以周期/时间计）。
+一个 Int，指定范围最低模态的模态号。
 
-*upper*
+*end*
 
-一个 Float，指定频率范围的上限（以周期/时间计）。
+一个 Int，指定范围最高模态的模态号。
+
+*factor*
+
+一个 Float，指定阻尼因子 ![](../graphics/ker_eqn00234.gif)。

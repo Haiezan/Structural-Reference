@@ -1,4 +1,4 @@
-# *PERMEABILITY
+# *PHYSICAL CONSTANTS
 
 
 
@@ -8,102 +8,45 @@
 
 
 
-### *PERMEABILITY定义孔隙流体渗透率。
+### *PHYSICAL CONSTANTS指定物理常数。
 
-此选项用于在涉及渗流和多孔介质的问题中定义孔隙流体流动的渗透率。
+此选项用于定义分析所需的物理常数；由于Abaqus没有内置单位，因此没有提供默认值。如果分析所需的物理常数未给出，Abaqus将发出致命错误消息。常数的单位必须与剩余输入数据一致。
 
-**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
 **类型：**模型数据  
 
 **级别：**模型  
 
-**Abaqus/CAE：**属性模块
+**Abaqus/CAE：**模型属性
 
 ##### **参考：**
 
-- ["渗透率，" Abaqus Analysis User's Guide第26.6.2节](../usb/usb-link.md#usb-mat-cpermeabil)
-
-### 在Abaqus/Standard分析中定义渗透率
-
-### **可选参数：**
-
-DEPENDENCIES
-
-将此参数设置为渗透率定义中包含的场变量依赖数量。如果省略此参数，则假定渗透率不依赖于场变量。
-
-此参数只能与TYPE=ISOTROPIC、ORTHOTROPIC或ANISOTROPIC结合使用。
-
-TYPE
-
-设置TYPE=ISOTROPIC（默认）以定义完全饱和各向同性渗透率。设置TYPE=ORTHOTROPIC以定义完全饱和正交各向异性渗透率。设置TYPE=ANISOTROPIC以定义完全饱和各向异性渗透率。
-
-设置TYPE=SATURATION以定义；这必须是同一材料的选项重复使用，必须跟在完全饱和渗透率定义之后。定义必须给出在时的值。
-
-设置TYPE=VELOCITY以定义；这必须是同一材料的选项重复使用，必须跟在完全饱和渗透率定义之后。
-
-### **定义完全饱和材料属性时需要的参数：**
-
-SPECIFIC
-
-将此参数设置为润湿液体的比重。实际比重必须给定为非零正值，如果需要总压力解决方案，则必须使用GRAV分布荷载类型来施加重力荷载。
-
-### **定义完全饱和各向同性渗透率的数据行（TYPE=ISOTROPIC）：**
-
-**第一行：**
-
-**后续行（仅在DEPENDENCIES参数值大于5时需要）：**
-
-根据需要重复此组数据行以定义变化。
-
-### **定义完全饱和正交各向异性渗透率的数据行（TYPE=ORTHOTROPIC）：**
-
-**第一行：**
-
-**后续行（仅在DEPENDENCIES参数值大于3时需要）：**
-
-根据需要重复此组数据行以定义变化。
-
-### **定义完全饱和各向异性渗透率的数据行（TYPE=ANISOTROPIC）：**
-
-**第一行：**
-
-**后续行（仅在DEPENDENCIES参数被指定时需要）：**
-
-根据需要重复此组数据行以定义变化。
-
-### **定义润湿液体饱和度渗透率依赖性的数据行（TYPE=SATURATION）：**
-
-**第一行：**
-
-根据需要重复此数据行以定义变化。
-
-### **定义速度系数的数据行（TYPE=VELOCITY）：**
-
-**第一行：**
-
-根据需要重复此数据行以定义变化。
-
-### 在Abaqus/CFD分析中定义渗透率
+- ["非耦合热传递分析，" Abaqus Analysis User's Guide第6.5.2节](../usb/usb-link.md#usb-anl-aheattransfer)
+- ["质量扩散分析，" Abaqus Analysis User's Guide第6.9.1节](../usb/usb-link.md#usb-anl-amassdiffusion)
+- ["流体腔定义，" Abaqus Analysis User's Guide第11.5.2节](../usb/usb-link.md#usb-anl-afluidcavities)
+- ["率相关塑性：蠕变和膨胀，" Abaqus Analysis User's Guide第23.2.4节](../usb/usb-link.md#usb-mat-cratedepcreep)
+- ["扩散率，" Abaqus Analysis User's Guide第26.4.1节](../usb/usb-link.md#usb-mat-cdiffusivity)
+- ["溶解度，" Abaqus Analysis User's Guide第26.4.2节](../usb/usb-link.md#usb-mat-csolubility)
+- ["热接触属性，" Abaqus Analysis User's Guide第37.2.1节](../usb/usb-link.md#usb-cni-athermalinteraction)
+- ["腔体辐射，" Abaqus Analysis User's Guide第41.1.1节](../usb/usb-link.md#usb-cni-acavityradiation)
 
 ### **可选参数：**
 
-INERTIAL DRAG COEFFICIENT
+ABSOLUTE ZERO
 
-将此参数设置为与多孔介质中惯性（二次或形式）阻力成比例的值。默认值为0.142887。
+将此参数设置为所选温度标度上的绝对零度。例如，如果分析使用摄氏度，则设置ABSOLUTE ZERO=273.15。
 
-TYPE
+STEFAN BOLTZMANN
 
-设置TYPE=ISOTROPIC（默认）以定义完全饱和各向同性渗透率。
+将此参数设置为Stefan Boltzmann常数。例如，在SI单位中STEFAN BOLTZMANN=5.669×10^8焦耳每秒平方米开尔文^4。
 
-设置TYPE=CARMAN KOZENY以通过Carman-Kozeny关系定义作为孔隙度函数的渗透率。
+UNIVERSAL GAS CONSTANT
 
-### **定义完全饱和各向同性渗透率的数据行（TYPE=ISOTROPIC）：**
+将此参数设置为通用气体常数。例如，在SI单位中UNIVERSAL GAS CONSTANT=8.31434焦耳每摩尔开尔文。
 
-**第一行：**
+SPL REFERENCE PRESSURE
 
-根据需要重复此数据行以定义变化。
+将此参数设置为用于计算声压级的参考压力。例如，在SI单位中对于空气SPL REFERENCE PRESSURE=20微帕斯卡。
 
-### **定义Carman-Kozeny渗透率关系的数据行（TYPE=CARMAN KOZENY）：**
-
-**第一行（也是唯一一行）：**
+**此选项没有关联的数据行。**

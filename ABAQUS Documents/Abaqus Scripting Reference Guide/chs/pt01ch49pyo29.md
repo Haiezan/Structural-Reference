@@ -1,8 +1,8 @@
-# 49.27 SteadyStateModalStep 对象
+# 49.29 SubspaceDynamicsStep 对象
 
-SteadyStateModalStep 对象用于计算系统对谐波激励的线性化稳态响应。
+SubspaceDynamicsStep 对象用于基于子空间投影方法计算系统对谐波激励的线性化稳态响应。
 
-SteadyStateModalStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+SubspaceDynamicsStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.27.1 SteadyStateModalStep(...)
+### 49.29.1 SubspaceDynamicsStep(...)
 
-此方法创建一个 SteadyStateModalStep 对象。
+此方法创建一个 SubspaceDynamicsStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].SteadyStateModalStep
+mdb.models[*name*].SubspaceDynamicsStep
 ```
 
 **必需参数**
@@ -31,67 +31,51 @@ mdb.models[*name*].SteadyStateModalStep
 
 一个字符串，指定前一步的名称。新步骤将出现在分析步骤列表中该步骤之后。
 
-*frequencyRange*
-
-一个 [SteadyStateModalFrequencyArray](pt01ch50pyo18.md) 对象。
-
 **可选参数**
 
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
-*scale*
+*timePeriod*
 
-一个 SymbolicConstant，指定输出使用的是对数标度还是线性标度。可选值为 LOGARITHMIC 和 LINEAR。默认值为 LOGARITHMIC。
+一个 Float，指定步骤的总时间周期。默认值为 1.0。
 
-*directDamping*
+*vectors*
 
-一个 [DirectDamping](pt01ch50pyo04.md) 对象。
+SymbolicConstant ALL 或一个 Int，指定用于子空间投影的模式数量。SymbolicConstant 的可能值为 ALL。默认值为 ALL。
 
-*compositeDamping*
+*nlgeom*
 
-一个 [CompositeDamping](pt01ch50pyo01.md) 对象。
+一个布尔值，指定是否允许几何非线性。默认值为 OFF。
 
-*rayleighDamping*
+*maxNumInc*
 
-一个 [RayleighDamping](pt01ch50pyo11.md) 对象。
+一个 Int，指定步骤中的最大增量数。默认值为 100。
 
-*structuralDamping*
+*incSize*
 
-一个 [StructuralDamping](pt01ch50pyo20.md) 对象。
+一个 Float，指定建议的时间增量。默认值为 0.0。
 
-*directDampingByFrequency*
+*amplitude*
 
-一个 [DirectDampingByFrequency](pt01ch50pyo05.md) 对象。
-
-*rayleighDampingByFrequency*
-
-一个 [RayleighDampingByFrequency](pt01ch50pyo12.md) 对象。
-
-*structuralDampingByFrequency*
-
-一个 [StructuralDampingByFrequency](pt01ch50pyo21.md) 对象。
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 STEP。
 
 *maintainAttributes*
 
 一个布尔值，指定是否保留具有相同名称的现有步骤的属性。默认值为 False。
 
-*subdivideUsingEigenfrequencies*
-
-一个布尔值，指定是否使用系统的特征频率细分每个频率范围。默认值为 ON。
-
 **返回值**
 
-一个 SteadyStateModalStep 对象。
+一个 SubspaceDynamicsStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.27.2 setValues(...)
+### 49.29.2 setValues(...)
 
-此方法修改 SteadyStateModalStep 对象。
+此方法修改 SubspaceDynamicsStep 对象。
 
 **必需参数**
 
@@ -99,7 +83,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [SteadyStateModalStep](pt01ch49pyo27.md#ker-steadystatemodalstep-steadystatemodalstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [SubspaceDynamicsStep](pt01ch49pyo29.md#ker-subspacedynamicsstep-subspacedynamicsstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
 
 **返回值**
 
@@ -109,21 +93,37 @@ RangeError。
 
 RangeError。
 
-### 49.27.3 成员
+### 49.29.3 成员
 
-SteadyStateModalStep 对象可以具有以下成员：
+SubspaceDynamicsStep 对象可以具有以下成员：
 
 *name*
 
 一个字符串，指定存储库键。
 
-*scale*
+*timePeriod*
 
-一个 SymbolicConstant，指定输出使用的是对数标度还是线性标度。可选值为 LOGARITHMIC 和 LINEAR。默认值为 LOGARITHMIC。
+一个 Float，指定步骤的总时间周期。默认值为 1.0。
 
-*subdivideUsingEigenfrequencies*
+*vectors*
 
-一个布尔值，指定是否使用系统的特征频率细分每个频率范围。默认值为 ON。
+SymbolicConstant ALL 或一个 Int，指定用于子空间投影的模式数量。SymbolicConstant 的可能值为 ALL。默认值为 ALL。
+
+*nlgeom*
+
+一个布尔值，指定是否允许几何非线性。默认值为 OFF。
+
+*maxNumInc*
+
+一个 Int，指定步骤中的最大增量数。默认值为 100。
+
+*incSize*
+
+一个 Float，指定建议的时间增量。默认值为 0.0。
+
+*amplitude*
+
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 STEP。
 
 *previous*
 
@@ -132,38 +132,6 @@ SteadyStateModalStep 对象可以具有以下成员：
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
-
-*frequencyRange*
-
-一个 [SteadyStateModalFrequencyArray](pt01ch50pyo18.md) 对象。
-
-*directDamping*
-
-一个 [DirectDamping](pt01ch50pyo04.md) 对象。
-
-*compositeDamping*
-
-一个 [CompositeDamping](pt01ch50pyo01.md) 对象。
-
-*rayleighDamping*
-
-一个 [RayleighDamping](pt01ch50pyo11.md) 对象。
-
-*structuralDamping*
-
-一个 [StructuralDamping](pt01ch50pyo20.md) 对象。
-
-*directDampingByFrequency*
-
-一个 [DirectDampingByFrequency](pt01ch50pyo05.md) 对象。
-
-*rayleighDampingByFrequency*
-
-一个 [RayleighDampingByFrequency](pt01ch50pyo12.md) 对象。
-
-*structuralDampingByFrequency*
-
-一个 [StructuralDampingByFrequency](pt01ch50pyo21.md) 对象。
 
 *explicit*
 
@@ -268,10 +236,8 @@ SteadyStateModalStep 对象可以具有以下成员：
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.27.4 对应的分析关键字
+### 49.29.4 对应的分析关键字
 
-| [*DAMPING](../key/key-link.md#usb-kws-mdamping) |
+| [*DYNAMIC](../key/key-link.md#usb-kws-hdynamic) |
 | --- |
-| [*MODAL DAMPING](../key/key-link.md#usb-kws-hmodaldamp) |
-| [*STEADY STATE DYNAMICS](../key/key-link.md#usb-kws-hsteadystdyn) |
 | [*STEP](../key/key-link.md#usb-kws-hstep) |

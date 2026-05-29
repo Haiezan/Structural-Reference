@@ -1,168 +1,43 @@
-# 34.31 Odb 命令
+# 34.1 Odb 对象
 
-Odb 命令执行以下操作：
-- 确定输出数据库（`.odb`）文件是否需要升级到当前版本。
-- 确定多个字段上输出变量的极值；例如，在多个负载情况上。
-- 打开现有的输出数据库文件并创建新的 Odb 对象。
-- 将输出数据库文件升级到当前版本并将升级后的输出数据库写入新文件。
+Odb 对象是输出数据库（ODB）文件的内存中表示形式。
 
-### 34.31.1 isUpgradeRequiredForOdb(...)
-
-此方法确定输出数据库文件是否需要升级到当前版本。
-
-您可以使用以下任一技术访问此方法：
-- 从在 Abaqus/CAE 外部运行的脚本。例如，``` import odbAccess needsUpgrade = odbAccess.isUpgradeRequiredForOdb( upgradeRequiredOdbPath='myOdb.odb') ```
-- 从 Abaqus/CAE 中的 Visualization 模块。例如，``` import visualization needsUpgrade = session.isUpgradeRequiredForOdb( upgradeRequiredOdbPath='myOdb.odb') ```
-
-**必要参数**
-
-*upgradeRequiredOdbPath*
-
-一个字符串，指定要测试的输出数据库文件的路径。该测试确定输出数据库是否需要升级到当前版本。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-一个布尔值，指示测试结果。值为 True 表示输出数据库需要升级到当前版本。
-
-**异常**
-
-无。
-
-### 34.31.2 maxEnvelope(...)
-
-检索多个字段上输出变量的最大值。
-
-**必要参数**
-
-`maxEnvelope` 方法不使用关键字参数。
-
-| 参数 |
-| --- |
-| 将从中计算最大值的类似 fieldOutput 对象列表。 |
-| 一个 SymbolicConstant，指定比较向量或张量时使用的不变量或分量标签。可能的值为：- MAGNITUDE - MISES - TRESCA - PRESS - INV3 - MAX_PRINCIPAL - MID_PRINCIPAL - MIN_PRINCIPAL 如果字段是向量或张量，您必须提供此参数或以下参数。 |
-| 一个字符串，指定用于选择最大值的张量或向量的分量。 |
-
-**可选参数**
-
-无。
-
-**返回值**
-
-两个 fieldOutput 对象的序列。第一个 fieldOutput 对象包含最大值。第二个 fieldOutput 对象包含包含最大值的字段的索引。索引遵循作为函数参数提供的 fieldOutput 对象列表中字段的顺序。
-
-**异常**
-
-OdbError
-
-TypeError
-
-```
-This function takes no keyword arguments.
-```
-
-### 34.31.3 minEnvelope(...)
-
-检索多个字段上输出变量的最小值。
-
-**必要参数**
-
-`minEnvelope` 方法不使用关键字参数。
-
-| 参数 |
-| --- |
-| 将从中计算最大值的类似 fieldOutput 对象列表。 |
-| 一个 SymbolicConstant，指定比较向量或张量时使用的不变量或分量标签。可能的值为：- MAGNITUDE - MISES - TRESCA - PRESS - INV3 - MAX_PRINCIPAL - MID_PRINCIPAL - MIN_PRINCIPAL 如果字段是向量或张量，您必须提供此参数或以下参数。 |
-| 一个字符串，指定用于选择最小值的张量或向量的分量。 |
-
-**可选参数**
-
-无。
-
-**返回值**
-
-两个 fieldOutput 对象的序列。第一个 fieldOutput 对象包含最小值。第二个 fieldOutput 对象包含包含最小值的字段的索引。索引遵循作为函数参数提供的 fieldOutput 对象列表中字段的顺序。
-
-**异常**
-
-OdbError
-
-TypeError
-
-```
-This function takes no keyword arguments.
-```
-
-### 34.31.4 openOdb(...)
-
-此方法打开现有的输出数据库（`.odb`）文件并创建新的 Odb 对象。当在 Abaqus/CAE 外部执行脚本时，通常只能一次打开一个输出数据库。例如，
+**访问**
 
 ```
 import odbAccess
-shockLoadOdb = odbAccess.openOdb(path='myOdb.odb')
+session.odbs[*name*]
 ```
 
-**必要参数**
+### 34.1.1 Odb(...)
 
-*path*
+此方法创建一个新的 Odb 对象。
 
-一个字符串，指定现有输出数据库（`.odb`）文件的路径。
-
-**可选参数**
-
-*readOnly*
-
-一个布尔值，指定文件是否仅允许只读访问或同时允许读写访问。初始值为 False，表示将允许读写访问。
-
-*readInternalSets*
-
-一个布尔值，指定文件是否允许访问在数据库上指定为 Internal 的集合。初始值为 False，表示内部集合将不会被读取。
-
-**返回值**
-
-Odb 对象。
-
-**异常**
-
-如果输出数据库是由先前版本的 Abaqus 生成的，需要升级：
+**路径**
 
 ```
-OdbError: The database is from a previous release of Abaqus. Run `abaqus upgrade -job <*newFilename*> -odb <*oldFileName*>` to upgrade it.
-```
-
-如果输出数据库是由更新版本的 Abaqus 生成的，并且需要升级 Abaqus 安装：
-
-```
-OdbError: Abaqus installation must be upgraded before this output database can be opened.
-```
-
-### 34.31.5 openOdb(...)
-
-此方法打开现有的输出数据库（`.odb`）文件并创建新的 Odb 对象。此方法仅通过 Abaqus/CAE 内的 session 对象访问，并将新的 Odb 对象添加到 `session.odbs` 仓库。此方法允许您同时打开多个输出数据库，并使用仓库键指定特定的输出数据库。例如，
-
-```
-import visualization
-session.openOdb(name='myOdb', path='stress.odb', readOnly=True)
+session.Odb
 ```
 
 **必要参数**
 
 *name*
 
-一个字符串，指定仓库键。如果 *name* 与输出数据库（`.odb`）文件的 *path* 不同，则必须同时指定 *path*。此外，为了支持接口的向后兼容性，如果省略 *name* 参数，则 *path* 和 *name* 将被视为相同。
+一个字符串，指定仓库键。
 
 **可选参数**
 
+*analysisTitle*
+
+一个字符串，指定输出数据库的标题。默认值为空字符串。
+
+*description*
+
+一个字符串，指定输出数据库的描述。默认值为空字符串。
+
 *path*
 
-一个字符串，指定现有输出数据库（`.odb`）文件的路径。
-
-*readOnly*
-
-一个布尔值，指定文件是否仅允许只读访问或同时允许读写访问。当从 Abaqus/CAE 打开输出数据库文件时，初始值为 TRUE，表示仅允许只读访问。
+一个字符串，指定将写入新输出数据库（`.odb`）文件的文件路径。默认值为空字符串。
 
 **返回值**
 
@@ -170,51 +45,13 @@ Odb 对象。
 
 **异常**
 
-如果输出数据库是由先前版本的 Abaqus 生成的，需要升级：
+无。
 
-```
-OdbError: The database is from a previous release of Abaqus.
-```
+### 34.1.2 close()
 
-```
-Run `abaqus upgrade -job <*newFilename*> -odb <*oldFileName*>` to upgrade it.
-```
+此方法关闭输出数据库。
 
-如果输出数据库是由更新版本的 Abaqus 生成的，并且需要升级 Abaqus 安装：
-
-```
-OdbError: Abaqus installation must be upgraded before this
-```
-
-```
-output database can be opened.
-```
-
-如果文件不是有效的数据库：
-
-```
-AbaqusError: Cannot open file <*filename*>.
-```
-
-### 34.31.6 upgradeOdb(...)
-
-此方法将现有 Odb 对象升级到当前版本，并将 Odb 对象的升级版本写入文件。此外，Abaqus/CAE 将有关升级状态的信息写入日志（`*.log`）文件。
-
-您可以使用以下任一技术访问此方法：
-- 从在 Abaqus/CAE 外部运行的脚本。例如，``` import odbAccess odbAccess.upgradeOdb(existingOdbPath='oldOdb', upgradedOdbPath='upgradedOdb') ```
-- 从 Abaqus/CAE 中的 session 对象。例如，``` import visualization session.upgradeOdb(existingOdbPath='oldOdb', upgradedOdbPath='upgradedOdb') ```
-
-**必要参数**
-
-*existingOdbPath*
-
-一个字符串，指定包含要升级的输出数据库的文件的路径。
-
-*upgradedOdbPath*
-
-一个字符串，指定将包含升级后的输出数据库的文件的路径。
-
-**可选参数**
+**参数**
 
 无。
 
@@ -224,8 +61,134 @@ AbaqusError: Cannot open file <*filename*>.
 
 **异常**
 
-如果输出数据库升级失败：
+无。
+
+### 34.1.3 getFrame(...)
+
+此方法返回指定时间、频率或模式的帧。它不会在帧之间插值。该方法不适用于包含不同域的步骤的 Odb 对象或包含负载情况特定数据的步骤的 Odb 对象。
+
+**必要参数**
+
+*frameValue*
+
+一个 Double，指定需要帧的值。*frameValue* 可以是总时间或频率。
+
+**可选参数**
+
+*match*
+
+一个 SymbolicConstant，指定当精确帧值不存在时返回哪个帧。可能的值为 CLOSEST、BEFORE、AFTER 和 EXACT。默认值为 CLOSEST。
+
+当 *match*=CLOSEST 时，Abaqus 返回最接近的帧。如果请求的帧值恰好在两帧之间，Abaqus 返回该值之后的帧。
+
+当 *match*=EXACT 时，如果精确帧值不存在，Abaqus 会引发异常。
+
+**返回值**
+
+一个 [OdbFrame](pt01ch34pyo14.md) 对象。
+
+**异常**
+
+如果找不到精确帧：
 
 ```
-OdbError: cannot convert database
+OdbError: Frame not found.
 ```
+
+### 34.1.4 save()
+
+此方法将输出保存到输出数据库（`.odb`）文件。
+
+**参数**
+
+无。
+
+**返回值**
+
+无
+
+**异常**
+
+OdbError
+
+```
+Database save failed. The database was opened as read-only. Modification of data is not permitted.
+```
+
+### 34.1.5 update()
+
+此方法用于在 Abaqus 分析写入关联输出数据库时更新内存中的 Odb 对象。`update` 检查自打开或上次更新以来是否有其他步骤被写入输出数据库。如果有其他步骤被写入输出数据库，`update` 将它们添加到 Odb 对象中。
+
+**参数**
+
+无。
+
+**返回值**
+
+一个布尔值，指定是否有其他步骤或帧被添加到 Odb 对象。
+
+**异常**
+
+无。
+
+### 34.1.6 成员
+
+Odb 对象的成员与 [Odb](pt01ch34pyo01.md#ker-odb-odb-pyc) 方法的参数具有相同的名称和描述。
+
+此外，Odb 对象可以具有以下成员：
+
+*isReadOnly*
+
+一个布尔值，指定输出数据库是否以只读访问方式打开。
+
+*amplitudes*
+
+[Amplitude](pt01ch03pyo01.md) 对象的仓库。
+
+*filters*
+
+[Filter](pt01ch22pyo01.md) 对象的仓库。
+
+*rootAssembly*
+
+一个 [OdbAssembly](pt01ch34pyo12.md) 对象。
+
+*jobData*
+
+一个 [JobData](pt01ch34pyo11.md) 对象。
+
+*parts*
+
+[OdbPart](pt01ch34pyo19.md) 对象的仓库。
+
+*materials*
+
+[Material](pt01ch29pyo01.md) 对象的仓库。
+
+*steps*
+
+[OdbStep](pt01ch34pyo24.md) 对象的仓库。
+
+*sections*
+
+[Section](pt01ch46pyo01.md) 对象的仓库。
+
+*sectionCategories*
+
+[SectionCategory](pt01ch34pyo27.md) 对象的仓库。
+
+*sectorDefinition*
+
+一个 [SectorDefinition](pt01ch34pyo29.md) 对象。
+
+*userData*
+
+一个 [UserData](pt01ch34pyo30.md) 对象。
+
+*customData*
+
+一个 [RepositorySupport](pt01ch14pyo02.md) 对象。
+
+*profiles*
+
+[Profile](pt01ch08pyo01.md) 对象的仓库。

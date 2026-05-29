@@ -1,49 +1,62 @@
-# *ACOUSTIC FLOW VELOCITY
+# *ADAPTIVE MESH
 
 
 
 
 
-### *ACOUSTIC FLOW VELOCITY为声学元素指定流速度作为预定义场。
+### *ADAPTIVE MESH定义自适应网格域。
 
-此选项用于为声学分析指定节点集或单个节点的流体流速度。此选项定义了一个基础流，声学分析是关于该基础流的线性扰动。
+此选项用于定义自适应网格域，并指定该域自适应网格划分的频率和强度。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
 **类型：**历史数据
 
 **级别：**Step
 
+**Abaqus/CAE：**在Step模块中受支持；每个step只能定义一个自适应网格域。
+
 ##### **参考：**
 
-- ["声学、冲击和耦合声学-结构分析，" Abaqus Analysis User's Guide第6.10.1节](../usb/usb-link.md#usb-anl-aacoustic)
+- ["在Abaqus/Explicit中定义ALE自适应网格域，" Abaqus Analysis User's Guide第12.2.2节](../usb/usb-link.md#usb-anl-aaledomains)
+- ["在Abaqus/Explicit中进行ALE自适应网格划分和重映射，" Abaqus Analysis User's Guide第12.2.3节](../usb/usb-link.md#usb-anl-aaleremesh)
+- ["在Abaqus/Standard中定义ALE自适应网格域，" Abaqus Analysis User's Guide第12.2.6节](../usb/usb-link.md#usb-anl-aalestd)
+- ["在Abaqus/Standard中进行ALE自适应网格划分和重映射，" Abaqus Analysis User's Guide第12.2.7节](../usb/usb-link.md#usb-anl-aalestdremesh)
+- [*ADAPTIVE MESH CONTROLS](ch01abk06.md)
+- [*ADAPTIVE MESH CONSTRAINT](ch01abk05.md)
 
-### **必需的、互斥的参数：**
+### **至少需要以下参数之一：**
 
-ROTATION
+ELSET
 
-包含此参数以定义由于刚体绕轴旋转而产生的流速度场。
+将此参数设置为包含自适应网格域中所有实体元素的元素集名称。
 
-TRANSLATION
+OP
 
-包含此参数以在全局坐标系中或在如果在这些节点处使用了[*TRANSFORM](ch19abk11.md)时的局部坐标系中给出x-、y-和z-方向的平移流速度分量。平移流速度是默认值。
+设置OP=MOD（默认值）来修改现有自适应网格域（具有相同元素集名称）的自适应网格划分的频率和强度，或定义新的自适应网格域。
+
+如果当前生效的所有自适应网格域都应被移除，设置OP=NEW。要仅移除选定的自适应网格域，请使用OP=NEW并重新指定所有要保留的自适应网格域。
+
+在单个step内，[*ADAPTIVE MESH](ch01abk04.md)选项的所有用途的OP参数必须相同。
 
 ### **可选参数：**
 
-AMPLITUDE
+CONTROLS
 
-将此参数设置为振幅曲线（在[*AMPLITUDE](ch01abk09.md)选项中定义）的名称，该曲线给出整个step中流速度的时间变化（["振幅曲线，" Abaqus Analysis User's Guide第34.1.2节](../usb/usb-link.md#usb-prc-pamplitude)）。
+将此参数设置为与此自适应网格域关联的[*ADAPTIVE MESH CONTROLS](ch01abk06.md)选项的名称。自适应网格控制可用于控制显式动态分析和隐式声学分析中的自适应网格划分，以及控制显式动态分析中应用于自适应网格域的对流算法。
 
-如果省略此参数，默认值为STEP函数。
+FREQUENCY
 
-### **定义平移流速度的数据行（TRANSLATION）：**
+将此参数设置为执行自适应网格划分的增量频率。当在显式动态分析中使用此选项进行声学分析或定义空间网格约束或Eulerian边界区域时，默认频率为1。在所有其他情况下，默认频率为10。
 
-**第一行：**
+INITIAL MESH SWEEPS
 
-根据需要重复此数据行，以定义不同节点和自由度的平移流速度。
+此参数仅适用于Abaqus/Explicit分析。
 
-### **定义旋转流速度的数据行（ROTATION）：**
+将此参数设置为在此自适应网格定义处于激活状态的第一个step开始时执行的网格扫描次数。如果使用[*ADAPTIVE MESH CONTROLS](ch01abk06.md)，SMOOTHING OBJECTIVE=UNIFORM，则默认的初始网格扫描次数为5。如果使用[*ADAPTIVE MESH CONTROLS](ch01abk06.md)，SMOOTHING OBJECTIVE=GRADED，则默认的初始网格扫描次数为2。
 
-**第一行：**
+MESH SWEEPS
 
-根据需要重复此数据行，以定义不同节点的旋转流速度。
+将此参数设置为在每个自适应网格增量中执行的网格扫描次数。默认的网格扫描次数为1。
+
+**此选项没有关联的数据行。**

@@ -1,206 +1,132 @@
-# AFXSlider
+# AFXSequenceString
 
 
 
 
 
-此类提供一个滑块，允许用户通过拖动其值指示器来指定值。
-![](../graphics/gui-afxslider.png)
+此类支持解析和修改包含由某个分隔符分隔的元素序列的字符串。
+![](../graphics/gui-afxsequencestring.png)
 
-### AFXSlider(p, tgt=None, sel=0, opts=AFXSLIDER_NORMAL, x=0, y=0, w=0, h=0, pl=0, pr=0, pt=0, pb=0)
+### AFXSequenceString(value='', sep=',')
 
 构造函数。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| p | FXComposite |  | 父组件。 |
-| tgt | FXObject | None | 消息目标。 |
-| sel | Int | 0 | 消息ID。 |
-| opts | Int | AFXSLIDER_NORMAL | 选项和提示。 |
-| x | Int | 0 | 起点X坐标。 |
-| y | Int | 0 | 起点Y坐标。 |
-| w | Int | 0 | 组件宽度。 |
-| h | Int | 0 | 组件高度。 |
-| pl | Int | 0 | 左边距（边距）。 |
-| pr | Int | 0 | 右边距（边距）。 |
-| pt | Int | 0 | 顶部边距。 |
-| pb | Int | 0 | 底部边距。 |
+| value | String | '' | 包含初始序列值的字符串。 |
+| sep | String | ',' | 序列元素的分隔符字符。 |
 
-### canFocus()
+### AFXSequenceString()
 
-因为滑块可以接收焦点所以返回 True。
+未定义的拷贝构造函数（此类没有拷贝语义）。
 
-从 FXWindow 重实现。
+### forceNumElements(num, fill)
 
-### disable()
-
-禁用滑块。
-
-从 FXWindow 重实现。
-
-### enable()
-
-启用滑块。
-
-从 FXWindow 重实现。
-
-### getDecimalPlaces()
-
-返回显示的小数位数。
-
-### getDefaultHeight()
-
-返回默认高度。
-
-从 FXPacker 重实现。
-
-### getDefaultWidth()
-
-返回默认宽度。
-
-从 FXPacker 重实现。
-
-### getIncrement()
-
-返回滑块的自动增量/减量值。
-
-### getMaxLabelText()
-
-返回最大标签的文本。
-
-### getMinLabelText()
-
-返回最小标签的文本。
-
-### getRange()
-
-返回表示组件允许的最小值和最大值的整数序列（low, high）。
-
-### getSliderStyle()
-
-返回滑块的样式。
-
-### getTipText()
-
-返回滑块的提示文本。
-
-### getTitleLabelJustify()
-
-返回标题标签的对齐模式。
-
-### getTitleLabelText()
-
-返回标题标签的文本。
-
-### getValue()
-
-返回滑块的值。
-
-### recalc()
-
-重新计算滑块。重定义以处理滑块移动。
-
-从 FXWindow 重实现。
-
-### setDecimalPlaces(dp)
-
-设置显示的小数位数。
+强制内容字符串包含具有给定数量元素的元组。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| dp | Int |  | 小数位数。 |
+| num | Int |  | 新元素数量。 |
+| fill | String |  | 插入空格的字符串。 |
 
-### setIncrement(inc)
+### getContentString()
 
-设置滑块的自动增量/减量值。
+返回包含序列元素值的字符串。
+
+在 AFX2DArrayConstString 中重实现。
+
+### getElementSeparator()
+
+返回元素分隔符字符。
+
+### getLength(index)
+
+返回序列元素的长度（以字符为单位）。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| inc | Int |  | 增量。 |
+| index | Int |  | 元素索引。 |
 
-### setMaxLabelText(text)
+### getNumElements()
 
-设置最大标签的文本。
+返回此序列中的元素数量。
+
+### getPosition(index)
+
+返回序列元素起始字符在内容字符串中的位置。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 最大标签文本。 |
+| index | Int |  | 元素索引。 |
 
-### setMinLabelText(text)
+### getValue(index)
 
-设置最小标签的文本。
+返回序列元素的值。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 最小标签文本。 |
+| index | Int |  | 元素索引。 |
 
-### setRange(lo, hi)
+### insert(index, numElements, val)
 
-设置滑块的最大值和最小值。
+插入元素的多个副本。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| lo | Int |  | 最小值。 |
-| hi | Int |  | 最大值。 |
+| index | Int |  | 开始插入的元素索引。 |
+| numElements | Int |  | 要插入的元素数量。 |
+| val | String |  | 新元素的值。 |
 
-### setSliderStyle(style)
+### isValidSequence()
 
-设置滑块的样式。
+如果此对象包含有效序列则返回 True。
+
+### remove(index, numElements)
+
+从给定索引开始移除元素。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| style | Int |  | 样式标志。 |
+| index | Int |  | 开始移除的元素索引。 |
+| numElements | Int |  | 要移除的元素数量。 |
 
-### setTipText(text)
+### setContentString(seqstr)
 
-设置滑块的提示文本。
+重置序列元素的所有值。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 提示文本。 |
+| seqstr | String |  | 包含新值的序列字符串。 |
 
-### setTitleLabelJustify(mode)
+### setElementSeparator(sep)
 
-设置标题标签的对齐模式。
+设置元素分隔符字符。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| mode | Int |  | 对齐模式。 |
+| sep | String |  | 分隔符字符。 |
 
-### setTitleLabelText(text)
+### setLength(index, length)
 
-设置标题标签的文本。
+设置序列元素的长度。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 标题文本。 |
+| index | Int |  | 元素索引。 |
+| length | Int |  | 新长度（以字符为单位）。 |
 
-### setValue(value)
+### setPosition(index, position)
 
-设置滑块的值。
+设置序列元素的位置。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| value | Int |  | 值。 |
+| index | Int |  | 元素索引。 |
+| position | Int |  | 字符串中的新位置。 |
 
-### show()
+### setValue(index, value, replaceAll=False)
 
-显示滑块。
+设置序列元素的值。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| index | Int |  | 元素索引。 |
+| value | String |  | 新值。 |
+| replaceAll | Bool | False | 如果为 False（默认），则保留前导和尾随空格，否则将分隔符之间的所有空格替换为新值。 |
 
-从 FXWindow 重实现。
+### trimWhiteSpace(index)
 
-### 类标志
-
-### **消息ID。**
-
-| **ID_SLIDER** | 滑块的ID。 |
-| --- | --- |
-| **ID_LAST** | 此类的最后一个ID。 |
-
-### 全局标志
-
-### **刻度线选项。**
-
-| **AFXSLIDER_HORIZONTAL** | 水平显示滑块。 |
-| --- | --- |
-| **AFXSLIDER_VERTICAL** | 垂直显示滑块。 |
-| **AFXSLIDER_ARROW_UP** | 滑块有指向上方的箭头。 |
-| **AFXSLIDER_ARROW_DOWN** | 滑块有指向下方的箭头。 |
-| **AFXSLIDER_ARROW_LEFT** | 滑块有指向左方的箭头。 |
-| **AFXSLIDER_ARROW_RIGHT** | 滑块有指向右方的箭头。 |
-| **AFXSLIDER_INSIDE_BAR** | 滑块在槽内而不是突出。 |
-| **AFXSLIDER_SHOW_VALUE** | 显示滑块值。 |
-| **AFXSLIDER_ABOVE_TITLE** | 在标题上方显示滑块。 |
-| **AFXSLIDER_AFTER_TITLE** | 在标题后显示滑块。 |
-| **AFXSLIDER_NORMAL** | 默认滑块选项——滑块是水平的，在槽内，并在其标题标签上方显示。 |
+调整元素的位置和长度以去除前导和尾随空格。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| index | Int |  | 元素索引。 |
 
 

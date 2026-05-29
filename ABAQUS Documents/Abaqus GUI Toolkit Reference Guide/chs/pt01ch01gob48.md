@@ -1,13 +1,13 @@
-# AFXProgressBar
+# AFXSlider
 
 
 
 
 
-此类包含一个进度条，可以多种不同样式呈现工作进度。
-![](../graphics/gui-afxprogressbar.png)
+此类提供一个滑块，允许用户通过拖动其值指示器来指定值。
+![](../graphics/gui-afxslider.png)
 
-### AFXProgressBar(p, tgt=None, sel=0, opts=FRAME_SUNKEN| FRAME_THICK, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+### AFXSlider(p, tgt=None, sel=0, opts=AFXSLIDER_NORMAL, x=0, y=0, w=0, h=0, pl=0, pr=0, pt=0, pb=0)
 
 构造函数。
 | **参数** | **类型** | **默认值** | **说明** |
@@ -15,129 +15,192 @@
 | p | FXComposite |  | 父组件。 |
 | tgt | FXObject | None | 消息目标。 |
 | sel | Int | 0 | 消息ID。 |
-| opts | Int | FRAME_SUNKEN| FRAME_THICK | 选项和提示。 |
+| opts | Int | AFXSLIDER_NORMAL | 选项和提示。 |
 | x | Int | 0 | 起点X坐标。 |
 | y | Int | 0 | 起点Y坐标。 |
 | w | Int | 0 | 组件宽度。 |
 | h | Int | 0 | 组件高度。 |
-| pl | Int | DEFAULT_PAD | 左边距（边距）。 |
-| pr | Int | DEFAULT_PAD | 右边距（边距）。 |
-| pt | Int | DEFAULT_PAD | 顶部边距。 |
-| pb | Int | DEFAULT_PAD | 底部边距。 |
+| pl | Int | 0 | 左边距（边距）。 |
+| pr | Int | 0 | 右边距（边距）。 |
+| pt | Int | 0 | 顶部边距。 |
+| pb | Int | 0 | 底部边距。 |
 
-### create()
+### canFocus()
 
-创建进度条。
+因为滑块可以接收焦点所以返回 True。
 
-从 FXProgressBar 重实现。
+从 FXWindow 重实现。
 
-### getBarStyle()
+### disable()
 
-返回进度条样式。
+禁用滑块。
 
-从 FXProgressBar 重实现。
+从 FXWindow 重实现。
+
+### enable()
+
+启用滑块。
+
+从 FXWindow 重实现。
+
+### getDecimalPlaces()
+
+返回显示的小数位数。
 
 ### getDefaultHeight()
 
 返回默认高度。
 
-从 FXProgressBar 重实现。
+从 FXPacker 重实现。
 
 ### getDefaultWidth()
 
 返回默认宽度。
 
-从 FXProgressBar 重实现。
+从 FXPacker 重实现。
 
-### getNumCursorBoxes()
+### getIncrement()
 
-返回显示的光标框数量。
+返回滑块的自动增量/减量值。
 
-### getProgress()
+### getMaxLabelText()
 
-返回当前进度。
+返回最大标签的文本。
 
-从 FXProgressBar 重实现。
+### getMinLabelText()
 
-### getTotal()
+返回最小标签的文本。
 
-返回总进度。
+### getRange()
 
-从 FXProgressBar 重实现。
+返回表示组件允许的最小值和最大值的整数序列（low, high）。
 
-### hide()
+### getSliderStyle()
 
-隐藏进度条。
+返回滑块的样式。
+
+### getTipText()
+
+返回滑块的提示文本。
+
+### getTitleLabelJustify()
+
+返回标题标签的对齐模式。
+
+### getTitleLabelText()
+
+返回标题标签的文本。
+
+### getValue()
+
+返回滑块的值。
+
+### recalc()
+
+重新计算滑块。重定义以处理滑块移动。
 
 从 FXWindow 重实现。
 
-### hideNumber()
+### setDecimalPlaces(dp)
 
-隐藏进度条迭代或百分比文本。
+设置显示的小数位数。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| dp | Int |  | 小数位数。 |
 
-从 FXProgressBar 重实现。
+### setIncrement(inc)
 
-### setBarStyle(style)
+设置滑块的自动增量/减量值。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| inc | Int |  | 增量。 |
 
-设置进度条样式。
+### setMaxLabelText(text)
+
+设置最大标签的文本。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| text | String |  | 最大标签文本。 |
+
+### setMinLabelText(text)
+
+设置最小标签的文本。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| text | String |  | 最小标签文本。 |
+
+### setRange(lo, hi)
+
+设置滑块的最大值和最小值。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| lo | Int |  | 最小值。 |
+| hi | Int |  | 最大值。 |
+
+### setSliderStyle(style)
+
+设置滑块的样式。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
 | style | Int |  | 样式标志。 |
 
-### setNumCursorBoxes(nb)
+### setTipText(text)
 
-设置要显示的光标框数量。
+设置滑块的提示文本。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| nb | Int |  | 框数量。 |
+| text | String |  | 提示文本。 |
 
-### setProgress(value)
+### setTitleLabelJustify(mode)
 
-设置当前进度，该进度被迭代或百分比模式下的进度条使用；在扫描器模式下，进度值被进度条忽略。
-
-从 FXProgressBar 重实现。
+设置标题标签的对齐模式。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| value | Int |  |  |
+| mode | Int |  | 对齐模式。 |
 
-### setTotal(value)
+### setTitleLabelText(text)
 
-设置总进度，该进度被迭代或百分比模式下的进度条使用；在扫描器模式下，进度值被进度条忽略。
-
-从 FXProgressBar 重实现。
+设置标题标签的文本。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| value | Int |  |  |
+| text | String |  | 标题文本。 |
+
+### setValue(value)
+
+设置滑块的值。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| value | Int |  | 值。 |
 
 ### show()
 
-显示进度条。
+显示滑块。
 
 从 FXWindow 重实现。
-
-### showNumber(style=AFXPROGRESSBAR_PERCENTAGE)
-
-显示进度迭代或百分比文本。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| style | Int | AFXPROGRESSBAR_PERCENTAGE | 样式标志。 |
 
 ### 类标志
 
 ### **消息ID。**
 
-| **ID_TIMER** | 计时器的ID。 |
+| **ID_SLIDER** | 滑块的ID。 |
 | --- | --- |
+| **ID_LAST** | 此类的最后一个ID。 |
 
 ### 全局标志
 
-### **进度条样式标志。**
+### **刻度线选项。**
 
-| **AFXPROGRESSBAR_PERCENTAGE** | 百分比完成模式。 |
+| **AFXSLIDER_HORIZONTAL** | 水平显示滑块。 |
 | --- | --- |
-| **AFXPROGRESSBAR_HORIZONTAL** | 水平显示。 |
-| **AFXPROGRESSBAR_VERTICAL** | 垂直显示。 |
-| **AFXPROGRESSBAR_SCANNER** | 扫描器模式。 |
-| **AFXPROGRESSBAR_ITERATOR** | 迭代器模式。 |
+| **AFXSLIDER_VERTICAL** | 垂直显示滑块。 |
+| **AFXSLIDER_ARROW_UP** | 滑块有指向上方的箭头。 |
+| **AFXSLIDER_ARROW_DOWN** | 滑块有指向下方的箭头。 |
+| **AFXSLIDER_ARROW_LEFT** | 滑块有指向左方的箭头。 |
+| **AFXSLIDER_ARROW_RIGHT** | 滑块有指向右方的箭头。 |
+| **AFXSLIDER_INSIDE_BAR** | 滑块在槽内而不是突出。 |
+| **AFXSLIDER_SHOW_VALUE** | 显示滑块值。 |
+| **AFXSLIDER_ABOVE_TITLE** | 在标题上方显示滑块。 |
+| **AFXSLIDER_AFTER_TITLE** | 在标题后显示滑块。 |
+| **AFXSLIDER_NORMAL** | 默认滑块选项——滑块是水平的，在槽内，并在其标题标签上方显示。 |
 
 

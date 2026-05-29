@@ -1,132 +1,143 @@
-# AFXSequenceString
+# AFXProgressBar
 
 
 
 
 
-此类支持解析和修改包含由某个分隔符分隔的元素序列的字符串。
-![](../graphics/gui-afxsequencestring.png)
+此类包含一个进度条，可以多种不同样式呈现工作进度。
+![](../graphics/gui-afxprogressbar.png)
 
-### AFXSequenceString(value='', sep=',')
+### AFXProgressBar(p, tgt=None, sel=0, opts=FRAME_SUNKEN| FRAME_THICK, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
 
 构造函数。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| value | String | '' | 包含初始序列值的字符串。 |
-| sep | String | ',' | 序列元素的分隔符字符。 |
+| p | FXComposite |  | 父组件。 |
+| tgt | FXObject | None | 消息目标。 |
+| sel | Int | 0 | 消息ID。 |
+| opts | Int | FRAME_SUNKEN| FRAME_THICK | 选项和提示。 |
+| x | Int | 0 | 起点X坐标。 |
+| y | Int | 0 | 起点Y坐标。 |
+| w | Int | 0 | 组件宽度。 |
+| h | Int | 0 | 组件高度。 |
+| pl | Int | DEFAULT_PAD | 左边距（边距）。 |
+| pr | Int | DEFAULT_PAD | 右边距（边距）。 |
+| pt | Int | DEFAULT_PAD | 顶部边距。 |
+| pb | Int | DEFAULT_PAD | 底部边距。 |
 
-### AFXSequenceString()
+### create()
 
-未定义的拷贝构造函数（此类没有拷贝语义）。
+创建进度条。
 
-### forceNumElements(num, fill)
+从 FXProgressBar 重实现。
 
-强制内容字符串包含具有给定数量元素的元组。
+### getBarStyle()
+
+返回进度条样式。
+
+从 FXProgressBar 重实现。
+
+### getDefaultHeight()
+
+返回默认高度。
+
+从 FXProgressBar 重实现。
+
+### getDefaultWidth()
+
+返回默认宽度。
+
+从 FXProgressBar 重实现。
+
+### getNumCursorBoxes()
+
+返回显示的光标框数量。
+
+### getProgress()
+
+返回当前进度。
+
+从 FXProgressBar 重实现。
+
+### getTotal()
+
+返回总进度。
+
+从 FXProgressBar 重实现。
+
+### hide()
+
+隐藏进度条。
+
+从 FXWindow 重实现。
+
+### hideNumber()
+
+隐藏进度条迭代或百分比文本。
+
+从 FXProgressBar 重实现。
+
+### setBarStyle(style)
+
+设置进度条样式。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| num | Int |  | 新元素数量。 |
-| fill | String |  | 插入空格的字符串。 |
+| style | Int |  | 样式标志。 |
 
-### getContentString()
+### setNumCursorBoxes(nb)
 
-返回包含序列元素值的字符串。
-
-在 AFX2DArrayConstString 中重实现。
-
-### getElementSeparator()
-
-返回元素分隔符字符。
-
-### getLength(index)
-
-返回序列元素的长度（以字符为单位）。
+设置要显示的光标框数量。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
+| nb | Int |  | 框数量。 |
 
-### getNumElements()
+### setProgress(value)
 
-返回此序列中的元素数量。
+设置当前进度，该进度被迭代或百分比模式下的进度条使用；在扫描器模式下，进度值被进度条忽略。
 
-### getPosition(index)
-
-返回序列元素起始字符在内容字符串中的位置。
+从 FXProgressBar 重实现。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
+| value | Int |  |  |
 
-### getValue(index)
+### setTotal(value)
 
-返回序列元素的值。
+设置总进度，该进度被迭代或百分比模式下的进度条使用；在扫描器模式下，进度值被进度条忽略。
+
+从 FXProgressBar 重实现。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
+| value | Int |  |  |
 
-### insert(index, numElements, val)
+### show()
 
-插入元素的多个副本。
+显示进度条。
+
+从 FXWindow 重实现。
+
+### showNumber(style=AFXPROGRESSBAR_PERCENTAGE)
+
+显示进度迭代或百分比文本。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| index | Int |  | 开始插入的元素索引。 |
-| numElements | Int |  | 要插入的元素数量。 |
-| val | String |  | 新元素的值。 |
+| style | Int | AFXPROGRESSBAR_PERCENTAGE | 样式标志。 |
 
-### isValidSequence()
+### 类标志
 
-如果此对象包含有效序列则返回 True。
+### **消息ID。**
 
-### remove(index, numElements)
+| **ID_TIMER** | 计时器的ID。 |
+| --- | --- |
 
-从给定索引开始移除元素。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| index | Int |  | 开始移除的元素索引。 |
-| numElements | Int |  | 要移除的元素数量。 |
+### 全局标志
 
-### setContentString(seqstr)
+### **进度条样式标志。**
 
-重置序列元素的所有值。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| seqstr | String |  | 包含新值的序列字符串。 |
-
-### setElementSeparator(sep)
-
-设置元素分隔符字符。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| sep | String |  | 分隔符字符。 |
-
-### setLength(index, length)
-
-设置序列元素的长度。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
-| length | Int |  | 新长度（以字符为单位）。 |
-
-### setPosition(index, position)
-
-设置序列元素的位置。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
-| position | Int |  | 字符串中的新位置。 |
-
-### setValue(index, value, replaceAll=False)
-
-设置序列元素的值。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
-| value | String |  | 新值。 |
-| replaceAll | Bool | False | 如果为 False（默认），则保留前导和尾随空格，否则将分隔符之间的所有空格替换为新值。 |
-
-### trimWhiteSpace(index)
-
-调整元素的位置和长度以去除前导和尾随空格。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| index | Int |  | 元素索引。 |
+| **AFXPROGRESSBAR_PERCENTAGE** | 百分比完成模式。 |
+| --- | --- |
+| **AFXPROGRESSBAR_HORIZONTAL** | 水平显示。 |
+| **AFXPROGRESSBAR_VERTICAL** | 垂直显示。 |
+| **AFXPROGRESSBAR_SCANNER** | 扫描器模式。 |
+| **AFXPROGRESSBAR_ITERATOR** | 迭代器模式。 |
 
 

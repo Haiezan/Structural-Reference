@@ -1,31 +1,30 @@
-# 60.96 Swelling 对象
+# 60.97 TensionCutOff 对象
 
-Swelling 对象用于指定材料的时变体积膨胀。
+TensionCutOff 对象用于指定不同材料模型的拉伸截断，例如 Mohr-Coulomb 塑性模型。
 
 **访问**
 
 ```
-materialApi.materials()[*name*].swelling()
+materialApi.materials()[*name*].mohrCoulombPlasticity().tensionCutOff()
 ```
 
-### 60.96.1 Swelling(...)
+### 60.97.1 TensionCutOff(...)
 
-此方法创建一个 Swelling 对象。
+此方法创建一个 TensionCutOff 对象。
 
 **路径**
 
 ```
-materialApi.materials()[*name*].Swelling
+materialApi.materials()[*name*].mohrCoulombPlasticity().TensionCutOff
 ```
 
 **原型**
 
 ```
-odb_Swelling&
-Swelling(const odb_SequenceSequenceDouble& table,
-         const odb_String& law,
-         bool temperatureDependency,
-         int dependencies);
+odb_TensionCutOff&
+TensionCutOff(const odb_SequenceSequenceDouble& table,
+              bool temperatureDependency,
+              int dependencies);
 ```
 
 **必需参数**
@@ -34,13 +33,7 @@ Swelling(const odb_SequenceSequenceDouble& table,
 
 一个 odb_SequenceSequenceDouble，指定如下所述的项目。
 
-此参数仅在 *law*="INPUT" 时有效。
-
 **可选参数**
-
-*law*
-
-一个 odb_String，指定定义膨胀行为的数据类型。可能的值为"INPUT"和"USER"。默认值为"INPUT"。
 
 *temperatureDependency*
 
@@ -52,7 +45,8 @@ Swelling(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-- 体积膨胀应变率。
+- 拉伸截断应力。
+- 对应拉伸塑性应变值。（输入的第一个表值必须始终为零。）
 - 温度（如果数据依赖温度）。
 - 第一个场变量的值（如果数据依赖场变量）。
 - 第二个场变量的值。
@@ -60,29 +54,17 @@ Swelling(const odb_SequenceSequenceDouble& table,
 
 **返回值**
 
-一个 Swelling 对象。
+一个 TensionCutOff 对象。
 
 **异常**
 
 RangeError。
 
-### 60.96.2 成员
+### 60.97.2 成员
 
-Swelling 对象的成员与 [Swelling](pt02ch60pyo96.md#ker-swelling-swelling-cpp) 方法的参数具有相同的名称和描述。
+TensionCutOff 对象的成员与 [TensionCutOff](pt02ch60pyo97.md#ker-tensioncutoff-tensioncutoff-cpp) 方法的参数具有相同的名称和描述。
 
-此外，Swelling 对象可以具有以下成员：
+### 60.97.3 对应的分析关键字
 
-**原型**
-
-```
-odb_Ratios ratios() const;
-```
-
-*ratios*
-
-一个 [Ratios](pt02ch60pyo86.md) 对象。
-
-### 60.96.3 对应的分析关键字
-
-| [*SWELLING](../key/key-link.md#usb-kws-mswelling) |
+| [*TENSION CUTOFF](../key/key-link.md#usb-kws-mtensioncutoff) |
 | --- |

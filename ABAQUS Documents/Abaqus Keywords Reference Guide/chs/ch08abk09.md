@@ -1,13 +1,13 @@
-# *HYPOELASTIC
+# *HYSTERESIS
 
 
 
 
 
 
-### *HYPOELASTIC指定亚弹性材料特性。
+### *HYSTERESIS指定与率相关的弹性体模型。
 
-此选项用于定义非线性小应变弹性材料。
+此选项用于指定弹性体滞后行为材料模型的蠕变部分。
 
 **产品：** Abaqus/Standard  Abaqus/CAE  
 
@@ -19,24 +19,15 @@
 
 ##### **参考文献：**
 
-- ["亚弹性行为，" Abaqus Analysis User's Guide 第 22.4.1 节](../usb/usb-link.md#usb-mat-chypoelastic)
-- ["UHYPEL，" Abaqus User Subroutines Reference Guide 第 1.1.37 节](../sub/sub-link.md#sub-rtn-uuhypel)
+- ["弹性体中的滞后，" Abaqus Analysis User's Guide 第 22.8.1 节](../usb/usb-link.md#usb-mat-chysteresis)
 
-### **可选参数：**
+**此选项没有关联的参数。**
 
-USER
+### **定义蠕变行为的数据行：**
 
-如果模量在用户子程序 [`UHYPEL`](../sub/sub-link.md#sub-xsl-uhypel) 中定义，则包含此参数。如果模量在数据行上定义，则省略此参数。
+**第一（也是唯一）行：**
 
-### **通过直接指定材料常数来定义亚弹性的数据行：**
-
-**第一行：**
-
-根据需要重复此数据行，以将模量定义为应变不变量的函数。
-
-### **通过用户子程序定义亚弹性：**
-
-当指定了 USER 参数时，此选项不使用数据行。相反，必须使用用户子程序 [`UHYPEL`](../sub/sub-link.md#sub-xsl-uhypel) 来定义亚弹性。
+常见弹性体的这些参数的典型值在 ["弹性体中的滞后，" Abaqus Analysis User's Guide 第 22.8.1 节](../usb/usb-link.md#usb-mat-chysteresis) 中给出。
 
 
 

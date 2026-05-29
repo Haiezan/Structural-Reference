@@ -1,116 +1,320 @@
-# AFXCommand
+# AFXComTableKeyword
 
 
 
 
 
 
-该类是 由模式处理的命令类的抽象基类。
-![](../graphics/gui-afxcommand.png)
+该类管理在命令中作为表格发送的值。
+![](../graphics/gui-afxcomtablekeyword.png)
 
-### AFXCommand(mode, method, objectName='', registerQuery=False)
+### AFXComTableKeyword(command, name, isRequired=False, minLength=0, maxLength=-1, opts=0)
 
 构造函数。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| mode | AFXMode |  | 宿主模式。 |
-| method | String |  | 方法。 |
-| objectName | String | '' | 对象名称。 |
-| registerQuery | Bool | False | 如果在为 GUI 使用命令时应注册查询，则为 True。 |
-
-### activate()
-
-激活命令；活动命令将在命令生成期间被处理。
-
-### deactivate()
-
-停用命令；非活动命令将在命令生成期间不被处理。
-
-### getCommandString()
-
-根据活动关键字的当前值返回命令字符串。
-
-### getExpandedObjectName()
-
-返回已扩展的对象名称，其中所有"%s"都被当前名称替换。
-
-### getKeyword(name)
-
-返回具有给定名称的关键字（如果未找到则返回 0）。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
+| command | AFXCommand |  | 宿主命令。 |
 | name | String |  | 关键字名称。 |
+| isRequired | Bool | False | 如果此关键字是必需参数，则为 True。 |
+| minLength | Int | 0 | 最小（也是默认）行长度。 |
+| maxLength | Int | -1 | 最大行长度（-1 表示无限制）。 |
+| opts | Int | 0 | 选项。 |
 
-### getKeyword(index)
+### equal(index, a, b)
 
-返回给定索引处的关键字（如果索引超出范围则返回 0）。
+如果两个表格元素值比较相等，则返回 True（未使用索引）。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| index | Int |  | 关键字索引（从零开始）。 |
+| index | Int |  | 元素索引（未使用）。 |
+| a | String |  | 第一个值。 |
+| b | String |  | 第二个值。 |
 
-### getMethod()
+### getColumnStyle(index)
 
-返回命令的方法。
-
-### getNumKeywords()
-
-返回关键字数量。
-
-### getObjectName()
-
-返回对象名称（未扩展，可能包含"%s"）。
-
-### isActive()
-
-如果命令处于活动状态，则返回 True。
-
-### isQueryNeeded()
-
-如果命令需要为 kernel 状态注册查询，则返回 True。
-
-### isRequired()
-
-如果此命令即使没有任何关键字被修改也将被发送，则返回 True，否则返回 False。
-
-### setKeywordValuesToDefaults(ignoreUnspecified=False)
-
-将所有关键字的值设置为其默认值。
+返回列元素的样式。永远不会返回 AFXTABLE_STYLE_DEFAULT！
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| ignoreUnspecified | Bool | False | 如果默认值未指定，则忽略设置值。 |
+| index | Int |  | 列索引。 |
 
-### setKeywordValuesToPrevious()
+### getColumnType(index)
 
-将所有关键字的值设置为其之前的值。
-
-### setMethod(method)
-
-设置命令的方法。
+返回列元素的类型。永远不会返回 AFXTABLE_TYPE_DEFAULT！
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| method | String |  | 方法。 |
+| index | Int |  | 列索引。 |
 
-### setObjectName(objectName)
+### getDefaultStyle()
 
-设置对象名称。
+返回表格元素的默认样式。
+
+### getDefaultType()
+
+返回表格元素的默认类型。
+
+### getDefaultValues()
+
+返回此表格的默认值。
+
+### getFormattedValue(row, column)
+
+返回适合放置在命令中的表格元素的格式化值。如果元素具有 AFXTABLE_EVALUATE 样式且其内容无效，则会抛出异常。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| objectName | String |  | 对象名称。 |
+| row | Int |  | 行索引。 |
+| column | Int |  | 列索引。 |
 
-### setRequired(val)
+### getMaxNumColumns()
 
-将此命令设置为必需或可选；如果为 True，命令将始终被发送；如果为 False，命令将仅在其有关键字被修改或没有任何关键字时被发送。
+返回最大列数，或 -1 表示无界。
+
+### getMinNumColumns()
+
+返回最小列数。
+
+### getNumColumns(row)
+
+返回该行中的列数。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| val | Bool |  |  |
+| row | Int |  | 行索引。 |
 
-### syncKeywordPreviousValues()
+### getNumRows()
 
-同步所有关键字的当前值和之前的值。
+返回表格中的行数。
 
-### verify()
+### getRow(row)
 
-如果任何关键字包含无效数据则抛出异常。
+返回包含表格行内容的字符串。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| row | Int |  | 行索引。 |
+
+### getTypeName()
+
+返回表格关键字类型的名称。
+
+实现 AFXKeyword。
+
+在 AFXTableKeyword 中重新实现。
+
+### getValue(row, column)
+
+返回表格元素的值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| row | Int |  | 行索引。 |
+| column | Int |  | 列索引。 |
+
+### getValueAsDouble()
+
+以浮点数返回关键字的值；失败时返回 False。
+
+### getValueAsInt()
+
+以整数返回关键字的值；失败时返回 False。
+
+### getValueAsString()
+
+返回表示命令中当前关键字值的格式化字符串。
+
+实现 AFXKeyword。
+
+### getValueForBlank(column)
+
+返回该列空白替换的元素值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| column | Int |  | 列索引。 |
+
+### getValues()
+
+返回包含元组元素值的字符串。由用户输入。
+
+### getValuesForBlanks()
+
+返回所有表格列空白替换值的字符串。
+
+### insertColumns(index, numColumns)
+
+从给定索引开始插入列。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 起始索引。 |
+| numColumns | Int |  | 要插入的列数。 |
+
+### insertRows(index, numRows)
+
+从给定索引开始插入行。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 起始索引。 |
+| numRows | Int |  | 要插入的行数。 |
+
+### isValueChanged()
+
+如果关键字值与其之前的值不同，则返回 True。
+
+实现 AFXKeyword。
+
+### removeColumns(index, numColumns)
+
+从给定索引开始移除列。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 起始索引。 |
+| numColumns | Int |  | 要移除的列数。 |
+
+### removeRows(index, numRows)
+
+从给定索引开始移除行。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 起始索引。 |
+| numRows | Int |  | 要移除的行数。 |
+
+### setColumnStyle(index, style)
+
+设置列元素的样式。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 列索引。 |
+| style | Int |  | 新列样式。 |
+
+### setColumnType(index, type)
+
+设置列元素的类型。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| index | Int |  | 列索引。 |
+| type | Int |  | 新列类型。 |
+
+### setDefaultStyle(style)
+
+设置表格元素的默认样式。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| style | Int |  | 新默认样式。 |
+
+### setDefaultType(type)
+
+设置表格元素的默认类型。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| type | Int |  | 新默认类型。 |
+
+### setDefaultValues(values)
+
+设置此表格的默认值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| values | String |  | 带默认值的序列字符串。 |
+
+### setMaxNumColumns(length)
+
+设置最大列数。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| length | Int |  | 新最大列数，或 -1 表示无界。 |
+
+### setMinNumColumns(length)
+
+设置最小列数。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| length | Int |  | 新最小长度。 |
+
+### setNumColumnsRange(minLength, maxLength)
+
+设置列数的允许范围。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| minLength | Int |  | 新最小列数。 |
+| maxLength | Int |  | 新最大列数，或 -1 表示无界。 |
+
+### setRow(row, seq)
+
+设置表格行的内容。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| row | Int |  | 行索引。 |
+| seq | String |  | 带元素的序列。 |
+
+### setValue(row, column, value)
+
+设置表格元素的值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| row | Int |  | 行索引。 |
+| column | Int |  | 列索引。 |
+| value | String |  | 新值。 |
+
+### setValueForBlank(column, value)
+
+设置该列空白替换的元素值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| column | Int |  | 列索引。 |
+| value | String |  | 新值。 |
+
+### setValues(values)
+
+设置所有表格元素的值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| values | String |  | 带新值的表格字符串。 |
+
+### setValuesForBlanks(values)
+
+设置所有表格列空白替换的值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| values | String |  | 包含逗号分隔值的字符串。 |
+
+### setValueToDefault(ignoreUnspecified=False)
+
+将关键字值设置为其默认值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| ignoreUnspecified | Bool | False | 如果默认值是未指定的值，是否应忽略。 |
+
+### setValueToPrevious()
+
+将关键字值设置为其之前的值。
+
+实现 AFXKeyword。
+
+### syncPreviousValue()
+
+将关键字之前的值设置为其当前值。
+
+实现 AFXKeyword。
+
+### 类标志
+
+### **消息 ID。**
+
+| **ID_TABLE** | AFXTable widgets 的 ID。 |
+| --- | --- |
+| **ID_VALUE** | 交换数组字符串的 widgets 的 ID。 |
+| **ID_PRINTSNIPPET** | 用于调试。 |
+
+### 全局标志
+
+### **表格选项的标志。**
+
+| **AFXTABLE_TYPE_ANY** | 接受任何类型。 |
+| --- | --- |
+| **AFXTABLE_TYPE_DEFAULT** | 列类型与表格默认类型相同。 |
+| **AFXTABLE_TYPE_INT** | 列存储整数。 |
+| **AFXTABLE_TYPE_FLOAT** | 列存储浮点数。 |
+| **AFXTABLE_TYPE_STRING** | 列存储字符串值。 |
+| **AFXTABLE_TYPE_BOOL** | 列存储 True 或 False。 |
+| **AFXTABLE_TYPE_MASK** | 列类型的掩码。 |
+| **AFXTABLE_ALLOW_EMPTY** | 允许列元素的空值。 |
+| **AFXTABLE_DEFAULT_IF_EMPTY** | 始终用默认值替换空值。 |
+| **AFXTABLE_EVALUATE** | 求值整数和浮点元素。 |
+| **AFXTABLE_STYLE_DEFAULT** | 使用表格默认列样式。 |
+| **AFXTABLE_STYLE_MASK** | 列样式的掩码。 |
 
 
 

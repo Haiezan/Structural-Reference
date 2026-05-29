@@ -1,87 +1,173 @@
-# 31.11 MeshFaceArray 对象
+# 32.1 DataObject 对象
 
-MeshFaceArray 是 [MeshFace](pt01ch31pyo08.md) 对象的序列。
+DataObject 对象的实例被传递给每个回调。DataObject 对象没有方法。DataObject 对象的成员取决于对象的类型。所有 DataObject 实例都具有以下成员，无论类型如何：
+- *clientHost*
+- *clientName*
+- *phase*
+- *processId*
+- *threadId*
+- *timeStamp*
 
-**访问**
+可能的 DataObject 类型及各类型的附加成员如下：
 
-```
-import part
-mdb.models[*name*].parts[*name*].elementFaces
-import assembly
-mdb.models[*name*].rootAssembly.allinstances.elementFaces
-mdb.models[*name*].rootAssembly.instances[*name*].elementFaces
-```
+** ABORTED **
 
-### 31.11.1 MeshFaceArray(...)
+- *message*
 
-此方法创建一个 MeshFaceArray 对象。
+** COMPLETED **
 
-**路径**
+- *message*
 
-```
-mesh.MeshFaceArray
-```
+** END_STEP **
 
-**必要参数**
+- *stepId*
 
-*faces*
+** ERROR **
 
-[MeshFace](pt01ch31pyo08.md) 对象列表。
+- *message*
 
-**可选参数**
+** HEADING **
 
-无。
+- *heading*
 
-**返回值**
+** MONITOR_DATA **
 
-MeshFaceArray 对象。
+- *dof*
+- *node*
+- *nset*
+- *procedure*
+- *time*
+- *value*
 
-**异常**
+** ODB_FILE **
 
-无。
+- *file*
 
-### 31.11.2 getSequenceFromMask(...)
+** STARTED **
 
-此方法返回使用指定 *mask* 标识的 MeshFaceArray 中的对象。当涉及大量对象时，此方法效率很高。
+- 无附加成员。
 
-**必要参数**
+** STATUS **
 
-*mask*
+- *attempts*
+- *equilibrium*
+- *increment*
+- *iterations*
+- *severe*
+- *step*
+- *stepTime*
+- *timeIncrement*
+- *totalTime*
 
-一个字符串，指定对象或多个对象。
+** STEP **
 
-**可选参数**
+- *stepId*
+- *stepName*
 
-无。
+** WARNING **
 
-**返回值**
+- *message*
 
-MeshFaceArray 对象。
+### 32.1.1 成员
 
-**异常**
+DataObject 对象具有以下成员：
 
-如果结果序列为空，则引发异常。
+*phase*
 
-```
-Error: The mask results in an empty sequence
-```
+一个 SymbolicConstant，指定分析阶段。可能的值为 BATCHPRE_PHASE、PACKAGER_PHASE、STANDARD_PHASE、EXPLICIT_PHASE、CALCULATOR_PHASE 和 UNKNOWN_PHASE。
 
-### 31.11.3 getMask()
+*processId*
 
-此方法返回指定对象或多个对象的字符串。
+一个整数，指定分析产品的进程 ID。
 
-**参数**
+*threadId*
 
-无。
+一个整数，指定分析产品的线程 ID。线程用于并行或多处理；在大多数情况下 *threadId* 设置为零。
 
-**返回值**
+*timeStamp*
 
-一个字符串，指定对象或多个对象。
+一个整数，指定消息发送的时间（自 1970 年 1 月 1 日 00:00:00 UTC 以来的秒数）。
 
-**异常**
+*attempts*
 
-无。
+一个整数，指定在此步骤中达到平衡的尝试次数。
 
-### 31.11.4 成员
+*dof*
 
-MeshFaceArray 对象没有成员。
+一个整数，指定请求监测输出的自由度。
+
+*equilibrium*
+
+一个整数，指定在此增量期间进行的平衡迭代次数。
+
+*increment*
+
+一个整数，指定分析的增量。
+
+*iterations*
+
+一个整数，指定步骤中的迭代次数。
+
+*node*
+
+一个整数，指定请求监测输出的节点号。
+
+*severe*
+
+一个整数，指定在此增量期间完成的严重不连续迭代次数。
+
+*step*
+
+一个整数，指定当前步骤号。步骤号 1 对应第一个步骤。
+
+*stepId*
+
+一个整数，指定步骤的 ID。
+
+*stepTime*
+
+一个 Float，指定当前增量对应的步骤时间。
+
+*time*
+
+一个 Float，指定与监测数据对应的总时间。
+
+*timeIncrement*
+
+一个 Float，指定当前步骤中使用的時間增量。
+
+*totalTime*
+
+一个 Float，指定分析中完成的总时间。
+
+*value*
+
+一个 Float，指定请求监测的自由度的当前值。
+
+*clientHost*
+
+一个字符串，指定运行分析的机器的主机名。
+
+*clientName*
+
+一个字符串，指定响应回调函数的客户端名称。可能的值为"BatchPre"、"Packager"、"Standard"、"Explicit"和"Calculator"。
+
+*file*
+
+一个字符串，指定输出数据库的完整路径。
+
+*heading*
+
+一个字符串，指定作业标题。
+
+*message*
+
+一个字符串，指定作业标题。
+
+*nset*
+
+一个字符串，指定为监测输出指定的节点集。
+
+*stepName*
+
+一个字符串，指定步骤的名称。

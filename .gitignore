@@ -5,3 +5,5 @@
 *.pyc
 *.txt
 *.json
+.superpowers/
+.chs-alignment-backups/

@@ -1,97 +1,101 @@
-# *SOILS
+# *SOLID SECTION
 
 
 
 
 
-### *SOILS充液多孔介质的有效应力分析。
+### *SOLID SECTION为实体、无穷元、声学、粒子和桁架单元指定元素属性。
 
-此选项用于指定部分或完全饱和充液多孔介质的瞬态（固结）或稳态响应分析。
+此选项用于定义实体（连续体）单元、无穷元、声学有限元和无穷元、粒子单元和桁架单元的属性。
 
-**产品：**Abaqus/Standard  Abaqus/CAE
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据
+**类型：**模型数据
 
-**级别：**步
+**级别：**部件、部件实例
 
-**Abaqus/CAE：**Step模块
+**Abaqus/CAE：**Property模块
 
 ##### **参考：**
 
-- ["Coupled pore fluid diffusion and stress analysis," Section 6.8.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-acoupdiffstress)
-- ["Rate-dependent plasticity: creep and swelling," Section 23.2.4 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-mat-cratedepcreep)
+- ["Solid (continuum) elements," Section 28.1.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-esolidcont)
+- ["Infinite elements," Section 28.3.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-einfinite)
+- ["Continuum particle elements," Section 33.2.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-esphelem)
+- ["Truss elements," Section 29.2.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-etruss)
+
+### **必需参数：**
+
+COMPOSITE
+
+此参数仅适用于Abaqus/Standard分析。
+
+此参数仅可用于仅具有位移自由度的三维砖块实体单元。如果实体由几层材料组成，则包含此参数。
+
+COMPOSITE和MATERIAL参数是互斥的。
+
+ELSET
+
+将此参数设置为包含要定义材料行为的单元的单元集名称。
+
+MATERIAL
+
+将此参数设置为要用于这些单元的材料名称。
+
+COMPOSITE和MATERIAL参数是互斥的。
+
+REF NODE
+
+此参数仅对广义平面应变单元和声学无穷元是必需的；对于所有其他单元类型，它被忽略。
+
+将此参数设置为参考节点的节点号或包含参考节点的节点集名称。如果选择节点集名称，则该节点集必须恰好包含一个节点。
+
+### **各向异性材料的必需参数；各向同性材料的可选参数：**
+
+ORIENTATION
+
+将此参数设置为方向定义（["Orientations," Section 2.2.5 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-corientation)）的名称，用于定义此集合中单元材料计算的局部坐标系。当材料是各向异性时需要此参数。
+
+对于复合实体，此方向连同在层数据行上指定的方向角，也可用于定义个别层中的材料方向。或者，可以通过在每个层数据行上引用方向定义来指定材料方向。在这种情况下，将忽略ORIENTATION参数上的引用。任何没有方向引用或角度指定的层定义行将使用在关键字行上定义的截面方向。
 
 ### **可选参数：**
 
-ALLSDTOL
+CONTROLS
 
-包含此参数以指示将在此步中激活自适应自动阻尼算法。将此参数设置为稳定能量与总应变能量的最大允许比值。初始阻尼因子通过STABILIZE参数或FACTOR参数指定。然后，该阻尼因子将基于收敛历史和ALLSDTOL值在步中调整。如果此参数设置为零，则不会激活自适应自动阻尼算法；将在整个步中使用恒定阻尼因子。如果此参数包含但未指定值，则默认值为0.05。如果省略此参数但包含具有耗散能量分数默认值的STABILIZE参数，则自适应自动阻尼算法将自动激活，ALLSDTOL=0.05。
+在Abaqus/Explicit分析中，将此参数设置为截面控制定义（参见["Section controls," Section 27.1.4 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-esectioncontrol)）的名称，用于指定非默认沙漏控制公式选项或比例因子。[*SECTION CONTROLS](ch18abk01.md)选项可用于为二维和三维实体单元选择沙漏控制和公式精度阶数，以及为8节点砖块单元选择运动学公式。
 
-此参数必须与STABILIZE参数配合使用（参见["Solving nonlinear problems," Section 7.1.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-anonlineareqns)）。
+在Abaqus/Standard分析中，将此参数设置为截面控制定义（参见["Section controls," Section 27.1.4 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-elm-esectioncontrol)）的名称，用于指定增强沙漏控制公式或用于后续的Abaqus/Explicit导入分析。
 
-CETOL
+LAYUP
 
-此参数将调用自动时间增量。如果省略UTOL、DELTMX和CETOL参数，将使用固定时间增量。
+此参数仅在使用COMPOSITE参数时相关。
 
-此参数仅在材料响应包含时间相关蠕变行为时有意义；CETOL控制蠕变积分精度。将此参数设置为在增量开始和结束时从蠕变应变率计算的蠕变应变增量的最大允许差值（参见["Rate-dependent plasticity: creep and swelling," Section 23.2.4 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-mat-cratedepcreep)）。
+将此参数设置为复合铺层（参见[Abaqus/CAE User's Guide第23章，"复合铺层"](../usi/usi-link.md#usi-adv-layups)）的名称。Abaqus/CAE使用此名称来标识包含实体截面的复合铺层。
 
-容差可以通过选择可接受的应力误差容差并除以典型弹性模量来计算。
+ORDER
 
-CONSOLIDATION
+此参数仅可用于Abaqus/Explicit中的声学无穷元。它定义将用于解析无穷方向声场变化的九阶多项式的数量。将此参数设置为*N*，以指示将使用九阶多项式集合的前*N*个成员。默认值为ORDER=10，这是Abaqus/Standard中始终使用的值。
 
-包含此参数以选择瞬态（固结）分析。省略此参数以选择稳态分析。
+STACK DIRECTION
 
-CONTINUE
+此参数仅适用于Abaqus/Standard分析。
 
-设置CONTINUE=NO（默认）以指定此步不会从前一个通用步的结果中继承阻尼因子。在这种情况下，初始阻尼因子将基于声明的阻尼强度和步第一增量解重新计算，或可以直接指定。
+此参数仅可用于复合单元。它定义相对于一对单元面的堆叠方向。将此参数设置为1、2或3。默认值为STACK DIRECTION=3。
 
-设置CONTINUE=YES以指定此步将继承紧邻前一个通用步结束时的阻尼因子。
+SYMMETRIC
 
-此参数必须与ALLSDTOL和STABILIZE参数配合使用。
+此参数仅在使用COMPOSITE参数时相关。
 
-DELTMX
+如果复合壳中的层关于中心芯对称，则包含此参数。如果使用分布（["Distribution definition," Section 2.8.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-adefiningdistributions)）在任何复合层上定义了空间变化的方向角，则不能使用此参数。
 
-此参数将调用自动时间增量。将此参数设置为在增量内允许的最大温度变化。Abaqus/Standard将限制时间步长以确保在步的任何增量内任何节点都不会超过此值。如果在瞬态分析中省略此参数、CETOL参数和UTOL参数，将使用固定时间增量，其时间增量等于初始时间增量。
-
-END
-
-此参数仅对瞬态分析有意义。设置END=PERIOD（默认）以分析指定时间段。设置END=SS以在达到稳态时结束步。
-
-CREEP
-
-设置CREEP=NONE以指定即使已定义蠕变或粘弹性材料属性，在此步中也不会发生蠕变或粘弹性响应。
-
-FACTOR
-
-如果由于局部不稳定预期问题可能不稳定，且Abaqus/Standard计算的阻尼因子不合适，则将此参数设置为自动阻尼算法（参见["Solving nonlinear problems," Section 7.1.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-anonlineareqns)）中使用的阻尼因子。此参数必须与STABILIZE和CONSOLIDATION参数配合使用，并覆盖基于耗散能量分数值对阻尼因子的自动计算。
-
-HEAT
-
-如果模型中有使用耦合温度-孔隙压力单元的区域，则此参数是相关的；它指定是否在这些区域中建立热传递效应模型。
-
-如果模型中仅使用耦合孔隙压力-位移单元，则此参数不相关。
-
-设置HEAT=YES（默认）以指定将在这些区域中建立热传递效应模型。在这种情况下，Abaqus/Standard将联立求解热传递方程、机械平衡方程和流体流动连续性方程。
-
-设置HEAT=NO以指定不会在这些区域中建立热传递模型。
-
-STABILIZE
-
-如果由于局部不稳定预期问题可能不稳定，则包含此参数以使用自动稳定。将此参数设置为自动阻尼算法（参见["Solving nonlinear problems," Section 7.1.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-anonlineareqns)）的耗散能量分数。如果省略此参数，则不会激活稳定算法。如果此参数包含但未指定值，则耗散能量分数的默认值为2×10^-4，并且自适应自动阻尼算法将默认在此步中激活，ALLSDTOL=0.05；设置ALLSDTOL=0以停用自适应自动阻尼算法。如果使用FACTOR参数，则任何耗散能量分数值都将被阻尼因子覆盖。
-
-此参数只能与CONSOLIDATION参数配合使用。
-
-UTOL
-
-此参数将调用自动时间增量。如果省略UTOL、DELTMX和CETOL参数，将使用固定时间增量。
-
-将此参数设置为瞬态固结分析中任何增量允许的最大孔隙压力变化（以压力单位计）。Abaqus/Standard将限制时间步长以确保在分析的任何增量内任何节点（具有边界条件的节点除外）都不会超过此值。
-
-在稳态分析中，将此值设置为任何非零值（以激活自动时间增量）。
-
-### **定义土壤分析增量设置的数据行：**
+### **定义均质实体单元、无穷元、声学元、粒子或桁架元的数据行：**
 
 **第一行（也是唯一行）：**
+
+### **定义复合实体的数据行：**
+
+**第一行：**
+
+根据需要重复此数据行以定义复合实体每层的属性。如果包含SYMMETRIC参数，则仅指定从底层到中面的一半层。
 
 
 

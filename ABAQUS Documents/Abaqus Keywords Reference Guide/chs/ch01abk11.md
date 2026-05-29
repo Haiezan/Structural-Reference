@@ -1,33 +1,29 @@
-# *AQUA
+# *ANNEAL
 
 
 
 
 
-### *AQUA定义用于加载浸没梁型结构的流体变量。
+### *ANNEAL对结构进行退火处理。
 
-此选项用于定义流体属性和稳态流速度。
+此选项用于通过将速度和所有适当的状态变量设置为零来对结构进行退火处理。
 
-**产品：**Abaqus/Aqua  
+**产品：**Abaqus/Explicit  Abaqus/CAE  
 
-**类型：**模型数据
+**类型：**历史数据
 
-**级别：**模型
+**级别：**Step
+
+**Abaqus/CAE：**Step模块
 
 ##### **参考：**
 
-- ["Abaqus/Aqua分析，" Abaqus Analysis User's Guide第6.11.1节](../usb/usb-link.md#usb-anl-aaqua)
+- ["退火程序，" Abaqus Analysis User's Guide第6.12.1节](../usb/usb-link.md#usb-anl-aanneal)
 
 ### **可选参数：**
 
-INPUT
+TEMPERATURE
 
-将此参数设置为包含此选项数据行的备用输入文件名称。参见["输入语法规则，" Abaqus Analysis User's Guide第1.2.1节](../usb/usb-link.md#usb-int-iinputsyntax)，了解此类文件名的语法。如果省略此参数，则假定数据跟在关键字行之后。
+将此参数设置为退火完成后所有节点将被设置到的温度，![](../graphics/key_eqn00075.gif)。默认值为在退火完成后保持模型中所有节点的当前温度。
 
-### **定义流体属性和稳态流的数据行：**
-
-**第一行：**
-
-**第二行：**
-
-根据需要重复第二数据行，以将稳态流速度定义为高度和空间坐标的函数。参见["输入语法规则，" Abaqus Analysis User's Guide第1.2.1节](../usb/usb-link.md#usb-int-iinputsyntax)，了解如何将属性定义为多个自变量的函数。
+**此选项没有关联的数据行。**

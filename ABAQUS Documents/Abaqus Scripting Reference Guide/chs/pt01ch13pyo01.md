@@ -1,8 +1,6 @@
-# 13.2 AdjustPoints 对象
+# 13.1 Constraint 对象
 
-AdjustPoints 约束对象用于将点（节点）调整到曲面。
-
-AdjustPoints 对象派生自 [Constraint](pt01ch13pyo01.md) 对象。
+Constraint 对象是其他约束对象的抽象基类型。Constraint 对象没有显式构造函数。Constraint 对象的成员是所有派生自 Constraint 的对象共有的。
 
 **访问权限**
 
@@ -11,74 +9,69 @@ import interaction
 mdb.models[*name*].constraints[*name*]
 ```
 
-### 13.2.1 AdjustPoints(...)
+### 13.1.1 resume()
 
-此方法创建一个 AdjustPoints 对象。
+此方法恢复先前被抑制的约束。
 
-**路径**
+**参数**
 
-```
-mdb.models[*name*].AdjustPoints
-```
+无。
+
+**返回值**
+
+无。
+
+**异常**
+
+无。
+
+### 13.1.2 suppress()
+
+此方法抑制约束。
+
+**参数**
+
+无。
+
+**返回值**
+
+无。
+
+**异常**
+
+无。
+
+### 13.1.3 delete(...)
+
+此方法允许您删除现有约束。
 
 **必需参数**
+
+*indices*
+
+整数序列，指定要删除的每个约束的索引。
+
+**可选参数**
+
+无。
+
+**返回值**
+
+无。
+
+**异常**
+
+无。
+
+### 13.1.4 成员
+
+Constraint 对象具有以下成员：
 
 *name*
 
 字符串，指定约束存储库键。
 
-*surface*
-
-[Region](pt01ch45pyo03.md) 对象，指定 *controlPoints* 要调整到的曲面。
-
-*controlPoints*
-
-[Region](pt01ch45pyo03.md) 对象，指定约束控制点。
-
-**可选参数**
-
-无。
-
-**返回值**
-
-AdjustPoints 对象。
-
-**异常**
-
-无。
-
-### 13.2.2 setValues(...)
-
-此方法修改 AdjustPoints 对象。
-
-**必需参数**
-
-无。
-
-**可选参数**
-
-`setValues` 的可选参数与 [AdjustPoints](pt01ch13pyo02.md#ker-adjustpoints-adjustpoints-pyc) 方法的参数相同，但 *name* 参数除外。
-
-**返回值**
-
-无。
-
-**异常**
-
-无。
-
-### 13.2.3 成员
-
-AdjustPoints 对象的成员与 [AdjustPoints](pt01ch13pyo02.md#ker-adjustpoints-adjustpoints-pyc) 方法的参数具有相同的名称和描述。
-
-此外，AdjustPoints 对象还有以下成员：
-
 *suppressed*
 
 布尔值，指定约束是否被抑制。默认值为 OFF。
-
-### 13.2.4 对应的分析关键字
-
-| [*ADJUST](../key/key-link.md#usb-kws-madjust) |
-| --- |
 

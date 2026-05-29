@@ -1,82 +1,83 @@
-# AFXSymConstKeyword
+# AFXTarget
 
 
 
 
 
-此类专为具有符号常量值的命令关键字而设计。
-![](../graphics/gui-afxsymconstkeyword.png)
+此类是所有目标对象的基类。
+![](../graphics/gui-afxtarget.png)
 
-### AFXSymConstKeyword(command, name, isRequired=False, defaultValue=0)
+### AFXTarget()
 
 构造函数。
+
+### connect(value)
+
+将数据与字符串变量关联。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| command | AFXCommand |  | 宿主命令。 |
-| name | String |  | 关键字名称。 |
-| isRequired | Bool | False | 如果关键字是命令的必需参数，则为 True。 |
-| defaultValue | Int | 0 | 默认值。 |
+| value | String |  | 要关联的变量。 |
+
+### connect(value)
+
+将数据与浮点变量关联。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| value | Float |  | 要关联的变量。 |
+
+### connect(value)
+
+将数据与整数变量关联。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| value | Int |  | 要关联的变量。 |
+
+### getSelector()
+
+返回此目标对象的消息 ID。
+
+### getTarget()
+
+返回此目标对象的目标。
+
+### getType()
+
+返回目标类型；此方法在 Abaqus 6.6 中已弃用，其使用应由 getTypeName() 替代。
 
 ### getTypeName()
 
-返回关键字类型的名称。
+返回目标类型的名称。
 
-从 AFXIntKeyword 重新实现。
+在 AFXFloatTarget、AFXIntTarget 和 AFXStringTarget 中实现。
 
-### getValueAsString()
+### setSelector(msgId)
 
-返回表示关键字当前值的文本字符串。
-
-从 AFXIntKeyword 重新实现。
-
-### setDefaultValue(defaultValue)
-
-设置关键字的默认值。
+设置此目标对象的消息 ID。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| defaultValue | Int |  | 默认值。 |
+| msgId | Int |  | 消息 ID。 |
 
-### setDefaultValueByString(defaultValueString)
+### setTarget(target)
 
-设置关键字的默认值（如果给定的文本字符串有效则返回 True）。
+设置此目标对象的目标。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| defaultValueString | String |  | 文本字符串形式的默认值。 |
+| target | FXObject |  | 目标。 |
 
-### setDefaultValueByString(defaultValueString)
+### 类标志
 
-设置关键字的默认值（如果给定的文本字符串有效则返回 True）。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
-| defaultValueString | String |  | 文本字符串形式的默认值。 |
+### **消息 ID。**
 
-### setValue(newValue)
+| **ID_LAST** | 最后一个 ID。 |
+| --- | --- |
 
-设置关键字的当前值。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
-| newValue | Int |  | 新值。 |
+### **目标类型的标志。**
 
-### setValueByString(newValueString)
-
-设置关键字的当前值（如果给定的文本字符串有效则返回 True）。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
-| newValueString | String |  | 文本字符串形式的新值。 |
-
-### setValueByString(newValueString)
-
-设置关键字的当前值（如果给定的文本字符串有效则返回 True）。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
-| newValueString | String |  | 文本字符串形式的新值。 |
-
-### setValueToDefault(ignoreUnspecified=False)
-
-将关键字值设置为其默认值。
-| **参数** | **类型** | **默认值** | **描述** |
-| --- | --- | --- | --- |
-| ignoreUnspecified | Bool | False | 如果默认值为 unspecified，则忽略设置值。 |
+| **UNSPECIFIED** | 未指定。 |
+| --- | --- |
+| **INT** | 整数。 |
+| **FLOAT** | 浮点数。 |
+| **STRING** | 字符串。 |
 
 
 

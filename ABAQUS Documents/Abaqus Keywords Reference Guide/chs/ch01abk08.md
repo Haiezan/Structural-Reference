@@ -1,47 +1,39 @@
-# *ADAPTIVE MESH REFINEMENT
+# *ADJUST
 
 
 
 
 
-### *ADAPTIVE MESH REFINEMENT在Eulerian域中激活自适应网格细化。
+### *ADJUST调整用户指定的节点坐标以使其位于给定曲面上。
 
-此选项用于在Eulerian域中激活自适应网格细化，并指定该域中的细化标准。
+此选项用于调整用户指定的节点坐标，以使节点位于给定曲面上。
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
 **类型：**模型数据
 
-**级别：**模型
+**级别：**Part、Part instance、Assembly
+
+**Abaqus/CAE：**Interaction模块
 
 ##### **参考：**
 
-- ["Eulerian分析，" Abaqus Analysis User's Guide第14.1.1节](../usb/usb-link.md#usb-anl-aeuleriananalysis)
-- ["在Eulerian域中定义自适应网格细化，" Abaqus Analysis User's Guide第14.1.4节](../usb/usb-link.md#usb-anl-aeulerianadaptivemeshrefinement)
-- [*EULERIAN SECTION](ch05abk33.md)
+- ["调整节点坐标，" Abaqus Analysis User's Guide第2.1.6节](../usb/usb-link.md#usb-int-madjust)
 
 ### **必需参数：**
 
-ELSET
+NODE SET
 
-将此参数设置为应用自适应网格细化的元素集名称。
+将此参数设置为包含要调整的节点的节点集名称。
+
+SURFACE
+
+将此参数设置为节点要调整到的曲面名称。
 
 ### **可选参数：**
 
-LEVEL
+ORIENTATION
 
-将此参数设置为细化的最大级别数。默认值为1。
+将此参数设置为方向定义的名称（参见["方向，" Abaqus Analysis User's Guide第2.2.5节](../usb/usb-link.md#usb-int-corientation)），该定义给出了调整节点的方向。如果省略此参数，节点将沿指定曲面的法线方向调整。仅支持矩形、圆柱形和球形方向定义。作为方向定义一部分的额外旋转将被忽略。
 
-COARSENING
-
-设置COARSENING=YES（默认值）以指定一旦细化标准不再满足，可以移除细化。
-
-设置COARSENING=NO以指定即使细化标准不再满足，也不能移除细化。
-
-RATIO
-
-将此参数设置为网格细化期间元素数量最大增加量与指定元素集中原始元素数量的比率。默认值为8.0。
-
-### **定义网格细化中使用的标准的数据行：**
-
-**第一行：**
+**此选项没有关联的数据行。**

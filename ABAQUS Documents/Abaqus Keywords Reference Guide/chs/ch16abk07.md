@@ -1,4 +1,4 @@
-# *PHYSICAL CONSTANTS
+# *PERMANENT MAGNETIZATION
 
 
 
@@ -8,45 +8,34 @@
 
 
 
-### *PHYSICAL CONSTANTS指定物理常数。
+### *PERMANENT MAGNETIZATION指定永久磁化。
 
-此选项用于定义分析所需的物理常数；由于Abaqus没有内置单位，因此没有提供默认值。如果分析所需的物理常数未给出，Abaqus将发出致命错误消息。常数的单位必须与剩余输入数据一致。
+此选项用于通过永磁体的矫顽力为瞬态电磁或静磁分析中的电磁单元定义永久磁化。此选项只能与[*MAGNETIC PERMEABILITY](ch13abk01.md)选项结合使用，并可选择与[*NONLINEAR BH](ch14abk14.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  
 
 **类型：**模型数据  
 
 **级别：**模型  
 
-**Abaqus/CAE：**模型属性
-
 ##### **参考：**
 
-- ["非耦合热传递分析，" Abaqus Analysis User's Guide第6.5.2节](../usb/usb-link.md#usb-anl-aheattransfer)
-- ["质量扩散分析，" Abaqus Analysis User's Guide第6.9.1节](../usb/usb-link.md#usb-anl-amassdiffusion)
-- ["流体腔定义，" Abaqus Analysis User's Guide第11.5.2节](../usb/usb-link.md#usb-anl-afluidcavities)
-- ["率相关塑性：蠕变和膨胀，" Abaqus Analysis User's Guide第23.2.4节](../usb/usb-link.md#usb-mat-cratedepcreep)
-- ["扩散率，" Abaqus Analysis User's Guide第26.4.1节](../usb/usb-link.md#usb-mat-cdiffusivity)
-- ["溶解度，" Abaqus Analysis User's Guide第26.4.2节](../usb/usb-link.md#usb-mat-csolubility)
-- ["热接触属性，" Abaqus Analysis User's Guide第37.2.1节](../usb/usb-link.md#usb-cni-athermalinteraction)
-- ["腔体辐射，" Abaqus Analysis User's Guide第41.1.1节](../usb/usb-link.md#usb-cni-acavityradiation)
+- ["磁导率，" Abaqus Analysis User's Guide第26.5.3节](../usb/usb-link.md#usb-mat-cmagpermeability)
+- ["涡流分析，" Abaqus Analysis User's Guide第6.7.5节](../usb/usb-link.md#usb-anl-aeddycurrent)
+- ["静磁分析，" Abaqus Analysis User's Guide第6.7.6节](../usb/usb-link.md#usb-anl-amagnetostatic)
 
 ### **可选参数：**
 
-ABSOLUTE ZERO
+DEPENDENCIES
 
-将此参数设置为所选温度标度上的绝对零度。例如，如果分析使用摄氏度，则设置ABSOLUTE ZERO=273.15。
+将此参数设置为永磁体矫顽力定义中包含的场变量数量。如果省略此参数，则假定矫顽力不依赖于任何场变量，但可能仍依赖于温度。
 
-STEFAN BOLTZMANN
+### **定义矫顽力向量的数据行：**
 
-将此参数设置为Stefan Boltzmann常数。例如，在SI单位中STEFAN BOLTZMANN=5.669×10^8焦耳每秒平方米开尔文^4。
+**第一行：**
 
-UNIVERSAL GAS CONSTANT
+**第二行：**
 
-将此参数设置为通用气体常数。例如，在SI单位中UNIVERSAL GAS CONSTANT=8.31434焦耳每摩尔开尔文。
+**后续行（仅在DEPENDENCIES参数值大于6时需要）：**
 
-SPL REFERENCE PRESSURE
-
-将此参数设置为用于计算声压级的参考压力。例如，在SI单位中对于空气SPL REFERENCE PRESSURE=20微帕斯卡。
-
-**此选项没有关联的数据行。**
+不要重复第一数据行。根据需要重复第二和后续数据行，以将矫顽力大小定义为温度和场变量的函数。

@@ -1,53 +1,36 @@
-# 60.76 PlanarTestData 对象
+# 60.72 MullinsEffect 对象
 
-PlanarTestData 对象用于指定平面测试（或纯剪切）数据（压缩和/或拉伸）。
+MullinsEffect 用于指定 Mullins 数据的属性。
 
 **访问**
 
 ```
-materialApi.materials()[*name*].hyperelastic().planarTestData()
-materialApi.materials()[*name*].hyperfoam().planarTestData()
-materialApi.materials()[*name*].mullinsEffect().planarTests(*i*)
+materialApi.materials()[*name*].mullinsEffect()
 ```
 
-### 60.76.1 PlanarTestData(...)
+### 60.72.1 成员
 
-此方法创建一个 PlanarTestData 对象。
-
-**路径**
-
-```
-materialApi.materials()[*name*].hyperelastic().PlanarTestData
-materialApi.materials()[*name*].hyperfoam().PlanarTestData
-materialApi.materials()[*name*].mullinsEffect().PlanarTestData
-```
+MullinsEffect 对象可以具有以下成员：
 
 **原型**
 
 ```
-odb_PlanarTestData&
-PlanarTestData(const odb_SequenceSequenceDouble& table,
-               odb_Union smoothing,
-               bool lateralNominalStrain,
-               bool temperatureDependency,
-               int dependencies);
+odb_String definition() const;
+bool temperatureDependency() const;
+int dependencies() const;
+int properties() const;
+odb_SequenceSequenceDouble table() const;
+odb_SequenceUniaxialTestData uniaxialTests() const;
+odb_UniaxialTestData uniaxialTests(int index) const;
+odb_SequenceBiaxialTestData biaxialTests() const;
+odb_BiaxialTestData biaxialTests(int index) const;
+odb_SequencePlanarTestData planarTests() const;
+odb_PlanarTestData planarTests(int index) const;
 ```
 
-**必需参数**
+*definition*
 
-*table*
-
-一个 odb_SequenceSequenceDouble，指定如下所述的项目。
-
-**可选参数**
-
-*smoothing*
-
-字符串"NONE"或一个 Int，指定平滑值。如果 *smoothing*="NONE"，则不采用平滑。默认值为"NONE"。
-
-*lateralNominalStrain*
-
-一个布尔值，指定是否包含横向名义应变。默认值为 false。
+一个 odb_String，指定数据定义方法。可能的值为"USER"、"CONSTANTS"和"TEST_DATA"。默认值为"CONSTANTS"。
 
 *temperatureDependency*
 
@@ -57,30 +40,22 @@ PlanarTestData(const odb_SequenceSequenceDouble& table,
 
 一个整数，指定场变量依赖数量。默认值为 0。
 
-**表数据**
+*properties*
 
-对于超弹性材料模型，表数据指定以下内容：
-- 名义应力，![](../graphics/ker_eqn00332.gif]。
-- 加载方向的名义应变，![](../graphics/ker_eqn00333.gif]。
+一个整数，指定作为用户定义超弹性材料数据所需的属性值数量。默认值为 0。
 
-对于超泡沫材料模型，表数据指定以下内容：
-- 名义应力，![](../graphics/ker_eqn00334.gif]。
-- 加载方向的名义应变，![](../graphics/ker_eqn00335.gif]。
-- 横向名义应变，![](../graphics/ker_eqn00336.gif]。默认值为 0。
+*table*
 
-**返回值**
+一个 odb_SequenceSequenceDouble，指定如下所述的项目。默认值为空序列。
 
-一个 PlanarTestData 对象。
+*uniaxialTests*
 
-**异常**
+一个 [UniaxialTestData](pt02ch60pyo101.md) 对象序列。
 
-无。
+*biaxialTests*
 
-### 60.76.2 成员
+一个 [BiaxialTestData](pt02ch60pyo04.md) 对象序列。
 
-PlanarTestData 对象的成员与 [PlanarTestData](pt02ch60pyo76.md#ker-planartestdata-planartestdata-cpp) 方法的参数具有相同的名称和描述。
+*planarTests*
 
-### 60.76.3 对应的分析关键字
-
-| [*PLANAR TEST DATA](../key/key-link.md#usb-kws-mplanartestdata) |
-| --- |
+一个 [PlanarTestData](pt02ch60pyo76.md) 对象序列。

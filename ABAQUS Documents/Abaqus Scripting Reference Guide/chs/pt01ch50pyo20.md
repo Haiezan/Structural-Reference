@@ -1,18 +1,18 @@
-# 50.21 StructuralDampingByFrequency 对象
+# 50.20 StructuralDamping 对象
 
-StructuralDampingByFrequency 对象包含结构阻尼参数。
+StructuralDamping 对象包含结构阻尼参数。
 
 **访问**
 
 ```
 import step
-mdb.models[*name*].steps[*name*].structuralDampingByFrequency
+mdb.models[*name*].steps[*name*].structuralDamping
 ```
 
-### 50.21.1 成员
+### 50.20.1 成员
 
-StructuralDampingByFrequency 对象可以具有以下成员：
+StructuralDamping 对象可以具有以下成员：
 
 *components*
 
-一个 [StructuralDampingByFrequencyComponentArray](pt01ch50pyo22.md) 对象。
+一个 [StructuralDampingComponentArray](pt01ch50pyo23.md) 对象。

@@ -1,125 +1,114 @@
-# AFXApp
+# AFXBoolKeyword
 
 
 
 
 
 
-该类负责提供一些高级 GUI 控制方法。
-![](../graphics/gui-afxapp.png)
+该类专为具有布尔值的命令关键字设计。
+![](../graphics/gui-afxboolkeyword.png)
 
-### AFXApp(appName=Abaqus/CAE, vendorName=SIMULIA, productName='', majorNumber=-1, minorNumber=-1, updateNumber=-1, prerelease=False)
+### AFXBoolKeyword(command, name, booleanType=ON_OFF, isRequired=False, defaultValue=False)
 
 构造函数。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| appName | String | Abaqus/CAE | 应用程序注册表项。 |
-| vendorName | String | SIMULIA | 供应商注册表项。 |
-| productName | String | '' | 产品名称。 |
-| majorNumber | Int | -1 | 版本号。 |
-| minorNumber | Int | -1 | 发布号。 |
-| updateNumber | Int | -1 | 更新号。 |
-| prerelease | Bool | False | 官方/预发布标志。 |
+| command | AFXCommand |  | 宿主命令。 |
+| name | String |  | 关键字名称。 |
+| booleanType | Type | ON_OFF | 命令中使用的布尔类型。 |
+| isRequired | Bool | False | 如果该关键字是命令的必需参数，则为 True。 |
+| defaultValue | Bool | False | 默认值。 |
 
-### create()
+### getTypeName()
 
-为应用程序创建窗口。
+返回关键字类型的名称。
 
-从 FXApp 重新实现。
+实现 AFXKeyword。
 
-### getAFXMainWindow()
+### getValue()
 
-返回指向 AFXMainWindow 的指针。
+返回关键字的当前值。
 
-### getBasePrerelease()
+### getValueAsString()
 
-如果基础产品是预发布版本，则返回 True。
+返回表示关键字当前值的文本字符串。
 
-### getBaseProductName()
+实现 AFXKeyword。
 
-返回基础产品名称。
+### isValueChanged()
 
-### getBaseVersionNumbers(majorNumber, minorNumber, updateNumber)
+如果关键字值与其之前的值不同，则返回 True。
 
-返回基础产品的主要、次要和更新编号。
+实现 AFXKeyword。
+
+### setDefaultValue(defaultValue)
+
+设置关键字的默认值。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| majorNumber | Int |  | 版本号。 |
-| minorNumber | Int |  | 发布号。 |
-| updateNumber | Int |  | 更新号。 |
+| defaultValue | Bool |  | 默认值。 |
 
-### getKernelInitializationCommand()
+### setDefaultValueByString(defaultValueString)
 
-返回应用程序启动时将发出的命令字符串。
-
-### getPrerelease()
-
-如果是预发布版本，则返回 True。
-
-### getProductName()
-
-返回产品名称。
-
-### getVersionNumbers()
-
-返回主要、次要和更新编号。
-
-### init(argc, argv)
-
-初始化应用程序并连接到 kernel。
+设置关键字的默认值（如果给定的文本字符串有效则返回 True）。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| argc | Int |  |  |
-| argv | String |  |  |
+| defaultValueString | String |  | 文本字符串形式的默认值。 |
 
-### isLocked()
+### setDefaultValueByString(defaultValueString)
 
-如果 GUI 被锁定则返回 True，否则返回 False。
-
-从 FXApp 重新实现。
-
-### isProductCAE()
-
-如果基础产品是 Abaqus/CAE，则返回 True。
-
-### isProductViewer()
-
-如果基础产品是 Abaqus/Viewer，则返回 True。
-
-### isStudentEdition()
-
-如果基础产品是学生版，则返回 True。
-
-### lock()
-
-锁定 GUI（在命令和模式处理期间通常使用）。
-
-### run()
-
-运行主应用程序事件循环，直到调用 stop()。
-
-从 FXApp 重新实现。
-
-### runUntil(condition)
-
-运行事件循环直到某个标志变为非零。
-
-从 FXApp 重新实现。
+设置关键字的默认值（如果给定的文本字符串有效则返回 True）。
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
-| condition | Int |  |  |
+| defaultValueString | String |  | 文本字符串形式的默认值。 |
 
-### unlock()
+### setValue(newValue)
 
-解锁 GUI。
+设置关键字的当前值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| newValue | Bool |  | 新值。 |
+
+### setValueByString(newValueString)
+
+设置关键字的当前值（如果给定的文本字符串有效则返回 True）。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| newValueString | String |  | 文本字符串形式的新值。 |
+
+### setValueByString(newValueString)
+
+设置关键字的当前值（如果给定的文本字符串有效则返回 True）。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| newValueString | String |  | 文本字符串形式的新值。 |
+
+### setValueToDefault(ignoreUnspecified=False)
+
+将关键字值设置为其默认值。
+| **参数** | **类型** | **默认值** | **描述** |
+| --- | --- | --- | --- |
+| ignoreUnspecified | Bool | False | 未使用。 |
+
+### setValueToPrevious()
+
+将关键字值设置为其之前的值。
+
+实现 AFXKeyword。
+
+### syncPreviousValue()
+
+将关键字之前的值设置为其当前值。
+
+实现 AFXKeyword。
 
 ### 类标志
 
-### **消息 ID。**
+### **布尔类型的标志。**
 
-| **ID_QUERY_GUILOCK** | 用于查询 GUI 是否被锁定。 |
+| **ON_OFF** | 关键字值为 ON 或 OFF。 |
 | --- | --- |
-| **ID_SHOW_HOURGLASS** | 用于更改光标。 |
+| **TRUE_FALSE** | 关键字值为 True 或 False。 |
 
 
 

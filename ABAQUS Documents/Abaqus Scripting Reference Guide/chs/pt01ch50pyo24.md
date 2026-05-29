@@ -1,26 +1,22 @@
-# 50.25 SubstructureGenerateModes 对象
+# 50.24 SubstructureGenerateFrequency 对象
 
-SubstructureGenerateModes 对象用于定义在模态动力学分析中使用的模态。
+SubstructureGenerateFrequency 对象用于定义在模态动力学分析中使用的模态。这些模态从指定的频率范围（包括频率边界）中选择。
 
 **访问**
 
 ```
 import step
-mdb.models[*name*].steps[*name*].modeRange[*i*]
+mdb.models[*name*].steps[*name*].frequencyRange[*i*]
 ```
 
-### 50.25.1 成员
+### 50.24.1 成员
 
-SubstructureGenerateModes 对象具有以下成员：
+SubstructureGenerateFrequency 对象具有以下成员：
 
-*start*
+*lower*
 
-一个 Int，指定范围最低模态的模态号。
+一个 Float，指定频率范围的下限（以周期/时间计）。
 
-*end*
+*upper*
 
-一个 Int，指定范围最高模态的模态号。
-
-*increment*
-
-一个 Int，指定用于从最低模态到最高模态定义中间模态号的增量。
+一个 Float，指定频率范围的上限（以周期/时间计）。

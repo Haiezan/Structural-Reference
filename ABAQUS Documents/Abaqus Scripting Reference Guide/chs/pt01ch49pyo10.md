@@ -1,8 +1,8 @@
-# 49.11 ExplicitDynamicsStep 对象
+# 49.10 EmagTimeHarmonicStep 对象
 
-ExplicitDynamicsStep 对象用于使用 Abaqus/Explicit 中的显式积分进行动态应力/位移分析。
+EmagTimeHarmonicStep 对象用于计算系统对模型谐波激励的电磁响应。
 
-ExplicitDynamicsStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+EmagTimeHarmonicStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.11.1 ExplicitDynamicsStep(...)
+### 49.10.1 EmagTimeHarmonicStep(...)
 
-此方法创建一个 ExplicitDynamicsStep 对象。
+此方法创建一个 EmagTimeHarmonicStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].ExplicitDynamicsStep
+mdb.models[*name*].EmagTimeHarmonicStep
 ```
 
 **必需参数**
@@ -31,67 +31,31 @@ mdb.models[*name*].ExplicitDynamicsStep
 
 一个字符串，指定前一步的名称。新步骤将出现在分析步骤列表中该步骤之后。
 
+*frequencyRange*
+
+一个 [EmagTimeHarmonicFrequencyArray](pt01ch50pyo08.md) 对象。
+
 **可选参数**
 
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
-*timePeriod*
+*factorization*
 
-一个 Float，指定步骤的总时间周期。默认值为 1.0。
-
-*nlgeom*
-
-一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 ON。
-
-*adiabatic*
-
-一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
-
-*timeIncrementationMethod*
-
-一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 AUTOMATIC_GLOBAL、AUTOMATIC_EBE、FIXED_USER_DEFINED_INC 和 FIXED_EBE。默认值为 AUTOMATIC_GLOBAL。
-
-*maxIncrement*
-
-`None` 或一个 Float，指定最大时间增量。如果没有上限，则 *maxIncrement*=`None`。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL 或 AUTOMATIC_EBE 时需要。默认值为 `None`。
-
-*scaleFactor*
-
-一个 Float，指定用于缩放时间增量的因子。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL、AUTOMATIC_EBE 或 FIXED_EBE 时需要。默认值为 1.0。
-
-*massScaling*
-
-一个 [MassScalingArray](pt01ch50pyo09.md) 对象，指定质量缩放控制。默认值为 PREVIOUS_STEP。
-
-*linearBulkViscosity*
-
-一个 Float，指定线性体积粘度参数 ![](../graphics/ker_eqn00420.gif)。默认值为 0.06。
-
-*quadBulkViscosity*
-
-一个 Float，指定二次体积粘度参数 ![](../graphics/ker_eqn00421.gif)。默认值为 1.2。
-
-*userDefinedInc*
-
-`None` 或一个 Float，指定用户定义的时间增量。此参数仅在 *timeIncrementationMethod*=FIXED_USER_DEFINED_INC 时需要。默认值为 `None`。
-
-*maintainAttributes*
-
-一个布尔值，指定是否保留具有相同名称的现有步骤的属性。默认值为 False。
+一个 SymbolicConstant，指定是否忽略阻尼项以便对实数（而非复数）系统矩阵进行分解。可选值为 REAL_ONLY 和 COMPLEX。默认值为 COMPLEX。
 
 **返回值**
 
-一个 ExplicitDynamicsStep 对象。
+一个 EmagTimeHarmonicStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.11.2 setValues(...)
+### 49.10.2 setValues(...)
 
-此方法修改 ExplicitDynamicsStep 对象。
+此方法修改 EmagTimeHarmonicStep 对象。
 
 **必需参数**
 
@@ -99,7 +63,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [ExplicitDynamicsStep](pt01ch49pyo11.md#ker-explicitdynamicsstep-explicitdynamicsstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [EmagTimeHarmonicStep](pt01ch49pyo10.md#ker-emagtimeharmonicstep-emagtimeharmonicstep-pyc) 方法的参数相同，但 *name* 参数除外。
 
 **返回值**
 
@@ -109,61 +73,19 @@ RangeError。
 
 RangeError。
 
-### 49.11.3 成员
+### 49.10.3 成员
 
-ExplicitDynamicsStep 对象可以具有以下成员：
+EmagTimeHarmonicStep 对象具有与 [EmagTimeHarmonicStep](pt01ch49pyo10.md#ker-emagtimeharmonicstep-emagtimeharmonicstep-pyc) 方法参数相同名称和描述的成员。
 
-*name*
+此外，EmagTimeHarmonicStep 对象可以具有以下成员：
 
-一个字符串，指定存储库键。
+*matrixStorage*
 
-*timePeriod*
+一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
 
-一个 Float，指定步骤的总时间周期。默认值为 1.0。
+*subdivideUsingEigenfrequencies*
 
-*nlgeom*
-
-一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 ON。
-
-*adiabatic*
-
-一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
-
-*timeIncrementationMethod*
-
-一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 AUTOMATIC_GLOBAL、AUTOMATIC_EBE、FIXED_USER_DEFINED_INC 和 FIXED_EBE。默认值为 AUTOMATIC_GLOBAL。
-
-*maxIncrement*
-
-`None` 或一个 Float，指定最大时间增量。如果没有上限，则 *maxIncrement*=`None`。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL 或 AUTOMATIC_EBE 时需要。默认值为 `None`。
-
-*scaleFactor*
-
-一个 Float，指定用于缩放时间增量的因子。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL、AUTOMATIC_EBE 或 FIXED_EBE 时需要。默认值为 1.0。
-
-*linearBulkViscosity*
-
-一个 Float，指定线性体积粘度参数 ![](../graphics/ker_eqn00420.gif)。默认值为 0.06。
-
-*quadBulkViscosity*
-
-一个 Float，指定二次体积粘度参数 ![](../graphics/ker_eqn00421.gif)。默认值为 1.2。
-
-*userDefinedInc*
-
-`None` 或一个 Float，指定用户定义的时间增量。此参数仅在 *timeIncrementationMethod*=FIXED_USER_DEFINED_INC 时需要。默认值为 `None`。
-
-*previous*
-
-一个字符串，指定前一步的名称。新步骤将出现在分析步骤列表中该步骤之后。
-
-*description*
-
-一个字符串，指定新步骤的描述。默认值为空字符串。
-
-*massScaling*
-
-一个 [MassScalingArray](pt01ch50pyo09.md) 对象，指定质量缩放控制。默认值为 PREVIOUS_STEP。
+一个布尔值，指定是否使用系统的特征频率细分每个频率范围。默认值为 OFF。
 
 *explicit*
 
@@ -268,11 +190,8 @@ ExplicitDynamicsStep 对象可以具有以下成员：
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.11.4 对应的分析关键字
+### 49.10.4 对应的分析关键字
 
-| [*BULK VISCOSITY](../key/key-link.md#usb-kws-hbulkvisco) |
+| [*ELECTROMAGNETIC TIME HARMONIC](#) |
 | --- |
-| [*DYNAMIC](../key/key-link.md#usb-kws-hdynamic) |
-| [*FIXED MASS SCALING](../key/key-link.md#usb-kws-hfixedmassscaling) |
 | [*STEP](../key/key-link.md#usb-kws-hstep) |
-| [*VARIABLE MASS SCALING](../key/key-link.md#usb-kws-hvariablemassscaling) |

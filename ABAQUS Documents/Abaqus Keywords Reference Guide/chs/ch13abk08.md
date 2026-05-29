@@ -1,4 +1,4 @@
-# *MATRIX
+# *MATERIAL
 
 
 
@@ -8,35 +8,48 @@
 
 
 
-### *MATRIX读取线性用户单元的刚度矩阵或质量矩阵。
+### *MATERIAL开始材料定义。
 
-此选项只能与[*USER ELEMENT](ch20abk07.md)、LINEAR选项结合使用。它用于读取用户单元的刚度矩阵或质量矩阵。如果只需要刚度或质量，可以使用一次；如果需要同时提供两个矩阵，可以使用两次。
+此选项用于指示材料定义的开始。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
 
 **类型：**模型数据  
 
-**级别：**部件、部件实例、模型  
+**级别：**模型  
+
+**Abaqus/CAE：**属性模块
 
 ##### **参考：**
 
-- ["用户定义单元，" Abaqus Analysis User's Guide第32.15.1节](../usb/usb-link.md#usb-elm-euserelem)
-- [*USER ELEMENT](ch20abk07.md)
+- ["材料数据定义，" Abaqus Analysis User's Guide第21.1.2节](../usb/usb-link.md#usb-mat-cmaterialdata)
 
 ### **必需参数：**
 
-TYPE
+NAME
 
-设置TYPE=MASS以定义质量矩阵。设置TYPE=STIFFNESS以定义刚度矩阵。
+将此参数设置为将用于在单元属性选项中引用该材料的标签。同一输入文件中的材料名称必须唯一。此外，材料名称应与[*CONNECTOR BEHAVIOR](ch03abk35.md)和[*FLUID BEHAVIOR](ch06abk16.md)等属性定义关联的名称保持唯一。材料名称遵循标签的命名约定，但不能以数字开头。
 
 ### **可选参数：**
 
-INPUT
+RTOL
 
-将此参数设置为要从中读取数据行的备用输入文件名称。如果省略此参数，则假定数据在关键字行之后。
+此参数仅适用于Abaqus/Explicit分析。
 
-### **定义矩阵的数据行：**
+将此参数设置为用于正则化材料数据的容差。默认值为RTOL=0.03。
 
-**第一行：**
+SRATE FACTOR
 
-根据需要重复此数据行。
+此参数仅适用于Abaqus/Explicit分析。
+
+将此参数设置为用于过滤等效塑性应变率以评估应变率相关材料数据的因子。默认值为0.9。
+
+STRAIN RATE REGULARIZATION
+
+此参数仅适用于Abaqus/Explicit分析，仅用于正则化应变率相关的材料数据。
+
+设置STRAIN RATE REGULARIZATION=LOGARITHMIC（默认）以使用对数正则化处理应变率相关材料数据。
+
+设置STRAIN RATE REGULARIZATION=LINEAR以使用线性正则化处理应变率相关材料数据。
+
+**此选项没有关联的数据行。**

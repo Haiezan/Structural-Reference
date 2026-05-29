@@ -1,6 +1,6 @@
-# 50.19 SteadyStateSubspaceFrequency 对象
+# 50.18 SteadyStateModalFrequency 对象
 
-SteadyStateSubspaceFrequency 是一个用于定义模态范围频率的对象。
+SteadyStateModalFrequency 是一个用于定义模态范围频率的对象。
 
 **访问**
 
@@ -9,9 +9,9 @@ import step
 mdb.models[*name*].steps[*name*].frequencyRange[*i*]
 ```
 
-### 50.19.1 成员
+### 50.18.1 成员
 
-SteadyStateSubspaceFrequency 对象具有以下成员：
+SteadyStateModalFrequency 对象具有以下成员：
 
 *lower*
 

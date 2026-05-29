@@ -1,19 +1,21 @@
-# AFXOptionTreeList
+# AFXOptionTreeItem
 
 
 
 
 
-此类提供选项组的滚动列表，这些选项可以作为一个组或单独切换开启或关闭。
-![](../graphics/gui-afxoptiontreelist.png)
+此类是带有复选按钮的树组件。
+![](../graphics/gui-afxoptiontreeitem.png)
 
-### AFXOptionTreeList(p, nvis, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT_SPACING, pr=DEFAULT_SPACING, pt=DEFAULT_SPACING, pb=DEFAULT_SPACING, hs=DEFAULT_SPACING, vs=DEFAULT_SPACING)
+### AFXOptionTreeItem(p, label, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT_SPACING, pr=DEFAULT_SPACING, pt=DEFAULT_SPACING, pb=DEFAULT_SPACING, hs=DEFAULT_SPACING, vs=DEFAULT_SPACING)
 
-构造函数。
+构造函数，创建顶级（根）树项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
 | p | FXComposite |  | 父组件。 |
-| nvis | Int |  | 列表可见项目数。 |
+| label | String |  | 标签文本。 |
+| tgt | FXObject | None | 消息目标。 |
+| sel | Int | 0 | 消息ID。 |
 | opts | Int | 0 | 选项和提示。 |
 | x | Int | 0 | 起点X坐标。 |
 | y | Int | 0 | 起点Y坐标。 |
@@ -26,187 +28,220 @@
 | hs | Int | DEFAULT_SPACING | 水平间距。 |
 | vs | Int | DEFAULT_SPACING | 垂直间距。 |
 
-### addItemFirst(text, tgt=None, msg=0)
+### addItemAfter(label, tgt=None, sel=0)
 
-添加一个具有给定文本的新项目作为列表的第一个项目。
+创建作为树项目同级（下方）的新树项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 项目文本。 |
+| label | String |  | 项目标签。 |
 | tgt | FXObject | None | 项目目标。 |
-| msg | Int | 0 | 项目选择器。 |
+| sel | Int | 0 | 项目选择器。 |
 
-### addItemLast(text, tgt=None, msg=0)
+### addItemBefore(label, tgt=None, sel=0)
 
-添加一个具有给定文本的新项目作为列表的最后一个项目。
+创建作为树项目同级（上方）的新树项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 项目文本。 |
+| label | String |  | 项目标签。 |
 | tgt | FXObject | None | 项目目标。 |
-| msg | Int | 0 | 项目选择器。 |
+| sel | Int | 0 | 项目选择器。 |
 
-### clearItems()
+### addItemFirst(label, tgt=None, sel=0)
 
-从列表中移除所有项目。
-
-### computeItemHeight(p=None)
-
-计算作为默认高度计算基础的项目大小。
+创建作为树项目第一个子项的新树项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| p | AFXOptionTreeItem | None | 项目。 |
+| label | String |  | 项目标签。 |
+| tgt | FXObject | None | 项目目标。 |
+| sel | Int | 0 | 项目选择器。 |
 
-### createItem(text, tgt, msg)
+### addItemLast(label, tgt=None, sel=0)
 
-创建新的树项目对象。
+创建作为树项目最后一个子项的新树项目。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  | 项目文本。 |
-| tgt | FXObject |  | 项目目标。 |
-| msg | Int |  | 项目选择器。 |
+| label | String |  | 项目标签。 |
+| tgt | FXObject | None | 项目目标。 |
+| sel | Int | 0 | 项目选择器。 |
 
-### getContentHeight()
+### childAtIndex(index)
 
-返回内容高度。
+返回给定索引处的子树。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| index | Int |  | 索引。 |
 
-从 FXScrollWindow 重实现。
+### collapse()
 
-### getContents()
+折叠（隐藏）子项。
 
-返回内容窗口。
+### computeDefaultArrowSize()
 
-### getContentWidth()
+计算箭头按钮的默认大小。
 
-返回内容宽度。
+### containsChild(tree)
 
-从 FXScrollWindow 重实现。
+检查给定树是否是此对象的子项。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| tree | AFXOptionTreeItem |  | 项目。 |
 
-### getDefaultHeight()
+### create()
 
-返回默认高度。
+创建树项目。
 
-从 FXScrollArea 重实现。
+从 FXComposite 重实现。
+
+### disable()
+
+禁用树项目。
+
+从 FXWindow 重实现。
+
+### enable()
+
+启用树项目。
+
+从 FXWindow 重实现。
+
+### expand()
+
+展开（显示）子项。
+
+### getArrowSize()
+
+返回箭头按钮的大小。
+
+### getCheck()
+
+返回树项目的复选状态。
 
 ### getDefaultWidth()
 
-返回默认宽度。
+返回树项目的默认宽度。
 
-从 FXScrollArea 重实现。
+从 FXPacker 重实现。
 
-### getFirstItem()
+### getFirst()
 
-返回第一个根项目。
+返回第一个子树。
 
-### getHSpacing()
+从 FXWindow 重实现。
 
-返回水平子组件间距。
+### getLast()
 
-### getLastItem()
+返回最后一个子树。
 
-返回最后一个根项目。
+从 FXWindow 重实现。
 
-### getNumItems()
+### getNext()
 
-返回顶级项目的数量。
+返回下一个同级树。
 
-### getNumVisible()
+从 FXWindow 重实现。
 
-返回可见项目数量。
+### getParent()
 
-### getPadBottom()
+返回父树组件，如果树项目是根则返回 NULL。
 
-返回底部边距。
+从 FXWindow 重实现。
 
-### getPadLeft()
+### getPrev()
 
-返回左边距。
+返回上一个同级树。
 
-### getPadRight()
+从 FXWindow 重实现。
 
-返回右边距。
+### getText()
 
-### getPadTop()
+返回树项目复选按钮中显示的标签文本。
 
-返回顶部边距。
+### hasVisibleChildren()
 
-### getVSpacing()
+检查树项目是否有任何可见子项。
 
-返回垂直子组件间距。
+### hide()
 
-### layout()
+隐藏树项目。
 
-重新计算布局。
+从 FXWindow 重实现。
 
-从 FXScrollWindow 重实现。
+### indexOfChild(tree)
 
-### moveContents(x, y)
-
-将内容移动到指定位置。
+返回直接子树的索引，如果未找到则返回 -1。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| x | Int |  | X位置。 |
-| y | Int |  | Y位置。 |
+| tree | AFXOptionTreeItem |  | 项目。 |
 
-### removeItem(item)
+### isChildOf(tree)
 
-从列表中移除给定项目。如果给定项目不存在，此方法不执行任何操作。
+检查此对象是否包含在给定树中。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| item | AFXOptionTreeItem |  | 要移除的项目。 |
+| tree | AFXOptionTreeItem |  | 项目。 |
 
-### setHSpacing(hs)
+### isExpanded()
 
-设置水平子组件间距。
+检查树项目是否显示其子项。
+
+### numChildren()
+
+返回子树的数量。
+
+从 FXWindow 重实现。
+
+### setArrowSize(size)
+
+为此对象及其所有子项设置箭头按钮的大小。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| hs | Int |  | 水平间距。 |
+| size | Int |  | 大小。 |
 
-### setNumVisible(nvis)
+### setCheck(check, notify, propagating=False)
 
-设置可见项目数量。
+设置树项目及其子项的复选状态，可选择通知目标。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| nvis | Int |  | 可见项目数量。 |
+| check | Int |  | 复选状态。 |
+| notify | Bool |  | 通知标志。 |
+| propagating | Bool | False | 传播标志。 |
 
-### setPadBottom(pb)
+### setCheck(check=True)
 
-设置底部边距。
+设置树项目及其子项的复选状态。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| pb | Int |  | 底部边距。 |
+| check | Int | True | 复选状态。 |
 
-### setPadLeft(pl)
+### setText(txt)
 
-设置左边距。
+设置树项目复选按钮中显示的标签文本。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| pl | Int |  | 左边距。 |
+| txt | String |  | 标签文本。 |
 
-### setPadRight(pr)
+### show()
 
-设置右边距。
+显示树项目。
+
+从 FXWindow 重实现。
+
+### updateCheck(notify)
+
+更新树项目及其祖先的复选状态。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| pr | Int |  | 右边距。 |
-
-### setPadTop(pt)
-
-设置顶部边距。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| pt | Int |  | 顶部边距。 |
-
-### setVSpacing(vs)
-
-设置垂直子组件间距。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| vs | Int |  | 垂直间距。 |
+| notify | Bool |  | 通知标志。 |
 
 ### 类标志
 
 ### **消息ID。**
 
-| **ID_CONTENTS** | 内容窗口的ID。 |
+| **ID_TOGGLEEXPAND** | 切换子框架的显示。 |
 | --- | --- |
+| **ID_CHECKSTATE** | 代表此对象的复选状态。 |
+| **ID_SUBTREE** | 子树的容器。 |
+| **ID_EXPAND** | 展开带有子项的框架。 |
+| **ID_COLLAPSE** | 折叠带有子项的框架。 |
 
 

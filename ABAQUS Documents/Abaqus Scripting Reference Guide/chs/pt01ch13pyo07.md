@@ -1,8 +1,8 @@
-# 13.8 RigidBody 对象
+# 13.7 MultipointConstraint 对象
 
-RigidBody 对象将指定区域上的所有自由度约束到其关联参考点的自由度。
+MultipointConstraint 对象定义了一组位于区域上的多点约束节点与参考点之间的约束。
 
-RigidBody 对象派生自 [Constraint](pt01ch13pyo01.md) 对象。
+MultipointConstraint 对象派生自 [Constraint](pt01ch13pyo01.md) 对象。
 
 **访问权限**
 
@@ -11,14 +11,14 @@ import interaction
 mdb.models[*name*].constraints[*name*]
 ```
 
-### 13.8.1 RigidBody(...)
+### 13.7.1 MultipointConstraint(...)
 
-此方法创建一个 RigidBody 对象。
+此方法创建一个 MultipointConstraint 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].RigidBody
+mdb.models[*name*].MultipointConstraint
 ```
 
 **必需参数**
@@ -27,47 +27,47 @@ mdb.models[*name*].RigidBody
 
 字符串，指定约束存储库键。
 
-*refPointRegion*
+*surface*
 
-[Region](pt01ch45pyo03.md) 对象，指定参考点。
+[Region](pt01ch45pyo03.md) 对象，指定 MultipointConstraint 节点所在的曲面。
+
+*controlPoint*
+
+[Region](pt01ch45pyo03.md) 对象，指定约束控制点。
+
+*mpcType*
+
+符号常量，指定约束的 MPC 类型。可能的值为 BEAM_MPC、ELBOW_MPC、PIN_MPC、LINK_MPC、TIE_MPC 和 USER_MPC。
 
 **可选参数**
 
-*bodyRegion*
+*csys*
 
-`None` 或 [Region](pt01ch45pyo03.md) 对象，指定约束到参考点运动的单元。默认值为 `None`。
+`None` 或 [DatumCsys](pt01ch15pyo03.md) 对象，指定 MultipointConstraint 自由度局部坐标系的初始方向。如果 *localCsys*=`None`，则在全局坐标系中定义 MultipointConstraint。默认值为 `None`。
 
-*tieRegion*
+*userType*
 
-`None` 或 [Region](pt01ch45pyo03.md) 对象，指定绑定到参考点运动的节点。默认值为 `None`。
+整数，指定用于在用户定义的 MultipointConstraint 中区分不同约束类型的值。默认值为 0。
 
-*pinRegion*
+*userType* 参数仅在 *mpcType*=USER_MPC 时适用。
 
-`None` 或 [Region](pt01ch45pyo03.md) 对象，指定固定到参考点运动的节点。默认值为 `None`。
+*userMode*
 
-*surfaceRegion*
+符号常量，指定用户定义约束的模式。可能的值为 DOF_MODE_MPC 和 NODE_MODE_MPC。默认值为 DOF_MODE_MPC。
 
-`None` 或 [Region](pt01ch45pyo03.md) 对象，指定约束到参考点运动的分析曲面。默认值为 `None`。
-
-*refPointAtCOM*
-
-布尔值，指定分析产品是否应重新计算参考点位置到质心处。默认值为 OFF。
-
-*isothermal*
-
-布尔值，指定是否应约束温度自由度。默认值为 OFF。
+*userMode* 参数仅在 *mpcType*=USER_MPC 时适用。
 
 **返回值**
 
-RigidBody 对象。
+MultipointConstraint 对象。
 
 **异常**
 
 无。
 
-### 13.8.2 setValues(...)
+### 13.7.2 setValues(...)
 
-此方法修改 RigidBody 对象。
+此方法修改 MultipointConstraint 对象。
 
 **必需参数**
 
@@ -75,7 +75,7 @@ RigidBody 对象。
 
 **可选参数**
 
-`setValues` 的可选参数与 [RigidBody](pt01ch13pyo08.md#ker-rigidbody-rigidbody-pyc) 方法的参数相同，但 *name* 参数除外。
+`setValues` 的可选参数与 [MultipointConstraint](pt01ch13pyo07.md#ker-multipointconstraint-multipointconstraint-pyc) 方法的参数相同，但 *name* 参数除外。
 
 **返回值**
 
@@ -85,18 +85,18 @@ RigidBody 对象。
 
 无。
 
-### 13.8.3 成员
+### 13.7.3 成员
 
-RigidBody 对象的成员与 [RigidBody](pt01ch13pyo08.md#ker-rigidbody-rigidbody-pyc) 方法的参数具有相同的名称和描述。
+MultipointConstraint 对象的成员与 [MultipointConstraint](pt01ch13pyo07.md#ker-multipointconstraint-multipointconstraint-pyc) 方法的参数具有相同的名称和描述。
 
-此外，RigidBody 对象还有以下成员：
+此外，MultipointConstraint 对象还有以下成员：
 
 *suppressed*
 
 布尔值，指定约束是否被抑制。默认值为 OFF。
 
-### 13.8.4 对应的分析关键字
+### 13.7.4 对应的分析关键字
 
-| [*RIGID BODY](../key/key-link.md#usb-kws-mrigidbody) |
+| [*MPC](../key/key-link.md#usb-kws-mmpc) |
 | --- |
 

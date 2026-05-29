@@ -1,32 +1,32 @@
-# 31.12 MeshEdgeArray 对象
+# 31.11 MeshFaceArray 对象
 
-MeshEdgeArray 是 [MeshEdge](pt01ch31pyo04.md) 对象的序列。
+MeshFaceArray 是 [MeshFace](pt01ch31pyo08.md) 对象的序列。
 
 **访问**
 
 ```
 import part
-mdb.models[*name*].parts[*name*].elementEdges
+mdb.models[*name*].parts[*name*].elementFaces
 import assembly
-mdb.models[*name*].rootAssembly.allinstances.elementEdges
-mdb.models[*name*].rootAssembly.instances[*name*].elementEdges
+mdb.models[*name*].rootAssembly.allinstances.elementFaces
+mdb.models[*name*].rootAssembly.instances[*name*].elementFaces
 ```
 
-### 31.12.1 MeshEdgeArray(...)
+### 31.11.1 MeshFaceArray(...)
 
-此方法创建一个 MeshEdgeArray 对象。
+此方法创建一个 MeshFaceArray 对象。
 
 **路径**
 
 ```
-mesh.MeshEdgeArray
+mesh.MeshFaceArray
 ```
 
 **必要参数**
 
-*edges*
+*faces*
 
-[MeshEdge](pt01ch31pyo04.md) 对象列表。
+[MeshFace](pt01ch31pyo08.md) 对象列表。
 
 **可选参数**
 
@@ -34,15 +34,15 @@ mesh.MeshEdgeArray
 
 **返回值**
 
-MeshEdgeArray 对象。
+MeshFaceArray 对象。
 
 **异常**
 
 无。
 
-### 31.12.2 getSequenceFromMask(...)
+### 31.11.2 getSequenceFromMask(...)
 
-此方法返回使用指定 *mask* 标识的 MeshEdgeArray 中的对象。当涉及大量对象时，此方法效率很高。
+此方法返回使用指定 *mask* 标识的 MeshFaceArray 中的对象。当涉及大量对象时，此方法效率很高。
 
 **必要参数**
 
@@ -56,7 +56,7 @@ MeshEdgeArray 对象。
 
 **返回值**
 
-MeshEdgeArray 对象。
+MeshFaceArray 对象。
 
 **异常**
 
@@ -66,7 +66,7 @@ MeshEdgeArray 对象。
 Error: The mask results in an empty sequence
 ```
 
-### 31.12.3 getMask()
+### 31.11.3 getMask()
 
 此方法返回指定对象或多个对象的字符串。
 
@@ -82,6 +82,6 @@ Error: The mask results in an empty sequence
 
 无。
 
-### 31.12.4 成员
+### 31.11.4 成员
 
-MeshEdgeArray 对象没有成员。
+MeshFaceArray 对象没有成员。

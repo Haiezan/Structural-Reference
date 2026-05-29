@@ -1,8 +1,8 @@
-# 49.25 StaticStep 对象
+# 49.22 SoilsStep 对象
 
-StaticStep 对象用于指示该步骤应作为静态载荷步骤进行分析。
+SoilsStep 对象用于指定部分或完全饱和液填充多孔介质的瞬态（固结）或稳态响应分析。
 
-StaticStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+SoilsStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.25.1 StaticStep(...)
+### 49.22.1 SoilsStep(...)
 
-此方法创建一个 StaticStep 对象。
+此方法创建一个 SoilsStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].StaticStep
+mdb.models[*name*].SoilsStep
 ```
 
 **必需参数**
@@ -37,13 +37,17 @@ mdb.models[*name*].StaticStep
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
+*response*
+
+一个 SymbolicConstant，指定分析类型。可选值为 STEADY_STATE 和 TRANSIENT。默认值为 TRANSIENT。
+
 *timePeriod*
 
 一个 Float，指定总时间周期。默认值为 1.0。
 
 *nlgeom*
 
-一个布尔值，指定是否允许几何非线性。默认值为 OFF。
+一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 OFF。
 
 *stabilizationMethod*
 
@@ -53,17 +57,13 @@ mdb.models[*name*].StaticStep
 
 一个 Float，如果问题可能不稳定且 *stabilizationMethod* 不为 NONE，则指定自动阻尼算法的阻尼强度。默认值为 210-4。
 
-*adiabatic*
+*creep*
 
-一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
+一个布尔值，指定此步骤期间是否发生蠕变响应。默认值为 ON。
 
 *timeIncrementationMethod*
 
 一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 FIXED 和 AUTOMATIC。默认值为 AUTOMATIC。
-
-*maxNumInc*
-
-一个 Int，指定步骤中的最大增量数。默认值为 100。
 
 *initialInc*
 
@@ -71,11 +71,35 @@ mdb.models[*name*].StaticStep
 
 *minInc*
 
-一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期乘以 10-5 中的较小值。
+一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期的 105 倍中的较小值。
 
 *maxInc*
 
 一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
+
+*maxNumInc*
+
+一个 Int，指定步骤中的最大增量数。默认值为 100。
+
+*end*
+
+一个 SymbolicConstant，指定瞬态分析中要分析的时间周期。可选值为 PERIOD 和 SS。默认值为 PERIOD。
+
+*utol*
+
+`None` 或一个 Float，指定瞬态固结分析中任何增量中允许的最大孔隙压力变化（以压力单位计）。默认值为 `None`。
+
+*cetol*
+
+一个 Float，指定从增量的开始和结束时的蠕变应变率计算的蠕变应变增量之间的最大允许差异。默认值为 0.0。
+
+*amplitude*
+
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。默认值为 STEP。可选值为 STEP 和 RAMP。
+
+*extrapolation*
+
+一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
 
 *matrixSolver*
 
@@ -85,31 +109,9 @@ mdb.models[*name*].StaticStep
 
 一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
 
-*amplitude*
-
-一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 RAMP。
-
-*extrapolation*
-
-一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
-
-*fullyPlastic*
-
-一个字符串，指定被监测完全塑性行为的区域。默认值为空字符串。
-
-*noStop*
-
-一个布尔值，指定在完成允许的最大迭代次数后，即使未满足平衡容差，是否接受增量的解。默认值为 OFF。
-
-**警告：**仅在您对如何解释结果有充分理解的特殊情况下，才应将 *noStop* 设置为 ON。
-
 *maintainAttributes*
 
 一个布尔值，指定是否保留具有相同名称的现有步骤的属性。默认值为 False。
-
-*useLongTermSolution*
-
-一个布尔值，指定是否获取时域粘弹性或双层粘塑性 long-term elastic-plastic solution 的完全松弛 long-term elastic solution。默认值为 OFF。
 
 *solutionTechnique*
 
@@ -133,15 +135,15 @@ mdb.models[*name*].StaticStep
 
 **返回值**
 
-一个 StaticStep 对象。
+一个 SoilsStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.25.2 setValues(...)
+### 49.22.2 setValues(...)
 
-此方法修改 StaticStep 对象。
+此方法修改 SoilsStep 对象。
 
 **必需参数**
 
@@ -149,7 +151,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [StaticStep](pt01ch49pyo25.md#ker-staticstep-staticstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [SoilsStep](pt01ch49pyo22.md#ker-soilsstep-soilsstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
 
 **返回值**
 
@@ -159,13 +161,17 @@ RangeError。
 
 RangeError。
 
-### 49.25.3 成员
+### 49.22.3 成员
 
-StaticStep 对象可以具有以下成员：
+SoilsStep 对象可以具有以下成员：
 
 *name*
 
 一个字符串，指定存储库键。
+
+*response*
+
+一个 SymbolicConstant，指定分析类型。可选值为 STEADY_STATE 和 TRANSIENT。默认值为 TRANSIENT。
 
 *timePeriod*
 
@@ -173,7 +179,7 @@ StaticStep 对象可以具有以下成员：
 
 *nlgeom*
 
-一个布尔值，指定是否允许几何非线性。默认值为 OFF。
+一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 OFF。
 
 *stabilizationMethod*
 
@@ -183,17 +189,13 @@ StaticStep 对象可以具有以下成员：
 
 一个 Float，如果问题可能不稳定且 *stabilizationMethod* 不为 NONE，则指定自动阻尼算法的阻尼强度。默认值为 210-4。
 
-*adiabatic*
+*creep*
 
-一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
+一个布尔值，指定此步骤期间是否发生蠕变响应。默认值为 ON。
 
 *timeIncrementationMethod*
 
 一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 FIXED 和 AUTOMATIC。默认值为 AUTOMATIC。
-
-*maxNumInc*
-
-一个 Int，指定步骤中的最大增量数。默认值为 100。
 
 *initialInc*
 
@@ -201,11 +203,35 @@ StaticStep 对象可以具有以下成员：
 
 *minInc*
 
-一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期乘以 10-5 中的较小值。
+一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期的 105 倍中的较小值。
 
 *maxInc*
 
 一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
+
+*maxNumInc*
+
+一个 Int，指定步骤中的最大增量数。默认值为 100。
+
+*end*
+
+一个 SymbolicConstant，指定瞬态分析中要分析的时间周期。可选值为 PERIOD 和 SS。默认值为 PERIOD。
+
+*utol*
+
+`None` 或一个 Float，指定瞬态固结分析中任何增量中允许的最大孔隙压力变化（以压力单位计）。默认值为 `None`。
+
+*cetol*
+
+一个 Float，指定从增量的开始和结束时的蠕变应变率计算的蠕变应变增量之间的最大允许差异。默认值为 0.0。
+
+*amplitude*
+
+一个 SymbolicConstant，指定步骤中载荷幅值的变化。默认值为 STEP。可选值为 STEP 和 RAMP。
+
+*extrapolation*
+
+一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
 
 *matrixSolver*
 
@@ -214,24 +240,6 @@ StaticStep 对象可以具有以下成员：
 *matrixStorage*
 
 一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
-
-*amplitude*
-
-一个 SymbolicConstant，指定步骤中载荷幅值的变化。可选值为 STEP 和 RAMP。默认值为 RAMP。
-
-*extrapolation*
-
-一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
-
-*noStop*
-
-一个布尔值，指定在完成允许的最大迭代次数后，即使未满足平衡容差，是否接受增量的解。默认值为 OFF。
-
-**警告：**仅在您对如何解释结果有充分理解的特殊情况下，才应将 *noStop* 设置为 ON。
-
-*useLongTermSolution*
-
-一个布尔值，指定是否获取时域粘弹性或双层粘塑性的完全松弛长期弹性解或长期弹塑性解。默认值为 OFF。
 
 *solutionTechnique*
 
@@ -260,10 +268,6 @@ StaticStep 对象可以具有以下成员：
 *description*
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
-
-*fullyPlastic*
-
-一个字符串，指定被监测完全塑性行为的区域。默认值为空字符串。
 
 *explicit*
 
@@ -368,8 +372,8 @@ StaticStep 对象可以具有以下成员：
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.25.4 对应的分析关键字
+### 49.22.4 对应的分析关键字
 
-| [*STATIC](../key/key-link.md#usb-kws-hstatic) |
+| [*SOILS](../key/key-link.md#usb-kws-hsoils) |
 | --- |
 | [*STEP](../key/key-link.md#usb-kws-hstep) |

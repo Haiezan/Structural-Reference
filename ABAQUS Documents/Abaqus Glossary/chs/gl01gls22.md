@@ -1,4 +1,4 @@
-# U（续）
+# U
 
 
 
@@ -6,40 +6,22 @@
 
 
 
-### user在必答）
+### unmeshable region
 
-用户编写的代码，用于自定义 Abaqus 功能。
-更多信息：- [「用户编写的代码，」Abaqus Analysis User's Guide 第 18.1 节](../usb/usb-link.md#usbusubutil)
+Abaqus/CAE 无法使用六面体元素自动进行网格划分的实体区域。可以通过分割、分配自底向上网格划分技术或为区域分配四面体元素来使不可网格化区域变得可网格化。另请参阅 [mesh](gl01gls14.md#gls-mesh)。
+更多信息：- [第 17 章，「The Mesh module，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-mgn)
 
-### user element
+### user-defined view
 
-用户定义的元素类型，允许您使用用户子程序实现自定义本构模型。
-更多信息：- [「用户元素，」Abaqus Analysis User's Guide 第 18.2 节](../usb/usb-link.md#usb-uel)
+选定 viewport 中 Abaqus/CAE 模型的自定义视图。您可以将当前位置、方向和比例因子保存为四个用户定义视图之一，随后将视图应用于任何 viewport。用户定义视图保存一个会话期。另请参阅 [view](gl01gls23.md#gls-view)。
+更多信息：- [「保存用户定义视图，」Abaqus/CAE User's Guide 第 5.6.9 节](../usi/usi-link.md#uss-viw-userviewsavebtn)
 
-### user material
+### user subroutine
 
-用户通过用户子程序定义的本构模型。
-更多信息：- [「用户材料，」Abaqus Analysis User's Guide 第 18.2.4 节](../usb/usb-link.md#usb-umat)
+您编写的代码，用于增强多个 Abaqus 选项的功能，这些选项的数据行使用可能过于限制。用户子程序通常编写为 FORTRAN 代码。
+更多信息：- [「用户子程序和实用程序，」Abaqus Analysis User's Guide 第 18.1 节](../usb/usb-link.md#usbusubutil)
 
-### user-defined
-
-用户添加或修改的功能，而不是 Abaqus 标准功能。
-更多信息：- [「用户定义的功能，」Abaqus/CAE User's Guide 第 9.11 节](../usi/usi-link.md#usi-dbs-user)
-
-### user-defined field
-
-用户使用 UFIELD 用户子程序定义的场变量。
-更多信息：- [「UFIELD，」Abaqus User Subroutines Reference Guide](../sub/sub-link.md#sub)
-
-### user-defined material
-
-用户通过用户子程序定义的本构模型。
-更多信息：- [「用户定义材料，」Abaqus Analysis User's Guide 第 18.2.4 节](../usb/usb-link.md#usb-umat)
-
-### UV vector
-
-参数空间中沿参数方向的向量。
-更多信息：- [「参数曲线和曲面，」Abaqus/CAE User's Guide 第 20.11.3 节](../usi/usi-link.md#usi-ske-uvvec)
+- [Abaqus User Subroutines Reference Guide](../sub/sub-link.md#sub)
 
 
 

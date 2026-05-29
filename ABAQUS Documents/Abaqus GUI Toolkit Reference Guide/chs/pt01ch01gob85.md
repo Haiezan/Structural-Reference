@@ -1,4 +1,4 @@
-# FXImage
+# FXId
 
 
 
@@ -8,114 +8,47 @@
 
 
 
-图像类
-![](../graphics/gui-fximage.png)
-
-### FXImage(a, pix=None, opts=0, w=1, h=1)
-
-创建图像。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| a | FXApp |  |  |
-| pix |  | None |  |
-| opts | Int | 0 |  |
-| w | Int | 1 |  |
-| h | Int | 1 |  |
-
-### blend(color, sharpen=True)
-
-将图标与指定颜色混合；仅适用于支持 alpha 通道的图标，例如 PNG。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| color | FXColor |  |  |
-| sharpen | Bool | True |  |
+封装服务器端资源。
+![](../graphics/gui-fxid.png)
 
 ### create()
 
-创建图像资源。
+创建资源。
 
-从 FXId 重新实现。
-
-在 FXIcon 中重新实现。
+在 FXBitmap、FXColorBar、FXColorSelector、FXColorWell、FXColorWheel、FXComboBox、FXComposite、FXCursor、FXDirBox、FXDirList、FXDockTitle、FXDriveBox、FXFileList、FXFont、FXFontSelector、FXGLCanvas、FXGLContext、FXGLViewer、FXGLVisual、FXGroupBox、FXHeader、FXIcon、FXIconList、FXImage、FXImageView、FXLabel、FXList、FXListBox、FXMDIChild、FXMenuButton、FXMenuCaption、FXMenuCascade、FXProgressBar、FXMenuTitle、FXOptionMenu、FXPrintDialog、FXRootWindow、FXScrollWindow、FXShell、FXSpinner、FXStatusline、FXTabBar、FXTable、FXText、FXTextField、FXToggleButton、FXToolbarShell、FXTooltip、FXTopWindow、FXTreeList、FXTreeListBox、FXVisual、FXWindow、AFXManagerMenuPane、AFXMainWindow、AFXPromptArea、AFXBaseTable、AFXColorButton、AFXColorFlyout、AFXComboBox、AFXDialog、AFXFloatSpinner、AFXFlyoutButton、AFXListBox、AFXNote、AFXOptionTreeItem、AFXPrimFloatSpinner、AFXProgressBar、AFXSpinner、AFXTable、AFXTextField 和 AFXVerticalAligner 中重新实现。
 
 ### destroy()
 
-销毁图像资源。
+销毁资源。
 
-从 FXId 重新实现。
-
-在 FXIcon 中重新实现。
+在 FXBitmap、FXComboBox、FXComposite、FXCursor、FXDirBox、FXDirList、FXDriveBox、FXFileList、FXFont、FXGLCanvas、FXGLContext、FXGLVisual、FXIcon、FXImage、FXListBox、FXMenuCascade、FXOptionMenu、FXRootWindow、FXTreeList、FXTreeListBox、FXVisual、FXWindow、AFXManagerMenuCascade、AFXColorFlyout 和 AFXTable 中重新实现。
 
 ### detach()
 
-分离图像资源。
+分离资源。
 
-从 FXId 重新实现。
+在 FXBitmap、FXColorBar、FXColorWell、FXColorWheel、FXComboBox、FXComposite、FXCursor、FXDirBox、FXDirList、FXDockTitle、FXDriveBox、FXFileList、FXFont、FXGLCanvas、FXGLContext、FXGLViewer、FXGLVisual、FXGroupBox、FXHeader、FXIcon、FXIconList、FXImage、FXImageView、FXLabel、FXList、FXListBox、FXMDIChild、FXMenuButton、FXMenuCaption、FXMenuCascade、FXProgressBar、FXMenuTitle、FXOptionMenu、FXRootWindow、FXStatusline、FXTable、FXText、FXToggleButton、FXTooltip、FXTopWindow、FXTreeList、FXTreeListBox、FXVisual、FXWindow、AFXBaseTable、AFXColorFlyout、AFXFlyoutButton、AFXNote 和 AFXTable 中重新实现。
 
-在 FXIcon 中重新实现。
+### getApp()
 
-### getOptions()
+获取应用程序。
 
-获取选项标志。
+### getUserData()
 
-### getPixel(x, y)
+获取用户数据指针。
 
-获取 x,y 处的像素。
+### id()
+
+获取 XID 句柄。
+
+在 FXFont 中重新实现。
+
+### setUserData(ptr)
+
+设置用户数据指针。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| x | Int |  |  |
-| y | Int |  |  |
-
-### render()
-
-从客户端像素缓冲区渲染图像。
-
-在 FXIcon 中重新实现。
-
-### resize(w, h)
-
-将像素图调整到指定的宽度和高度。
-
-从 FXDrawable 重新实现。
-
-在 FXIcon 中重新实现。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| w | Int |  |  |
-| h | Int |  |  |
-
-### scale(w, h)
-
-将像素图像重新缩放到指定的宽度和高度。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| w | Int |  |  |
-| h | Int |  |  |
-
-### setPixel(x, y, color)
-
-更改 x,y 处的像素。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| x | Int |  |  |
-| y | Int |  |  |
-| color | FXColor |  |  |
-
-### 全局标志
-
-### **图像渲染提示**
-
-| **IMAGE_KEEP** | 在客户端保留像素数据。 |
-| --- | --- |
-| **IMAGE_OWNED** | 像素数据由图像拥有。 |
-| **IMAGE_DITHER** | 抖动图像以获得更好的效果。 |
-| **IMAGE_NEAREST** | 关闭抖动并映射到最近的颜色。 |
-| **IMAGE_ALPHA** | 数据有 alpha 通道。 |
-| **IMAGE_OPAQUE** | 强制不透明背景。 |
-| **IMAGE_ALPHACOLOR** | 覆盖透明度颜色。 |
-| **IMAGE_SHMI** | 使用共享内存图像。 |
-| **IMAGE_SHMP** | 使用共享内存像素图。 |
-| **IMAGE_ALPHAGUESS** | 从角落猜测透明度颜色。 |
+| ptr | String |  |  |
 
 
 

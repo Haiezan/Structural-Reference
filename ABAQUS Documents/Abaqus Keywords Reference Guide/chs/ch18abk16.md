@@ -1,67 +1,48 @@
-# *SIMPEDANCE
+# *SHELL TO SOLID COUPLING
 
 
 
 
 
-### *SIMPEDANCE定义声学表面的阻抗。
+### *SHELL TO SOLID COUPLING定义壳边缘与实体面之间的基于表面的耦合。
 
-此选项用于为声学和耦合声学-结构分析提供表面阻抗信息或非反射边界。
+此基于表面的选项允许在三维分析中从壳单元建模过渡到实体单元建模。
 
 **产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据
+**类型：**模型数据
 
-**级别：**步
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**Interaction模块
 
 ##### **参考：**
 
-- ["Acoustic, shock, and coupled acoustic-structural analysis," Section 6.10.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aacoustic)
-- ["Acoustic and shock loads," Section 34.4.6 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-prc-pacoustic)
-- [*IMPEDANCE](ch09abk01.md)
-- [*IMPEDANCE PROPERTY](ch09abk02.md)
+- ["Element-based surface definition," Section 2.3.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-adeformablesurf)
+- ["Node-based surface definition," Section 2.3.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-anodebasedsurf)
+- ["Shell-to-solid coupling," Section 35.3.3 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-cni-pshelltosolidcoup)
 
-### **必需的互斥参数：**
+### **必需参数：**
 
-PROPERTY
+CONSTRAINT NAME
 
-将此参数设置为[*IMPEDANCE PROPERTY](ch09abk02.md)选项的名称，该选项定义要使用的阻抗表。
-
-NONREFLECTING
-
-设置NONREFLECTING=PLANAR（默认）以指定对应于正入射平面波的阻抗。
-
-设置NONREFLECTING=IMPROVED以指定对应于任意入射角平面波的阻抗。此参数仅可用于瞬态动力学。
-
-设置NONREFLECTING=CIRCULAR以指定适用于二维圆形边界或三维正圆柱体的辐射条件。
-
-设置NONREFLECTING=SPHERICAL以指定适用于球形边界的辐射条件。
-
-设置NONREFLECTING=ELLIPTICAL以指定适用于二维椭圆边界或三维正椭圆圆柱体的辐射条件。
-
-设置NONREFLECTING=PROLATE SPHEROIDAL以指定适用于长球面边界的辐射条件。
+将此参数设置为将用于引用此约束的标签。
 
 ### **可选参数：**
 
-OP
+INFLUENCE DISTANCE
 
-设置OP=MOD（默认）以修改现有阻抗或定义附加阻抗。
+将此参数设置为从边缘基准面的垂直距离，实体面上所有节点或单元面（取决于实体表面类型）必须位于此距离范围内才能包含在耦合约束中。默认值是用于定义边缘基准面的壳厚度的一半。
 
-如果应删除应用于模型的所有现有阻抗，则设置OP=NEW。要仅删除选定的阻抗，请使用OP=NEW并重新指定要保留的所有阻抗。
+POSITION TOLERANCE
 
-### **为PROPERTY、NONREFLECTING=PLANAR或NONREFLECTING=IMPROVED定义阻抗的数据行：**
+将此参数设置为边缘基准面上的节点必须位于实体表面的距离范围内才能包含在耦合定义中。默认容差是壳边缘上典型面长度的5%。
 
-**第一行（也是唯一行）：**
+### **定义形成耦合定义的表面的数据行：**
 
-### **为NONREFLECTING=CIRCULAR或NONREFLECTING=SPHERICAL定义吸收边界阻抗的数据行：**
+**第一行：**
 
-**第一行（也是唯一行）：**
-
-### **为NONREFLECTING=ELLIPTICAL或NONREFLECTING=PROLATE SPHEROIDAL定义吸收边界阻抗的数据行：**
-
-**第一行（也是唯一行）：**
+根据需要重复此数据行以定义形成耦合定义的所有表面。每一数据行定义一对将被耦合的表面。
 
 
 

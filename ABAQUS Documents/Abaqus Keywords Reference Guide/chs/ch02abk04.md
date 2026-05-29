@@ -1,74 +1,39 @@
-# *BASE MOTION
+# *BEAM FLUID INERTIA
 
 
 
 
 
-### *BASE MOTION为线性、基于特征模态的动态过程定义基础运动。
+### *BEAM FLUID INERTIA定义浸没在流体中的梁的附加惯性。
 
-此选项仅在使用系统自然模态的线性动力学过程中相关（[*STEADY STATE DYNAMICS](ch18abk34.md)不使用DIRECT参数，[*MODAL DYNAMIC](ch13abk18.md)和[*RANDOM RESPONSE](ch17abk07.md)）。
+此选项与[*BEAM SECTION](ch02abk06.md)或[*BEAM GENERAL SECTION](ch02abk05.md)选项配合使用，以包含浸没在无粘性流体中的Timoshenko梁单元的附加惯性效应。
 
-**产品：**Abaqus/Standard
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据
+**类型：**模型数据
 
-**级别：**步骤
+**级别：**部件、部件实例、装配
+
+**Abaqus/CAE：**属性模块
 
 ##### **参考：**
 
-- ["自然频率提取，" Abaqus Analysis User's Guide第6.3.5节](../usb/usb-link.md#usb-anl-afreqextraction)
-- ["瞬态模态动态分析，" Abaqus Analysis User's Guide第6.3.7节](../usb/usb-link.md#usb-anl-amodaldynamic)
-- ["基于模态的稳态动态分析，" Abaqus Analysis User's Guide第6.3.8节](../usb/usb-link.md#usb-anl-asteadystdyn)
-- ["随机响应分析，" Abaqus Analysis User's Guide第6.3.11节](../usb/usb-link.md#usb-anl-arandomresponse)
+- ["梁截面行为，" Abaqus Analysis User's Guide第29.3.5节](../usb/usb-link.md#usb-elm-ebeamsectionbehavior)
+- ["声学、冲击和耦合声-结构分析，" Abaqus Analysis User's Guide第6.10.1节](../usb/usb-link.md#usb-anl-aacoustic)
+- ["入射膨胀波场的载荷，" Abaqus Theory Guide第6.3.1节](../stm/stm-link.md#stm-ldc-undexloads)
 
-### **必需参数：**
+### **可选的、互斥的参数：**
 
-DOF
+FULL
 
-将此参数设置为定义基础运动的方向（1-6，包括旋转）。此方向始终是全局方向。
+使用此参数指定完全浸没的梁（默认值）。
 
-将此参数设置为8以获得声学自由度，这仅用于基于SIM的架构中的次级基础运动。
+HALF
 
-### **[*MODAL DYNAMIC](ch13abk18.md)和[*STEADY STATE DYNAMICS](ch18abk34.md)分析的必需参数：**
+使用此参数指定半浸没的梁。
 
-AMPLITUDE
-
-将此参数设置为定义运动的时间历史（[*MODAL DYNAMIC](ch13abk18.md)）或频谱（[*STEADY STATE DYNAMICS](ch18abk34.md)）的[*AMPLITUDE](ch01abk09.md)选项的名称。此参数与[*RANDOM RESPONSE](ch17abk07.md)过程无关。DEFINITION=SOLUTION DEPENDENT不能用于此选项引用的[*AMPLITUDE](ch01abk09.md)中。
-
-### **可选参数：**
-
-BASE NAME
-
-如果此基础运动要应用于次级基础，则将此参数设置为基础的名称。基础名称在[*FREQUENCY](ch06abk35.md)步骤中的[*BOUNDARY](ch02abk12.md)选项上的BASE NAME参数定义。
-
-LOAD CASE
-
-将此参数设置为载荷工况编号。此参数用于[*RANDOM RESPONSE](ch17abk07.md)分析中，是[*CORRELATION](ch03abk77.md)选项上载荷工况的交叉引用。
-
-SCALE
-
-将此参数设置为振幅曲线的比例因子。默认值为SCALE=1.0。此参数适用于[*MODAL DYNAMIC](ch13abk18.md)和[*STEADY STATE DYNAMICS](ch18abk34.md)过程。
-
-TYPE
-
-设置TYPE=ACCELERATION（默认）、VELOCITY或DISPLACEMENT。
-
-### **稳态动力学分析的可选、互斥参数：**
-
-IMAGINARY
-
-包含此参数以定义由振幅定义给出的基础运动记录的虚部（异相）部分。
-
-REAL
-
-包含此参数（默认）以定义由振幅定义给出的基础运动记录的实部（同相）部分。
-
-### **除非主基础运动定义关于不是坐标系原点的点的旋转，否则此选项没有数据行。**
-
-### **为指定旋转定义旋转中心的数据行：**
+### **定义梁流体惯性的数据行：**
 
 **第一行（也是唯一一行）：**
-
-此数据行仅与[*MODAL DYNAMIC](ch13abk18.md)和[*STEADY STATE DYNAMICS](ch18abk34.md)过程中定义的主基础运动相关。
 
 

@@ -1,31 +1,36 @@
-# 60.75 Piezoelectric 对象
+# 60.76 PlanarTestData 对象
 
-Piezoelectric 对象用于指定压电材料属性。
+PlanarTestData 对象用于指定平面测试（或纯剪切）数据（压缩和/或拉伸）。
 
 **访问**
 
 ```
-materialApi.materials()[*name*].piezoelectric()
+materialApi.materials()[*name*].hyperelastic().planarTestData()
+materialApi.materials()[*name*].hyperfoam().planarTestData()
+materialApi.materials()[*name*].mullinsEffect().planarTests(*i*)
 ```
 
-### 60.75.1 Piezoelectric(...)
+### 60.76.1 PlanarTestData(...)
 
-此方法创建一个 Piezoelectric 对象。
+此方法创建一个 PlanarTestData 对象。
 
 **路径**
 
 ```
-materialApi.materials()[*name*].Piezoelectric
+materialApi.materials()[*name*].hyperelastic().PlanarTestData
+materialApi.materials()[*name*].hyperfoam().PlanarTestData
+materialApi.materials()[*name*].mullinsEffect().PlanarTestData
 ```
 
 **原型**
 
 ```
-odb_Piezoelectric&
-Piezoelectric(const odb_SequenceSequenceDouble& table,
-              const odb_String& type,
-              bool temperatureDependency,
-              int dependencies);
+odb_PlanarTestData&
+PlanarTestData(const odb_SequenceSequenceDouble& table,
+               odb_Union smoothing,
+               bool lateralNominalStrain,
+               bool temperatureDependency,
+               int dependencies);
 ```
 
 **必需参数**
@@ -36,9 +41,13 @@ Piezoelectric(const odb_SequenceSequenceDouble& table,
 
 **可选参数**
 
-*type*
+*smoothing*
 
-一个 odb_String，指定压电属性的材料系数类型。可能的值为"STRAIN"和"STRESS"。默认值为"STRESS"。
+字符串"NONE"或一个 Int，指定平滑值。如果 *smoothing*="NONE"，则不采用平滑。默认值为"NONE"。
+
+*lateralNominalStrain*
+
+一个布尔值，指定是否包含横向名义应变。默认值为 false。
 
 *temperatureDependency*
 
@@ -50,66 +59,28 @@ Piezoelectric(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-如果 *type*=STRESS，表数据指定以下内容：
-- ![](../graphics/ker_eqn00297.gif]。
-- ![](../graphics/ker_eqn00298.gif]。
-- ![](../graphics/ker_eqn00299.gif]。
-- ![](../graphics/ker_eqn00300.gif]。
-- ![](../graphics/ker_eqn00301.gif]。
-- ![](../graphics/ker_eqn00302.gif]。
-- ![](../graphics/ker_eqn00303.gif]。
-- ![](../graphics/ker_eqn00304.gif]。
-- ![](../graphics/ker_eqn00305.gif]。
-- ![](../graphics/ker_eqn00306.gif]。
-- ![](../graphics/ker_eqn00307.gif]。
-- ![](../graphics/ker_eqn00308.gif]。
-- ![](../graphics/ker_eqn00309.gif]。
-- ![](../graphics/ker_eqn00310.gif]。
-- ![](../graphics/ker_eqn00311.gif]。
-- ![](../graphics/ker_eqn00312.gif]。
-- ![](../graphics/ker_eqn00313.gif]。
-- ![](../graphics/ker_eqn00314.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
+对于超弹性材料模型，表数据指定以下内容：
+- 名义应力，![](../graphics/ker_eqn00332.gif]。
+- 加载方向的名义应变，![](../graphics/ker_eqn00333.gif]。
 
-如果 *type*=STRAIN，表数据指定以下内容：
-- ![](../graphics/ker_eqn00315.gif]。
-- ![](../graphics/ker_eqn00316.gif]。
-- ![](../graphics/ker_eqn00317.gif]。
-- ![](../graphics/ker_eqn00318.gif]。
-- ![](../graphics/ker_eqn00319.gif]。
-- ![](../graphics/ker_eqn00320.gif]。
-- ![](../graphics/ker_eqn00321.gif]。
-- ![](../graphics/ker_eqn00322.gif]。
-- ![](../graphics/ker_eqn00323.gif]。
-- ![](../graphics/ker_eqn00324.gif]。
-- ![](../graphics/ker_eqn00325.gif]。
-- ![](../graphics/ker_eqn00326.gif]。
-- ![](../graphics/ker_eqn00327.gif]。
-- ![](../graphics/ker_eqn00328.gif]。
-- ![](../graphics/ker_eqn00329.gif]。
-- ![](../graphics/ker_eqn00330.gif]。
-- ![](../graphics/ker_eqn00331.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
+对于超泡沫材料模型，表数据指定以下内容：
+- 名义应力，![](../graphics/ker_eqn00334.gif]。
+- 加载方向的名义应变，![](../graphics/ker_eqn00335.gif]。
+- 横向名义应变，![](../graphics/ker_eqn00336.gif]。默认值为 0。
 
 **返回值**
 
-一个 Piezoelectric 对象。
+一个 PlanarTestData 对象。
 
 **异常**
 
 无。
 
-### 60.75.2 成员
+### 60.76.2 成员
 
-Piezoelectric 对象的成员与 [Piezoelectric](pt02ch60pyo75.md#ker-piezoelectric-piezoelectric-cpp) 方法的参数具有相同的名称和描述。
+PlanarTestData 对象的成员与 [PlanarTestData](pt02ch60pyo76.md#ker-planartestdata-planartestdata-cpp) 方法的参数具有相同的名称和描述。
 
-### 60.75.3 对应的分析关键字
+### 60.76.3 对应的分析关键字
 
-| [*PIEZOELECTRIC](../key/key-link.md#usb-kws-mpiezoelect) |
+| [*PLANAR TEST DATA](../key/key-link.md#usb-kws-mplanartestdata) |
 | --- |

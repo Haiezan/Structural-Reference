@@ -1,4 +1,4 @@
-# *NONLINEAR BH
+# *NONSTRUCTURAL MASS
 
 
 
@@ -8,42 +8,68 @@
 
 
 
-### *NONLINEAR BH指定软磁材料的非线性磁行为。
+### *NONSTRUCTURAL MASS指定来自非结构特征的模型质量贡献。
 
-此选项用于指定软磁材料的非线性磁行为。
+此选项用于在模型中包含来自非结构特征的质量贡献。非结构质量可以应用于包含实体、壳、膜、表面、梁或桁架单元的单元集。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
 **类型：**模型数据  
 
-**级别：**模型  
+**级别：**部件、部件实例、装配  
 
-**Abaqus/CAE：**属性模块
+**Abaqus/CAE：**属性模块和相互作用模块
 
 ##### **参考：**
 
-- ["磁导率，" Abaqus Analysis User's Guide第26.5.3节](../usb/usb-link.md#usb-mat-cmagpermeability)
+- ["非结构质量定义，" Abaqus Analysis User's Guide第2.7.1节](../usb/usb-link.md#usb-int-anonstructuralmass)
 
 ### **必需参数：**
 
-DIR
+ELSET
 
-将此参数设置为将在后续数据行中定义材料行为的局部方向（1、2或3）；设置DIR=0以定义在当前模型中处于非活动状态但可供将来使用的材料行为。必须使用不同的DIR参数值重复[*NONLINEAR BH](ch14abk14.md)选项以定义三个正交方向上的独立磁行为。
+将此参数设置为包含要分布给定非结构质量的单元的单元集名称。
 
-对于各向同性非线性磁行为，只需包含[*NONLINEAR BH](ch14abk14.md)选项一次（DIR=1、2或3）。
+UNITS
 
-对于正交各向异性非线性磁行为，必须包含[*NONLINEAR BH](ch14abk14.md)选项三次（DIR=1、DIR=2和DIR=3）。
+设置UNITS=TOTAL MASS以"质量"单位指定非结构质量。
+
+设置UNITS=MASS PER VOLUME以"单位体积质量"单位指定非结构质量。
+
+设置UNITS=MASS PER AREA以"单位面积质量"单位指定非结构质量。此值仅对包含常规壳、膜和/或表面单元的单元集有效。
+
+设置UNITS=MASS PER LENGTH以"单位长度质量"单位指定非结构质量。此值仅对包含梁和/或桁架单元的单元集有效。
 
 ### **可选参数：**
 
-DEPENDENCIES
+DISTRIBUTION
 
-将此参数设置为除温度外非线性磁行为定义中包含的场变量依赖数量。如果省略此参数，则非线性磁行为不依赖于场变量。
+此参数仅在UNITS=TOTAL MASS时相关。
 
-### **定义非线性磁行为的数据行：**
+设置DISTRIBUTION=MASS PROPORTIONAL（默认）以按照单元结构质量的比例在单元集区域的成员之间分配总非结构质量。单元集区域的基本结构密度被均匀缩放；因此，单元集区域的质心不会改变。
 
-**第一行：**
+设置DISTRIBUTION=VOLUME PROPORTIONAL以按照初始配置中单元体积的比例在单元集区域的成员之间分配总非结构质量。在单元集区域的基本结构密度上添加均匀值；因此，如果区域具有不均匀的结构密度，单元集区域的质心可能会改变。
 
-**后续行（仅在DEPENDENCIES参数值大于5时需要）：**
+### **UNITS=TOTAL MASS的数据行：**
 
-根据需要重复此组数据行，以定义磁通密度对磁场以及温度和其他预定义场变量（如需要）的依赖性。
+**第一行（也是唯一一行）：**
+
+Abaqus不使用任何特定的物理单位，因此用户的选择必须一致。
+
+### **UNITS=MASS PER VOLUME的数据行：**
+
+**第一行（也是唯一一行）：**
+
+Abaqus不使用任何特定的物理单位，因此用户的选择必须一致。
+
+### **UNITS=MASS PER AREA的数据行：**
+
+**第一行（也是唯一一行）：**
+
+Abaqus不使用任何特定的物理单位，因此用户的选择必须一致。
+
+### **UNITS=MASS PER LENGTH的数据行：**
+
+**第一行（也是唯一一行）：**
+
+Abaqus不使用任何特定的物理单位，因此用户的选择必须一致。

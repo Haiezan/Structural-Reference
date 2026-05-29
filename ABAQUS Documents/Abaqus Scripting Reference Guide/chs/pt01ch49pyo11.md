@@ -1,8 +1,8 @@
-# 49.9 DirectCyclicStep 对象
+# 49.11 ExplicitDynamicsStep 对象
 
-DirectCyclicStep 对象用于提供非线性、非等温准静态分析的直接循环过程。它也可用于预测延性体材料的渐进损伤和失效，和/或预测层合复合材料中界面处的分层/脱粘在低循环疲劳分析中的扩展。
+ExplicitDynamicsStep 对象用于使用 Abaqus/Explicit 中的显式积分进行动态应力/位移分析。
 
-DirectCyclicStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
+ExplicitDynamicsStep 对象派生于 [AnalysisStep](pt01ch49pyo02.md) 对象。
 
 **访问**
 
@@ -11,14 +11,14 @@ import step
 mdb.models[*name*].steps[*name*]
 ```
 
-### 49.9.1 DirectCyclicStep(...)
+### 49.11.1 ExplicitDynamicsStep(...)
 
-此方法创建一个 DirectCyclicStep 对象。
+此方法创建一个 ExplicitDynamicsStep 对象。
 
 **路径**
 
 ```
-mdb.models[*name*].DirectCyclicStep
+mdb.models[*name*].ExplicitDynamicsStep
 ```
 
 **必需参数**
@@ -39,107 +39,59 @@ mdb.models[*name*].DirectCyclicStep
 
 *timePeriod*
 
-一个 Float，指定单个加载循环的时间。默认值为 1.0。
+一个 Float，指定步骤的总时间周期。默认值为 1.0。
+
+*nlgeom*
+
+一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 ON。
+
+*adiabatic*
+
+一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
 
 *timeIncrementationMethod*
 
-一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 FIXED 和 AUTOMATIC。默认值为 AUTOMATIC。
+一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 AUTOMATIC_GLOBAL、AUTOMATIC_EBE、FIXED_USER_DEFINED_INC 和 FIXED_EBE。默认值为 AUTOMATIC_GLOBAL。
 
-*maxNumInc*
+*maxIncrement*
 
-一个 Int，指定步骤中的最大增量数。默认值为 100。
+`None` 或一个 Float，指定最大时间增量。如果没有上限，则 *maxIncrement*=`None`。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL 或 AUTOMATIC_EBE 时需要。默认值为 `None`。
 
-*initialInc*
+*scaleFactor*
 
-一个 Float，指定初始时间增量。默认值为步骤的总时间周期。
+一个 Float，指定用于缩放时间增量的因子。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL、AUTOMATIC_EBE 或 FIXED_EBE 时需要。默认值为 1.0。
 
-*minInc*
+*massScaling*
 
-一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期的 105 倍中的较小值。
+一个 [MassScalingArray](pt01ch50pyo09.md) 对象，指定质量缩放控制。默认值为 PREVIOUS_STEP。
 
-*maxInc*
+*linearBulkViscosity*
 
-一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
+一个 Float，指定线性体积粘度参数 ![](../graphics/ker_eqn00420.gif)。默认值为 0.06。
 
-*maxNumIterations*
+*quadBulkViscosity*
 
-一个 Int，指定步骤中的最大迭代次数。默认值为 200。
+一个 Float，指定二次体积粘度参数 ![](../graphics/ker_eqn00421.gif)。默认值为 1.2。
 
-*initialTerms*
+*userDefinedInc*
 
-一个 Int，指定傅里叶级数中的初始项数。默认值为 11。
-
-*maxTerms*
-
-一个 Int，指定傅里叶级数中的最大项数。默认值为 25。
-
-*termsIncrement*
-
-一个 Int，指定傅里叶级数项数的增量。默认值为 5。
-
-*deltmx*
-
-一个 Float，指定允许的增量中的最大温度变化。默认值为 0.0。
-
-*cetol*
-
-一个 Float，指定从增量的开始和结束时的蠕变应变率计算的蠕变应变增量之间的最大差异。默认值为 0.0。
-
-*timePoints*
-
-`None` 或一个字符串，指定一个字符串，指定用于确定结构响应将在哪些时间进行评估的时间点对象名称。默认值为 NONE。
-
-*fatigue*
-
-一个布尔值，指定是否包含低循环疲劳分析。默认值为 OFF。
-
-*continueAnalysis*
-
-一个布尔值，指定是否使用在前一个直接循环步骤中获得的傅里叶级数中的位移解作为当前步骤的起始值。默认值为 OFF。
-
-*minCycleInc*
-
-一个 Int，指定向前外推损伤的最小循环数。默认值为 100。
-
-*maxCycleInc*
-
-一个 Int，指定向前外推损伤的最大循环数。默认值为 1000。
-
-*maxNumCycles*
-
-SymbolicConstant DEFAULT 或一个 Int，指定步骤中允许的最大循环数或 DEFAULT。如果指定 DEFAULT，则将使用 1 加上最大循环数一半的值。默认值为 DEFAULT。
-
-*damageExtrapolationTolerance*
-
-一个 Float，指定最大外推损伤增量。默认值为 1.0。
-
-*matrixStorage*
-
-一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
-
-*extrapolation*
-
-一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
+`None` 或一个 Float，指定用户定义的时间增量。此参数仅在 *timeIncrementationMethod*=FIXED_USER_DEFINED_INC 时需要。默认值为 `None`。
 
 *maintainAttributes*
 
 一个布尔值，指定是否保留具有相同名称的现有步骤的属性。默认值为 False。
 
-*convertSDI*
-
-一个 SymbolicConstant，指定在迭代期间发生严重不连续时是否强制进行新迭代。可选值为 PROPAGATED、CONVERT_SDI_OFF 和 CONVERT_SDI_ON。默认值为 PROPAGATED。
-
 **返回值**
 
-一个 DirectCyclicStep 对象。
+一个 ExplicitDynamicsStep 对象。
 
 **异常**
 
 RangeError。
 
-### 49.9.2 setValues(...)
+### 49.11.2 setValues(...)
 
-此方法修改 DirectCyclicStep 对象。
+此方法修改 ExplicitDynamicsStep 对象。
 
 **必需参数**
 
@@ -147,7 +99,7 @@ RangeError。
 
 **可选参数**
 
-`setValues` 的可选参数与 [DirectCyclicStep](pt01ch49pyo09.md#ker-directcyclicstep-directcyclicstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
+`setValues` 的可选参数与 [ExplicitDynamicsStep](pt01ch49pyo11.md#ker-explicitdynamicsstep-explicitdynamicsstep-pyc) 方法的参数相同，但 *name*、*previous* 和 *maintainAttributes* 参数除外。
 
 **返回值**
 
@@ -157,9 +109,9 @@ RangeError。
 
 RangeError。
 
-### 49.9.3 成员
+### 49.11.3 成员
 
-DirectCyclicStep 对象可以具有以下成员：
+ExplicitDynamicsStep 对象可以具有以下成员：
 
 *name*
 
@@ -167,87 +119,39 @@ DirectCyclicStep 对象可以具有以下成员：
 
 *timePeriod*
 
-一个 Float，指定单个加载循环的时间。默认值为 1.0。
+一个 Float，指定步骤的总时间周期。默认值为 1.0。
+
+*nlgeom*
+
+一个布尔值，指定是否在步骤期间考虑几何非线性。默认值为 ON。
+
+*adiabatic*
+
+一个布尔值，指定是否执行绝热应力分析。默认值为 OFF。
 
 *timeIncrementationMethod*
 
-一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 FIXED 和 AUTOMATIC。默认值为 AUTOMATIC。
+一个 SymbolicConstant，指定要使用的时间增量方法。可选值为 AUTOMATIC_GLOBAL、AUTOMATIC_EBE、FIXED_USER_DEFINED_INC 和 FIXED_EBE。默认值为 AUTOMATIC_GLOBAL。
 
-*maxNumInc*
+*maxIncrement*
 
-一个 Int，指定步骤中的最大增量数。默认值为 100。
+`None` 或一个 Float，指定最大时间增量。如果没有上限，则 *maxIncrement*=`None`。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL 或 AUTOMATIC_EBE 时需要。默认值为 `None`。
 
-*initialInc*
+*scaleFactor*
 
-一个 Float，指定初始时间增量。默认值为步骤的总时间周期。
+一个 Float，指定用于缩放时间增量的因子。此参数仅在 *timeIncrementationMethod*=AUTOMATIC_GLOBAL、AUTOMATIC_EBE 或 FIXED_EBE 时需要。默认值为 1.0。
 
-*minInc*
+*linearBulkViscosity*
 
-一个 Float，指定允许的最小时间增量。默认值为建议的初始时间增量或总时间周期的 105 倍中的较小值。
+一个 Float，指定线性体积粘度参数 ![](../graphics/ker_eqn00420.gif)。默认值为 0.06。
 
-*maxInc*
+*quadBulkViscosity*
 
-一个 Float，指定允许的最大时间增量。默认值为步骤的总时间周期。
+一个 Float，指定二次体积粘度参数 ![](../graphics/ker_eqn00421.gif)。默认值为 1.2。
 
-*maxNumIterations*
+*userDefinedInc*
 
-一个 Int，指定步骤中的最大迭代次数。默认值为 200。
-
-*initialTerms*
-
-一个 Int，指定傅里叶级数中的初始项数。默认值为 11。
-
-*maxTerms*
-
-一个 Int，指定傅里叶级数中的最大项数。默认值为 25。
-
-*termsIncrement*
-
-一个 Int，指定傅里叶级数项数的增量。默认值为 5。
-
-*deltmx*
-
-一个 Float，指定允许的增量中的最大温度变化。默认值为 0.0。
-
-*cetol*
-
-一个 Float，指定从增量的开始和结束时的蠕变应变率计算的蠕变应变增量之间的最大差异。默认值为 0.0。
-
-*fatigue*
-
-一个布尔值，指定是否包含低循环疲劳分析。默认值为 OFF。
-
-*continueAnalysis*
-
-一个布尔值，指定是否使用在前一个直接循环步骤中获得的傅里叶级数中的位移解作为当前步骤的起始值。默认值为 OFF。
-
-*minCycleInc*
-
-一个 Int，指定向前外推损伤的最小循环数。默认值为 100。
-
-*maxCycleInc*
-
-一个 Int，指定向前外推损伤的最大循环数。默认值为 1000。
-
-*maxNumCycles*
-
-SymbolicConstant DEFAULT 或一个 Int，指定步骤中允许的最大循环数或 DEFAULT。如果指定 DEFAULT，则将使用 1 加上最大循环数一半的值。默认值为 DEFAULT。
-
-*damageExtrapolationTolerance*
-
-一个 Float，指定最大外推损伤增量。默认值为 1.0。
-
-*matrixStorage*
-
-一个 SymbolicConstant，指定矩阵存储类型。可选值为 SYMMETRIC、UNSYMMETRIC 和 SOLVER_DEFAULT。默认值为 SOLVER_DEFAULT。
-
-*extrapolation*
-
-一个 SymbolicConstant，指定用于确定非线性分析的增量解的外推类型。可选值为 NONE、LINEAR 和 PARABOLIC。默认值为 LINEAR。
-
-*convertSDI*
-
-一个 SymbolicConstant，指定在迭代期间发生严重不连续时是否强制进行新迭代。可选值为 PROPAGATED、CONVERT_SDI_OFF 和 CONVERT_SDI_ON。默认值为 PROPAGATED。
+`None` 或一个 Float，指定用户定义的时间增量。此参数仅在 *timeIncrementationMethod*=FIXED_USER_DEFINED_INC 时需要。默认值为 `None`。
 
 *previous*
 
@@ -257,9 +161,9 @@ SymbolicConstant DEFAULT 或一个 Int，指定步骤中允许的最大循环数
 
 一个字符串，指定新步骤的描述。默认值为空字符串。
 
-*timePoints*
+*massScaling*
 
-`None` 或一个字符串，指定一个字符串，指定用于确定结构响应将在哪些时间进行评估的时间点对象名称。默认值为 NONE。
+一个 [MassScalingArray](pt01ch50pyo09.md) 对象，指定质量缩放控制。默认值为 PREVIOUS_STEP。
 
 *explicit*
 
@@ -364,8 +268,11 @@ SymbolicConstant DEFAULT 或一个 Int，指定步骤中允许的最大循环数
 
 [PredefinedFieldState](pt01ch42pyo12.md) 对象的存储库。
 
-### 49.9.4 对应的分析关键字
+### 49.11.4 对应的分析关键字
 
-| [*DIRECT CYCLIC](../key/key-link.md#usb-kws-hdirectcyclic) |
+| [*BULK VISCOSITY](../key/key-link.md#usb-kws-hbulkvisco) |
 | --- |
+| [*DYNAMIC](../key/key-link.md#usb-kws-hdynamic) |
+| [*FIXED MASS SCALING](../key/key-link.md#usb-kws-hfixedmassscaling) |
 | [*STEP](../key/key-link.md#usb-kws-hstep) |
+| [*VARIABLE MASS SCALING](../key/key-link.md#usb-kws-hvariablemassscaling) |

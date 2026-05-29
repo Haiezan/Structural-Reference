@@ -1,4 +1,4 @@
-# *PREPRINT
+# *POTENTIAL
 
 
 
@@ -6,9 +6,9 @@
 
 
 
-### *PREPRINT选择分析输入文件处理器的打印输出。
+### *POTENTIAL定义各向异性屈服/蠕变模型。
 
-此选项用于选择将从分析输入文件处理器获得的打印输出。
+此选项用于定义各向异性屈服和蠕变行为的应力比。它只能与[*CREEP](ch03abk85.md)选项、[*PLASTIC](ch16abk14.md)选项（HARDENING=ISOTROPIC、KINEMATIC或COMBINED；[*POTENTIAL](ch16abk24.md)选项只能在Abaqus/Explicit中与COMBINED硬化结合使用）和/或[*VISCOUS](ch21abk06.md)选项定义的材料模型结合使用。
 
 **产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
 
@@ -16,48 +16,26 @@
 
 **级别：**模型  
 
-**Abaqus/CAE：**作业模块
+**Abaqus/CAE：**属性模块
 
 ##### **参考：**
 
-- ["输出，" Abaqus Analysis User's Guide第4.1.1节](../usb/usb-link.md#usb-out-ooutput)
+- ["经典金属塑性，" Abaqus Analysis User's Guide第23.2.1节](../usb/usb-link.md#usb-mat-cmetalplastic)
+- ["承受循环加载的金属模型，" Abaqus Analysis User's Guide第23.2.2节](../usb/usb-link.md#usb-mat-chardening)
+- ["率相关塑性：蠕变和膨胀，" Abaqus Analysis User's Guide第23.2.4节](../usb/usb-link.md#usb-mat-cratedepcreep)
+- ["各向异性屈服/蠕变，" Abaqus Analysis User's Guide第23.2.6节](../usb/usb-link.md#usb-mat-canisoyield)
+- ["双层粘塑性，" Abaqus Analysis User's Guide第23.2.11节](../usb/usb-link.md#usb-mat-cviscous)
 
 ### **可选参数：**
 
-CONTACT
+DEPENDENCIES
 
-此参数仅适用于Abaqus/Standard分析。
+将此参数设置为![](../graphics/key_eqn01009.gif)定义中包含的场变量依赖数量，不包括温度。如果省略此参数，则假定各向异性比率是常数或仅依赖于温度。有关更多信息，请参见["指定场变量依赖性"在"材料数据定义，" Abaqus Analysis User's Guide第21.1.2节](../usb/usb-link.md#usb-mat-cmaterialdata-fvdepen)中。
 
-设置CONTACT=YES以打印由接触对定义数据生成的接触约束的详细信息。设置CONTACT=NO（默认）以抑制此打印输出。
+### **用于定义应力比的数据行：**
 
-ECHO
+**第一行：**
 
-设置ECHO=YES以打印输入数据的回显。设置ECHO=NO（默认）以抑制此打印输出。
+**后续行（仅在DEPENDENCIES参数值大于1时需要）：**
 
-HISTORY
-
-设置HISTORY=YES以打印历史数据。设置HISTORY=NO（默认）以抑制此打印输出。
-
-MODEL
-
-设置MODEL=YES以打印模型定义数据。设置MODEL=NO（默认）以抑制此打印输出。
-
-在Abaqus/Explicit中，设置MODEL=YES会自动设置MASS PROPERTY=YES。
-
-PARSUBSTITUTION
-
-设置PARSUBSTITUTION=YES以打印原始输入文件的修改版本，该版本不含输入模型参数化。设置PARSUBSTITUTION=NO（默认）以抑制此打印输出。
-
-PARVALUES
-
-设置PARVALUES=YES以打印原始输入文件的修改版本，显示用于模型参数化的参数及其值。设置PARVALUES=NO（默认）以抑制此打印输出。
-
-MASS PROPERTY
-
-此参数仅适用于Abaqus/Explicit分析。
-
-设置MASS PROPERTY=YES以打印质量属性表，其中包括每个用户定义元素集的原始质量、初始质量缩放、非结构质量、质心和转动惯量。设置MASS PROPERTY=NO（默认）以抑制此打印输出。
-
-如果MODEL=YES，即使MASS PROPERTY=NO，也会打印质量属性表。
-
-**此选项没有关联的数据行。**
+根据需要重复此组数据行，以将![](../graphics/key_eqn01009.gif)定义为温度和其他场变量的函数。

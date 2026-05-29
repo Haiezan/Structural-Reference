@@ -1,51 +1,42 @@
-# *TRANSPORT EQUATION SOLVER
+# *TRANSPORT VELOCITY
 
 
 
 
 
-### *TRANSPORT EQUATION SOLVER为Abaqus/CFD分析中求解传输方程指定线性求解器和参数。
+### *TRANSPORT VELOCITY指定角度传输速度。
 
-此选项只能作为[*CFD](ch03abk13.md)选项的子选项使用，以启用线性求解器参数来求解标量变量（如温度、物种浓度、湍流动能耗散率、湍流动能等）的传输方程。对于稳态分析，此选项还用于启用标量变量传输的欠松弛参数。
+此选项用于在稳态传输分析期间定义通过可变形体网格传输的材料的角速度，或相对于刚性体参考节点的材料传输速度。
 
-**产品：**Abaqus/CFD  Abaqus/CAE
+**产品：**Abaqus/Standard
 
 **类型：**历史数据
 
 **级别：**步
 
-**Abaqus/CAE：**Step模块
-
 ##### **参考：**
 
-- ["不可压缩流体动力学分析," Section 6.6.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aifluiddyn)
-- [*CFD](ch03abk13.md)
+- ["稳态传输分析," Section 6.4.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-asteadystatetransport)
+- ["对称模型生成," Section 10.4.1 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aaximodelgen)
+- ["UMOTION," Section 1.1.44 of the Abaqus User Subroutines Reference Guide](../sub/sub-link.md#sub-rtn-umotion)
 
 ### **可选参数：**
 
-CONVERGENCE
+AMPLITUDE
 
-设置CONVERGENCE=ON以将收敛信息写入日志文件。
+将此参数设置为幅度曲线（在[*AMPLITUDE](ch01abk09.md)选项中定义）的名称，该曲线给出整个步中速度随时间的变化（["幅度曲线," Section 34.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-prc-pamplitude)）。
 
-设置CONVERGENCE=OFF（默认）以抑制收敛信息。
+如果省略此参数，则根据[*STEP](ch18abk36.md)选项上AMPLITUDE参数分配的值，参考幅值将在步开始时立即应用或在整个步中线性应用（参见["定义分析," Section 6.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-anl-aover)）。
 
-DIAGNOSTICS
+USER
 
-设置DIAGNOSTICS=ON以将关于求解器的诊断信息写入日志文件。
+包含此参数以指示旋转速度的大小将在用户子程序[`UMOTION`](../sub/sub-link.md#sub-xsl-umotion)中定义。如果使用此参数，则数据行定义的任何大小都可以在用户子程序中重新定义。
 
-设置DIAGNOSTICS=OFF（默认）以抑制诊断信息。
+### **定义旋转运动的数据行：**
 
-TYPE
+**第一行：**
 
-设置TYPE=DSFGMRES（默认）以启用对角缩放灵活广义最小残差线性求解器。
-
-设置TYPE=DSGMRES以启用对角缩放广义最小残差线性求解器。
-
-设置TYPE=ILUFGMRES以启用不完全LU分解预条件灵活广义最小残差线性求解器。
-
-### **TYPE=DSFGMRES、TYPE=DSGMRES和TYPE=ILUFGMRES的数据行：**
-
-**第一行（也是唯一行）：**
+根据需要重复此数据行，以定义模型不同部分节点上的旋转运动。
 
 
 

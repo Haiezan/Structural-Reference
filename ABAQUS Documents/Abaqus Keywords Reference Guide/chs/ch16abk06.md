@@ -1,4 +1,4 @@
-# *PERMANENT MAGNETIZATION
+# *PERIODIC MEDIA
 
 
 
@@ -8,11 +8,11 @@
 
 
 
-### *PERMANENT MAGNETIZATION指定永久磁化。
+### *PERIODIC MEDIA指定周期性介质。
 
-此选项用于通过永磁体的矫顽力为瞬态电磁或静磁分析中的电磁单元定义永久磁化。此选项只能与[*MAGNETIC PERMEABILITY](ch13abk01.md)选项结合使用，并可选择与[*NONLINEAR BH](ch14abk14.md)选项结合使用。
+此选项用于指定周期性介质。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Explicit  
 
 **类型：**模型数据  
 
@@ -20,22 +20,32 @@
 
 ##### **参考：**
 
-- ["磁导率，" Abaqus Analysis User's Guide第26.5.3节](../usb/usb-link.md#usb-mat-cmagpermeability)
-- ["涡流分析，" Abaqus Analysis User's Guide第6.7.5节](../usb/usb-link.md#usb-anl-aeddycurrent)
-- ["静磁分析，" Abaqus Analysis User's Guide第6.7.6节](../usb/usb-link.md#usb-anl-amagnetostatic)
+- ["周期性介质分析，" Abaqus Analysis User's Guide第10.5.1节](../usb/usb-link.md#usb-anl-aperiodicmedia)
 
-### **可选参数：**
+### **必需参数：**
 
-DEPENDENCIES
+INLET CONTROL NODE
 
-将此参数设置为永磁体矫顽力定义中包含的场变量数量。如果省略此参数，则假定矫顽力不依赖于任何场变量，但可能仍依赖于温度。
+将此参数设置为入口控制节点的节点编号或包含入口控制节点的节点集名称。如果选择节点集名称，则该节点集必须恰好包含一个节点。
 
-### **定义矫顽力向量的数据行：**
+NAME
+
+将此参数设置为周期性介质的名称。
+
+ORIENTATION
+
+将此参数设置为方向定义的名称，用于定义周期性介质块移动的触发平面。局部*z*轴垂直于触发平面，指向与介质传输相同的方向。
+
+OUTLET CONTROL NODE
+
+将此参数设置为出口控制节点的节点编号或包含出口控制节点的节点集名称。如果选择节点集名称，则该节点集必须恰好包含一个节点。
+
+TRIGGER NODE
+
+将此参数设置为触发节点的节点编号或包含触发节点的节点集名称。如果选择节点集名称，则该节点集必须恰好包含一个节点。触发平面通过触发节点位置和指定方向的组合来定义。
+
+### **定义周期性介质的数据行：**
 
 **第一行：**
 
-**第二行：**
-
-**后续行（仅在DEPENDENCIES参数值大于6时需要）：**
-
-不要重复第一数据行。根据需要重复第二和后续数据行，以将矫顽力大小定义为温度和场变量的函数。
+根据需要重复此数据行。为周期性介质的每个部分使用一行数据。周期性部分的顺序是从入口到出口。

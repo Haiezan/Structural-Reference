@@ -1,4 +1,4 @@
-# FXLabel
+# FXImage
 
 
 
@@ -8,191 +8,114 @@
 
 
 
-标签窗口部件可用于放置文本和/或图标以进行说明。文本标签可以有可选的工具提示和/或帮助字符串。
-![](../graphics/gui-fxlabel.png)
+图像类
+![](../graphics/gui-fximage.png)
 
-### FXLabel(p, text, ic=None, opts=LABEL_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+### FXImage(a, pix=None, opts=0, w=1, h=1)
 
-使用给定文本和图标构造标签。
+创建图像。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| p | FXComposite |  |  |
-| text | String |  |  |
-| ic | FXIcon | None |  |
-| opts | Int | LABEL_NORMAL |  |
-| x | Int | 0 |  |
-| y | Int | 0 |  |
-| w | Int | 0 |  |
-| h | Int | 0 |  |
-| pl | Int | DEFAULT_PAD |  |
-| pr | Int | DEFAULT_PAD |  |
-| pt | Int | DEFAULT_PAD |  |
-| pb | Int | DEFAULT_PAD |  |
+| a | FXApp |  |  |
+| pix |  | None |  |
+| opts | Int | 0 |  |
+| w | Int | 1 |  |
+| h | Int | 1 |  |
+
+### blend(color, sharpen=True)
+
+将图标与指定颜色混合；仅适用于支持 alpha 通道的图标，例如 PNG。
+| **参数** | **类型** | **默认值** | **说明** |
+| --- | --- | --- | --- |
+| color | FXColor |  |  |
+| sharpen | Bool | True |  |
 
 ### create()
 
-创建服务器端资源。
+创建图像资源。
 
-从 FXWindow 重新实现。
+从 FXId 重新实现。
 
-在 FXMenuButton、FXOptionMenu、FXToggleButton 和 AFXFlyoutButton 中重新实现。
+在 FXIcon 中重新实现。
+
+### destroy()
+
+销毁图像资源。
+
+从 FXId 重新实现。
+
+在 FXIcon 中重新实现。
 
 ### detach()
 
-分离服务器端资源。
+分离图像资源。
 
-从 FXWindow 重新实现。
+从 FXId 重新实现。
 
-在 FXMenuButton、FXOptionMenu、FXToggleButton 和 AFXFlyoutButton 中重新实现。
+在 FXIcon 中重新实现。
 
-### disable()
+### getOptions()
 
-禁用窗口。
+获取选项标志。
 
-从 FXWindow 重新实现。
+### getPixel(x, y)
 
-在 AFXFlyoutButton 中重新实现。
-
-### enable()
-
-启用窗口。
-
-从 FXWindow 重新实现。
-
-在 AFXFlyoutButton 中重新实现。
-
-### getDefaultHeight()
-
-返回默认高度。
-
-从 FXFrame 重新实现。
-
-在 FXCheckButton、FXMDIDeleteButton、FXMDIRestoreButton、FXMDIMaximizeButton、FXMDIMinimizeButton、FXMDIWindowButton、FXMenuButton、FXOption、FXOptionMenu、FXRadioButton 和 FXToggleButton 中重新实现。
-
-### getDefaultWidth()
-
-返回默认宽度。
-
-从 FXFrame 重新实现。
-
-在 FXCheckButton、FXMDIDeleteButton、FXMDIRestoreButton、FXMDIMaximizeButton、FXMDIMinimizeButton、FXMDIWindowButton、FXMenuButton、FXOption、FXOptionMenu、FXRadioButton 和 FXToggleButton 中重新实现。
-
-### getFont()
-
-获取文本字体。
-
-### getHelpText()
-
-获取此标签的状态栏帮助文本。
-
-### getIcon()
-
-获取此标签的图标。
-
-### getIconPosition()
-
-获取当前图标位置。
-
-### getJustify()
-
-获取当前文本对齐模式。
-
-### getText()
-
-获取此标签的文本。
-
-### getTextColor()
-
-获取当前文本颜色。
-
-### getTipText()
-
-获取此标签的工具提示消息。
-
-### setFont(fnt)
-
-设置文本字体。
+获取 x,y 处的像素。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| fnt | FXFont |  |  |
+| x | Int |  |  |
+| y | Int |  |  |
 
-### setHelpText(text)
+### render()
 
-设置此标签的状态栏帮助文本。
+从客户端像素缓冲区渲染图像。
 
-在 AFXFlyoutItem 中重新实现。
+在 FXIcon 中重新实现。
+
+### resize(w, h)
+
+将像素图调整到指定的宽度和高度。
+
+从 FXDrawable 重新实现。
+
+在 FXIcon 中重新实现。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| text | String |  |  |
+| w | Int |  |  |
+| h | Int |  |  |
 
-### setIcon(ic)
+### scale(w, h)
 
-设置此标签的图标。
-
-在 AFXFlyoutItem 中重新实现。
+将像素图像重新缩放到指定的宽度和高度。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| ic | FXIcon |  |  |
+| w | Int |  |  |
+| h | Int |  |  |
 
-### setIconPosition(mode)
+### setPixel(x, y, color)
 
-设置当前图标位置。
+更改 x,y 处的像素。
 | **参数** | **类型** | **默认值** | **说明** |
 | --- | --- | --- | --- |
-| mode | Int |  |  |
-
-### setJustify(mode)
-
-设置当前文本对齐模式。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| mode | Int |  |  |
-
-### setText(text)
-
-设置此标签的文本。
-
-在 AFXFlyoutItem 中重新实现。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| text | String |  |  |
-
-### setTextColor(clr)
-
-设置当前文本颜色。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| clr | FXColor |  |  |
-
-### setTipText(text)
-
-设置此标签的工具提示消息。
-
-在 AFXFlyoutItem 中重新实现。
-| **参数** | **类型** | **默认值** | **说明** |
-| --- | --- | --- | --- |
-| text | String |  |  |
+| x | Int |  |  |
+| y | Int |  |  |
+| color | FXColor |  |  |
 
 ### 全局标志
 
-### **图标标签的关系选项**
+### **图像渲染提示**
 
-| **ICON_UNDER_TEXT** | 图标显示在文本下方。 |
+| **IMAGE_KEEP** | 在客户端保留像素数据。 |
 | --- | --- |
-| **ICON_AFTER_TEXT** | 图标显示在文本之后（右侧）。 |
-| **ICON_BEFORE_TEXT** | 图标显示在文本之前（左侧）。 |
-| **ICON_ABOVE_TEXT** | 图标显示在文本上方。 |
-| **ICON_BELOW_TEXT** | 图标显示在文本下方。 |
-| **TEXT_OVER_ICON** | 与 ICON_UNDER_TEXT 相同。 |
-| **TEXT_AFTER_ICON** | 与 ICON_BEFORE_TEXT 相同。 |
-| **TEXT_BEFORE_ICON** | 与 ICON_AFTER_TEXT 相同。 |
-| **TEXT_ABOVE_ICON** | 与 ICON_BELOW_TEXT 相同。 |
-| **TEXT_BELOW_ICON** | 与 ICON_ABOVE_TEXT 相同。 |
-
-### **显示标签的正常方式**
-
-| **LABEL_NORMAL** | JUSTIFY_NORMAL 和 ICON_BEFORE_TEXT 的组合。 |
-| --- | --- |
+| **IMAGE_OWNED** | 像素数据由图像拥有。 |
+| **IMAGE_DITHER** | 抖动图像以获得更好的效果。 |
+| **IMAGE_NEAREST** | 关闭抖动并映射到最近的颜色。 |
+| **IMAGE_ALPHA** | 数据有 alpha 通道。 |
+| **IMAGE_OPAQUE** | 强制不透明背景。 |
+| **IMAGE_ALPHACOLOR** | 覆盖透明度颜色。 |
+| **IMAGE_SHMI** | 使用共享内存图像。 |
+| **IMAGE_SHMP** | 使用共享内存像素图。 |
+| **IMAGE_ALPHAGUESS** | 从角落猜测透明度颜色。 |
 
 
 

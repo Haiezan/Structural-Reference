@@ -1,12 +1,12 @@
-# *DSECURRENT
+# *DSFLOW
 
 
 
 
 
-### *DSECURRENT在电磁分析中指定表面上分布的电流密度。
+### *DSFLOW指定垂直于表面的分布渗流量。
 
-此选项用于在耦合热电、耦合热电结构、涡流和静磁分析中输入表面上分布的电流密度。
+此选项用于在固结问题中输入垂直于模型表面的渗流量（孔隙流体速度）。
 
 **产品：**Abaqus/Standard  Abaqus/CAE  
 
@@ -18,44 +18,34 @@
 
 ##### **参考：**
 
-- ["耦合热电分析，" Abaqus分析用户指南第6.7.3节](../usb/usb-link.md#usb-anl-ajouleheating)
-- ["全耦合热电结构分析，" Abaqus分析用户指南第6.7.4节](../usb/usb-link.md#usb-anl-acoupthermalelecstruct)
-- ["涡流分析，" Abaqus分析用户指南第6.7.5节](../usb/usb-link.md#usb-anl-aeddycurrent)
-- ["静磁分析，" Abaqus分析用户指南第6.7.6节](../usb/usb-link.md#usb-anl-amagnetostatic)
+- ["孔隙流体流动，" Abaqus分析用户指南第34.4.7节](../usb/usb-link.md#usb-prc-pporousflow)
+- ["DFLOW，" Abaqus用户子程序参考指南第1.1.2节](../sub/sub-link.md#sub-rtn-udflow)
 
 ### **可选参数：**
 
 AMPLITUDE
 
-将此参数设置为振幅曲线的名称，该曲线定义步骤期间电流密度的大小（["振幅曲线，" Abaqus分析用户指南第34.1.2节](../usb/usb-link.md#usb-prc-pamplitude)）。如果省略此参数，则参考值将在步骤开始时立即应用或线性地跨越步骤应用，具体取决于分配给 [*STEP](ch18abk36.md) 选项上 AMPLITUDE 参数的值（["定义分析，" Abaqus分析用户指南第6.1.2节](../usb/usb-link.md#usb-anl-aover)）。
+将此参数设置为 [*AMPLITUDE](ch01abk09.md) 曲线的名称，该曲线定义步骤期间渗流量的大小。对于均匀渗流类型，如果省略此参数，则参考值将在步骤开始时立即应用或线性地跨越步骤应用，具体取决于分配给 [*STEP](ch18abk36.md) 选项上 AMPLITUDE 参数的值（请参见["定义分析，" Abaqus分析用户指南第6.1.2节](../usb/usb-link.md#usb-anl-aover)）。对于在用户子程序 [`DFLOW`](../sub/sub-link.md#sub-xsl-dflow) 中定义的流量，振幅引用将被忽略。
 
 OP
 
-设置 OP=MOD（默认）以保留现有的 [*DSECURRENT](ch04abk39.md)s，此选项定义要添加或修改的分布电流密度。
+设置 OP=MOD（默认）以保留现有的 [*DSFLOW](ch04abk40.md)s，此选项修改现有流量或定义额外流量。
 
-如果应该移除模型上所有现有的 [*DSECURRENT](ch04abk39.md)s，设置 OP=NEW。
+如果应该移除模型上所有现有的 [*DSFLOW](ch04abk40.md)s，设置 OP=NEW。可以定义新流量。
 
-### **时谐涡流分析的可选、互斥参数：**
-
-IMAGINARY
-
-包含此参数以定义表面电流密度的虚部（异相）。
-
-REAL
-
-包含此参数（默认）以定义表面电流密度的实部（同相）。
-
-### **在耦合热电或耦合热电结构分析中定义分布电流密度的数据行：**
+### **定义均匀渗流的数据行：**
 
 **第一行：**
 
-根据需要重复此数据行，以定义各个表面的电流密度。
+根据需要重复此数据行，以定义各个表面的均匀渗流。
 
-### **在涡流或静磁分析中定义表面电流密度的数据行：**
+### **定义非均匀渗流的数据行：**
 
 **第一行：**
 
-根据需要重复此数据行，以定义各个表面的表面电流密度。
+非均匀渗流大小通过用户子程序 [`DFLOW`](../sub/sub-link.md#sub-xsl-dflow) 定义。
+
+根据需要重复此数据行，以定义表面的非均匀渗流。
 
 
 

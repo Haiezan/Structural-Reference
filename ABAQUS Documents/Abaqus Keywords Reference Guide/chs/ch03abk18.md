@@ -1,40 +1,49 @@
-# *CLAY HARDENING
+# *CHARACTERISTIC LENGTH
 
 
 
 
 
 
-### *CLAY HARDENING为粘土塑性模型指定硬化。
+### *CHARACTERISTIC LENGTH在材料点定义特征单元长度。
 
-此选项用于定义 Cam-clay 塑性屈服面的分段线性硬化/软化。只能与 [*CLAY PLASTICITY](ch03abk20.md) 选项结合使用。
+此选项用于定义 Abaqus 用于应变软化模型正则化的特征单元长度，或传递给在材料点调用的用户子程序。如果使用，它必须出现在 [*MATERIAL](ch13abk08.md) 定义内（["材料数据定义，" Abaqus 分析用户指南第 21.1.2 节](../usb/usb-link.md#usb-mat-cmaterialdata)）。如果未指定此选项，Abaqus 使用基于几何平均的定义计算特征单元长度。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  
 
 **类型：**模型数据  
 
 **级别：**模型  
 
-**Abaqus/CAE: **属性模块
-
 ##### **参考：**
 
-- ["临界状态（粘土）塑性模型，" Abaqus 分析用户指南第 23.3.4 节](../usb/usb-link.md#usb-mat-cclayplastic)
-- [*CLAY PLASTICITY](ch03abk20.md)
+- ["VUCHARLENGTH，" Abaqus 用户子程序参考指南第 1.2.11 节](../sub/sub-link.md#sub-rtn-uexpucharlength)
 
 ### **可选参数：**
 
-DEPENDENCIES
+DEFINITION
 
-将此参数设置为除了温度之外还包括在静水压力应力定义中的场变量依赖项数。如果省略此参数，则静水压力应力可能仅依赖于体积塑性应变，也可能依赖于温度。请参阅 ["材料数据定义"中的"指定场变量依赖性"，Abaqus 分析用户指南第 21.1.2 节](../usb/usb-link.md#usb-mat-cmaterialdata-fvdepen)，了解更多详细信息。
+设置 DEFINITION=GEOMETRIC MEAN（默认）以使用基于几何平均的特征单元长度定义。
 
-### **用于定义 Cam-clay 塑性硬化的数据行：**
+设置 DEFINITION=USER 以在用户子程序 [`VUCHARLENGTH`](../sub/sub-link.md#sub-xsl-vucharlength) 中指定特征单元长度。
+
+### **与 DEFINITION=USER 结合使用的可选参数：**
+
+COMPONENTS
+
+将此参数设置为你正在输入的特征单元长度的分量数。
+
+PROPERTIES
+
+将此参数设置为你正在输入的属性数。这些属性可在用户子程序 [`VUCHARLENGTH`](../sub/sub-link.md#sub-xsl-vucharlength) 中使用。
+
+### **DEFINITION=GEOMETRIC MEAN 时不需要数据行。**
+
+### **指定了 PROPERTIES 参数时 DEFINITION=USER 的数据行：**
 
 **第一行：**
 
-**后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
-
-根据需要重复此数据行集，以定义屈服面大小对体积塑性应变的依赖性，以及在需要时对温度和其他预定义场变量的依赖性。
+根据需要重复此数据行以定义所有材料属性。
 
 
 
