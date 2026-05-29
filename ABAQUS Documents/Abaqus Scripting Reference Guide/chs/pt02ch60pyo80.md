@@ -53,7 +53,7 @@ PorousElastic(const odb_SequenceSequenceDouble& table,
 如果 *shear*=G，表数据指定以下内容：
 - 对数体积模量，![](../graphics/ker_eqn00342.gif]。（无量纲。）
 - 剪切模量，![](../graphics/ker_eqn00182.gif]。
-- 弹性拉伸极限，![](../graphics/ker_eqn00343.gif。（此值不能为负。）
+- 弹性拉伸极限，![](../graphics/ker_eqn00343.gif)。（此值不能为负。）
 - 温度（如果数据依赖温度）。
 - 第一个场变量的值（如果数据依赖场变量）。
 - 第二个场变量的值。
@@ -62,7 +62,7 @@ PorousElastic(const odb_SequenceSequenceDouble& table,
 如果 *shear*=POISSON，表数据指定以下内容：
 - 对数体积模量，![](../graphics/ker_eqn00342.gif]。（无量纲。）
 - 泊松比，![](../graphics/ker_eqn00164.gif]。
-- 弹性拉伸极限，![](../graphics/ker_eqn00343.gif。（此值不能为负。）
+- 弹性拉伸极限，![](../graphics/ker_eqn00343.gif)。（此值不能为负。）
 - 温度（如果数据依赖温度）。
 - 第一个场变量的值（如果数据依赖场变量）。
 - 第二个场变量的值。

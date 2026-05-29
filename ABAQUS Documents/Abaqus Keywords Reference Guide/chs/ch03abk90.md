@@ -33,7 +33,7 @@ TYPE
 
 设置TYPE=POINT，通过绕点*l*旋转模型中定义的腔体表面来创建二维腔体（请参见[图 3.90-1](ch03abk90.md#kcyclic-point)）。模型中定义的腔体表面必须由直线![](../graphics/key_eqn00539.gif)和一条经过点*l*的直线（从模型平面外向内看逆时针测量）与![](../graphics/key_eqn00539.gif)成360/NC角度的直线界定。
 
-设置TYPE=AXIS，通过绕轴线![](../graphics/key_eqn00540.gif)旋转模型中定义的腔体表面来创建三维腔体（请参见[图 3.90-2](ch03abk90.md#kcyclic-axis)）。模型中定义的腔体表面必须由平面![](../graphics/key_eqn00541.gif)和经过线![](../graphics/key_eqn00540.gif且与![](../graphics/key_eqn00541.gif)成360/NC角度（从*l*向*m*看时顺时针测量）的平面界定。直线![](../graphics/key_eqn00539.gif)必须垂直于直线![](../graphics/key_eqn00540.gif)。
+设置TYPE=AXIS，通过绕轴线![](../graphics/key_eqn00540.gif)旋转模型中定义的腔体表面来创建三维腔体（请参见[图 3.90-2](ch03abk90.md#kcyclic-axis)）。模型中定义的腔体表面必须由平面![](../graphics/key_eqn00541.gif)和经过线![](../graphics/key_eqn00540.gif)且与![](../graphics/key_eqn00541.gif)成360/NC角度（从*l*向*m*看时顺时针测量）的平面界定。直线![](../graphics/key_eqn00539.gif)必须垂直于直线![](../graphics/key_eqn00540.gif)。
 
 ### **用于定义二维腔体循环对称的数据行（TYPE=POINT）：**
 
