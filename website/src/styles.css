@@ -283,11 +283,12 @@ select {
 }
 
 .doc-links a {
+  display: grid;
+  gap: 3px;
   border: 1px solid transparent;
   border-radius: 7px;
   padding: 8px;
   color: var(--muted);
-  font-size: 13px;
   line-height: 1.35;
 }
 
@@ -296,6 +297,23 @@ select {
   border-color: var(--line);
   color: var(--text);
   font-weight: 700;
+}
+
+.doc-link-en {
+  color: var(--text);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.doc-link-zh {
+  color: var(--muted);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.doc-links a.active .doc-link-zh {
+  color: #536171;
+  font-weight: 600;
 }
 
 .doc-links em {

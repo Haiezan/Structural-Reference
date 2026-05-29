@@ -365,8 +365,9 @@ function renderSidebar(activeId) {
     ${state.manifest.modules.map((module) => {
       const isActiveModule = module.docs.some((doc) => doc.id === activeId);
       const docs = module.docs.slice(0, isActiveModule ? module.docs.length : 10).map((doc) => `
-        <a class="${doc.id === activeId ? 'active' : ''}" href="#/doc/${doc.id}" title="${escapeHtml(doc.titleEn)}">
-          <span>${escapeHtml(doc.titleEn)}</span>
+        <a class="${doc.id === activeId ? 'active' : ''}" href="#/doc/${doc.id}" title="${escapeHtml(`${doc.titleEn} / ${doc.titleZh}`)}">
+          <span class="doc-link-en">${escapeHtml(doc.titleEn)}</span>
+          <span class="doc-link-zh">${escapeHtml(doc.titleZh)}</span>
         </a>
       `).join('');
       return `<details ${isActiveModule ? 'open' : ''}>
