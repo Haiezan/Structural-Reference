@@ -342,9 +342,6 @@ select {
 }
 
 .doc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
   border: 1px solid var(--line);
   border-top: 0;
   background: var(--line);
@@ -352,7 +349,24 @@ select {
 
 .doc-grid.en,
 .doc-grid.zh {
-  grid-template-columns: 1fr;
+  display: block;
+  background: var(--panel);
+}
+
+.aligned-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1px;
+  border-bottom: 1px solid var(--line);
+  background: var(--line);
+}
+
+.aligned-row:last-child {
+  border-bottom: 0;
+}
+
+.aligned-row.heading .doc-column {
+  background: #fbfcfd;
 }
 
 .doc-column {
@@ -364,6 +378,7 @@ select {
 
 .doc-column.single {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .doc-column.zh {
@@ -384,6 +399,14 @@ select {
   margin-top: 0;
 }
 
+.aligned-row .doc-column > :first-child {
+  margin-top: 0;
+}
+
+.aligned-row .doc-column > :last-child {
+  margin-bottom: 0;
+}
+
 .doc-column p,
 .doc-column li {
   overflow-wrap: anywhere;
@@ -394,14 +417,27 @@ select {
   border-radius: 5px;
   padding: 1px 5px;
   background: var(--panel-soft);
+  color: #16303f;
 }
 
 .doc-column pre {
   overflow: auto;
   border-radius: 8px;
   padding: 14px;
-  background: #17202a;
-  color: #edf2f7;
+  background: #111827;
+  color: #f8fafc;
+  border: 1px solid #263244;
+  line-height: 1.65;
+}
+
+.doc-column pre code {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  white-space: pre;
 }
 
 .doc-column img {
@@ -561,6 +597,10 @@ th {
   }
 
   .doc-grid {
+    display: block;
+  }
+
+  .aligned-row {
     grid-template-columns: 1fr;
   }
 

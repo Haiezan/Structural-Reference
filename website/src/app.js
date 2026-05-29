@@ -143,6 +143,115 @@ function renderMarkdown(markdown, doc) {
   return html || '<p class="muted">No content available.</p>';
 }
 
+function markdownBlocks(markdown) {
+  const lines = markdown.replace(/\r\n/g, '\n').split('\n');
+  const blocks = [];
+  let i = 0;
+
+  const push = (type, blockLines) => {
+    const raw = blockLines.join('\n').trim();
+    if (raw) blocks.push({ type, raw, key: blockKey(raw) });
+  };
+
+  while (i < lines.length) {
+    if (!lines[i].trim()) {
+      i += 1;
+      continue;
+    }
+
+    if (lines[i].trim().startsWith('```')) {
+      const start = i;
+      i += 1;
+      while (i < lines.length && !lines[i].trim().startsWith('```')) i += 1;
+      if (i < lines.length) i += 1;
+      push('code', lines.slice(start, i));
+      continue;
+    }
+
+    if (/^\|.+\|$/.test(lines[i].trim()) && i + 1 < lines.length && /^\|[\s:-]+\|/.test(lines[i + 1].trim())) {
+      const start = i;
+      i += 2;
+      while (i < lines.length && /^\|.+\|$/.test(lines[i].trim())) i += 1;
+      push('table', lines.slice(start, i));
+      continue;
+    }
+
+    if (/^#{1,6}\s+\S/.test(lines[i])) {
+      push('heading', [lines[i]]);
+      i += 1;
+      continue;
+    }
+
+    if (/^\s*[-*+]\s+/.test(lines[i])) {
+      const start = i;
+      while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) i += 1;
+      push('list', lines.slice(start, i));
+      continue;
+    }
+
+    const start = i;
+    while (
+      i < lines.length &&
+      lines[i].trim() &&
+      !/^#{1,6}\s+\S/.test(lines[i]) &&
+      !/^\s*[-*+]\s+/.test(lines[i]) &&
+      !lines[i].trim().startsWith('```') &&
+      !(/^\|.+\|$/.test(lines[i].trim()) && i + 1 < lines.length && /^\|[\s:-]+\|/.test(lines[i + 1].trim()))
+    ) {
+      i += 1;
+    }
+    push('paragraph', lines.slice(start, i));
+  }
+
+  return blocks;
+}
+
+function blockKey(raw) {
+  const text = raw
+    .replace(/^#+\s*/, '')
+    .replace(/\u00a0/g, ' ')
+    .trim();
+  const numbered = text.match(/^(\d+(?:\.\d+)*|[A-Z](?:\.\d+)*)\b/);
+  return numbered ? numbered[1] : '';
+}
+
+function renderAlignedMarkdown(english, chinese, doc) {
+  const enBlocks = markdownBlocks(english);
+  const zhBlocks = markdownBlocks(chinese);
+  const rows = [];
+  const usedZh = new Set();
+  let zhCursor = 0;
+
+  for (const enBlock of enBlocks) {
+    let zhIndex = -1;
+    if (enBlock.key) {
+      zhIndex = zhBlocks.findIndex((block, index) => !usedZh.has(index) && block.key === enBlock.key);
+    }
+    if (zhIndex === -1) {
+      while (zhCursor < zhBlocks.length && usedZh.has(zhCursor)) zhCursor += 1;
+      if (zhCursor < zhBlocks.length) zhIndex = zhCursor;
+    }
+
+    const zhBlock = zhIndex >= 0 ? zhBlocks[zhIndex] : null;
+    if (zhIndex >= 0) {
+      usedZh.add(zhIndex);
+      if (zhIndex === zhCursor) zhCursor += 1;
+    }
+    rows.push({ en: enBlock, zh: zhBlock });
+  }
+
+  zhBlocks.forEach((block, index) => {
+    if (!usedZh.has(index)) rows.push({ en: null, zh: block });
+  });
+
+  return rows.map((row) => `
+    <section class="aligned-row ${row.en?.type || row.zh?.type || 'paragraph'}">
+      <article class="doc-column">${row.en ? renderMarkdown(row.en.raw, doc) : '<p class="muted">No matching English block.</p>'}</article>
+      <article class="doc-column zh">${row.zh ? renderMarkdown(row.zh.raw, doc) : '<p class="muted">无对应中文段落。</p>'}</article>
+    </section>
+  `).join('');
+}
+
 function headingsFrom(markdown) {
   return markdown
     .split(/\r?\n/)
@@ -278,7 +387,7 @@ function renderDoc() {
   const en = renderMarkdown(doc.english, doc);
   const zh = renderMarkdown(doc.chinese, doc);
   const columns = state.view === 'both'
-    ? `<article class="doc-column">${en}</article><article class="doc-column zh">${zh}</article>`
+    ? renderAlignedMarkdown(doc.english, doc.chinese, doc)
     : `<article class="doc-column single">${state.view === 'en' ? en : zh}</article>`;
 
   renderShell(`
