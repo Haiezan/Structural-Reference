@@ -1,25 +1,22 @@
-# Abaqus/CFD Element Index
+# Abaqus/CFD 单元索引
 
 
 
 
 
 
+本索引提供Abaqus/CFD中所有可用单元类型的参考。单元按字母顺序列出。
 
-This index provides a reference to all of the element types that are available in Abaqus/CFD. Elements are listed in alphabetical order. 
-
-| FC3D4 | 4-node tetrahedron [(Section 28.2.2)](pt06ch28s02ael07.md) |
+| FC3D4 | 4节点四面体 [(第28.2.2节)](pt06ch28s02ael07.md) |
 | --- | --- |
 
-| FC3D5 | 5-node pyramid [(Section 28.2.2)](pt06ch28s02ael07.md) |
+| FC3D5 | 5节点金字塔 [(第28.2.2节)](pt06ch28s02ael07.md) |
 | --- | --- |
 
-| FC3D6 | 6-node prism [(Section 28.2.2)](pt06ch28s02ael07.md) |
+| FC3D6 | 6节点棱柱 [(第28.2.2节)](pt06ch28s02ael07.md) |
 | --- | --- |
 
-| FC3D8 | 8-node brick [(Section 28.2.2)](pt06ch28s02ael07.md) |
+| FC3D8 | 8节点立方体 [(第28.2.2节)](pt06ch28s02ael07.md) |
 | --- | --- |
-
-
 
 
