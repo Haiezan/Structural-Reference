@@ -161,7 +161,7 @@ Elastic(const odb_SequenceSequenceDouble& table,
 - 依此类推。
 
 如果 *type*=TRACTION，表数据指定以下内容：
-- 对于翘曲单元为 ![](../graphics/ker_eqn00163.gif]；对于内聚单元为 ![](../graphics/ker_eqn00213.gif)。
+- 对于翘曲单元为 ![](../graphics/ker_eqn00163.gif)]；对于内聚单元为 ![](../graphics/ker_eqn00213.gif)。
 - 对于翘曲单元为 ![](../graphics/ker_eqn00214.gif]；对于内聚单元为 ![](../graphics/ker_eqn00215.gif]。
 - 对于翘曲单元为 ![](../graphics/ker_eqn00216.gif]；对于内聚单元为 ![](../graphics/ker_eqn00217.gif]。
 - 温度（如果数据依赖温度）。

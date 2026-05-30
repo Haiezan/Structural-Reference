@@ -157,12 +157,12 @@ Hyperelastic(const odb_SequenceSequenceDouble& table,
 - 温度（如果数据依赖温度）。
 
 如果 *type*=OGDEN，对于 ![](../graphics/ker_eqn00088.gif) 的值，表数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif] 的 ![](../graphics/ker_eqn00270.gif)，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
+- 对于从 1 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
 - ![](../graphics/ker_eqn00088.gif] 个系数 ![](../graphics/ker_eqn00271.gif]。
 - 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，4 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
 
 如果 *type*=POLYNOMIAL，对于 ![](../graphics/ker_eqn00088.gif) 的值，表数据指定以下内容：
-- 对于从 ![](../graphics/ker_eqn00274.gif) 到 ![](../graphics/ker_eqn00088.gif] 的 ![](../graphics/ker_eqn00270.gif)，其中 ![](../graphics/ker_eqn00276.gif] 从 ![](../graphics/ker_eqn00274.gif) 减小到零，![](../graphics/ker_eqn00276.gif] 从零增加到 ![](../graphics/ker_eqn00274.gif)，为 ![](../graphics/ker_eqn00273.gif]。
+- 对于从 ![](../graphics/ker_eqn00274.gif) 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)，其中 ![](../graphics/ker_eqn00276.gif)] 从 ![](../graphics/ker_eqn00274.gif) 减小到零，![](../graphics/ker_eqn00276.gif)] 从零增加到 ![](../graphics/ker_eqn00274.gif)，为 ![](../graphics/ker_eqn00273.gif]。
 - ![](../graphics/ker_eqn00088.gif] 个系数 ![](../graphics/ker_eqn00271.gif]。
 - 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，3 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
 

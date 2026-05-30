@@ -63,7 +63,7 @@ Hyperfoam(bool testData,
 **表数据**
 
 对于 ![](../graphics/ker_eqn00088.gif] 的值，表数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif] 的 ![](../graphics/ker_eqn00270.gif]，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
+- 对于从 1 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif]，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
 - ![](../graphics/ker_eqn00284.gif]。
 - 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，4 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
 

@@ -38,7 +38,7 @@ MoistureSwelling(const odb_SequenceSequenceDouble& table);
 **表数据**
 
 - 体积湿气膨胀应变，![](../graphics/ker_eqn00294.gif]。
-- 饱和度，![](../graphics/ker_eqn00234.gif]。此值必须在范围 ![](../graphics/ker_eqn00295.gif) 内。
+- 饱和度，![](../graphics/ker_eqn00234.gif)]。此值必须在范围 ![](../graphics/ker_eqn00295.gif) 内。
 
 **返回值**
 
