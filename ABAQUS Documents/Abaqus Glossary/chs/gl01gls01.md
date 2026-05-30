@@ -1,4 +1,4 @@
-# H
+# Numeric
 
 
 
@@ -6,39 +6,14 @@
 
 
 
-### heal
+### 3D compass
 
-将零件导入 Abaqus/CAE 期间执行的过程，以提高零件几何的精度。
-更多信息：- [「导入零件，」Abaqus/CAE User's Guide 第 10.7.2 节](../usi/usi-link.md#usi-dbs-import-part)
+一个 Abaqus/CAE viewport 对象，用于指示模型在 viewport 中的当前方向。您可以通过单击和拖动指南针的不同元素来操作模型的视图。指南针执行某些其他视图操作工具无法提供的视图操作，包括围绕固定轴旋转视图、沿固定轴平移视图以及在固定平面内平移视图。
+更多信息：- [「3D 指南针，」Abaqus/CAE User's Guide 第 5.3 节](../usi/usi-link.md#uss-viw-3dcompass)
 
-### history
+### 3D XML
 
-分析过程中与步骤相关的对象的活动。在 Abaqus/CAE 中，您可以通过显示适当的步骤相关管理器来查看与步骤相关对象的历史记录。
-更多信息：- [「在 Abaqus 中定义模型，」Abaqus Analysis User's Guide 第 1.3.1 节](../usb/usb-link.md#usb-int-imodel)
+一种基于可扩展标记语言的格式，用于编码三维图像和数据。您可以将模型图像从 Abaqus/CAE viewport 导出为 3D XML 格式文件。
+更多信息：- [「可以从 Abaqus/CAE 导入和导出哪些类型的文件？，」Abaqus/CAE User's Guide 第 10.1.1 节](../usi/usi-link.md#usi-imp-concepts-whatkind)
 
-- [「什么是步骤相关管理器？，」Abaqus/CAE User's Guide 第 3.4.2 节](../usi/usi-link.md#uss-int-step-manager)
-
-### history data
-
-Abaqus 输入文件的一部分，定义模型发生了什么——寻求模型响应的负载或事件序列。历史数据与输入文件中定义模型的模型数据结合在一起。
-更多信息：- [「在 Abaqus 中定义模型，」Abaqus Analysis User's Guide 第 1.3.1 节](../usb/usb-link.md#usb-int-imodel)
-
-### history output
-
-相对频繁地写入输出数据库的变量输出——可能每个增量都写入。您可以在 Abaqus/CAE 的 Visualization 模块中使用历史输出来生成 *X–Y* 绘图。
-更多信息：- [「输出，」Abaqus Analysis User's Guide 第 4.1.1 节](../usb/usb-link.md#usb-out-ooutput)
-
-### homogeneous section
-
-定义实心和壳单元截面属性的实心和壳截面，并引用单一材料。
-更多信息：- [「使用在分析期间集成的壳截面来定义截面行为，」Abaqus Analysis User's Guide 第 29.6.5 节](../usb/usb-link.md#usb-elm-eusingshellsection)
-
-- [「使用通用壳截面定义截面行为，」Abaqus Analysis User's Guide 第 29.6.6 节](../usb/usb-link.md#usb-elm-eusingshellgensect)
-
-- [「实体（连续体）单元，」Abaqus Analysis User's Guide 第 28.1.1 节](../usb/usb-link.md#usb-elm-esolidcont)
-
-- [「定义截面，」Abaqus/CAE User's Guide 第 12.2.3 节](../usi/usi-link.md#usi-prp-prop-section)
-
-
-
-
+- [「将 viewport 数据导出为 3D XML 格式文件，」Abaqus/CAE User's Guide 第 10.9.5 节](../usi/usi-link.md#usi-dbs-export-model-3dxml)

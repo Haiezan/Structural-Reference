@@ -1,4 +1,4 @@
-# Q
+# G
 
 
 
@@ -6,22 +6,37 @@
 
 
 
-### quantity type
+### general contact
 
-描述 *X–Y* 数据对象某一列中数据的类别。Abaqus/CAE 包含 80 多个预定义数量类型，描述 Abaqus 中每个变量的输出，包括常用数量类型，如温度、时间、应力和应变。
-更多信息：- [「了解数量类型，」Abaqus/CAE User's Guide 第 47.1.4 节](../usi/usi-link.md#usv-xyp-quantitytypes)
+一个简单的界面，可用于通过单一相互作用定义强制模型中所有外表面之间的接触；也称为「自动」接触。
+更多信息：- [「在 Abaqus/Standard 中定义一般接触，」Abaqus Analysis User's Guide 第 36.2 节](../usb/usb-link.md#usbgencontactstd)
 
-### Query toolset
+- [「在 Abaqus/Explicit 中定义一般接触，」Abaqus Analysis User's Guide 第 36.4 节](../usb/usb-link.md#usbcontactgeneral)
 
-Abaqus/CAE 工具集，允许您获取有关模型的信息。Abaqus/CAE 在消息区域显示请求的信息；在大多数情况下，相同的信息也会写入重放文件。
-更多信息：- [第 71 章，「The Query toolset，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-qre)
+- [「了解相互作用，」Abaqus/CAE User's Guide 第 15.3 节](../usi/usi-link.md#usi-itn-concepts)
 
-### queue
+### general release
 
-在计算机上按顺序执行作业的选项。
-更多信息：- [「远程提交作业，」Abaqus/CAE User's Guide 第 19.2.7 节](../usi/usi-link.md#usi-ana-conc-remote)
+引入增强功能和新功能的 Abaqus 首次通用发布。通用发布由产品名称和版本号后跟 1 指定，例如 Abaqus 6.14-1。另请参阅 [maintenance delivery](gl01gls14.md#gls-maintdelivery)。
 
-- [「自定义 Abaqus/CAE 启动，」Abaqus Installation and Licensing Guide 第 4.3.3 节](../sgb/sgb-link.md#sgb-env-exa-custom-startup)
+### geometric nonlinearity（NLGEOM）
 
+由大变形或旋转引起的非线性刚度变化。
+更多信息：- [「一般和线性扰动过程，」Abaqus Analysis User's Guide 第 6.1.3 节](../usb/usb-link.md#usb-anl-alinearnonlinear)
 
+- [「线性和非线性过程，」Abaqus/CAE User's Guide 第 14.3.2 节](../usi/usi-link.md#usi-sim-conc-unprocs)
 
+### geometry set
+
+您在 Abaqus/CAE 中从未网格化的零件或装配中选择的几何对象（如体、面、边和顶点）。几何对象可以是不同类型；例如，您可以在同一集合中包含一个面和一条边。
+更多信息：- [第 73 章，「The Set and Surface toolsets，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-set)
+
+### geometry surface
+
+通过从装配中的本地或导入几何中选择面或边在 Abaqus/CAE 中创建的曲面。
+更多信息：- [第 73 章，「The Set and Surface toolsets，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-set)
+
+### grid coordinates
+
+在 Abaqus/CAE Sketcher 中创建新草图几何时出现在左上角的游标坐标。它们与当前草图网格的原点和旋转绑定。
+更多信息：- [「相对于草图重新对齐草图网格，」Abaqus/CAE User's Guide 第 20.4.4 节](../usi/usi-link.md#usi-ske-reorient)

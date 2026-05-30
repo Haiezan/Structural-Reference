@@ -1,5 +1,16 @@
+# 12.11 Abaqus/Explicit example: circuit board drop test
 
+---
 
+**Summary**
+
+In this example you will study the behavior of a circuit board mounted in crushable foam packaging as it is dropped at an angle onto a rigid surface. Your goal is to evaluate whether the foam packaging is sufficient to prevent damage to the circuit board when it is dropped from a height of 1 meter. You will use the general contact capability in Abaqus/Explicit to model the interactions between the different components. Figure 12-65 shows the dimensions (in millimeters) of the circuit board and foam packaging and the material properties.
+
+![Figure 12-65](../graphics/gsx-dimen-milmat-nls.png)
+
+**Figure 12-65** Dimensions (millimeters) and material properties.
+
+---
 
 ### 12.11.1 Preprocessing—creating the model with Abaqus/CAE
 

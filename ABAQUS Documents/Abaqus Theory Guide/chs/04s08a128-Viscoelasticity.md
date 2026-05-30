@@ -1,12 +1,3 @@
-# 4.8 粘弹性
-
-### 4.8 粘弹性
-
-"粘弹性"，第4.8.1节
-
-"有限应变粘弹性"，第4.8.2节
-
-![](../graphics/stm_eqn07139.gif)![](../graphics/stm_eqn02228.gif)![](../graphics/stm_eqn07140.gif)![](../graphics/stm_eqn01399.gif)![](../graphics/stm_eqn07141.gif)![](../graphics/stm_eqn07142.gif)"频域粘弹性"，第4.8.3节
 # 4.8.1 粘弹性
 
 ### 4.8.1 粘弹性
