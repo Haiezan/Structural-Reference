@@ -44,7 +44,7 @@
 | 1.3.22 梁单元和截面类型的验证 | 1.3.19 Shell offset | [ch01s03abv22.md](./chs/ch01s03abv22.md) | [ch01s03abv22.md](./eng/ch01s03abv22.md) |
 | 1.3.23 梁附加惯性 | 1.3.20 Axisymmetric membrane elements | [ch01s03abv23.md](./chs/ch01s03abv23.md) | [ch01s03abv23.md](./eng/ch01s03abv23.md) |
 | 1.3.24 梁流体惯性 | 1.3.21 Cylindrical membrane elements | [ch01s03abv24.md](./chs/ch01s03abv24.md) | [ch01s03abv24.md](./eng/ch01s03abv24.md) |
-| 1.3.25 端点力矩梁 | 1.3.22 Verification of beam elements and section types | [ch01s03abv25.md](./chs/ch01s03abv25.md) | [ch01s03abv25.md](./eng/ch01s03abv25.md) |
+| 1.3.25 端点力矩梁 | 1.3.22 Verification of beam elements and section types | [ch01s03abv25.md](./chs/ch01s03abv25.md) | [ch01s03abv25.md](./eng/ch01s03abv25.md) |
 | 1.3.23 梁的附加惯性 | 1.3.23 Beam added inertia | [ch01s03abv26.md](./chs/ch01s03abv26.md) | [ch01s03abv26.md](./eng/ch01s03abv26.md) |
 | 1.3.27 梁运动学简单测试 | 1.3.24 Beam fluid inertia | [ch01s03abv27.md](./chs/ch01s03abv27.md) | [ch01s03abv27.md](./eng/ch01s03abv27.md) |
 | 1.3.24 梁的流体惯性 | 1.3.25 Beam with end moment | [ch01s03abv28.md](./chs/ch01s03abv28.md) | [ch01s03abv28.md](./eng/ch01s03abv28.md) |
@@ -72,7 +72,7 @@
 | 1.3.45 内聚元件 | 1.3.47 Pipe-soil interaction elements | [ch01s03abv50.md](./chs/ch01s03abv50.md) | [ch01s03abv50.md](./eng/ch01s03abv50.md) |
 | 1.4 单元载荷选项 | 1.4 Element loading options | [ch01s04.md](./chs/ch01s04.md) | [ch01s04.md](./eng/ch01s04.md) |
 | 1.4.1 连续体应力/位移单元 | 1.4.1 Continuum stress/displacement elements | [ch01s04abv51.md](./chs/ch01s04abv51.md) | [ch01s04abv51.md](./eng/ch01s04abv51.md) |
-| 1.4.4 壳单元、膜单元和桁架单元应力/位移 | 1.4.2 Beam stress/displacement elements | [ch01s04abv52.md](./chs/ch01s04abv52.md) | [ch01s04abv52.md](./eng/ch01s04abv52.md) |
+| 1.4.2 梁应力/位移单元 | 1.4.2 Beam stress/displacement elements | [ch01s04abv52.md](./chs/ch01s04abv52.md) | [ch01s04abv52.md](./eng/ch01s04abv52.md) |
 | 1.4.5 内聚力元件载荷验证 | 1.4.3 Pipe stress/displacement elements | [ch01s04abv53.md](./chs/ch01s04abv53.md) | [ch01s04abv53.md](./eng/ch01s04abv53.md) |
 | 1.4.4 壳单元、膜单元和桁架单元应力/位移 | 1.4.4 Shell, membrane, and truss stress/displacement elements | [ch01s04abv54.md](./chs/ch01s04abv54.md) | [ch01s04abv54.md](./eng/ch01s04abv54.md) |
 | 1.4.5 内聚力元件载荷验证 | 1.4.5 Cohesive element load verification | [ch01s04abv55.md](./chs/ch01s04abv55.md) | [ch01s04abv55.md](./eng/ch01s04abv55.md) |

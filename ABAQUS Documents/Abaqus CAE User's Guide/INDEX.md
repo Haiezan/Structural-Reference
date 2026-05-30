@@ -459,8 +459,8 @@
 | 12.8.6 指定用户变量数量 | 12.8.6 Specifying the number of user variables | [pt03ch12s08s06.md](./chs/pt03ch12s08s06.md) | [pt03ch12s08s06.md](./eng/pt03ch12s08s06.md) |
 | 12.9 定义机械材料模型 | 12.9 Defining mechanical material models | [pt03ch12s09.md](./chs/pt03ch12s09.md) | [pt03ch12s09.md](./eng/pt03ch12s09.md) |
 | 12.9.1 定义弹性 | 12.9.1 Defining elasticity | [pt03ch12s09s01.md](./chs/pt03ch12s09s01.md) | [pt03ch12s09s01.md](./eng/pt03ch12s09s01.md) |
-| 12.15.3 分配梁方向 | 12.9.2 Defining plasticity | [pt03ch12s09s02.md](./chs/pt03ch12s09s02.md) | [pt03ch12s09s02.md](./eng/pt03ch12s09s02.md) |
-| 12.15.5 分配壳/膜法线方向 | 12.9.3 Defining damage | [pt03ch12s09s03.md](./chs/pt03ch12s09s03.md) | [pt03ch12s09s03.md](./eng/pt03ch12s09s03.md) |
+| 12.9.2 定义塑性 | 12.9.2 Defining plasticity | [pt03ch12s09s02.md](./chs/pt03ch12s09s02.md) | [pt03ch12s09s02.md](./eng/pt03ch12s09s02.md) |
+| 12.9.3 定义损伤 | 12.9.3 Defining damage | [pt03ch12s09s03.md](./chs/pt03ch12s09s03.md) | [pt03ch12s09s03.md](./eng/pt03ch12s09s03.md) |
 | 12.9.4 定义其他机械模型 | 12.9.4 Defining other mechanical models | [pt03ch12s09s04.md](./chs/pt03ch12s09s04.md) | [pt03ch12s09s04.md](./eng/pt03ch12s09s04.md) |
 | 12.10 定义热材料模型 | 12.10 Defining thermal material models | [pt03ch12s10.md](./chs/pt03ch12s10.md) | [pt03ch12s10.md](./eng/pt03ch12s10.md) |
 | 12.10.3 指定非弹性热分数 | 12.10.1 Specifying thermal conductivity | [pt03ch12s10s01.md](./chs/pt03ch12s10s01.md) | [pt03ch12s10s01.md](./eng/pt03ch12s10s01.md) |
@@ -607,7 +607,7 @@
 | 14.10.1 步骤编辑器 | 14.10.1 The step editor | [pt03ch14s10hlb01.md](./chs/pt03ch14s10hlb01.md) | [pt03ch14s10hlb01.md](./eng/pt03ch14s10hlb01.md) |
 | 14.10.2 **增量**选项卡 | 14.10.2 The Incrementation tab | [pt03ch14s10hlb02.md](./chs/pt03ch14s10hlb02.md) | [pt03ch14s10hlb02.md](./eng/pt03ch14s10hlb02.md) |
 | 14.11 配置分析过程设置 | 14.11 Configuring analysis procedure settings | [pt03ch14s11.md](./chs/pt03ch14s11.md) | [pt03ch14s11.md](./eng/pt03ch14s11.md) |
-| 14.11.2 配置线性扰动分析过程 | 14.11.1 Configuring general analysis procedures | [pt03ch14s11s01.md](./chs/pt03ch14s11s01.md) | [pt03ch14s11s01.md](./eng/pt03ch14s11s01.md) |
+| 14.11.1 配置一般分析过程 | 14.11.1 Configuring general analysis procedures | [pt03ch14s11s01.md](./chs/pt03ch14s11s01.md) | [pt03ch14s11s01.md](./eng/pt03ch14s11s01.md) |
 | 14.11.2 配置线性扰动分析过程 | 14.11.2 Configuring linear perturbation analysis procedures | [pt03ch14s11s02.md](./chs/pt03ch14s11s02.md) | [pt03ch14s11s02.md](./eng/pt03ch14s11s02.md) |
 | 14.12 定义输出请求 | 14.12 Defining output requests | [pt03ch14s12.md](./chs/pt03ch14s12.md) | [pt03ch14s12.md](./eng/pt03ch14s12.md) |
 | 14.12.1 创建输出请求 | 14.12.1 Creating an output request | [pt03ch14s12hlb01.md](./chs/pt03ch14s12hlb01.md) | [pt03ch14s12hlb01.md](./eng/pt03ch14s12hlb01.md) |

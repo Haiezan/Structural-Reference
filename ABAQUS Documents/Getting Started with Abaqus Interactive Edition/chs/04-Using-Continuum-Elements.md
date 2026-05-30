@@ -199,7 +199,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 在本示例中，您将使用三维连续体单元对如图4-14所示的连接吊环进行建模。
 
-![图4-14](../graphics/gss-connecting-lug.png)
+![图4-14](../graphics/gss-connecting-lug-nls.png)
 
 **图4-14　连接吊环示意图**
 
@@ -238,19 +238,19 @@ Abaqus/Standard用户还应考虑以下建议：
    - 删除右侧垂直边缘，并使用约束工具对顶部和底部边缘赋予"相等长度"约束。
    - 使用尺寸工具调整轮廓，使其为0.100 m长×0.050 m宽（如图4-15所示）。
 
-![图4-15](../graphics/gss-lug-rectangle.png)
+![图4-15](../graphics/gss-lug-parta-c.png)
 
 **图4-15　开放矩形（网格间距加倍）**
 
 3. 使用"创建圆弧：过3点"工具添加一个半圆形圆弧来封闭轮廓（如图4-16所示）。
 
-![图4-16](../graphics/gss-lug-rounded.png)
+![图4-16](../graphics/gss-lug-partb-c.png)
 
 **图4-16　圆角端（网格间距加倍）**
 
 4. 绘制一个半径为0.015 m的圆（如图4-17所示），使用"创建圆：圆心和周长"工具。
 
-![图4-17](../graphics/gss-lug-hole.png)
+![图4-17](../graphics/gss-lug-partc-c.png)
 
 **图4-17　吊环孔（网格间距加倍）**
 
@@ -307,7 +307,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 在本模型中，连接吊环的左端需要在所有三个方向上受到约束。该区域是吊环连接到其母结构的地方（见图4-18）。
 
-![图4-18](../graphics/gss-lug-fixed.png)
+![图4-18](../graphics/gss-lug-bcregion-c.png)
 
 **图4-18　连接吊环的固定端**
 
@@ -333,7 +333,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 在开始为特定问题构建网格之前，您需要考虑将使用的单元类型。对于本例，使用20节点六面体单元与减缩积分（C3D20R）。图4-19显示了一种可能的连接吊环网格。
 
-![图4-19](../graphics/gss-lug-mesh.png)
+![图4-19](../graphics/gss-lug-mesh-c.png)
 
 **图4-19　连接吊环模型的建议C3D20R单元网格**
 
@@ -361,7 +361,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 从主菜单栏中选择**绘制→变形形状**。图4-20显示了分析结束时变形的模型形状。
 
-![图4-20](../graphics/gss-lug-deformed.png)
+![图4-20](../graphics/gss-deformed-v.png)
 
 **图4-20　连接吊环的变形模型形状（着色）**
 
@@ -383,7 +383,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 1. 从主菜单栏中选择**绘制→等高线→变形形状上**。出现如图4-21所示的填充等高线图。
 
-![图4-21](../graphics/gss-lug-contour.png)
+![图4-21](../graphics/gss-mises-filled-c-nls.png)
 
 **图4-21　Mises应力的填充等高线图**
 
@@ -422,7 +422,7 @@ Abaqus/Standard用户还应考虑以下建议：
 
 从主菜单栏中选择**绘制→变形形状**。图4-22显示了分析结束时变形的模型形状。
 
-![图4-22](../graphics/gss-lug-explicit-deformed.png)
+![图4-22](../graphics/gss-deformed-v.png)
 
 **图4-22　显式分析的变形模型形状（着色）**
 

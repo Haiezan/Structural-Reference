@@ -224,7 +224,7 @@
 
 已经提出了几种插值方案来避免剪切锁定，这通常是当板或壳的厚度趋于零时出现的。这里我们使用基于Hu-Washizu原理的假设应变方法。这个方案源于[MacNeal（1978）](07s01a01-References.md)，随后在[Hughes和Tezduyar（1981）](07s01a01-References.md)和[MacNeal（1982）](07s01a01-References.md)中扩展和重新公式化，并在[Bathe和Dvorkin（1984）](07s01a01-References.md)中重新审视。非线性理论的计算方面在[Simo、Fox和Rifai（1989）](07s01a01-References.md)中用于完全积分的四边形壳单元。对于可同时用于隐式和显式积分的缩减积分四边形和三角形壳单元，这种假设应变方法需要修改。我们在下面总结用于完全积分单元的假设应变方法，然后是Abaqus中使用的单点积分加稳定化所需的修改。假设应变场的构造
 
-![](../graphics/stm_eqn04499.gif)![](../graphics/stm_eqn04495.gif)![](../graphics/stm_eqn04498.gif)![](../graphics/stm_eqn04500.gif)![](../graphics/stm_eqn04497.gif)![](../graphics/stm_eqn04496.gif)![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn03564.gif)![](../graphics/stm_eqn04243.gif)![](../graphics/stm_eqn04343.gif)考虑一个典型的等参有限单元，如[图3.6.5-1](03s06a83-Finite-strain-shell-element-formulation.md)所示，并用![](../graphics/stm_eqn04343.gif)![](../graphics/stm_eqn04214.gif)![](../graphics/stm_eqn04218.gif)![](../graphics/ststrain-notation.png)
+![](../graphics/stm_eqn04499.gif)![](../graphics/stm_eqn04495.gif)![](../graphics/stm_eqn04498.gif)![](../graphics/stm_eqn04500.gif)![](../graphics/stm_eqn04497.gif)![](../graphics/stm_eqn04496.gif)![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn03564.gif)![](../graphics/stm_eqn04243.gif)![](../graphics/stm_eqn04343.gif)考虑一个典型的等参有限单元，如[图3.6.5-1](03s06a83-Finite-strain-shell-element-formulation.md)所示，并用![](../graphics/stm_eqn04343.gif)![](../graphics/stm_eqn04214.gif)![](../graphics/stm_eqn04218.gif)![](../graphics/stm_eqn04351.gif)
 
 使用以下假设横向剪切应变场：
 

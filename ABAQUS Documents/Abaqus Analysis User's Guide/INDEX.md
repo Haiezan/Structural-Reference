@@ -133,7 +133,7 @@
 | 4.1.3 输出到输出数据库 | 4.1.3 Output to the output database | [pt02ch04s01aus40.md](./chs/pt02ch04s01aus40.md) | [pt02ch04s01aus40.md](./eng/pt02ch04s01aus40.md) |
 | 4.1.4 误差指示器输出 | 4.1.4 Error indicator output | [pt02ch04s01aus41.md](./chs/pt02ch04s01aus41.md) | [pt02ch04s01aus41.md](./eng/pt02ch04s01aus41.md) |
 | 4.2 输出变量 | 4.2 Output variables | [pt02ch04s02.md](./chs/pt02ch04s02.md) | [pt02ch04s02.md](./eng/pt02ch04s02.md) |
-| 4.2.3 Abaqus/CFD 输出变量标识符 | 4.2.1 Abaqus/Standard output variable identifiers | [pt02ch04s02abv01.md](./chs/pt02ch04s02abv01.md) | [pt02ch04s02abv01.md](./eng/pt02ch04s02abv01.md) |
+| 4.2.1 Abaqus/Standard 输出变量标识符 | 4.2.1 Abaqus/Standard output variable identifiers | [pt02ch04s02abv01.md](./chs/pt02ch04s02abv01.md) | [pt02ch04s02abv01.md](./eng/pt02ch04s02abv01.md) |
 | 4.2.3 Abaqus/CFD输出变量标识符 | 4.2.3 Abaqus/CFD output variable identifiers | [pt02ch04s02cbv01.md](./chs/pt02ch04s02cbv01.md) | [pt02ch04s02cbv01.md](./eng/pt02ch04s02cbv01.md) |
 | 4.2.2 Abaqus/Explicit输出变量标识符 | 4.2.2 Abaqus/Explicit output variable identifiers | [pt02ch04s02xbv01.md](./chs/pt02ch04s02xbv01.md) | [pt02ch04s02xbv01.md](./eng/pt02ch04s02xbv01.md) |
 | 4.3 后处理计算器 | 4.3 The postprocessing calculator | [pt02ch04s03.md](./chs/pt02ch04s03.md) | [pt02ch04s03.md](./eng/pt02ch04s03.md) |
@@ -172,7 +172,7 @@
 | 6.3.2 使用直接积分的隐式动态分析 | 6.3.2 Implicit dynamic analysis using direct integration | [pt03ch06s03at07.md](./chs/pt03ch06s03at07.md) | [pt03ch06s03at07.md](./eng/pt03ch06s03at07.md) |
 | 6.3.6 复特征值提取 | 6.3.3 Explicit dynamic analysis | [pt03ch06s03at08.md](./chs/pt03ch06s03at08.md) | [pt03ch06s03at08.md](./eng/pt03ch06s03at08.md) |
 | 6.3.4 直接求解稳态动态分析 | 6.3.4 Direct-solution steady-state dynamic analysis | [pt03ch06s03at09.md](./chs/pt03ch06s03at09.md) | [pt03ch06s03at09.md](./eng/pt03ch06s03at09.md) |
-| 6.3.3 显式动态分析 | 6.3.5 Natural frequency extraction | [pt03ch06s03at10.md](./chs/pt03ch06s03at10.md) | [pt03ch06s03at10.md](./eng/pt03ch06s03at10.md) |
+| 6.3.5 自然频率提取 | 6.3.5 Natural frequency extraction | [pt03ch06s03at10.md](./chs/pt03ch06s03at10.md) | [pt03ch06s03at10.md](./eng/pt03ch06s03at10.md) |
 | 6.3.6 复特征值提取 | 6.3.6 Complex eigenvalue extraction | [pt03ch06s03at11.md](./chs/pt03ch06s03at11.md) | [pt03ch06s03at11.md](./eng/pt03ch06s03at11.md) |
 | 6.3.7 瞬态模态动态分析 | 6.3.7 Transient modal dynamic analysis | [pt03ch06s03at12.md](./chs/pt03ch06s03at12.md) | [pt03ch06s03at12.md](./eng/pt03ch06s03at12.md) |
 | 6.3.8 基于模态的稳态动力学分析 | 6.3.8 Mode-based steady-state dynamic analysis | [pt03ch06s03at13.md](./chs/pt03ch06s03at13.md) | [pt03ch06s03at13.md](./eng/pt03ch06s03at13.md) |
@@ -202,7 +202,7 @@
 | 6.9 Mass diffusion analysis | 6.9 Mass diffusion analysis | [pt03ch06s09.md](./chs/pt03ch06s09.md) | [pt03ch06s09.md](./eng/pt03ch06s09.md) |
 | 6.9.1 质量扩散分析 | 6.9.1 Mass diffusion analysis | [pt03ch06s09at28.md](./chs/pt03ch06s09at28.md) | [pt03ch06s09at28.md](./eng/pt03ch06s09at28.md) |
 | 6.10 Acoustic and shock analysis | 6.10 Acoustic and shock analysis | [pt03ch06s10.md](./chs/pt03ch06s10.md) | [pt03ch06s10.md](./eng/pt03ch06s10.md) |
-| 10.3.1 在 Abaqus/Explicit 中使用退火程序 | 6.10.1 Acoustic, shock, and coupled acoustic-structural analysis | [pt03ch06s10at29.md](./chs/pt03ch06s10at29.md) | [pt03ch06s10at29.md](./eng/pt03ch06s10at29.md) |
+| 6.10.1 声学、冲击和耦合声学-结构分析 | 6.10.1 Acoustic, shock, and coupled acoustic-structural analysis | [pt03ch06s10at29.md](./chs/pt03ch06s10at29.md) | [pt03ch06s10at29.md](./eng/pt03ch06s10at29.md) |
 | 6.11 Abaqus/Aqua analysis | 6.11 Abaqus/Aqua analysis | [pt03ch06s11.md](./chs/pt03ch06s11.md) | [pt03ch06s11.md](./eng/pt03ch06s11.md) |
 | 10.3.2 Abaqus/Aqua 分析 | 6.11.1 Abaqus/Aqua analysis | [pt03ch06s11at30.md](./chs/pt03ch06s11at30.md) | [pt03ch06s11at30.md](./eng/pt03ch06s11at30.md) |
 | 6.12 Annealing | 6.12 Annealing | [pt03ch06s12.md](./chs/pt03ch06s12.md) | [pt03ch06s12.md](./eng/pt03ch06s12.md) |
@@ -595,7 +595,7 @@
 | 32.5.4 定义内聚单元的初始几何 | 32.5.3 Modeling with cohesive elements | [pt06ch32s05alm42.md](./chs/pt06ch32s05alm42.md) | [pt06ch32s05alm42.md](./eng/pt06ch32s05alm42.md) |
 | 32.5.5 使用连续体方法定义内聚单元的本构响应 | 32.5.4 Defining the cohesive element's initial geometry | [pt06ch32s05alm43.md](./chs/pt06ch32s05alm43.md) | [pt06ch32s05alm43.md](./eng/pt06ch32s05alm43.md) |
 | 32.5.7 定义内聚单元间隙内流体的本构响应 | 32.5.5 Defining the constitutive response of cohesive elements using a continuum approach | [pt06ch32s05alm44.md](./chs/pt06ch32s05alm44.md) | [pt06ch32s05alm44.md](./eng/pt06ch32s05alm44.md) |
-| 32.6.1 垫片单元：概述 | 32.5.6 Defining the constitutive response of cohesive elements using a traction-separation description | [pt06ch32s05alm45.md](./chs/pt06ch32s05alm45.md) | [pt06ch32s05alm45.md](./eng/pt06ch32s05alm45.md) |
+| 32.5.6 使用牵引-分离描述定义 cohesive elements 的本构响应 | 32.5.6 Defining the constitutive response of cohesive elements using a traction-separation description | [pt06ch32s05alm45.md](./chs/pt06ch32s05alm45.md) | [pt06ch32s05alm45.md](./eng/pt06ch32s05alm45.md) |
 | 32.5.3 使用内聚单元建模 | 32.5.7 Defining the constitutive response of fluid within the cohesive element gap | [pt06ch32s05alm46.md](./chs/pt06ch32s05alm46.md) | [pt06ch32s05alm46.md](./eng/pt06ch32s05alm46.md) |
 | 32.6 Gasket elements | 32.6 Gasket elements | [pt06ch32s06.md](./chs/pt06ch32s06.md) | [pt06ch32s06.md](./eng/pt06ch32s06.md) |
 | 32.6.7 二维垫片单元库 | 32.6.1 Gasket elements: overview | [pt06ch32s06abo30.md](./chs/pt06ch32s06abo30.md) | [pt06ch32s06abo30.md](./eng/pt06ch32s06abo30.md) |
