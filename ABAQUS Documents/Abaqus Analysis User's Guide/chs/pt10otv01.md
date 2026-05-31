@@ -1,14 +1,13 @@
-# Abaqus/Standard Output Variable Index
+# Abaqus/Standard 输出变量索引
 
 
 
 
 
 
-
-| [A](pt10otv01.md#std-A) | [B](pt10otv01.md#std-B) | [C](pt10otv01.md#std-C) | [D](pt10otv01.md#std-D) | [E](pt10otv01.md#std-E) | [F](pt10otv01.md#std-F) | [G](pt10otv01.md#std-G) | [H](pt10otv01.md#std-H) | [I](pt10otv01.md#std-I) | [J](pt10otv01.md#std-J) | [K](pt10otv01.md#std-K) | [L](pt10otv01.md#std-L) | [M](pt10otv01.md#std-M) |
+| [A](pt02ch04s02abv01.md#std-A) | [B](pt02ch04s02abv01.md#std-B) | [C](pt02ch04s02abv01.md#std-C) | [D](pt02ch04s02abv01.md#std-D) | [E](pt02ch04s02abv01.md#std-E) | [F](pt02ch04s02abv01.md#std-F) | [G](pt02ch04s02abv01.md#std-G) | [H](pt02ch04s02abv01.md#std-H) | [I](pt02ch04s02abv01.md#std-I) | [J](pt02ch04s02abv01.md#std-J) | [K](pt02ch04s02abv01.md#std-K) | [L](pt02ch04s02abv01.md#std-L) | [M](pt02ch04s02abv01.md#std-M) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [N](pt10otv01.md#std-N) | [O](pt10otv01.md#std-O) | [P](pt10otv01.md#std-P) | [Q](pt10otv01.md#std-Q) | [R](pt10otv01.md#std-R) | [S](pt10otv01.md#std-S) | [T](pt10otv01.md#std-T) | [U](pt10otv01.md#std-U) | [V](pt10otv01.md#std-V) | [W](pt10otv01.md#std-W) | [X](pt10otv01.md#std-X) | [Y](pt10otv01.md#std-Y) | [Z](#std-Z) |
+| [N](pt02ch04s02abv01.md#std-N) | [O](pt02ch04s02abv01.md#std-O) | [P](pt02ch04s02abv01.md#std-P) | [Q](pt02ch04s02abv01.md#std-Q) | [R](pt02ch04s02abv01.md#std-R) | [S](pt02ch04s02abv01.md#std-S) | [T](pt02ch04s02abv01.md#std-T) | [U](pt02ch04s02abv01.md#std-U) | [V](pt02ch04s02abv01.md#std-V) | [W](pt02ch04s02abv01.md#std-W) | [X](pt02ch04s02abv01.md#std-X) | [Y](pt02ch04s02abv01.md#std-Y) | [Z](#std-Z) |
 
 ### A
 
@@ -109,6 +108,3 @@
 ### Y
 
 [YIELDS](pt02ch04s02abv01.md#usb-stdxsl-yields)
-
-
-

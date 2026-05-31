@@ -1,14 +1,13 @@
-# Abaqus/Explicit Output Variable Index
+# Abaqus/Explicit 输出变量索引
 
 
 
 
 
 
-
-| [A](pt10otv02.md#exp-A) | [B](pt10otv02.md#exp-B) | [C](pt10otv02.md#exp-C) | [D](pt10otv02.md#exp-D) | [E](pt10otv02.md#exp-E) | [F](pt10otv02.md#exp-F) | [G](pt10otv02.md#exp-G) | [H](pt10otv02.md#exp-H) | [I](pt10otv02.md#exp-I) | [J](pt10otv02.md#exp-J) | [K](#exp-K) | [L](pt10otv02.md#exp-L) | [M](pt10otv02.md#exp-M) |
+| [A](pt02ch04s02xbv01.md#exp-A) | [B](pt02ch04s02xbv01.md#exp-B) | [C](pt02ch04s02xbv01.md#exp-C) | [D](pt02ch04s02xbv01.md#exp-D) | [E](pt02ch04s02xbv01.md#exp-E) | [F](pt02ch04s02xbv01.md#exp-F) | [G](pt02ch04s02xbv01.md#exp-G) | [H](pt02ch04s02xbv01.md#exp-H) | [I](pt02ch04s02xbv01.md#exp-I) | [J](pt02ch04s02xbv01.md#exp-J) | [K](#exp-K) | [L](pt02ch04s02xbv01.md#exp-L) | [M](pt02ch04s02xbv01.md#exp-M) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [N](pt10otv02.md#exp-N) | [O](pt10otv02.md#exp-O) | [P](pt10otv02.md#exp-P) | [Q](pt10otv02.md#exp-Q) | [R](pt10otv02.md#exp-R) | [S](pt10otv02.md#exp-S) | [T](pt10otv02.md#exp-T) | [U](pt10otv02.md#exp-U) | [V](pt10otv02.md#exp-V) | [W](#exp-W) | [X](pt10otv02.md#exp-X) | [Y](pt10otv02.md#exp-Y) | [Z](#exp-Z) |
+| [N](pt02ch04s02xbv01.md#exp-N) | [O](pt02ch04s02xbv01.md#exp-O) | [P](pt02ch04s02xbv01.md#exp-P) | [Q](pt02ch04s02xbv01.md#exp-Q) | [R](pt02ch04s02xbv01.md#exp-R) | [S](pt02ch04s02xbv01.md#exp-S) | [T](pt02ch04s02xbv01.md#exp-T) | [U](pt02ch04s02xbv01.md#exp-U) | [V](pt02ch04s02xbv01.md#exp-V) | [W](#exp-W) | [X](pt02ch04s02xbv01.md#exp-X) | [Y](pt02ch04s02xbv01.md#exp-Y) | [Z](#exp-Z) |
 
 ### A
 
@@ -101,6 +100,3 @@
 ### Y
 
 [YIELDS](pt02ch04s02xbv01.md#usb-expxsl-yields)
-
-
-
