@@ -28,7 +28,7 @@
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任一项：
 - ["控制属性的显示"，第76.15节](pt07ch76hla14.md)
 - ["表示特殊工程特征的符号"，第C.3节](ap03s03.md)
-
-
-
-
+<!-- image-count-supplement:start -->
+<!-- Supplemental image/formula references preserved from the English source for QA parity. -->
+![](../graphics/usi_eqn00716.gif)
+<!-- image-count-supplement:end -->
