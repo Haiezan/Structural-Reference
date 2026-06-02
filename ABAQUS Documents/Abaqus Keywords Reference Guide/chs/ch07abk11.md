@@ -9,11 +9,11 @@
 
 此选项用于定义垫片单元的特性。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 零件、零件实例  
+**级别：** 零件、零件实例
 
 **Abaqus/CAE：** Property 模块
 
@@ -52,7 +52,3 @@ STABILIZATION STIFFNESS
 ### **定义垫片单元属性的数据行：**
 
 **第一（也是唯一）行：**
-
-
-
-

@@ -57,6 +57,3 @@ STIFFNESS
 设置 STIFFNESS=YES 以写入刚度矩阵（或传热单元的算子矩阵）。默认值为 STIFFNESS=NO。
 
 **此选项没有关联的数据行。**
-
-
-

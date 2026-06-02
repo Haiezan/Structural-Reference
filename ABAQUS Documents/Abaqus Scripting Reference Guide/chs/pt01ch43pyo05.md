@@ -102,4 +102,3 @@ RangeError: topMargin and bottomMargin must produce image height >= minHeight
 ### 43.5.2 成员
 
 PsOptions 对象的成员与 [setValues](pt01ch43pyo05.md#ker-psoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

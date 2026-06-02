@@ -51,7 +51,3 @@ The ConstrainedSketchVertex object has the following member:
 *coords*
 
 A tuple of Floats specifying the*X*-, *Y*-, and *Z*-coordinates of the sketch vertex.
-
-
-
-

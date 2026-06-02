@@ -40,8 +40,3 @@ AdaptiveMeshConstraintState 对象具有以下成员：
 *amplitude*
 
 一个 String，指定幅值参考的名称。如果自适应网格约束没有幅值参考，则该 String 为空。
-
-
-
-
-

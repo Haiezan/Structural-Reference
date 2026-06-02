@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **优点：**您现在可以对最大、中间或最小主应力场输出应用有界值过滤器。
 
@@ -19,4 +19,3 @@
 **Abaqus Keywords Reference Guide**
 - [*ELEMENT OUTPUT](../key/key-link.md#usb-kws-helementoutput)
 - [*FILTER](../key/key-link.md#usb-kws-mfilter)
-

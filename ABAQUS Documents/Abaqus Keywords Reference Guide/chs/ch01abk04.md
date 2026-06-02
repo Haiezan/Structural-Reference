@@ -8,7 +8,7 @@
 
 此选项用于定义自适应网格域，并指定该域自适应网格划分的频率和强度。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**历史数据
 

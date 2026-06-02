@@ -4,7 +4,7 @@
 
 梁长150 mm，宽2.5 mm，深5 mm；一端固定；自由端承受5 N的集中载荷。材料的杨氏模量*E*为70 GPa，泊松比为0.0。根据梁理论，载荷*P*作用下梁端部的静位移为：
 
-![delta = Pl^3 / 3EI](../graphics/gsk_eqn00034.gif)
+![](../graphics/gss-pointload.png)![delta = Pl^3 / 3EI](../graphics/gsk_eqn00034.gif)
 
 其中 ![I = bd^3/12](../graphics/gsk_eqn00035.gif)，*l*为长度，*b*为宽度，*d*为梁的深度。
 

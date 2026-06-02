@@ -20,7 +20,3 @@
 
 ![](../graphics/images/black4rule.gif)有关相关信息，请单击以下项：
 - ["表示特殊工程特征的符号"，第C.3节](ap03s03.md)
-
-
-
-

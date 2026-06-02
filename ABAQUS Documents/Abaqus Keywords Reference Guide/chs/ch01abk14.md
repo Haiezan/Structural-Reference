@@ -8,7 +8,7 @@
 
 此选项用于开始装配定义。它必须与[*END ASSEMBLY](ch05abk16.md)、[*INSTANCE](ch09abk19.md)和[*PART](ch16abk04.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
 **类型：**模型数据
 

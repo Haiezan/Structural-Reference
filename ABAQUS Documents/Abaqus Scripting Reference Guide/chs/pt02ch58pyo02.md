@@ -150,4 +150,3 @@ odb_ConnectorOptions options() const;
 *options*
 
 一个 [ConnectorOptions](pt02ch58pyo09.md) 对象，指定用于定义此 [ConnectorBehaviorOption](pt02ch58pyo01.md) 的表格选项的 [ConnectorOptions](pt02ch58pyo09.md)。
-

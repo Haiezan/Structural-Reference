@@ -8,7 +8,7 @@
 
 此选项用于为具有相对运动可用分量的连接器单元定义连接器损伤起始准则。它几乎总是与[*CONNECTOR DAMAGE EVOLUTION](ch03abk37.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -105,7 +105,3 @@ RTOL
 **后续行（仅在DEPENDENCIES参数的值大于四时需要）：**
 
 根据需要重复此数据行集，以将连接器损伤起始准则定义为模式混合比、等效塑性运动率、温度和其他预定义场变量的函数。
-
-
-
-

@@ -82,6 +82,3 @@ CavityRadiationProp 对象的成员与 [CavityRadiationProp](pt01ch25pyo09.md#ke
 
 | [*EMISSIVITY](../key/key-link.md#usb-kws-memissivity) |
 | --- |
-
-
-

@@ -67,8 +67,3 @@ session.fieldReportOptions
 ### 23.1.2 成员
 
 FieldReportOptions 对象具有与 [setValues](pt01ch23pyo01.md#ker-fieldreportoptions-setvalues-pyc) 方法的参数相同的名称和描述的成员。
-
-
-
-
-

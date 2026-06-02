@@ -142,8 +142,3 @@ odb_Enum::odb_ResultPositionEnum position() const;
 *componentLabels*
 
 一个 odb_SequenceString，指定分量标签。
-
-
-
-
-

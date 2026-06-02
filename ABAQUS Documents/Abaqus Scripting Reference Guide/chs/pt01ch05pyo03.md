@@ -210,7 +210,3 @@ InvalidNameError。
 ### 5.3.5 成员
 
 Arrow 对象具有与 [Arrow](pt01ch05pyo03.md#ker-arrow-arrow-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

@@ -24,7 +24,3 @@
 
 **Abaqus/CAE User's Guide**
 - [“Create face from element faces，” Section 69.7.10](../usi/usi-link.md#usi-rep-help-repair-fromelem)
-
-
-
-

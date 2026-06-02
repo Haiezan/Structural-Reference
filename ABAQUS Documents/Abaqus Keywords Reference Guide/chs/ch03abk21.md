@@ -9,11 +9,11 @@
 
 此选项用于在接触从节点处精确指定初始间隙值和/或接触方向。在 Abaqus/Standard 分析中，它还可用于指定过盈值。[*CLEARANCE](ch03abk21.md) 选项只能与小滑动接触一起使用（[*CONTACT PAIR](ch03abk68.md)，SMALL SLIDING）。在 Abaqus/Explicit 中，它只能用于分析的第一个步骤。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据  
+**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据
 
-**级别：**Abaqus/Standard 中的模型；Abaqus/Explicit 中的步骤  
+**级别：**Abaqus/Standard 中的模型；Abaqus/Explicit 中的步骤
 
 **Abaqus/CAE: **相互作用模块
 
@@ -91,7 +91,3 @@ INPUT
 **图 3.21-2** 螺栓和螺栓孔组件中心线上的点 *a* 和点 *b*。
 
 ![](../graphics/thread-bolt-connection3.png)
-
-
-
-

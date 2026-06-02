@@ -895,7 +895,7 @@ Float，指定所需单元尺寸。
 
 *deviationFactor*
 
-Float，指定偏离因子 ![](../graphics/ker_eqn00403.gif)，其中 ![](../graphics/ker_eqn00069.gif) 是弦偏差，![](../graphics/ker_eqn00404.gif) 是单元长度。
+Float，指定偏离因子 ![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00403.gif)，其中 ![](../graphics/ker_eqn00069.gif) 是弦偏差，![](../graphics/ker_eqn00404.gif) 是单元长度。
 
 *minSizeFactor*
 
@@ -934,7 +934,7 @@ Float，指定边的所需全局单元尺寸。
 
 *deviationFactor*
 
-Float，指定偏离因子 ![](../graphics/ker_eqn00403.gif)，其中 ![](../graphics/ker_eqn00069.gif) 是弦偏差，![](../graphics/ker_eqn00404.gif) 是单元长度。
+Float，指定偏离因子 ![](../graphics/ker_eqn00403.gif)，其中 ![](../graphics/ker_eqn00069.gif) 是弦偏差，![](../graphics/ker_eqn00404.gif)![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif) 是单元长度。
 
 *minSizeFactor*
 

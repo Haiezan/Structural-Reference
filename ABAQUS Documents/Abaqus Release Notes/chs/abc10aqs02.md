@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **优点：**复杂交叉处（连接到两个以上面的边缘）的接触已得到改进。
 
@@ -26,4 +26,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["Surface offset" in "Assigning surface properties for general contact in Abaqus/Explicit," Section 36.4.2](../usb/usb-link.md#usb-cni-asurfacepropassign-offset)
-

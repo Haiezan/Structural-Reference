@@ -12,11 +12,11 @@
 
 此选项用于修改弹性定义，以不允许压应力。它只能与[*ELASTIC](ch05abk03.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

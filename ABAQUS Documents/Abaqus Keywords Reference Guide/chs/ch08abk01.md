@@ -9,11 +9,11 @@
 
 此选项用于为分析定义标题。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Job 模块
 
@@ -28,7 +28,3 @@
 **第一行：**
 
 标题可以有多行，但只有第一行的前 80 个字符会被保存并打印为标题。
-
-
-
-

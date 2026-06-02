@@ -36,4 +36,3 @@ session.odbData[*name*].steps[*i*].frames[*i*]
 ### 40.11.2 成员
 
 OdbDataFrame 对象没有成员。
-

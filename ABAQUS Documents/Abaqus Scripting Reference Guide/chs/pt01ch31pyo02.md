@@ -1,5 +1,5 @@
 # 31.2 Part 对象
-
+![](../graphics/ker_eqn00403.gif)![](../graphics/ker_eqn00069.gif)![](../graphics/ker_eqn00404.gif)![](../graphics/ker_eqn00403.gif)![](../graphics/ker_eqn00069.gif)![](../graphics/ker_eqn00404.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00403.gif)![](../graphics/ker_eqn00069.gif)![](../graphics/ker_eqn00404.gif)![](../graphics/ker_eqn00403.gif)![](../graphics/ker_eqn00069.gif)![](../graphics/ker_eqn00404.gif)![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 以下命令对 Part 对象进行操作。有关 Part 对象的更多信息，请参见 ["Part 对象，" 第 37.1 节](pt01ch37pyo01.md)。
 
 **访问**

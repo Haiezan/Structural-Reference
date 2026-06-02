@@ -69,4 +69,3 @@ HexagonalProfile 对象具有与 [HexagonalProfile](pt02ch57pyo06.md#ker-hexagon
 
 | [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=HEX |
 | --- |
-

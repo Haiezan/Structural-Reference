@@ -9,11 +9,11 @@
 
 此选项用于为使用扩展 Cam-clay 塑性模型的弹塑性材料指定材料行为的塑性部分。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -47,7 +47,3 @@ INTERCEPT
 **后续行（仅在 DEPENDENCIES 参数值大于二时需要）：**
 
 根据需要重复此数据行集，以定义 Cam-clay 参数对温度和其他预定义场变量的依赖性。
-
-
-
-

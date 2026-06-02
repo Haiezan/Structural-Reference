@@ -10,11 +10,11 @@
 
 此选项用于通过直线或平面反射定义腔体对称性。它只能跟在[*RADIATION SYMMETRY](ch17abk05.md)选项之后使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**相互作用模块
 

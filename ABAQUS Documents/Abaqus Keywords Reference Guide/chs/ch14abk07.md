@@ -12,11 +12,11 @@
 
 此选项用于在节点基础上定义可变的临界能量释放率。除非在[*FRACTURE CRITERION](ch06abk33.md)、TYPE=VCCT选项或[*FRACTURE CRITERION](ch06abk33.md)、TYPE=FATIGUE选项上包含了NODAL ENERGY RATE参数，否则此选项定义的临界能量释放率数据将被忽略。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 ##### **参考：**
 

@@ -156,7 +156,3 @@ session.viewports[*name*].annotationsToPlot
 ### 5.2.7 成员
 
 AnnotationsToPlotArray 对象没有成员。
-
-
-
-

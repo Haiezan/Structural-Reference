@@ -11,11 +11,11 @@
 
 [*GAP HEAT GENERATION](ch07abk05.md) 选项必须与 [*SURFACE INTERACTION](ch18abk50.md) 选项一起使用，或在 Abaqus/Standard 分析中与 [*GAP](ch07abk01.md) 选项一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据  
+**类型：** Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据
 
-**级别：** Abaqus/Standard 中的零件、零件实例、装配、模型；Abaqus/Explicit 中的步骤  
+**级别：** Abaqus/Standard 中的零件、零件实例、装配、模型；Abaqus/Explicit 中的步骤
 
 **Abaqus/CAE：** Interaction 模块
 
@@ -33,7 +33,3 @@
 ### **定义间隙热生成的数据行：**
 
 **第一（也是唯一）行：**
-
-
-
-

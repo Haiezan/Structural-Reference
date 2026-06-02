@@ -8,7 +8,7 @@
 
 The TopologyTask object defines a topology task.
 
-         The TopologyTask object is derived from the [OptimizationTask](pt01ch36pyo01.md) object.       
+         The TopologyTask object is derived from the [OptimizationTask](pt01ch36pyo01.md) object.
 
 **Access**
 
@@ -21,7 +21,7 @@ The TopologyTask object defines a topology task.
 
 ### 36.41.1 TopologyTask(...)
 
-           This method creates a TopologyTask object.         
+           This method creates a TopologyTask object.
 
 **Path**
 
@@ -41,7 +41,7 @@ A String specifying the optimization task repository key.
 
 *algorithm*
 
-                 A SymbolicConstant specifying the optimization task algorithm. Possible values are GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is GENERAL_OPTIMIZATION.               
+                 A SymbolicConstant specifying the optimization task algorithm. Possible values are GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is GENERAL_OPTIMIZATION.
 
 *densityMoveLimit*
 
@@ -49,15 +49,15 @@ A Float specifying the maximum density change per design cycle. The default valu
 
 *densityUpdateStrategy*
 
-                 A SymbolicConstant specifying the strategy for how the densities are updated in the method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE. The default value is NORMAL.               
+                 A SymbolicConstant specifying the strategy for how the densities are updated in the method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE. The default value is NORMAL.
 
 *elementDensityDeltaStopCriteria*
 
-                 A Float specifying the stop criteria based upon the change in element densities. The default value is 0.510–2.               
+                 A Float specifying the stop criteria based upon the change in element densities. The default value is 0.510–2.
 
 *filterRadius*
 
- `None` or a Float specifying the mesh filter radius for mesh independence and minimum size. The default value is `None`.               
+ `None` or a Float specifying the mesh filter radius for mesh independence and minimum size. The default value is `None`.
 
 *firstCycleDeletedVolume*
 
@@ -65,15 +65,15 @@ A Float specifying the volume that can be removed immediately in the first desig
 
 *firstCycleDeletedVolumeTechnique*
 
-                 A SymbolicConstant specifying the method of quantifying volume that can be removed immediately in the first design cycle. Possible values are OFF, PERCENTAGE, and ABSOLUTE. The default value is OFF.               
+                 A SymbolicConstant specifying the method of quantifying volume that can be removed immediately in the first design cycle. Possible values are OFF, PERCENTAGE, and ABSOLUTE. The default value is OFF.
 
 *freezeBoundaryConditionRegions*
 
-                 A Boolean specifying whether to exclude elements with boundary conditions from the optimization. The default value is OFF.               
+                 A Boolean specifying whether to exclude elements with boundary conditions from the optimization. The default value is OFF.
 
 *freezeLoadRegions*
 
-                 A Boolean specifying whether to exclude elements with loads and elements with loaded nodes from the optimization. The default value is ON.               
+                 A Boolean specifying whether to exclude elements with loads and elements with loaded nodes from the optimization. The default value is ON.
 
 *frequencySpectrumWeight*
 
@@ -89,7 +89,7 @@ A Float specifying the penalty factor for the material interpolation technique. 
 
 *materialInterpolationTechnique*
 
-                 A SymbolicConstant specifying the material interpolation technique: optimization product default, solid isotropic material with penalization, or rational approximation of material properties. Possible values are DEFAULT, SIMP, and RAMP. The default value is DEFAULT.               
+                 A SymbolicConstant specifying the material interpolation technique: optimization product default, solid isotropic material with penalization, or rational approximation of material properties. Possible values are DEFAULT, SIMP, and RAMP. The default value is DEFAULT.
 
 *maxDensity*
 
@@ -97,15 +97,15 @@ A Float specifying the maximum density in the density update. The default value 
 
 *minDensity*
 
-                 A Float specifying the minimum density in the density update. The default value is 10–3.               
+                 A Float specifying the minimum density in the density update. The default value is 10–3.
 
 *modeTrackingRegion*
 
- `None` or a [Region](pt01ch45pyo03.md) object specifying the region to use for mode tracking. The default value is `None`.               
+ `None` or a [Region](pt01ch45pyo03.md) object specifying the region to use for mode tracking. The default value is `None`.
 
 *numDesignCycles*
 
-                 An Int specifying the number of design cycles permitted when *stepSize* is DYNAMIC. The default value is 15.               
+                 An Int specifying the number of design cycles permitted when *stepSize* is DYNAMIC. The default value is 15.
 
 *numFulfilledStopCriteria*
 
@@ -117,15 +117,15 @@ An Int specifying the number of modes included in mode tracking. The default val
 
 *objectiveFunctionDeltaStopCriteria*
 
-                 A Float specifying the stop criteria based upon the change in objective function. The default value is 10–3.               
+                 A Float specifying the stop criteria based upon the change in objective function. The default value is 10–3.
 
 *region*
 
-                 The SymbolicConstant MODEL or a [Region](pt01ch45pyo03.md) object specifying the region to which the optimization task is applied. The default value is MODEL.               
+                 The SymbolicConstant MODEL or a [Region](pt01ch45pyo03.md) object specifying the region to which the optimization task is applied. The default value is MODEL.
 
 *softDeletionMethod*
 
-                 A SymbolicConstant specifying the method used when *softDeletionRegion* is specified.                 The STANDARD method avoids creating disconnected regions.                 The AGGRESSIVE method only considers the *softDeletionThreshold*.                 The MAX_SHEAR_STRAIN,  , MAX_ELASTOPLASTIC_STRAIN and VOLUME_COMPRESSION methods do not need the *softDeletionRadius*.                 Possible values are STANDARD, AGGRESSIVE, MAX_SHEAR_STRAIN, MIN_PRINCIPAL_STRAIN, MAX_ELASTOPLASTIC_STRAIN and VOLUME_COMPRESSION.                 The default value is STANDARD.               
+                 A SymbolicConstant specifying the method used when *softDeletionRegion* is specified.                 The STANDARD method avoids creating disconnected regions.                 The AGGRESSIVE method only considers the *softDeletionThreshold*.                 The MAX_SHEAR_STRAIN,  , MAX_ELASTOPLASTIC_STRAIN and VOLUME_COMPRESSION methods do not need the *softDeletionRadius*.                 Possible values are STANDARD, AGGRESSIVE, MAX_SHEAR_STRAIN, MIN_PRINCIPAL_STRAIN, MAX_ELASTOPLASTIC_STRAIN and VOLUME_COMPRESSION.                 The default value is STANDARD.
 
 *softDeletionRadius*
 
@@ -133,19 +133,19 @@ A Float specifying the radius to use when considering neighboring soft elements 
 
 *softDeletionRegion*
 
- `None` or a [Region](pt01ch45pyo03.md) object specifying the region in which the soft elements should be deleted during optimization. The default value is `None`.               
+ `None` or a [Region](pt01ch45pyo03.md) object specifying the region in which the soft elements should be deleted during optimization. The default value is `None`.
 
 *softDeletionThreshold*
 
-                 A Float specifying the relative material density value used to identify soft elements.                 Those with values below the threshold are considered for removal.                 For STANDARD and AGGRESSIVE methods positive values are accepted and the default value is 0.05.                 For MAX_SHEAR_STRAIN and MAX_ELASTOPLASTIC_STRAIN methods positive values are accepted whereas for MIN_PRINCIPAL_STRAIN and VOLUME_COMPRESSION methods negative values are accepted.               
+                 A Float specifying the relative material density value used to identify soft elements.                 Those with values below the threshold are considered for removal.                 For STANDARD and AGGRESSIVE methods positive values are accepted and the default value is 0.05.                 For MAX_SHEAR_STRAIN and MAX_ELASTOPLASTIC_STRAIN methods positive values are accepted whereas for MIN_PRINCIPAL_STRAIN and VOLUME_COMPRESSION methods negative values are accepted.
 
 *stepSize*
 
-                 A SymbolicConstant specifying the size of the increment for volume modification. Possible values are DYNAMIC, VERY_SMALL, SMALL, MODERATE, MEDIUM, and LARGE. The default value is MEDIUM.               
+                 A SymbolicConstant specifying the size of the increment for volume modification. Possible values are DYNAMIC, VERY_SMALL, SMALL, MODERATE, MEDIUM, and LARGE. The default value is MEDIUM.
 
 *stiffnessMassDamping*
 
-                 The SymbolicConstant AVERAGE_EDGE_LENGTH or a Float specifying the stiffness mass damping for the task region. The default value is AVERAGE_EDGE_LENGTH.               
+                 The SymbolicConstant AVERAGE_EDGE_LENGTH or a Float specifying the stiffness mass damping for the task region. The default value is AVERAGE_EDGE_LENGTH.
 
 *stopCriteriaDesignCycle*
 
@@ -153,19 +153,19 @@ An Int specifying the first design cycle used to evaluate convergence criteria. 
 
 *structuralMassDamping*
 
- `None` or a Float specifying the structural mass damping for the task region. The default value is `None`.               
+ `None` or a Float specifying the structural mass damping for the task region. The default value is `None`.
 
 *viscousMassDamping*
 
- `None` or a Float specifying the viscous mass damping for the task region. The default value is `None`.               
+ `None` or a Float specifying the viscous mass damping for the task region. The default value is `None`.
 
 *viscousStiffnessDamping*
 
- `None` or a Float specifying the viscous stiffness damping for the task region. The default value is `None`.               
+ `None` or a Float specifying the viscous stiffness damping for the task region. The default value is `None`.
 
 **Return value**
 
-           A TopologyTask object.         
+           A TopologyTask object.
 
 **Exceptions**
 
@@ -173,7 +173,7 @@ None.
 
 ### 36.41.2 setValues(...)
 
-           This method modifies the TopologyTask object.         
+           This method modifies the TopologyTask object.
 
 **Required arguments**
 
@@ -181,7 +181,7 @@ None.
 
 **Optional arguments**
 
-             The optional arguments to `setValues` are the same as the arguments to the [TopologyTask](pt01ch36pyo41.md#ker-topologytask-topologytask-pyc) method, except for the *name* argument.           
+             The optional arguments to `setValues` are the same as the arguments to the [TopologyTask](pt01ch36pyo41.md#ker-topologytask-topologytask-pyc) method, except for the *name* argument.
 
 **Return value**
 
@@ -193,30 +193,26 @@ None.
 
 ### 36.41.3 Members
 
-         The TopologyTask object has members with the same names and descriptions as the arguments to the [TopologyTask](pt01ch36pyo41.md#ker-topologytask-topologytask-pyc) method.       
+         The TopologyTask object has members with the same names and descriptions as the arguments to the [TopologyTask](pt01ch36pyo41.md#ker-topologytask-topologytask-pyc) method.
 
-         In addition, the TopologyTask object can have the following members:       
+         In addition, the TopologyTask object can have the following members:
 
 *designResponses*
 
-               A repository of [DesignResponse](pt01ch36pyo04.md) objects.             
+               A repository of [DesignResponse](pt01ch36pyo04.md) objects.
 
 *objectiveFunctions*
 
-               A repository of [ObjectiveFunction](pt01ch36pyo11.md) objects.             
+               A repository of [ObjectiveFunction](pt01ch36pyo11.md) objects.
 
 *optimizationConstraints*
 
-               A repository of [OptimizationConstraint](pt01ch36pyo12.md) objects.             
+               A repository of [OptimizationConstraint](pt01ch36pyo12.md) objects.
 
 *geometricRestrictions*
 
-               A repository of [GeometricRestriction](pt01ch36pyo08.md) objects.             
+               A repository of [GeometricRestriction](pt01ch36pyo08.md) objects.
 
 *stopConditions*
 
-               A repository of [StopCondition](pt01ch36pyo34.md) objects.             
-
-
-
-
+               A repository of [StopCondition](pt01ch36pyo34.md) objects.

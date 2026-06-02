@@ -8,9 +8,9 @@
 
 此选项用于指示要使用显式积分执行动态耦合热应力分析。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -63,7 +63,3 @@ SCALE FACTOR
 ### **使用 FIXED TIME INCREMENTATION 的固定时间增量的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

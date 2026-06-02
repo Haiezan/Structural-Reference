@@ -101,4 +101,3 @@ EmbeddedRegion 对象的成员与 [EmbeddedRegion](pt01ch13pyo05.md#ker-embedded
 
 | [*EMBEDDED ELEMENT](../key/key-link.md#usb-kws-membeddedelement) |
 | --- |
-

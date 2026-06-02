@@ -23,8 +23,3 @@ abaqus fetch job=boltpipeflange_3d_cyclsym.inp
 ```
 
 **abaqus fetch**实用程序在["获取示例输入文件," Section 3.2.16 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-int-dfetchproc)中有详细说明。
-
-
-
-
-

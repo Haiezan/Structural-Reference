@@ -47,7 +47,3 @@
 
 | [Section 11.3.2](ch11s03aex147.md) | Sizing optimization of a car door |
 | --- | --- |
-
-
-
-

@@ -111,6 +111,3 @@ ContactDamping 对象具有以下成员：
 
 | [*CONTACT DAMPING](../key/key-link.md#usb-kws-hcontactdamping) |
 | --- |
-
-
-

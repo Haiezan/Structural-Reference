@@ -114,7 +114,7 @@
 
 **图 12-19** 模型装配。
 
-![../graphics/gss-channel-assy.png](../graphics/gss-channel-assy.png)
+![](../graphics/ico_dtmCsysThreePoints.png)![](../graphics/ico_viewFit.png)![../graphics/gss-channel-assy.png](../graphics/gss-channel-assy.png)
 
 **几何集合**
 
@@ -240,7 +240,7 @@ Abaqus/Standard 接触分析中有两个主要困难来源：刚性部件在接�
 
 **图 12-20** 通道成形分析的网格。
 
-![../graphics/gsa-contact-mesh.png](../graphics/gsa-contact-mesh.png)
+![](../graphics/ico_selectBlue.png)![../graphics/gsa-contact-mesh.png](../graphics/gsa-contact-mesh.png)
 
 通过指定沿每条边的单元数来为毛坯的边缘设置种子。指定沿毛坯水平边缘 `100` 个单元，沿毛坯每条垂直边缘 `4` 个单元。工具已使用解析刚性表面建模，因此不需要划分网格。但是，如果工具已使用离散刚性单元建模，则网格必须足够细化以避免接触收敛困难。例如，如果模具已使用 R2D2 单元建模，则弯曲角应使用至少 20 个单元建模。这将创建一个足够光滑的表面，能够准确捕获角落几何形状。使用离散刚性单元时，始终使用足够数量的单元来建模此类曲线。
 
@@ -310,7 +310,7 @@ Abaqus/Standard 接触分析中有两个主要困难来源：刚性部件在接�
 
 **图 12-25** 步骤 2 结束时毛坯的变形形状。
 
-![../graphics/gsa-cnt-displaced-shape.png](../graphics/gsa-cnt-displaced-shape.png)
+![](../graphics/ico_viewFit.png)![../graphics/gsa-cnt-displaced-shape.png](../graphics/gsa-cnt-displaced-shape.png)
 
 **绘制等效塑性应变轮廓的步骤：**
 
@@ -330,7 +330,7 @@ Abaqus/Standard 接触分析中有两个主要困难来源：刚性部件在接�
 
 **图 12-26** 毛坯角落中等效塑性应变标量 PEEQ 的轮廓。
 
-![../graphics/gsa-cnt-scalarplaststrain-nls.png](../graphics/gsa-cnt-scalarplaststrain-nls.png)
+![](../graphics/ico_plotContourDeformed.png)![](../graphics/ico_viewZoomRectangle.png)![../graphics/gsa-cnt-scalarplaststrain-nls.png](../graphics/gsa-cnt-scalarplaststrain-nls.png)
 
 最大塑性应变约为 21%。将此与材料的破坏应变进行比较，以确定材料是否会在成形过程中撕裂。
 
@@ -382,7 +382,7 @@ Abaqus/CAE 包含多个专门为后处理接触分析而设计的功能。在**�
 
 **图 12-29** 表面法线。
 
-![../graphics/gss-surfacenorm-c.png](../graphics/gss-surfacenorm-c.png)
+![](../graphics/ico_viewZoomRectangle.png)![../graphics/gss-surfacenorm-c.png](../graphics/gss-surfacenorm-c.png)
 
 **对接触压力绘制轮廓的步骤：**
 
@@ -410,4 +410,25 @@ Abaqus/CAE 包含多个专门为后处理接触分析而设计的功能。在**�
 
 **图 12-30** 接触压力。
 
-![../graphics/gsa-conpress.png](../graphics/gsa-conpress.png)
+![](../graphics/ico_viewRotate.png)![../graphics/gsa-conpress.png](../graphics/gsa-conpress.png)
+### Material and section properties
+### Assembling the parts
+#### To instance and position the blank holder:
+#### To instance and position the die:
+### Geometry sets
+### Defining steps and output requests
+#### Step 1
+#### Step 2
+### Monitoring the value of a degree of freedom
+### Defining contact interactions
+### Boundary conditions and loading for Step 1
+### Boundary conditions for Step 2
+### Mesh creation and job definition
+## 12.6.2 Job monitoring
+## 12.6.3 Troubleshooting Abaqus/Standard contact analyses
+### Contact diagnostics
+## 12.6.4 Postprocessing
+### Deformed model shape and contour plots
+### History plots of the reaction forces on the blank and punch
+### History plot of the stabilization and internal energies
+### Plotting contours on surfaces

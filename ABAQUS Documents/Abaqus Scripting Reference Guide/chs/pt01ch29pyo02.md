@@ -111,7 +111,3 @@ AcousticMedium 对象具有与 [AcousticMedium](pt01ch29pyo02.md#ker-acousticmed
 
 | [*ACOUSTIC MEDIUM](../key/key-link.md#usb-kws-macousticmed) |
 | --- |
-
-
-
-

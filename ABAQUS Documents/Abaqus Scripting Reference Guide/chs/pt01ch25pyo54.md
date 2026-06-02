@@ -153,6 +153,3 @@ PressurePenetration 对象具有以下成员：
 
 | [*PRESSURE PENETRATION](../key/key-link.md#usb-kws-hpressurepenetration) |
 | --- |
-
-
-

@@ -17,7 +17,3 @@
 5. 单击 **确定** 创建连接点。 Abaqus/CAE 显示连接点。您无法修改附着点； you must delete the points and create new points.
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任意项目：-["Understanding attachment points and lines," Section 59.1](pt06ch59s01.md)-["About fasteners," Section 29.1](pt04ch29s01.md)
-
-
-
-

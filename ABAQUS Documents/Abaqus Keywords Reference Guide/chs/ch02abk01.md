@@ -70,5 +70,3 @@ REAL
 **第一行（也是唯一一行）：**
 
 此数据行仅与[*MODAL DYNAMIC](ch13abk18.md)和[*STEADY STATE DYNAMICS](ch18abk34.md)过程中定义的主基础运动相关。
-
-

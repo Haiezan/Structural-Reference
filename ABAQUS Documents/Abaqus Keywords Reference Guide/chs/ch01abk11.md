@@ -8,7 +8,7 @@
 
 此选项用于通过将速度和所有适当的状态变量设置为零来对结构进行退火处理。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
 **类型：**历史数据
 

@@ -120,7 +120,3 @@
 | **ID_QUERY_GUILOCK** | 用于查询 GUI 是否被锁定。 |
 | --- | --- |
 | **ID_SHOW_HOURGLASS** | 用于更改光标。 |
-
-
-
-

@@ -102,4 +102,3 @@ Velocity 对象的成员与 [Velocity](pt01ch42pyo15.md#ker-velocity-velocity-py
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=VELOCITY |
 | --- |
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=ROTATING VELOCITY |
-

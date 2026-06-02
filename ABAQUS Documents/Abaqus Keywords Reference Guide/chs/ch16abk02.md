@@ -12,9 +12,9 @@
 
 此选项用于定义指定表格依赖参数和独立参数之间关系的依赖表。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**部件、部件实例、装配、模型、步骤
 

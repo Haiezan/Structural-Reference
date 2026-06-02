@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **优点：**当局部区域计算密集时，可以实现更好的并行扩展性。
 
@@ -20,4 +20,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*DOMAIN DECOMPOSITION](../key/key-link.md#usb-kws-mdomaindecomp)
-

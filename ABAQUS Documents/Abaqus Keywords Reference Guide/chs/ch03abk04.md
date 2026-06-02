@@ -9,11 +9,11 @@
 
 此选项用于为使用改进的 Drucker-Prager/帽盖塑性模型的弹塑性材料定义屈服面参数。必须与 [*CAP HARDENING](ch03abk03.md) 选项结合使用，并且在 Abaqus/Standard 分析中包含蠕变材料行为时，还须与 [*CAP CREEP](ch03abk02.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -36,7 +36,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数值大于一时需要）：**
 
 根据需要重复此数据行集，以定义 Drucker-Prager/帽盖参数对温度和其他预定义场变量的依赖性。
-
-
-
-

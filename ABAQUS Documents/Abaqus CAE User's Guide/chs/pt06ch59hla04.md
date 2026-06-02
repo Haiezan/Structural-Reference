@@ -26,7 +26,3 @@
 8. 单击 **确定** 创建连接线。 Abaqus/CAE 显示附着线。有关编辑连接线的信息，请参阅["Editing attachment lines created by projecting points," Section 59.7.3](pt06ch59s03hlb03.md)。
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任意项目：-["Understanding attachment points and lines," Section 59.1](pt06ch59s01.md)-["About fasteners," Section 29.1](pt04ch29s01.md)
-
-
-
-

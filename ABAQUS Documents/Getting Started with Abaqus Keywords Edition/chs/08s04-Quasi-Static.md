@@ -434,7 +434,7 @@ abaqus viewer odb=skew_nl
 
 **显示变形和未变形的模型形状**
 
-使用"Allow Multiple Plot States"工具![plot](../graphics/ico_plotMultipleStates.png)显示叠加有未变形模型形状的变形模型形状。将两个图像的渲染样式设置为线框，并从"Superimpose Plot Options"对话框中切换关闭叠加的半透明度。旋转视图以获得类似于图8-13所示的图。默认情况下，会绘制最后增量的变形形状。（为清晰起见，未变形形状的边缘使用虚线样式绘制。）
+使用"Allow Multiple Plot States"工具显示叠加有未变形模型形状的变形模型形状。将两个图像的渲染样式设置为线框，并从"Superimpose Plot Options"对话框中切换关闭叠加的半透明度。旋转视图以获得类似于图8-13所示的图。默认情况下，会绘制最后增量的变形形状。（为清晰起见，未变形形状的边缘使用虚线样式绘制。）
 
 ![图 8-13](../graphics/gss-deform-plate-c.png)
 

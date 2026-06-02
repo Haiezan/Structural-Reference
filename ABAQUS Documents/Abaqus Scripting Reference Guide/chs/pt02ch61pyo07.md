@@ -533,8 +533,3 @@ odb_String name() const;
 *bulkDataBlocks*
 
 [FieldBulkData](pt02ch61pyo05.md) 对象的序列。
-
-
-
-
-

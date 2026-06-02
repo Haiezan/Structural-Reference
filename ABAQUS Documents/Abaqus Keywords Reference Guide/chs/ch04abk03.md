@@ -8,11 +8,11 @@
 
 此选项用于提供定义导致最终失效的损伤演化的材料属性。它必须与 [*DAMAGE INITIATION](ch04abk04.md) 选项结合使用。它可用于为内聚单元定义的材料、为富集单元、为使用纤维增强材料损伤模型的平面应力公式（平面应力、壳、连续壳和膜单元）定义的材料、与任何单元类型相关的低循环疲劳分析中的延性体材料，以及在Abaqus/Explicit中与任何单元类型相关的弹塑性材料。它还可以与 [*SURFACE INTERACTION](ch18abk50.md) 和 [*DAMAGE INITIATION](ch04abk04.md) 选项结合使用，以定义允许为内聚表面建模渐进失效的接触属性模型。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -190,7 +190,3 @@ SOFTENING
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此组数据行，以将材料常数对温度和其他预定义场变量的依赖性定义为函数。
-
-
-
-

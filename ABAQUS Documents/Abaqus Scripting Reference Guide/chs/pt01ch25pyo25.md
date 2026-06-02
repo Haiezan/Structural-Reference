@@ -206,6 +206,3 @@ ContactTangentialBehavior 对象具有以下成员：
 | [*FRICTION](../key/key-link.md#usb-kws-hfriction) |
 | --- |
 | [*CHANGE FRICTION](../key/key-link.md#usb-kws-hchangefriction) |
-
-
-

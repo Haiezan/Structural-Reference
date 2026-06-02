@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **优点：**您现在可以为历史和场输出元素输出请求输出等效塑性应变率。
 
@@ -20,4 +20,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*ELEMENT OUTPUT](../key/key-link.md#usb-kws-helementoutput)
-

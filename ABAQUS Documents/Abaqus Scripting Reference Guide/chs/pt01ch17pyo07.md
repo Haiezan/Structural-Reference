@@ -125,8 +125,3 @@ RangeError。
 ### 17.7.2 成员
 
 GeometricRestrictionDisplayOptions 对象的成员与 [setValues](pt01ch17pyo07.md#ker-geometricrestrictiondisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

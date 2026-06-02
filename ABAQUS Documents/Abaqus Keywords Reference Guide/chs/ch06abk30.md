@@ -8,11 +8,11 @@
 
 此选项用于为孔隙压力内聚单元定义泄漏系数。
 
-**产品：**Abaqus/Standard   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

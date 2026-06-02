@@ -142,8 +142,3 @@ PointMassInertia 对象具有与 [PointMassInertia](pt01ch19pyo12.md#ker-pointma
 
 | [*MASS](../key/key-link.md#usb-kws-mmass), [*ROTARY INERTIA](../key/key-link.md#usb-kws-mrotinertia) |
 | --- |
-
-
-
-
-

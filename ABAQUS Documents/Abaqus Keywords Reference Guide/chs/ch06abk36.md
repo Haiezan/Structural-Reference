@@ -8,11 +8,11 @@
 
 此选项用于将摩擦特性引入控制接触表面、接触对或连接器单元相互作用的机械表面相互作用模型。它必须与[*SURFACE INTERACTION](ch18abk50.md)选项、[*CONNECTOR FRICTION](ch03abk43.md)选项一起使用，或在Abaqus/Standard分析中与[*CHANGE FRICTION](ch03abk17.md)、[*GAP](ch07abk01.md)、[*INTERFACE](ch09abk22.md)或[*ITS](ch09abk23.md)选项一起使用。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**Abaqus/Standard中的模型或历史数据；Abaqus/Explicit中的历史数据  
+**类型：**Abaqus/Standard中的模型或历史数据；Abaqus/Explicit中的历史数据
 
-**级别：**Abaqus/Standard中的部件，部件实例，装配，模型；Abaqus/Explicit中的步骤  
+**级别：**Abaqus/Standard中的部件，部件实例，装配，模型；Abaqus/Explicit中的步骤
 
 **Abaqus/CAE：**相互作用模块
 

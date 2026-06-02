@@ -94,4 +94,3 @@ GeneralizedProfile 对象具有与 [GeneralizedProfile](pt02ch57pyo05.md#ker-gen
 
 | [*BEAM GENERAL SECTION*](../key/key-link.md#usb-kws-mbeamgensect), SECTION=GENERAL or NONLINEAR GENERAL |
 | --- |
-

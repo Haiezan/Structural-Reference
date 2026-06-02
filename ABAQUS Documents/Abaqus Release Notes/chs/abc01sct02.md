@@ -107,7 +107,3 @@ Abaqus 套件的各个组件在本节中描述。
 ### 文档变更
 
 由于 Abaqus Interface for Moldflow 中的翻译功能已集成到 Abaqus/Standard 中作为 **abaqus moldflow** 执行过程，Abaqus Interface for Moldflow User's Guide 已从 Abaqus 文档集合中移除。有关运行 **abaqus moldflow** 执行过程的信息，请参阅《Abaqus Analysis User's Guide》（[Abaqus 分析用户指南](../usb/usb-link.md#usb)）中的["Translating Moldflow data to Abaqus input files," Section 3.2.37](../usb/usb-link.md#usb-int-dmflabaproc)。有关翻译示例，请参阅《Abaqus Example Problems Guide》（[Abaqus 例题指南](../exa/exa-link.md#exa)）中的["Moldflow translation examples," Section 1.3.19](../exa/exa-link.md#exa-sta-moldflow)。
-
-
-
-

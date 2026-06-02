@@ -12,9 +12,9 @@
 
 此选项用于选择节点和自由度以在状态文件中监控解决方案的进度。在Abaqus/Standard中，信息也将写入消息文件。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

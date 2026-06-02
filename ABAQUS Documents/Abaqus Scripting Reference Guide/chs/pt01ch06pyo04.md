@@ -587,7 +587,3 @@ PartInstance 对象可以具有以下成员：
 *partName*
 
 一个 String，指定创建实例的零件名称。
-
-
-
-

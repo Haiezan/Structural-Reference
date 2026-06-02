@@ -143,7 +143,3 @@ TYPE
 ### **在Abaqus/Standard分析中使用分布为实体连续体单元定义空间变化弹性行为的数据行。（分布支持TYPE=ISOTROPIC、TYPE=ENGINEERING CONSTANTS、TYPE=LAMINA、TYPE=ORTHOTROPIC和TYPE=ANISOTROPIC）：**
 
 **第一行：**
-
-
-
-

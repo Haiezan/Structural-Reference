@@ -9,9 +9,9 @@
 
 此选项用于修改通用接触算法域内特定接触相互作用的接触公式。必须与 [*CONTACT](ch03abk54.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据  
+**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据
 
 **级别：**Abaqus/Standard 中的模型；Abaqus/Explicit 中的模型或步骤
 
@@ -76,7 +76,3 @@ FORMULATION
 根据需要重复此数据行。
 
 ### **在 Abaqus/Standard 中控制边缘到边缘（梁到梁）接触公式没有数据行。**
-
-
-
-

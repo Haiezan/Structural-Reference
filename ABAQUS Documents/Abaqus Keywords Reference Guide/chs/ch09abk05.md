@@ -9,11 +9,11 @@
 
 此选项用于在使用 [*IMPORT](ch09abk04.md), UPDATE=YES 选项时指定 Abaqus/Standard 或 Abaqus/Explicit 中壳法线误差检查的容差。如果使用了 [*IMPORT CONTROLS](ch09abk05.md) 选项，它必须出现在 [*IMPORT](ch09abk04.md) 选项之后。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 ##### **参考文献：**
 
@@ -27,7 +27,3 @@ NORMAL TOL
 将此参数设置为壳法线误差检查所需的容差。默认值为 0.1。
 
 **此选项没有关联的数据行。**
-
-
-
-

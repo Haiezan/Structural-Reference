@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
 **优点：**您现在可以保留网格无关紧固件连接的位置和方向。
 
@@ -18,4 +18,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*FASTENER](../key/key-link.md#usb-kws-mfastener)
-

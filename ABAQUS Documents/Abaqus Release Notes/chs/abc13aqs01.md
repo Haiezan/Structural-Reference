@@ -17,7 +17,3 @@
 - ["VEXTERNALDB，" 第1.2.3节](../sub/sub-link.md#sub-rtn-uexpexternaldb)
 - ["获取并行进程信息，" 第2.1.4节](../sub/sub-link.md#sub-utl-ugetnumcpus)
 - ["可分配数组，" 第2.1.23节](../sub/sub-link.md#sub-utl-localarrays)
-
-
-
-

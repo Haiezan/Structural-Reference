@@ -37,5 +37,3 @@ String 序列，指定调色板的颜色。字符串必须是命名颜色或代�
 ### 47.2.2 成员
 
 AutoColors 对象的成员与 [setValues](pt01ch47pyo02.md#ker-autocolors-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-

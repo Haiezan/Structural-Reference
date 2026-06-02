@@ -119,7 +119,3 @@ Dielectric 对象具有与 [Dielectric](pt01ch29pyo40.md#ker-dielectric-dielectr
 
 | [*DIELECTRIC](../key/key-link.md#usb-kws-mdielectric) |
 | --- |
-
-
-
-

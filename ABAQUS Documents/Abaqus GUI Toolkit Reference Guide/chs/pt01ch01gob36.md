@@ -42,5 +42,3 @@
 | **ID_CMD_ACTIVATED** | 指示命令被激活。 |
 | **ID_CMD_DEACTIVATED** | 指示命令被停用。 |
 | **ID_CMD_MODIFIED** | 指示命令被修改。 |
-
-

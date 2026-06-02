@@ -112,7 +112,3 @@ PRESSURE-OVERCLOSURE
 **图18.48-4** 以表格形式定义的压力-闭合关系。
 
 ![](../graphics/ksurfacebehavior-soft1-nls.png)
-
-
-
-

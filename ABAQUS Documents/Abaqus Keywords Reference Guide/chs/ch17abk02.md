@@ -10,11 +10,11 @@
 
 此选项用于将腔体辐射变量写入Abaqus/Standard结果文件。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**不支持；Abaqus/CAE仅从输出数据库文件读取输出。
 

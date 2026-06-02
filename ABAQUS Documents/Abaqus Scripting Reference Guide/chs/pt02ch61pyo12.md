@@ -15,11 +15,11 @@ JobData 对象具有以下成员：
 **原型**
 
 ```
-odb_String name() const; 
-            odb_String analysisCode() const; 
-            odb_String version() const; 
-            odb_String dateRun() const; 
-            odb_String machineName() const; 
+odb_String name() const;
+            odb_String analysisCode() const;
+            odb_String version() const;
+            odb_String dateRun() const;
+            odb_String machineName() const;
             odb_String precision() const;
 ```
 

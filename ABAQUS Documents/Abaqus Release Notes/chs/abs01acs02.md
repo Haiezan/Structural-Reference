@@ -53,7 +53,3 @@
 |  |  | LAW参数现在可以设置为选择幂律模型。 |
 | **mod** | **(S)** | [*VISCOUS](../key/key-link.md#usb-kws-mviscous) |
 |  |  | LAW参数可以设置为选择Anand定律、Darveaux定律或双功率定律。 |
-
-
-
-

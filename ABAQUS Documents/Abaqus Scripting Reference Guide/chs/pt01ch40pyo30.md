@@ -16,4 +16,3 @@ MdbDataStep 对象具有以下成员：
 *frames*
 
  [MdbDataFrameArray](pt01ch40pyo28.md) 对象，指定帧列表。此列表为只读。步骤中只有一个帧。
-

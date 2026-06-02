@@ -20,7 +20,3 @@
 8. 单击“**确定**”创建连接点。 Abaqus/CAE 显示连接点。有关编辑附着点的信息，请参阅["Editing attachment points created by a pattern based on edges," Section 59.7.2](pt06ch59s03hlb02.md)。
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任意项目：-["Understanding attachment points and lines," Section 59.1](pt06ch59s01.md)-["About fasteners," Section 29.1](pt04ch29s01.md)
-
-
-
-

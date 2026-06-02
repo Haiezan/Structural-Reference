@@ -978,5 +978,3 @@ ConstrainedSketch 对象可以具有以下成员：
 *imageOptions*
 
 [ConstrainedSketchImageOptions](pt01ch48pyo07.md) 对象。
-
-

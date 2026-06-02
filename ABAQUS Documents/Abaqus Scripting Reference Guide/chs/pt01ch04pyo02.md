@@ -230,7 +230,3 @@ AnimationOptions 对象可以具有以下成员：
 *xySymbolColor*
 
 一个 String，指定当 *xyUseHighlightMethod* = False 时绘制 *X–Y* 时间跟踪符号的颜色。设置为 'Default' 时，系统将采用与每个曲线关联的颜色。默认值为 "Default"。
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/CAE  
+**产品：**Abaqus/CAE
 
 **优点：**您现在可以从多个帧创建自由体切割中合力和力矩的表格报告。此增强也适用于基于视图切割的自由体切割。
 
@@ -26,4 +26,3 @@ Visualization 模块:
 
 **Abaqus/CAE User's Guide**
 - ["Selecting options and thresholds for free body cut reports," Section 54.3.4](../usi/usi-link.md#usv-report-freebody)
-

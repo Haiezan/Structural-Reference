@@ -150,7 +150,3 @@ The ConnectorOptions object has members with the same names and descriptions as 
 
 | [*CONNECTOR BEHAVIOR](../key/key-link.md#usb-kws-mconnectorbehavior), [*CONNECTOR DAMAGE INITIATION](../key/key-link.md#usb-kws-mconnectordamageinit), [*CONNECTOR DAMAGE EVOLUTION](../key/key-link.md#usb-kws-mconnectordamageevol), [*CONNECTOR DAMPING](../key/key-link.md#usb-kws-mconnectordamping), [*CONNECTOR DERIVED COMPONENT](../key/key-link.md#usb-kws-mconnectorderivedcomp), [*CONNECTOR ELASTICITY](../key/key-link.md#usb-kws-mconnectorelasticity), [*CONNECTOR FRICTION](../key/key-link.md#usb-kws-mconnectorfriction), and [*CONNECTOR PLASTICITY](../key/key-link.md#usb-kws-mconnectorplasticity) |
 | --- |
-
-
-
-

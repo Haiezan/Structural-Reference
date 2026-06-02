@@ -29,7 +29,3 @@ abaqus fetch job=boltpipeflange_3d_cyclsym.inp
 除了 Abaqus 示例问题指南外，还有其他两个包含工作问题的指南。[Abaqus 基准指南](../bmk/bmk-link.md#bmk) 包含基准问题（包括 NAFEMS 测试问题套件）和用于评估 Abaqus 性能的标准分析。本指南中的测试是简单几何或实际问题简化版本的多单元测试。[Abaqus 验证指南](../ver/ver-link.md#ver) 包含大量示例，旨在作为基本建模功能的初步验证。
 
 新 Abaqus 版本的认证过程包括运行和验证[《Abaqus 示例问题指南》](book01.md)、[《Abaqus 基准指南》](../bmk/bmk-link.md#bmk)和[《Abaqus 验证指南》](../ver/ver-link.md#ver)中所有问题的结果。
-
-
-
-

@@ -97,4 +97,3 @@ SolutionDependentAmplitude 对象具有与 [SolutionDependentAmplitude](pt02ch56
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-

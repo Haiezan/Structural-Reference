@@ -99,8 +99,3 @@ PartDisplayOptions 对象可具有以下成员：
 *meshOptions*
 
 一个 [MeshDisplayOptions](pt01ch17pyo14.md) 对象。
-
-
-
-
-

@@ -101,7 +101,3 @@ Concrete 对象具有与 [Concrete](pt01ch29pyo18.md#ker-concrete-concrete-pyc) 
 
 | [*CONCRETE](../key/key-link.md#usb-kws-mconcrete) |
 | --- |
-
-
-
-

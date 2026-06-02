@@ -20,7 +20,3 @@
 
 | [Section 14.2.4](ch14s02aex154.md) | Design sensitivity analysis of a rubber bushing |
 | --- | --- |
-
-
-
-

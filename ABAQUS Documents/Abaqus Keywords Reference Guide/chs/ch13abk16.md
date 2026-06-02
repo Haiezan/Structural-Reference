@@ -12,11 +12,11 @@
 
 此选项用于为一组膜单元分配截面属性。截面属性包括厚度、厚度变化行为、材料定义和材料方向。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 **Abaqus/CAE：**属性模块
 

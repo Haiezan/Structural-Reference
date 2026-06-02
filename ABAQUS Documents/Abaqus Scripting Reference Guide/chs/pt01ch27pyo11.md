@@ -132,7 +132,3 @@ BodyHeatFlux 对象可以具有以下成员：
 *region*
 
 一个 [Region](pt01ch45pyo03.md) 对象，指定应用载荷的区域。
-
-
-
-

@@ -338,3 +338,16 @@ DamageInitiation 对象可以具有以下成员：
 
 
 
+### 29.32.5 MaxeDamageInitiation(...)
+### 29.32.6 MaxsDamageInitiation(...)
+### 29.32.7 MkDamageInitiation(...)
+### 29.32.8 MsfldDamageInitiation(...)
+### 29.32.9 QuadeDamageInitiation(...)
+### 29.32.10 QuadsDamageInitiation(...)
+### 29.32.11 MaxpeDamageInitiation(...)
+### 29.32.12 MaxpsDamageInitiation(...)
+### 29.32.13 ShearDamageInitiation(...)
+### 29.32.14 HashinDamageInitiation(...)
+### 29.32.15 setValues(...)
+### 29.32.16 Members
+### 29.32.17 Corresponding analysis keywords

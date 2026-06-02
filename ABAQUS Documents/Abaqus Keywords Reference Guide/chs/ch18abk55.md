@@ -51,8 +51,3 @@ NAME
 **图18.55-4** 三维环面平滑。
 
 ![](../graphics/usb-kws-msmoothtor3d-nls.png)
-
-
-
-
-

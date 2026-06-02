@@ -82,4 +82,3 @@ ActuatorAmplitude 对象具有与 [ActuatorAmplitude](pt02ch56pyo02.md#ker-actua
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-

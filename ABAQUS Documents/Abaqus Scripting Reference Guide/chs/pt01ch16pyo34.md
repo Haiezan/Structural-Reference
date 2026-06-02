@@ -55,8 +55,3 @@ LeafFromSurfaceSets 对象的成员与 [LeafFromSurfaceSets](pt01ch16pyo34.md#ke
 *leafType*
 
 一个 SymbolicConstant，指定叶子类型。可能的值为 EMPTY、DEFAULT_MODEL、ALL_ELEMENTS、ALL_NODES 和 ALL_SURFACES。
-
-
-
-
-

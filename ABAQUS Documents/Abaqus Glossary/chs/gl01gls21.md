@@ -68,6 +68,3 @@ Abaqus/CAE 用于通过从区域几何向下工作到元素和节点来创建网
 - [「定义截面，」Abaqus/CAE User's Guide 第 12.2.3 节](../usi/usi-link.md#usi-prp-prop-section)
 
 - [「创建桁架截面，」Abaqus/CAE User's Guide 第 12.13.12 节](../usi/usi-link.md#usi-prp-section-truss)
-
-
-

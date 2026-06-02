@@ -109,7 +109,3 @@
 | **ON_OFF** | 关键字值为 ON 或 OFF。 |
 | --- | --- |
 | **TRUE_FALSE** | 关键字值为 True 或 False。 |
-
-
-
-

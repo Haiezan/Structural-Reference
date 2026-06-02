@@ -12,11 +12,11 @@
 
 此选项用于在节点基础上定义可变的壳或膜厚度。除非在[*SHELL GENERAL SECTION](ch18abk14.md)或[*SHELL SECTION](ch18abk15.md)选项（对于壳单元）或[*MEMBRANE SECTION](ch13abk16.md)选项（对于膜单元）上包含了NODAL THICKNESS参数，否则此选项定义的厚度数据将被忽略。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 **Abaqus/CAE：**属性模块
 

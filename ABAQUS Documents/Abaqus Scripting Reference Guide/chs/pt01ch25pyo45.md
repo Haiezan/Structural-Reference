@@ -251,6 +251,3 @@ IncidentWaveProperty 对象的成员与 [IncidentWaveProperty](pt01ch25pyo45.md#
 | --- |
 | [*UNDEX CHARGE PROPERTY](../key/key-link.md#usb-kws-mundexchargeproperty) |
 | [*CONWEP CHARGE PROPERTY](../key/key-link.md#usb-kws-mconwepchargeproperty) |
-
-
-

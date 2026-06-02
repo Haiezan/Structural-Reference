@@ -82,7 +82,7 @@ A SymbolicConstant specifying whether the original units should be retained. Pos
 
 *combineBodies*
 
-A Boolean specifying whether to combine the bodies in the CATPart file. If the bodies to be combined touch or overlap, invalid entities would result. For V4–format and CATProduct files, this option will be ignored. 
+A Boolean specifying whether to combine the bodies in the CATPart file. If the bodies to be combined touch or overlap, invalid entities would result. For V4–format and CATProduct files, this option will be ignored.
 
 **Return value**
 
@@ -150,7 +150,7 @@ A String specifying the path to the IGES file to open.
 
 *trimCurve*
 
-A SymbolicConstant specifying the method used to define the trim curves that bound parametric surfaces. Possible values are: 
+A SymbolicConstant specifying the method used to define the trim curves that bound parametric surfaces. Possible values are:
 - DEFAULT, use either of the following as specified by the contents of the IGES file.
 - PARAMETRIC_DATA, use the parameter space of the surface being trimmed.
 - THREED_DATA, use real space---the coordinate system of the part along with an indication that the trim curve lies on the parametric surface.
@@ -175,7 +175,7 @@ A Boolean specifying if the IGES file contains MSBO (Manifold Solid B-Rep Object
 
 *uniteWires*
 
- A SymbolicConstant specifying whether the imported wires need to be united or not. Possible values are ON and OFF. The default value is ON. When importing a sketch, this value is set to OFF. 
+ A SymbolicConstant specifying whether the imported wires need to be united or not. Possible values are ON and OFF. The default value is ON. When importing a sketch, this value is set to OFF.
 
 **Return value**
 
@@ -316,7 +316,3 @@ The AcisFile object has the following member:
 *numberOfParts*
 
 An Int specifying the number of parts in the object.
-
-
-
-

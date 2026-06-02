@@ -151,6 +151,3 @@ An item of the class *type* to which the iterator is currently pointing.
 **Exceptions**
 
 None.
-
-
-

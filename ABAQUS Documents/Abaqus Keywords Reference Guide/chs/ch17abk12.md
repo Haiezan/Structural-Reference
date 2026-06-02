@@ -10,11 +10,11 @@
 
 此选项用于在膜、壳和表面单元中定义一层或多层钢筋。它必须与[*MEMBRANE SECTION](ch13abk16.md)、[*SHELL SECTION](ch18abk15.md)或[*SURFACE SECTION](ch18abk54.md)选项结合使用。实体（连续）单元中的钢筋层可以通过使用[*EMBEDDED ELEMENT](ch05abk14.md)选项，将具有钢筋层的表面或膜单元集嵌入宿主连续单元集中来定义。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例  
+**级别：**零件，零件实例
 
 **Abaqus/CAE：**属性模块；仅支持膜和壳单元。
 

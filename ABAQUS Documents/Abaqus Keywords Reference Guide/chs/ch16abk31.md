@@ -10,11 +10,11 @@
 
 此选项用于在Abaqus/Standard分析的消息（`.msg`）文件或Abaqus/Explicit分析的状态（`.sta`）文件中获取或抑制详细打印输出。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**步骤模块
 

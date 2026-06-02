@@ -24,7 +24,3 @@
 **Abaqus/CAE用户指南**
 - ["链接视口，" 第4.5.2节](../usi/usi-link.md#uss-cnv-link-options)
 - ["创建或编辑显示组，" 第78.2.1节](../usi/usi-link.md#usv-dgp-hlp-create)
-
-
-
-

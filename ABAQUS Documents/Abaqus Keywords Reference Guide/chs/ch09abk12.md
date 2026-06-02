@@ -11,11 +11,11 @@
 
 每个 [*INCIDENT WAVE](ch09abk08.md) 选项必须引用一个 [*INCIDENT WAVE PROPERTY](ch09abk12.md) 定义。[*INCIDENT WAVE PROPERTY](ch09abk12.md) 选项之后必须跟有 [*INCIDENT WAVE FLUID PROPERTY](ch09abk09.md) 选项，该选项定义入射波载荷中使用的流体特性。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** 不支持；此选项已被入射波相互作用特性取代。
 
@@ -46,7 +46,3 @@ TYPE
 **第二行：**
 
 如果 TYPE=PLANE，则从 ![](../graphics/key_eqn00833.gif) 到 ![](../graphics/key_eqn00831.gif) 的向量定义入射波的方向；两点之间的距离不重要。对于使用气泡振幅的入射波载荷，用户使用 [*INCIDENT WAVE PROPERTY](ch09abk12.md) 选项定义的源位置被解释为源的初始位置。
-
-
-
-

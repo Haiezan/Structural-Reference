@@ -44,4 +44,3 @@
 **全局函数**
 
 [**afxGetIcon(fileName, size)**](pt01ch01gob125.md#gui-auxiliary-afxgeticon)
-

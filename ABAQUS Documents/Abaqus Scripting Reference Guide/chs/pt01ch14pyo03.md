@@ -73,4 +73,3 @@ RegisteredDictionary 对象支持与 Python 字典相同的方法。此外，Reg
 ### 14.3.4 成员
 
 RegisteredDictionary 对象没有成员。
-

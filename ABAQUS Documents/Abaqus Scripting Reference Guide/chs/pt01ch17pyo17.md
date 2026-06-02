@@ -49,8 +49,3 @@ RangeError。
 ### 17.17.2 成员
 
 StopConditionDisplayOptions 对象的成员与 [setValues](pt01ch17pyo17.md#ker-stopconditiondisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

@@ -34,8 +34,3 @@ DEPENDENCIES
 **后续行（仅在DEPENDENCIES参数的值大于四时需要）：**
 
 根据需要重复此组数据行，以将![](../graphics/key_eqn01182.gif)、![](../graphics/key_eqn01183.gif)和![](../graphics/key_eqn01184.gif)定义为温度和其他预定义场变量的函数。
-
-
-
-
-

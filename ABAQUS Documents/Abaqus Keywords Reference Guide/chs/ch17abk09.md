@@ -10,11 +10,11 @@
 
 此选项用于指定定义各向异性膨胀的比值。[*RATIOS](ch17abk09.md)选项只能与[*MOISTURE SWELLING](ch13abk25.md)选项或[*SWELLING](ch18abk56.md)选项结合使用，并且应紧接在其中一个选项之后。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

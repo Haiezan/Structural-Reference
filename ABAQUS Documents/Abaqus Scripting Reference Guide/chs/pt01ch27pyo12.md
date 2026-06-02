@@ -54,7 +54,3 @@ BodyHeatFluxState 对象具有以下成员：
 
 | [*DFLUX](../key/key-link.md#usb-kws-hdflux) |
 | --- |
-
-
-
-

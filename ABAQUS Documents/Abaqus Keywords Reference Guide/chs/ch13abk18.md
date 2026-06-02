@@ -12,9 +12,9 @@
 
 此选项用于使用模态叠加作为线性扰动程序提供动态时间历程响应。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

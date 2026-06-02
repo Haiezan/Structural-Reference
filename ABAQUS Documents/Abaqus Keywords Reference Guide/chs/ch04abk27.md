@@ -8,11 +8,11 @@
 
 此选项用于定义分布式耦合约束。它必须与 [*COUPLING](ch03abk83.md) 选项结合使用，以定义参考节点和耦合节点。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**相互作用模块
 
@@ -48,7 +48,3 @@ WEIGHTING METHOD
 **第一行：**
 
 根据需要重复此数据行，以指定不同自由度的约束。当在相关的 [*COUPLING](ch03abk83.md) 选项上指定了 ORIENTATION 参数时，自由度位于初始配置中的引用局部系统中；否则，它们位于全局系统中。在这两种情况下，这些方向将在大位移分析中随参考节点旋转（当在 [*STEP](ch18abk36.md) 选项上包含 NLGEOM 参数时）。
-
-
-
-

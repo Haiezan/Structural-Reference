@@ -1,4 +1,4 @@
-# *COUPLING
+***COUPLING**
 
 
 
@@ -9,11 +9,11 @@
 
 此选项用于在参考节点和位于表面上的节点组之间施加运动学或分布耦合约束。必须与 [*KINEMATIC](ch11abk02.md) 或 [*DISTRIBUTING](ch04abk27.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE: **相互作用模块
 
@@ -48,7 +48,3 @@ ORIENTATION
 将此参数设置为在其中定义约束自由度局部系统的初始方向的 [*ORIENTATION](ch15abk01.md) 定义名称（["方向，" Abaqus 分析用户指南第 2.2.5 节](../usb/usb-link.md#usb-int-corientation)）。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

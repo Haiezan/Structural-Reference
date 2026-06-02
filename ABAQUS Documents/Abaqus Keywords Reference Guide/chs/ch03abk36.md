@@ -8,7 +8,7 @@
 
 此选项用于定义连接器单元中本构响应的参考长度和角度。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -28,7 +28,3 @@
 **第一行（也是唯一一行）：**
 
 输入空格以使用从初始几何形状计算的（默认）参考长度或角度。
-
-
-
-

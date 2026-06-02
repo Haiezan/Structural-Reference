@@ -98,6 +98,3 @@ SmoothingAssignment 对象没有成员。
 
 | [*SURFACE PROPERTY ASSIGNMENT](../key/key-link.md#usb-kws-hsurfpropassign), PROPERTY=GEOMETRIC CORRECTION |
 | --- |
-
-
-

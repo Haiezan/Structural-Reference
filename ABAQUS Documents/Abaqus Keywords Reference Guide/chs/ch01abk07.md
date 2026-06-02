@@ -8,7 +8,7 @@
 
 此选项用于在Eulerian域中激活自适应网格细化，并指定该域中的细化标准。
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **类型：**模型数据
 

@@ -42,7 +42,3 @@ None.
 ### 48.6.2 Members
 
 The ConstrainedSketchGeometryArray object has no members.
-
-
-
-

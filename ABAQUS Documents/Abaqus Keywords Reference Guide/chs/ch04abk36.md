@@ -10,11 +10,11 @@
 
 此选项还在Abaqus/Standard分析中用于指定测量 [*DRUCKER PRAGER CREEP](ch04abk35.md) 选项中定义的蠕变定律的蠕变试验类型。它必须与 [*DRUCKER PRAGER](ch04abk34.md) 选项结合使用，并且如果Abaqus/Standard分析中包含蠕变材料行为，还必须与 [*DRUCKER PRAGER CREEP](ch04abk35.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -49,7 +49,3 @@ TYPE
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此组数据行，以将屈服应力对塑性应变的依赖性（以及如果需要）对温度和其他预定义场变量的依赖性定义为函数。
-
-
-
-

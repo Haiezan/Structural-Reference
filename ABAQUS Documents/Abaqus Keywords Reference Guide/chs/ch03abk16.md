@@ -9,9 +9,9 @@
 
 此选项用于在完全耦合热应力分析中向模型的任何节点施加通量。在 Abaqus/Standard 中，它还用于热传递、耦合热-电、耦合热-电-结构和质量扩散分析。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -70,7 +70,3 @@ STEP
 **第一行：**
 
 根据需要重复此数据行，以在不同节点和自由度上定义集中通量。
-
-
-
-

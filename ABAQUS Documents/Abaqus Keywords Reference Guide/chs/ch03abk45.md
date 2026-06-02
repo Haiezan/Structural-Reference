@@ -9,9 +9,9 @@
 
 此选项用于向连接器单元中可用的相对运动分量施加集中力和力矩。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -56,7 +56,3 @@ REAL
 **第一行：**
 
 根据需要重复此数据行以定义连接器载荷。
-
-
-
-

@@ -1,5 +1,5 @@
 # 6.7 总结
-
+![](../images/blu4rule.gif)
 *Getting Started with Abaqus: Keywords Edition*
 
 梁单元的行为可以通过截面的数值积分来确定（使用 `*BEAM SECTION` 或 `*BEAM GENERAL SECTION`），也可以直接通过面积、惯性矩和扭转常数来给定（使用 `*BEAM GENERAL SECTION`）。

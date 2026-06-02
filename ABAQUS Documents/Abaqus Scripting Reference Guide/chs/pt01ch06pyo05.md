@@ -136,7 +136,3 @@ ModelInstance 对象可以具有以下成员：
 *referencePoints*
 
 一个 [ReferencePoint](pt01ch07pyo13.md) 对象仓库。
-
-
-
-

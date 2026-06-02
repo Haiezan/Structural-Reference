@@ -172,8 +172,3 @@ SurfaceToSurfaceContactExp 对象。
 ### 25.74.5 成员
 
 SurfaceToSurfaceContactExp 对象的成员与 [SurfaceToSurfaceContactExp](pt01ch25pyo74.md#ker-surfacetosurfacecontactexp-surfacetosurfacecontactex-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

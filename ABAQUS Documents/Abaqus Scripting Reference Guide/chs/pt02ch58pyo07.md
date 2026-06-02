@@ -130,7 +130,7 @@ A sequence of [ConnectorPotential](pt02ch58pyo11.md) objects specifying one [Con
 
 An odb_SequenceSequenceDouble specifying friction properties. The default value is an empty sequence.
 
-If *frictionModel*="PREDEFINED", each sequence of the table data specifies: 
+If *frictionModel*="PREDEFINED", each sequence of the table data specifies:
 - If applicable, the first geometric scaling constant relevant to frictional interactions.
 - Etc., up to as many geometric scaling constants as are associated with this connection type.
 - Internal contact force/moment generating friction in the first predefined slip direction.
@@ -142,7 +142,7 @@ If *frictionModel*="PREDEFINED", each sequence of the table data specifies:
 - Value of the second field variable.
 - Etc.
 
-If *frictionModel*="USER_CUSTOMIZED", each sequence of the table data specifies: 
+If *frictionModel*="USER_CUSTOMIZED", each sequence of the table data specifies:
 - Effective radius of the cylindrical or spherical surface over which frictional slip occurs in the connector associated with frictional effects in the direction specified by *tangentDirection*. This radius is relevant only if the connection type includes an available rotational component of relative motion and *tangentDirection*="SLIP_DIRECTION".
 - Internal contact force/moment generating friction in the direction specified by *tangentDirection*.
 - Connector constitutive relative motion in the direction specified by *independentComponent*.
@@ -214,7 +214,3 @@ A [ConnectorOptions](pt02ch58pyo09.md) object specifying the [ConnectorOptions](
 
 | [*CONNECTOR FRICTION](../key/key-link.md#usb-kws-mconnectorfriction), [*FRICTION](../key/key-link.md#usb-kws-hfriction), [*CONNECTOR POTENTIAL](../key/key-link.md#usb-kws-mconnectorpotential), [*CONNECTOR DERIVED COMPONENT](../key/key-link.md#usb-kws-mconnectorderivedcomp) |
 | --- |
-
-
-
-

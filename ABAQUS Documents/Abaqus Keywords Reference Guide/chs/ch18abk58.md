@@ -45,8 +45,3 @@ UNBALANCED STRESS
 如果要在步中线性解决应力不平衡，请设置UNBALANCED STRESS=RAMP。
 
 **此选项没有关联的数据行。**
-
-
-
-
-

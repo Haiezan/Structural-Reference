@@ -17,7 +17,7 @@ session.queues[*name*]
 
 ### 26.5.1 Queue(...)
 
-This method creates a Queue object. 
+This method creates a Queue object.
 
 **Note:**Remote queues are available only on UNIX platforms.
 
@@ -92,7 +92,3 @@ Directory in which to run the job on the remote computer is not set.
 ### 26.5.2 Members
 
 The Queue object has members with the same names and descriptions as the arguments to the [Queue](pt01ch26pyo05.md#ker-queue-queue-pyc) method.
-
-
-
-

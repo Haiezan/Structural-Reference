@@ -139,7 +139,3 @@ DamageStabilization 对象具有与 [DamageStabilization](pt01ch29pyo33.md#ker-d
 
 | [*DAMAGE STABILIZATION](../key/key-link.md#usb-kws-mdamagestabilization) |
 | --- |
-
-
-
-

@@ -52,7 +52,3 @@ TYPE
 ### **定义Johnson-Cook剪切失效准则的数据行（TYPE=JOHNSON COOK）：**
 
 **第一行（也是唯一行）：**
-
-
-
-

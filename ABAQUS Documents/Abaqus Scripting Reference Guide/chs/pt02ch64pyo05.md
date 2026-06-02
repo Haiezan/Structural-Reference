@@ -87,7 +87,7 @@ None.
 
 ### 64.5.4 length(...)
 
-This method returns the number of characters of an odb_String object. 
+This method returns the number of characters of an odb_String object.
 
 **Prototype**
 
@@ -106,6 +106,3 @@ An Int denoting the number of characters.
 **Exceptions**
 
 None.
-
-
-

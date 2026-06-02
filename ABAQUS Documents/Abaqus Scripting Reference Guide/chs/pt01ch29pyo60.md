@@ -120,7 +120,7 @@ Int，指定 *volumetricTable* 中数据的局部方向数量。默认值为 0�
 **表格数据**
 
 如果 *type*=ARRUDA_BOYCE，表格数据指定以下内容：
-- ![](../graphics/ker_eqn00041.gif)。
+- ![](../graphics/ker_eqn00263.gif)![](../graphics/ker_eqn00041.gif)。
 - ![](../graphics/ker_eqn00264.gif)。
 - ![](../graphics/ker_eqn00172.gif)。
 - 温度（如果数据依赖于温度）。
@@ -137,22 +137,21 @@ Int，指定 *volumetricTable* 中数据的局部方向数量。默认值为 0�
 - 温度（如果数据依赖于温度）。
 
 如果 *type*=OGDEN，对于 ![](../graphics/ker_eqn00088.gif) 的值，表格数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif) 的 ![](../graphics/ker_eqn00270.gif)，![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif)。
-- ![](../graphics/ker_eqn00088.gif) 个系数 ![](../graphics/ker_eqn00271.gif)。
+- 对于从 1 到 ，![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif)。
+- ![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00088.gif) 个系数 ![](../graphics/ker_eqn00271.gif)。
 - 温度（如果数据依赖于温度）。在 Abaqus/Explicit 分析中，4 ≤ *n* ≤ 6 时不允许温度依赖。
 
-如果 *type*=POLYNOMIAL，对于 ![](../graphics/ker_eqn00088.gif) 的值，表格数据指定以下内容：
-- 对于从 ![](../graphics/ker_eqn00274.gif) 到 ![](../graphics/ker_eqn00088.gif) 的 ![](../graphics/ker_eqn00270.gif)（其中 ![](../graphics/ker_eqn00270.gif) 从 ![](../graphics/ker_eqn00274.gif) 递减到零，且 ![](../graphics/ker_eqn00276.gif) 从零递增到 ![](../graphics/ker_eqn00274.gif)），![](../graphics/ker_eqn00273.gif)。
+如果 *type*=POLYNOMIAL，对于 ![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00088.gif) 的值，表格数据指定以下内容：
+- 对于从 ![](../graphics/ker_eqn00273.gif)![](../graphics/ker_eqn00274.gif) 到 ![](../graphics/ker_eqn00275.gif)![](../graphics/ker_eqn00088.gif) 的 （其中 ![](../graphics/ker_eqn00270.gif) 从 ![](../graphics/ker_eqn00274.gif) 递减到零，且 ![](../graphics/ker_eqn00276.gif) 从零递增到 ![](../graphics/ker_eqn00274.gif)），。
 - ![](../graphics/ker_eqn00088.gif) 个系数 ![](../graphics/ker_eqn00271.gif)。
 - 温度（如果数据依赖于温度）。在 Abaqus/Explicit 分析中，3 ≤ *n* ≤ 6 时不允许温度依赖。
 
-如果 *type*=REDUCED_POLYNOMIAL，对于 ![](../graphics/ker_eqn00088.gif) 的值，表格数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif) 的 ![](../graphics/ker_eqn00270.gif)，![](../graphics/ker_eqn00277.gif)。
-- ![](../graphics/ker_eqn00088.gif) 个系数 ![](../graphics/ker_eqn00271.gif)。
+如果 *type*=REDUCED_POLYNOMIAL，对于 ![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00277.gif)![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif) 的值，表格数据指定以下内容：
+- 对于从 1 到 ![](../graphics/ker_eqn00088.gif) 的  个系数 ![](../graphics/ker_eqn00271.gif)。
 - 温度（如果数据依赖于温度）。在 Abaqus/Explicit 分析中，4 ≤ *n* ≤ 6 时不允许温度依赖。
 
 如果 *type*=VAN_DER_WAALS，表格数据指定以下内容：
-- ![](../graphics/ker_eqn00041.gif)。
+- ![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00041.gif)。
 - ![](../graphics/ker_eqn00264.gif)。
 - ![](../graphics/ker_eqn00278.gif)。
 - ![](../graphics/ker_eqn00095.gif)。

@@ -12,9 +12,9 @@
 
 此选项用于在分析期间移除或重新激活单元或接触对。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

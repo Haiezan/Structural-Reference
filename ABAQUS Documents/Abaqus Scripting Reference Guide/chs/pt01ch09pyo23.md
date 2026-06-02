@@ -160,7 +160,3 @@ A [Region](pt01ch45pyo03.md) object specifying the region to which the boundary 
 *localCsys*
 
  `None` or a [DatumCsys](pt01ch15pyo03.md) object specifying the local coordinate system of the boundary condition's degrees of freedom. If *localCsys*=`None`, the degrees of freedom are defined in the global coordinate system. The default value is `None`.
-
-
-
-

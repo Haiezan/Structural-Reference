@@ -10,11 +10,11 @@
 
 此选项用于指定多孔金属中的材料失效准则。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

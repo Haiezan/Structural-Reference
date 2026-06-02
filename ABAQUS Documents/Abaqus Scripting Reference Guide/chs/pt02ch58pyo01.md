@@ -17,4 +17,3 @@ sectionApi.sections()[*name*].behaviorOptions(*i*)
 ### 58.1.1 成员
 
 ConnectorBehaviorOption 对象没有成员。
-

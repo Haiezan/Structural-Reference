@@ -38,7 +38,3 @@ Abaqus 输入文件的一部分，定义模型发生了什么——寻求模型�
 - [「实体（连续体）单元，」Abaqus Analysis User's Guide 第 28.1.1 节](../usb/usb-link.md#usb-elm-esolidcont)
 
 - [「定义截面，」Abaqus/CAE User's Guide 第 12.2.3 节](../usi/usi-link.md#usi-prp-prop-section)
-
-
-
-

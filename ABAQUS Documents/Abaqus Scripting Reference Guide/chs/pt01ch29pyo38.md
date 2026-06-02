@@ -78,7 +78,3 @@ Depvar 对象具有与 [Depvar](pt01ch29pyo38.md#ker-depvar-depvar-pyc) 方法�
 
 | [*DEPVAR](../key/key-link.md#usb-kws-mdepvar) |
 | --- |
-
-
-
-

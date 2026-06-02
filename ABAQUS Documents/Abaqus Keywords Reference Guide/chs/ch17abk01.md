@@ -12,11 +12,11 @@
 
 它必须与[*PHYSICAL CONSTANTS](ch16abk09.md)选项结合使用，该选项用于定义Stefan-Boltzmann常数。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**相互作用模块
 

@@ -9,9 +9,9 @@
 
 此选项用于在完全耦合热应力分析中向模型中的任何节点提供薄膜系数和环境温度。在 Abaqus/Standard 中，它还用于在热传递、耦合热-电和耦合热-电-结构分析中向模型中的任何节点提供薄膜系数和环境温度。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -71,7 +71,3 @@ USER
 **第一行：**
 
 根据需要重复此数据行以定义薄膜条件。
-
-
-
-

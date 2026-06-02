@@ -38,7 +38,3 @@
 - ["抑制和恢复对象"，第3.4.3节](pt01ch03s04s03.md)
 - ["载荷工况编辑器"，第34.3节](pt04ch34s03.md)
 - ["多载荷工况分析"，Abaqus Analysis User's Guide第6.1.4节](../usb/usb-link.md#usb-anl-amultiloadcase)
-
-
-
-

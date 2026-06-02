@@ -57,4 +57,3 @@ odb_String invariant() const;
 *invariant*
 
 一个 odb_String，指定应用过滤的不变量。可能的值为 "NONE"、"FIRST" 和 "SECOND"。默认值为 "NONE"。
-

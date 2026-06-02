@@ -36,4 +36,3 @@ OdbDataDatumCsys 对象可以具有以下成员：
 *origin*
 
 三个 Float 的元组，指定三个浮点数指定原点。默认值为 (0, 0, 0)。
-

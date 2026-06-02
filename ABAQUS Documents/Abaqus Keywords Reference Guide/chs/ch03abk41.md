@@ -9,11 +9,11 @@
 
 此选项用于定义连接器单元的弹性行为。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -174,7 +174,3 @@ UNSYMM
 **第一行：**
 
 如果为所有可用的相对运动分量定义了类刚性弹性行为，则省略此数据行。
-
-
-
-

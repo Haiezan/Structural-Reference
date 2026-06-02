@@ -62,8 +62,3 @@ Crack 对象具有以下成员：
 *suppressed*
 
 一个 Boolean，指定裂缝是否被抑制。默认值为 OFF。
-
-
-
-
-

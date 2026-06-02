@@ -18,8 +18,3 @@ Microsoft Bitmap 图标。
 | opts | Int | 0 | |
 | w | Int | 1 | |
 | h | Int | 1 | |
-
-
-
-
-

@@ -65,48 +65,10 @@ Expansion(const odb_String& type,
 **表数据**
 
 如果 *type*=ISOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00239.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ORTHOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00240.gif]。
-- ![](../graphics/ker_eqn00241.gif]。
-- ![](../graphics/ker_eqn00242.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ANISOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00240.gif]。
-- ![](../graphics/ker_eqn00241.gif]。
-- ![](../graphics/ker_eqn00242.gif]。（平面应力情况不使用。）
-- ![](../graphics/ker_eqn00243.gif]。
-- ![](../graphics/ker_eqn00244.gif]。
-- ![](../graphics/ker_eqn00245.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=SHORT_FIBER，则没有表数据。
-
-**返回值**
-
-一个 Expansion 对象。
-
-**异常**
-
-RangeError。
-
-### 60.49.2 成员
-
-Expansion 对象的成员与 [Expansion](pt02ch60pyo49.md#ker-expansion-expansion-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00239.gif)![](../graphics/ker_eqn00240.gif)![](../graphics/ker_eqn00241.gif)![](../graphics/ker_eqn00242.gif)![](../graphics/ker_eqn00240.gif)![](../graphics/ker_eqn00241.gif)![](../graphics/ker_eqn00242.gif)![](../graphics/ker_eqn00243.gif)![](../graphics/ker_eqn00244.gif)![](../graphics/ker_eqn00245.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.49.3 对应的分析关键字
 
 | [*EXPANSION](../key/key-link.md#usb-kws-mexpansion) |
 | --- |
+### 60.49.3 Corresponding analysis keywords

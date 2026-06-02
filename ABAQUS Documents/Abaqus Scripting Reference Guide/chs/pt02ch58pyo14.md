@@ -155,7 +155,3 @@ The TangentialBehavior object has members with the same names and descriptions a
 
 | [*FRICTION](../key/key-link.md#usb-kws-hfriction) |
 | --- |
-
-
-
-

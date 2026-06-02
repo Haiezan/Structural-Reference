@@ -43,4 +43,3 @@ DisplayOptions 对象可以具有以下成员：
 *plotState*
 
  SymbolicConstant 元组，指定显示的绘图状态。可选值为 UNDEFORMED、DEFORMED、CONTOURS_ON_UNDEF、CONTOURS_ON_DEF、SYMBOLS_ON_UNDEF、SYMBOLS_ON_DEF、ORIENT_ON_UNDEF 和 ORIENT_ON_DEF。默认值为 (UNDEFORMED)。
-

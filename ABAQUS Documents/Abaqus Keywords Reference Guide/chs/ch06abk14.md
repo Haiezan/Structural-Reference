@@ -8,11 +8,11 @@
 
 此选项用于提供渗流系数和渗流孔隙压力，以控制在固结分析中垂直于表面的孔隙流体流动。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 ##### **参考：**
 
@@ -50,4 +50,3 @@ OP
 参考孔隙压力值，![](../graphics/key_eqn00712.gif)，和参考渗流系数，![](../graphics/key_eqn00556.gif)，在用户子程序[`FLOW`](../sub/sub-link.md#sub-xsl-flow)中为非均匀流动定义。
 
 根据需要重复此数据行，以定义各种单元或单元派的非均匀渗流。
-

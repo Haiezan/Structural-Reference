@@ -106,7 +106,3 @@ ImageAnimation 对象具有以下成员：
 *fileName*
 
 一个 String，指定要将动画帧写入的文件。
-
-
-
-

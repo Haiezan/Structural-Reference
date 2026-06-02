@@ -42,30 +42,7 @@ Hyperfoam(bool testData,
 
 *poisson*
 
-字符串"NONE"或一个 Double，指定材料的有效泊松比，![](../graphics/ker_eqn00164.gif]。此参数仅在 *testData*=true 时有效。默认值为"NONE"。
-
-*n*
-
-一个整数，指定应变能势的阶数。可能的值为 1 ![](../graphics/ker_eqn00283.gif) 6。默认值为 1。
-
-*temperatureDependency*
-
-一个布尔值，指定数据是否依赖温度。默认值为 false。
-
-*moduli*
-
-一个 odb_String，指定材料常数的时间依赖性。可能的值为"INSTANTANEOUS"和"LONG_TERM"。默认值为"LONG_TERM"。
-
-*table*
-
-一个 odb_SequenceSequenceDouble，指定如下所述的项目。此参数仅在 *testData*=false 时有效。默认值为空序列。
-
-**表数据**
-
-对于 ![](../graphics/ker_eqn00088.gif] 的值，表数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)]，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
-- ![](../graphics/ker_eqn00284.gif]。
-- 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，4 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
+字符串"NONE"或一个 Double，指定材料的有效泊松比，![](../graphics/ker_eqn00164.gif)![](../graphics/ker_eqn00283.gif)![](../graphics/ker_eqn00088.gif)]，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif)![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00284.gif)![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
 
 **返回值**
 

@@ -55,7 +55,3 @@ STIFFNESS
 设置STIFFNESS=YES以写入子结构刚度矩阵。默认值为STIFFNESS=NO。
 
 **此选项没有关联的数据行。**
-
-
-
-

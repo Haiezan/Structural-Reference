@@ -37,22 +37,10 @@ SaturationDependence(const odb_SequenceSequenceDouble& table);
 
 **表数据**
 
-- ![](../graphics/ker_eqn00362.gif]。（无量纲。）
-- 饱和度，![](../graphics/ker_eqn00234.gif]。（无量纲。）
-
-**返回值**
-
-一个 SaturationDependence 对象。
-
-**异常**
-
-RangeError。
-
-### 60.88.2 成员
-
-SaturationDependence 对象的成员与 [SaturationDependence](pt02ch60pyo88.md#ker-saturationdependence-saturationdependence-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00362.gif)![](../graphics/ker_eqn00234.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.88.3 对应的分析关键字
 
 | [*PERMEABILITY](../key/key-link.md#usb-kws-mpermeabil) |
 | --- |
+### 60.88.3 Corresponding analysis keywords

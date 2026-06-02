@@ -172,4 +172,3 @@ session.viewports[*name*].odbDisplay.freeBodyOptions
 ### 40.6.2 成员
 
 FreeBodyOptions 对象的成员与 [setValues](pt01ch40pyo06.md#ker-freebodyoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

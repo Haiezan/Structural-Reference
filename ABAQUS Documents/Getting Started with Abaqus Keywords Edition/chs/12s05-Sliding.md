@@ -1,4 +1,4 @@
-# 12.5 Abaqus/Standard中刚性曲面建模问题
+**12.5 Abaqus/Standard中刚性曲面建模问题**
 
 在Abaqus/Standard中涉及刚性曲面的接触问题建模时，有许多需要考虑的问题。这些问题在《Abaqus Analysis User's Guide》第39.1.2节"与Abaqus/Standard中接触建模相关的常见困难"中有详细讨论，但这里仅描述其中一些更重要的问题。
 

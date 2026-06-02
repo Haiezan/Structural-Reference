@@ -1,4 +1,4 @@
-# *CONTACT INITIALIZATION DATA
+***CONTACT INITIALIZATION DATA**
 
 
 
@@ -9,9 +9,9 @@
 
 此选项用于为 Abaqus/Standard 定义接触初始化方法。接触初始化方法使用 [*CONTACT INITIALIZATION ASSIGNMENT](ch03abk64.md) 选项应用于接触相互作用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**模型
 
@@ -61,7 +61,3 @@ SEARCH BELOW
 将此参数设置为一个正值，以确保接触初始化的搜索区域包含至少与指定值一样大的过盈。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

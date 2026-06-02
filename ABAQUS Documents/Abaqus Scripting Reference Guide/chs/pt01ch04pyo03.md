@@ -68,7 +68,3 @@ session.aviOptions
 ### 4.3.2 成员
 
 AVIOptions 对象具有与 [setValues](pt01ch04pyo03.md#ker-avioptions-setvalues-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

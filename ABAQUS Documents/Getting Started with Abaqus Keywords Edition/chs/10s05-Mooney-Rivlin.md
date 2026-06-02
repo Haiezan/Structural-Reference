@@ -1,5 +1,5 @@
 # 10.5 示例：加筋板上的爆炸载荷
-
+![](../graphics/gsx-blast-load-nls.png)![](../graphics/gsx-blast-plate.png)![](../graphics/gsx-yield-v-nls.png)![](../graphics/gsx-overlap-mat-nls.png)![](../graphics/gsx-midsurf-joint-nls.png)![](../graphics/ico_ptnEdgeParameter.png)![](../graphics/gsx-blast-sets-nls.png)![](../graphics/gsx-pressure-load-v-nls.png)![](../graphics/gsx-blast-bc-load.png)![](../graphics/gsx-stiff-plate-mesh-c.png)![](../graphics/gsx-blast-shell-thick.png)![](../graphics/gsx-disp-shape-8ms-v.png)![](../graphics/gxi-central-disp-c-nls.png)![](../graphics/ico_xyAxisOptions.png)![](../graphics/gxi-energy-terms-c-nls.png)![](../graphics/gsx-art-energy-c-nls.png)![](../graphics/gsx-cent-disp-meshes-c-nls.png)![](../graphics/ico_plotContourDeformed.png)![](../graphics/ico_viewIso.png)![](../graphics/gsx-cont-plot-mises-c.png)![](../graphics/gsx-equivaplast-c.png)![](../graphics/gsx-damp-disp-hist-c-nls.png)![](../graphics/gsx-disp-central-node-c-nls.png)![](../graphics/gsx-plas-strain-energy-c-nls.png)
 > 原文：10.5 Example: blast loading on a stiffened plate
 
 前面的示例说明了在使用隐式方法求解涉及非线性材料响应的问题时可能遇到的收敛困难。我们现在将重点讨论使用显式动力学方法求解涉及塑性问题的方法。正如稍后将清楚的那样，收敛困难在这种情况下不是问题，因为显式方法不需要迭代。
@@ -26,7 +26,7 @@
 
 如果您无法访问Abaqus/CAE或其他预处理器，则可以手动创建此问题所需的输入文件，如<a rel="xbook" href="../gsk/gsk-link.htm#gsk-gen-mat-exablastload"><span class="gentxt_times">"示例：加筋板上的爆炸载荷"</span>，Abaqus入门：关键词版第10.5节</a>中所讨论。
 
-### 定义模型几何
+**定义模型几何**
 
 创建一个三维可变形部件，其具有挤出壳基础特征来表示板。使用约`5.0`的部件近似尺寸，并将部件命名为`Plate`。创建[图10-27](#gxi-blast-plate)所示部件几何的建议方法总结如下：
 
@@ -48,7 +48,7 @@
    最终部件草图如图[图10-27](#gxi-blast-plate)所示。
 7. 将草图挤出到2.0米的深度以创建板。
 
-### 定义材料属性
+**定义材料属性**
 
 为板和加筋板定义材料和截面属性。
 
@@ -89,14 +89,14 @@
 ***ERROR: Failed to regularize material data for material STEEL. Please check
 your input data to see if they meet both criteria as explained in
 "MATERIAL DATA DEFINITION" section of the
-Abaqus Analysis User's Guide. In general, regularization is more difficult if the 
-smallest interval defined by the user is small compared to the 
+Abaqus Analysis User's Guide. In general, regularization is more difficult if the
+smallest interval defined by the user is small compared to the
 range of the independent variable.
 ```
 
 在继续之前，将正则化容差设置回默认值（0.03）并删除额外的数据点对。
 
-### 创建和分配截面属性
+**创建和分配截面属性**
 
 创建两个均匀壳截面属性，每个都引用钢材料定义，但指定不同的壳厚度。命名第一个壳截面属性为`PlateSection`，选择`Steel`作为材料，并指定`0.025`米作为<span class="guitext"><b class="guilabel">壳厚度</b></span>的值。命名第二个壳截面属性为`StiffSection`，选择`Steel`作为材料，并指定`0.0125`米作为<span class="guitext"><b class="guilabel">壳厚度</b></span>的值。
 
@@ -126,7 +126,7 @@ range of the independent variable.
 
 可以根据截面分配对模型进行颜色编码以验证属性是否正确分配（从<span class="guitext"><b class="guilabel">颜色编码</b></span>工具栏中选择<span class="guitext"><b class="guilabel">截面</b></span>）。
 
-### 创建装配
+**创建装配**
 
 创建板的一个独立实例。使用默认的矩形坐标系，板位于1-3平面中。
 
@@ -139,7 +139,7 @@ range of the independent variable.
 </div>
 </div>
 
-### 定义步骤和输出请求
+**定义步骤和输出请求**
 
 创建一个动态显式步骤。将步骤命名为`Blast`，并指定以下步骤描述：`Apply blast loading`。输入步骤时间周期为`50E-3`秒。
 
@@ -147,7 +147,7 @@ range of the independent variable.
 
 可以为模型的所选区域保存更详细的输出作为历史输出。为步骤`Blast`创建名为`Center-U2`的历史输出请求。选择`Center`作为输出域，并选择<span class="guitext"><b class="guilabel">U2</b></span>作为平移输出变量。输入`500`作为分析过程中保存输出的间隔数。
 
-### 指定边界条件和载荷
+**指定边界条件和载荷**
 
 接下来，定义此分析中使用的边界条件。在步骤`Blast`中，创建一个名为`Fix edges`的<span class="guitext"><b class="guilabel">对称/</b></span><span class="guitext"><b class="guilabel">反对称/夹紧</b></span>机械边界条件。使用几何集`Edge`将边界条件应用于板的边缘，并指定<span class="guitext"><b class="guilabel">ENCASTRE (U1 = U2 = U3 = UR1 = UR2 = UR3 = 0)</b></span>以完全约束该集。
 
@@ -199,7 +199,7 @@ range of the independent variable.
 </div>
 </div>
 
-### 创建网格并定义作业
+**创建网格并定义作业**
 
 使用`0.1`的全局单元尺寸为部件实例设置种子。另外，选择<b><span class="guitext"><b class="guimenu">种子</b></span><img src="../graphics/arrow.gif"><span class="guitext"><b class="guimenuitem">边缘</b></span></b>，并指定沿每个加筋板的高度创建两个单元（在<span class="guitext"><b class="guilabel">本地种子</b></span>对话框中，选择<span class="guitext"><b class="guilabel">按数量</b></span>作为方法并将单元数设置为`2`；切换选项以创建包含所选边缘的集合）。使用来自<span class="guitext"><b class="guilabel">Explicit</b></span>单元库的 quadrilateral shell elements (S4R) 为板和加筋板划分网格。结果网格如图[图10-34](#gxi-stiff-plate-mesh-c)所示。这个相对粗糙的网格在将求解时间保持在最小的同时提供了适度的准确性。
 
@@ -220,11 +220,11 @@ range of the independent variable.
 
 作业完成后，进入<span class="abqmodule">可视化</span>模块，并打开此作业创建的`.odb`文件（`BlastLoad.odb`）。默认情况下，Abaqus绘制带有阴影渲染样式的未变形模型形状。
 
-### 改变视图
+**改变视图**
 
 默认视图是等轴测的，这不能提供板的特别清晰的视图。要改善视点，请使用<span class="guitext"><b class="guimenu">视图</b></span>菜单中的选项或<span class="guitext"><b class="guititle">视图操作</b></span>工具栏中的工具旋转视图。指定视图并选择旋转视图的视点方法。将视点向量的X、Y和Z坐标输入为`1,0.5,1`，将向上向量的坐标输入为`0,1,0`。
 
-### 验证壳截面分配
+**验证壳截面分配**
 
 您还可以在后处理结果时可视化截面分配和壳厚度。例如，可以对具有共同截面分配的区域进行颜色编码，以验证属性是否正确分配（从<span class="guitext"><b class="guilabel">颜色编码</b></span>工具栏中选择<span class="guitext"><b class="guilabel">截面</b></span>以根据截面分配对网格进行颜色编码）。要渲染壳厚度，请从主菜单栏选择<b><span class="guitext"><b class="guimenu">视图</b></span><img src="../graphics/arrow.gif"><span class="guitext"><b class="guimenuitem">ODB显示选项</b></span></b>。在<span class="guitext"><b class="guititle">ODB显示选项</b></span>对话框中，切换<span class="guitext"><b class="guilabel">渲染壳厚度</b></span>并点击<span class="guitext"><b class="guibutton">应用</b></span>。如果模型看起来正确，如[图10-35](#gsx-blast-shell-thick)所示，请在继续其余后处理说明之前切换关闭此选项并点击<span class="guitext"><b class="guibutton">确定</b></span>。否则，纠正截面分配并重新运行作业。
 
@@ -235,7 +235,7 @@ range of the independent variable.
 </div>
 </div>
 
-### 结果动画
+**结果动画**
 
 如前几示例所述，为结果添加动画将提供板在爆炸载荷下动态响应的一般理解。首先，绘制变形模型形状。然后，创建变形形状的时间历史动画。使用<span class="guitext"><b class="guititle">动画选项</b></span>对话框将模式更改为<span class="guitext"><b class="guititle">播放一次</b></span>。
 
@@ -259,7 +259,7 @@ range of the independent variable.
 3. 选择<span class="guitext"><b class="guilabel">QuickTime</b></span>格式，然后点击<span class="guitext"><b class="guibutton">确定</b></span>。
    动画保存为`blast_base.mov`在您的当前目录中。保存后，可以使用行业标准动画软件在Abaqus/CAE外部播放动画。
 
-### 历史输出
+**历史输出**
 
 由于从变形图中不容易看出板的变形，因此以图形形式查看中心节点的偏转响应是可取的。板中心节点的位移尤其令人关注，因为最大偏转发生在此节点处。
 
@@ -340,7 +340,7 @@ range of the independent variable.
 </div>
 </div>
 
-### 等值线图
+**等值线图**
 
 在本节中，您将使用<span class="abqmodule">可视化</span>模块的等值线绘图功能来显示板中的von Mises应力和等效塑性应变分布。使用细化加筋板网格的模型创建图表；从主菜单栏中选择<b><span class="guitext"><b class="guimenu">文件</b></span><img src="../graphics/arrow.gif"><span class="guitext"><b class="guimenuitem">打开</b></span></b>并选择文件`BlastLoadRefined.odb`。
 
@@ -382,7 +382,7 @@ range of the independent variable.
 
 此分析的目的是研究板在承受爆炸载荷时的变形以及结构各部分的应力。为了判断分析的准确性，您需要考虑所做的假设和近似，并识别模型的某些局限性。
 
-### 阻尼
+**阻尼**
 
 无阻尼结构以恒定振幅继续振动。在50毫秒的模拟中，振荡频率约为100赫兹。恒定振幅振动不是实践中预期的响应，因为这种结构的振动会随着时间的推移而消失，并在5-10次振荡后实际消失。能量损失通常通过各种机制发生，包括支撑处的摩擦效应和空气阻尼。
 
@@ -407,7 +407,7 @@ range of the independent variable.
 </div>
 </div>
 
-### 率相关性
+**率相关性**
 
 某些材料（如软钢）表现出屈服应力随应变率增加而增加的特性。在此示例中加载率很高，因此应变率相关性可能很重要。
 

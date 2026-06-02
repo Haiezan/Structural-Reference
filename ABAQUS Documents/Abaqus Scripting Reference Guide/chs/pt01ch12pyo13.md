@@ -92,7 +92,3 @@ A [CDCTermArray](pt01ch12pyo02.md) object.
 
 | [*CONNECTOR DERIVED COMPONENT](../key/key-link.md#usb-kws-mconnectorderivedcomp) |
 | --- |
-
-
-
-

@@ -43,4 +43,3 @@ DatumCsys 对象具有以下成员：
 *axis3*
 
 [DatumAxis](pt01ch15pyo02.md) 对象，指定坐标系的 3 方向。
-

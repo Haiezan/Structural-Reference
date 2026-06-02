@@ -69,6 +69,3 @@ CyclicSymmetryState 对象具有以下成员：
 | [*DLOAD](../key/key-link.md#usb-kws-hdload), CYCLIC MODE |
 | [*DSLOAD](../key/key-link.md#usb-kws-hdsload), CYCLIC MODE |
 | [*SELECT CYCLIC SYMMETRY MODES](../key/key-link.md#usb-kws-hselectcycsymmodes) |
-
-
-

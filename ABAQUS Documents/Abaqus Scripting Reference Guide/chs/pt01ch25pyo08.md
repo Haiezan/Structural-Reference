@@ -379,6 +379,3 @@ CavityRadiation 对象可以具有以下成员：
 | [*RADIATION SYMMETRY](../key/key-link.md#usb-kws-hradsymmetry) |
 | [*RADIATION VIEWFACTOR](#) |
 | [*REFLECTION](../key/key-link.md#usb-kws-hreflectionsym) |
-
-
-

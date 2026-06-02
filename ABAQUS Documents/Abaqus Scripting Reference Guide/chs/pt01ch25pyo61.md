@@ -52,6 +52,3 @@ SelfContactExpState 对象具有以下成员：
 | --- |
 | [*CONTACT PAIR](../key/key-link.md#usb-kws-hcontactpair) |
 | [*MODEL CHANGE](../key/key-link.md#usb-kws-hmodelchange), TYPE=CONTACT PAIR |
-
-
-

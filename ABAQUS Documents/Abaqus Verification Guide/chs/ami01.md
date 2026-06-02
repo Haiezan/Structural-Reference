@@ -24,4 +24,3 @@ abaqus fetch job=ec12afe1.inp
 参数化研究脚本（`.psf`）和用户子程序（`.f`）文件可以以相同的方式获取。通过省略文件扩展名可以获得特定问题的所有文件。**abaqus fetch**实用程序在["获取样本输入文件，"Abaqus分析用户指南第3.2.16节](../usb/usb-link.md#usb-int-dfetchproc)中有详细说明。
 
 有时搜索输入文件是有用的。**findkeyword**实用程序用于定位包含用户指定输入的输入文件。该实用程序在["查询关键字/问题数据库，"Abaqus分析用户指南第3.2.15节](../usb/usb-link.md#usb-int-dkeywordproc)中定义。
-

@@ -117,8 +117,3 @@ RadiationToAmbient 对象。
 ### 25.57.4 成员
 
 RadiationToAmbient 对象的成员与 [RadiationToAmbient](pt01ch25pyo57.md#ker-radiationtoambient-radiationtoambient-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

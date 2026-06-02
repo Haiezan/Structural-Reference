@@ -118,6 +118,3 @@ ModelChange 对象的成员与 [ModelChange](pt01ch25pyo52.md#ker-modelchange-mo
 | [*MODEL CHANGE](../key/key-link.md#usb-kws-hmodelchange), TYPE=ELEMENT |
 | --- |
 | [*MODEL CHANGE](../key/key-link.md#usb-kws-hmodelchange), ACTIVATE |
-
-
-

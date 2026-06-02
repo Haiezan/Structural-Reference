@@ -10,9 +10,9 @@
 
 此选项用于通过关于一点或一条轴的循环重复来定义腔体对称性。[*CYCLIC](ch03abk90.md)选项只能跟在[*RADIATION SYMMETRY](ch17abk05.md)选项之后使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -52,8 +52,3 @@ TYPE
 **图 3.90-2** [*CYCLIC](ch03abk90.md)，TYPE=AXIS选项。
 
 ![](../graphics/kcyclic-axis.png)
-
-
-
-
-

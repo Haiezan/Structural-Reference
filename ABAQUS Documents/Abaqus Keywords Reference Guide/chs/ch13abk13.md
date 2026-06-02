@@ -1,5 +1,5 @@
 # *MATRIX INPUT
-
+![](../graphics/key_eqn00896.gif)![](../graphics/key_eqn00897.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项可用于输入稀疏格式的矩阵。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 ##### **参考：**
 

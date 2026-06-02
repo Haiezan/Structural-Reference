@@ -8,11 +8,11 @@
 
 此选项用于指定使用静水流体单元建模的流体填充腔中流体量的变化。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   
+**产品：**Abaqus/Standard   Abaqus/Explicit
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 ##### **参考：**
 

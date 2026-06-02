@@ -1,5 +1,5 @@
 # *UNIAXIAL
-
+![](../graphics/key_eqn00106.gif)
 
 
 
@@ -37,3 +37,16 @@ COMPONENT
 
 
 
+### **Optional parameter: **
+### **Optional parameter when the [*UNIAXIAL TEST DATA](ch20abk04.md) option is used in conjunction with the [*HYPERELASTIC](ch08abk06.md), MARLOW option: **
+### **Data lines to specify uniaxial test data for hyperelasticity other than the Marlow model (the nominal strains must be arranged in either ascending or descending order if the SMOOTH parameter is used): **
+### **Data lines to specify uniaxial test data for the Marlow model (the nominal strains must be arranged in ascending order if the SMOOTH parameter is used): **
+### Using uniaxial test data to define an elastomeric foam
+### **Data lines to specify uniaxial test data for a hyperfoam: **
+### Using uniaxial test data to define a low-density foam material
+### **Required parameter: **
+### **Optional parameter: **
+### **Data lines to specify uniaxial test data for [*LOW DENSITY FOAM](ch12abk04.md), LATERAL STRAIN DATA=NO: **
+### **Data lines to specify uniaxial test data for [*LOW DENSITY FOAM](ch12abk04.md), LATERAL STRAIN DATA=YES: **
+### Using uniaxial test data to define the Mullins effect material model
+### **Data lines to specify uniaxial test data for defining the unloading-reloading response of the Mullins effect material model: **

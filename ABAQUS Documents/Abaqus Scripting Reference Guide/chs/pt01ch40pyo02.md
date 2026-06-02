@@ -172,4 +172,3 @@ DGCommonOptions 对象可以具有以下成员：
 *coordinateScaleFactors*
 
 三个 Float 的元组，指定当 *coordinateScale*=ON 时三个坐标方向中的坐标缩放。默认值为 (1, 1, 1)。
-

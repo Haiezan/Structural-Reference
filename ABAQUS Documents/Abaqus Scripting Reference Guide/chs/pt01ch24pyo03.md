@@ -12,8 +12,3 @@ AbaqusNDarray 对象是一个从 `numpy.ndarray` 派生的序列对象，用于�
 - 第一列为整数，其他列全部为浮点数。
 
 在最后一种情况下，成员 *colZeroIsInt* 将为 True；在其他两种情况下，它将为 False。
-
-
-
-
-

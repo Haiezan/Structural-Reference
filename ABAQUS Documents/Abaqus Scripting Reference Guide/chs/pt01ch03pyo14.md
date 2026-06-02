@@ -80,6 +80,3 @@ UserAmplitude 对象具有与 [UserAmplitude](pt01ch03pyo14.md#ker-useramplitude
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

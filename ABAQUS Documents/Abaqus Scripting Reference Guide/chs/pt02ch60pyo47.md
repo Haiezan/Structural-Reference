@@ -115,40 +115,7 @@ Eos(const odb_String& type,
 **表数据**
 
 如果 *type*=IDEALGAS，表数据表示以下内容：
-- 气体常数，![](../graphics/ker_eqn00096.gif]。
-- 环境压力，![](../graphics/ker_eqn00227.gif]。如果此字段留空，则使用默认值 0.0。
-
-如果 *type*=JWL，表数据表示以下内容：
-- 爆轰波速度，![](../graphics/ker_eqn00228.gif]。
-- ![](../graphics/ker_eqn00010.gif]。
-- ![](../graphics/ker_eqn00150.gif]。
-- ![](../graphics/ker_eqn00016.gif]。（无量纲。）
-- ![](../graphics/ker_eqn00229.gif]。（无量纲。）
-- ![](../graphics/ker_eqn00230.gif]。（无量纲。）
-- 预爆轰体积模量，![](../graphics/ker_eqn00231.gif]。
-- 爆轰能量密度，![](../graphics/ker_eqn00232.gif]。
-
-如果 *type*=USUP，表数据表示以下内容：
-- ![](../graphics/ker_eqn00233.gif]。
-- ![](../graphics/ker_eqn00234.gif]。（无量纲。）
-- ![](../graphics/ker_eqn00235.gif]。（无量纲。）
-
-如果 *type*=TABULAR，表数据表示以下内容：
-- ![](../graphics/ker_eqn00236.gif]。
-- ![](../graphics/ker_eqn00237.gif]。
-- ![](../graphics/ker_eqn00238.gif]。（无量纲。）
-
-**返回值**
-
-一个 Eos 对象。
-
-**异常**
-
-无。
-
-### 60.47.2 成员
-
-Eos 对象的成员与 [Eos](pt02ch60pyo47.md#ker-eos-eos-cpp) 方法的参数具有相同的名称和描述。
+- 气体常数，![](../graphics/ker_eqn00096.gif)![](../graphics/ker_eqn00227.gif)![](../graphics/ker_eqn00228.gif)![](../graphics/ker_eqn00010.gif)![](../graphics/ker_eqn00150.gif)![](../graphics/ker_eqn00016.gif)![](../graphics/ker_eqn00229.gif)![](../graphics/ker_eqn00230.gif)![](../graphics/ker_eqn00231.gif)![](../graphics/ker_eqn00232.gif)![](../graphics/ker_eqn00233.gif)![](../graphics/ker_eqn00234.gif)![](../graphics/ker_eqn00235.gif)![](../graphics/ker_eqn00236.gif)![](../graphics/ker_eqn00237.gif)![](../graphics/ker_eqn00238.gif) 方法的参数具有相同的名称和描述。
 
 此外，Eos 对象可以具有以下成员：
 
@@ -171,3 +138,4 @@ odb_EosCompaction eosCompaction() const;
 
 | [*EOS](../key/key-link.md#usb-kws-meos) |
 | --- |
+### 60.47.3 Corresponding analysis keywords

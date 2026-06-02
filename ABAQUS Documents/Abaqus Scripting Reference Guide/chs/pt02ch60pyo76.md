@@ -60,27 +60,10 @@ PlanarTestData(const odb_SequenceSequenceDouble& table,
 **表数据**
 
 对于超弹性材料模型，表数据指定以下内容：
-- 名义应力，![](../graphics/ker_eqn00332.gif]。
-- 加载方向的名义应变，![](../graphics/ker_eqn00333.gif]。
-
-对于超泡沫材料模型，表数据指定以下内容：
-- 名义应力，![](../graphics/ker_eqn00334.gif]。
-- 加载方向的名义应变，![](../graphics/ker_eqn00335.gif]。
-- 横向名义应变，![](../graphics/ker_eqn00336.gif]。默认值为 0。
-
-**返回值**
-
-一个 PlanarTestData 对象。
-
-**异常**
-
-无。
-
-### 60.76.2 成员
-
-PlanarTestData 对象的成员与 [PlanarTestData](pt02ch60pyo76.md#ker-planartestdata-planartestdata-cpp) 方法的参数具有相同的名称和描述。
+- 名义应力，![](../graphics/ker_eqn00332.gif)![](../graphics/ker_eqn00333.gif)![](../graphics/ker_eqn00334.gif)![](../graphics/ker_eqn00335.gif)![](../graphics/ker_eqn00336.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.76.3 对应的分析关键字
 
 | [*PLANAR TEST DATA](../key/key-link.md#usb-kws-mplanartestdata) |
 | --- |
+### 60.76.3 Corresponding analysis keywords

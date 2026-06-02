@@ -100,7 +100,3 @@ BrittleShear 对象具有与 [BrittleShear](pt01ch29pyo07.md#ker-brittleshear-br
 
 | [*BRITTLE SHEAR](../key/key-link.md#usb-kws-mbrittleshear) |
 | --- |
-
-
-
-

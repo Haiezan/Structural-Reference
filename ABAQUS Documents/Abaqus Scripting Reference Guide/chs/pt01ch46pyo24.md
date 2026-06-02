@@ -82,5 +82,3 @@ TransverseShearBeam 对象的成员与 [TransverseShearBeam](pt01ch46pyo24.md#ke
 
 | [*TRANSVERSE SHEAR STIFFNESS](../key/key-link.md#usb-kws-mtransshearstiff) |
 | --- |
-
-

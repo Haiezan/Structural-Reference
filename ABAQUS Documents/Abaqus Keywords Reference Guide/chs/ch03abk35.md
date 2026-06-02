@@ -8,7 +8,7 @@
 
 此选项用于指示连接器行为定义的开始。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -60,7 +60,3 @@ RTOL
 将此参数设置为用于正则化连接器行为数据的容差。默认值为RTOL=0.03。
 
 **此选项没有关联的数据行。**
-
-
-
-

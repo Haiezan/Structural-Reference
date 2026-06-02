@@ -191,6 +191,6 @@ XYPlot 对象具有与 [XYPlot](pt01ch55pyo16.md#ker-xyplot-xyplot-pyc) 方法�
 
 一个 Float 元组，指定用于沿 XYPlot 活动 [Chart](pt01ch55pyo06.md) 对象的轴缩放或平移的变换矩阵。
 
-# C++ 命令
+**C++ 命令**
 
-## 第二部分：C++ 命令
+**第二部分：C++ 命令**

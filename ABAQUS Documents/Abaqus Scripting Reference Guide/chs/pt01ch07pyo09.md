@@ -27,7 +27,3 @@ IgnoredVertex 对象具有以下成员：
 *pointOn*
 
 一个 Float 元组，指定顶点的 *X*-、*Y*- 和 *Z*- 坐标。
-
-
-
-

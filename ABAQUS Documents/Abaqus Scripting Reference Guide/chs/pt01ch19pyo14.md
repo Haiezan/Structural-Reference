@@ -115,8 +115,3 @@ SpringDashpotToGround 对象具有与 [SpringDashpotToGround](pt01ch19pyo14.md#k
 
 | [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=SPRING1; [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=DASHPOT1; [*SPRING](../key/key-link.md#usb-kws-mspring); [*DASHPOT](../key/key-link.md#usb-kws-mdashpot) |
 | --- |
-
-
-
-
-

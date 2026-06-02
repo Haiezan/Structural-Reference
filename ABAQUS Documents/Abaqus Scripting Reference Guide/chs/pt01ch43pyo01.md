@@ -59,4 +59,3 @@ session.printOptions
 ### 43.1.2 成员
 
 PrintOptions 对象的成员与 [setValues](pt01ch43pyo01.md#ker-printoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

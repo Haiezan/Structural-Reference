@@ -48,7 +48,3 @@ A SymbolicConstant specifying the propagation state of the [InteractionState](pt
 
 | [*ENRICHMENT ACTIVATION](../key/key-link.md#usb-kws-henrichmentactivation) |
 | --- |
-
-
-
-

@@ -237,7 +237,3 @@
 | **DIALOG_UNPOST_DESTROY** | 取消张贴时销毁对话框。 |
 | **DIALOG_UNPOST_NOTHING** | 取消张贴时不执行任何操作。 |
 | **DIALOG_NORMAL** | 默认对话框选项。 |
-
-
-
-

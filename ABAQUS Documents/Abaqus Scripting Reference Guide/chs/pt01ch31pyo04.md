@@ -88,7 +88,3 @@ None.
 ### 31.4.5 Members
 
 The MeshEdge object has no members.
-
-
-
-

@@ -8,7 +8,7 @@
 
 此选项用于调整用户指定的节点坐标，以使节点位于给定曲面上。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 

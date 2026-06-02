@@ -40,5 +40,3 @@ COMPOSITE
 转动惯性应以[ML](../popups/usb-int-iconventions-unitsym.md)为单位给出。Abaqus不使用任何特定的物理单位，因此用户的选择必须一致。
 
 根据需要重复此组数据行，以定义附加梁惯性。
-
-

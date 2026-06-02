@@ -99,7 +99,7 @@ MdbError: invalid model database.
 如果文件包含的模型数据库来自当前运行的 Abaqus 版本以外的 Abaqus 版本：
 
 ```
-MdbError: incompatible release number, expected                             *<Abaqus release>*, got                            *<earlier or later Abaqus release>*                
+MdbError: incompatible release number, expected                             *<Abaqus release>*, got                            *<earlier or later Abaqus release>*
 ```
 
 如果模型数据库文件已以写入模式打开：
@@ -494,7 +494,7 @@ MdbError: invalid model database.
 如果文件包含的模型数据库来自当前运行的 Abaqus 版本以外的 Abaqus 版本：
 
 ```
-MdbError: incompatible release number, expected                             *<Abaxis release>*, got                             *<earlier or later Abaqus release>*.                         
+MdbError: incompatible release number, expected                             *<Abaxis release>*, got                             *<earlier or later Abaqus release>*.
 ```
 
 如果命令因上述原因以外的原因未能打开模型数据库文件：

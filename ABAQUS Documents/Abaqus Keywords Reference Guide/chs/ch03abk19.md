@@ -9,11 +9,11 @@
 
 此选项用于定义 Cam-clay 塑性屈服面的分段线性硬化/软化。只能与 [*CLAY PLASTICITY](ch03abk20.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -35,7 +35,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此数据行集，以定义屈服面大小对体积塑性应变的依赖性，以及在需要时对温度和其他预定义场变量的依赖性。
-
-
-
-

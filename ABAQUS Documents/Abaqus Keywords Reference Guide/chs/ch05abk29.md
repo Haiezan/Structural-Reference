@@ -45,7 +45,3 @@ SECTION
 **第一行（也是唯一一行）：**
 
 根据需要包含[*JOINT ELASTICITY](ch10abk02.md)和[*JOINT PLASTICITY](ch10abk03.md)选项以定义关节行为。
-
-
-
-

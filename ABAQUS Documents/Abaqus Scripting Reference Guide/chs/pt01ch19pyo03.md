@@ -1,5 +1,5 @@
 # 19.3 ContourIntegral 对象
-
+![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00048.gif)
 
 
 
@@ -126,8 +126,3 @@ ContourIntegral 对象具有与 [ContourIntegral](pt01ch19pyo03.md#ker-contourin
 
 | [*CONTOUR INTEGRAL](../key/key-link.md#usb-kws-hcontintegral) |
 | --- |
-
-
-
-
-

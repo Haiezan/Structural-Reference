@@ -72,5 +72,3 @@
 ### Y
 
 [YPLUS](pt02ch04s02cbv01.md#usb-cfdxsl-yplus)[YSTAR](pt02ch04s02cbv01.md#usb-cfdxsl-ystar)
-
-

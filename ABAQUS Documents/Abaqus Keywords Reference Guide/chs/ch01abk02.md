@@ -8,7 +8,7 @@
 
 此选项用于定义与声学元素一起使用的声学介质的属性。[*ACOUSTIC MEDIUM](ch01abk02.md)选项必须与[*MATERIAL](ch13abk08.md)选项结合使用。[*ACOUSTIC MEDIUM](ch01abk02.md)选项可以多次使用以指定声学介质的所有属性。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 

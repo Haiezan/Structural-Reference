@@ -141,6 +141,3 @@ AcousticImpedance 对象的成员与 [AcousticImpedance](pt01ch25pyo02.md#ker-ac
 
 | [*SIMPEDANCE](../key/key-link.md#usb-kws-hsimpedance) |
 | --- |
-
-
-

@@ -47,27 +47,10 @@ Ratios(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-- ![](../graphics/ker_eqn00359.gif]。
-- ![](../graphics/ker_eqn00360.gif]。
-- ![](../graphics/ker_eqn00361.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-**返回值**
-
-一个 Ratios 对象。
-
-**异常**
-
-RangeError。
-
-### 60.86.2 成员
-
-Ratios 对象的成员与 [Ratios](pt02ch60pyo86.md#ker-ratios-ratios-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00359.gif)![](../graphics/ker_eqn00360.gif)![](../graphics/ker_eqn00361.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.86.3 对应的分析关键字
 
 | [*RATIOS](../key/key-link.md#usb-kws-mswellratios) |
 | --- |
+### 60.86.3 Corresponding analysis keywords

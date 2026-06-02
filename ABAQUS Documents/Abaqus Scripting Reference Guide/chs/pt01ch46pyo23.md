@@ -66,5 +66,3 @@ SurfaceSection 对象的成员与 [SurfaceSection](pt01ch46pyo23.md#ker-surfaces
 
 | [*SURFACE SECTION](../key/key-link.md#usb-kws-msurfacesection) |
 | --- |
-
-

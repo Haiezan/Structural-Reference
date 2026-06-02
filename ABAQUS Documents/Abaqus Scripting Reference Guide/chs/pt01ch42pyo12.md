@@ -33,4 +33,3 @@ PredefinedFieldState 对象具有以下成员：
 - INSTANCE_NOT_APPLICABLE
 
 此成员存在于所有 PredefinedFieldState 对象中，但不同的预定义场根据传播规则使用整个可能值列表的不同子集。
-

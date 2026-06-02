@@ -9,11 +9,11 @@
 
 此选项定义用于定义入射波的几何数据和流体特性。每个 [*INCIDENT WAVE INTERACTION](ch09abk10.md) 选项必须引用一个 [*INCIDENT WAVE INTERACTION PROPERTY](ch09abk11.md) 定义。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Interaction 模块
 
@@ -57,7 +57,3 @@ TYPE
 **第一（也是唯一）行：**
 
 ### **对于与 [*CONWEP CHARGE PROPERTY](ch03abk76.md) 选项一起使用的 TYPE=AIR BLAST 或 TYPE=SURFACE BLAST，不需要数据行。**
-
-
-
-

@@ -1,5 +1,5 @@
 # 1.5 技术支持
-
+![](../images/blu4rule.gif)![](../images/blu4rule.gif)![](../images/blu4rule.gif)![](../images/blu4rule.gif)
 Abaqus 通过遍布全球的支持办事处网络提供**技术支持**（用于解决建模或分析问题）和**系统支持**（用于解决安装、许可及硬件相关问题）。各地区联系信息可在 **Locations** 页面查询，网址为 [www.3ds.com/simulia](http://www.3ds.com/simulia)。您也可以通过 [www.3ds.com/simulia](http://www.3ds.com/simulia) 网站的 **Support** 页面获取帮助。在联系支持办事处时，请说明您需要的是技术支持（Abaqus 分析过程中遇到问题）还是系统支持（Abaqus 无法正确安装、许可无法正常工作或出现其他硬件相关问题）。
 
 我们欢迎您对 Abaqus 软件、支持计划或文档提出任何改进建议。我们将确保考虑您的所有增强请求以供未来版本参考。如果您对 SIMULIA 提供的服务或产品有建议，请访问 [www.3ds.com/simulia](http://www.3ds.com/simulia)。如需投诉，请联系您的支持办事处或访问 [www.3ds.com/simulia](http://www.3ds.com/simulia) 上的 **Quality Assurance** 页面。

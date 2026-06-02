@@ -44,4 +44,3 @@ Spectrum 对象。
 ### 39.8.2 成员
 
 Spectrum 对象没有成员。
-

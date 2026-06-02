@@ -9,11 +9,11 @@
 
 此选项用于定义灰铸铁的塑性属性。必须与 [*CAST IRON COMPRESSION HARDENING](ch03abk06.md) 和 [*CAST IRON TENSION HARDENING](ch03abk08.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -36,7 +36,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数值大于六时需要）：**
 
 根据需要重复此数据行集，以定义材料参数 ![](../graphics/key_eqn00164.gif) 对温度和场变量的依赖性。
-
-
-
-

@@ -10,11 +10,11 @@
 
 此选项用于定义点燃和生长状态方程的反应速率。当使用[*EOS](ch05abk27.md)，TYPE=IGNITION AND GROWTH选项时需要此选项。[*REACTION RATE](ch17abk10.md)选项应紧跟在[*EOS](ch05abk27.md)或[*GAS SPECIFIC HEAT](ch07abk07.md)选项之后。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

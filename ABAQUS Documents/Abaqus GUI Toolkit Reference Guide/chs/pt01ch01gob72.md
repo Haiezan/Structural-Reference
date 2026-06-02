@@ -200,8 +200,3 @@ Data Target 允许将评估器 widget（如滑块或文本字段）直接连接�
 | **ID_VALUE** | 将导致 FXDataTarget 向发送者请求值。 |
 | --- | --- |
 | **ID_OPTION** | ID_OPTION+i 会将值设置为 i，其中 -10000<=i<=10000。 |
-
-
-
-
-

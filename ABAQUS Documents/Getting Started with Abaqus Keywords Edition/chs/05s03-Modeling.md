@@ -24,7 +24,7 @@
 
 `*ORIENTATION`, SYSTEM=RECTANGULAR, NAME=LOCALR
 
-44 `![../graphics/gsk_eqn00045.gif](../graphics/gsk_eqn00045.gif)`, `![../graphics/gsk_eqn00046.gif](../graphics/gsk_eqn00046.gif)`, `![../graphics/gsk_eqn00047.gif](../graphics/gsk_eqn00047.gif)`, `![../graphics/gsk_eqn00048.gif](../graphics/gsk_eqn00048.gif)`, `![../graphics/gsk_eqn00049.gif](../graphics/gsk_eqn00049.gif)`, `![../graphics/gsk_eqn00050.gif](../graphics/gsk_eqn00050.gif)`
+44 ``
 
 **图5-8** 局部坐标系的定义。
 
@@ -38,9 +38,7 @@
 
 `*ORIENTATION`, SYSTEM=RECTANGULAR, NAME=LOCALR
 
-45 `![../graphics/gsk_eqn00045.gif](../graphics/gsk_eqn00045.gif)`, `![../graphics/gsk_eqn00046.gif](../graphics/gsk_eqn00046.gif)`, `![../graphics/gsk_eqn00047.gif](../graphics/gsk_eqn00047.gif)`, `![../graphics/gsk_eqn00048.gif](../graphics/gsk_eqn00048.gif)`, `![../graphics/gsk_eqn00049.gif](../graphics/gsk_eqn00049.gif)`, `![../graphics/gsk_eqn00050.gif](../graphics/gsk_eqn00050.gif)`
-
-1, ![../graphics/gsk_eqn00051.gif](../graphics/gsk_eqn00051.gif)
+45 `
 
 同样，经过旋转的![../graphics/gsk_eqn00043.gif](../graphics/gsk_eqn00043.gif)和![../graphics/gsk_eqn00044.gif](../graphics/gsk_eqn00044.gif)轴被Abaqus投影到壳体单元的表面上。为了便于解释投影，所选轴应尽可能接近壳体法向。
 

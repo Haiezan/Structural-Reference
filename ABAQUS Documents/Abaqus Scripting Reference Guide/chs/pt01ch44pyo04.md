@@ -253,4 +253,3 @@ MaterialOrientation 对象的成员与 [MaterialOrientation](pt01ch44pyo04.md#ke
 *additionalRotationField*
 
  String，指定 [DiscreteField](pt01ch21pyo04.md) 对象的名称，指定额外旋转。默认值为空字符串。
-

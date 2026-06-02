@@ -86,4 +86,3 @@ AbaqusException。
 ### 44.3.2 成员
 
 CompositePly 对象的成员与 [CompositePly](pt01ch44pyo03.md#ker-compositeply-compositeply-pyc) 方法的参数具有相同的名称和描述。
-

@@ -72,4 +72,3 @@ AcousticInterfaceSection 对象的成员与 [AcousticInterfaceSection](pt01ch46p
 
 | [*INTERFACE*](../key/key-link.md#usb-kws-minterface) |
 | --- |
-

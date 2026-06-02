@@ -35,6 +35,3 @@ None
 **Exceptions**
 
 None.
-
-
-

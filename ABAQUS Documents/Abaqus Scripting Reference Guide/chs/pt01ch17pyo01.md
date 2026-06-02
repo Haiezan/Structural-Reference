@@ -259,8 +259,3 @@ AssemblyDisplayOptions 对象可具有以下成员：
 *step*
 
 一个 String，指定要显示对象的步骤。可能的值为任何有效的步骤名称。默认值为 "Initial"。
-
-
-
-
-

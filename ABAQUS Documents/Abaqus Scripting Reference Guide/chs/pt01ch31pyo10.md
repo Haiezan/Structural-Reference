@@ -163,7 +163,7 @@ A float specifying the maximum Z boundary of the bounding box.
 
 **Return value**
 
-A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects. 					 
+A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects.
 
 **Exceptions**
 
@@ -193,7 +193,7 @@ None.
 
 **Return value**
 
-A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects. 					 
+A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects.
 
 **Exceptions**
 
@@ -219,7 +219,7 @@ None.
 
 **Return value**
 
-A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects. 					 
+A MeshNodeArray object, which is a sequence of [MeshNode](pt01ch31pyo09.md) objects.
 
 **Exceptions**
 
@@ -274,7 +274,3 @@ Error: The mask results in an empty sequence
 ### 31.10.10 Members
 
 The MeshNodeArray object has no members.
-
-
-
-

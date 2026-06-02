@@ -10,11 +10,11 @@
 
 此选项用于定义频率函数，以便在[*CORRELATION](ch03abk77.md)选项中引用，从而在[*RANDOM RESPONSE](ch17abk07.md)分析过程中定义随机载荷的频率依赖性。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 ##### **参考：**
 

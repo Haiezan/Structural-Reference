@@ -146,7 +146,3 @@ Text 对象具有与 [Text](pt01ch05pyo04.md#ker-text-text-pyc) 方法参数相�
 *height*
 
 一个 Float，指定 Text 对象的高度（以毫米为单位）。
-
-
-
-

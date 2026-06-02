@@ -11,11 +11,11 @@
 
 [*INCIDENT WAVE PROPERTY](ch09abk12.md) 选项必须与 [*INCIDENT WAVE](ch09abk08.md) 选项一起使用。如果入射波场包括从网格边界外平面的反射，则可以使用 [*INCIDENT WAVE REFLECTION](ch09abk13.md) 选项对此效应进行建模。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 历史数据  
+**类型：** 历史数据
 
-**级别：** 步骤  
+**级别：** 步骤
 
 **Abaqus/CAE：** 不支持；此选项已被入射波相互作用取代。
 
@@ -49,7 +49,3 @@ PRESSURE AMPLITUDE
 **第一行：**
 
 根据需要重复此数据行，以描述由于入射波导致的表面载荷。在涉及流体-固体边界的问题中，构成边界的流体表面和固体表面都必须指定入射波载荷，使用适当的载荷类型。
-
-
-
-

@@ -1,5 +1,5 @@
 # 29.65 JouleHeatFraction 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 JouleHeatFraction 对象定义作为热量释放的电能的分数。
 
 **访问**

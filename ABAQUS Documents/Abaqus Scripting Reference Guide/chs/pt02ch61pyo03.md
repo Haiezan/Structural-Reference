@@ -33,8 +33,3 @@ odb_SequenceSequenceFloat data() const;
 *data*
 
 一个 odb_SequenceSequenceFloat，指定表示 [AnalyticSurface](pt02ch61pyo02.md) 对象段的点坐标。如果 *type*=odb_Enum::CIRCLE，第一行包含端点坐标，第二行包含中心点坐标。如果 *type*=odb_Enum::PARABOLA，第一行包含中点坐标，第二行包含端点坐标。如果 *type*=odb_Enum::START 或 *type*=odb_Enum::LINE，单行包含起点/终点的坐标。
-
-
-
-
-

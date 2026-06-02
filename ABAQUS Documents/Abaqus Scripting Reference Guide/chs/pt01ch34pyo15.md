@@ -58,13 +58,13 @@ localCoordSystem = ((0, 1, 0), (1, 0, 0),
 
 将包含以下两点的部件转换
 ```
-Pt1= (1,0,0) 
-Pt2= (2,0,0) 
+Pt1= (1,0,0)
+Pt2= (2,0,0)
 ```
 为
 ```
-Pt1 = (0, 6, 0) 
-Pt2 = (0, 7, 0)                      
+Pt1 = (0, 6, 0)
+Pt2 = (0, 7, 0)
 ```
 
 **返回值**
@@ -290,7 +290,7 @@ OdbError: Section assignment requires element set from this part instance.
 如果关联的 [OdbPart](pt01ch34pyo19.md) 类型为 THREE_D：
 
 ```
-OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.                         
+OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.
 ```
 
 ### 34.15.9 AnalyticRigidSurfExtrude(...)
@@ -326,7 +326,7 @@ OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance i
 如果关联的 [OdbPart](pt01ch34pyo19.md) 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             CYLINDER                            can be defined only if the instance is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             CYLINDER                            can be defined only if the instance is of type                             THREE_D.
 ```
 
 ### 34.15.10 AnalyticRigidSurfRevolve(...)
@@ -362,7 +362,7 @@ OdbError:  Analytic Rigid Surface of type                             CYLINDER  
 如果关联的 [OdbPart](pt01ch34pyo19.md) 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the instance is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the instance is of type                             THREE_D.
 ```
 
 ### 34.15.11 RigidBody(...)

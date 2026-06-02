@@ -34,7 +34,3 @@
 | **AFXCOLORCOMBOBOX_INCLUDE_AS_IS** | 包含"原样"颜色。 |
 | --- | --- |
 | **AFXCOLORCOMBOBOX_INCLUDE_DEFAULT** | 包含"默认"颜色。 |
-
-
-
-

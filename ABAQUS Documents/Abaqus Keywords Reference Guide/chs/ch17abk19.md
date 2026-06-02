@@ -10,11 +10,11 @@
 
 在Abaqus/Standard分析中定义三维拖链元素的 海底时必须使用此选项。对于所有其他情况，定义解析刚体表面的首选选项是[*SURFACE](ch18abk47.md)和[*RIGID BODY](ch17abk18.md)选项。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例  
+**级别：**零件，零件实例
 
 **Abaqus/CAE：**零件模块
 

@@ -20,7 +20,3 @@
 
 **Abaqus/CAE User's Guide**
 - [“Accessing the Learning Community，” Section 2.6.5](../usi/usi-link.md#uss-hlp-self)
-
-
-
-

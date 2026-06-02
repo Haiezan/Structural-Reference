@@ -11,7 +11,3 @@
 
 | [Section 12.1.2](ch12s01aex149.md) | Riser dynamics |
 | --- | --- |
-
-
-
-

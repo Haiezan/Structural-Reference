@@ -1,5 +1,5 @@
 # 17.12 LightOptions 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -114,8 +114,3 @@ LightOptions 对象具有以下成员：
 *ambientColor*
 
 一个 String，指定均匀应用于整个场景的光，不依赖于任何单独的光。初始值为 20% 灰色。有效颜色字符串列表在 *session* 对象的 *colors* 映射中。
-
-
-
-
-

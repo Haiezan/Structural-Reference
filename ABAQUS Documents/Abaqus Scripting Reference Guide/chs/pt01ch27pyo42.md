@@ -39,7 +39,3 @@ A SymbolicConstant specifying the propagation state of the LoadState object. Pos
 *amplitude*
 
 A String specifying the name of the amplitude reference. The String is empty if the load has no amplitude reference.
-
-
-
-

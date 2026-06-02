@@ -91,7 +91,3 @@ CastIronTensionHardening 对象具有与 [CastIronTensionHardening](pt01ch29pyo1
 
 | [*CAST IRON TENSION HARDENING](../key/key-link.md#usb-kws-mcastirontenhardening) |
 | --- |
-
-
-
-

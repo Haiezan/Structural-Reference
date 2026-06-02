@@ -157,6 +157,3 @@ StdContactControl 对象的成员与 [StdContactControl](pt01ch25pyo66.md#ker-st
 
 | [*CONTACT CONTROLS](../key/key-link.md#usb-kws-hcontactcontrols) |
 | --- |
-
-
-

@@ -56,7 +56,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*DSECURRENT](../key/key-link.md#usb-kws-hdsecurrent) (load type label: CS) |
 | --- |
-
-
-
-

@@ -32,4 +32,3 @@ odb_String timeSpan() const;
 *timeSpan*
 
 一个 odb_String，指定幅值的时间跨度。可能的值为 "STEP" 和 "TOTAL"。默认值为 "STEP"。
-

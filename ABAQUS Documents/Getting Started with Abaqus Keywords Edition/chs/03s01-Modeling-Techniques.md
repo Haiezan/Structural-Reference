@@ -139,7 +139,7 @@ Abaqus/Standard 还提供广义平面应变单元、带扭曲的轴对称单元�
 
 **图 3-4** 二维单元的正确节点连通性。
 
-![二维单元的正确节点连通性](../graphics/gss-two-dimensional-nls.png)
+![](../graphics/gsk_eqn00030.gif)![](../graphics/gsk_eqn00031.gif)![二维单元的正确节点连通性](../graphics/gss-two-dimensional-nls.png)
 
 使用前处理器生成网格时，确保所有单元法线指向与正的全局 3 轴相同的方向。如果未提供正确的单元连通性，Abaqus 将发出错误消息，指出单元面积为负。
 
@@ -168,7 +168,7 @@ Abaqus/Standard 中连续体单元族可用的替代公式包括不兼容模式�
 
 **图 3-5** 连续体单元的默认材料方向。
 
-![连续体单元的默认材料方向](../graphics/gss-continuum-elem.png)
+![](../graphics/gsk_eqn00032.gif)![连续体单元的默认材料方向](../graphics/gss-continuum-elem.png)
 
 但是，Abaqus 允许您为单元变量定义局部坐标系（参见第 5.5 节"示例：斜板"）。在大位移模拟中，这个局部坐标系随单元的运动旋转。如果被建模的对象具有一些天然的材料方向（如复合材料中的纤维方向），局部坐标系非常有用。
 

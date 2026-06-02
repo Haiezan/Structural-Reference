@@ -236,7 +236,3 @@ A [ConnectorOptions](pt02ch58pyo09.md) object specifying the [ConnectorOptions](
 
 | [*CONNECTOR PLASTICITY](../key/key-link.md#usb-kws-mconnectorplasticity), [*CONNECTOR HARDENING](../key/key-link.md#usb-kws-mconnectorhardening), [*CONNECTOR POTENTIAL](../key/key-link.md#usb-kws-mconnectorpotential) |
 | --- |
-
-
-
-

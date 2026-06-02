@@ -1,4 +1,4 @@
-# *CONTACT
+***CONTACT**
 
 
 
@@ -9,9 +9,9 @@
 
 此选项用于指示通用接触定义的开始。通用接触定义的各个方面通过将其他选项与 [*CONTACT](ch03abk54.md) 选项结合使用来指定。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据或历史数据  
+**类型：**模型数据或历史数据
 
 **级别：**模型、步骤
 
@@ -33,7 +33,3 @@ OP
 设置 OP=NEW 以删除任何先前指定的通用接触定义并指定新的定义。当通用接触定义被指定为模型数据时，OP=NEW 将被忽略。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

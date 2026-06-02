@@ -17,4 +17,3 @@ mdb.models[*name*].rootAssembly.modelInstances[*i*].datums[*i*]
 ### 15.1.1 成员
 
 Datum 对象没有成员。
-

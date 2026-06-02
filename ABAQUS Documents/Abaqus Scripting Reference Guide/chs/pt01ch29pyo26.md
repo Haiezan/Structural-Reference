@@ -113,7 +113,3 @@ Creep 对象具有与 [Creep](pt01ch29pyo26.md#ker-creep-creep-pyc) 方法参数
 
 | [*CREEP](../key/key-link.md#usb-kws-mcreep) |
 | --- |
-
-
-
-

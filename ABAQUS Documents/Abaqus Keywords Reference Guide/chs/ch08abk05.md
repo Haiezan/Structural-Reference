@@ -11,11 +11,11 @@
 
 [*HOURGLASS STIFFNESS](ch08abk05.md) 选项只能与 [*MEMBRANE SECTION](ch13abk16.md) 选项、[*SOLID SECTION](ch18abk22.md) 选项、[*SHELL SECTION](ch18abk15.md) 选项或 [*SHELL GENERAL SECTION](ch18abk14.md) 选项一起使用。使用此选项定义的沙漏控制仅影响那些其截面特性由紧 preceding 的截面选项定义的单元。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 零件、零件实例  
+**级别：** 零件、零件实例
 
 **Abaqus/CAE：** Mesh 模块
 
@@ -32,7 +32,3 @@
 ### **定义非默认沙漏刚度的数据行：**
 
 **第一（也是唯一）行：**
-
-
-
-

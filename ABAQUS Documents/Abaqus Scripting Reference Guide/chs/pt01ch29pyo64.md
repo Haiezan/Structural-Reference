@@ -1,5 +1,5 @@
 # 29.64 InelasticHeatFraction 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 InelasticHeatFraction 对象定义作为热源出现的非弹性耗散速率的分数。
 
 **访问**

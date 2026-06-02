@@ -12,9 +12,9 @@
 
 此选项用于在基于模式的动力学或特征值提取程序期间控制将广义坐标（模态幅度和相位）值或特征数据写入Abaqus/Standard结果文件。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

@@ -8,7 +8,7 @@
 
 The SizingThicknessControl object defines a sizing thickness control geometric restriction.
 
-         The SizingThicknessControl object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.       
+         The SizingThicknessControl object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.
 
 **Access**
 
@@ -21,7 +21,7 @@ The SizingThicknessControl object defines a sizing thickness control geometric r
 
 ### 36.30.1 SizingThicknessControl(...)
 
-           This method creates a SizingThicknessControl object.         
+           This method creates a SizingThicknessControl object.
 
 **Path**
 
@@ -39,11 +39,11 @@ A String specifying the geometric restriction repository key.
 
 *region*
 
-                 A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.               
+                 A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.
 
 *thicknessRestrictionBy*
 
-              A SymbolicConstant specifying whether to define thickness restriction by value or fraction. Possible values are VALUE and FRACTION.              
+              A SymbolicConstant specifying whether to define thickness restriction by value or fraction. Possible values are VALUE and FRACTION.
 
 **Optional arguments**
 
@@ -51,15 +51,15 @@ A String specifying the geometric restriction repository key.
 
 *maxThickness*
 
-                 A Float specifying the maximum thickness.               
+                 A Float specifying the maximum thickness.
 
 *minThickness*
 
-                 A Float specifying the minimum thickness.               
+                 A Float specifying the minimum thickness.
 
 **Return value**
 
-           A SizingThicknessControl object.         
+           A SizingThicknessControl object.
 
 **Exceptions**
 
@@ -67,7 +67,7 @@ None.
 
 ### 36.30.2 setValues(...)
 
-           This method modifies the SizingThicknessControl object.         
+           This method modifies the SizingThicknessControl object.
 
 **Required arguments**
 
@@ -75,7 +75,7 @@ None.
 
 **Optional arguments**
 
-             The optional arguments to `setValues` are the same as the arguments to the [SizingThicknessControl](pt01ch36pyo30.md#ker-sizingthicknesscontrol-sizingthicknesscontrol-pyc) method, except for the *name* argument.           
+             The optional arguments to `setValues` are the same as the arguments to the [SizingThicknessControl](pt01ch36pyo30.md#ker-sizingthicknesscontrol-sizingthicknesscontrol-pyc) method, except for the *name* argument.
 
 **Return value**
 
@@ -87,8 +87,4 @@ None.
 
 ### 36.30.3 Members
 
-         The SizingThicknessControl object has members with the same names and descriptions as the arguments to the [SizingThicknessControl](pt01ch36pyo30.md#ker-sizingthicknesscontrol-sizingthicknesscontrol-pyc) method.       
-
-
-
-
+         The SizingThicknessControl object has members with the same names and descriptions as the arguments to the [SizingThicknessControl](pt01ch36pyo30.md#ker-sizingthicknesscontrol-sizingthicknesscontrol-pyc) method.

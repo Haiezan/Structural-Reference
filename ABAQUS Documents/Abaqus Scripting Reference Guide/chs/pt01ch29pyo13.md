@@ -97,7 +97,3 @@ CastIronPlasticity 对象具有与 [CastIronPlasticity](pt01ch29pyo13.md#ker-cas
 
 | [*CAST IRON PLASTICITY](../key/key-link.md#usb-kws-mcastironplastic) |
 | --- |
-
-
-
-

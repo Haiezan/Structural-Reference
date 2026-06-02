@@ -36,7 +36,7 @@ Float 元组序列，指定下述项目。
 
 *meridionalEccentricity*
 
-Float，指定子午平面中的流动势偏心率，![](../graphics/ker_eqn00062.gif)。默认值为 0.1。
+Float，指定子午平面中的流动势偏心率，![](../graphics/ker_eqn00290.gif)![](../graphics/ker_eqn00062.gif)。默认值为 0.1。
 
 *temperatureDependency*
 
@@ -53,8 +53,8 @@ Boolean，指定是否需要张力截止规范。默认值为 OFF。
 **表格数据**
 
 表格数据指定以下内容：
-- 高围压下 ![](../graphics/ker_eqn00092.gif)-![](../graphics/ker_eqn00292.gif) 平面中的摩擦角（以度为单位），![](../graphics/ker_eqn00291.gif)。
-- 高围压下 ![](../graphics/ker_eqn00092.gif)-![](../graphics/ker_eqn00293.gif) 平面中的膨胀角，![](../graphics/ker_eqn00132.gif)。
+- 高围压下  平面中的摩擦角（以度为单位），![](../graphics/ker_eqn00291.gif)。
+- 高围压下 ![](../graphics/ker_eqn00092.gif)-![](../graphics/ker_eqn00292.gif) 平面中的膨胀角，![](../graphics/ker_eqn00132.gif)![](../graphics/ker_eqn00092.gif)![](../graphics/ker_eqn00293.gif)。
 - 温度（如果数据依赖于温度）。
 - 第一个场变量的值（如果数据依赖于场变量）。
 - 第二个场变量的值。

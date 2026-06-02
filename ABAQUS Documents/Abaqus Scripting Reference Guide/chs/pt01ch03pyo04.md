@@ -34,7 +34,3 @@ Correlation 对象具有以下成员：
 *timeSpan*
 
 一个 SymbolicConstant，指定幅度的时间跨度。可能的值为 STEP 和 TOTAL。默认值为 STEP。
-
-
-
-

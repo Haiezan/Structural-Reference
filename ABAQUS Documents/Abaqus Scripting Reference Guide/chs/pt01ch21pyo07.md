@@ -1,5 +1,5 @@
 # 21.7 OdbMeshRegionData 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -258,8 +258,3 @@ OdbMeshRegionData 对象具有以下成员：
 *variableLabel*
 
 一个 String，指定场输出变量。
-
-
-
-
-

@@ -164,8 +164,3 @@ RangeError。
 ### 17.13.2 成员
 
 LoadDisplayOptions 对象的成员与 [setValues](pt01ch17pyo13.md#ker-loaddisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

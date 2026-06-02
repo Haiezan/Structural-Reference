@@ -174,7 +174,3 @@ VelocityAdaptiveMeshConstraint 对象可以具有以下成员：
 *localCsys*
 
 `None` 或一个 [DatumCsys](pt01ch15pyo03.md) 对象，指定自适应网格约束自由度的局部坐标系。如果 *localCsys*=`None`，则在全局坐标系中定义自由度。默认值为 `None`。
-
-
-
-

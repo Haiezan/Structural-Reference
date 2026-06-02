@@ -9,11 +9,11 @@
 
 此选项用于定义受限的数学函数集，以在连接器可用分量所张成的空间中表示屈服或极限面。它只能与以下选项结合使用：[*CONNECTOR DAMAGE EVOLUTION](ch03abk37.md)、[*CONNECTOR DAMAGE INITIATION](ch03abk38.md)、[*CONNECTOR FRICTION](ch03abk43.md) 或 [*CONNECTOR PLASTICITY](ch03abk48.md)。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -48,7 +48,3 @@ OPERATOR
 **第一行：**
 
 根据需要重复此数据行以定义势函数。
-
-
-
-

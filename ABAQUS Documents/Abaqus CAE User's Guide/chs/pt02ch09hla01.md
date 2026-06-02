@@ -35,7 +35,3 @@
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下项目：- ["理解创建和分析模型时生成的文件，"第9.4节"](pt02ch09s04.md)
 - ["Abaqus/CAE命令文件，"第9.5节"](pt02ch09s05.md)
-
-
-
-

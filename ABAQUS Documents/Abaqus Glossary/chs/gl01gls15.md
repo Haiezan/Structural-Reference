@@ -36,6 +36,3 @@
 
 每个本机或孤立网格元素质心处的空间变化方向。[离散方向](gl01gls05.md#gls-discreteorient) 的 normal axis 代表材料方向的主法线方向。Abaqus/CAE 使用 normal axis 和 [primary axis](gl01gls17.md#gls-primaryaxis) 构建右手笛卡尔坐标系。您选择要在结果方向中表示 normal axis 的坐标系轴，并选择拓扑或基准或输入向量值来定义所需的轴。
 更多信息：- [「将离散方向用于材料方向和复合铺层方向，」Abaqus/CAE User's Guide 第 12.16 节](../usi/usi-link.md#usi-prp-discrete-orient)
-
-
-

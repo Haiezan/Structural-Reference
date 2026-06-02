@@ -319,7 +319,7 @@ abaqus viewer odb=skew
 
 **图5-13** 斜板模型中的壳单元法线
 
-![Shell element normals in the skew plate model](../graphics/gss-normals-c.png)
+![](../graphics/gsk_eqn00032.gif)![](../graphics/gsk_eqn00042.gif)![](../graphics/gsk_eqn00043.gif)![](../graphics/gsk_eqn00052.gif)![](../graphics/gsk_eqn00044.gif)![](../graphics/gsk_eqn00045.gif)![](../graphics/gsk_eqn00046.gif)![](../graphics/gsk_eqn00047.gif)![](../graphics/gsk_eqn00048.gif)![](../graphics/gsk_eqn00049.gif)![](../graphics/gsk_eqn00050.gif)![](../graphics/gsk_eqn00042.gif)![](../graphics/gsk_eqn00053.gif)![](../graphics/ico_plotCommonOptions.png)![](../graphics/ico_viewRotate.png)![](../graphics/gsk_eqn00054.gif)![](../graphics/gsk_eqn00055.gif)![](../graphics/gsk_eqn00056.gif)![Shell element normals in the skew plate model](../graphics/gss-normals-c.png)
 
 **符号图**
 
@@ -373,7 +373,7 @@ abaqus viewer odb=skew
 
 **图5-15** 板底面上的主应力符号图
 
-![Symbol plot of principal stresses on the bottom surface of the plate](../graphics/gss-vector-plot-c.png)
+![](../graphics/ico_plotSymbolOptions.png)![Symbol plot of principal stresses on the bottom surface of the plate](../graphics/gss-vector-plot-c.png)
 
 8. 默认情况下，主应力显示在截面点1。要在非默认截面点绘制应力，从主菜单栏选择**结果 → 截面点**打开"截面点"对话框。
 
@@ -413,7 +413,7 @@ Abaqus/Viewer还允许您可视化单元材料方向。如果您想验证材料�
 
 **图5-17** 板中材料取向方向的绘图
 
-![Plot of material orientation directions in the plate](../graphics/gss-orientation-c.png)
+![](../graphics/ico_plotMatOrientUndeformed.png)![](../graphics/ico_plotMatOrientOptions.png)![](../graphics/ico_viewParallel.png)![Plot of material orientation directions in the plate](../graphics/gss-orientation-c.png)
 
 **基于表格数据评估结果**
 

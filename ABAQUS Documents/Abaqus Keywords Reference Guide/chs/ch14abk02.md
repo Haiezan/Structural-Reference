@@ -12,11 +12,11 @@
 
 此选项用于通过在两个边界之间填充节点来为网格区域生成节点。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 **Abaqus/CAE：**不适用；节点是在对模型进行网格划分时生成的。
 

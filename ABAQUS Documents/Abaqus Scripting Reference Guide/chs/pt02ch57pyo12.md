@@ -79,4 +79,3 @@ TrapezoidalProfile 对象具有与 [TrapezoidalProfile](pt02ch57pyo12.md#ker-tra
 
 | [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=TRAPEZOID |
 | --- |
-

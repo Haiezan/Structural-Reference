@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**引入了新的接触相关整体模型能量，并且能量计算（ETOTAL）已得到改进。
 
@@ -39,4 +39,3 @@
 
 **Abaqus Example Problems Guide**
 - ["Energy computations in a contact analysis," Section 1.1.25](../exa/exa-link.md#exa-sta-contactenergy)
-

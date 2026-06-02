@@ -30,15 +30,15 @@ session.odbs[*name*].steps[*name*].frames[*i*].fieldOutputs[*name*].values[*i*]\
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].NodeSet                   
+session.odbs[*name*].parts[*name*].NodeSet
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].NodeSet                   
+session.odbs[*name*].rootAssembly.instances[*name*].NodeSet
 ```
 
 ```
-session.odbs[*name*].rootAssembly.NodeSet                   
+session.odbs[*name*].rootAssembly.NodeSet
 ```
 
 **必要参数**
@@ -78,15 +78,15 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].NodeSetFromNodeLabels                   
+session.odbs[*name*].parts[*name*].NodeSetFromNodeLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].NodeSetFromNodeLabels                   
+session.odbs[*name*].rootAssembly.instances[*name*].NodeSetFromNodeLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.NodeSetFromNodeLabels                   
+session.odbs[*name*].rootAssembly.NodeSetFromNodeLabels
 ```
 
 **必要参数**
@@ -126,11 +126,11 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].ElementSet                   
+session.odbs[*name*].parts[*name*].ElementSet
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].ElementSet                   
+session.odbs[*name*].rootAssembly.instances[*name*].ElementSet
 ```
 
 **必要参数**
@@ -170,15 +170,15 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].ElementSetFromElementLabels                   
+session.odbs[*name*].parts[*name*].ElementSetFromElementLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].ElementSetFromElementLabels                   
+session.odbs[*name*].rootAssembly.instances[*name*].ElementSetFromElementLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.ElementSetFromElementLabels                   
+session.odbs[*name*].rootAssembly.ElementSetFromElementLabels
 ```
 
 **必要参数**
@@ -218,15 +218,15 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].MeshSurface                   
+session.odbs[*name*].parts[*name*].MeshSurface
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].MeshSurface                   
+session.odbs[*name*].rootAssembly.instances[*name*].MeshSurface
 ```
 
 ```
-session.odbs[*name*].rootAssembly.MeshSurface                   
+session.odbs[*name*].rootAssembly.MeshSurface
 ```
 
 **必要参数**
@@ -275,15 +275,15 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].MeshSurfaceFromElsets                   
+session.odbs[*name*].parts[*name*].MeshSurfaceFromElsets
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].MeshSurfaceFromElsets                   
+session.odbs[*name*].rootAssembly.instances[*name*].MeshSurfaceFromElsets
 ```
 
 ```
-session.odbs[*name*].rootAssembly.MeshSurfaceFromElsets                   
+session.odbs[*name*].rootAssembly.MeshSurfaceFromElsets
 ```
 
 **必要参数**
@@ -320,15 +320,15 @@ InvalidNameError。
 **路径**
 
 ```
-session.odbs[*name*].parts[*name*].MeshSurfaceFromLabels                   
+session.odbs[*name*].parts[*name*].MeshSurfaceFromLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.instances[*name*].MeshSurfaceFromLabels                   
+session.odbs[*name*].rootAssembly.instances[*name*].MeshSurfaceFromLabels
 ```
 
 ```
-session.odbs[*name*].rootAssembly.MeshSurfaceFromLabels                   
+session.odbs[*name*].rootAssembly.MeshSurfaceFromLabels
 ```
 
 **必要参数**
@@ -342,7 +342,7 @@ session.odbs[*name*].rootAssembly.MeshSurfaceFromLabels
 曲面标签序列。例如，
 
 ```
-surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))), 
+surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))),
 ('Instance-2', ((10, FACE3), (12, FACE4))))
 ```
 其中 `10` 是元素编号，`FACE1` 指示元素的侧面。

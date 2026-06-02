@@ -10,11 +10,11 @@
 
 This option is used to assign element section properties to ITT-, ISL-, IRS-, and ASI-type contact elements.
 
-**Products: **Abaqus/Standard  Abaqus/CAE  
+**Products: **Abaqus/Standard  Abaqus/CAE
 
-**Type: **Model data  
+**Type: **Model data
 
-**Level: **Part,  Part instance,  Assembly  
+**Level: **Part,  Part instance,  Assembly
 
 **Abaqus/CAE: **Property module; supported for two-dimensional, three-dimensional, and axisymmetric acoustic interface elements. Contact elements are not supported.
 
@@ -60,7 +60,3 @@ There are no data lines.
 ### **Data lines for ASI-type elements for use with axisymmetric elements or 3D elements: **
 
 There are no data lines.
-
-
-
-

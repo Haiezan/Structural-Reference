@@ -1,4 +1,4 @@
-# *CONWEP CHARGE PROPERTY
+***CONWEP CHARGE PROPERTY**
 
 
 
@@ -9,9 +9,9 @@
 
 此选项定义用于模拟空气中爆炸的压力载荷时间历史的参数。此选项必须与 [*INCIDENT WAVE INTERACTION PROPERTY](ch09abk11.md) 选项结合使用。压力载荷使用 CONWEP 模型经验数据计算，其中质量、长度、时间和压力以特定单位给出。为 CONWEP 数据单位与分析单位之间的转换定义乘数因子。
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**模型
 
@@ -27,7 +27,3 @@
 **第一行：**
 
 **第二行（如果分析使用 SI 单位，则输入空行）：**
-
-
-
-

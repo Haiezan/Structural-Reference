@@ -9,11 +9,11 @@
 
 此选项用于引用包含部分 Abaqus 输入文件的外部文件。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：** 模型或历史数据  
+**类型：** 模型或历史数据
 
-**级别：** 零件、零件实例、装配、模型、步骤  
+**级别：** 零件、零件实例、装配、模型、步骤
 
 **Abaqus/CAE：** Abaqus/CAE 中的多个输入数据选项提供了引用外部文件的功能；例如，材料编辑器可以从 ASCII 文件读取材料特性。
 
@@ -34,7 +34,3 @@ PASSWORD
 当外部文件已加密时，将此参数设置为文件的密码。密码区分大小写。
 
 **此选项没有关联的数据行。**
-
-
-
-

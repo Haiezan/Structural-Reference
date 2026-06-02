@@ -112,6 +112,3 @@ SpectrumAmplitude 对象具有与 [SpectrumAmplitude](pt01ch03pyo12.md#ker-spect
 
 | [*SPECTRUM](../key/key-link.md#usb-kws-mspectrum) |
 | --- |
-
-
-

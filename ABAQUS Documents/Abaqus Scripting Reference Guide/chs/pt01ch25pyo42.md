@@ -77,6 +77,3 @@ GapHeatGeneration 对象具有以下成员：
 
 | [*GAP HEAT GENERATION](../key/key-link.md#usb-kws-mgapheatgener) |
 | --- |
-
-
-

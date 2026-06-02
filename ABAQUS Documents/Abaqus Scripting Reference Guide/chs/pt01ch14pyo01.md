@@ -29,4 +29,3 @@ CommandRegister 对象。
 ### 14.1.2 成员
 
 CommandRegister 对象没有成员。
-

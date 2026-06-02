@@ -46,8 +46,3 @@ Filter 对象具有以下成员：
 *invariant*
 
 一个 SymbolicConstant，指定应用滤波的不变量。可能的值为 NONE、FIRST 和 SECOND。默认值为 NONE。
-
-
-
-
-

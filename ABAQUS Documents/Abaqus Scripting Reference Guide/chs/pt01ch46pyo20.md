@@ -99,5 +99,3 @@ SectionLayer 对象的成员与 [SectionLayer](pt01ch46pyo20.md#ker-sectionlayer
 | [*SHELL SECTION](../key/key-link.md#usb-kws-mshellsection) |
 | --- |
 | [*SHELL GENERAL SECTION](../key/key-link.md#usb-kws-mshellgensect) |
-
-

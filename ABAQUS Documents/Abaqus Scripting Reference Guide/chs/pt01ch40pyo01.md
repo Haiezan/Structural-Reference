@@ -744,4 +744,3 @@ BasicOptions 对象可以具有以下成员：
 *userRegions*
 
 字符串元组，指定定义平均区域边界的单元集或显示组名称（取决于 `regionBoundaries` 的值）。默认值为空序列。
-

@@ -184,6 +184,3 @@ Profile 还指变量在空间或时间上的分布，如温度 profile 或风速
 
 Abaqus/CAE 模块，允许您通过创建截面定义并将其分配给零件或零件区域来定义模型的材料和截面属性。大多数截面定义引用您也使用 Property 模块创建的材料定义。
 更多信息：- [第 12 章，「The Property module，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-prp)
-
-
-

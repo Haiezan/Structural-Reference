@@ -8,11 +8,11 @@
 
 此选项用于对单元上的基础进行建模。
 
-**产品：**Abaqus/Standard   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件，部件实例，装配  
+**级别：**部件，部件实例，装配
 
 **Abaqus/CAE：**相互作用模块
 

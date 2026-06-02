@@ -8,11 +8,11 @@
 
 此选项用于执行特征值提取以计算系统的固有频率和相应的振型。
 
-**产品：**Abaqus/Standard   Abaqus/CAE   Abaqus/AMS   
+**产品：**Abaqus/Standard   Abaqus/CAE   Abaqus/AMS
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**步骤模块
 

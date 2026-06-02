@@ -1,4 +1,4 @@
-# *CONTACT CLEARANCE
+***CONTACT CLEARANCE**
 
 
 
@@ -9,11 +9,11 @@
 
 此选项用于创建接触间隙属性定义。接触间隙属性将管理通过 [*CONTACT CLEARANCE ASSIGNMENT](ch03abk56.md) 选项分配这些属性的任何接触相互作用。
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 ##### **参考：**
 
@@ -59,7 +59,3 @@ SEARCH NSET
 如果使用了 SEARCH ABOVE 或 SEARCH BELOW 参数，则不能使用此参数。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

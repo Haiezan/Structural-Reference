@@ -94,4 +94,3 @@ IProfile 对象具有与 [IProfile](pt02ch57pyo07.md#ker-iprofile-iprofile-cpp) 
 
 | [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=I |
 | --- |
-

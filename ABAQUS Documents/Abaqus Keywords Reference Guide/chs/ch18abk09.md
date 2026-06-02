@@ -50,7 +50,3 @@ OP
 对于非均匀流动，参考孔隙压力值 ![](../graphics/key_eqn00712.gif) 和参考渗流系数 ![](../graphics/key_eqn00556.gif) 在用户子程序[`FLOW`](../sub/sub-link.md#sub-xsl-flow)中定义。
 
 根据需要重复此数据行以定义各种表面的非均匀渗流。
-
-
-
-

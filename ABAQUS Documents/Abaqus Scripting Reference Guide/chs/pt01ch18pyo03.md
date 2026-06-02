@@ -53,8 +53,3 @@ mdb.meshEditOptions
 ### 18.3.2 成员
 
 MeshEditOptions 对象具有与 [setValues](pt01ch18pyo03.md#ker-mesheditoptions-setvalues-pyc) 方法的参数相同的名称和描述的成员。
-
-
-
-
-

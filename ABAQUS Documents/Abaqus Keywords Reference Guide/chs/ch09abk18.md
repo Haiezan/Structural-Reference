@@ -1,5 +1,5 @@
 # *INTEGRATED OUTPUT SECTION
-
+![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)![](../graphics/key_eqn00372.gif)![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)![](../graphics/key_eqn00849.gif)![](../graphics/key_eqn00018.gif)
 
 
 
@@ -9,11 +9,11 @@
 
 此选项用于将表面与坐标系和/或参考节点关联，以跟踪表面的平均运动。它也可以与集成输出请求结合使用，以获取在表面上积分的量的输出。
 
-**产品：** Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 零件、零件实例、装配  
+**级别：** 零件、零件实例、装配
 
 **Abaqus/CAE：** Step 模块
 
@@ -75,3 +75,73 @@ REF NODE MOTION
 
 
 
+### **Optional parameters: **
+### **Data line for TYPE=ACOUSTIC STATIC PRESSURE: **
+### **Data lines for TYPE=CONCENTRATION: **
+### **Data lines for TYPE=CONTACT: **
+### **Data lines for TYPE=DAMAGE INITIATION, CRITERION=DUCTILE or CRITERION=SHEAR if the REBAR and SECTION POINTS parameters are omitted: **
+### **Data lines for TYPE=DAMAGE INITIATION, CRITERION=DUCTILE or CRITERION=SHEAR with the REBAR parameter included: **
+### **Data lines for TYPE=DAMAGE INITIATION, CRITERION=DUCTILE or CRITERION=SHEAR with the SECTION POINTS parameter included: **
+### **Data lines for TYPE=DAMAGE INITIATION, CRITERION=MSFLD: **
+### **Data lines for TYPE=ENRICHMENT: **
+### **Data lines for TYPE=FIELD, VARIABLE=*n*: **
+### **No data lines are required for TYPE=FIELD, VARIABLE=*n*, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **Data lines for TYPE=FLUID PRESSURE: **
+### **Data lines to prescribe initial equivalent plastic strain or backstresses using TYPE=HARDENING if the REBAR, SECTION POINTS, and USER parameters are omitted: **
+### **Data lines to prescribe initial volumetric compacting plastic strain for the crushable foam model using TYPE=HARDENING: **
+### **Data lines for TYPE=HARDENING, REBAR: **
+### **No data lines are required for TYPE=HARDENING, USER. **
+### **Data lines for TYPE=HARDENING, SECTION POINTS: **
+### **Data lines for TYPE=INITIAL GAP: **
+### **Data lines for TYPE=MASS FLOW RATE: **
+### **Data lines for TYPE=NODE REF COORDINATE: **
+### **Data lines to prescribe initial plastic strains using TYPE=PLASTIC STRAIN if the REBAR and SECTION POINTS parameters are omitted: **
+### **Data lines for TYPE=PLASTIC STRAIN, REBAR: **
+### **Data lines for TYPE=PLASTIC STRAIN, SECTION POINTS: **
+### **Data lines for TYPE=PORE PRESSURE if the USER parameter is omitted: **
+### **No data lines are required for TYPE=PORE PRESSURE, USER. **
+### **No data lines are required for TYPE=PORE PRESSURE, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **No data lines are required for TYPE=PORE PRESSURE, FILE=*file*, STEP=*step*, INC=*inc*, INTERPOLATE. **
+### **Data lines for TYPE=PORE PRESSURE, FILE=*file*, STEP=*step*, INC=*inc*, DRIVING ELSETS: **
+### **Data lines for TYPE=POROSITY: **
+### **Data lines for TYPE=PRESSURE STRESS: **
+### **No data lines are required for TYPE=PRESSURE STRESS, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **Data lines for TYPE=RATIO if the USER parameter is omitted: **
+### **No data lines are required for TYPE=RATIO, USER. **
+### **No data lines are required for TYPE=RATIO, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **Data lines for TYPE=RATIO, FILE=*file*, STEP=*step*, INC=*inc*, DRIVING ELSETS: **
+### **Data lines for TYPE=REF COORDINATE: **
+### **Data lines for TYPE=RELATIVE DENSITY: **
+### **Data lines for TYPE=ROTATING VELOCITY, DEFINITION=COORDINATES: **
+### **Data lines for TYPE=ROTATING VELOCITY, DEFINITION=NODES: **
+### **Data lines for TYPE=SATURATION: **
+### **Data lines for TYPE=SOLUTION if the USER and REBAR parameters are omitted: **
+### **Data lines for TYPE=SOLUTION, REBAR: **
+### **No data lines are required for TYPE=SOLUTION, USER. **
+### **Data lines for TYPE=SPECIFIC ENERGY: **
+### **Data lines for TYPE=SPUD EMBEDMENT: **
+### **Data lines for TYPE=SPUD PRELOAD: **
+### **Data lines for TYPE=STRESS if the GEOSTATIC, REBAR, SECTION POINTS, and USER parameters are omitted: **
+### **Data lines for TYPE=STRESS, GEOSTATIC: **
+### **Data lines for TYPE=STRESS, REBAR: **
+### **Data lines for TYPE=STRESS, SECTION POINTS: **
+### **No data lines are required for TYPE=STRESS, USER. **
+### **No data lines are required for TYPE=STRESS, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **Data lines for TYPE=TEMPERATURE: **
+### **No data lines are required for TYPE=TEMPERATURE, FILE=*file*, STEP=*step*, INC=*inc*. **
+### **Data lines for TYPE=TEMPERATURE, FILE=*file*, STEP=*step*, INC=*inc*, INTERPOLATE, DRIVING ELSETS: **
+### **Data lines for TYPE=VELOCITY: **
+### **Data lines for TYPE=VOLUME FRACTION: **
+### Defining initial conditions in Abaqus/CFD
+### **Required parameters: **
+### **Data line for TYPE=DENSITY: **
+### **Data lines for TYPE=VELOCITY: **
+### **Data line for TYPE=TEMPERATURE: **
+### **Data line for TYPE=TURBKE: **
+### **Data line for TYPE=TURBEPS: **
+### **Data line for TYPE=TURBOMEGA: **
+### **Data line for TYPE=TURBNU: **
+### **Data line for TYPE=TURBINTENSITY: **
+### **Data line for TYPE=TURBVELOCITYSCALE: **
+### **Data line for TYPE=TURBVISCOSITYRATIO: **
+### **Data line for TYPE=TURBLENGTHSCALE: **

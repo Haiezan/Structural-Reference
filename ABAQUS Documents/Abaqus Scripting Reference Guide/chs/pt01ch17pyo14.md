@@ -1,5 +1,5 @@
 # 17.14 MeshDisplayOptions 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -81,8 +81,3 @@ RangeError。
 ### 17.14.2 成员
 
 MeshDisplayOptions 对象的成员与 [setValues](pt01ch17pyo14.md#ker-meshdisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

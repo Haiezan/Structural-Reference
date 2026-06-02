@@ -9,9 +9,9 @@
 
 此选项用于定义两个相互作用表面之间的粘性阻尼。必须与 [*SURFACE INTERACTION](ch18abk50.md)、[*GAP](ch07abk01.md) 或 [*INTERFACE](ch09abk22.md) 选项结合使用。在 Abaqus/Standard 中，此选项主要用于阻尼表面接近或分离过程中的相对运动。在 Abaqus/Explicit 中，此选项在使用惩罚或软化接触时用于阻尼振荡。如果为表面相互作用指定了用户子程序 [`VUINTER`](../sub/sub-link.md#sub-xsl-vuinter) 或 [`VUINTERACTION`](../sub/sub-link.md#sub-xsl-vuinteraction)，则此选项不适用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据  
+**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据
 
 **级别：**部件、部件实例、装配、Abaqus/Standard 中的模型；Abaqus/Explicit 中的模型或步骤
 
@@ -41,7 +41,3 @@ TANGENT FRACTION
 ### **用于定义接触表面之间法向粘性阻尼的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

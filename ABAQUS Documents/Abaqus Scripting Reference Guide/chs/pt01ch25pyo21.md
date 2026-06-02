@@ -91,6 +91,3 @@ ContactProperty 对象可以具有以下成员：
 
 | [*SURFACE INTERACTION](../key/key-link.md#usb-kws-hsurfaceinteraction) |
 | --- |
-
-
-

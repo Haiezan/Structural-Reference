@@ -81,4 +81,3 @@ AdjustPoints 对象的成员与 [AdjustPoints](pt01ch13pyo02.md#ker-adjustpoints
 
 | [*ADJUST](../key/key-link.md#usb-kws-madjust) |
 | --- |
-

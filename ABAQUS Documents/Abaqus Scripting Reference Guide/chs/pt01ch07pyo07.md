@@ -91,7 +91,3 @@ IgnoredEdge 对象具有以下成员：
 *pointOn*
 
 一个 Float 元组，指定位于边缘上的点的 *X*-、*Y*- 和 *Z*- 坐标。
-
-
-
-

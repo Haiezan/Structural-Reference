@@ -188,5 +188,3 @@
 | **AFXSPINNER_RADIOBUTTON** | 使用单选按钮而不是标签。 |
 | **AFXSPINNER_VERTICAL** | 将标签或按钮置于微调框上方。 |
 | **AFXSPINNER_READONLY** | 将微调框配置为只读状态。 |
-
-

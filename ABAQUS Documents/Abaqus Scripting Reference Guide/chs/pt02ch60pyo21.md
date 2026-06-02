@@ -49,8 +49,7 @@ ConcreteDamagedPlasticity(const odb_SequenceSequenceDouble& table,
 - 剪胀角，![](../graphics/ker_eqn00132.gif)（度），在 ![](../graphics/ker_eqn00092.gif)--![](../graphics/ker_eqn00094.gif) 平面内。
 - 流动势偏心率，![](../graphics/ker_eqn00062.gif)。默认值为 0.1。
 - ![](../graphics/ker_eqn00133.gif)，初始等双轴压缩屈服应力与初始单轴压缩屈服应力之比。默认值为 1.16。
-- ![](../graphics/ker_eqn00134.gif)，在任意给定的压力不变量 ![](../graphics/ker_eqn00092.gif]（使得最大主应力为负）下，拉伸子午线上第二应力不变量与压缩子午线上第二应力不变量的比值，在初始屈服时。默认值为 2/3。
-- 粘度参数，![](../graphics/ker_eqn00041.gif)，用于 Abaqus/Standard 分析中混凝土本构方程的粘塑性正则化。此参数在 Abaqus/Explicit 分析中被忽略。默认值为 0.0。
+- ![](../graphics/ker_eqn00134.gif)，在任意给定的压力不变量 ![](../graphics/ker_eqn00092.gif)![](../graphics/ker_eqn00041.gif)，用于 Abaqus/Standard 分析中混凝土本构方程的粘塑性正则化。此参数在 Abaqus/Explicit 分析中被忽略。默认值为 0.0。
 - 温度（如果数据依赖温度）。
 - 第一个场变量的值（如果数据依赖场变量）。
 - 第二个场变量的值。

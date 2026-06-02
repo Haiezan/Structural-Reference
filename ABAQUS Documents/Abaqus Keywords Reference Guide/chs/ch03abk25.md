@@ -8,7 +8,7 @@
 
 此选项只能与[*VISCOELASTIC](ch21abk04.md)选项结合使用，且不能与[*SHEAR TEST DATA](ch18abk13.md)和[*VOLUMETRIC TEST DATA](ch21abk08.md)选项一起使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -48,7 +48,3 @@ VOLINF
 **第一行：**
 
 根据需要重复上述数据行以给出模量-时间数据。
-
-
-
-

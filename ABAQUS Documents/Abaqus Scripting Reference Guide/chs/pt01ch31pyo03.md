@@ -75,7 +75,7 @@ This argument is applicable only to some Abaqus/Explicit elements.
 
 *lengthRatio*
 
-A Float specifying the length ratio for distortion control in crushable materials. Possible values are 0.0 ![](../graphics/ker_eqn00013.gif) *lengthRatio* ![](../graphics/ker_eqn00013.gif) 1.0. The default value is *lengthRatio*=![](../graphics/ker_eqn00405.gif) 
+A Float specifying the length ratio for distortion control in crushable materials. Possible values are 0.0 ![](../graphics/ker_eqn00013.gif) *lengthRatio* ![](../graphics/ker_eqn00013.gif) 1.0. The default value is *lengthRatio*=![](../graphics/ker_eqn00405.gif)
 
 This argument is applicable only when *distortionControl* is ON.
 
@@ -101,7 +101,7 @@ This argument is applicable only to some Abaqus/Explicit elements.
 
 A Float specifying the displacement hourglass scaling factor. The default value will be used where appropriate. The default value is 1.0.
 
-This argument is applicable only to some Abaqus/Explicit elements. 
+This argument is applicable only to some Abaqus/Explicit elements.
 
 *rotationalHourglass*
 
@@ -172,7 +172,3 @@ None.
 ### 31.3.2 Members
 
 The ElemType object has members with the same names and descriptions as the arguments to the [ElemType](pt01ch31pyo03.md#ker-elemtype-elemtype-pyc) method.
-
-
-
-

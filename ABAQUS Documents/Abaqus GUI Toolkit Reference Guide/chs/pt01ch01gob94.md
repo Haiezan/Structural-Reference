@@ -150,8 +150,3 @@
 | **MENUBUTTON_ATTACH_BOTTOM** | 弹出窗口附着在菜单按钮底部。 |
 | **MENUBUTTON_ATTACH_CENTER** | 弹出窗口附着在菜单按钮中央。 |
 | **MENUBUTTON_ATTACH_BOTH** | 弹出窗口附着在菜单按钮两侧。 |
-
-
-
-
-

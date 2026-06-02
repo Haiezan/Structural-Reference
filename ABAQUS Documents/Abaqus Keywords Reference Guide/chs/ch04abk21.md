@@ -10,11 +10,11 @@
 
 对于多步骤分析，所有参数值在分析期间保持不变，直到在下一次步骤开始时明确重新定义。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**Abaqus/Standard中的模型数据；Abaqus/Explicit中的历史数据  
+**类型：**Abaqus/Standard中的模型数据；Abaqus/Explicit中的历史数据
 
-**级别：**Abaqus/Standard中的模型；Abaqus/Explicit中的步骤  
+**级别：**Abaqus/Standard中的模型；Abaqus/Explicit中的步骤
 
 ##### **参考：**
 
@@ -108,7 +108,3 @@ NONHYBRID INCOMPRESSIBLE
 设置 NONHYBRID INCOMPRESSIBLE=WARNING 以将错误消息替换为相应的警告消息。
 
 **此选项没有关联的数据行。**
-
-
-
-

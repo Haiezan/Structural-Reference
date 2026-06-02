@@ -49,4 +49,3 @@ OdbDisplayOptions 对象具有以下成员：
 *displayBodyOptions*
 
  [DGDisplayBodyOptions](pt01ch40pyo05.md) 对象。
-

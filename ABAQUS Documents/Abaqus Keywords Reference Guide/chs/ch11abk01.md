@@ -9,11 +9,11 @@
 
 此选项分别使用材料参数 ![](../graphics/key_eqn00884.gif) 和 ![](../graphics/key_eqn00885.gif) 来引入温度和压力驱动的质量扩散。它必须紧跟在 [*DIFFUSIVITY](ch04abk23.md) 选项之后。对于 [*DIFFUSIVITY](ch04abk23.md) 选项的每次使用，[*KAPPA](ch11abk01.md) 可以与 TYPE=TEMP 一起使用一次，也可以与 TYPE=PRESS 一起使用一次。[*KAPPA](ch11abk01.md), TYPE=TEMP 和 [*DIFFUSIVITY](ch04abk23.md), LAW=FICK 选项是互斥的。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -47,7 +47,3 @@ TYPE
 **后续行（仅在 DEPENDENCIES 参数的值大于五时需要）：**
 
 根据需要重复此组数据行，以将 ![](../graphics/key_eqn00885.gif) 定义为浓度、温度和其他预定义场变量的函数。
-
-
-
-

@@ -220,7 +220,3 @@ The ConnectorSection object has members with the same names and descriptions as 
 | --- |
 | [*CONNECTOR BEHAVIOR](../key/key-link.md#usb-kws-mconnectorbehavior) |
 | [*CONNECTOR CONSTITUTIVE REFERENCE](../key/key-link.md#usb-kws-mconnectorconstref) |
-
-
-
-

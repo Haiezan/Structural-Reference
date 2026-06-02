@@ -1,5 +1,5 @@
 # 23.5 writeFieldReport
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -75,8 +75,3 @@ session.writeFieldReport
 **异常**
 
 无。
-
-
-
-
-

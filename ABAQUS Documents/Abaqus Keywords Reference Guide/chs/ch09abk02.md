@@ -9,11 +9,11 @@
 
 此选项用于在声学分析中定义压力与表面位移和速度法向分量之间的比例因子。[*IMPEDANCE PROPERTY](ch09abk02.md) 选项必须与 [*IMPEDANCE](ch09abk01.md) 或 [*SIMPEDANCE](ch18abk17.md) 选项一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Interaction 模块
 
@@ -52,7 +52,3 @@ INPUT
 **第一行：**
 
 在 Abaqus/Standard 中根据需要重复此数据行，以描述系数随频率的变化。仅在直接积分步骤中使用输入的第一行。
-
-
-
-

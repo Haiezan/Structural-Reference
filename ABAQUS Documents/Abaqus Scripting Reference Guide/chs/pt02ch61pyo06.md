@@ -36,8 +36,3 @@ const odb_SectionPoint& sectionPoints(int index) const;
 *sectionPoints*
 
 [SectionPoint](pt02ch61pyo28.md) 对象的序列。
-
-
-
-
-

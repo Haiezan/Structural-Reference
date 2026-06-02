@@ -53,5 +53,3 @@ SymbolicConstant，指定恢复文件中几何的格式。可能的值为 COORDI
 ### 47.6.2 成员
 
 JournalOptions 对象的成员与 [setValues](pt01ch47pyo06.md#ker-journaloptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-

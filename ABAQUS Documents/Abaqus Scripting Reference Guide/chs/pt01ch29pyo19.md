@@ -95,7 +95,3 @@ ConcreteCompressionDamage 对象具有与 [ConcreteCompressionDamage](pt01ch29py
 
 | [*CONCRETE COMPRESSION DAMAGE](../key/key-link.md#usb-kws-mconcretecompdamage) |
 | --- |
-
-
-
-

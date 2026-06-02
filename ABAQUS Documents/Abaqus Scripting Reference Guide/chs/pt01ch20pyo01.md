@@ -6,7 +6,7 @@
 
 
 
-          Abaqus/CAE is a feature-based modeling system, and features are stored in the Feature object. The user defines the parameters of the feature, and Abaqus/CAE modifies the model based on the value of the parameters. This evaluation of the parameters is called regeneration of the feature. Feature objects contain both the parameters and the resulting model modification. 
+          Abaqus/CAE is a feature-based modeling system, and features are stored in the Feature object. The user defines the parameters of the feature, and Abaqus/CAE modifies the model based on the value of the parameters. This evaluation of the parameters is called regeneration of the feature. Feature objects contain both the parameters and the resulting model modification.
 
 **Access**
 
@@ -37,11 +37,11 @@ mdb.models[*name*].rootAssembly.AttachmentPoints
 
 *name*
 
-A String specifying a unique Feature name. 
+A String specifying a unique Feature name.
 
 *points*
 
-A tuple of points. Each point can be a Vertex, Datum point, Reference point, Attachment point, orphan mesh Node, Interesting point object, or a tuple of Floats representing the coordinates of a point. 
+A tuple of points. Each point can be a Vertex, Datum point, Reference point, Attachment point, orphan mesh Node, Interesting point object, or a tuple of Floats representing the coordinates of a point.
 
 **Optional arguments**
 
@@ -79,7 +79,7 @@ None.
 
 ### 20.1.2 AttachmentPointsAlongDirection(...)
 
-This method creates a Feature object by creating attachment points along a direction or between two points. A Datum point, a Vertex, a Reference point, an Attachment point, an Interesting point, or an orphan mesh Node can be specified as the start or end point. The direction can be specified using a straight edge or a datum axis. 
+This method creates a Feature object by creating attachment points along a direction or between two points. A Datum point, a Vertex, a Reference point, an Attachment point, an Interesting point, or an orphan mesh Node can be specified as the start or end point. The direction can be specified using a straight edge or a datum axis.
 
 **Path**
 
@@ -95,7 +95,7 @@ mdb.models[*name*].rootAssembly.AttachmentPointsAlongDirection
 
 *name*
 
-A String specifying a unique Feature name. 
+A String specifying a unique Feature name.
 
 *startPoint*
 
@@ -117,23 +117,23 @@ The direction can be specified by a straight edge or a datum axis.
 
 *spacing*
 
-A float specifying the spacing to be used between two points. 
+A float specifying the spacing to be used between two points.
 
 *numPtsAlongDir*
 
-An integer specifying the number of points to be created along the specified direction. 
+An integer specifying the number of points to be created along the specified direction.
 
 *numPtsBetweenPts*
 
-An integer specifying the number of points to be created between the start and end points. 
+An integer specifying the number of points to be created between the start and end points.
 
 *createPtAtStartPt*
 
-A Boolean specifying whether to create an attachment point at the start point. The default value is True. 
+A Boolean specifying whether to create an attachment point at the start point. The default value is True.
 
 *createPtAtEndPt*
 
-A Boolean specifying whether to create an attachment point at the end point. The default value is True. 
+A Boolean specifying whether to create an attachment point at the end point. The default value is True.
 
 *projectionMethod*
 
@@ -161,7 +161,7 @@ A Boolean specifying if the direction along which the attachment points are crea
 
 *setName*
 
-A String specifying a unique set name. 
+A String specifying a unique set name.
 
 **Return value**
 
@@ -173,7 +173,7 @@ None.
 
 ### 20.1.3 AttachmentPointsOffsetFromEdges(...)
 
-This method creates a Feature object by creating attachment points along or offset from one or more connected edges. 
+This method creates a Feature object by creating attachment points along or offset from one or more connected edges.
 
 **Path**
 
@@ -189,7 +189,7 @@ mdb.models[*name*].rootAssembly.AttachmentPointsOffsetFromEdges
 
 *name*
 
-A String specifying a unique Feature name. 
+A String specifying a unique Feature name.
 
 *edges*
 
@@ -279,7 +279,7 @@ A point specifying the end point of the projection direction. The point can be a
 
 *setName*
 
-A String specifying a unique set name. 
+A String specifying a unique set name.
 
 **Return value**
 
@@ -351,7 +351,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -419,7 +419,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -459,7 +459,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -539,7 +539,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -571,7 +571,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -607,7 +607,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -677,7 +677,7 @@ A String specifying the name of the [DatumCsys](pt01ch15pyo03.md).
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -690,7 +690,7 @@ This method creates a Feature object and a [DatumCsys](pt01ch15pyo03.md) object 
 **Path**
 
 ```
-mdb.models[name].rootAssembly.DatumCsysByOffset 
+mdb.models[name].rootAssembly.DatumCsysByOffset
 ```
 
 ```
@@ -723,7 +723,7 @@ A String specifying the name of the [DatumCsys](pt01ch15pyo03.md).
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -774,7 +774,7 @@ A String specifying the name of the [DatumCsys](pt01ch15pyo03.md).
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -816,7 +816,7 @@ A String specifying the name of the [DatumCsys](pt01ch15pyo03.md).
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -852,7 +852,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -928,7 +928,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1008,7 +1008,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1044,7 +1044,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1116,7 +1116,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1148,7 +1148,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1184,7 +1184,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1220,7 +1220,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1268,7 +1268,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1304,7 +1304,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1340,7 +1340,7 @@ None.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -1368,7 +1368,7 @@ A Vertex, an InterestingPoint, a MeshNode, or a [Datum](pt01ch15pyo01.md) object
 
 *face*
 
-A Face object or a [Datum](pt01ch15pyo01.md) object representing a datum plane. 
+A Face object or a [Datum](pt01ch15pyo01.md) object representing a datum plane.
 
 **Note:**Any other types of planes are not supported.
 
@@ -2492,7 +2492,7 @@ mdb.models[*name*].rootAssembly.WirePolyLine
 
 *points*
 
-A tuple of point pairs, each pair being itself represented by a tuple. For part level features each point can be a Vertex, Datum point, Reference point, orphan mesh Node, or InterestingPoint object specifying the points through which the polyline wire will pass. Each point can also be a tuple of Floats representing the coordinates of a point. For assembly level features each point can only be a Vertex, Reference point, or orphan mesh Node specifying the points through which the polyline wire will pass (coordinates cannot be specified). In any of the pairs, the first or second point can be NONE. In that case, the point pair will create a zero-length wire, which is required for certain types of connectors. You must specify at least one pair. 
+A tuple of point pairs, each pair being itself represented by a tuple. For part level features each point can be a Vertex, Datum point, Reference point, orphan mesh Node, or InterestingPoint object specifying the points through which the polyline wire will pass. Each point can also be a tuple of Floats representing the coordinates of a point. For assembly level features each point can only be a Vertex, Reference point, or orphan mesh Node specifying the points through which the polyline wire will pass (coordinates cannot be specified). In any of the pairs, the first or second point can be NONE. In that case, the point pair will create a zero-length wire, which is required for certain types of connectors. You must specify at least one pair.
 
 **Optional arguments**
 
@@ -2522,7 +2522,7 @@ None.
 
 **Return value**
 
-A Boolean value of True if the feature is suppressed and False if it is not suppressed.                   
+A Boolean value of True if the feature is suppressed and False if it is not suppressed.
 
 **Exceptions**
 
@@ -2625,7 +2625,3 @@ A String specifying the repository key.
 *id*
 
 An Int specifying the ID of the feature.
-
-
-
-

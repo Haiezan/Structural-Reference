@@ -57,7 +57,3 @@ None.
 ### 31.7.2 Members
 
 The MesherOptions object has members with the same names and descriptions as the arguments to the [setValues](pt01ch31pyo07.md#ker-mesheroptions-setvalues-pyc) method.
-
-
-
-

@@ -20,4 +20,3 @@ OdbDataNodeSet 对象具有以下成员：
 *nodes*
 
 字符串到 Int 元组 Dictionary 的 Dictionary，指定集合中的节点。此属性为只读。
-

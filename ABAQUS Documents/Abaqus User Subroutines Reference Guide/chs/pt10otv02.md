@@ -100,5 +100,3 @@
 ### Y
 
 [YIELDS](pt02ch04s02xbv01.md#usb-expxsl-yields)
-
-

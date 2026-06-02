@@ -9,11 +9,11 @@
 
 此选项用于定义非线性小应变弹性材料。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -37,7 +37,3 @@ USER
 ### **通过用户子程序定义亚弹性：**
 
 当指定了 USER 参数时，此选项不使用数据行。相反，必须使用用户子程序 [`UHYPEL`](../sub/sub-link.md#sub-xsl-uhypel) 来定义亚弹性。
-
-
-
-

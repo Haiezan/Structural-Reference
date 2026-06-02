@@ -48,7 +48,3 @@ None.
 ### 20.2.2 Members
 
 The FeatureOptions object has members with the same names and descriptions as the arguments to the [setValues](pt01ch20pyo02.md#ker-featureoptions-setvalues-pyc) method.
-
-
-
-

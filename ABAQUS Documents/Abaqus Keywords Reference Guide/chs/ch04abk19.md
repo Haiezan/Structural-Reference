@@ -8,9 +8,9 @@
 
 此选项用于在固结问题中输入渗流量（垂直于模型表面的孔隙流体速度）。
 
-**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -46,7 +46,3 @@ OP
 非均匀渗流大小通过用户子程序 [`DFLOW`](../sub/sub-link.md#sub-xsl-dflow) 定义。
 
 根据需要重复此数据行，以定义各个单元或单元集合的非均匀渗流。
-
-
-
-

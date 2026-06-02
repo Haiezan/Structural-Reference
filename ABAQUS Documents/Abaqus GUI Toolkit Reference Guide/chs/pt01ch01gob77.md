@@ -156,8 +156,3 @@
 | **JUSTIFY_TOP** | 内容与标签顶部对齐。 |
 | **JUSTIFY_BOTTOM** | 内容与标签底部对齐。 |
 | **JUSTIFY_VT_APART** | JUSTIFY_TOP 和 JUSTIFY_BOTTOM 的组合。 |
-
-
-
-
-

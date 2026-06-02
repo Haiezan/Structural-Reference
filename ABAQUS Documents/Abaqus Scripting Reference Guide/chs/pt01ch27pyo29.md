@@ -150,7 +150,3 @@ A String specifying the assembled fastener template model set to which the load 
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

@@ -2,7 +2,7 @@
 
 如果允许无阻尼结构自由振动，振动的幅度保持不变。然而在现实中，能量通过结构的运动被耗散，振动幅度会逐渐减小直至停止。这种能量耗散称为阻尼。阻尼通常假定为粘性阻尼或与速度成正比。动力平衡方程可以重写为包含阻尼的形式：
 
-![d0](../graphics/gsk_eqn00090.gif)
+![](../images/blu4rule.gif)![d0](../graphics/gsk_eqn00090.gif)
 
 ![d0](../graphics/gsk_eqn00110.gif)
 
@@ -44,7 +44,7 @@
 
 **直接模态阻尼**
 
-与每个模态相关的临界阻尼分数 ![gsk_eqn00116.gif](../graphics/gsk_eqn00116.gif) 可以使用直接模态阻尼来定义。通常使用的值在临界阻尼的1%到10%范围内。直接模态阻尼允许您精确地定义系统每个模态的阻尼。
+与每个模态相关的临界阻尼分数 ![](../images/blu4rule.gif)![gsk_eqn00116.gif](../graphics/gsk_eqn00116.gif) 可以使用直接模态阻尼来定义。通常使用的值在临界阻尼的1%到10%范围内。直接模态阻尼允许您精确地定义系统每个模态的阻尼。
 
 `*MODAL DAMPING` 选项上的 `VISCOUS`=`FRACTION OF CRITICAL DAMPING`（粘性=临界阻尼分数）参数表示指定了直接模态阻尼。例如，要为前10个模态定义4%的临界模态阻尼，为模态11-20定义5%，，请在步骤定义中包含以下内容：
 
@@ -66,7 +66,7 @@
 
 ![d0](../graphics/gsk_eqn00122.gif)
 
-`*MODAL DAMPING` 选项上的 `VISCOUS`=`RAYLEIGH` 参数表示要使用瑞利阻尼。例如，要为模态1-10定义 ![gsk_eqn00051.gif](../graphics/gsk_eqn00051.gif) = 0.2525 和 ![gsk_eqn00120.gif](../graphics/gsk_eqn00120.gif) = 2.9 × 10⁻³，为模态11-20定义 ![gsk_eqn00051.gif](../graphics/gsk_eqn00051.gif) = 0.2727 和 ![gsk_eqn00120.gif](../graphics/gsk_eqn00120.gif) = 3.03 × 10⁻³，应在步骤定义中包含以下行：
+`*MODAL DAMPING` 选项上的 `VISCOUS`=`RAYLEIGH` 参数表示要使用瑞利阻尼。例如，要为模态1-10定义 ![](../graphics/gsk_eqn00123.gif) = 0.2525 和 ![gsk_eqn00120.gif](../graphics/gsk_eqn00120.gif) = 2.9 × 10⁻³，为模态11-20定义 ![](../graphics/gsk_eqn00123.gif) = 0.2727 和 ![gsk_eqn00120.gif](../graphics/gsk_eqn00120.gif)![](../images/blu4rule.gif) = 3.03 × 10⁻³，应在步骤定义中包含以下行：
 
 ```abaqus
 *MODAL DAMPING, VISCOUS=RAYLEIGH

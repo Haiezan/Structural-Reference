@@ -112,4 +112,3 @@ Skin 对象具有以下成员：
 *faces*
 
  [FaceArray](pt01ch07pyo05.md) 对象。
-

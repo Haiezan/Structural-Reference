@@ -10,11 +10,11 @@
 
 此选项必须在[*CYCLIC](ch03abk90.md)、[*PERIODIC](ch16abk05.md)和/或[*REFLECTION](ch17abk13.md)选项之前使用，以指定用于腔体辐射热传递分析的腔体中的对称性。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**相互作用模块
 

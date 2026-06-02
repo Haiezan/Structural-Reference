@@ -211,7 +211,3 @@ DEPENDENCIES
 **第二行：**
 
 根据需要重复此数据行以定义[`UGENS`](../sub/sub-link.md#sub-xsl-ugens)中所需的属性。对于实数和整数值，每行输入八个值。
-
-
-
-

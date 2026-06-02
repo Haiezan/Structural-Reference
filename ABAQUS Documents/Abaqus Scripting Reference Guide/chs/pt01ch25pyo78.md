@@ -125,6 +125,3 @@ ThermalConductance 对象的成员与 [ThermalConductance](pt01ch25pyo78.md#ker-
 
 | [*GAP CONDUCTANCE](../key/key-link.md#usb-kws-mgapconduct) |
 | --- |
-
-
-

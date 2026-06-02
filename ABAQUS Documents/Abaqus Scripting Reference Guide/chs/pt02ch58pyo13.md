@@ -90,7 +90,3 @@ A sequence of [CDCTerm](pt02ch58pyo02.md) objects.
 
 | [*CONNECTOR DERIVED COMPONENT](../key/key-link.md#usb-kws-mconnectorderivedcomp) |
 | --- |
-
-
-
-

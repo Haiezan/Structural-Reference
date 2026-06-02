@@ -10,11 +10,11 @@
 
 此选项用于提供平面测试（或纯剪切）数据。它只能与[*HYPERELASTIC](ch08abk06.md)选项、[*HYPERFOAM](ch08abk07.md)选项和[*MULLINS EFFECT](ch13abk31.md)选项结合使用。这种测试不能完全定义超弹性材料常数；至少还应提供单轴或双轴测试数据。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

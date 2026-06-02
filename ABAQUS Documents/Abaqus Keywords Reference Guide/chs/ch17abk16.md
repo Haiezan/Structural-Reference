@@ -12,11 +12,11 @@
 
 此选项用于控制重新启动数据的写入和读取。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型或历史数据  
+**类型：**模型或历史数据
 
-**级别：**模型，步骤  
+**级别：**模型，步骤
 
 **Abaqus/CAE：**用于保存重新启动数据的步骤模块；用于执行重新启动分析的作业模块
 

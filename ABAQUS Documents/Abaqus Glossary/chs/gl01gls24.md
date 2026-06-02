@@ -24,6 +24,3 @@ Abaqus/CAE 在会话期间写入文件的目录，以及您启动 Abaqus/CAE 的
 更多信息：- [「设置工作目录，」Abaqus/CAE User's Guide 第 9.7.8 节](../usi/usi-link.md#usi-dbs-mdb-changework)
 
 - [「使用文件选择对话框，」Abaqus/CAE User's Guide 第 3.2.10 节](../usi/usi-link.md#uss-int-dialog-selection)
-
-
-

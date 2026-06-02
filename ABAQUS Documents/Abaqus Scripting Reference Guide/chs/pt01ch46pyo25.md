@@ -80,5 +80,3 @@ TransverseShearShell 对象的成员与 [TransverseShearShell](pt01ch46pyo25.md#
 
 | [*TRANSVERSE SHEAR STIFFNESS](../key/key-link.md#usb-kws-mtransshearstiff) |
 | --- |
-
-

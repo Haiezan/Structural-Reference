@@ -94,8 +94,4 @@ The ConnectorLock object has members with the same names and descriptions as the
 
 ### 12.8.4 Corresponding analysis keywords
 
- [*CONNECTOR LOCK](../key/key-link.md#usb-kws-mconnectorlock) 
-
-
-
-
+ [*CONNECTOR LOCK](../key/key-link.md#usb-kws-mconnectorlock)

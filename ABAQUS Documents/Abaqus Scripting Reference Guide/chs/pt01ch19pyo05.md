@@ -98,8 +98,3 @@ DebondVCCT 对象具有与 [DebondVCCT](pt01ch19pyo05.md#ker-debondvcct-debondvc
 
 | [*DEBOND](../key/key-link.md#usb-kws-hdebond) |
 | --- |
-
-
-
-
-

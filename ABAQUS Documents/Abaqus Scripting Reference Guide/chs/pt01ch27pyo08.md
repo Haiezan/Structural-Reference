@@ -54,7 +54,3 @@ BodyCurrentState 对象具有以下成员：
 
 | [*DECURRENT](../key/key-link.md#usb-kws-hdecurrent) (载荷类型标签: CBF) |
 | --- |
-
-
-
-

@@ -48,8 +48,3 @@ odb_SequenceAnalyticSurfaceSegment segments() const;
 *localCoordData*
 
 一个 odb_SequenceSequenceFloat，如果使用的话，指定表示局部坐标系的点的全局坐标。
-
-
-
-
-

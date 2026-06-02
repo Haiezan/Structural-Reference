@@ -56,7 +56,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*CFLUX](../key/key-link.md#usb-kws-hcflux) (degree of freedom: one out of integers 11 to 31) |
 | --- |
-
-
-
-

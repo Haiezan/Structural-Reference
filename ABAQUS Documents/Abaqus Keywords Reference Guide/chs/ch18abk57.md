@@ -117,8 +117,3 @@ TOLERANCE
 **图18.57-4** 通过平面*abc*反射三维模型，节点偏移为*n*。
 
 ![](../graphics/ksymm-model-gen-refl-plane-nls.png)
-
-
-
-
-

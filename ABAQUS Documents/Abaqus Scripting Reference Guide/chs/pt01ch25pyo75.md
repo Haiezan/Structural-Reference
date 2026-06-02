@@ -280,6 +280,3 @@ SurfaceToSurfaceContactStd 对象的成员与 [SurfaceToSurfaceContactStd](pt01c
  SymbolicConstant，指定中间面约束的使用方式。可能的值为 SELECTIVE、NEVER 和 ALWAYS。默认值为 SELECTIVE。
 
 当 *sliding*=FINITE 且 *enforcement*=SURFACE_TO_SURFACE 时，此参数无效。
-
-
-

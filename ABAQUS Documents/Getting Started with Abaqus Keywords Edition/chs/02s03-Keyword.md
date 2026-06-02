@@ -63,7 +63,7 @@
 - **几何**：节点坐标、单元连接性、单元截面属性
 - **材料属性**
 
-### 标题
+**标题**
 
 任何Abaqus输入文件中的第一个选项必须是 `*HEADING`。跟随 `*HEADING` 选项的数据行是描述正在模拟的问题的文本行。您应该提供准确的描述，以便稍后可以识别输入文件。此外，指定单位制、全局坐标系方向等通常很有帮助。例如，起重机问题的 `*HEADING` 选项块包含：
 
@@ -74,7 +74,7 @@ SI units (kg, m, s, N)
 1-axis horizontal, 2-axis vertical
 ```
 
-### 数据文件打印选项
+**数据文件打印选项**
 
 默认情况下，Abaqus不会将输入文件或模型和历史定义数据的回显打印到打印输出（`.dat`）文件。但是，建议您在运行分析之前在 **datacheck** 运行中检查模型和历史定义。**datacheck** 运行将在本章后面讨论。
 
@@ -84,7 +84,7 @@ SI units (kg, m, s, N)
 *PREPRINT, ECHO=YES, MODEL=YES, HISTORY=YES
 ```
 
-### 节点坐标
+**节点坐标**
 
 选择网格设计和节点编号方案后，可以定义每个节点的坐标。对于此问题，请使用图2-6所示的编号。节点坐标使用 `*NODE` 选项定义。此选项块的每个数据行格式为：
 
@@ -103,7 +103,7 @@ SI units (kg, m, s, N)
 105, 1.5, 0.866, 0.
 ```
 
-### 单元连接性
+**单元连接性**
 
 架空起重机的构件用桁架单元建模。桁架单元每个数据行的格式为：
 
@@ -134,7 +134,7 @@ Abaqus中最有用的功能之一是可按名称引用的节点和单元**集合
 17, 104, 105
 ```
 
-### 单元截面属性
+**单元截面属性**
 
 每个单元必须引用一个单元截面属性。每个单元的适当单元截面选项以及每个单元所需的任何额外几何数据（如有）在《Abaqus分析用户指南》中有描述。
 
@@ -148,7 +148,7 @@ Abaqus中最有用的功能之一是可按名称引用的节点和单元**集合
 
 ![截面输入](../graphics/gss-cross-sect-input-nls.png)
 
-### 材料
+**材料**
 
 使Abaqus成为真正通用有限元程序的特性之一是几乎任何材料模型都可以与任何单元一起使用。创建网格后，可以将材料模型与网格中的单元适当地关联。
 
@@ -208,7 +208,7 @@ Abaqus输入文件中的材料定义从 `*MATERIAL` 选项开始。`NAME` 参数
 
 `PERTURBATION` 参数表示这是一个线性分析。如果省略此参数，分析可以是线性的或非线性的。`PERTURBATION` 参数的用法在第11章"多步骤分析"中有进一步讨论。
 
-### 分析过程
+**分析过程**
 
 **分析过程**（模拟类型）必须紧跟在 `*STEP` 选项块之后定义。在这种情况下，我们需要结构的长期静态响应。静态模拟的选项是 `*STATIC`。对于线性分析，此选项没有参数或数据行，因此将以下行添加到您的输入文件中：
 
@@ -218,7 +218,7 @@ Abaqus输入文件中的材料定义从 `*MATERIAL` 选项开始。`NAME` 参数
 
 步骤中的其余输入数据定义边界条件（约束）、载荷和所需输出，可以按任何方便的顺序给出。
 
-### 边界条件
+**边界条件**
 
 边界条件应用于模型中位移已知的位置。这些部分可能在模拟期间被约束保持固定（位移为零）或可能具有指定的非零位移。在任何一种情况下，约束都直接施加到模型的节点上。
 
@@ -296,7 +296,7 @@ Abaqus中自由度的标签约定如下：
 
 在本例中，所有约束都在全局1或2方向上。在许多情况下，约束需要在与全局方向不对齐的方向上。在这种情况下，可以使用 `*TRANSFORM` 选项来定义用于边界条件应用的局部坐标系。第5章"使用壳单元"中的斜板示例演示了如何在这种情况下使用此选项。
 
-### 载荷
+**载荷**
 
 载荷是导致结构位移或变形的任何东西，包括：
 
@@ -323,7 +323,7 @@ Abaqus中自由度的标签约定如下：
 102, 2, -10.E3
 ```
 
-### 输出请求
+**输出请求**
 
 有限元分析会产生大量输出。Abaqus允许您控制和管理此输出，以便仅生成解释模拟结果所需的数据。四种类型的输出可用：
 
@@ -395,11 +395,11 @@ Abaqus JOB frame COMPLETED
 
 当 **datacheck** 分析完成时，您会发现Abaqus创建了多个其他文件。如果在 **datacheck** 分析期间遇到任何错误，消息将写入数据文件 `frame.dat`。此数据文件是一个文本文件，可以在编辑器中查看或打印。尝试在文本编辑器中查看数据文件。该文件可以包含最多256个字符的行，因此编辑器应该能够容纳那么多字符。
 
-### 首页
+**首页**
 
 数据文件以首页开始，其中包含用于运行分析的Abaqus版本的信息。首页还包含可提供技术支持和建议的当地办公室或代表的电话号码、地址和联系信息。
 
-### 输入文件回显
+**输入文件回显**
 
 在首页之后，数据文件包括输入文件的回显。输入数据回显是通过在输入文件中添加选项 `*PREPRINT`, `ECHO`=`YES` 生成的。默认情况下，`ECHO` 参数设置为 `NO`。
 
@@ -410,56 +410,56 @@ Abaqus JOB frame COMPLETED
                    5   10   15   20   25   30   35   40   45   50   55   60   65   70   75   80
                --------------------------------------------------------------------------------
                *HEADING
-               Two-dimensional overhead hoist frame    
-               SI units (kg, m, s, N)  
-               1-axis horizontal, 2-axis vertical      
-LINE     5     *PREPRINT, ECHO=YES, MODEL=YES, HISTORY=YES     
-               **      
-               ** Model definition     
-               **      
+               Two-dimensional overhead hoist frame
+               SI units (kg, m, s, N)
+               1-axis horizontal, 2-axis vertical
+LINE     5     *PREPRINT, ECHO=YES, MODEL=YES, HISTORY=YES
+               **
+               ** Model definition
+               **
                *NODE, NSET=NALL
-LINE    10     101, 0.,  0.,    0.     
-               102, 1.,  0.,    0.     
-               103, 2.,  0.,    0.     
-               104, 0.5, 0.866, 0.     
-               105, 1.5, 0.866, 0.     
+LINE    10     101, 0.,  0.,    0.
+               102, 1.,  0.,    0.
+               103, 2.,  0.,    0.
+               104, 0.5, 0.866, 0.
+               105, 1.5, 0.866, 0.
 LINE    15     *ELEMENT, TYPE=T2D2, ELSET=FRAME
-               11, 101, 102    
-               12, 102, 103    
-               13, 101, 104    
-               14, 102, 104    
-LINE    20     15, 102, 105    
-               16, 103, 105    
-               17, 104, 105    
-               *SOLID SECTION, ELSET=FRAME, MATERIAL=STEEL     
-               ** diameter = 5mm --> area = 1.963E-5 m^2       
-LINE    25     1.963E-5,       
-               *MATERIAL, NAME=STEEL   
+               11, 101, 102
+               12, 102, 103
+               13, 101, 104
+               14, 102, 104
+LINE    20     15, 102, 105
+               16, 103, 105
+               17, 104, 105
+               *SOLID SECTION, ELSET=FRAME, MATERIAL=STEEL
+               ** diameter = 5mm --> area = 1.963E-5 m^2
+LINE    25     1.963E-5,
+               *MATERIAL, NAME=STEEL
                *ELASTIC
-               200.E9, 0.3     
-               **      
-LINE    30     ** History data 
-               **      
-               *STEP, PERTURBATION     
-               10kN central load       
-               *STATIC 
-LINE    35     *BOUNDARY       
-               101, ENCASTRE   
-               103, 2  
-               *CLOAD  
-               102, 2, -10.E3  
-LINE    40     *NODE PRINT     
-               U,      
-               RF,     
-               *EL PRINT       
-               S,      
-LINE    45     *END STEP       
+               200.E9, 0.3
+               **
+LINE    30     ** History data
+               **
+               *STEP, PERTURBATION
+               10kN central load
+               *STATIC
+LINE    35     *BOUNDARY
+               101, ENCASTRE
+               103, 2
+               *CLOAD
+               102, 2, -10.E3
+LINE    40     *NODE PRINT
+               U,
+               RF,
+               *EL PRINT
+               S,
+LINE    45     *END STEP
                --------------------------------------------------------------------------------
                    5   10   15   20   25   30   35   40   45   50   55   60   65   70   75   80
                --------------------------------------------------------------------------------
 ```
 
-### Abaqus处理的选项
+**Abaqus处理的选项**
 
 输入数据回显之后是Abacus处理的选项列表。这是错误和警告消息出现的第一个点。所有错误消息都以 `***ERROR` 为前缀，而警告以 `***WARNING` 开头。由于这些消息总是以相同的方式开头，搜索数据文件中的警告和错误消息很简单。当错误是语法问题（即Abaqus无法理解输入）时，错误消息后面跟着导致错误的输入文件中的行。
 
@@ -495,7 +495,7 @@ OPTIONS BEING PROCESSED
 *END STEP
 ```
 
-### 模型数据
+**模型数据**
 
 数据文件的其余部分是包含所有模型数据和历史数据的系列表，应检查这些表是否有任何明显的错误或遗漏。这些表是通过在输入文件中包含选项 `*PREPRINT`, `MODEL`=`YES`, `HISTORY`=`YES` 生成的。但是，对于大型模型，这些表可能占用大量磁盘空间。默认情况下，`MODEL` 和 `HISTORY` 参数设置为 `NO`。
 
@@ -522,7 +522,7 @@ NUMBER   TYPE    PROPERTY    NODES FORMING ELEMENT
 PROPERTY NUMBER         1
 
    MATERIAL NAME                     STEEL
-   ATTRIBUTES                         1.96300E-05   0.0000       0.0000    
+   ATTRIBUTES                         1.96300E-05   0.0000       0.0000
 
    HOURGLASS CONTROL STIFFNESS    3.84615E+08
 
@@ -537,7 +537,7 @@ MATERIAL NAME: STEEL
 
    ELASTIC         YOUNG'S    POISSON'S
                    MODULUS      RATIO
-                  2.00000E+11 0.30000    
+                  2.00000E+11 0.30000
 
 
                                E L E M E N T   S E T S
@@ -558,7 +558,7 @@ MEMBERS                  101       102       103       104       105
 
                                N O D E   D E F I N I T I O N S
 
-     NODE           COORDINATES                       SINGLE POINT CONSTRAINTS 
+     NODE           COORDINATES                       SINGLE POINT CONSTRAINTS
     NUMBER                                              TYPE    PLUS    DOF
 
       101     0.0000       0.0000       0.0000       ENCASTRE
@@ -568,7 +568,7 @@ MEMBERS                  101       102       103       104       105
       105     1.5000      0.86600       0.0000
 ```
 
-### 历史数据：载荷和数据库输出
+**历史数据：载荷和数据库输出**
 
 历史数据在下面两节中呈现。上半部分历史数据的第一行是10kN central load，即 `*STEP` 选项块中给出的第一个数据行。此行提醒您此步骤中施加的载荷。
 
@@ -585,7 +585,7 @@ ALL LOADS ARE DEFINED AS CHANGE IN LOAD TO THE REFERENCE STATE
 
 EXTRAPOLATION WILL NOT BE USED
 
-CHARACTERISTIC ELEMENT LENGTH      1.00    
+CHARACTERISTIC ELEMENT LENGTH      1.00
 
 DETAILS REGARDING ACTUAL SOLUTION WAVEFRONT REQUESTED
 
@@ -602,12 +602,12 @@ THE FOLLOWING  FIELD   OUTPUT WILL BE WRITTEN EVERY        1 INCREMENT(S)
 THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE T2D2.  OUTPUT IS AT THE
 INTEGRATION POINTS.
 
-          S         E       
+          S         E
 
 
  THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL NODES
 
-          U         RF        CF      
+          U         RF        CF
 
 
 END OF DATABASE OUTPUT GROUP    1
@@ -629,7 +629,7 @@ END OF DATABASE OUTPUT GROUP    2
 
 ```
 
-### 历史数据：摘要
+**历史数据：摘要**
 
 历史数据的下半部分如下所示。本节总结了单元和节点输出请求、边界条件和集中载荷。
 
@@ -641,7 +641,7 @@ THE INTEGRATION POINTS.
 
   SUMMARIES WILL BE PRINTED WHERE APPLICABLE
 
-       TABLE     1  S11     
+       TABLE     1  S11
 
 
                                E L E M E N T   F I L E   O U T P U T
@@ -649,7 +649,7 @@ THE INTEGRATION POINTS.
  THE FOLLOWING TABLE IS OUTPUT AT EVERY 1 INCREMENT FOR ALL ELEMENTS OF TYPE T2D2.  OUTPUT IS AT
  THE INTEGRATION POINTS.
 
-          S       
+          S
 
 
                                     N O D E   P R I N T
@@ -658,20 +658,20 @@ THE INTEGRATION POINTS.
 
    SUMMARIES WILL BE PRINTED
 
-        TABLE  1  U1        U2      
+        TABLE  1  U1        U2
 
  THE FOLLOWING TABLE IS PRINTED FOR ALL NODES AT EVERY 1 INCREMENT
 
    SUMMARIES WILL BE PRINTED
 
-        TABLE  2  RF1       RF2     
+        TABLE  2  RF1       RF2
 
 
                               N O D E   F I L E   O U T P U T
 
 THE FOLLOWING TABLE IS OUTPUT FOR ALL NODES AT EVERY 1 INCREMENT
 
-                  U         RF      
+                  U         RF
 
 
                        B O U N D A R Y   C O N D I T I O N S
@@ -680,7 +680,7 @@ THE FOLLOWING TABLE IS OUTPUT FOR ALL NODES AT EVERY 1 INCREMENT
 NODE      DOF     AMP.    MAGNITUDE                 NODE      DOF     AMP.    MAGNITUDE
                   REF.                                                REF.
 
-103        2     (RAMP)     0.0000               
+103        2     (RAMP)     0.0000
 
 - (RAMP) OR (STEP) - INDICATE USE OF DEFAULT AMPLITUDES ASSOCIATED WITH THE STEP
 
@@ -690,7 +690,7 @@ NODE      DOF     AMP.    MAGNITUDE                 NODE      DOF     AMP.    MA
 
 NODE   TYPE        NODE    TYPE        NODE    TYPE        NODE    TYPE        NODE    TYPE
 
-101   ENCASTRE   
+101   ENCASTRE
 
 
                    C O N C E N T R A T E D   L O A D S
@@ -702,7 +702,7 @@ NODE  DOF   AMP.  AMPLITUDE     NODE  DOF   AMP.  AMPLITUDE    NODE  DOF   AMP. 
 
 ```
 
-### 数据文件中的其余项目
+**数据文件中的其余项目**
 
 如果在 **datacheck** 分析期间产生任何错误消息，则在此类消息的数量之后列出。如果只有警告消息，则在请求的输出底部之后，在数据文件底部列出这些消息的数量。
 
@@ -751,7 +751,7 @@ abaqus job=frame
 
 分析完成后，数据文件 `frame.dat` 将包含使用 `*NODE PRINT` 和 `*EL PRINT` 选项请求的结果表。结果表跟在 **datacheck** 分析的输出之后。架空起重机模拟的结果如下。
 
-### 单元输出
+**单元输出**
 
 ```
 Two-dimensional overhead hoist frame                                STEP    1  INCREMENT    1
@@ -771,27 +771,27 @@ Two-dimensional overhead hoist frame                                STEP    1  I
 
      THIS IS A LINEAR PERTURBATION STEP.
      ALL LOADS ARE DEFINED AS CHANGE IN LOAD TO THE REFERENCE STATE
-  
+
                    M E M O R Y   E S T I M A T E
-  
+
 PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
              OPERATIONS           REQUIRED          MINIMIZE I/O
             PER ITERATION         (MBYTES)           (MBYTES)
- 
+
     1         2.65E+002               13                 20
 NOTE:
-     (1) THE ESTIMATE PRINTED IS THE MAXIMUM ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP 
-         OF THE ANALYSIS, WITH THE UNSYMMETRIC MATRIX AND SOLVER TAKEN INTO ACCOUNT IF 
-         APPLICABLE. SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE 
-         FIRST ITERATION OF THE CURRENT STEP, FOR PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE 
-         DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN THE SAME STEP), THE MEMORY ESTIMATE 
-         MIGHT BE NOTICEABLY DIFFERENT THAN THE ACTUAL USAGE. A FEW EXAMPLES ARE: PROBLEMS 
-         WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL CHANGE, PROBLEMS WITH BOTH 
+     (1) THE ESTIMATE PRINTED IS THE MAXIMUM ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP
+         OF THE ANALYSIS, WITH THE UNSYMMETRIC MATRIX AND SOLVER TAKEN INTO ACCOUNT IF
+         APPLICABLE. SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE
+         FIRST ITERATION OF THE CURRENT STEP, FOR PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE
+         DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN THE SAME STEP), THE MEMORY ESTIMATE
+         MIGHT BE NOTICEABLY DIFFERENT THAN THE ACTUAL USAGE. A FEW EXAMPLES ARE: PROBLEMS
+         WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL CHANGE, PROBLEMS WITH BOTH
          STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES, WHERE THE ACOUSTIC ELEMENTS WILL
          ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
-     (2) THE ESTIMATE FOR THE FLOATING POINT OPERATIONS ON EACH PROCESS IS BASED 
-         ON THE INITIAL LOAD SCHEDULING AND THIS MIGHT NOT REFLECT THE ACTUAL FLOATING 
-         POINT OPERATIONS COMPLETED ON EACH PROCESS. DUE TO THE DYNAMIC LOAD BALANCING SCHEME, 
+     (2) THE ESTIMATE FOR THE FLOATING POINT OPERATIONS ON EACH PROCESS IS BASED
+         ON THE INITIAL LOAD SCHEDULING AND THIS MIGHT NOT REFLECT THE ACTUAL FLOATING
+         POINT OPERATIONS COMPLETED ON EACH PROCESS. DUE TO THE DYNAMIC LOAD BALANCING SCHEME,
          THE ACTUAL LOAD BALANCE IS EXPECTED TO BE BETTER THAN THE ESTIMATE PRINTED HERE.
      (3) DEPENDING ON THE SETTING OF THE memory PARAMETER, THE DISK USAGE BY SCRATCH DATA CAN
          VARY FROM CLOSE TO ZERO TO THE ESTIMATED MEMORY TO MINIMIZE I/O.
@@ -809,8 +809,8 @@ NOTE:
 
 THE FOLLOWING TABLE IS PRINTED FOR ALL ELEMENTS WITH TYPE T2D2 AT THE INTEGRATION POINTS
 
-    ELEMENT  PT FOOT-       S11     
-                NOTE 
+    ELEMENT  PT FOOT-       S11
+                NOTE
 
           11   1         1.4706E+08
           12   1         1.4706E+08
@@ -827,42 +827,42 @@ THE FOLLOWING TABLE IS PRINTED FOR ALL ELEMENTS WITH TYPE T2D2 AT THE INTEGRATIO
  ELEMENT                    17
 ```
 
-### 节点输出
+**节点输出**
 
 ```
              N O D E   O U T P U T
 
-  
-   THE FOLLOWING TABLE IS PRINTED FOR ALL NODES
-  
-       NODE FOOT-   U1          U2       
-            NOTE
-  
-        102      7.3531E-04 -4.6698E-03 
-        103      1.4706E-03   0.000     
-        104      1.4706E-03 -2.5472E-03 
-        105       0.000     -2.5472E-03 
 
- MAXIMUM         1.4706E-03   0.000    
+   THE FOLLOWING TABLE IS PRINTED FOR ALL NODES
+
+       NODE FOOT-   U1          U2
+            NOTE
+
+        102      7.3531E-04 -4.6698E-03
+        103      1.4706E-03   0.000
+        104      1.4706E-03 -2.5472E-03
+        105       0.000     -2.5472E-03
+
+ MAXIMUM         1.4706E-03   0.000
  AT NODE               104         101
 
  MINIMUM          0.000     -4.6698E-03
  AT NODE               101         102
-  
-  
-  
-   THE FOLLOWING TABLE IS PRINTED FOR ALL NODES
-  
-       NODE FOOT-   RF1         RF2      
-            NOTE
-  
-        101     -9.0949E-13   5000.     
-        103       0.000       5000.     
 
- MAXIMUM          0.000       5000.    
+
+
+   THE FOLLOWING TABLE IS PRINTED FOR ALL NODES
+
+       NODE FOOT-   RF1         RF2
+            NOTE
+
+        101     -9.0949E-13   5000.
+        103       0.000       5000.
+
+ MAXIMUM          0.000       5000.
  AT NODE               102         103
 
- MINIMUM        -9.0949E-13   0.000    
+ MINIMUM        -9.0949E-13   0.000
  AT NODE               101         102
 ```
 
@@ -908,7 +908,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 **图2-8** 未变形模型形状。
 
-![未变形模型形状](../graphics/gss-undeformed-v.png)
+![](../graphics/ico_fileOpen.png)![未变形模型形状](../graphics/gss-undeformed-v.png)
 
 您可以选择在视口底部显示标题块和状态块；这些块在图2-8中未显示。视口底部的标题块指示以下内容：
 
@@ -927,7 +927,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 您可以通过从主菜单栏中选择**视口 → 视口注释选项**来抑制和自定义标题块、状态块、视图方向 triad 和3D指南针的显示（例如，本指南中的许多图不包括标题块或指南针）。
 
-### 结果树
+**结果树**
 
 您将使用结果树来查询模型的组件。结果树允许轻松访问输出数据库文件中包含的历史输出，以便创建X-Y图，还可以基于集合名称、材料和截面分配等为验证模型以及控制视口显示的目的创建元素、节点和表面组。
 
@@ -941,7 +941,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 结果树将在后面的示例中更广泛地用于说明X-Y绘图功能和使用显示组操作显示。
 
-### 自定义未变形形状图
+**自定义未变形形状图**
 
 您现在将使用绘图选项来启用节点和单元编号的显示。所有绘图类型（未变形、变形、云图、符号和材料方向）共有的绘图选项在单个对话框中设置。云图、符号和材料方向绘图类型有额外的选项，每个选项都特定于给定的绘图类型。
 
@@ -963,7 +963,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 **图2-9** 节点编号图。
 
-![节点编号图](../graphics/gss-node-plot-v.png)
+![](../graphics/ico_plotCommonOptions.png)![节点编号图](../graphics/gss-node-plot-v.png)
 
 **显示单元编号：**
 
@@ -981,7 +981,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 在继续之前，请删除节点和单元标签。要禁用节点和单元编号的显示，请重复上述过程，并在**标签**下关闭**显示节点标签**和**显示单元标签**。
 
-### 显示和自定义变形形状图
+**显示和自定义变形形状图**
 
 您现在将显示变形模型形状并使用绘图选项更改变形比例因子。您还将在变形模型形状上叠加未变形模型形状。
 
@@ -989,7 +989,7 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 **图2-11** 变形模型形状。
 
-![变形模型形状](../graphics/gss-geometry-v.png)
+![](../graphics/ico_plotDeformed.png)![变形模型形状](../graphics/gss-geometry-v.png)
 
 对于小位移分析（Abaqus/Standard中的默认公式），位移会自动缩放以确保清晰可见。比例因子显示在状态块中。在这种情况下，位移已按42.83的比例因子缩放。
 
@@ -1027,9 +1027,9 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 **图2-12** 未变形和变形模型形状。
 
-![未变形和变形模型形状](../graphics/gss-shapes-v.png)
+![](../graphics/ico_plotCommonOptions.png)![](../graphics/ico_plotMultipleStates.png)![](../graphics/ico_plotUndeformed.png)![](../graphics/ico_plotSuperimposeOptions.png)![未变形和变形模型形状](../graphics/gss-shapes-v.png)
 
-### 使用Abaqus/Viewer检查模型
+**使用Abaqus/Viewer检查模型**
 
 您可以使用Abaqus/Viewer在运行模拟之前检查模型是否正确。您已经学习了如何绘制模型图以及显示节点和单元编号。这些是检查Abaqus是否使用正确网格的有用工具。
 
@@ -1053,9 +1053,9 @@ Abaqus/Viewer打开由作业创建的输出数据库并显示未变形模型形�
 
 **图2-13** 架空起重机上的施加边界条件。
 
-![架空起重机上的边界条件](../graphics/gss-overhead-hoist-c.png)
+![](../graphics/ico_plotMultipleStates.png)![架空起重机上的边界条件](../graphics/gss-overhead-hoist-c.png)
 
-### 表格数据报告
+**表格数据报告**
 
 除了上述图形功能外，Abaqus/Viewer还允许您以表格格式将数据写入文本文件。这是写入打印数据到数据（`.dat`）文件的便捷替代方案，特别适用于复杂模型。这样生成的输出有许多用途；例如，可用于书面报告中。在本问题中，您将生成包含单元应力、节点位移和反力的报告。
 
@@ -1206,7 +1206,7 @@ Field Output reported at nodes for part: PART-1-1
 
 我们将在Abaqus/Explicit中重新运行相同的分析以进行比较。这次我们对起重机对施加在跨中的相同载荷的动态响应感兴趣。在继续之前，将 `frame.inp` 的副本保存为 `frame_xpl.inp`。对 `frame_xpl.inp` 输入文件进行所有后续更改。您需要用显式动态步骤替换静态步骤、修改输出请求和材料定义，并更改单元库，然后才能重新提交作业。
 
-### 修改材料定义
+**修改材料定义**
 
 由于Abaqus/Explicit执行动态分析，完整的材料定义要求您指定材料密度。对于此问题，假设密度等于7800 kg/m³。
 
@@ -1227,7 +1227,7 @@ Field Output reported at nodes for part: PART-1-1
 7800.,
 ```
 
-### 替换分析步骤
+**替换分析步骤**
 
 步骤定义必须更改以反映动态显式分析。找到现有的 `*STEP` 选项块，如下所示：
 
@@ -1250,7 +1250,7 @@ Field Output reported at nodes for part: PART-1-1
 , 0.01
 ```
 
-### 修改输出请求
+**修改输出请求**
 
 因为这是动态分析，我们对框架的瞬态响应感兴趣，所以将中心点的位移写为历史输出会很有帮助。位移历史输出只能为节点集合请求。因此，您将创建一个包含桁架底部中心节点的节点集合。然后，您将把位移添加到历史输出请求中。
 
@@ -1272,7 +1272,7 @@ Field Output reported at nodes for part: PART-1-1
 U,
 ```
 
-### 提交新输入文件进行分析
+**提交新输入文件进行分析**
 
 对 `frame_xpl` 输入文件中的输入数据进行交互式 **datacheck** 分析：
 
@@ -1308,7 +1308,7 @@ abaqus job=frame_xpl continue interactive
 
 **图2-14** 后处理动画控件。
 
-![动画控件](../graphics/usv-anm-moviecontrols-nls.png)
+![](../graphics/ico_animTimeHistory.png)![](../graphics/ico_selectionOptions.png)![](../graphics/ico_animTimeHistory.png)![动画控件](../graphics/usv-anm-moviecontrols-nls.png)
 
 桁架对载荷动态响应。您可以通过绘制节点集合 `CENTER` 的垂直位移历史来确认这一点。
 
@@ -1324,10 +1324,10 @@ abaqus job=frame_xpl continue interactive
 
 **图2-15** 桁架跨中的垂直位移。
 
-![垂直位移图](../graphics/gsa-hoist-displacement.png)
+![垂直位移图](../graphics/gsa-hoist-displacement.png)![](../graphics/afxI_cancel.png)
 
 **注意：** 在此图中已抑制图表图例并修改了轴标签。许多X-Y绘图选项可直接通过双击视口的适当区域来访问。但是，要启用直接对象操作，您必须首先在提示区域点击取消当前过程（如果需要）。要抑制图例，请在视口中双击它以打开**图表图例选项**对话框。在此对话框的**内容**选项卡页面中，关闭**显示图例**。要修改轴标签，双击任一轴以打开**轴选项**对话框，并按图2-15所示编辑轴标题。
 
-### 退出Abaqus/Viewer
+**退出Abaqus/Viewer**
 
 保存您的模型数据库文件；然后从主菜单栏中选择**文件 → 退出**以退出Abaqus/Viewer。

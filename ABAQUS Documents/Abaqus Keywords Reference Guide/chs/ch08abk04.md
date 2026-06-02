@@ -9,11 +9,11 @@
 
 此选项用于定义与 HEATCAP 单元相关的集中热容值。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 零件、零件实例、装配  
+**级别：** 零件、零件实例、装配
 
 **Abaqus/CAE：** Property 模块和 Interaction 模块。
 
@@ -38,7 +38,3 @@ ELSET
 **后续行（仅在 DEPENDENCIES 参数的值大于六时需要）：**
 
 根据需要重复此组数据行，以将点热容定义为温度和其他预定义场变量的函数。Abaqus 不使用任何特定的物理单位，因此用户的选择必须一致。
-
-
-
-

@@ -18,8 +18,3 @@
 | tgt | FXObject | None | 消息目标。 |
 | sel | Int | 0 | 消息 ID。 |
 | asToggle | Bool | True | 允许切换关闭行为。 |
-
-
-
-
-

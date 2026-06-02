@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**边对边接触已扩展到包括实体和壳状表面上的特征边以及壳周长边缘，以便更加自动化和稳健地解决边缘之间的接触。新的接触输出变量允许可视化边对边接触的接触 enforcement。
 
@@ -36,4 +36,3 @@
 - [*CONTACT FORMULATION](../key/key-link.md#usb-kws-hcontformulation)
 - [*CONTACT OUTPUT](../key/key-link.md#usb-kws-hcontactoutput)
 - [*SURFACE PROPERTY ASSIGNMENT](../key/key-link.md#usb-kws-hsurfpropassign)
-

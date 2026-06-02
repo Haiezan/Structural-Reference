@@ -100,8 +100,3 @@ Chebyshev1Filter 对象具有与 [Chebyshev1Filter](pt01ch22pyo03.md#ker-chebysh
 
 | [*FILTER*](../key/key-link.md#usb-kws-mfilter) |
 | --- |
-
-
-
-
-

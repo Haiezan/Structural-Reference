@@ -62,7 +62,3 @@ The RebarLayers object has members with the same names and descriptions as the a
 
 | [*REBAR LAYER](../key/key-link.md#usb-kws-mrebarlayer) |
 | --- |
-
-
-
-

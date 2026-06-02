@@ -105,7 +105,3 @@ CapPlasticity 对象具有与 [CapPlasticity](pt01ch29pyo11.md#ker-capplasticity
 
 | [*CAP PLASTICITY](../key/key-link.md#usb-kws-mcapplasticity) |
 | --- |
-
-
-
-

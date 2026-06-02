@@ -6,11 +6,11 @@
 
 Abaqus/Explicit使用中心差分法则通过时间显式地积分运动方程，利用一个增量步的运动学条件计算下一个增量步的运动学条件。在增量步开始时，程序求解动力平衡，即节点质量矩阵<img height="13" width="19" src="../graphics/gsk_eqn00160.gif">乘以节点加速度<img height="12" width="11" src="../graphics/gsk_eqn00161.gif"，等于净节点力（外部施加力<img height="13" width="13" src="../graphics/gsk_eqn00162.gif">与内部单元力<img height="14" width="8" src="../graphics/gsk_eqn00163.gif">之差）：
 
-![](../graphics/gsk_eqn00164.gif)
+![](../graphics/gsk_eqn00160.gif)![](../graphics/gsk_eqn00161.gif)![](../graphics/gsk_eqn00162.gif)![](../graphics/gsk_eqn00163.gif)![](../graphics/gsk_eqn00164.gif)
 
 当前增量步开始时的加速度（在时间<img height="12" width="6" src="../graphics/gsk_eqn00165.gif">处）计算如下：
 
-![](../graphics/gsk_eqn00166.gif)
+![](../graphics/gsk_eqn00165.gif)![](../graphics/gsk_eqn00166.gif)
 
 由于显式过程总是使用对角化或集中质量矩阵，求解加速度非常容易；不存在需要求解的联立方程。任意节点的加速度完全由其质量和作用于它的净力决定，使得节点计算非常廉价。
 
@@ -44,7 +44,7 @@ Abaqus/Explicit使用中心差分法则通过时间显式地积分运动方程�
 
    b. 根据本构方程计算应力<img height="9" width="12" src="../graphics/gsk_eqn00174.gif">。
 
-   ![](../graphics/gsk_eqn00175.gif)
+   ![](../graphics/gsk_eqn00172.gif)![](../graphics/gsk_eqn00173.gif)![](../graphics/gsk_eqn00174.gif)![](../graphics/gsk_eqn00175.gif)
 
    c. 组装节点内部力<img height="19" width="51" src="../graphics/gsk_eqn00176.gif">。
 
@@ -54,13 +54,13 @@ Abaqus/Explicit使用中心差分法则通过时间显式地积分运动方程�
 
 对于隐式和显式时间积分程序，平衡都用外部施加力<img height="13" width="13" src="../graphics/gsk_eqn00162.gif">、内部单元力<img height="14" width="8" src="../graphics/gsk_eqn00163.gif">和节点加速度来定义：
 
-![](../graphics/gsk_eqn00178.gif)
+![](../graphics/gsk_eqn00176.gif)![](../graphics/gsk_eqn00177.gif)![](../graphics/gsk_eqn00165.gif)![](../graphics/gsk_eqn00162.gif)![](../graphics/gsk_eqn00163.gif)![](../graphics/gsk_eqn00178.gif)
 
 其中<img height="13" width="19" src="../graphics/gsk_eqn00160.gif">是质量矩阵。两种程序都求解节点加速度，并使用相同的单元计算来确定内部单元力。两种程序之间最大的区别在于节点加速度的计算方式。在隐式程序中，通过直接求解法求解一组线性方程组。与显式方法相对廉价的节点计算相比，求解这组方程组的计算成本很高。
 
 Abaqus/Standard使用基于完整牛顿迭代求解方法的自动增量步划分。牛顿方法寻求在增量步结束时的<img height="13" width="49" src="../graphics/gsk_eqn00177.gif">时刻满足动力平衡，并计算同一时刻的位移。时间增量<img height="12" width="21" src="../graphics/gsk_eqn00179.gif">与显式方法中使用的时间增量相比相对较大，因为隐式格式是无条件稳定的。对于非线性问题，每个增量步通常需要几次迭代才能在规定容差范围内获得解。每次牛顿迭代求解增量位移<img height="18" width="32" src="../graphics/gsk_eqn00181.gif">的修正<img height="14" width="15" src="../graphics/gsk_eqn00180.gif">。每次迭代都需要求解一组联立方程：
 
-![](../graphics/gsk_eqn00182.gif)
+![](../graphics/gsk_eqn00160.gif)![](../graphics/gsk_eqn00177.gif)![](../graphics/gsk_eqn00179.gif)![](../graphics/gsk_eqn00180.gif)![](../graphics/gsk_eqn00181.gif)![](../graphics/gsk_eqn00182.gif)![](../graphics/gsk_eqn00183.gif)
 
 对于大型模型，这是一个昂贵的程序。有效刚度矩阵<img height="25" width="22" src="../graphics/gsk_eqn00183.gif">是切线刚度矩阵和质量矩阵的线性组合。迭代继续进行，直到几个量（力残差、位移修正等）都在规定容差范围内。对于平滑的非线性响应，牛顿方法具有二次收敛速率，如下所示：
 

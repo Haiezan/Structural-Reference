@@ -28,7 +28,3 @@
 
 **Abaqus/CAE用户指南**
 - ["创建或编辑自由体切割，" 第67.2节](../usi/usi-link.md#usi-fbd-hlp-create)
-
-
-
-

@@ -27,6 +27,3 @@ The type of the odb_Union object. Possible values are odb_UNION_INT, odb_UNION_F
 odbException
 
 None.
-
-
-

@@ -8,11 +8,11 @@
 
 此选项用于定义两个流体腔之间或流体腔与其环境之间的流体交换。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**相互作用模块
 

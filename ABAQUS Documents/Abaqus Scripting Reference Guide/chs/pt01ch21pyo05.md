@@ -76,8 +76,3 @@ TextException。
 ### 21.5.3 成员
 
 ExpressionField 对象具有与 [ExpressionField](pt01ch21pyo05.md#ker-expressionfield-expressionfield-pyc) 方法的参数相同的名称和描述的成员。
-
-
-
-
-

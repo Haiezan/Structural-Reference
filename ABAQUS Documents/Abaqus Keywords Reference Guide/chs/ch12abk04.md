@@ -12,11 +12,11 @@
 
 此选项用于定义低密度泡沫材料的材料系数。[*LOW DENSITY FOAM](ch12abk04.md)选项必须与[*UNIAXIAL TEST DATA](ch20abk04.md)、DIRECTION=TENSION和[*UNIAXIAL TEST DATA](ch20abk04.md)、DIRECTION=COMPRESSION选项结合使用，以分别指定泡沫材料在单轴拉伸和压缩时的应力-应变响应。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -68,6 +68,3 @@ FAIL
 ### **指定低密度泡沫松弛系数的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-

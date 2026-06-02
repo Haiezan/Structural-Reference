@@ -8,11 +8,11 @@
 
 此选项用于定义用于流体充气机气体种类。[*FLUID INFLATOR MIXTURE](ch06abk28.md)选项只能与[*FLUID INFLATOR PROPERTY](ch06abk29.md)选项一起使用。
 
-**产品：**Abaqus/Explicit   
+**产品：**Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件，部件实例  
+**级别：**部件，部件实例
 
 ##### **参考：**
 

@@ -12,11 +12,11 @@
 
 它还用于定义与ROTARYI单元相关的质量比例阻尼（用于直接积分动态分析和显式动态分析）和复合阻尼（用于模态动态分析）。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例，装配  
+**级别：**零件，零件实例，装配
 
 **Abaqus/CAE：**属性模块和相互作用模块。
 

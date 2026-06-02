@@ -112,7 +112,3 @@ LoadCase 对象具有与 [LoadCase](pt01ch28pyo01.md#ker-loadcase-loadcase-pyc) 
 *suppressed*
 
 一个 Boolean，指定负载情形是否被抑制。默认值为 OFF。
-
-
-
-

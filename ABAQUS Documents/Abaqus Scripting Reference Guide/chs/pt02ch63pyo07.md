@@ -72,7 +72,3 @@ The CompositeSolidSection object has members with the same names and description
 
 | [*SOLID SECTION](../key/key-link.md#usb-kws-msolidsection) |
 | --- |
-
-
-
-

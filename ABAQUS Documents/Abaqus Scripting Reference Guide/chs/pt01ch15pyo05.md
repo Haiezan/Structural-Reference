@@ -22,4 +22,3 @@ DatumPoint 对象具有以下成员：
 *pointOn*
 
 浮点数元组，指定位于 datum 上的点的 X、Y 和 Z 坐标。
-

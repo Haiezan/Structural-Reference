@@ -49,30 +49,10 @@ Potential(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-- ![](../graphics/ker_eqn00350.gif]。
-- ![](../graphics/ker_eqn00351.gif]。
-- ![](../graphics/ker_eqn00352.gif]。
-- ![](../graphics/ker_eqn00353.gif]。
-- ![](../graphics/ker_eqn00354.gif]。
-- ![](../graphics/ker_eqn00355.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-**返回值**
-
-一个 Potential 对象。
-
-**异常**
-
-RangeError。
-
-### 60.83.2 成员
-
-Potential 对象的成员与 [Potential](pt02ch60pyo83.md#ker-potential-potential-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00350.gif)![](../graphics/ker_eqn00351.gif)![](../graphics/ker_eqn00352.gif)![](../graphics/ker_eqn00353.gif)![](../graphics/ker_eqn00354.gif)![](../graphics/ker_eqn00355.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.83.3 对应的分析关键字
 
 | [*POTENTIAL](../key/key-link.md#usb-kws-mpotential) |
 | --- |
+### 60.83.3 Corresponding analysis keywords

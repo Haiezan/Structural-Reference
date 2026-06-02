@@ -41,5 +41,3 @@ Float，指定启动降低内存模式的 *kernelMemoryLimit* 百分比。默认
 ### 47.7.2 成员
 
 MemoryReductionOptions 对象的成员与 [setValues](pt01ch47pyo07.md#ker-memoryreductionoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-

@@ -228,7 +228,3 @@ An Int specifying an Int specifying the element label.
 *face*
 
 An Int specifying a symbolic constant specifying the side of the element.
-
-
-
-

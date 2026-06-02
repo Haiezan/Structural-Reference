@@ -28,7 +28,3 @@ Job 模块：
 
 **Abaqus/CAE User's Guide**
 - [“Creating the optimization files，” Section 19.12.2](../usi/usi-link.md#usi-ana-optman-writefilesbtn)
-
-
-
-

@@ -22,7 +22,3 @@
 
 **Abaqus/CAE用户指南**
 - ["从所有活动自由体切割读取X–Y数据，" 第47.2.4节](../usi/usi-link.md#usv-xyp-readfreebody)
-
-
-
-

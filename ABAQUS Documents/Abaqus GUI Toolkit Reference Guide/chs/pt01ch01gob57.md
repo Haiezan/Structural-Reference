@@ -278,8 +278,3 @@
 | **AFXTEXTFIELD_VERTICAL** | 将标签或按钮定向在文本字段上方。 |
 | **AFXTEXTFIELD_READONLY** | 将文本字段配置为只读状态。 |
 | **AFXTEXTFIELD_IME** | 允许 IME（日语等）输入。 |
-
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Explicit  
+**产品：**Abaqus/Explicit
 
 **优点：**您现在可以输出位移、速度、加速度和反作用力的空间矢量节点量的幅值。
 
@@ -19,4 +19,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*NODE OUTPUT](../key/key-link.md#usb-kws-hnodeoutput)
-

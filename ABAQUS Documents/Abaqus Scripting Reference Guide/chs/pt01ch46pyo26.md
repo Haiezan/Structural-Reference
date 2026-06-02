@@ -80,5 +80,3 @@ TrussSection 对象的成员与 [TrussSection](pt01ch46pyo26.md#ker-trusssection
 
 | [*SOLID SECTION](../key/key-link.md#usb-kws-msolidsection) |
 | --- |
-
-

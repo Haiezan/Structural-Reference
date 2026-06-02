@@ -42,6 +42,3 @@ AcousticImpedanceState 对象具有以下成员：
 
 | [*SIMPEDANCE](../key/key-link.md#usb-kws-hsimpedance) |
 | --- |
-
-
-

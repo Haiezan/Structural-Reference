@@ -368,8 +368,3 @@ const TYPE& returnObj = odb_dynamicCast(TYPE, const BASETYPE& obj);
 ```
 Bad cast: From BASETYPE To TYPE.
 ```
-
-
-
-
-

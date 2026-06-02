@@ -98,6 +98,3 @@ EquallySpacedAmplitude 对象具有与 [EquallySpacedAmplitude](pt01ch03pyo06.md
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

@@ -107,7 +107,3 @@ The XFEMCrackGrowth object has members with the same names and descriptions as t
 
 | [*ENRICHMENT ACTIVATION](../key/key-link.md#usb-kws-henrichmentactivation) |
 | --- |
-
-
-
-

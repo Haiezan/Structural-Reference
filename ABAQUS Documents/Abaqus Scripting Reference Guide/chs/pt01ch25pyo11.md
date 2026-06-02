@@ -112,6 +112,3 @@ CohesiveBehavior 对象的成员与 [CohesiveBehavior](pt01ch25pyo11.md#ker-cohe
 
 | [*COHESIVE BEHAVIOR](../key/key-link.md#usb-kws-mcohesivebehavior) |
 | --- |
-
-
-

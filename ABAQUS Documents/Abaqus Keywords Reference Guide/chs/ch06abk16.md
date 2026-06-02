@@ -8,11 +8,11 @@
 
 此选项用于为基于表面的流体腔定义流体行为。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**相互作用模块
 

@@ -286,6 +286,3 @@ ContactDamage 对象具有以下成员：
 | --- |
 | [*DAMAGE EVOLUTION](../key/key-link.md#usb-kws-mdamageevolution) |
 | [*DAMAGE STABILIZATION](../key/key-link.md#usb-kws-mdamagestabilization) |
-
-
-

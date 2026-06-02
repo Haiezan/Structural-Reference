@@ -8,11 +8,11 @@
 
 此选项用于定义流体腔的参考流体密度。它仅适用于液压流体，不应用于气动流体和用户定义的流体。[*FLUID DENSITY](ch06abk20.md)选项只能与[*FLUID BEHAVIOR](ch06abk16.md)选项一起使用。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**相互作用模块
 

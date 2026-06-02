@@ -96,8 +96,3 @@ ButterworthFilter 对象具有与 [ButterworthFilter](pt01ch22pyo02.md#ker-butte
 
 | [*FILTER*](../key/key-link.md#usb-kws-mfilter) |
 | --- |
-
-
-
-
-

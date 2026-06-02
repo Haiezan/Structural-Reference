@@ -162,38 +162,7 @@ Elastic(const odb_SequenceSequenceDouble& table,
 
 如果 *type*=TRACTION，表数据指定以下内容：
 - 对于翘曲单元为 ![](../graphics/ker_eqn00163.gif)]；对于内聚单元为 ![](../graphics/ker_eqn00213.gif)。
-- 对于翘曲单元为 ![](../graphics/ker_eqn00214.gif]；对于内聚单元为 ![](../graphics/ker_eqn00215.gif]。
-- 对于翘曲单元为 ![](../graphics/ker_eqn00216.gif]；对于内聚单元为 ![](../graphics/ker_eqn00217.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=COUPLED_TRACTION，表数据指定以下内容：
-- ![](../graphics/ker_eqn00213.gif]。
-- ![](../graphics/ker_eqn00215.gif]。
-- ![](../graphics/ker_eqn00217.gif]。
-- ![](../graphics/ker_eqn00218.gif]。
-- ![](../graphics/ker_eqn00219.gif]。
-- ![](../graphics/ker_eqn00220.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=SHORT_FIBER，则没有表数据。
-
-**返回值**
-
-一个 Elastic 对象。
-
-**异常**
-
-RangeError。
-
-### 60.45.2 成员
-
-Elastic 对象的成员与 [Elastic](pt02ch60pyo45.md#ker-elastic-elastic-cpp) 方法的参数具有相同的名称和描述。
+- 对于翘曲单元为 ![](../graphics/ker_eqn00214.gif)![](../graphics/ker_eqn00215.gif)![](../graphics/ker_eqn00216.gif)![](../graphics/ker_eqn00217.gif)![](../graphics/ker_eqn00213.gif)![](../graphics/ker_eqn00215.gif)![](../graphics/ker_eqn00217.gif)![](../graphics/ker_eqn00218.gif)![](../graphics/ker_eqn00219.gif)![](../graphics/ker_eqn00220.gif) 方法的参数具有相同的名称和描述。
 
 此外，Elastic 对象可以具有以下成员：
 
@@ -216,3 +185,4 @@ odb_FailStrain failStrain() const;
 
 | [*ELASTIC](../key/key-link.md#usb-kws-melastic) |
 | --- |
+### 60.45.3 Corresponding analysis keywords

@@ -59,8 +59,3 @@ session.freeBodyReportOptions
 ### 23.2.2 成员
 
 FreeBodyReportOptions 对象具有与 [setValues](pt01ch23pyo02.md#ker-freebodyreportoptions-setvalues-pyc) 方法的参数相同的名称和描述的成员。
-
-
-
-
-

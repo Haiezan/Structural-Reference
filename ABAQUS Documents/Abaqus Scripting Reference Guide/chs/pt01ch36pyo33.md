@@ -6,7 +6,7 @@
 
 
 
-         A StepOption is an object used to define step options in a design response.       
+         A StepOption is an object used to define step options in a design response.
 
 **Access**
 
@@ -20,28 +20,24 @@
 
 ### 36.33.1 Members
 
-         The StepOption object can have the following members:       
+         The StepOption object can have the following members:
 
 *lowerMode*
 
-               The SymbolicConstant ALL or an Int specifying the lower mode in the range of modes to consider in the step.  *lowerMode* is ignored for steps without modes. The default value is ALL.             
+               The SymbolicConstant ALL or an Int specifying the lower mode in the range of modes to consider in the step.  *lowerMode* is ignored for steps without modes. The default value is ALL.
 
 *upperMode*
 
-               The SymbolicConstant ALL or an Int specifying the upper mode in the range of modes to consider in the step.  *upperMode* is ignored for steps without modes. The default value is ALL.             
+               The SymbolicConstant ALL or an Int specifying the upper mode in the range of modes to consider in the step.  *upperMode* is ignored for steps without modes. The default value is ALL.
 
 *loadCase*
 
-               The SymbolicConstant ALL or a String specifying the name of the load case.  *loadCase* is ignored when the specified *step* does not contain a load case. The default value is ALL.             
+               The SymbolicConstant ALL or a String specifying the name of the load case.  *loadCase* is ignored when the specified *step* does not contain a load case. The default value is ALL.
 
 *step*
 
-               The SymbolicConstant ALL or a String specifying the name of the step. The default value is ALL.             
+               The SymbolicConstant ALL or a String specifying the name of the step. The default value is ALL.
 
 *model*
 
-A string specifying the name of the model from which the steps are supposed to be used in the design response. The default is the current model. 
-
-
-
-
+A string specifying the name of the model from which the steps are supposed to be used in the design response. The default is the current model.

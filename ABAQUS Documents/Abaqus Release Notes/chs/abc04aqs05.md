@@ -20,7 +20,3 @@
 - [*MATRIX CHECK](../key/key-link.md#usb-kws-hmatrixcheck)
 - [*MATRIX GENERATE](../key/key-link.md#usb-kws-hmatrixgenerate)
 - [*SUBSTRUCTURE GENERATE](../key/key-link.md#usb-kws-ssubgenerate)
-
-
-
-

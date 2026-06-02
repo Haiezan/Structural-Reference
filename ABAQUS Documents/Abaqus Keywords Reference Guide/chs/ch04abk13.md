@@ -8,11 +8,11 @@
 
 此选项用于定义材料的质量密度。在Abaqus/Standard分析中，可以使用分布为实体连续单元定义空间变化的质量密度（["分布定义，" Abaqus分析用户指南第2.8.1节](../usb/usb-link.md#usb-int-adefiningdistributions)）。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -47,7 +47,3 @@ PORE FLUID
 ### **使用分布在Abaqus/Standard分析中为实体连续单元定义空间变化质量密度的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

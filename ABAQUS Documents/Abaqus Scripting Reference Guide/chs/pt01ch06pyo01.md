@@ -1235,7 +1235,3 @@ Assembly 对象可以具有以下成员：
 *sectionAssignments*
 
 一个 [SectionAssignmentArray](pt01ch44pyo01.md) 对象。
-
-
-
-

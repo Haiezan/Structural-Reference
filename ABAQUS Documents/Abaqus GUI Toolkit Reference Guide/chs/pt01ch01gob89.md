@@ -21,8 +21,3 @@
 | **LIST_BROWSESELECT** | 浏览选择模式，强制始终选择一项。 |
 | **LIST_MULTIPLESELECT** | 多选模式，用于选择单个项。 |
 | **LIST_AUTOSELECT** | 自动选择光标下的项。 |
-
-
-
-
-

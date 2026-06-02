@@ -18,11 +18,11 @@
 
 [*DAMPING CONTROLS](ch04abk07.md) 选项还用于在使用考虑阻尼的子结构的所有分析程序中的 [*SUBSTRUCTURE PROPERTY](ch18abk46.md) 选项下定义子结构阻尼的类型和来源。在子结构属性定义中使用此选项的规则与在步骤定义中使用它的规则相同（有关详细信息，请参见Abaqus分析用户指南第10.1.1节中的["定义子结构阻尼"](../usb/usb-link.md#usb-anl-asuperelements-damping)）。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据或历史数据  
+**类型：**模型数据或历史数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 **Abaqus/CAE：**仅在子结构生成的步骤模块中支持。
 
@@ -63,7 +63,3 @@ VISCOUS
 如果省略此参数或此选项未作为 [*SUBSTRUCTURE PROPERTY](ch18abk46.md) 的子选项使用，则子结构属性使用 COMBINED 作为默认值，并使用 [*DAMPING](ch04abk06.md)、ALPHA 或 BETA 选项下指定的质量和刚度比例Rayleigh阻尼因子。
 
 **此选项没有关联的数据行。**
-
-
-
-

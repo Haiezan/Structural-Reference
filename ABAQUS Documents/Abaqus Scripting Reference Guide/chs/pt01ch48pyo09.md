@@ -72,7 +72,3 @@ A String specifying an expression or value associated with this ConstrainedSketc
 *previousParameter*
 
 A String specifying the name of the ConstrainedSketchParameter                     that appears before this one in the ordered list.
-
-
-
-

@@ -10,11 +10,11 @@
 
 此选项用于定义非线性各向同性/运动硬化模型弹性域的演化。此选项只能与[*PLASTIC](ch16abk14.md)选项结合使用。如果不使用此选项，弹性域在分析过程中保持不变。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -72,8 +72,3 @@ RATE
 **第一行：**
 
 根据需要重复此数据行，以定义所有硬化属性。
-
-
-
-
-

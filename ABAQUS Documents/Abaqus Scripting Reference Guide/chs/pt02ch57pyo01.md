@@ -27,4 +27,3 @@ odb_String name() const;
 *name*
 
 一个 odb_String，指定 repository 键。
-

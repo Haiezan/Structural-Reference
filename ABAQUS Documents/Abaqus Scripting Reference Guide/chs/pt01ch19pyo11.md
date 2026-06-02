@@ -186,8 +186,3 @@ PointFastener 对象具有与 [PointFastener](pt01ch19pyo11.md#ker-pointfastener
 
 | [*FASTENER](../key/key-link.md#usb-kws-mfastener) |
 | --- |
-
-
-
-
-

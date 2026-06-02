@@ -9,11 +9,11 @@
 
 此选项用于为通用弹性体泡沫定义材料常数。此材料与常规超弹性材料的区别在于它是高度可压缩的。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -71,7 +71,3 @@ TEST DATA INPUT
 根据需要重复此数据行对，以将材料常数定义为温度的函数。
 
 **对于 N 的更高值（最多 6）的数据行：**
-
-
-
-

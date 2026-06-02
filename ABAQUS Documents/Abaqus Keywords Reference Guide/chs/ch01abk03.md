@@ -8,7 +8,7 @@
 
 此选项用于识别声学问题中入射波载荷公式的类型。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 

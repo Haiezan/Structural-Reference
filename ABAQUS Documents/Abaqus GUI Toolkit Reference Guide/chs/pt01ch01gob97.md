@@ -84,6 +84,3 @@
 | --- | --- |
 | **MENUSTATE_CHECKED** | 用复选标记选中。 |
 | **MENUSTATE_RCHECKED** | 用项目符号选中。 |
-
-
-

@@ -14,11 +14,11 @@
 
 它还用于定义与MASS单元关联的质量比例阻尼（用于直接积分动力分析和显式动力分析）和复合阻尼（用于模态动力分析）。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**属性模块和相互作用模块。
 

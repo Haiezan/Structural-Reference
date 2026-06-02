@@ -1,5 +1,5 @@
 # *MULLINS EFFECT
-
+![](../graphics/key_eqn00135.gif)![](../graphics/key_eqn00135.gif)![](../graphics/key_eqn00914.gif)![](../graphics/key_eqn00915.gif)![](../graphics/key_eqn00916.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项用于为填充橡胶弹性体中的Mullins效应或为弹性体泡沫中的能量耗散建模定义材料常数。它只能与[*HYPERELASTIC](ch08abk06.md)或[*HYPERFOAM](ch08abk07.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

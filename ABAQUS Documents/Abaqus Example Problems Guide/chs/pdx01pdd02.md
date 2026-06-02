@@ -212,7 +212,3 @@
 
 | [Section 15.1.2](ch15s01aex155.md) | Joining data from multiple results files and converting file format: FJOIN |
 | --- | --- |
-
-
-
-

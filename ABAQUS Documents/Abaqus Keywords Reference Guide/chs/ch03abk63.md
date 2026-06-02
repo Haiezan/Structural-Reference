@@ -9,9 +9,9 @@
 
 此选项用于指定应由通用接触算法考虑的自接触表面和表面配对。应与 [*CONTACT](ch03abk54.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据  
+**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的模型数据或历史数据
 
 **级别：**Abaqus/Standard 中的模型；Abaqus/Explicit 中的模型或步骤
 
@@ -36,7 +36,3 @@ ALL EXTERIOR
 **第一行：**
 
 根据需要重复此数据行。
-
-
-
-

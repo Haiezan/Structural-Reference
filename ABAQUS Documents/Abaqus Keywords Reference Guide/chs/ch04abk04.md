@@ -8,11 +8,11 @@
 
 此选项用于提供定义损伤起始的材料属性。它还可以与 [*SURFACE INTERACTION](ch18abk50.md) 选项结合使用，以定义允许定义内聚表面损伤起始的接触属性模型。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -343,7 +343,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数值大于四时需要）：**
 
 根据需要重复此组数据行，以将损伤起始时的最大法向和剪切牵引力定义为温度和其他预定义场变量的函数。
-
-
-
-

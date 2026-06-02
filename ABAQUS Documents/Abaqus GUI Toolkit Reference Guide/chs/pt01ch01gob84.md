@@ -634,8 +634,3 @@
 | **ICONLIST_BIG_ICONS** | 大图标模式。 |
 | **ICONLIST_ROWS** | 按行模式。 |
 | **ICONLIST_COLUMNS** | 按列模式。 |
-
-
-
-
-

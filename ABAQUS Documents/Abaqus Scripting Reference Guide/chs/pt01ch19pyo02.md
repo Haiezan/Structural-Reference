@@ -115,8 +115,3 @@ AssembledFastener 对象具有与 [AssembledFastener](pt01ch19pyo02.md#ker-assem
 *suppressed*
 
 一个 Boolean，指定紧固件是否被抑制。默认值为 OFF。
-
-
-
-
-

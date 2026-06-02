@@ -9,11 +9,11 @@
 
 此选项用于定义连接器单元的失效准则。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -40,7 +40,3 @@ RELEASE
 ### **用于定义失效准则的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

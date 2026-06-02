@@ -2,7 +2,7 @@
 
 > 原文链接：[10.7 Example: axisymmetric mount](https://help.3ds.com/2024/Chinese/2024x/DSDOC-Book/dsd-Sim-Abaqus/GettingStartedAbaqusInteractive/sga-gsa-mat-exaximount.htm)
 
-## 摘要
+**摘要**
 
 您需要确定如图10-48所示的橡胶支架的轴向刚度，并识别可能限制支架疲劳寿命的高最大主应力区域。该支架两端与钢板粘合。它将承受高达5.5 kN的轴向载荷，载荷均匀分布在钢板上。横截面几何尺寸和尺寸如图10-48所示。
 
@@ -62,13 +62,13 @@
 
    **图10-51** 用于创建零件的几何结构（网格间距加倍）
 
-   ![用于创建零件的几何结构](../graphics/gss-mount-parta-c.png)
+   ![](../graphics/ico_sketchCircle.png)![用于创建零件的几何结构](../graphics/gss-mount-parta-c.png)
 
 3. 使用**自动修剪**工具移除草图中多余的部分，如图10-52所示。
 
    **图10-52** 最终零件几何形状（网格间距加倍）
 
-   ![最终零件几何形状](../graphics/gss-mount-partb-c.png)
+   ![](../graphics/ico_sketchTrimAuto.png)![最终零件几何形状](../graphics/gss-mount-partb-c.png)
 
 ### 材料属性：橡胶的超弹性模型
 
@@ -204,7 +204,7 @@ Abaqus根据材料测试数据计算的超弹性材料系数——*C*₁₀、*C
 
 **图10-61** 橡胶支架的网格
 
-![橡胶支架的网格](../graphics/gss-mesh-v-nls.png)
+![](../graphics/ico_meshSeedEdges.png)![橡胶支架的网格](../graphics/gss-mesh-v-nls.png)
 
 创建一个名为`Mount`的作业。为作业提供以下描述：`轴向载荷下的轴对称支架分析`。
 
@@ -297,7 +297,7 @@ Abaqus根据材料测试数据计算的超弹性材料系数——*C*₁₀、*C
 
 **图10-63** 橡胶支架的未变形模型形状
 
-![橡胶支架的未变形模型形状](../graphics/gss-undeform-shape-v.png)
+![](../graphics/ico_plotUndeformed.png)![橡胶支架的未变形模型形状](../graphics/gss-undeform-shape-v.png)
 
 如果图形遮挡了绘图标题，您可以单击工具并按住鼠标按钮1将变形形状平移到所需位置来移动绘图。或者，您可以关闭绘图标题（**视口 → 视口注释选项**）。
 
@@ -330,7 +330,7 @@ Abaqus根据材料测试数据计算的超弹性材料系数——*C*₁₀、*C
 
 **图10-64** 在5500 N施加载荷下橡胶的变形模型形状（镜像/扫过图像）
 
-![橡胶的变形模型形状](../graphics/gss-deformed-v.png)
+![](../graphics/ico_viewPan.png)![](../graphics/ico_plotDeformed.png)![橡胶的变形模型形状](../graphics/gss-deformed-v.png)
 
 钢板已被向上推动，导致橡胶向侧面凸出。使用**视图操作**工具栏中的工具放大网格的左下角。单击鼠标按钮1并按住以定义新视图的第一个角；移动鼠标以创建包含您想要查看区域的框（图10-65）；然后释放鼠标按钮。或者，您可以通过从主菜单栏中选择**视图 → 指定**来缩放和平移绘图。
 
@@ -338,7 +338,7 @@ Abaqus根据材料测试数据计算的超弹性材料系数——*C*₁₀、*C
 
 **图10-65** 橡胶支架模型左角的变形
 
-![橡胶支架模型左角的变形](../graphics/gss-distortion-v-nls.png)
+![](../graphics/ico_viewZoomRectangle.png)![橡胶支架模型左角的变形](../graphics/gss-distortion-v-nls.png)
 
 模型此角落中的一些单元正在变得严重变形，因为该区域的网格设计不足以承受那里发生的变形类型。虽然单元在分析开始时形状良好，但随着橡胶向外凸出，它们会变得严重变形，尤其是角落中的单元。如果载荷进一步增加，单元变形可能变得过度，以至于分析可能中止。10.8节"大变形网格设计"讨论了如何改进此问题的网格设计。
 
@@ -363,7 +363,7 @@ Abaqus根据材料测试数据计算的超弹性材料系数——*C*₁₀、*C
 
 **图10-66** 橡胶支架中的最大主应力等值线
 
-![橡胶支架中的最大主应力等值线](../graphics/gss-contours-v-nls.png)
+![橡胶支架中的最大主应力等值线](../graphics/gss-contours-v-nls.png)![](../graphics/ico_info.png)
 
 模型中的最大主应力（显示在等值线图例中）为136 kPa。虽然此模型中的网格相当精细，因此外推误差应该最小，但您可能希望使用查询工具来确定最大主应力的更准确积分点值。
 

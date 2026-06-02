@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD
 
 **优点：**新的 SIM 数据库实用程序提供了允许您转换 SIM 数据库文件以与其他版本兼容的工具。
 
@@ -15,4 +15,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["SIM database utilities," Section 3.2.19](../usb/usb-link.md#usb-int-dsimversion)
-

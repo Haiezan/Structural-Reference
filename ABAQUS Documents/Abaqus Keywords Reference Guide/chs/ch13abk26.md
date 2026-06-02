@@ -12,11 +12,11 @@
 
 此选项用于定义理想气体物种的分子量。它只能与[*FLUID BEHAVIOR](ch06abk16.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**相互作用模块
 

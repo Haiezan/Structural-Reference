@@ -20,7 +20,3 @@
 
 **Abaqus/CAE User's Guide**
 - [“Using the Model Tree to switch the context for part or model instances，” Section 13.10.3](../usi/usi-link.md#usi-asm-switchcontext)
-
-
-
-

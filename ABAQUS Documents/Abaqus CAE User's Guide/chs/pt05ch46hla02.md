@@ -11,4 +11,3 @@
 5. 从主菜单栏中，选择****Plot**![](../graphics/images/arrow.gif)**Material Orientations****，然后选择是在未变形形状、变形形状还是两者上绘制材料取向。**提示：**您还可以使用工具箱中的变形![](../graphics/ico_plotMatOrientDeformed.png)、未变形![](../graphics/ico_plotMatOrientUndeformed.png)或叠加![](../graphics/ico_plotMatOrientDefUndef.png)材料取向工具生成材料取向图。当前视口更改为显示自定义材料取向图。每次您在步骤和帧选择器、截面点选择器、绘图状态独立选项、叠加绘图选项（如果适用）或材料取向图选项对话框中单击**Apply**时，Abaqus会自动刷新您的材料取向图。
 
 ![](../graphics/images/black4rule.gif)有关相关信息，请单击以下项目：- ["材料取向图选项概述，" 第46.2节](pt05ch46hla01.md)
-

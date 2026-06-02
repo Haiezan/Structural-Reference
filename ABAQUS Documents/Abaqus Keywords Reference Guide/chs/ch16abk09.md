@@ -12,11 +12,11 @@
 
 此选项用于定义分析所需的物理常数；由于Abaqus没有内置单位，因此没有提供默认值。如果分析所需的物理常数未给出，Abaqus将发出致命错误消息。常数的单位必须与剩余输入数据一致。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**模型属性
 

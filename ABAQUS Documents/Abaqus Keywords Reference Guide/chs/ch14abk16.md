@@ -12,11 +12,11 @@
 
 此选项用于定义单元的替代节点法线。在Abaqus/Standard分析中，它也可用于定义接触表面的替代法线。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 ##### **参考：**
 

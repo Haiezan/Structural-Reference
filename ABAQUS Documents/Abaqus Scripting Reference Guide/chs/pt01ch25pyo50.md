@@ -98,6 +98,3 @@ MasterSlaveAssignment 对象没有成员。
 | [*CONTACT FORMULATION](../key/key-link.md#usb-kws-hcontformulation), TYPE=PURE MASTER-SLAVE |
 | --- |
 | [*CONTACT FORMULATION](../key/key-link.md#usb-kws-hcontformulation), TYPE=MASTER SLAVE ROLES |
-
-
-

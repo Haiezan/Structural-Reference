@@ -206,7 +206,3 @@ A [VertexArray](pt01ch07pyo15.md) object of length 2 specifying the direction of
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

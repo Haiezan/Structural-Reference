@@ -8,7 +8,7 @@
 
 此选项用于定义弹塑性材料的退火温度。它必须与[*PLASTIC](ch16abk14.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 

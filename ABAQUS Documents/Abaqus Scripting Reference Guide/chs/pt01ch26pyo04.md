@@ -313,7 +313,3 @@ A [MessageArray](pt01ch26pyo03.md) object specifying the messages received durin
 *environment*
 
 A tuple of Strings specifying the environment variables and their values.
-
-
-
-

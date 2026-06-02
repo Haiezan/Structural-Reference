@@ -9,11 +9,11 @@
 
 此选项用于在机械接触分析中定义基于表面的粘聚行为。必须与 [*SURFACE INTERACTION](ch18abk50.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -61,7 +61,3 @@ TYPE
 **后续行（仅在 DEPENDENCIES 参数值大于一时需要）：**
 
 根据需要重复此数据行集，以将弹性行为定义为温度和其他预定义场变量的函数。
-
-
-
-

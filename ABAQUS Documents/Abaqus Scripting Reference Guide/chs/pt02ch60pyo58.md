@@ -37,24 +37,10 @@ Gel(const odb_SequenceSequenceDouble& table);
 
 **表数据**
 
-- 完全干燥时凝胶颗粒的半径，![](../graphics/ker_eqn00259.gif]。
-- 完全膨胀时凝胶颗粒的半径，![](../graphics/ker_eqn00260.gif]。
-- 单位体积内凝胶颗粒的数量，![](../graphics/ker_eqn00261.gif]。
-- 凝胶颗粒长期膨胀的松弛时间常数，![](../graphics/ker_eqn00262.gif]。
-
-**返回值**
-
-一个 Gel 对象。
-
-**异常**
-
-无。
-
-### 60.58.2 成员
-
-Gel 对象的成员与 [Gel](pt02ch60pyo58.md#ker-gel-gel-cpp) 方法的参数具有相同的名称和描述。
+- 完全干燥时凝胶颗粒的半径，![](../graphics/ker_eqn00259.gif)![](../graphics/ker_eqn00260.gif)![](../graphics/ker_eqn00261.gif)![](../graphics/ker_eqn00262.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.58.3 对应的分析关键字
 
 | [*GEL](../key/key-link.md#usb-kws-mgel) |
 | --- |
+### 60.58.3 Corresponding analysis keywords

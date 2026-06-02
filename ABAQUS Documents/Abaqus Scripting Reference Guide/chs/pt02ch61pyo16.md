@@ -66,15 +66,15 @@ localCoordSystem = ((0, 1, 0), (1, 0, 0),
 将包含以下两点的部件转换
 
 ```
-                                 Pt1= (1,0,0) 
-                                 Pt2= (2,0,0) 
+                                 Pt1= (1,0,0)
+                                 Pt2= (2,0,0)
 ```
 
 到
 
 ```
-                                 Pt1 = (0, 6, 0) 
-                                 Pt2 = (0, 7, 0)                      
+                                 Pt1 = (0, 6, 0)
+                                 Pt2 = (0, 7, 0)
 ```
 
 **返回值**
@@ -361,7 +361,7 @@ AnalyticRigidSurf2DPlanar(const odb_String& name,
 如果与部件实例关联的 [OdbPart](pt02ch61pyo20.md) 类型为 THREE_D：
 
 ```
-OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.                         
+OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.
 ```
 
 ### 61.16.9 AnalyticRigidSurfExtrude(...)
@@ -407,7 +407,7 @@ AnalyticRigidSurfExtrude(const odb_String& name,
 如果与部件实例关联的 [OdbPart](pt02ch61pyo20.md) 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             CYLINDER                            can be defined only if the instance is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             CYLINDER                            can be defined only if the instance is of type                             THREE_D.
 ```
 
 ### 61.16.10 AnalyticRigidSurfRevolve(...)
@@ -453,7 +453,7 @@ AnalyticRigidSurfRevolve(const odb_String& name,
 如果与部件实例关联的 [OdbPart](pt02ch61pyo20.md) 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the instance is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the instance is of type                             THREE_D.
 ```
 
 ### 61.16.11 RigidBody(...)

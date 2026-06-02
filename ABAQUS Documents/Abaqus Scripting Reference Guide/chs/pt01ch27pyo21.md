@@ -166,7 +166,3 @@ A String specifying the name of the [AnalyticalField](pt01ch21pyo02.md) object a
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

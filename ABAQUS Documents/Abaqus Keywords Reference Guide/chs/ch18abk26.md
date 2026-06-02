@@ -40,7 +40,7 @@ TYPE
 
 **第一行：**
 
-根据需要重复此数据行，以从 ![](../graphics/key_eqn01079.gif) 到 ![](../graphics/key_eqn00897.gif) 在 *s* 的递增值中定义 ![](../graphics/key_eqn00847.gif) 和 *s* 之间的关系。必须至少指定两行数据。
+根据需要重复此数据行，以从 ![](../graphics/key_eqn00847.gif)![](../graphics/key_eqn01079.gif) 到 ![](../graphics/key_eqn00897.gif) 在 *s* 的递增值中定义  和 *s* 之间的关系。必须至少指定两行数据。
 
 ### **TYPE=ABSORPTION或TYPE=EXSORPTION且LAW=LOG时的数据行：**
 
@@ -49,7 +49,3 @@ TYPE
 ### **TYPE=SCANNING时的数据行：**
 
 **第一行（也是唯一行）：**
-
-
-
-

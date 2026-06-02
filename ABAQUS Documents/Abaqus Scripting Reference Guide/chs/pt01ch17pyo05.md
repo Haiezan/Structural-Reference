@@ -65,8 +65,3 @@ RangeError。
 ### 17.5.2 成员
 
 PredefinedFieldDisplayOptions 对象的成员与 [setValues](pt01ch17pyo05.md#ker-predefinedfielddisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

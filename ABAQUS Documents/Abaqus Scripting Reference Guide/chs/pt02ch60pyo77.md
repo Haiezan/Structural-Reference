@@ -73,60 +73,7 @@ Plastic(const odb_SequenceSequenceDouble& table,
 如果 *hardening*=ISOTROPIC，或者如果 *hardening*=COMBINED 且 *dataType*=HALF_CYCLE，表数据指定以下内容：
 - 屈服应力。
 - 塑性应变。
-- 等效塑性应变率，![](../graphics/ker_eqn00337.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *hardening*=COMBINED 且 *dataType*=STABILIZED，表数据指定以下内容：
-- 屈服应力。
-- 塑性应变。
-- 应变范围（如果数据依赖应变范围）。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *hardening*=COMBINED 且 *dataType*=PARAMETERS，表数据指定以下内容：
-- 零塑性应变时的屈服应力。
-- 第一个运动学硬化参数，![](../graphics/ker_eqn00338.gif]。
-- 第一个运动学硬化参数，![](../graphics/ker_eqn00339.gif]。
-- 如果适用，第二个运动学硬化参数，![](../graphics/ker_eqn00340.gif]。
-- 如果适用，第二个运动学硬化参数，![](../graphics/ker_eqn00341.gif]。
-- 依此类推。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *hardening*=KINEMATIC，表数据指定以下内容：
-- 屈服应力。
-- 塑性应变。
-- 温度（如果数据依赖温度）。
-
-如果 *hardening*=JOHNSON_COOK，表数据指定以下内容：
-- A。
-- B。
-- n。
-- m。
-- 熔化温度。
-- 转变温度。
-
-如果 *hardening*=USER，表数据指定以下内容：
-- 硬化属性。
-
-**返回值**
-
-一个 Plastic 对象。
-
-**异常**
-
-RangeError。
-
-### 60.77.2 成员
-
-Plastic 对象的成员与 [Plastic](pt02ch60pyo77.md#ker-plastic-plastic-cpp) 方法的参数具有相同的名称和描述。
+- 等效塑性应变率，![](../graphics/ker_eqn00337.gif)![](../graphics/ker_eqn00338.gif)![](../graphics/ker_eqn00339.gif)![](../graphics/ker_eqn00340.gif)![](../graphics/ker_eqn00341.gif) 方法的参数具有相同的名称和描述。
 
 此外，Plastic 对象可以具有以下成员：
 
@@ -169,3 +116,4 @@ odb_AnnealTemperature annealTemperature() const;
 
 | [*PLASTIC](../key/key-link.md#usb-kws-mplastic) |
 | --- |
+### 60.77.3 Corresponding analysis keywords

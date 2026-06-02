@@ -43,7 +43,7 @@ A [Region](pt01ch45pyo03.md) object specifying the region to which the load is a
 
 *magnitude*
 
-A Float or a Complex specifying the pressure magnitude.                            
+A Float or a Complex specifying the pressure magnitude.
 
 **Note:** *magnitude* is optional if *distributionType*=USER_DEFINED.
 
@@ -53,7 +53,7 @@ A Float specifying the height of the zero pressure level when *distributionType*
 
 *hReference*
 
-A Float specifying the height of the reference pressure level when                                  *distributionType*=HYDROSTATIC.                            
+A Float specifying the height of the reference pressure level when                                  *distributionType*=HYDROSTATIC.
 
 **Optional arguments**
 
@@ -156,7 +156,3 @@ A String specifying the name of the [AnalyticalField](pt01ch21pyo02.md) or [Disc
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

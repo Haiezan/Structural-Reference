@@ -8,9 +8,9 @@
 
 此选项用于将接触、单元、节点和/或特征模式响应的灵敏度写入输出数据库。[*CONTACT RESPONSE](ch03abk72.md)、[*ELEMENT RESPONSE](ch05abk11.md) 和/或 [*NODE RESPONSE](ch14abk13.md) 选项可与此选项结合使用。
 
-**产品：**Abaqus/Design  
+**产品：**Abaqus/Design
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -36,7 +36,3 @@ MODE LIST
 **第一行：**
 
 根据需要重复此数据行，以列出所有所需的特征模式。
-
-
-
-

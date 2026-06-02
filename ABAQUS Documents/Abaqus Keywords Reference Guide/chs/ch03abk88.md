@@ -9,9 +9,9 @@
 
 此选项用于为使用可压碎泡沫塑性模型的弹塑性材料定义硬化数据。必须与 [*CRUSHABLE FOAM](ch03abk87.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**模型
 
@@ -35,7 +35,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此数据行集，以定义单轴压缩中的屈服应力对相应轴向塑性应变的依赖性，以及在需要时对温度和其他预定义场变量的依赖性。
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/CAE  
+**产品：**Abaqus/CAE
 
 **优点：**当搜索涉及同一实例上不同区域的接触对时，您现在可以包含模型实例。此增强提高了 Abaqus/CAE 中接触检测工具的可用性。
 
@@ -23,4 +23,3 @@ Interaction 模块:
 **Abaqus/CAE User's Guide**
 - ["The contact detection algorithm," Section 15.6.2](../usi/usi-link.md#usi-itn-auto-detection-algorithm)
 - ["Specifying search criteria for contact detection," Section 15.16.1](../usi/usi-link.md#usi-itn-help-detection-criteria)
-

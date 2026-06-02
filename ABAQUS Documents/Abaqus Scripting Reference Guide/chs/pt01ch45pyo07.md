@@ -92,4 +92,3 @@ Stringer 对象具有以下成员：
 *edges*
 
  [EdgeArray](pt01ch07pyo03.md) 对象。
-

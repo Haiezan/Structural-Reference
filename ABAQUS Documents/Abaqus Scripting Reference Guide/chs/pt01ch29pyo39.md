@@ -79,7 +79,3 @@ DetonationPoint 对象具有与 [DetonationPoint](pt01ch29pyo39.md#ker-detonatio
 
 | [*DETONATION POINT](../key/key-link.md#usb-kws-mdetonationpt) |
 | --- |
-
-
-
-

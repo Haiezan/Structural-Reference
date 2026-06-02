@@ -1,5 +1,5 @@
 # *NSET
-
+![](../graphics/key_eqn00707.gif)![](../graphics/key_eqn00708.gif)![](../graphics/key_eqn00707.gif)![](../graphics/key_eqn00708.gif)![](../graphics/key_eqn00926.gif)
 
 
 
@@ -12,9 +12,9 @@
 
 此选项将节点分配到节点集。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型或历史数据  
+**类型：**模型或历史数据
 
 **级别：**部件、部件实例、装配、模型、步骤
 

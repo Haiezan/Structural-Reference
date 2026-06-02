@@ -12,11 +12,11 @@
 
 此选项用于指定材料的潜热。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -37,7 +37,3 @@ PORE FLUID
 **第一行：**
 
 根据需要重复此数据行，以定义材料中的相变；每行一个相变。潜热值必须按温度升序给出。
-
-
-
-

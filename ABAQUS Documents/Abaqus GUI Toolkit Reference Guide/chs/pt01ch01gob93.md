@@ -47,8 +47,3 @@
 | pb | Int | 2 |  |
 | hs | Int | DEFAULT_SPACING |  |
 | vs | Int | DEFAULT_SPACING |  |
-
-
-
-
-

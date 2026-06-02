@@ -10,11 +10,11 @@
 
 This option is used to instance a part within an assembly. It must be used in conjunction with the [*ASSEMBLY](ch01abk14.md) and [*END INSTANCE](ch05abk17.md) options. If the instance is not imported from a previous analysis, the [*INSTANCE](ch09abk19.md) option must be used in conjunction with the [*PART](ch16abk04.md) option. When importing a part instance from a previous analysis, the [*INSTANCE](ch09abk19.md) option must be used in conjunction with the [*IMPORT](ch09abk04.md) option.
 
-**Products: **Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**Products: **Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**Type: **Model data  
+**Type: **Model data
 
-**Level: **Assembly  
+**Level: **Assembly
 
 **Abaqus/CAE: **Assembly module for part instances not imported from a previous analysis; Load module for part instances imported from a previous analysis
 
@@ -66,7 +66,3 @@ If both translation and rotation are specified, translation is applied before ro
 **Figure 9.19–1** Rotation of an instance.
 
 ![](../graphics/ksuperprop-rot.png)
-
-
-
-

@@ -8,7 +8,7 @@
 
 此选项用于执行特征值提取，以计算系统的复特征值和相应的复振型。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
 **类型：**历史数据
 
@@ -55,7 +55,3 @@ RIGHT EIGENVECTORS
 ### **复特征值提取的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

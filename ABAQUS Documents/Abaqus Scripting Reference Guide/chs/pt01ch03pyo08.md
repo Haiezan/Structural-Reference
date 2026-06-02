@@ -92,6 +92,3 @@ PeriodicAmplitude 对象具有与 [PeriodicAmplitude](pt01ch03pyo08.md#ker-perio
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

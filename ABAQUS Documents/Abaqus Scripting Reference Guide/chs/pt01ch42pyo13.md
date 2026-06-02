@@ -203,4 +203,3 @@ Temperature 对象可以具有以下成员：
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=TEMPERATURE |
 | --- |
 | [*TEMPERATURE*](../key/key-link.md#usb-kws-htemperature) |
-

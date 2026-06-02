@@ -315,7 +315,3 @@
 | **AFXTABLE_EVALUATE** | 求值整数和浮点元素。 |
 | **AFXTABLE_STYLE_DEFAULT** | 使用表格默认列样式。 |
 | **AFXTABLE_STYLE_MASK** | 列样式的掩码。 |
-
-
-
-

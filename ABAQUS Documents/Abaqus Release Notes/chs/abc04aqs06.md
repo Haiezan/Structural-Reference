@@ -18,7 +18,3 @@
 **Abaqus Keywords Reference Guide**
 - [*FLEXIBLE BODY](../key/key-link.md#usb-kws-hflexiblebody)
 - [*SUBSTRUCTURE GENERATE](../key/key-link.md#usb-kws-ssubgenerate)
-
-
-
-

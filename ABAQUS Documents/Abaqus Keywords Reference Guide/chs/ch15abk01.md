@@ -18,11 +18,11 @@
 
 在Abaqus/Explicit中，[*ORIENTATION](ch15abk01.md)选项可用于在参考配置中初始化织物材料的经纱和纬纱方向。位于织物平面中的纱线方向是相对于正交坐标系的两个面内轴定义的。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**属性模块、相互作用模块和荷载模块
 
@@ -115,4 +115,4 @@ SYSTEM
 
 **图15.1-1** 方向系统。
 
-![](../graphics/korientation-nls.png)
+![](../graphics/key_eqn00080.gif)![](../graphics/key_eqn00927.gif)![](../graphics/key_eqn00927.gif)![](../graphics/key_eqn00928.gif)![](../graphics/key_eqn00928.gif)![](../graphics/key_eqn00929.gif)![](../graphics/key_eqn00927.gif)![](../graphics/key_eqn00929.gif)![](../graphics/key_eqn00927.gif)![](../graphics/korientation-nls.png)

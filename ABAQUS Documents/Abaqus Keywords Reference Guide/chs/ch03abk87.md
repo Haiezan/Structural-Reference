@@ -9,9 +9,9 @@
 
 此选项用于为使用可压碎泡沫塑性模型的弹塑性材料指定材料行为的塑性部分。必须与 [*CRUSHABLE FOAM HARDENING](ch03abk88.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**模型
 
@@ -49,7 +49,3 @@ HARDENING
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此数据行集，以定义可压碎泡沫参数对温度和其他预定义场变量的依赖性。
-
-
-
-

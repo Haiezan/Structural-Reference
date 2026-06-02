@@ -97,6 +97,3 @@ VelocityAdaptiveMeshConstraintState 对象具有以下成员：
 
 | [*ADAPTIVE MESH CONSTRAINT](../key/key-link.md#usb-kws-hadaptivemeshconstraint), TYPE=VELOCITY (自由度: 1, 2, 3, 4, 5 或 6) |
 | --- |
-
-
-

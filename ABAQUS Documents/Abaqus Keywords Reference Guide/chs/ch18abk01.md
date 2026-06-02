@@ -32,11 +32,11 @@ This option is used in conjunction with the [*MEMBRANE SECTION](ch13abk16.md), [
 
 For an import analysis the necessary [*SECTION CONTROLS](ch18abk01.md) settings must be selected in the original analysis, even if some are not applicable for the original analysis; the settings specified in the original analysis are passed into the import analysis.
 
-**Products: **Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**Products: **Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**Type: **Model data  
+**Type: **Model data
 
-**Level: **Model  
+**Level: **Model
 
 **Abaqus/CAE: **Mesh module
 
@@ -82,11 +82,11 @@ DRILL STIFFNESS
 
 This parameter applies only to the small-strain shell elements S3RS and S4RS.
 
-Set DRILL STIFFNESS=ON (default) to activate the constraint against the drill mode in S3RS and S4RS elements. 
+Set DRILL STIFFNESS=ON (default) to activate the constraint against the drill mode in S3RS and S4RS elements.
 
-Set DRILL STIFFNESS=OFF to deactivate the constraint against the drill mode. Deactivating the drill constraint can result in large values for the rotation degrees of freedom at the nodes of these elements. 
+Set DRILL STIFFNESS=OFF to deactivate the constraint against the drill mode. Deactivating the drill constraint can result in large values for the rotation degrees of freedom at the nodes of these elements.
 
-The drill constraint is always active for finite-strain conventional shell elements such as S4R. 
+The drill constraint is always active for finite-strain conventional shell elements such as S4R.
 
 ELEMENT CONVERSION
 
@@ -158,13 +158,13 @@ Set this parameter equal to the value of the damage variable at or above which a
 
 PERTURBATION
 
-This parameter applies only to Abaqus/Standard analyses. 
+This parameter applies only to Abaqus/Standard analyses.
 
 Set this parameter equal to a small perturbation to be applied to the second orientation for the FLEXION-TORSION connectors.
 
 RAMP INITIAL STRESS
 
-This parameter applies to membrane elements in Abaqus/Explicit analyses. 
+This parameter applies to membrane elements in Abaqus/Explicit analyses.
 
 Set this parameter equal to the name of a total time-based amplitude defined to go from an initial value of zero to a final value of one. When this parameter is specified, the element stiffness is controlled until the amplitude value reaches its final value of one, so that the initial stresses are introduced gradually and not abruptly.
 
@@ -172,7 +172,7 @@ SECOND ORDER ACCURACY
 
 This parameter applies only to Abaqus/Explicit analyses; the element formulation is always second-order accurate in Abaqus/Standard.
 
-Set SECOND ORDER ACCURACY=YES to use a second-order accurate formulation for solid or shell elements suitable for problems undergoing a large number of revolutions (> 5). 
+Set SECOND ORDER ACCURACY=YES to use a second-order accurate formulation for solid or shell elements suitable for problems undergoing a large number of revolutions (> 5).
 
 Set SECOND ORDER ACCURACY=NO (default) to use the first-order accurate solid or shell elements.
 
@@ -199,7 +199,3 @@ Set this parameter equal to ![](../graphics/key_eqn01042.gif) (![](../graphics/k
 **Third line (optional, to be used only in conjunction with smoothed particle hydrodynamics to control the size of the particle tracking box):**
 
 **Fourth line (optional, to be used only in conjunction with the conversion of continuum elements to smoothed particle hydrodynamic particles):**
-
-
-
-

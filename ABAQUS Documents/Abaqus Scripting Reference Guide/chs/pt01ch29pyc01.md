@@ -99,7 +99,7 @@ SymbolicConstant 序列，指定被评估材料定义中包含的试验数据类
 如果 *dataSource*=TEST_DATA 且 *strainEnergyPotentials* 包含 POLY_N3、POLY_N4、POLY_N5 或 POLY_N6：
 
 ```
-MaterialEvaluationError: POLY_N3, POLY_N4, POLY_N5, or POLY_N6 
+MaterialEvaluationError: POLY_N3, POLY_N4, POLY_N5, or POLY_N6
 ```
 
 ```
@@ -109,7 +109,7 @@ not allowed for *dataSource*=TEST_DATA.
 如果材料评估失败：
 
 ```
-MaterialEvaluationError: material evaluation failed, see 
+MaterialEvaluationError: material evaluation failed, see
 ```
 
 ```
@@ -119,7 +119,7 @@ MaterialEvaluationError: material evaluation failed, see
 如果要评估材料的材料类型不是超弹性：
 
 ```
-MaterialEvaluationError: Material evaluation is currently 
+MaterialEvaluationError: Material evaluation is currently
 ```
 
 ```

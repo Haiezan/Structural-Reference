@@ -64,8 +64,3 @@
 | **CHECKBUTTON_AUTOGRAY** | 更新时自动变灰。 |
 | --- | --- |
 | **CHECKBUTTON_AUTOHIDE** | 更新时自动隐藏。 |
-
-
-
-
-

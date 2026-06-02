@@ -199,7 +199,3 @@
 | **AFXFLOATSPINNER_RADIOBUTTON** | 使用单选按钮而不是标签。 |
 | **AFXFLOATSPINNER_VERTICAL** | 将标签或按钮置于微调器上方。 |
 | **AFXFLOATSPINNER_READONLY** | 将微调器配置为只读状态。 |
-
-
-
-

@@ -92,4 +92,3 @@ BoxProfile 对象具有与 [BoxProfile](pt02ch57pyo03.md#ker-boxprofile-boxprofi
 
 | [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=BOX |
 | --- |
-

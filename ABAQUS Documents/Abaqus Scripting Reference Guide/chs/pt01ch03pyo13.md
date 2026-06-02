@@ -90,6 +90,3 @@ TabularAmplitude 对象具有与 [TabularAmplitude](pt01ch03pyo13.md#ker-tabular
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

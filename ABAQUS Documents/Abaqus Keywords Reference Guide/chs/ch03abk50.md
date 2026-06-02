@@ -9,11 +9,11 @@
 
 此选项用于定义连接器单元的属性。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE: **相互作用模块
 
@@ -66,7 +66,3 @@ ELIMINATION
 **RETRACTOR 或 FLOW-CONVERTER 连接类型的第三行（可选）：**
 
 如果未指定任何数据，则省略第三行。
-
-
-
-

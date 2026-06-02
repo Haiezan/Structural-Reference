@@ -26,7 +26,3 @@
 
 **Abaqus/CAE User's Guide**
 - [“Updating geometry parameters in an imported model，” Section 60.2](../usi/usi-link.md#usi-cad-bidirectional)
-
-
-
-

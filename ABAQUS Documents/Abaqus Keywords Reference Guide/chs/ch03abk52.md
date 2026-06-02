@@ -1,4 +1,4 @@
-# *CONNECTOR UNIAXIAL BEHAVIOR
+***CONNECTOR UNIAXIAL BEHAVIOR**
 
 
 
@@ -9,11 +9,11 @@
 
 此选项用于通过指定相对运动分量的加载和卸载响应来定义连接器单元中的单轴行为。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -32,7 +32,3 @@ COMPONENT
 将此参数设置为指定单轴行为所对应的连接器相对运动分量。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

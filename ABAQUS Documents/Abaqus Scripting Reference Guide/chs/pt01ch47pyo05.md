@@ -125,5 +125,3 @@ TypeError: keyword error on time
 ### 47.5.3 成员
 
 Image 对象的成员与 [Image](pt01ch47pyo05.md#ker-image-image-pyc) 方法的参数具有相同的名称和描述。
-
-

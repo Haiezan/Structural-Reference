@@ -73,7 +73,3 @@ CaeKerPrefs 对象具有以下成员：
 *fileName*
 
 一个 String，指定 CaeKerPrefs 对象代表的偏好文件的路径。
-
-
-
-

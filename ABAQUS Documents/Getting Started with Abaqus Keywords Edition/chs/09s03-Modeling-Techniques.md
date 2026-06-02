@@ -1,5 +1,5 @@
 # 9.3 自动时间步长与稳定性
-
+![](../graphics/gsk_eqn00179.gif)![](../graphics/gsk_eqn00165.gif)![](../graphics/gsk_eqn00184.gif)![](../graphics/gsk_eqn00185.gif)![](../graphics/gsk_eqn00186.gif)![](../graphics/gsk_eqn00187.gif)![](../graphics/gsk_eqn00188.gif)![](../graphics/gsk_eqn00189.gif)![](../graphics/gsk_eqn00190.gif)![](../graphics/gsk_eqn00191.gif)![](../graphics/gsk_eqn00192.gif)![](../graphics/gsk_eqn00029.gif)
 稳定性极限决定了 Abaqus/Explicit 求解器使用的最大时间增量。它是影响 Abaqus/Explicit 性能的关键因素。以下各节将描述稳定性极限，并讨论 Abaqus/Explicit 如何确定此值。文中还讨论了影响稳定性极限的模型设计参数问题。这些模型参数包括模型质量、材料和网格。
 
 ## 9.3.1 显式方法的条件稳定性

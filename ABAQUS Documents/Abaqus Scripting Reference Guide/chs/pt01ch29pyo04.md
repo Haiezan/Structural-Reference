@@ -96,7 +96,3 @@ BiaxialTestData 对象具有与 [BiaxialTestData](pt01ch29pyo04.md#ker-biaxialte
 
 | [*BIAXIAL TEST DATA](../key/key-link.md#usb-kws-mbitestdata) |
 | --- |
-
-
-
-

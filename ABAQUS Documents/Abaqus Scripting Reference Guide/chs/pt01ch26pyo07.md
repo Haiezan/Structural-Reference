@@ -83,7 +83,7 @@ AbaqusException.
 
 ### 26.7.2 writeParAndInputFiles()
 
-         This method allows you to write par and input files for an optimization task.       
+         This method allows you to write par and input files for an optimization task.
 
 **Arguments**
 
@@ -210,7 +210,3 @@ None
 The OptimizationProcess object has members with the same names and descriptions as the arguments to the [OptimizationProcess](pt01ch26pyo07.md#ker-optimizationprocess-optimizationprocess-pyc) method.
 
 ### 26.7.8 Corresponding analysis keywords
-
-
-
-

@@ -58,7 +58,3 @@ session.quickTimeOptions
 ### 4.6.2 成员
 
 QuickTimeOptions 对象具有与 [setValues](pt01ch04pyo06.md#ker-quicktimeoptions-setvalues-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

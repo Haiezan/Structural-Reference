@@ -754,7 +754,7 @@ Error: Specified data will result in conflicting labels
 
 *radius*
 
-一个 Float，指定要缠绕部件的圆柱半径。包装过程将把平面网格上位于 (![](../graphics/ker_eqn00049.gif), ![](../graphics/ker_eqn00050.gif)) 的节点重新定位到 (![](../graphics/ker_eqn00051.gif))，其中 ![](../graphics/ker_eqn00052.gif) 是指定半径，![](../graphics/ker_eqn00053.gif) = ![](../graphics/ker_eqn00054.gif)，而 ![](../graphics/ker_eqn00055.gif)=![](../graphics/ker_eqn00050.gif)。
+一个 Float，指定要缠绕部件的圆柱半径。包装过程将把平面网格上位于 (![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00049.gif), ![](../graphics/ker_eqn00050.gif)) 的节点重新定位到 (![](../graphics/ker_eqn00051.gif))，其中 ![](../graphics/ker_eqn00052.gif) 是指定半径，![](../graphics/ker_eqn00053.gif) = ![](../graphics/ker_eqn00054.gif)，而 ![](../graphics/ker_eqn00055.gif)=![](../graphics/ker_eqn00050.gif)。
 
 **可选参数**
 
@@ -799,8 +799,3 @@ Error: Specified data will result in conflicting labels
 **异常**
 
 无。
-
-
-
-
-

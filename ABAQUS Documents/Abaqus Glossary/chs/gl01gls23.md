@@ -44,6 +44,3 @@ Visualization 模块也可作为 Abaqus/Viewer 单独许可。
 
 Abaqus/CAE 工具，创建离散场，根据该元素与模型装配中参考零件实例之间的空间重叠，为 Eulerian 零件实例中的每个元素指定体积分数。离散场可用于创建材料分配预定义场（在 Eulerian 零件实例中），对应于参考零件实例的几何。
 更多信息：- [「体积分数工具，」Abaqus/CAE User's Guide 第 28.5 节](../usi/usi-link.md#usi-adv-eulerian-volfrac)
-
-
-

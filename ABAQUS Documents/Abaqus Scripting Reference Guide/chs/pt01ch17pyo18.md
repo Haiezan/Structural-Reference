@@ -1,5 +1,5 @@
 # 17.18 SymbolDisplayOptions 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -62,8 +62,3 @@ session.viewports[*name*].layers[*name*].assemblyDisplay.symbolOptions
 ### 17.18.2 成员
 
 SymbolDisplayOptions 对象的成员与 [setValues](pt01ch17pyo18.md#ker-symboldisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

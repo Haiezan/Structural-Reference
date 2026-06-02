@@ -38,8 +38,3 @@ odb_SequenceFloat vector() const;
 *vector*
 
 一个 odb_SequenceFloat，指定梁截面 ![](../graphics/ker_eqn00406.gif) 方向的方向余弦。
-
-
-
-
-

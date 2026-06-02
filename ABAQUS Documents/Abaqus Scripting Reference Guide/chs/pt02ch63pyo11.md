@@ -133,7 +133,3 @@ A [TransverseShearShell](pt02ch63pyo25.md) object specifying the transverse shea
 
 | [*SHELL GENERAL SECTION](../key/key-link.md#usb-kws-mshellgensect) |
 | --- |
-
-
-
-

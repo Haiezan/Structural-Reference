@@ -37,6 +37,3 @@ ElasticFoundationState 对象具有以下成员：
 - TYPE_NOT_APPLICABLE
 - INSTANCE_NOT_APPLICABLE
 - BUILT_INTO_BASE_STATE
-
-
-

@@ -20,7 +20,3 @@ Job 模块：
 
 **Abaqus/CAE User's Guide**
 - [“Monitoring your optimization process，” Section 19.12.6](../usi/usi-link.md#usi-ana-optman-monitorbtn)
-
-
-
-

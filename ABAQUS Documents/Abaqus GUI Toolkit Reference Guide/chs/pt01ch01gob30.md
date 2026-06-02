@@ -211,7 +211,3 @@
 | **AFXLISTBOX_VERTICAL** | 将标签置于列表框上方。 |
 | --- | --- |
 | **AFXLISTBOX_READONLY** | 将列表框配置为只读状态。 |
-
-
-
-

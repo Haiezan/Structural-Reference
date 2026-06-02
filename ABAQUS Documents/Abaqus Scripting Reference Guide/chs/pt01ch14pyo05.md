@@ -57,4 +57,3 @@ RegisteredTuple 对象支持与标准 Python 列表对象相同的方法。
 ### 14.5.3 成员
 
 RegisteredTuple 对象没有成员。
-

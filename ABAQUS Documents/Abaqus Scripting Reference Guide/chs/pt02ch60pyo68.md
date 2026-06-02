@@ -87,57 +87,10 @@ MagneticPermeability(const odb_SequenceSequenceDouble& table,
 - 依此类推。
 
 如果 *type*=ORTHOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00428.gif]。
-- ![](../graphics/ker_eqn00429.gif]。
-- ![](../graphics/ker_eqn00430.gif]。
-- 频率（如果数据依赖频率）。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ORTHOTROPIC 且 *nonlinearBH*=TRUE，表数据指定以下内容：
-- 第一方向磁通密度矢量的大小。
-- 第二方向磁场矢量的大小。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ANISOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00431.gif]。
-- ![](../graphics/ker_eqn00432.gif]。
-- ![](../graphics/ker_eqn00429.gif]。
-- ![](../graphics/ker_eqn00433.gif]。
-- ![](../graphics/ker_eqn00434.gif]。
-- ![](../graphics/ker_eqn00430.gif]。
-- 频率（如果数据依赖频率）。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ANISOTROPIC 且 *nonlinearBH*=TRUE，表数据指定以下内容：
-- 第一方向磁通密度矢量的大小。
-- 第三方向磁场矢量的大小。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-**返回值**
-
-一个 MagneticPermeability 对象。
-
-**异常**
-
-RangeError。
-
-### 60.68.2 成员
-
-MagneticPermeability 对象的成员与 [MagneticPermeability](pt02ch60pyo68.md#ker-magneticpermeability-magneticpermeability-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00428.gif)![](../graphics/ker_eqn00429.gif)![](../graphics/ker_eqn00430.gif)![](../graphics/ker_eqn00431.gif)![](../graphics/ker_eqn00432.gif)![](../graphics/ker_eqn00429.gif)![](../graphics/ker_eqn00433.gif)![](../graphics/ker_eqn00434.gif)![](../graphics/ker_eqn00430.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.68.3 对应的分析关键字
 
 | [*MAGNETIC PERMEABILITY](../key/key-link.md#usb-kws-mmagpermeability) |
 | --- |
+### 60.68.3 Corresponding analysis keywords

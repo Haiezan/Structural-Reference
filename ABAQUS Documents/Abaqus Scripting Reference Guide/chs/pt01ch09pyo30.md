@@ -139,3 +139,4 @@ SymbolicConstant，指定 [BoundaryConditionState](pt01ch09pyo08.md) 对象的�
 - NOT_YET_ACTIVE
 - CREATED
 -
+### 9.30.2 Corresponding analysis keywords

@@ -92,4 +92,3 @@ OdbData 对象可以具有以下成员：
 *datumCsyses*
 
  [OdbDataDatumCsys](pt01ch40pyo09.md) 对象存储库，指定模型中定义的坐标系列表。此存储库为只读。
-

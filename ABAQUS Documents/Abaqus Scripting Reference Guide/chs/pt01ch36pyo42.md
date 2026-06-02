@@ -8,7 +8,7 @@
 
 The TurnControl object defines a turn control geometric restriction.
 
-         The TurnControl object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.       
+         The TurnControl object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.
 
 **Access**
 
@@ -21,7 +21,7 @@ The TurnControl object defines a turn control geometric restriction.
 
 ### 36.42.1 TurnControl(...)
 
-           This method creates a TurnControl object.         
+           This method creates a TurnControl object.
 
 **Path**
 
@@ -39,29 +39,29 @@ A String specifying the geometric restriction repository key.
 
 *clientDirection*
 
-                 A [VertexArray](pt01ch07pyo15.md) object of length 2 specifying the direction of the rotation axis as a vector positioned at the *csys* origin. Instead of through a [Vertex](pt01ch07pyo15.md), each point may be specified through a tuple of coordinates.               
+                 A [VertexArray](pt01ch07pyo15.md) object of length 2 specifying the direction of the rotation axis as a vector positioned at the *csys* origin. Instead of through a [Vertex](pt01ch07pyo15.md), each point may be specified through a tuple of coordinates.
 
 *region*
 
-                 A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.  When used with a [TopologyTask](pt01ch36pyo41.md), there is no default value.  When used with a [ShapeTask](pt01ch36pyo20.md), the default value is MODEL.               
+                 A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.  When used with a [TopologyTask](pt01ch36pyo41.md), there is no default value.  When used with a [ShapeTask](pt01ch36pyo20.md), the default value is MODEL.
 
 **Optional arguments**
 
 *csys*
 
- `None` or a [DatumCsys](pt01ch15pyo03.md) object specifying the local coordinate system. If *csys*=`None`, the global coordinate system is used. When this member is queried, it returns an Int. The default value is `None`.               
+ `None` or a [DatumCsys](pt01ch15pyo03.md) object specifying the local coordinate system. If *csys*=`None`, the global coordinate system is used. When this member is queried, it returns an Int. The default value is `None`.
 
 *masterPoint*
 
- `None` or a [Region](pt01ch45pyo03.md) object specifying the master point used when *masterPointDetermination* is SPECIFY. The default value is `None`.               
+ `None` or a [Region](pt01ch45pyo03.md) object specifying the master point used when *masterPointDetermination* is SPECIFY. The default value is `None`.
 
 *masterPointDetermination*
 
-                 A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.               
+                 A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
 
 *presumeFeasibleRegionAtStart*
 
-                 A Boolean specifying whether to ignore the geometric restriction in the first design cycle. The default value is ON.               
+                 A Boolean specifying whether to ignore the geometric restriction in the first design cycle. The default value is ON.
 
 *tolerance1*
 
@@ -77,7 +77,7 @@ A Float specifying the geometric tolerance in the 3-direction. The default value
 
 **Return value**
 
-           A TurnControl object.         
+           A TurnControl object.
 
 **Exceptions**
 
@@ -85,7 +85,7 @@ None.
 
 ### 36.42.2 setValues(...)
 
-           This method modifies the TurnControl object.         
+           This method modifies the TurnControl object.
 
 **Required arguments**
 
@@ -93,7 +93,7 @@ None.
 
 **Optional arguments**
 
-             The optional arguments to `setValues` are the same as the arguments to the [TurnControl](pt01ch36pyo42.md#ker-turncontrol-turncontrol-pyc) method, except for the *name* argument.           
+             The optional arguments to `setValues` are the same as the arguments to the [TurnControl](pt01ch36pyo42.md#ker-turncontrol-turncontrol-pyc) method, except for the *name* argument.
 
 **Return value**
 
@@ -105,8 +105,4 @@ None.
 
 ### 36.42.3 Members
 
-         The TurnControl object has members with the same names and descriptions as the arguments to the [TurnControl](pt01ch36pyo42.md#ker-turncontrol-turncontrol-pyc) method.       
-
-
-
-
+         The TurnControl object has members with the same names and descriptions as the arguments to the [TurnControl](pt01ch36pyo42.md#ker-turncontrol-turncontrol-pyc) method.

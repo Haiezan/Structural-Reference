@@ -71,7 +71,3 @@
 | **AFXSELECTFILE_MULTIPLE_ALL** | 多个存在的文件或目录。 |
 | **AFXSELECTFILE_DIRECTORY** | 存在的目录。 |
 | **AFXSELECTFILE_REMOTE_HOST** | 允许在远程主机上打开文件。 |
-
-
-
-

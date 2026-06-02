@@ -12,9 +12,9 @@
 
 此选项用于将节点变量写入输出数据库。它必须与[*OUTPUT](ch15abk03.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

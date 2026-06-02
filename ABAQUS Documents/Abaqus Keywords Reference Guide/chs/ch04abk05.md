@@ -8,11 +8,11 @@
 
 此选项用于指定粘性正则化方案中使用的粘性系数，用于纤维增强材料的损伤模型、接触中的基于表面的牵引-分离行为或富集单元中的内聚行为。对于纤维增强材料，您可以将此选项与 [*DAMAGE INITIATION](ch04abk04.md)、CRITERION=HASHIN 和 [*DAMAGE EVOLUTION](ch04abk03.md) 选项结合使用；对于基于表面的牵引-分离行为，您可以将此选项与 [*DAMAGE INITIATION](ch04abk04.md)、CRITERION=MAXS、MAXE、QUADS 或 QUADE 和 [*DAMAGE EVOLUTION](ch04abk03.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -31,7 +31,3 @@
 ### **定义基于表面的牵引-分离行为或富集单元中内聚行为的粘性系数的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/CAE  
+**产品：**Abaqus/CAE
 
 **优点：**您现在可以在 Abaqus/CAE 中请求参考汇温度和参考膜系数值，这提高了 Abaqus 产品功能的覆盖率。
 
@@ -24,4 +24,3 @@ Step 模块:
 
 **Abaqus/CAE User's Guide**
 - ["Creating and modifying output requests," Section 14.4.5](../usi/usi-link.md#usi-sim-conc-varcomp)
-

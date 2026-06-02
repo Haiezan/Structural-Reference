@@ -9,9 +9,9 @@
 
 此选项用于识别将跨其交换数据的区域，并指定要传递通过这些区域的场。它必须与 [*CO-SIMULATION](ch03abk78.md) 选项结合使用，以识别用于与 Abaqus 联合仿真的分析程序。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -92,7 +92,3 @@ TYPE
 ### **TYPE=NODE 的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

@@ -1,5 +1,5 @@
 # *MOISTURE SWELLING
-
+![](../graphics/key_eqn00911.gif)![](../graphics/key_eqn00913.gif)![](../graphics/key_eqn00897.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项用于定义部分饱和多孔介质中固体骨架的湿驱动膨胀。它可用于分析耦合润湿液体流动和多孔介质应力。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

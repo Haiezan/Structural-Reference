@@ -107,8 +107,3 @@ HeatCapacitance 对象具有与 [HeatCapacitance](pt01ch19pyo08.md#ker-heatcapac
 
 | [*HEATCAP](../key/key-link.md#usb-kws-mheatcap) |
 | --- |
-
-
-
-
-

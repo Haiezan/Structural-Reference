@@ -10,11 +10,11 @@
 
 此选项只能作为[*PLASTIC](ch16abk14.md)，HARDENING=ISOTROPIC选项的子选项使用；或者作为[*PLASTIC](ch16abk14.md)，HARDENING=JOHNSON COOK选项；或者作为[*DRUCKER PRAGER HARDENING](ch04abk36.md)选项；或者作为[*CRUSHABLE FOAM HARDENING](ch03abk88.md)选项的子选项使用，以在材料模型中引入应变率依赖性。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

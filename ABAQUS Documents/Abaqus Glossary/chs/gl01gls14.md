@@ -140,6 +140,3 @@ Abaqus 在多处理器工作站或计算集群上使用 MPI 库支持的 DMP 处
 
 允许您将区域从节点的自由度约束到单个点或多个点的约束。
 更多信息：- [「通用多点约束，」Abaqus Analysis User's Guide 第 35.2.2 节](../usb/usb-link.md#usb-cni-pmpc)
-
-
-

@@ -1,5 +1,5 @@
 # 17.9 GraphicsOptions 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -364,8 +364,3 @@ Abaqus 在启动会话时按从先到后的顺序应用此序列的值。第一�
 *backgroundBottomColor*
 
 一个 String，指定所有视口窗口的两个背景颜色之一。仅在 *backgroundStyle*=GRADIENT 时使用此颜色。初始颜色为黑色。有效颜色字符串列表在 [Session](pt01ch47pyo01.md) 对象的 *colors* 映射中。
-
-
-
-
-

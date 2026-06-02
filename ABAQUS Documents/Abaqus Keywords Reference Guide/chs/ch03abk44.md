@@ -9,11 +9,11 @@
 
 此选项用于指定连接器可用相对运动分量中的初始屈服面大小，以及可选的屈服后硬化行为。必须与 [*CONNECTOR PLASTICITY](ch03abk48.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -127,7 +127,3 @@ TYPE
 **后续行（仅在 DEPENDENCIES 参数值大于四时需要）：**
 
 根据需要重复此数据行集，以将零相对塑性运动时的屈服力/矩和运动硬化参数定义为温度和场变量的函数。
-
-
-
-

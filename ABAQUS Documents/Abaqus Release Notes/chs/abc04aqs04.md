@@ -19,7 +19,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*TURBULENCE MODEL](../key/key-link.md#usb-kws-hturbulence)
-
-
-
-

@@ -24,4 +24,3 @@ OdbDataSurfaceSet 对象具有以下成员：
 *facets*
 
 字符串到 Int 元组 Dictionary 的 Dictionary，指定与 *elements* 对应的面。此属性为只读。
-

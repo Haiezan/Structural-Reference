@@ -116,8 +116,3 @@
 | **IMAGE_SHMI** | 使用共享内存图像。 |
 | **IMAGE_SHMP** | 使用共享内存像素图。 |
 | **IMAGE_ALPHAGUESS** | 从角落猜测透明度颜色。 |
-
-
-
-
-

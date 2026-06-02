@@ -27,7 +27,3 @@
 **Abaqus Example Problems Guide**
 - [“Sizing optimization of a gear shift control holder，” Section 11.3.1](../exa/exa-link.md#exa-opt-gearshift)
 - [“Sizing optimization of a car door，” Section 11.3.2](../exa/exa-link.md#exa-opt-cardoorsizing)
-
-
-
-

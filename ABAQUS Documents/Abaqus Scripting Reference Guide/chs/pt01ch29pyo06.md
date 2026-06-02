@@ -98,7 +98,3 @@ BrittleFailure 对象具有与 [BrittleFailure](pt01ch29pyo06.md#ker-brittlefail
 
 | [*BRITTLE FAILURE](../key/key-link.md#usb-kws-mbrittlefailure) |
 | --- |
-
-
-
-

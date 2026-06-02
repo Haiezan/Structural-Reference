@@ -1,5 +1,5 @@
 # 4.7 总结
-
+![](../images/blu4rule.gif)
 ![../graphics/blu4rule.gif]()
 
 *   连体单元中使用的 formulations （公式）和积分阶数会对分析结果的准确性和计算成本产生重大影响。

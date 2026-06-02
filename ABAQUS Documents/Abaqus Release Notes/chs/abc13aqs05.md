@@ -22,7 +22,3 @@
 
 **Abaqus用户子程序参考指南**
 - ["可分配数组，" 第2.1.23节](../sub/sub-link.md#sub-utl-localarrays)
-
-
-
-

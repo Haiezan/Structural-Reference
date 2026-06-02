@@ -127,4 +127,3 @@ Tie 对象的成员与 [Tie](pt01ch13pyo10.md#ker-tie-tie-pyc) 方法的参数�
 
 | [*TIE](../key/key-link.md#usb-kws-mtie) |
 | --- |
-

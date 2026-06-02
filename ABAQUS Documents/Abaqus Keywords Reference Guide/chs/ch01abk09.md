@@ -8,7 +8,7 @@
 
 此选项允许在整个step中给出载荷、位移和其他规定变量大小的任意时间（在Abaqus/Standard分析中为频率）变化。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
 **类型：**模型或历史数据
 

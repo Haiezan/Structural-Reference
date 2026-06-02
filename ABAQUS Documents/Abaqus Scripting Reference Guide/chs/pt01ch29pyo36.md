@@ -83,7 +83,3 @@ DeformationPlasticity 对象具有与 [DeformationPlasticity](pt01ch29pyo36.md#k
 
 | [*DEFORMATION PLASTICITY](../key/key-link.md#usb-kws-mdeformplas) |
 | --- |
-
-
-
-

@@ -5,7 +5,7 @@
 <div class="figure">
 <p><a name="gss-simulation"></a><strong>图 10-67</strong> 在仿真过程中最大限度地减少橡胶模型左下角单元变形的改进网格。</p>
 
-![](../graphics/gss-simulation-v.png)
+![](../images/blu4rule.gif)![](../graphics/gss-simulation-v.png)
 </div>
 
 关于对角处网格变形的问题将在["减少体积锁定的技术"](/ch10s09.html)，第 10.9 节中讨论。左下角区域的单元在初始未变形配置中现在变形得更严重。然而，随着分析的进行和单元的变形，它们的形状实际上得到了改善。变形形状图（见[图 10-68](#gss-displaced)）说明该区域的单元变形程度已减小；然而，橡胶模型右下角的网格变形程度仍然显著。

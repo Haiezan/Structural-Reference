@@ -1,5 +1,5 @@
 # 18.1 Assembly 对象
-
+![](../graphics/ker_eqn00048.gif)![](../graphics/ker_eqn00048.gif)
 
 
 
@@ -385,8 +385,3 @@ Boolean，指定第一层节点是否应与底面上的节点共享。默认值�
 **异常**
 
 无。
-
-
-
-
-

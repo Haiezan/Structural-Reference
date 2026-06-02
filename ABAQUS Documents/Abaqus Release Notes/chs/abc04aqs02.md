@@ -24,7 +24,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*FREQUENCY](../key/key-link.md#usb-kws-hfrequency)
-
-
-
-

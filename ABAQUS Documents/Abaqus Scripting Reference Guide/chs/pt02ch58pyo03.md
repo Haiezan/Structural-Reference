@@ -285,4 +285,3 @@ odb_ConnectorOptions evolutionOptions() const;
 
 | [*CONNECTOR DAMAGE INITIATION*](../key/key-link.md#usb-kws-mconnectordamageinit), [*CONNECTOR DAMAGE EVOLUTION*](../key/key-link.md#usb-kws-mconnectordamageevol), [*CONNECTOR POTENTIAL*](../key/key-link.md#usb-kws-mconnectorpotential) |
 | --- |
-

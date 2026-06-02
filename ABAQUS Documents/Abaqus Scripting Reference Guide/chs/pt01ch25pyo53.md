@@ -131,6 +131,3 @@ NormalBehavior 对象的成员与 [NormalBehavior](pt01ch25pyo53.md#ker-normalbe
 
 | [*SURFACE BEHAVIOR](../key/key-link.md#usb-kws-hsurfacebehavior) |
 | --- |
-
-
-

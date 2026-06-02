@@ -12,11 +12,11 @@
 
 此选项用于定义低密度泡沫材料的材料系数。[*LOW DENSITY FOAM](ch12abk04.md)选项必须与[*UNIAXIAL TEST DATA](ch20abk04.md)、DIRECTION=TENSION和[*UNIAXIAL TEST DATA](ch20abk04.md)、DIRECTION=COMPRESSION选项结合使用，以分别指定泡沫材料在单轴拉伸和压缩时的应力-应变响应。
 
-**产品：**Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -71,3 +71,17 @@ FAIL
 
 
 
+### **The following parameters are optional and can be used only with TYPE=ELASTIC: **
+### **The following parameter is optional and can be used only with TYPE=DAMAGE: **
+### **The following parameters are optional, mutually exclusive, and can be used only with TYPE=PERMANENT DEFORMATION: **
+### ** Data lines to define uniaxial behavior that depends on the displacement/rotation in the direction of the specified component of relative motion (the RATE DEPENDENT and INDEPENDENT COMPONENTS parameters are omitted): **
+### **Data lines to define uniaxial behavior that depends on the relative positions or motions in several component directions (the RATE DEPENDENT parameter is omitted and the INDEPENDENT COMPONENTS parameter is included): **
+### **Data lines to define rate-dependent uniaxial behavior in the direction of the specified component of relative motion (the RATE DEPENDENT parameter is included and the INDEPENDENT COMPONENTS parameter is omitted): **
+### **Data lines to define rate-dependent uniaxial behavior that depends on the relative motions in several component directions (the RATE DEPENDENT and INDEPENDENT COMPONENTS parameters are included): **
+### Defining the loading response data from uniaxial tests of fabric materials
+### **Optional parameters: **
+### **The following parameters are optional and can be used only with TYPE=ELASTIC: **
+### **The following parameter is optional and can be used only with TYPE=DAMAGE: **
+### **The following parameters are optional, mutually exclusive, and can be used only with TYPE=PERMANENT DEFORMATION: **
+### ** Data lines to define rate-independent fabric response (the RATE DEPENDENT parameter is omitted): **
+### **Data lines to define rate-dependent fabric response (the RATE DEPENDENT parameter is included): **

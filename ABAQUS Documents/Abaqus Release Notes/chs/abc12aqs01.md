@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
 **优点：**您现在可以将结果写入 SIM 数据库（`.sim`）文件，这允许您将 Abaqus 分析的结果导入到 3DEXPERIENCE 平台上的 Physics Results Explorer 应用程序中进行高性能后处理。
 
@@ -35,4 +35,3 @@ Job 模块:
 
 **Abaqus/CAE User's Guide**
 - ["The job editor," Section 19.2.4](../usi/usi-link.md#usi-ana-conc-unjobset)
-

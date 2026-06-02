@@ -1,5 +1,5 @@
 # 17.11 Light 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -70,8 +70,3 @@ RangeError。
 ### 17.11.2 成员
 
 Light 对象的成员与 [setValues](pt01ch17pyo11.md#ker-light-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

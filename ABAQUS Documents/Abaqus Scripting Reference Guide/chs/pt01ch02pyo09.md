@@ -50,7 +50,3 @@ AbaqusException。
 ### 2.9.2 成员
 
 ErrorIndicatorResult 对象具有与 [ErrorIndicatorResult](pt01ch02pyo09.md#ker-errorindicatorresult-errorindicatorresult-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

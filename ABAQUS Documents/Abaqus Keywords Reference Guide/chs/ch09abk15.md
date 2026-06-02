@@ -9,11 +9,11 @@
 
 此选项用于将增量变量写入输出数据库。它必须与 [*OUTPUT](ch15abk03.md), HISTORY 选项一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 历史数据  
+**类型：** 历史数据
 
-**级别：** 步骤  
+**级别：** 步骤
 
 **Abaqus/CAE：** Step 模块
 
@@ -37,7 +37,3 @@ VARIABLE
 **第一行：**
 
 根据需要重复此数据行，以定义要写入输出数据库的时间增量变量。
-
-
-
-

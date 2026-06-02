@@ -8,11 +8,11 @@
 
 此选项用于定义分布表，该表定义空间分布的数据行上给出的数据格式。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -100,7 +100,3 @@ NAME
 **首先指定压力时的第一行（也是唯一一行）：**
 
 **首先指定体积时的第一行（也是唯一一行）：**
-
-
-
-

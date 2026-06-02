@@ -12,9 +12,9 @@
 
 此选项用于将接触、单元、能量、节点或诊断输出写入输出数据库。在Abaqus/Standard分析中，它还用于将模态或辐射输出写入输出数据库。在Abaqus/Explicit分析中，它还用于将增量输出写入输出数据库。[*CONTACT OUTPUT](ch03abk67.md)、[*ELEMENT OUTPUT](ch05abk10.md)、[*ENERGY OUTPUT](ch05abk23.md)、[*INCREMENTATION OUTPUT](ch09abk15.md)、[*MODAL OUTPUT](ch13abk20.md)、[*NODE OUTPUT](ch14abk11.md)和/或[*RADIATION OUTPUT](ch17abk03.md)选项可与此选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

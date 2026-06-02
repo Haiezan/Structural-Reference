@@ -67,8 +67,8 @@ session.odbs[*name*].materials[*name*].ClayPlasticity
 
 如果 *hardening*=TABULAR，表格数据指定以下内容：
 - 临界状态应力比，![](../graphics/ker_eqn00108.gif)。
-- 对应 ![](../graphics/ker_eqn00112.gif) 的初始体积塑性应变，![](../graphics/ker_eqn00111.gif)，根据 [ClayHardening](pt01ch29pyo15.md) 定义。
-- ![](../graphics/ker_eqn00095.gif)，定义临界状态"湿"侧屈服面大小的参数。
+- 对应  的初始体积塑性应变，![](../graphics/ker_eqn00111.gif)，根据 [ClayHardening](pt01ch29pyo15.md) 定义。
+- ![](../graphics/ker_eqn00112.gif)![](../graphics/ker_eqn00095.gif)，定义临界状态"湿"侧屈服面大小的参数。
 - ![](../graphics/ker_eqn00099.gif)，三轴拉伸流动应力与三轴压缩流动应力的比值。![](../graphics/ker_eqn00110.gif)。
 - 温度（如果数据依赖于温度）。
 - 第一个场变量的值（如果数据依赖于场变量）。
@@ -117,7 +117,3 @@ ClayPlasticity 对象具有与 [ClayPlasticity](pt01ch29pyo16.md#ker-clayplastic
 
 | [*CLAY PLASTICITY](../key/key-link.md#usb-kws-mclayplast) |
 | --- |
-
-
-
-

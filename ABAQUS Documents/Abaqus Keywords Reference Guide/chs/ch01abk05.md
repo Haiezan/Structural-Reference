@@ -10,7 +10,7 @@
 
 此选项用于为自适应网格域中的节点指定独立的网格运动，或定义必须跟随材料的节点。它只能与[*ADAPTIVE MESH](ch01abk04.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**历史数据
 

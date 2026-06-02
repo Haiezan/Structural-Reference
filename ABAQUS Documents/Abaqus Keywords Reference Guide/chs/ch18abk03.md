@@ -1,4 +1,4 @@
-# *SECTION PRINT
+***SECTION PRINT**
 
 
 
@@ -58,9 +58,3 @@ UPDATE
 对于AXES=GLOBAL或允许Abaqus为AXES=LOCAL定义锚点和轴，请省略第一行和第二行。根据需要重复第三行：每一行定义一个表。如果省略此行，则将输出所有适当的变量（["Output to the data and results files," Section 4.1.2 of the Abaqus Analysis User's Guide](../usb/usb-link.md#usb-out-oprintfile)）。
 
 **图18.5-1** 用户定义的局部坐标系。
-
-![](../graphics/oprintfile-localsys-nls.png)
-
-
-
-

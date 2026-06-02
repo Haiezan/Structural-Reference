@@ -85,6 +85,3 @@ StdInitialization 对象的成员与 [StdInitialization](pt01ch25pyo67.md#ker-st
 
 | [*CONTACT INITIALIZATION DATA](../key/key-link.md#usb-kws-hcontactinitdata) |
 | --- |
-
-
-

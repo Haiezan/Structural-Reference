@@ -9,9 +9,9 @@
 
 此选项用于在完全耦合热应力分析中的节点与非反射环境之间施加辐射边界条件。在 Abaqus/Standard 中，它还用于热传递、耦合热-电和耦合热-电-结构分析。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -52,7 +52,3 @@ REGION TYPE
 **第一行：**
 
 根据需要重复此数据行以定义辐射条件。
-
-
-
-

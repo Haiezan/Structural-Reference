@@ -1,4 +1,4 @@
-# *CONTACT CONTROLS
+***CONTACT CONTROLS**
 
 
 
@@ -11,9 +11,9 @@
 
 [*CONTACT CONTROLS](ch03abk57.md) 选项可以重复以为不同的接触对设置不同的控制值。必须在 Abaqus/Explicit 分析中与 [*CONTACT PAIR](ch03abk68.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -131,7 +131,3 @@ WARP CUT OFF
 将此参数设置为一个平面外翘曲角度（以度为单位），超过该角度的小平面将被视为高度翘曲。平面外翘曲角定义为表面法线在小平面上的变化量。默认值为 WARP CUT OFF=20。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

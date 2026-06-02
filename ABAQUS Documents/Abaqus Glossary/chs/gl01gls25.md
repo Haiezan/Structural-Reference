@@ -25,6 +25,3 @@ Abaqus/CAE 以两列形式存储的二维数组：一列 *X* 列和一列 *Y* �
 
 *X* 和 *Y* 数据值的表格列表。Abaqus/CAE 可以从 *X–Y* 对象中包含的数据生成 *X–Y* 报告。
 更多信息：- [第 54 章，「生成表格数据报告，」Abaqus/CAE User's Guide](../usi/usi-link.md#usv-report)
-
-
-

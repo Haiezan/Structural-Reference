@@ -314,7 +314,7 @@ Abaqus/Viewer 绘制吊车模型的未变形形状。
 
 **图 6-18** 货运吊车的变形形状
 
-![货运吊车变形图](../graphics/gss-displaced-hoist-c.png)
+![](../graphics/ico_viewFront.png)![货运吊车变形图](../graphics/gss-displaced-hoist-c.png)
 
 **使用显示组绘制单元集和节点集**
 
@@ -351,7 +351,7 @@ Abaqus/Viewer 绘制吊车模型的未变形形状。
 
 **图 6-19** 显示组 `MainA` 中单元的梁截面轴和切线图
 
-![梁截面轴和切线图](../graphics/gss-beamsectaxes-v-nls.png)
+![](../graphics/ico_viewIso.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_displayGroupCreate.png)![](../images/arrow.gif)![](../graphics/ico_plotUndeformed.png)![](../images/arrow.gif)![梁截面轴和切线图](../graphics/gss-beamsectaxes-v-nls.png)
 
 **渲染梁轮廓**
 
@@ -368,7 +368,7 @@ Abaqus/Viewer 绘制吊车模型的未变形形状。
 
 **图 6-20** 显示梁轮廓的货运吊车
 
-![货运吊车梁轮廓图](../graphics/usi-prp-cargocrane.png)
+![](../images/arrow.gif)![](../graphics/ico_plotContourDeformed.png)![货运吊车梁轮廓图](../graphics/usi-prp-cargocrane.png)
 
 **创建硬拷贝**
 
@@ -410,4 +410,4 @@ Abaqus 可以以作用在给定截面点上的力和力矩的形式提供结构�
 
 **图 6-21** 显示组 `MainA` 中单元的弯矩图（关于梁 1 轴的力矩）。指示了应力最高的位置（由单元弯曲产生）。
 
-![吊车弯矩图](../graphics/gss-beambending-c.png)
+![](../images/arrow.gif)![](../graphics/ico_selectionOptions.png)![](../images/arrow.gif)![](../graphics/ico_plotContourOptions.png)![吊车弯矩图](../graphics/gss-beambending-c.png)

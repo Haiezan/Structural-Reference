@@ -8,7 +8,7 @@
 
 **图 1-3** 桁架问题。
 
-![../graphics/gss-truss.png](../graphics/gss-truss.png)
+![](../images/blu4rule.gif)![](../images/blu4rule.gif)![../graphics/gss-truss.png](../graphics/gss-truss.png)
 
 分析的目标是找到桁架自由端的位移、桁架中的应力以及桁架约束端的反作用力。
 
@@ -72,13 +72,13 @@
 
 **图 1-6** 具有集中载荷的杆的初始配置，*F* 在自由端。
 
-![../graphics/gsx-initrodconfig.png](../graphics/gsx-initrodconfig.png)
+![](../images/blu4rule.gif)![](../graphics/gsk_eqn00017.gif)![../graphics/gsx-initrodconfig.png](../graphics/gsx-initrodconfig.png)
 
 在第一个时间增量中，节点 1 由于作用于其上的集中力 *F* 而具有加速度 *a*。加速度使节点 1 具有速度 *v*，进而使单元 1 产生应变率 *ε̇*。单元 1 中应变的增量 *Δε* 通过对增量 1 时间内的应变率积分获得。总应变 *ε* 是初始应变 *ε₀* 和应变增量之和。在这种情况下，初始应变为零。一旦计算出单元应变，通过应用材料本构模型即可获得单元应力 *σ*。对于线弹性材料，应力简单地等于弹性模量乘以总应变。此过程如图 1-7 所示。节点 2 和 3 在第一个增量中不移动，因为没有力作用于它们。
 
 **图 1-7** 在增量 1 结束时具有集中载荷 *F* 的杆的配置。
 
-![../graphics/gsx-inc1-rod-config.png](../graphics/gsx-inc1-rod-config.png)
+![](../graphics/gsk_eqn00018.gif)![](../graphics/gsk_eqn00017.gif)![](../graphics/gsk_eqn00019.gif)![](../graphics/gsk_eqn00020.gif)![](../graphics/gsk_eqn00021.gif)![](../graphics/gsk_eqn00022.gif)![](../graphics/gsk_eqn00023.gif)![](../graphics/gsk_eqn00024.gif)![](../graphics/gsk_eqn00017.gif)![../graphics/gsx-inc1-rod-config.png](../graphics/gsx-inc1-rod-config.png)
 
 在第二个增量中，单元 1 中的应力向与单元 1 关联的节点施加内部单元力，如图 1-8 所示。然后使用这些单元应力计算节点 1 和 2 的动力平衡。
 

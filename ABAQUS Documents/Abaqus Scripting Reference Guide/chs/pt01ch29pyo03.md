@@ -82,7 +82,3 @@ AnnealTemperature 对象具有与 [AnnealTemperature](pt01ch29pyo03.md#ker-annea
 
 | [*ANNEAL TEMPERATURE](../key/key-link.md#usb-kws-mannealtemp) |
 | --- |
-
-
-
-

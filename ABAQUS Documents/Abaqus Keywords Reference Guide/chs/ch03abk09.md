@@ -9,11 +9,11 @@
 
 此选项用于定义热辐射热传递的空腔。只能与 [*SURFACE](ch18abk47.md)、TYPE=ELEMENT 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **相互作用模块
 
@@ -56,7 +56,3 @@ SET PROPERTY
 **第一行：**
 
 根据需要重复此数据行以定义空腔。每行最多允许 16 个条目。
-
-
-
-

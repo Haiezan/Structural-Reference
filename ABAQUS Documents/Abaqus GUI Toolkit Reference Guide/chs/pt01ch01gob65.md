@@ -42,8 +42,3 @@
 返回默认宽度。
 
 从 FXVerticalFrame 重新实现。
-
-
-
-
-

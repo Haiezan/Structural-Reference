@@ -72,7 +72,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*CONNECTOR LOAD](../key/key-link.md#usb-kws-hconnectorload) (degree of freedom: 1, 2, or 3) |
 | --- |
-
-
-
-

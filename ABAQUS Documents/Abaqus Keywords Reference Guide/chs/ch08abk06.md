@@ -9,11 +9,11 @@
 
 此选项用于为通用超弹性材料定义材料常数。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -209,7 +209,3 @@ TEST DATA INPUT
 **第一行：**
 
 根据需要重复此数据行，以将材料常数定义为温度的函数。
-
-
-
-

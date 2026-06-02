@@ -8,7 +8,7 @@
 
 此选项用于为连接器单元定义阻尼行为。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -187,7 +187,3 @@ UNSYMM
 **第二行：**
 
 **第三行：**
-
-
-
-

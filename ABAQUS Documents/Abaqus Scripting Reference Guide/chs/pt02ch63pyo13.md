@@ -29,7 +29,7 @@ sectionApi.HomogeneousShellSection
 **Prototype**
 
 ```
-odb_HomogeneousShellSection& 
+odb_HomogeneousShellSection&
          HomogeneousShellSection(const odb_String& name,
            double thickness,
            const odb_String& material,
@@ -58,7 +58,7 @@ An odb_String specifying the repository key.
 
 *thickness*
 
-                  A Double specifying the thickness of the section. The *thickness* argument applies only when *thicknessType*="UNIFORM".                
+                  A Double specifying the thickness of the section. The *thickness* argument applies only when *thicknessType*="UNIFORM".
 
 *material*
 
@@ -162,7 +162,3 @@ A [TransverseShearShell](pt02ch63pyo25.md) object specifying the transverse shea
 | [*SHELL SECTION](../key/key-link.md#usb-kws-mshellsection) |
 | --- |
 | [*SHELL GENERAL SECTION](../key/key-link.md#usb-kws-mshellgensect) |
-
-
-
-

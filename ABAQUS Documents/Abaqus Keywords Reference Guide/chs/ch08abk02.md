@@ -9,11 +9,11 @@
 
 此选项用于在材料数据块中包含热传递、耦合热-电、耦合温度-位移或耦合热-电-结构分析中的热生成。它必须与用户子程序 [`HETVAL`](../sub/sub-link.md#sub-xsl-hetval) 一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -24,7 +24,3 @@
 - ["HETVAL，" Abaqus User Subroutines Reference Guide 第 1.1.13 节](../sub/sub-link.md#sub-rtn-uhetval)
 
 **此选项没有关联的参数或数据行。**
-
-
-
-

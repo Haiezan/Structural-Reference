@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**对于用内聚单元建模的分层行为，您现在可以输出损伤起始时和损伤演化过程中的模式混合比。
 
@@ -21,4 +21,3 @@
 
 **Abaqus Verification Guide**
 - ["Transferring results from one Abaqus/Standard analysis to another Abaqus/Standard analysis," Section 3.14.2](../ver/ver-link.md#ver-prc-import-stdtostd)
-

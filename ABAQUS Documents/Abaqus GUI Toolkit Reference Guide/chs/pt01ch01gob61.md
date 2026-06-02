@@ -39,8 +39,3 @@
 | **参数** | **类型** | **默认值** | **描述** |
 | --- | --- | --- | --- |
 | location | Int |  | 指示 GUI 组件放置位置的标志。可能的值为 GUI_IN_NONE、GUI_IN_MENUBAR、GUI_IN_TOOL_PANE、GUI_IN_TOOLBAR 和 GUI_IN_TOOLBOX。 |
-
-
-
-
-

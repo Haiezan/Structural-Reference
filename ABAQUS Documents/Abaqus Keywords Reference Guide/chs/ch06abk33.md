@@ -8,11 +8,11 @@
 
 此选项用于指定沿初始部分粘结表面的裂纹扩展准则。在Abaqus/Standard中，它必须紧跟在[*DEBOND](ch04abk09.md)选项之后；在Abaqus/Explicit中，它必须紧跟在[*COHESIVE BEHAVIOR](ch03abk23.md)选项之后。此选项也可在Abaqus/Standard中用于为内嵌单元中的裂纹扩展指定基于线性弹性断裂力学的准则。在这种情况下，它必须紧跟在[*SURFACE BEHAVIOR](ch18abk48.md)选项之后。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**Abaqus/Standard中的模型或历史数据；Abaqus/Explicit中的模型数据  
+**类型：**Abaqus/Standard中的模型或历史数据；Abaqus/Explicit中的模型数据
 
-**级别：**Abaqus/Standard中的模型或步骤；Abaqus/Explicit中的模型  
+**级别：**Abaqus/Standard中的模型或步骤；Abaqus/Explicit中的模型
 
 **Abaqus/CAE：**相互作用模块
 

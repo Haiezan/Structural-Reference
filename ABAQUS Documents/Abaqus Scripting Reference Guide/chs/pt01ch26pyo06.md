@@ -85,7 +85,7 @@ None.
 
 ### 26.6.4 waitForCompletion()
 
-This method interrupts the execution of the script until the end of all the analyses. If you call the `waitForCompletion` method and the *status* member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately. 
+This method interrupts the execution of the script until the end of all the analyses. If you call the `waitForCompletion` method and the *status* member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately.
 
 **Arguments**
 
@@ -166,7 +166,3 @@ A String specifying the name of the master model for the co-execution.
 | [*HEADING](../key/key-link.md#usb-kws-mheading) |
 | --- |
 | [*PREPRINT](../key/key-link.md#usb-kws-mpreprint) |
-
-
-
-

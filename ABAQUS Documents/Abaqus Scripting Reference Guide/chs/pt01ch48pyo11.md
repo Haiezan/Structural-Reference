@@ -42,7 +42,3 @@ None.
 ### 48.11.2 Members
 
 The ConstrainedSketchVertexArray object has no members.
-
-
-
-

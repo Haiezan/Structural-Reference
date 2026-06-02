@@ -9,9 +9,9 @@
 
 当要在材料定义中包含金属蠕变行为时使用此选项。定义的金属蠕变行为仅在 [*DIRECT CYCLIC](ch04abk24.md)；[*SOILS](ch18abk21.md)、CONSOLIDATION；[*COUPLED TEMPERATURE-DISPLACEMENT](ch03abk81.md)；[*STEADY STATE TRANSPORT](ch18abk35.md)；和 [*VISCO](ch21abk03.md) 过程中激活。此选项也可用于在垫片中定义厚度方向的蠕变行为；在这种情况下，此选项仅在 [*VISCO](ch21abk03.md) 过程中激活。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**模型
 
@@ -82,7 +82,3 @@ TIME
 ### **LAW=DOUBLE POWER 的数据行：**
 
 **第一行：**
-
-
-
-

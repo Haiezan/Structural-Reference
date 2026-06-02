@@ -66,4 +66,3 @@ DGOrientationOptions 对象可以具有以下成员：
 *axis3Color*
 
  String，指定材料取向 triad 轴 3 的颜色。默认值为 "Red"。
-

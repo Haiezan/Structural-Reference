@@ -87,6 +87,3 @@ AcousticImpedanceProp 对象的成员与 [AcousticImpedanceProp](pt01ch25pyo03.m
 
 | [*IMPEDANCE PROPERTY](../key/key-link.md#usb-kws-mimpedanceprop) |
 | --- |
-
-
-

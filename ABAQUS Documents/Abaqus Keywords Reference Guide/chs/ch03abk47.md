@@ -9,9 +9,9 @@
 
 此选项用于规定连接器单元中可用相对运动分量的运动。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据或历史数据  
+**类型：**模型数据或历史数据
 
 **级别：**模型、步骤
 
@@ -87,7 +87,3 @@ REAL
 **第一行：**
 
 根据需要重复此数据行，以指定不同连接器单元和可用相对运动分量的连接器运动。
-
-
-
-

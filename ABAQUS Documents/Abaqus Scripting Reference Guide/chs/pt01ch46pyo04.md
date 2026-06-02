@@ -199,4 +199,3 @@ BeamSection 对象的成员与 [BeamSection](pt01ch46pyo04.md#ker-beamsection-be
 | [*DAMPING*](../key/key-link.md#usb-kws-mdamping) |
 | [*SHEAR CENTER*](../key/key-link.md#usb-kws-mshearcenter) |
 | [*SECTION POINTS*](../key/key-link.md#usb-kws-msectionpoints) |
-

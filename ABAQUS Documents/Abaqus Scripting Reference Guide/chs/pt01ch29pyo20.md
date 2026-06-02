@@ -96,7 +96,3 @@ ConcreteCompressionHardening 对象具有与 [ConcreteCompressionHardening](pt01
 
 | [*CONCRETE COMPRESSION HARDENING](../key/key-link.md#usb-kws-mconcretecomphard) |
 | --- |
-
-
-
-

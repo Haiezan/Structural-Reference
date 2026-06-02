@@ -10,11 +10,11 @@
 
 此选项用于定义固体颗粒和渗透流体的体积模量，以便在多孔介质分析中考虑其可压缩性。[*POROUS BULK MODULI](ch16abk19.md)选项不能与多孔金属塑性材料模型结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

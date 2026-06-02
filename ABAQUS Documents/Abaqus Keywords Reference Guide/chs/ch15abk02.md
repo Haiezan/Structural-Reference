@@ -1,5 +1,5 @@
 # *ORNL
-
+![](../graphics/key_eqn00080.gif)![](../graphics/key_eqn00080.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项用于根据核标准NEF 9-5 T"一级高温核系统元件设计指南和程序"的规定为304和316型不锈钢提供塑性和蠕变计算。它只能与[*PLASTIC](ch16abk14.md)选项和/或[*CREEP](ch03abk85.md)、LAW=STRAIN选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

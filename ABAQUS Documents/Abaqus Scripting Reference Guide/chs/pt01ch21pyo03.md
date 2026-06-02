@@ -36,8 +36,3 @@ DataTable 对象具有以下成员：
 *table*
 
 一个 Float 元组，指定域内的数据。
-
-
-
-
-

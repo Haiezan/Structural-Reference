@@ -98,6 +98,3 @@ InitializationAssignment 对象没有成员。
 
 | [*CONTACT INITIALIZATION ASSIGNMENT](../key/key-link.md#usb-kws-hcontinitassign) |
 | --- |
-
-
-

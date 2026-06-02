@@ -62,7 +62,3 @@ OP
 ### **为NONREFLECTING=ELLIPTICAL或NONREFLECTING=PROLATE SPHEROIDAL定义吸收边界阻抗的数据行：**
 
 **第一行（也是唯一行）：**
-
-
-
-

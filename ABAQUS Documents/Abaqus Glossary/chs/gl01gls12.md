@@ -40,6 +40,3 @@ Abaqus 输入文件中选项块的第一个代码。关键字行以特定关键�
 
 一种专门的文本编辑器，允许您在提交分析之前修改 Abaqus/CAE 生成的 Abaqus 输入文件。
 更多信息：- [「向 Abaqus/CAE 模型添加不支持的关键字，」Abaqus/CAE User's Guide 第 9.10.1 节](../usi/usi-link.md#usi-dbs-addkeywords)
-
-
-

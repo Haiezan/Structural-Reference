@@ -9,11 +9,11 @@
 
 此选项用于施加入射波载荷。[*INCIDENT WAVE INTERACTION PROPERTY](ch09abk11.md) 选项必须与 [*INCIDENT WAVE INTERACTION](ch09abk10.md) 选项一起使用。如果入射波场包括从网格边界外平面的反射，则可以使用 [*INCIDENT WAVE REFLECTION](ch09abk13.md) 选项对此效应进行建模。入射波相互作用可用于稳态动态步骤，以定义来自漫射源的单个波源或载荷。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 历史数据  
+**类型：** 历史数据
 
-**级别：** 步骤  
+**级别：** 步骤
 
 **Abaqus/CAE：** Interaction 模块
 
@@ -69,7 +69,3 @@ REAL
 ### **当包含 CONWEP 参数时定义入射波的数据行：**
 
 **第一（也是唯一）行：**
-
-
-
-

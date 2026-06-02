@@ -20,7 +20,3 @@
 
 **Abaqus Analysis User's Guide**
 - [“Design responses，” Section 13.2.1](../usb/usb-link.md#usb-anl-aoptdesignresponses)
-
-
-
-

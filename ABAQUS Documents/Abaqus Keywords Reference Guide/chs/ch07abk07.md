@@ -9,11 +9,11 @@
 
 此选项用于为点火和生长状态方程指定反应气体产物的比热。当使用 [*EOS](ch05abk27.md), TYPE=IGNITION AND GROWTH 选项时需要此选项。[*GAS SPECIFIC HEAT](ch07abk07.md) 选项应紧跟在 [*EOS](ch05abk27.md) 或 [*REACTION RATE](ch17abk10.md) 选项之后。
 
-**产品：** Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -34,7 +34,3 @@ DEPENDENCIES
 **后续行（仅在 DEPENDENCIES 参数的值大于六时需要）：**
 
 根据需要重复此组数据行，以将比热定义为温度和其他预定义场变量的函数。
-
-
-
-

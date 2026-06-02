@@ -9,9 +9,9 @@
 
 **警告：**此选项在大多数非线性分析中不需要，除了与参数 ANALYSIS=DISCONTINUOUS 结合使用的情况。但是，如果发生极端非线性，可能需要此选项来获得求解。["常用控制参数，" Abaqus 分析用户指南第 7.2.2 节](../usb/usb-link.md#usb-anl-aconvergecontrol) 包含对可能发生的问题类型以及使用 [*CONTROLS](ch03abk75.md) 选项克服这些问题的方法的讨论。在某些情况下，此选项也可用于以更有效的方式获得求解。此后一目的的使用仅适用于有经验的用户。
 
-**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -151,7 +151,3 @@ MESH SMOOTHING
 ### **TYPE=VCCT LINEAR SCALING 的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

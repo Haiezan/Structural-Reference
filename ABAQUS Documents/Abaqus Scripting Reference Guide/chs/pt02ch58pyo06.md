@@ -104,7 +104,3 @@ The ConnectorFailure object has members with the same names and descriptions as 
 
 | [*CONNECTOR FAILURE](../key/key-link.md#usb-kws-mconnectorfailure) |
 | --- |
-
-
-
-

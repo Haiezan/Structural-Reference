@@ -52,5 +52,3 @@
 允许步骤在循环时重置其任何数据（如果需要）。
 
 在 AFXOrderedPickStep 和 AFXPickStep 中重实现。
-
-

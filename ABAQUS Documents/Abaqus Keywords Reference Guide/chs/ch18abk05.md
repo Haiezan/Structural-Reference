@@ -10,9 +10,9 @@
 
 This option is used to provide tabular output of accumulated quantities associated with a user-defined section. Depending on the analysis type the output may include one or several of the following: the total force, the total moment, the total heat flux, the total current, the total mass flow, or the total pore fluid volume flux associated with the section. This option is not available for eigenfrequency extraction, eigenvalue buckling prediction, complex eigenfrequency extraction, or linear dynamics procedures.
 
-**Product: **Abaqus/Standard  
+**Product: **Abaqus/Standard
 
-**Type: **History data 
+**Type: **History data
 
 **Level: **Step
 
@@ -62,7 +62,3 @@ Omit both the first and second data lines for AXES=GLOBAL or to allow Abaqus to 
 **Figure 18.5–1** User-defined local coordinate system.
 
 ![](../graphics/oprintfile-localsys-nls.png)
-
-
-
-

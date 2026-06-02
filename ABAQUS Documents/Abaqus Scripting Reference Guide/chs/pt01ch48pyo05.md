@@ -469,7 +469,3 @@ A SymbolicConstant specifying the type of sketch entity. Possible values are REG
 *pointOn*
 
 A tuple of Floats specifying the *X*- and*Y*-coordinates of a point located on the geometry.
-
-
-
-

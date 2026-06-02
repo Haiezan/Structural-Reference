@@ -10,11 +10,11 @@
 
 此选项用于将预拉伸节点与预拉伸截面关联。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例，装配  
+**级别：**零件，零件实例，装配
 
 **Abaqus/CAE：**载荷模块
 

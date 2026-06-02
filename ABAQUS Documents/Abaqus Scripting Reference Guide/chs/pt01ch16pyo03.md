@@ -37,4 +37,3 @@ session.viewports[*name*].odbDisplay.displayGroupInstances
 ### 16.3.2 成员
 
 DisplayGroupInstanceRepository 对象没有成员。
-

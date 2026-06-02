@@ -171,7 +171,3 @@ A String specifying the load repository key.
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

@@ -262,4 +262,3 @@ mdb.models[*name*].parts[*name*].unassignRebarOrientation
 **异常**
 
 无。
-

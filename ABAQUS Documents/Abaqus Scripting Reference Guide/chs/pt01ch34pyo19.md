@@ -352,7 +352,7 @@ OdbError: Invalid node label
 如果 OdbPart 类型为 THREE_D：
 
 ```
-OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the part is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.                         
+OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the part is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.
 ```
 
 ### 34.19.12 AnalyticRigidSurfExtrude(...)
@@ -384,7 +384,7 @@ OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the part is of
 如果 OdbPart 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                            CYLINDER                            can be defined only if the part is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                            CYLINDER                            can be defined only if the part is of type                             THREE_D.
 ```
 
 ### 34.19.13 AnalyticRigidSurfRevolve(...)
@@ -416,7 +416,7 @@ OdbError:  Analytic Rigid Surface of type                            CYLINDER   
 如果 OdbPart 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the part is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the part is of type                             THREE_D.
 ```
 
 ### 34.19.14 RigidBody(...)

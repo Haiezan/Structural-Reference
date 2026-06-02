@@ -17,8 +17,3 @@ session.viewports[*name*].odbDisplay.fieldVariables
 ### 23.3.1 成员
 
 OdbFieldVarList 对象没有成员。
-
-
-
-
-

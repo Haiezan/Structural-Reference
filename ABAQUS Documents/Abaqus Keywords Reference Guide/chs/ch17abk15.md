@@ -10,11 +10,11 @@
 
 此选项用于基于用户提供的响应谱（使用[*SPECTRUM](ch18abk28.md)选项定义）和系统的固有模态，计算节点和单元响应的峰值估计。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**步骤模块
 

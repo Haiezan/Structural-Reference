@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD
 
 **优点：**您现在可以远程控制作业执行；以前，您需要在运行分析的机器上执行作业控制命令。此外，两个新的命令行选项可用于网络连接。
 
@@ -17,4 +17,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["Job execution control," Section 3.2.39](../usb/usb-link.md#usb-int-dsuspend)
-

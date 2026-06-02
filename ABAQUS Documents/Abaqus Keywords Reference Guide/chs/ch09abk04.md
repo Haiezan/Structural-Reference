@@ -9,11 +9,11 @@
 
 此选项用于定义在先前的 Abaqus/Standard 或 Abaqus/Explicit 分析中导入指定节点和单元信息的时间。当从先前分析导入零件实例时，[*IMPORT](ch09abk04.md) 选项必须与 [*INSTANCE](ch09abk19.md) 选项一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 零件实例  
+**级别：** 零件实例
 
 **Abaqus/CAE：** 支持与零件实例一起使用；使用 File 菜单支持导入存储在输出数据库中的选定零件实例；在 Load 模块中支持导入零件实例的初始状态。
 
@@ -65,7 +65,3 @@ STEP
 根据需要重复此数据行，以定义要导入的单元集。每个数据行最多可列出 16 个单元集。
 
 ### **导入零件实例没有数据行。**
-
-
-
-

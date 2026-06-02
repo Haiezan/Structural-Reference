@@ -40,4 +40,3 @@ OdbDataStep 对象具有以下成员：
 *frames*
 
  [OdbDataFrameArray](pt01ch40pyo11.md) 对象，指定帧列表。此列表为只读。
-

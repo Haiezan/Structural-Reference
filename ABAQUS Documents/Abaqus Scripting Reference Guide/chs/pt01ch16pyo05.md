@@ -45,4 +45,3 @@ LeafFromDatums 对象具有以下成员：
 *leafType*
 
 符号常量，指定叶子类型。可能的值为 EMPTY、DEFAULT_MODEL、ALL_ELEMENTS、ALL_NODES 和 ALL_SURFACES。
-

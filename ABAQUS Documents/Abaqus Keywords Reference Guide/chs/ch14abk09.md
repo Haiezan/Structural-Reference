@@ -12,11 +12,11 @@
 
 此选项用于通过指定其坐标直接定义节点。如果在使用此选项时[*SYSTEM](ch18abk59.md)选项生效，则此选项中给出的节点坐标在局部系统中。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**网格模块
 

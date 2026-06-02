@@ -139,5 +139,3 @@
 | **AFXPROGRESSBAR_VERTICAL** | 垂直显示。 |
 | **AFXPROGRESSBAR_SCANNER** | 扫描器模式。 |
 | **AFXPROGRESSBAR_ITERATOR** | 迭代器模式。 |
-
-

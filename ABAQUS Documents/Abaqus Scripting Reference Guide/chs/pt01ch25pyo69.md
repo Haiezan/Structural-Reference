@@ -48,3 +48,5 @@ mdb.models[*name*].StdXplCosimulation
 *stepSizeDefinition*
 
  SymbolicConstant，指定增量大小是分析默认值还是提供的变量。可能的值为 DEFAULT 和 SPECIFIED。默认值为 DEFAULT
+### 25.69.2 setValues(...)
+### 25.69.3 Members

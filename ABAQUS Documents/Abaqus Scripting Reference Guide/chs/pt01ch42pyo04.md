@@ -101,4 +101,3 @@ FluidThermalEnergy 对象可以具有以下成员：
 
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=TEMPERATURE, ELEMENT AVERAGE |
 | --- |
-

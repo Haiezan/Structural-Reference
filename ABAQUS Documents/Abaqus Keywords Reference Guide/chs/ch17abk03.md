@@ -10,11 +10,11 @@
 
 此选项用于将腔体辐射变量写入输出数据库。它必须与[*OUTPUT](ch15abk03.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**步骤模块
 

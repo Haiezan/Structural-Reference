@@ -59,4 +59,3 @@ session.probeReport
 ### 39.6.2 成员
 
 ProbeReport 对象的成员与 [setValues](pt01ch39pyo06.md#ker-probereport-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

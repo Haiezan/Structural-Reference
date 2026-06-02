@@ -145,5 +145,3 @@ NetworkDatabaseConnector 对象的成员与 [NetworkDatabaseConnector](pt01ch47p
 *connected*
 
 Boolean，指定客户端与服务器之间的连接是否已建立。
-
-

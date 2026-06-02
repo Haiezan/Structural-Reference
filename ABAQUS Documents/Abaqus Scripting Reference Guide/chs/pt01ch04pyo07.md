@@ -130,7 +130,7 @@ RangeError。
 如果 *startFrame*、*endFrame*、*timelineStartFrame*、*timelineEndFrame*、*timelineStartTime* 或 *timelineEndTime* 超出其各自的有效范围。
 
 ```
-RangeError: startFrame must be an Integer in the range: 0 to numFrames-1 
+RangeError: startFrame must be an Integer in the range: 0 to numFrames-1
 ```
 
 ### 4.7.3 成员
@@ -158,7 +158,3 @@ Movie 对象具有与 [Movie](pt01ch04pyo07.md#ker-movie-movie-pyc) 方法参数
 *memory*
 
 一个 Int，指定所选电影帧所占用的内存。
-
-
-
-

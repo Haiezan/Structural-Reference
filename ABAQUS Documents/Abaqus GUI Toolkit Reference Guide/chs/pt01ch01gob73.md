@@ -61,8 +61,3 @@ DialogBox 窗口。当接收到 ID_CANCEL 或 ID_ACCEPT 时，DialogBox 退出�
 | **ID_CANCEL** | 关闭对话框，取消输入。 |
 | --- | --- |
 | **ID_ACCEPT** | 关闭对话框，接受输入。 |
-
-
-
-
-

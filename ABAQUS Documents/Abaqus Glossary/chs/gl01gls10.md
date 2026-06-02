@@ -63,6 +63,3 @@ Abaqus/CAE 模块，用于定义模型区域之间或模型区域与其周围环
 更多信息：- [「接触相互作用分析：概述，」Abaqus Analysis User's Guide 第 36.1.1 节](../usb/usb-link.md#usb-cni-acontactoverview)
 
 - [第 15 章，「The Interaction module，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-itn)
-
-
-

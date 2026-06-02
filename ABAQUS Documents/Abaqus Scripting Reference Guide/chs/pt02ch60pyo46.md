@@ -64,41 +64,10 @@ ElectricalConductivity(const odb_SequenceSequenceDouble& table,
 - 依此类推。
 
 如果 *type*=ORTHOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00221.gif]。
-- ![](../graphics/ker_eqn00222.gif]。
-- ![](../graphics/ker_eqn00223.gif]。
-- 频率（如果数据依赖频率）。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=ANISOTROPIC，表数据指定以下内容：
-- ![](../graphics/ker_eqn00221.gif]。
-- ![](../graphics/ker_eqn00224.gif]。
-- ![](../graphics/ker_eqn00222.gif]。
-- ![](../graphics/ker_eqn00225.gif]。
-- ![](../graphics/ker_eqn00226.gif]。
-- ![](../graphics/ker_eqn00223.gif]。
-- 频率（如果数据依赖频率）。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-**返回值**
-
-一个 ElectricalConductivity 对象。
-
-**异常**
-
-RangeError。
-
-### 60.46.2 成员
-
-ElectricalConductivity 对象的成员与 [ElectricalConductivity](pt02ch60pyo46.md#ker-electricalconductivity-electricalconductivity-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00221.gif)![](../graphics/ker_eqn00222.gif)![](../graphics/ker_eqn00223.gif)![](../graphics/ker_eqn00221.gif)![](../graphics/ker_eqn00224.gif)![](../graphics/ker_eqn00222.gif)![](../graphics/ker_eqn00225.gif)![](../graphics/ker_eqn00226.gif)![](../graphics/ker_eqn00223.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.46.3 对应的分析关键字
 
 | [*ELECTRICAL CONDUCTIVITY](../key/key-link.md#usb-kws-melectricconduct) |
 | --- |
+### 60.46.3 Corresponding analysis keywords

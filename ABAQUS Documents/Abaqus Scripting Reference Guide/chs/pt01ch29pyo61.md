@@ -54,9 +54,9 @@ Float 元组序列，指定下述项目。此参数仅在 *testData*=OFF 时有�
 
 **表格数据**
 
-对于 ![](../graphics/ker_eqn00088.gif) 的值，表格数据中的项目指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif) 的 ![](../graphics/ker_eqn00270.gif)，![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif)。
-- ![](../graphics/ker_eqn00284.gif)。
+对于 ![](../graphics/ker_eqn00283.gif)![](../graphics/ker_eqn00088.gif) 的值，表格数据中的项目指定以下内容：
+- 对于从 1 到 ，![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif)。
+- ![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00284.gif)![](../graphics/ker_eqn00272.gif)。
 - 温度（如果数据依赖于温度）。在 Abaqus/Explicit 分析中，4 ≤ *n* ≤ 6 时不允许温度依赖。
 
 **返回值**

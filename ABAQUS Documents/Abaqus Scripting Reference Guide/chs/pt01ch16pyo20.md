@@ -55,8 +55,3 @@ LeafFromNodeSets 对象的成员与 [LeafFromNodeSets](pt01ch16pyo20.md#ker-leaf
 *leafType*
 
 一个 SymbolicConstant，指定叶子类型。可能的值为 EMPTY、DEFAULT_MODEL、ALL_ELEMENTS、ALL_NODES 和 ALL_SURFACES。
-
-
-
-
-

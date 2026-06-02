@@ -91,4 +91,3 @@ InitialState 对象的成员与 [InitialState](pt01ch42pyo09.md#ker-initialstate
 
 | [*INSTANCE*](../key/key-link.md#usb-kws-minstance) |
 | --- |
-

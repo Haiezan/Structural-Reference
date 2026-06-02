@@ -9,9 +9,9 @@
 
 将此选项与 [*FRICTION](ch06abk36.md) 选项结合使用，以在步骤之间更改摩擦属性值。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -47,7 +47,3 @@ RESET
 包含此参数以将摩擦属性重置为其原始值。使用此参数时，不需要 [*FRICTION](ch06abk36.md) 选项来重新定义摩擦属性。
 
 **此选项没有关联的数据行。**
-
-
-
-

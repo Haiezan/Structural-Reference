@@ -8,7 +8,7 @@
 
 此选项与[*CONNECTOR FRICTION](ch03abk43.md)和[*CONNECTOR POTENTIAL](ch03abk49.md)选项结合使用，根据需要多次使用，以从编号分量定义用户自定义分量。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -97,7 +97,3 @@ SIGN
 **延续行（如需要）：**
 
 不要重复前两个数据行。根据需要重复后续数据行，以将导出分量的贡献定义为连接器相对位置或本构相对运动、温度和场变量的函数。
-
-
-
-

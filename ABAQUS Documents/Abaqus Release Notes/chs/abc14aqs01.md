@@ -15,7 +15,3 @@
 
 **Abaqus Scripting参考指南**
 - ["addData，" 第61.7.10节](../ker/ker-link.md#ker-fieldoutput-adddata5-cpp)
-
-
-
-

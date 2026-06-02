@@ -89,6 +89,3 @@ StdStabilization 对象的成员与 [StdStabilization](pt01ch25pyo68.md#ker-stds
 
 | [*CONTACT STABILIZATION](../key/key-link.md#usb-kws-hcontactstab) |
 | --- |
-
-
-

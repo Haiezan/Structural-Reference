@@ -78,8 +78,3 @@ RangeError。
 ### 2.4.3 成员
 
 AdaptiveMeshDomain 对象具有与 [AdaptiveMeshDomain](pt01ch02pyo04.md#ker-adaptivemeshdomain-adaptivemeshdomain-pyc) 方法参数相同名称和描述的成员。
-
-
-
-
-

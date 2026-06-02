@@ -71,7 +71,3 @@ POSITION TOL
 **图18.46-2** 子结构反射。点*a*、*b*和*c*不能共线。
 
 ![](../graphics/ksuperprop-refl.png)
-
-
-
-

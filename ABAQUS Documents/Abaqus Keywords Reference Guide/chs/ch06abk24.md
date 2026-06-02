@@ -8,11 +8,11 @@
 
 此选项用于为液压流体模型定义热膨胀系数。它只能与[*FLUID BEHAVIOR](ch06abk16.md)选项一起使用。
 
-**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE   
+**产品：**Abaqus/Standard   Abaqus/Explicit   Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**相互作用模块
 

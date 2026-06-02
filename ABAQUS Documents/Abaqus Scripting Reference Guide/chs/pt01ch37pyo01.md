@@ -194,7 +194,7 @@ This method creates a Part object by extruding an existing two-dimensional orpha
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromExtrude2DMesh                   
+mdb.models[*modelName*].PartFromExtrude2DMesh
 ```
 
 **Required arguments**
@@ -252,7 +252,7 @@ This method creates a Part object and places it in the `parts` repository.
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromGeometryFile                   
+mdb.models[*modelName*].PartFromGeometryFile
 ```
 
 **Required arguments**
@@ -440,7 +440,7 @@ This method creates a Part object by mirroring an existing orphan mesh Part obje
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromMeshMirror                   
+mdb.models[*modelName*].PartFromMeshMirror
 ```
 
 **Required arguments**
@@ -504,7 +504,7 @@ This method creates a Part object from nodes and elements and places it in the `
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromNodesAndElements                   
+mdb.models[*modelName*].PartFromNodesAndElements
 ```
 
 **Required arguments**
@@ -550,7 +550,7 @@ This method creates an orphan mesh Part object by reading an output database. Th
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromOdb                   
+mdb.models[*modelName*].PartFromOdb
 ```
 
 **Required arguments**
@@ -645,7 +645,7 @@ If the step number is invalid:
 OdiError: Invalid step index: i. Available step indices: 0 - j.
 ```
 
-If the frame number is invalid: 
+If the frame number is invalid:
 
 ```
 OdiError: Invalid frame index: i. Available frame indices: 0 - j.
@@ -653,12 +653,12 @@ OdiError: Invalid frame index: i. Available frame indices: 0 - j.
 
 ### 37.1.12 PartFromSection3DMeshByPlane(...)
 
-This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by a plane and places it in the `parts` repository. This method is valid only for orphan mesh parts composed of 8-node brick elements. 
+This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by a plane and places it in the `parts` repository. This method is valid only for orphan mesh parts composed of 8-node brick elements.
 
 **Path**
 
 ```
-mdb.models[*modelName*].PartFromSection3DMeshByPlane                   
+mdb.models[*modelName*].PartFromSection3DMeshByPlane
 ```
 
 **Required arguments**
@@ -689,7 +689,7 @@ None.
 
 **Return value**
 
-A Part object. 
+A Part object.
 
 **Exceptions**
 
@@ -733,7 +733,7 @@ Cannot reduce part dimension.
 
 ### 37.1.13 PartFromSubstructure(...)
 
-This method creates a substructure Part object by reading a substructure sim file and places it in the                       `parts`                      repository.                   
+This method creates a substructure Part object by reading a substructure sim file and places it in the                       `parts`                      repository.
 
 **Path**
 
@@ -761,25 +761,25 @@ None.
 
 **Return value**
 
-A                       Part                      object.                   
+A                       Part                      object.
 
 **Exceptions**
 
 InvalidNameError.
 
-If the specified part is not a substructure: 
+If the specified part is not a substructure:
 
 ```
 File specified does not contain a substructure.
 ```
 
-If the specified part already exists: 
+If the specified part already exists:
 
 ```
 A part with the same name already exists.
 ```
 
-If the substructure cannot be imported: 
+If the substructure cannot be imported:
 
 ```
 The output database is missing nodes and elements.
@@ -800,7 +800,7 @@ This method creates a geometric Part object from the outline of an existing two-
 **Path**
 
 ```
-mdb.models[*modelName*].Part2DGeomFrom2DMesh                   
+mdb.models[*modelName*].Part2DGeomFrom2DMesh
 ```
 
 **Required arguments**
@@ -1123,7 +1123,7 @@ None.
 
 ### 37.1.26 getCADParameters()
 
-This method returns the names and values of the CAD parameters associated with the part. These are only available if the part was imported from one of the supported CAD softwares using the Associative Import capability, and if the parameter names defined in that CAD software are prefixed with the string ABQ.  
+This method returns the names and values of the CAD parameters associated with the part. These are only available if the part was imported from one of the supported CAD softwares using the Associative Import capability, and if the parameter names defined in that CAD software are prefixed with the string ABQ.
 
 **Arguments**
 
@@ -1169,7 +1169,7 @@ None.
 
 ### 37.1.28 getCoordinates(...)
 
-This method returns the coordinates of specified point. 
+This method returns the coordinates of specified point.
 
 **Required argument**
 
@@ -1183,7 +1183,7 @@ None.
 
 **Return value**
 
-A tuple of 3 Floats representing the coordinates of the specified point. 
+A tuple of 3 Floats representing the coordinates of the specified point.
 
 **Exceptions**
 
@@ -1582,7 +1582,7 @@ A sequence of candidate edges to be projected onto the sketch.
 
 *constrainToBackground*
 
-A Boolean that determines whether the projected edges need to constrained to the background geometry. The default is True. 
+A Boolean that determines whether the projected edges need to constrained to the background geometry. The default is True.
 
 **Return value**
 
@@ -1594,7 +1594,7 @@ None.
 
 ### 37.1.42 projectReferencesOntoSketch(...)
 
-This method projects the vertices of specified edges, and datum points from the part onto the specified [ConstrainedSketch](pt01ch48pyo01.md) object. The vertices and datum points appear on the sketch as reference geometry. 
+This method projects the vertices of specified edges, and datum points from the part onto the specified [ConstrainedSketch](pt01ch48pyo01.md) object. The vertices and datum points appear on the sketch as reference geometry.
 
 **Required argument**
 
@@ -1643,7 +1643,7 @@ None.
 
 *printResults*
 
-A Boolean which specifies whether the above information is to be printed. The default value is True 
+A Boolean which specifies whether the above information is to be printed. The default value is True
 
 **Return value**
 
@@ -2057,7 +2057,7 @@ Cannot export orphan mesh parts to VDA-FS.
 
 ### 37.1.63 copyMeshPattern(...)
 
- This method copies a mesh pattern from a source region consisting of a set of shell elements or element faces onto a target face, mapping nodes and elements in a one-one correspondence between source and target. 
+ This method copies a mesh pattern from a source region consisting of a set of shell elements or element faces onto a target face, mapping nodes and elements in a one-one correspondence between source and target.
 
 **Required arguments**
 
@@ -2183,11 +2183,11 @@ A Boolean specifying the validity of the geometry of the part. The value is comp
 
 *isOutOfDate*
 
-An Int specifying that feature parameters have been modified but that the part has not been regenerated. Possible values are 0 and 1. 
+An Int specifying that feature parameters have been modified but that the part has not been regenerated. Possible values are 0 and 1.
 
 *timeStamp*
 
-A Float specifying when the part was last modified. 			   
+A Float specifying when the part was last modified.
 
 *vertices*
 
@@ -2304,7 +2304,3 @@ A repository of [MeshEdge](pt01ch31pyo04.md) objects specifying all the element 
 *elementEdges*
 
 A [MeshEdgeArray](pt01ch31pyo04.md) object specifying all the unique element edges in the part.
-
-
-
-

@@ -54,7 +54,3 @@ ConcCurrentState 对象具有以下成员：
 
 | [*CECURRENT](../key/key-link.md#usb-kws-hcecurrent) |
 | --- |
-
-
-
-

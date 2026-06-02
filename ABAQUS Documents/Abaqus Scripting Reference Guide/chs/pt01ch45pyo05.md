@@ -280,4 +280,3 @@ Surface 对象可以具有以下成员：
 *instances*
 
  Int 元组，指定实例。此成员不适用于输出数据库上的 Surface 对象。
-

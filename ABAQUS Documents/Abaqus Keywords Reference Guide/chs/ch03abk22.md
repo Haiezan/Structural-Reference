@@ -9,9 +9,9 @@
 
 此选项用于向模型中的任何节点施加集中力和力矩。[*CLOAD](ch03abk22.md) 选项还可用于在 Abaqus/CFD 分析中指定不可压缩流动的流体参考压力，并在 Abaqus/Aqua 分析中指定集中浮力、阻力和惯性载荷。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  Abaqus/Aqua  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  Abaqus/Aqua
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -167,7 +167,3 @@ OP
 如果在 [*TRANSFORM](ch19abk11.md) 选项中使用了此节点的局部坐标系，则给出以下方向余弦：
 
 根据需要重复此数据行对，以在各个节点或节点集上定义集中流体惯性载荷。
-
-
-
-

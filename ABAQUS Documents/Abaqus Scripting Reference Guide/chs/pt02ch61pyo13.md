@@ -19,7 +19,7 @@ void
 ConnectorOrientation(const odb_Set& region,
                      const odb_DatumCsys& csys1,
                      odb_Enum::odb_AxisEnum axis1,
-                     float angle1,                     
+                     float angle1,
                      const odb_DatumCsys& csys2,
                      odb_Enum::odb_AxisEnum axis2,
                      float angle2);

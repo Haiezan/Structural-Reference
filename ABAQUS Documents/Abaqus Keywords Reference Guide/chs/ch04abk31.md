@@ -8,9 +8,9 @@
 
 此选项用于指定分布载荷。它还用于在Abaqus/Aqua分析中施加集中或分布的风、波或浮力载荷，或在Abaqus/CFD中施加一般体力、浮力或多孔拖曳力载荷。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  Abaqus/Aqua  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  Abaqus/Aqua
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -233,7 +233,3 @@ OP
 **第一行：**
 
 根据需要重复此数据行，以定义单元末端的集中流体惯性载荷。
-
-
-
-

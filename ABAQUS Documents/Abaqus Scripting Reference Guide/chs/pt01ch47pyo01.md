@@ -709,5 +709,3 @@ String，指定当前视口的名称。
 *drawings*
 
 [Drawing](pt01ch47pyo04.md) 对象存储库。
-
-

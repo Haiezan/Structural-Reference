@@ -9,9 +9,9 @@
 
 此选项用于将接触变量写入输出数据库。必须与 [*OUTPUT](ch15abk03.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -103,7 +103,3 @@ VARIABLE
 **第一行：**
 
 根据需要重复此数据行，以定义要写入输出数据库的变量列表。
-
-
-
-

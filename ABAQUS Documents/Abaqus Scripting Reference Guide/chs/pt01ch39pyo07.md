@@ -28,4 +28,3 @@ SelectedProbeValues 对象具有以下成员：
 *lastValues*
 
  Float 元组，指定 *values* 成员的最后一个序列。
-

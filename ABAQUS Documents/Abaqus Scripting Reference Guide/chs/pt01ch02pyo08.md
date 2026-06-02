@@ -97,6 +97,3 @@ DisplacementAdaptiveMeshConstraintState 对象具有以下成员：
 
 | [*ADAPTIVE MESH CONSTRAINT](../key/key-link.md#usb-kws-hadaptivemeshconstraint), TYPE=DISPLACEMENT (自由度: 1, 2, 3, 4, 5 或 6) |
 | --- |
-
-
-

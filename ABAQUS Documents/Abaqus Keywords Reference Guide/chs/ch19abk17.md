@@ -60,8 +60,3 @@ TYPE
 **第一行：**
 
 **第二行（除非在关联的[*CFD](ch03abk13.md)选项上使用ENERGY EQUATION=TEMPERATURE，否则输入空行）：**
-
-
-
-
-

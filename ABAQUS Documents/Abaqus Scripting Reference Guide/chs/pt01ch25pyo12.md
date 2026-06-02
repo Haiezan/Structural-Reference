@@ -141,8 +141,3 @@ ConcentratedFilmCondition 对象。
 ### 25.12.4 成员
 
 ConcentratedFilmCondition 对象的成员与 [ConcentratedFilmCondition](pt01ch25pyo12.md#ker-concentratedfilmcondition-concentratedfilmcondition-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

@@ -125,7 +125,3 @@ A [DerivedComponent](pt02ch58pyo13.md) object specifying the [DerivedComponent](
 
 | [*CONNECTOR POTENTIAL](../key/key-link.md#usb-kws-mconnectorpotential) |
 | --- |
-
-
-
-

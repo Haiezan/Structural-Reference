@@ -63,7 +63,3 @@ BoltLoadState 对象具有以下成员：
 | [*CLOAD](../key/key-link.md#usb-kws-hcload) (当 *boltMethod*=APPLY_FORCE 时) |
 | --- |
 | [*BOUNDARY](../key/key-link.md#usb-kws-hboundary) (当 *boltMethod*=ADJUST_LENGTH 或 FIX_LENGTH 时) |
-
-
-
-

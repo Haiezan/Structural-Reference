@@ -208,8 +208,3 @@ MappedField 对象可以具有以下成员：
 *description*
 
 一个 String，指定场的描述。默认值为空字符串。
-
-
-
-
-

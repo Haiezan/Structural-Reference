@@ -116,7 +116,3 @@ RangeError.
 ### 48.8.2 Members
 
 The ConstrainedSketchOptions object has members with the same names and descriptions as the arguments to the [setValues](pt01ch48pyo08.md#ker-constrainedsketchoptions-setvalues-pyc) method.
-
-
-
-

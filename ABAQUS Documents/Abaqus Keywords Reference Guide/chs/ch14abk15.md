@@ -12,11 +12,11 @@
 
 此选项用于在模型中包含来自非结构特征的质量贡献。非结构质量可以应用于包含实体、壳、膜、表面、梁或桁架单元的单元集。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配  
+**级别：**部件、部件实例、装配
 
 **Abaqus/CAE：**属性模块和相互作用模块
 

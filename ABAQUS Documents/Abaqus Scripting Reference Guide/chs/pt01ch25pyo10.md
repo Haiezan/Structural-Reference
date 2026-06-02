@@ -74,6 +74,3 @@ CavityRadiationState 对象具有以下成员：
 
 | [*RADIATION VIEWFACTOR](#) |
 | --- |
-
-
-

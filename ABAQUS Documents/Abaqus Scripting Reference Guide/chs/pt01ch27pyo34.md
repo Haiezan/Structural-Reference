@@ -72,7 +72,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*DLOAD](../key/key-link.md#usb-kws-hdload) (load type label:GRAV) |
 | --- |
-
-
-
-

@@ -77,7 +77,3 @@ VISCOUS DAMPING MATRIX
 设置VISCOUS DAMPING MATRIX=YES以计算子结构的缩减粘性阻尼矩阵。默认值为VISCOUS DAMPING MATRIX=NO。
 
 **此选项没有关联的数据行。**
-
-
-
-

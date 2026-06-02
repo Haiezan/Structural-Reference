@@ -103,6 +103,3 @@ ElasticFoundation 对象的成员与 [ElasticFoundation](pt01ch25pyo28.md#ker-el
 
 | [*FOUNDATION](../key/key-link.md#usb-kws-mfoundation) |
 | --- |
-
-
-

@@ -12,11 +12,11 @@
 
 [*POROUS METAL PLASTICITY](ch16abk22.md)选项可与[*VOID NUCLEATION](ch21abk07.md)选项结合使用以定义孔洞的形核。在Abaqus/Explicit分析中，它还可以与[*POROUS FAILURE CRITERIA](ch16abk21.md)选项结合使用以指定材料失效准则。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

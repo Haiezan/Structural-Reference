@@ -146,7 +146,3 @@ A String specifying the element set in the global model that will be searched fo
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

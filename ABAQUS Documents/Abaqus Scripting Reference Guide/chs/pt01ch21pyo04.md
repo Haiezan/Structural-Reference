@@ -186,8 +186,3 @@ AbaqusException。
 ### 21.4.5 成员
 
 DiscreteField 对象具有与 [DiscreteField](pt01ch21pyo04.md#ker-discretefield-discretefield-pyc) 方法的参数相同的名称和描述的成员。
-
-
-
-
-

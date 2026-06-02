@@ -64,7 +64,3 @@ The EulerianSection object has members with the same names and descriptions as t
 
 | [*EULERIAN SECTION](../key/key-link.md#usb-kws-meulsection) |
 | --- |
-
-
-
-

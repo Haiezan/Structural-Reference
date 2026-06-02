@@ -82,8 +82,3 @@ EngineeringFeature 对象可具有以下成员：
 *springDashpots*
 
 [SpringDashpot](pt01ch19pyo13.md) 对象的存储库。
-
-
-
-
-

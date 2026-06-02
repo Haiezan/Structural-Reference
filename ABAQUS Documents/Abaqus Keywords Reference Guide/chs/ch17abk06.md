@@ -10,11 +10,11 @@
 
 此选项用于控制在腔体辐射分析期间视角因子的计算。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**相互作用模块
 

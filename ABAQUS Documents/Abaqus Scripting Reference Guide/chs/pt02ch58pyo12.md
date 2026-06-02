@@ -89,7 +89,3 @@ The ConnectorStop object has members with the same names and descriptions as the
 
 | [*CONNECTOR STOP](../key/key-link.md#usb-kws-mconnectorstops) |
 | --- |
-
-
-
-

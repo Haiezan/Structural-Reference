@@ -10,11 +10,11 @@
 
 此选项用于将一组单元和/或一组节点和/或解析表面绑定到刚体，并将参考节点分配给刚体，该刚体可选择性地声明为完全耦合热应力分析的等温刚体。它还用于为Abaqus/Explicit分析中属于刚体一部分的刚性单元指定密度、厚度和偏移。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例，装配  
+**级别：**零件，零件实例，装配
 
 **Abaqus/CAE：**零件模块和相互作用模块
 

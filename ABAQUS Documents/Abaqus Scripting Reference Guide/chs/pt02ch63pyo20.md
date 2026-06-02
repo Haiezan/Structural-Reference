@@ -84,7 +84,7 @@ An odb_String specifying the ply identifier for this section layer. The default 
 
 *orientation*
 
-A [DatumCsys](#ker-datumcsys-cpp) object specifying a coordinate system reference for the relative orientation of this layer. If this reference is valid it is used as the relative orientation of the layer, otherwise the *orientAngle* is used as described. 
+A [DatumCsys](#ker-datumcsys-cpp) object specifying a coordinate system reference for the relative orientation of this layer. If this reference is valid it is used as the relative orientation of the layer, otherwise the *orientAngle* is used as described.
 
 *additionalRotationField*
 
@@ -111,7 +111,3 @@ The SectionLayer object has members with the same names and descriptions as the 
 | [*SHELL SECTION](../key/key-link.md#usb-kws-mshellsection) |
 | --- |
 | [*SHELL GENERAL SECTION](../key/key-link.md#usb-kws-mshellgensect) |
-
-
-
-

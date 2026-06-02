@@ -127,7 +127,3 @@
 | **AFXFLYOUT_HORIZONTAL** | 弹出水平。 |
 | **AFXFLYOUT_VERTICAL** | 弹出垂直。 |
 | **AFXFLYOUT_RADIO** | 当前条目始终处于活动状态。 |
-
-
-
-

@@ -202,5 +202,3 @@
 | **AFXSLIDER_ABOVE_TITLE** | 在标题上方显示滑块。 |
 | **AFXSLIDER_AFTER_TITLE** | 在标题后显示滑块。 |
 | **AFXSLIDER_NORMAL** | 默认滑块选项——滑块是水平的，在槽内，并在其标题标签上方显示。 |
-
-

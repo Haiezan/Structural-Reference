@@ -56,4 +56,3 @@ session.viewports[*name*].odbDisplay.streamOptions
 ### 40.21.2 成员
 
 StreamOptions 对象的成员与 [setValues](pt01ch40pyo21.md#ker-streamoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

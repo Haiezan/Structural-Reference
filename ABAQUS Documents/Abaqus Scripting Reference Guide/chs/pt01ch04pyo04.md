@@ -54,7 +54,3 @@ session.imageAnimationOptions
 ### 4.4.2 成员
 
 ImageAnimationOptions 对象具有与 [setValues](pt01ch04pyo04.md#ker-imageanimationoptions-setvalues-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

@@ -88,4 +88,3 @@ ValueError：当 *type*=CIRCUMFERENTIAL 或 RADIAL 时，如果 *expression* 中
 ### 39.1.2 成员
 
 Path 对象的成员与 [Path](pt01ch39pyo01.md#ker-path-path-pyc) 方法的参数具有相同的名称和描述。
-

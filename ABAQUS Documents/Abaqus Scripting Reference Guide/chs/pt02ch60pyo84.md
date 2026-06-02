@@ -45,26 +45,10 @@ PressureEffect(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-- 压力应力因子，![](../graphics/ker_eqn00356.gif]。
-- 浓度。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-**返回值**
-
-一个 PressureEffect 对象。
-
-**异常**
-
-RangeError。
-
-### 60.84.2 成员
-
-PressureEffect 对象的成员与 [PressureEffect](pt02ch60pyo84.md#ker-pressureeffect-pressureeffect-cpp) 方法的参数具有相同的名称和描述。
+- 压力应力因子，![](../graphics/ker_eqn00356.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.84.3 对应的分析关键字
 
 | [*KAPPA](../key/key-link.md#usb-kws-mkappa) |
 | --- |
+### 60.84.3 Corresponding analysis keywords

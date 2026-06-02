@@ -103,4 +103,3 @@ KinematicHardening 对象的成员与 [KinematicHardening](pt01ch42pyo10.md#ker-
 
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=HARDENING |
 | --- |
-

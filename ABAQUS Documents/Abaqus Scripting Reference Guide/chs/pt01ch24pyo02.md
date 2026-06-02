@@ -37,8 +37,3 @@ InputFile 对象具有以下成员：
 *comments*
 
 一个 String 序列，指定注释。
-
-
-
-
-

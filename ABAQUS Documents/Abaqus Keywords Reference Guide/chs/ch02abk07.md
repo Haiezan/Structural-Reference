@@ -21,5 +21,3 @@
 - ["使用通用梁截面定义截面行为，" Abaqus Analysis User's Guide第29.3.7节](../usb/usb-link.md#usb-elm-eusingbeamgensect)
 
 **此选项没有参数或数据行。**
-
-

@@ -183,4 +183,3 @@ ProbeOptions 对象具有以下成员：
 *probeObject*
 
  String，指定被探测显示对象的类型。可选值为 "ODB" 和 "XYPlot"。此成员为只读。
-

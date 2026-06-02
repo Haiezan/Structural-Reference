@@ -12,8 +12,3 @@ mdb.models[*name*].interactionProperties[*name*]
 ### 25.48.1 成员
 
 InteractionProperty 对象没有成员。
-
-
-
-
-

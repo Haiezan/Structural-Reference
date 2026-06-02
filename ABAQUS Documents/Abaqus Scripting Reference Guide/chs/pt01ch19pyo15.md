@@ -125,8 +125,3 @@ TwoPointSpringDashpot 对象具有与 [TwoPointSpringDashpot](pt01ch19pyo15.md#k
 
 | [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=SPRINGA; [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=SPRING2; [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=DASHPOTA; [*ELEMENT](../key/key-link.md#usb-kws-melement), TYPE=DASHPOT2; [*SPRING](../key/key-link.md#usb-kws-mspring); [*DASHPOT](../key/key-link.md#usb-kws-mdashpot) |
 | --- |
-
-
-
-
-

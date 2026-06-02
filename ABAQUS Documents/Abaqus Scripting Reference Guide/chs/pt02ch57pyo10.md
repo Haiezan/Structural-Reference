@@ -69,4 +69,3 @@ RectangularProfile 对象具有与 [RectangularProfile](pt02ch57pyo10.md#ker-rec
 
 | [*BEAM SECTION*](../key/key-link.md#usb-kws-mbeamsection), SECTION=RECT |
 | --- |
-

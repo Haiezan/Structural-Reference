@@ -76,7 +76,3 @@ The MPCSection object has members with the same names and descriptions as the ar
 
 | [*MPC](../key/key-link.md#usb-kws-mmpc) |
 | --- |
-
-
-
-

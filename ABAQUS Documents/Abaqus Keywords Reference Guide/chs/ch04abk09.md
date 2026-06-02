@@ -8,9 +8,9 @@
 
 此选项用于指定最初部分粘合的两个表面之间可能发生裂纹扩展。[*FRACTURE CRITERION](ch06abk33.md) 选项必须紧跟在此选项之后。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -62,7 +62,3 @@ TIME INCREMENT
 **第一行：**
 
 根据需要重复此数据行以定义脱粘振幅曲线。
-
-
-
-

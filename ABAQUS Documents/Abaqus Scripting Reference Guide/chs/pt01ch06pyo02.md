@@ -93,7 +93,3 @@ session.odbs[*name*].rootAssembly.ConnectorOrientation
 ### 6.2.3 成员
 
 ConnectorOrientation 对象具有与 [ConnectorOrientation](pt01ch06pyo02.md#ker-connectororientation-connectororientation-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

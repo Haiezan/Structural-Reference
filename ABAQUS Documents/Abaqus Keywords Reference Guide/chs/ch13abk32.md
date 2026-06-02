@@ -12,11 +12,11 @@
 
 此选项用于定义梁的第一弯曲矩行为。它只能与[*BEAM GENERAL SECTION](ch02abk05.md)、SECTION=NONLINEAR GENERAL选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 ##### **参考：**
 

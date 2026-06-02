@@ -1,4 +1,4 @@
-# Abaqus/Aqua
+**Abaqus/Aqua**
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-# Abaqus/CAE
+**Abaqus/CAE**
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-# Abaqus/Explicit
+**Abaqus/Explicit**
 
 
 
@@ -332,7 +332,7 @@
 
 
 
-# Abaqus/Design
+**Abaqus/Design**
 
 
 
@@ -1097,8 +1097,3 @@
 | --- | --- |
 
 | [第 4.10.10 节](ch04s10anf93.md) | 3DNLG-10：压缩端载荷下加筋圆柱面板弹塑性行为 |
-
-
-
-
-

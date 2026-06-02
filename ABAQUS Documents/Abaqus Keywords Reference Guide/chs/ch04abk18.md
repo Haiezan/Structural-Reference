@@ -8,11 +8,11 @@
 
 此选项用于为JWL炸药状态方程定义起爆点。当使用 [*EOS](ch05abk27.md)、TYPE=JWL 选项时需要此选项。[*DETONATION POINT](ch04abk18.md) 选项应紧跟在 [*EOS](ch05abk27.md) 选项之后。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -28,7 +28,3 @@
 **第一行：**
 
 根据需要重复此数据行，以定义每个起爆点。
-
-
-
-

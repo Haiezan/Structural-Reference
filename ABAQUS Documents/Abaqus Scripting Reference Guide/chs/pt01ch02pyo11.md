@@ -166,7 +166,3 @@ RemeshingRule 对象具有与 [RemeshingRule](pt01ch02pyo11.md#ker-remeshingrule
 *suppressed*
 
 一个 Boolean，指定重网格规则是否被抑制。如果您抑制某个规则，则不会对该重网格规则区域进行重网格划分。默认值为 OFF。
-
-
-
-

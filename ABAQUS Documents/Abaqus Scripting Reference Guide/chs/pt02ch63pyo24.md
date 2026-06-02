@@ -70,7 +70,3 @@ The TransverseShearBeam object has members with the same names and descriptions 
 
 | [*TRANSVERSE SHEAR STIFFNESS](../key/key-link.md#usb-kws-mtransshearstiff) |
 | --- |
-
-
-
-

@@ -9,9 +9,9 @@
 
 可以使用此选项的多个实例来为 Abaqus/Standard 中的通用接触定义接触稳定化控制。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -59,7 +59,3 @@ TANGENT FRACTION
 ### **如果 SCALE FACTOR=USER ADAPTIVE 时的数据行：**
 
 **第一行：**
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  Abaqus/AMS  
+**产品：**Abaqus/Standard  Abaqus/AMS
 
 **优点：**AMS 特征值求解器可以使用支持计算的 GPGPU 卡来减少频率提取分析的运行时间。
 
@@ -25,4 +25,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*FREQUENCY](../key/key-link.md#usb-kws-hfrequency)
-

@@ -37,7 +37,3 @@ REFORM KERNEL
 此参数只能与TYPE=QUASI-NEWTON一起使用。将此参数设置为在重新形成核矩阵之前允许的准牛顿迭代次数。默认值为REFORM KERNEL=8。
 
 **此选项没有关联的数据行。**
-
-
-
-

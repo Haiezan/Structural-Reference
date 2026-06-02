@@ -373,7 +373,7 @@ AnalyticRigidSurf2DPlanar(const odb_String& name,
 如果 OdbPart 类型为 THREE_D：
 
 ```
-OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the part is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.                         
+OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the part is of type                             TWO_D_PLANAR                            or                             AXISYMMETRIC.
 ```
 
 ### 61.20.10 AnalyticRigidSurfExtrude(...)
@@ -414,7 +414,7 @@ AnalyticRigidSurfExtrude(const odb_String& name,
 如果 OdbPart 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                            CYLINDER                            can be defined only if the part is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                            CYLINDER                            can be defined only if the part is of type                             THREE_D.
 ```
 
 ### 61.20.11 AnalyticRigidSurfRevolve(...)
@@ -455,7 +455,7 @@ AnalyticRigidSurfRevolve(const odb_String& name,
 如果 OdbPart 类型不是 THREE_D：
 
 ```
-OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the part is of type                             THREE_D.                         
+OdbError:  Analytic Rigid Surface of type                             REVOLUTION                            can be defined only if the part is of type                             THREE_D.
 ```
 
 ### 61.20.12 RigidBody(...)

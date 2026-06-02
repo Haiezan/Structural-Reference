@@ -51,6 +51,3 @@ SurfaceToSurfaceExpState 对象具有以下成员：
 | [*CONTACT CONTROLS](../key/key-link.md#usb-kws-hcontactcontrols) |
 | --- |
 | [*CONTACT PAIR](../key/key-link.md#usb-kws-hcontactpair) |
-
-
-

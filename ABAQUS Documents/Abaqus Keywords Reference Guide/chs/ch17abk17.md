@@ -10,11 +10,11 @@
 
 此选项用于列出要作为子结构外部自由度保留的自由度。它只能用于[*SUBSTRUCTURE GENERATE](ch18abk42.md)分析。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**载荷模块
 

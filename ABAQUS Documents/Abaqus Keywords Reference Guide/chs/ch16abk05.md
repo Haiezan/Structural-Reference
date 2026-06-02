@@ -12,9 +12,9 @@
 
 此选项用于通过给定方向上的周期性重复来定义腔体对称。它只能跟在[*RADIATION SYMMETRY](ch17abk05.md)选项之后使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -57,7 +57,7 @@ NR
 
 **图16.5-1** [*PERIODIC](ch16abk05.md)、TYPE=2D选项。
 
-![](../graphics/kperiodic-2d.png)
+![](../graphics/key_eqn00930.gif)![](../graphics/key_eqn00930.gif)![](../graphics/key_eqn00931.gif)![](../graphics/key_eqn00931.gif)![](../graphics/kperiodic-2d.png)
 
 **图16.5-2** [*PERIODIC](ch16abk05.md)、TYPE=3D选项。
 

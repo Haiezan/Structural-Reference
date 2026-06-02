@@ -24,8 +24,3 @@
 返回表关键字类型的名称。
 
 从 AFXComTableKeyword 重新实现。
-
-
-
-
-

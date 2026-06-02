@@ -26,7 +26,7 @@ The upgrade utility upgrades your scripts to the most recent version of Abaqus, 
 ```
 abaqus python -m upgradeScript -preview tireSlip.py tireWear
 ```
-would preview all of the upgrades to the `tireSlip.py` script and to all of the scripts in the `tireWear` directory. 
+would preview all of the upgrades to the `tireSlip.py` script and to all of the scripts in the `tireWear` directory.
 
 More options are available if you use the `upgradeScript` method in an Abaqus Scripting Interface script to upgrade your scripts. For more information, see ["Upgrade script commands," Section 53.10](pt01ch53pyc06.md). In addition, an Abaqus plug-in is available that provides a graphical interface to the `upgradeScript` method. For more information, see ["Upgrading a script," Section 82.5 of the Abaqus/CAE User's Guide](../usi/usi-link.md#usi-plg-example-upgradescript).
 
@@ -267,6 +267,3 @@ No changes.
 **XY commands**
 
 No changes.
-
-
-

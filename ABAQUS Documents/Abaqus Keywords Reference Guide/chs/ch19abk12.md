@@ -46,8 +46,3 @@ TYPE
 ### **TYPE=DSFGMRES、TYPE=DSGMRES和TYPE=ILUFGMRES的数据行：**
 
 **第一行（也是唯一行）：**
-
-
-
-
-

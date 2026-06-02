@@ -8,7 +8,7 @@
 
 此选项用于允许Abaqus/Standard为与CAXA*n*或SAXA*n*元素结合使用的ISL型和IRS型接触元素计算适当的积分区域。[*ASYMMETRIC-AXISYMMETRIC](ch01abk15.md)选项必须与[*INTERFACE](ch09abk22.md)选项结合使用。
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **类型：**模型数据
 

@@ -72,7 +72,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*CLOAD](../key/key-link.md#usb-kws-hcload) (degree of freedom: 1 or 2) |
 | --- |
-
-
-
-

@@ -12,8 +12,3 @@ mdb.models[*name*].contactInitializations[*name*]
 ### 25.20.1 成员
 
 ContactInitialization 对象没有成员。
-
-
-
-
-

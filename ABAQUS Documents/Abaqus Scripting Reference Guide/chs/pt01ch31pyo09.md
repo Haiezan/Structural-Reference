@@ -68,7 +68,7 @@ An Int specifying the node label.
 
 **Return value**
 
-A MeshNode object. 
+A MeshNode object.
 
 **Exceptions**
 
@@ -181,7 +181,3 @@ A String specifying the name of the part instance that owns this node.
 *coordinates*
 
 A tuple of three Floats specifying the coordinates of the new node.
-
-
-
-

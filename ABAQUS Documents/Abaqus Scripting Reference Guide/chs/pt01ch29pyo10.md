@@ -87,7 +87,3 @@ CapHardening 对象具有与 [CapHardening](pt01ch29pyo10.md#ker-caphardening-ca
 
 | [*CAP HARDENING](../key/key-link.md#usb-kws-mcaphardening) |
 | --- |
-
-
-
-

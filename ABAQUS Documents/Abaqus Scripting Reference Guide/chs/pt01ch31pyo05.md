@@ -200,8 +200,4 @@ A String specifying the name of the part instance that owns this element.
 
 *connectivity*
 
-A tuple of Ints specifying the internal node indices that define the nodal connectivity. It is important to note the difference with OdbMeshElement object of ODB where the connectivity is node labels instead of node indices. 
-
-
-
-
+A tuple of Ints specifying the internal node indices that define the nodal connectivity. It is important to note the difference with OdbMeshElement object of ODB where the connectivity is node labels instead of node indices.

@@ -17,6 +17,3 @@
 7. 对于输出数据库数据的绘图，从主菜单栏中选择****Plot**![](../graphics/images/arrow.gif)**Symbols****来修改是在变形模型形状、未变形形状还是两者上绘制符号。**提示：**您还可以使用工具箱中的变形![](../graphics/ico_plotSymbolDeformed.png)、未变形![](../graphics/ico_plotSymbolUndeformed.png)或叠加![](../graphics/ico_plotSymbolDefUndef.png)符号工具生成符号图。当前视口更改为显示当前输出数据库在指定步骤和帧的指定场输出变量的自定义符号图。每次您在步骤和帧选择器对话框、绘图状态独立选项、叠加绘图选项（如果适用）或符号图选项对话框中单击**Apply**时，Abaqus会自动刷新您的符号图。
 
 ![](../graphics/images/black4rule.gif)有关相关信息，请单击以下项目：- ["符号图选项概述，" 第45.2节](pt05ch45hla01.md)
-
-
-

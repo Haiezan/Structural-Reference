@@ -87,7 +87,3 @@ The CohesiveSection object has members with the same names and descriptions as t
 
 | [*COHESIVE SECTION](../key/key-link.md#usb-kws-mcohesivesection) |
 | --- |
-
-
-
-

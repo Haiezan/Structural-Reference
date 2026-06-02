@@ -60,7 +60,3 @@ UPDATE
 **图18.2-1** 用户定义的局部坐标系。
 
 ![](../graphics/oprintfile-localsys-nls.png)
-
-
-
-

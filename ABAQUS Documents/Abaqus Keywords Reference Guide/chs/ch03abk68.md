@@ -9,9 +9,9 @@
 
 此选项用于定义在分析过程中可能相互接触或相互作用的表面对或节点集与表面对。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据  
+**类型：**Abaqus/Standard 中的模型数据；Abaqus/Explicit 中的历史数据
 
 **级别：**Abaqus/Standard 中的模型；Abaqus/Explicit 中的步骤
 
@@ -163,7 +163,3 @@ WEIGHT
 **第一行：**
 
 根据需要重复此数据行，以定义形成接触对的所有表面或节点集。每一数据行定义一个可能相互作用的表面对或节点集与表面。
-
-
-
-

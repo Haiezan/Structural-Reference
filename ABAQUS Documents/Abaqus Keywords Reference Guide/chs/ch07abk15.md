@@ -18,11 +18,11 @@
 - [*MATRIX GENERATE](ch13abk12.md)
 - [*SUBSTRUCTURE GENERATE](ch18abk42.md)
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 历史数据  
+**类型：** 历史数据
 
-**级别：** 步骤  
+**级别：** 步骤
 
 **Abaqus/CAE：** 仅在子结构生成时在 Step 模块中支持。
 
@@ -57,7 +57,3 @@ STRUCTURAL
 将此参数设置为 ![](../graphics/key_eqn00774.gif) 因子，以创建与频率无关的刚度比例结构阻尼 ![](../graphics/key_eqn00775.gif)，其中 ![](../graphics/key_eqn00776.gif) 表示模型刚度矩阵。默认值为 STRUCTURAL=0。
 
 **此选项没有关联的数据行。**
-
-
-
-

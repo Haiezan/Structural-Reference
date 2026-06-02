@@ -43,4 +43,3 @@ RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the rang
 ### 43.4.2 成员
 
 PngOptions 对象的成员与 [setValues](pt01ch43pyo04.md#ker-pngoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

@@ -8,9 +8,9 @@
 
 此选项用于在全耦合热应力分析中施加分布热通量。在Abaqus/Standard中，它还用于热传递、耦合热电和质量扩散分析。在Abaqus/CFD中，此选项用于指定分布体积热源。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -42,7 +42,3 @@ OP
 **第一行：**
 
 根据需要重复此数据行，以定义不同单元表面的分布热通流。
-
-
-
-

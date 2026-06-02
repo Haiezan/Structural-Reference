@@ -11,11 +11,11 @@
 
 [*INCIDENT WAVE FLUID PROPERTY](ch09abk09.md) 必须与 [*INCIDENT WAVE PROPERTY](ch09abk12.md) 选项一起使用。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** 不支持；此选项已被入射波相互作用特性取代。
 
@@ -30,7 +30,3 @@
 ### **定义入射波流体特性的数据行：**
 
 **第一（也是唯一）行：**
-
-
-
-

@@ -10,11 +10,11 @@
 
 此选项用于指定使用基于表面的接触模拟的压力渗透加载。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
-**级别：**步骤  
+**级别：**步骤
 
 **Abaqus/CAE：**相互作用模块
 

@@ -22,6 +22,3 @@ Abaqus/CAE 无法使用六面体元素自动进行网格划分的实体区域。
 更多信息：- [「用户子程序和实用程序，」Abaqus Analysis User's Guide 第 18.1 节](../usb/usb-link.md#usbusubutil)
 
 - [Abaqus User Subroutines Reference Guide](../sub/sub-link.md#sub)
-
-
-

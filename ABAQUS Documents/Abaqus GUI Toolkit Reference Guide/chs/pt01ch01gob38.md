@@ -60,5 +60,3 @@
 | **NOTE_INFORMATION** | 信息注释。 |
 | --- | --- |
 | **NOTE_WARNING** | 警告注释。 |
-
-

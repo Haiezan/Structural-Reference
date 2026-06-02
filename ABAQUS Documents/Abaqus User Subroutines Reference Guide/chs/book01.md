@@ -11,6 +11,3 @@
 [Conversion Tables, Constants, and Material Properties](../popups/usb-tbl.md)
 
 [Preface](../popups/usb-pre.md)
-
-
-

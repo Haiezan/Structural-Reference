@@ -88,4 +88,3 @@ DisplayGroupInstance 对象可以具有以下成员：
 *odbDisplayOptions*
 
 [OdbDisplayOptions](pt01ch40pyo18.md) 对象，指定此成员仅适用于作为 [OdbDisplay](pt01ch35pyo01.md) 对象的 DisplayGroupInstance 存储库成员的 DisplayGroupInstance 对象。
-

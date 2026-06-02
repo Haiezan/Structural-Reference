@@ -8,9 +8,9 @@
 
 此选项用于指定分布表面载荷。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -152,7 +152,3 @@ OP
 **第一行：**
 
 根据需要重复此数据行，以指定不同表面上的子模型分布载荷。
-
-
-
-

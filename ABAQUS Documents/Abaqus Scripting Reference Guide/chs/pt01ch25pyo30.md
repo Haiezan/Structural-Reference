@@ -89,6 +89,3 @@ ExpContactControl 对象的成员与 [ExpContactControl](pt01ch25pyo30.md#ker-ex
 
 | [*CONTACT CONTROLS](../key/key-link.md#usb-kws-hcontactcontrols) |
 | --- |
-
-
-

@@ -40,25 +40,10 @@ Hypoelastic(const odb_SequenceSequenceDouble& table,
 
 **表数据**
 
-- 瞬时杨氏模量，![](../graphics/ker_eqn00163.gif]。
-- 瞬时泊松比，![](../graphics/ker_eqn00164.gif]。
-- 第一应变不变量，![](../graphics/ker_eqn00285.gif]。
-- 第二应变不变量，![](../graphics/ker_eqn00286.gif]。
-- 第三应变不变量，![](../graphics/ker_eqn00287.gif]。
-
-**返回值**
-
-一个 Hypoelastic 对象。
-
-**异常**
-
-无。
-
-### 60.62.2 成员
-
-Hypoelastic 对象的成员与 [Hypoelastic](pt02ch60pyo62.md#ker-hypoelastic-hypoelastic-cpp) 方法的参数具有相同的名称和描述。
+- 瞬时杨氏模量，![](../graphics/ker_eqn00163.gif)![](../graphics/ker_eqn00164.gif)![](../graphics/ker_eqn00285.gif)![](../graphics/ker_eqn00286.gif)![](../graphics/ker_eqn00287.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.62.3 对应的分析关键字
 
 | [*HYPOELASTIC](../key/key-link.md#usb-kws-mhypoelastic) |
 | --- |
+### 60.62.3 Corresponding analysis keywords

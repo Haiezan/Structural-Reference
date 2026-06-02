@@ -77,4 +77,3 @@ BaselineCorrection 对象具有与 [BaselineCorrection](pt02ch56pyo03.md#ker-bas
 
 | [*BASELINE CORRECTION](../key/key-link.md#usb-kws-mbasecorrection) |
 | --- |
-

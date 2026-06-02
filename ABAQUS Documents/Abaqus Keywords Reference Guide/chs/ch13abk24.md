@@ -12,11 +12,11 @@
 
 此选项用于为由莫尔-库仑塑性模型定义的材料定义分段线性硬化/软化行为。它必须与[*MOHR COULOMB](ch13abk23.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

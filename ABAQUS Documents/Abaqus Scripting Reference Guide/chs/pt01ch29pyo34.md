@@ -77,7 +77,3 @@ DamageStabilizationCohesive 对象具有与 [DamageStabilizationCohesive](pt01ch
 
 | [*DAMAGE STABILIZATION](../key/key-link.md#usb-kws-mdamagestabilization) |
 | --- |
-
-
-
-

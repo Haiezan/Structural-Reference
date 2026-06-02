@@ -10,11 +10,11 @@
 
 此选项用作在壳单元、膜单元和实体（连续）单元中将钢筋定义为单元属性的替代方法。在Abaqus/Standard分析中，它必须用于在梁单元中定义钢筋。在壳单元、膜单元和表面单元中定义钢筋的首选选项是[*REBAR LAYER](ch17abk12.md)选项，该选项必须与[*SHELL SECTION](ch18abk15.md)、[*MEMBRANE SECTION](ch13abk16.md)或[*SURFACE SECTION](ch18abk54.md)选项结合使用。在实体中定义钢筋的首选方法是使用[*EMBEDDED ELEMENT](ch05abk14.md)选项将具有钢筋层的加强表面或膜单元嵌入"宿主"实体单元中。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  
+**产品：**Abaqus/Standard  Abaqus/Explicit
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**零件，零件实例  
+**级别：**零件，零件实例
 
 ##### **参考：**
 

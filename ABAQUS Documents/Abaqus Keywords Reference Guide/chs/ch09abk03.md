@@ -9,11 +9,11 @@
 
 此选项用于为后屈曲分析在模型中引入几何缺陷。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 ##### **参考文献：**
 
@@ -74,7 +74,3 @@ SYSTEM 参数完全局部于此选项，不应与 [*SYSTEM](ch18abk59.md) 选项
 **图 9.3-1** 坐标系。
 
 ![](../graphics/kimperfection-nls.png)
-
-
-
-

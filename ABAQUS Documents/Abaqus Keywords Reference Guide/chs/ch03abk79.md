@@ -1,17 +1,17 @@
-# *CO-SIMULATION CONTROLS
+***CO-SIMULATION CONTROLS**
 
 
 
 
 
 
-### *CO-SIMULATION CONTROLS指定联合仿真的耦合和会合方案。
+***CO-SIMULATION CONTROLS指定联合仿真的耦合和会合方案。**
 
 此选项用于指定联合仿真的耦合和会合方案。它必须与 [*CO-SIMULATION](ch03abk78.md) 选项结合使用，以识别为其指定联合仿真控制的分析程序。当在 [*CO-SIMULATION](ch03abk78.md) 选项上使用 PROGRAM=ABAQUS 或 PROGRAM=MPCCI 时，此选项是联合仿真所必需的。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -73,7 +73,3 @@ STEP SIZE
 设置 STEP SIZE=MIN 以使 Abaqus 基于 Abaqus 和外部程序的建议耦合步骤大小选择最小耦合步骤大小。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

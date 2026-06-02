@@ -1,6 +1,6 @@
-# 第12章　接触
-
-## 目录
+**第12章　接触**
+![](../graphics/gss-surface-nls.png)![](../graphics/gsx-cont-shell-edge-nls.png)![](../graphics/gsi-analrigidsurf-nls.png)![](../graphics/gss-contactpress-nls.png)![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00271.gif)![](../graphics/gsa_eqn00272.gif)![](../graphics/gsa_eqn00176.gif)![](../graphics/gsa_eqn00273.gif)![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00272.gif)![](../graphics/gsa_eqn00274.gif)![](../graphics/gsa_eqn00273.gif)![](../graphics/gss-friction-nls.png)![](../graphics/afriction-exponential-decay.png)![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00270.gif)![](../graphics/gss-master-surf-nls.png)![](../graphics/gss-nodloadconstpress-nls.png)![](../graphics/gss-contact-alg-nls.png)![](../graphics/gss-rigidsurf-nls.png)![](../graphics/gss-modelrigidsurf-nls.png)![](../graphics/gss-smoothingsurf-nls.png)![](../graphics/gss-normals-analrigsurf-nls.png)![](../graphics/gss-forminganal-nls.png)![](../graphics/gss-components-nls.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gss-channel-blankpart.png)![](../graphics/gss-channel-punchpart.png)![](../images/arrow.gif)![](../graphics/gsa_eqn00054.gif)![](../graphics/gss-stressstrain-nls.png)![](../graphics/ico_dtmCsysThreePoints.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_viewFit.png)![](../graphics/gss-channel-assy.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_selectBlue.png)![](../images/arrow.gif)![](../graphics/gsa-contact-mesh.png)![](../images/arrow.gif)![](../graphics/gsi-channel-top-monitor-nls.png)![](../graphics/gsi-channel-bot-monitor-nls.png)![](../graphics/gsa-cnt-diagnostic-iter1-nls.png)![](../graphics/gsa-cnt-diagnostic-iter4-nls.png)![](../graphics/ico_viewFit.png)![](../graphics/gsa-cnt-displaced-shape.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_plotContourDeformed.png)![](../graphics/ico_viewZoomRectangle.png)![](../graphics/gsa-cnt-scalarplaststrain-nls.png)![](../graphics/gss-punchforce-c-nls.png)![](../graphics/gss-stab-energy-nls.png)![](../graphics/ico_viewZoomRectangle.png)![](../graphics/gss-surfacenorm-c.png)![](../images/arrow.gif)![](../graphics/ico_viewRotate.png)![](../graphics/gsa-conpress.png)![](../graphics/gsa-lap-assy.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gsa-lap-platepart1.png)![](../graphics/gsa-lap-platepart2.png)![](../graphics/gsa-lap-platepart3.png)![](../graphics/gsa-lap-rivetpart1.png)![](../graphics/gsa-lap-rivetpart2.png)![](../graphics/gsa-alum.png)![](../graphics/gsa-titanium.png)![](../graphics/ico_fileOpen.png)![](../graphics/ico_material.png)![](../images/arrow.gif)![](../graphics/gsa-lap-assy1.png)![](../images/arrow.gif)![](../graphics/gsa-lap-assy2.png)![](../images/arrow.gif)![](../graphics/gsa-lap-assy3.png)![](../images/arrow.gif)![](../graphics/gsa-lap-assy4.png)![](../graphics/gsa-lap-set-crn.png)![](../graphics/gsa-lap-set-fix.png)![](../graphics/gsa-lap-set-pull.png)![](../graphics/gsa-lap-set-symm.png)![](../images/arrow.gif)![](../graphics/gsa-lap-mesh.png)![](../graphics/gsa-lap-def.png)![](../graphics/gsa-lap-mises.png)![](../graphics/gsa-lap-path1-nls.png)![](../graphics/gsa-lap-path2-nls.png)![](../graphics/gsx-pure-mast-slave-nls.png)![](../graphics/gsx-bal-mast-slave.png)![](../graphics/gsx-val-inval-2d-nls.png)![](../graphics/gsx-val-inval-3d-nls.png)![](../graphics/gsx-double-side-nls.png)![](../graphics/gsx-surf-perim-nls.png)![](../graphics/gsx-double-node-mesh-nls.png)![](../graphics/gxi-incorsurfdef-nls.png)![](../graphics/gxi-corr-surf-def-nls.png)![](../graphics/gsx-potential-effect-nls.png)![](../graphics/gsx-inadeq-surf-nls.png)![](../graphics/gsx-orig-overclose.png)![](../graphics/gsx-corrected-surf.png)![](../graphics/gsx-dimen-milmat-nls.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_sketchConstLineVertical.png)![](../graphics/gxi-package-cut.png)![](../graphics/gxi-package-datum-nls.png)![](../images/arrow.gif)![](../graphics/gxi-board-datum.png)![](../images/arrow.gif)![](../graphics/gsx-crushfoam-mod-nls.png)![](../graphics/gsa_eqn00275.gif)![](../graphics/gsa_eqn00276.gif)![](../graphics/gsx-foam-hardening-v-nls.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gxi-circuit-assem.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gxi-package-edgeconst-nls.png)![](../graphics/gxi-package-constrain.png)![](../images/arrow.gif)![](../graphics/gxi-package-faceconst.png)![](../images/arrow.gif)![](../graphics/gxi-package-assem.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gxi-board-faceconst.png)![](../images/arrow.gif)![](../graphics/gxi-board-edgeconst-nls.png)![](../images/arrow.gif)![](../graphics/gxi-board-assem.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/gxi-mesh-edgeseeds.png)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_framePause.png)![](../graphics/ico_viewCameraNode.png)![](../graphics/ico_viewCameraGlobal.png)![](../graphics/gxi-def-mesh-4ms-v.png)![](../graphics/gxi-energy-vs-time-v.png)![](../graphics/gxi-acceleration-v.png)![](../graphics/gxi-velocity-v.png)![](../graphics/gxi-botchip-disp-v.png)![](../graphics/gsa-sinewave-nls.png)![](../graphics/gxi-a3filter-exp-v.png)![](../graphics/gxi-a3filter-exp-largeinc-v.png)![](../graphics/gxi-a3filter-vis-exp-v.png)![](../graphics/gxi-a3filter-vis-v.png)![](../graphics/gxi-prin-strain-v.png)![](../graphics/gxi-prin-strain-filter-v.png)
+**目录**
 
 - [12.1 Abaqus接触功能概述](#121-abaqus接触功能概述)
 - [12.2 定义表面](#122-定义表面)
@@ -165,7 +165,7 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 ---
 
-## 12.6 Abaqus/Standard 2D示例：成形通道
+**12.6 Abaqus/Standard 2D示例：成形通道**
 
 这个长金属板成形通道的模拟说明了刚性表面的使用以及Abaqus/Standard中成功接触分析所需的一些更复杂的技术。
 
@@ -173,7 +173,7 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 坯料厚度为1毫米，被压在压料板和模具之间。压料板力为440 kN。这个力与坯料和压料板之间以及坯料和模具之间的摩擦一起，控制着成形过程中坯料材料被拉入模具的程度。
 
-### 12.6.1 预处理——使用Abaqus/CAE创建模型
+**12.6.1 预处理——使用Abaqus/CAE创建模型**
 
 使用Abaqus/CAE创建模型。您将创建四个部件：表示坯料的二维可变形实体部件和三个表示模具的刚性部件。
 
@@ -224,11 +224,11 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 使用CPE4R单元对坯料进行网格划分，使用增强沙漏控制。将坯料水平边缘上的单元数指定为100，垂直边缘上的单元数指定为4。
 
-### 12.6.2 作业监控
+**12.6.2 作业监控**
 
 此分析大约需要180个增量完成。一旦分析开始，将在一个单独的视口中显示所选自由度值（冲头的垂直位移）的XY图。
 
-### 12.6.3 Abaqus/Standard接触分析故障排除
+**12.6.3 Abaqus/Standard接触分析故障排除**
 
 接触分析通常比其他类型的模拟更难完成。因此，了解可用的帮助选项很重要。
 
@@ -236,7 +236,7 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 诊断接触信息几乎对每个接触分析都是必不可少的。
 
-### 12.6.4 后处理
+**12.6.4 后处理**
 
 在可视化模块中，检查坯料的变形。
 
@@ -254,7 +254,7 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 ---
 
-## 12.7 Abaqus/Standard中的通用接触
+**12.7 Abaqus/Standard中的通用接触**
 
 在"12.6 Abaqus/Standard 2D示例：成形通道"中的通道成形示例中，接触相互作用使用接触对算法定义。作为替代，您可以使用通用接触算法在Abaqus/Standard分析中指定接触。
 
@@ -262,13 +262,13 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 ---
 
-## 12.8 Abaqus/Standard 3D示例：搭接接头剪切
+**12.8 Abaqus/Standard 3D示例：搭接接头剪切**
 
 搭接接头剪切的模拟说明了在Abaqus/Standard中使用通用接触。
 
 该模型由两块用钛铆钉连接的重叠铝板组成。底板左端固定，力施加到顶板右端以剪切接头。
 
-### 12.8.1 预处理——使用Abaqus/CAE创建模型
+**12.8.1 预处理——使用Abaqus/CAE创建模型**
 
 **部件定义**
 
@@ -292,7 +292,7 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 边界条件在静态、一般步中定义。装配的左端固定，右端沿板的长度方向拉动。
 
-### 12.8.2 后处理
+**12.8.2 后处理**
 
 **变形模型形状和等值线图**
 
@@ -304,11 +304,11 @@ Abaqus/Standard中的接触算法围绕牛顿-拉夫森技术构建。Abaqus/Sta
 
 ---
 
-## 12.9 在Abaqus/Explicit中定义接触
+**12.9 在Abaqus/Explicit中定义接触**
 
 Abaqus/Explicit提供了两种用于建模接触相互作用的算法。通用（"自动"）接触算法允许非常简单的接触定义，对涉及的表面类型几乎没有限制。接触对算法对涉及的表面类型有更多限制，通常需要更仔细的接触定义。
 
-### 12.9.1 Abaqus/Explicit接触公式
+**12.9.1 Abaqus/Explicit接触公式**
 
 Abaqus/Explicit中的接触公式包括约束强制方法、接触表面权重和滑动公式。
 
@@ -328,11 +328,11 @@ Abaqus/Explicit中的接触公式包括约束强制方法、接触表面权重�
 
 ---
 
-## 12.10 Abaqus/Explicit中的建模考虑
+**12.10 Abaqus/Explicit中的建模考虑**
 
 我们现在讨论以下建模考虑：正确的表面定义、过度约束、网格细化和初始过盈。
 
-### 12.10.1 正确的表面定义
+**12.10.1 正确的表面定义**
 
 **连续表面**
 
@@ -346,11 +346,11 @@ Abaqus/Explicit不会自动扩展表面。如果一个节点从一个表面接�
 
 具有相同坐标的两个节点（双节点）可以在看似连续的表面上产生接缝或裂缝。沿表面滑动的节点可能会穿过这个裂缝并滑到接触表面后面。
 
-### 12.10.2 过度约束模型
+**12.10.2 过度约束模型**
 
 就像不应在给定节点处定义多个冲突的边界条件一样，通常也不应在同一节点处定义多点约束和使用运动方法强制的接触条件，因为它们可能产生冲突的运动约束。
 
-### 12.10.3 网格细化**
+**12.10.3 网格细化****
 
 对于接触分析以及所有其他类型的分析，随着网格的细化，解会改善。对于使用纯主从方法的接触分析，从属表面的细化尤为重要，这样主表面面才不会过度穿透从属表面。
 
@@ -358,17 +358,17 @@ Abaqus/Explicit不会自动扩展表面。如果一个节点从一个表面接�
 
 约束防止最初接触的表面相互穿透、分离或相对滑动。因此，它是一种简单的网格细化方法。
 
-### 12.10.4 初始接触过盈
+**12.10.4 初始接触过盈**
 
 Abaqus/Explicit将自动调整接触表面上节点的未变形坐标以移除任何初始过盈。在后续步中，移除初始过盈的任何节点调整都会引起应变，这通常会导致严重的网格扭曲。
 
 ---
 
-## 12.11 Abaqus/Explicit示例：电路板跌落测试
+**12.11 Abaqus/Explicit示例：电路板跌落测试**
 
 在这个示例中，您将调查具有保护性可压碎泡沫包装的电路板以一定角度跌落到刚性表面上的行为。您的目标是评估泡沫包装是否足以防止电路板从1米高度跌落时损坏。
 
-### 12.11.1 预处理——使用Abaqus/CAE创建模型
+**12.11.1 预处理——使用Abaqus/CAE创建模型**
 
 您将创建三个部件：包装、电路板和地板。芯片将使用离散点质量表示。
 
@@ -408,7 +408,7 @@ Abaqus/Explicit将自动调整接触表面上节点的未变形坐标以移除�
 
 将地板边缘种子指定。将包装网格划分为C3D8R单元，将电路板网格划分为S4R单元。
 
-### 12.11.2 后处理
+**12.11.2 后处理**
 
 **检查材料方向**
 
@@ -420,7 +420,7 @@ Abaqus/Explicit将自动调整接触表面上节点的未变形坐标以移除�
 
 ---
 
-## 12.12 Abaqus/Standard和Abaqus/Explicit之间的兼容性
+**12.12 Abaqus/Standard和Abaqus/Explicit之间的兼容性**
 
 Abaqus/Standard和Abaqus/Explicit之间的机械接触算法存在根本差异。这些差异反映在接触条件的定义方式上。主要差异包括：
 
@@ -432,7 +432,7 @@ Abaqus/Standard和Abaqus/Explicit之间的机械接触算法存在根本差异�
 
 ---
 
-## 12.13 相关Abaqus示例
+**12.13 相关Abaqus示例**
 
 - "可压碎泡沫板的压痕"，Abaqus基准指南3.2.10节
 - "空气导管 kiss 密封的压力渗透分析"，Abaqus示例问题指南1.1.16节
@@ -440,7 +440,7 @@ Abaqus/Standard和Abaqus/Explicit之间的机械接触算法存在根本差异�
 
 ---
 
-## 12.14 建议阅读
+**12.14 建议阅读**
 
 以下参考资料提供了有限元方法接触分析的更多信息：
 
@@ -457,7 +457,7 @@ Abaqus/Standard和Abaqus/Explicit之间的机械接触算法存在根本差异�
 
 ---
 
-## 12.15 小结
+**12.15 小结**
 
 - 接触分析需要仔细的、逻辑的方法。如有必要，将分析分为几个步，并缓慢施加载荷，确保接触条件建立良好。
 - 在Abaqus/Standard中，即使只是更改边界条件为载荷，对每个部分使用单独的步通常是最好的。

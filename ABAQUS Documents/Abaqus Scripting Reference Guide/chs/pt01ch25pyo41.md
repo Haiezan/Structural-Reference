@@ -115,6 +115,3 @@ GapElectricalConductance 对象的成员与 [GapElectricalConductance](pt01ch25p
 
 | [*GAP ELECTRICAL CONDUCTANCE](../key/key-link.md#usb-kws-mgapelectconduct) |
 | --- |
-
-
-

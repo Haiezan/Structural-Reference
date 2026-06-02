@@ -139,31 +139,31 @@ None.
 
 *xMin*
 
-A float specifying the minimum X boundary of the bounding box. 								 
+A float specifying the minimum X boundary of the bounding box.
 
 *yMin*
 
-A float specifying the minimum Y boundary of the bounding box. 								 
+A float specifying the minimum Y boundary of the bounding box.
 
 *zMin*
 
-A float specifying the minimum Z boundary of the bounding box. 								 
+A float specifying the minimum Z boundary of the bounding box.
 
 *xMax*
 
-A float specifying the maximum X boundary of the bounding box. 								 
+A float specifying the maximum X boundary of the bounding box.
 
 *yMax*
 
-A float specifying the maximum Y boundary of the bounding box. 								 
+A float specifying the maximum Y boundary of the bounding box.
 
 *zMax*
 
-A float specifying the maximum Z boundary of the bounding box. 								 
+A float specifying the maximum Z boundary of the bounding box.
 
 **Return value**
 
-A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects. 					 
+A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects.
 
 **Exceptions**
 
@@ -177,15 +177,15 @@ This method returns an array of element objects that lie within the specified bo
 
 *center1*
 
-A tuple of the X-, Y-, and Z-coordinates of the center of the first end of the cylinder. 								 
+A tuple of the X-, Y-, and Z-coordinates of the center of the first end of the cylinder.
 
 *center2*
 
-A tuple of the X-, Y-, and Z-coordinates of the center of the second end of the cylinder.								 
+A tuple of the X-, Y-, and Z-coordinates of the center of the second end of the cylinder.
 
 *radius*
 
-A float specifying the radius of the cylinder. 								 
+A float specifying the radius of the cylinder.
 
 **Optional arguments**
 
@@ -193,7 +193,7 @@ None.
 
 **Return value**
 
-A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects. 					 
+A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects.
 
 **Exceptions**
 
@@ -207,11 +207,11 @@ This method returns an array of element objects that lie within the specified bo
 
 *center*
 
-A tuple of the X-, Y-, and Z-coordinates of the center of the sphere. 								 
+A tuple of the X-, Y-, and Z-coordinates of the center of the sphere.
 
 *radius*
 
-A float specifying the radius of the sphere. 								 
+A float specifying the radius of the sphere.
 
 **Optional arguments**
 
@@ -219,7 +219,7 @@ None.
 
 **Return value**
 
-A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects. 					 
+A MeshElementArray object, which is a sequence of [MeshElement](pt01ch31pyo05.md) objects.
 
 **Exceptions**
 
@@ -227,7 +227,7 @@ None.
 
 ### 31.6.8 getBoundingBox()
 
-This method returns a dictionary of two tuples representing minimum and maximum boundary 						 values of the bounding box of the minimum size containing the element sequence. 					 
+This method returns a dictionary of two tuples representing minimum and maximum boundary 						 values of the bounding box of the minimum size containing the element sequence.
 
 **Arguments**
 
@@ -237,9 +237,9 @@ None.
 
 A Dictionary object with the following items:
 
- *low*: a tuple of three floats representing the minimum x, y, and z boundary values of the bounding box.                   
+ *low*: a tuple of three floats representing the minimum x, y, and z boundary values of the bounding box.
 
- *high*: a tuple of three floats representing the maximum x, y, and z boundary values of the bounding box.                   
+ *high*: a tuple of three floats representing the maximum x, y, and z boundary values of the bounding box.
 
 **Exceptions**
 
@@ -247,7 +247,7 @@ None.
 
 ### 31.6.9 sequenceFromLabels(...)
 
-This method returns the objects in the MeshElementArray identified using the specified labels. 
+This method returns the objects in the MeshElementArray identified using the specified labels.
 
 **Required argument**
 
@@ -274,7 +274,3 @@ Error: The mask results in an empty sequence
 ### 31.6.10 Members
 
 The MeshElementArray object has no members.
-
-
-
-

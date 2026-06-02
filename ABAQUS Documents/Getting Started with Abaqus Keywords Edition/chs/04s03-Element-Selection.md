@@ -2,19 +2,7 @@
 
 在本例中，您将使用三维连续体单元对如图4-14所示的连接销进行建模。
 
-![图 4–14](../graphics/gss-connecting-lug-nls.png)
-
-连接销的一端牢固地焊接在大型结构上。另一端带有孔洞。在使用时，螺栓将穿过销的孔洞。您需要确定当30 kN的载荷沿2方向负向施加到螺栓上时销的静态挠度。因为此分析的目的是检验销的静态响应，所以应使用Abaqus/Standard作为分析产品。您决定通过以下假设简化此问题：
-
-* 与其在模型中包含复杂的螺栓-销相互作用，您将使用孔洞下半部分的分布压力来加载连接销（参见图4-14）。
-* 您将忽略孔洞周围压力大小的变化，并使用均匀压力。
-* 所施加均匀压力的大小将为50 MPa：30 kN / (2 × 0.015 m × 0.02 m)。
-
-在检验销的静态响应之后，您将修改模型并使用Abaqus/Explicit来研究销突然加载时产生的瞬态动力学效应。
-
-## 4.3.1 坐标系
-
-在模型中，定义全局1轴沿销的长度方向，全局2轴为垂直方向，全局3轴沿厚度方向。将全局坐标系的原点（![img](../graphics/gsk_eqn00038.gif)）置于![img](../graphics/gsk_eqn00039.gif)面孔洞中心处（参见图4-14）。
+![](../images/gss-connecting-lug-nls.png)面孔洞中心处（参见图4-14）。
 
 ## 4.3.2 网格设计
 
@@ -119,7 +107,7 @@ Abaqus输入文件始终以`*HEADING`选项开头。通常，预处理器在此�
 
 **材料**
 
-连接销由软钢制成，因此在所施加的载荷下具有各向同性、线性弹性材料行为。假设*E* = 200 GPa，且![img](../graphics/gsk_eqn00028.gif) = 0.3。这些值在`*ELASTIC`选项的数据行上给出（请记住第2章"Abaqus基础"中的架空起重机示例）。以下材料属性定义在输入文件中指定这些属性：
+连接销由软钢制成，因此在所施加的载荷下具有各向同性、线性弹性材料行为。假设*E* = 200 GPa，且 = 0.3。这些值在`*ELASTIC`选项的数据行上给出（请记住第2章"Abaqus基础"中的架空起重机示例）。以下材料属性定义在输入文件中指定这些属性：
 
 ```
 *MATERIAL, NAME=STEEL
@@ -281,7 +269,7 @@ abaqus viewer odb=lug
 
 **绘制变形形状**
 
-从主菜单栏中，选择**Plot → Deformed Shape**；或使用工具箱中的![img](../graphics/ico_plotDeformed.png)工具。图4-24显示了分析结束时模型的变形形状。位移放大级别是多少？
+从主菜单栏中，选择**Plot → Deformed Shape**；或使用工具箱中的工具。图4-24显示了分析结束时模型的变形形状。位移放大级别是多少？
 
 ![图 4–24](../graphics/gss-displacedshape-v.png)
 
@@ -340,7 +328,7 @@ abaqus viewer odb=lug
 
 **渲染样式**
 
-着色图是一种填充图，其中光源似乎指向模型。这是默认的渲染样式，在查看复杂三维模型时非常有用。其他三种渲染样式提供额外的显示选项：线框、消隐线和填充。您可以从"Common Plot Options"对话框或"Render Style"工具栏上的工具中选择渲染样式：线框![img](../graphics/ico_displayWire.png)、消隐线![img](../graphics/ico_displayHidden.png)、填充![img](../graphics/ico_displayFilled.png)和着色![img](../graphics/ico_displayShaded.png)。要显示图4-27所示的线框图，请在"Common Plot Options"对话框中选择**Exterior edges**，单击**OK**关闭对话框，然后通过单击![img](../graphics/ico_displayWire.png)工具选择线框绘图。所有后续图都将以线框渲染样式显示，直到您选择其他渲染样式。
+着色图是一种填充图，其中光源似乎指向模型。这是默认的渲染样式，在查看复杂三维模型时非常有用。其他三种渲染样式提供额外的显示选项：线框、消隐线和填充。您可以从"Common Plot Options"对话框或"Render Style"工具栏上的工具中选择渲染样式：线框工具选择线框绘图。所有后续图都将以线框渲染样式显示，直到您选择其他渲染样式。
 
 ![图 4–27](../graphics/gss-lineplot-v.png)
 
@@ -376,7 +364,7 @@ abaqus viewer odb=lug
 
 > **提示：** 您也可以使用视口上方的"Field Output"工具栏更改所显示的场输出变量。有关更多信息，请参阅《Abaqus/CAE用户指南》第42.5.2节"使用场输出工具栏"。
 
-Abaqus/Viewer提供了许多自定义等值线图的选项。要查看可用选项，请单击工具箱中的"Contour Options"![img](../graphics/ico_plotContourOptions.png)工具。默认情况下，Abaqus/Viewer会自动计算等值线图中显示的最小值和最大值，并将该范围内的值均匀划分为12个区间。您可以控制Abaqus/Viewer显示的最小值和最大值（例如，在固定边界范围内检查变化），以及区间数。
+Abaqus/Viewer提供了许多自定义等值线图的选项。要查看可用选项，请单击工具箱中的"Contour Options"工具。默认情况下，Abaqus/Viewer会自动计算等值线图中显示的最小值和最大值，并将该范围内的值均匀划分为12个区间。您可以控制Abaqus/Viewer显示的最小值和最大值（例如，在固定边界范围内检查变化），以及区间数。
 
 **生成自定义等值线图：**
 
@@ -408,109 +396,7 @@ Abaqus/Viewer提供了许多自定义等值线图的选项。要查看可用选�
 
 ![图 4–32](../graphics/gsa-cutting-plane-v.png)
 
-   从主菜单栏中，选择**Tools → View Cut → Manager**打开"View Cut Manager"。默认情况下，显示切割处和切割以下的区域（如"on cut"![img](../graphics/visG_CutOn.png)和"below cut"![img](../graphics/visG_CutBelow.png)符号下的复选标记所示）。要平移或旋转切割，请从可用运动列表中选择**Translate**或**Rotate**，并在"View Cut Manager"底部的输入值或拖动滑块。
-
-4. 要再次查看完整模型，请在"View Cut Manager"中切换关闭**Cut-4**。
-
-   有关视图切割的更多信息，请参阅《Abaqus/CAE用户指南》第80章"切割模型"。
-
-**最大值和最小值**
-
-可以轻松确定模型中变量的最大值和最小值。
-
-**显示等值线变量的最小值和最大值：**
-
-1. 从主菜单栏中，选择**Viewport → Viewport Annotation Options**；然后在出现的对话框中单击**Legend**选项卡。
-
-   "Legend"选项变得可用。
-
-2. 切换打开**Show min/max values**。
-
-3. 单击**OK**。
-
-   等值线图例更改为报告最小值和最大等值线值。
-
-本示例的目标之一是确定销在2方向负向上的挠度。您可以对销在2方向的位移分量进行等值线绘制，以确定其在垂直方向上的峰值位移，如下所示。在"Contour Plot Options"对话框中，单击**Defaults**以将最小值和最大等值线值以及区间数重置为默认值，然后再继续。
-
-**对2方向上连接销的位移进行等值线绘制：**
-
-1. 如果"Field Output"工具栏左侧的变量类型列表尚未选中**Primary**，请选择它。
-
-> **提示：** 您可以单击"Field Output"工具栏左侧的![img](../graphics/ico_fieldOutput.png)，从"Field Output"对话框而不是工具栏中进行选择。如果您使用对话框，必须单击**Apply**或**OK**，Abaqus/Viewer才能在视口中显示您的选择。
-
-2. 从工具栏中央的可用输出变量列表中，选择输出变量**U**。
-
-3. 从"Field Output"工具栏右侧的可用分量和不变量列表中，选择**U2**。
-
-2方向负向上的最大位移值是多少？
-
-**显示模型子集**
-
-默认情况下，Abaqus/Viewer显示您的整个模型；但是，您可以选择显示称为显示组的模型子集。此子集可以包含来自当前模型或输出数据库的部件实例、几何体（体、面或边缘）、单元、节点和表面的任意组合。对于连接销模型，您将创建一个由孔底单元组成的显示组。由于压力载荷已施加到此区域，Abaqus会创建一个内部集，可用于可视化目的。
-
-**显示模型子集：**
-
-1. 在Results Tree中，双击**Display Groups**。
-
-   将打开"Create Display Group"对话框。
-
-2. 从"Item"列表中，选择**Elements**。从"Method"列表中，选择**Internal sets**。
-
-   选择这些项后，"Create Display Group"对话框右侧的列表显示可用选择。
-
-3. 使用此列表，识别包含孔底单元的集。切换打开列表下方的**Highlight items in viewport**，以便所选集中单元的轮廓以红色高亮显示。
-
-4. 当高亮集对应于孔底单元组时，单击**Replace**![img](../graphics/ico_displayGroupReplace.png)以使用此单元集替换当前模型显示。
-
-   Abaqus/Viewer显示模型的指定子集。
-
-5. 单击**Dismiss**关闭"Create Display Group"对话框。
-
-在创建Abaqus模型时，您可能需要确定实体单元的面标签。例如，在施加压力载荷或定义接触曲面时，您可能需要验证正确的load ID是否已使用。在这种情况下，您可以在运行创建输出数据库文件的datacheck分析后，使用Visualization模块显示网格。
-
-**在未变形模型形状上显示面标识标签和单元编号：**
-
-1. 从主菜单栏中，选择**Options → Common**。
-
-   将出现"Common Plot Options"对话框。
-
-2. 将渲染样式设置为填充；将为方便起见显示所有可见单元边缘。
-
-   a. 切换打开"Render Style"下的**Filled**。
-
-   b. 切换打开"Visible Edges"下的**All edges**。
-
-3. 单击"Labels"选项卡，然后切换打开**Show element labels**和**Show face labels**。
-
-4. 单击**Apply**应用绘图选项。
-
-5. 从主菜单栏中，选择**Plot → Undeformed Shape**；或使用工具箱中的![img](../graphics/ico_plotUndeformed.png)工具。
-
-   Abaqus/Viewer在当前显示组中显示单元和面标识标签。
-
-6. 在"Common Plot Options"对话框中单击**Defaults**以恢复默认绘图设置，然后单击**OK**关闭对话框。
-
-**显示自由体切割**
-
-您可以定义自由体切割，以查看跨模型所选表面传递的合力和力矩。力向量用单个箭头显示，力矩向量用双箭头显示。
-
-**创建自由体切割：**
-
-1. 要在视口中显示整个模型，请从主菜单栏中选择**Tools → Display Group → Plot → All**。
-
-2. 从主菜单栏中，选择**Tools → Free Body Cut → Manager**。
-
-3. 在"Free Body Cut Manager"中单击**Create**。
-
-4. 从出现的对话框中，选择**3D element faces**作为**Selection method**，然后单击**Continue**。
-
-5. 在"Free Body Cross-Section"对话框中，选择**Surfaces**作为**Item**，**Pick from viewport**作为**Method**。
-
-6. 在提示区域中，将选择方法设置为**by angle**并接受默认角度。
-
-7. 选择图4-33中高亮的表面，以定义自由体切割横截面。
-
-   a. 从"Selection"工具栏中，关闭**Select the Entity Closest to the Screen**工具![img](../graphics/ico_filterVisible.png)，并确保选择了**Select From All Entities**工具![img](../graphics/ico_filterBothIntExt.png)。
+   从主菜单栏中，选择**Tools → View Cut → Manager**打开"View Cut Manager"。默认情况下，显示切割处和切割以下的区域（如"on cut"。
 
    b. 当您在视口中移动光标时，Abaqus/CAE高亮显示所有潜在选择，并在光标箭头旁边添加省略号（...）以指示模糊选择。将光标定位为使所需表面的一张面高亮显示，然后单击显示第一个表面选择。
 
@@ -524,7 +410,7 @@ Abaqus/Viewer提供了许多自定义等值线图的选项。要查看可用选�
 
 10. 在"Free Body Cut Manager"中单击**Options**。
 
-11. 在"Free Body Plot Options"对话框中，选择"Color & Style"选项卡页面中的**Force**选项卡。单击合成力箭头颜色样本![img](../graphics/usi-colorsample.png)以更改合成力箭头的颜色。
+11. 在"Free Body Plot Options"对话框中，选择"Color & Style"选项卡页面中的**Force**选项卡。单击合成力箭头颜色样本以更改合成力箭头的颜色。
 
 12. 为合成力箭头选择新颜色后，在"Free Body Plot Options"对话框中单击**OK**，然后在"Free Body Cut Manager"中单击**Dismiss**。
 
@@ -839,7 +725,7 @@ abaqus job=lug_xpl
 
 **绘制变形形状**
 
-从主菜单栏中，选择**Plot → Deformed Shape**；或使用工具箱中的![img](../graphics/ico_plotDeformed.png)工具。图4-36显示了分析结束时模型的变形形状。
+从主菜单栏中，选择**Plot → Deformed Shape**；或使用工具箱中的工具。图4-36显示了分析结束时模型的变形形状。
 
 ![图 4–36](../graphics/gsk-displaced-exp.png)
 
@@ -924,3 +810,4 @@ X–Y图可以显示变量随时间的变化。您可以从场输出和历史输
 峰值Mises应力约为550 MPa，如图4-42所示。该值大于钢的典型屈服强度。因此，材料在经历如此大的应力之前就会屈服。材料非线性在第10章"材料"中进一步讨论。
 
 ![图 4–42](../graphics/gsk-lug-stresshist.png)
+## 4.3.10 Postprocessing the dynamic analysis results

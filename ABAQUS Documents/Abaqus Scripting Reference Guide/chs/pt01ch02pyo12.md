@@ -58,7 +58,3 @@ AbaqusException。
 ### 2.12.2 成员
 
 RuleResult 对象具有与 [RuleResult](pt01ch02pyo12.md#ker-ruleresult-ruleresult-pyc) 方法参数相同名称和描述的成员。
-
-
-
-

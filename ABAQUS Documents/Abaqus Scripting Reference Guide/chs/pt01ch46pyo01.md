@@ -46,4 +46,3 @@ Section 对象具有以下成员：
 *name*
 
  String，指定存储库键。
-

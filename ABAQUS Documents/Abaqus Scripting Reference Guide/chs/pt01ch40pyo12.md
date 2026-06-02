@@ -16,4 +16,3 @@ OdbDataInstance 对象具有以下成员：
 *name*
 
  String，指定实例名称。此属性为只读。
-

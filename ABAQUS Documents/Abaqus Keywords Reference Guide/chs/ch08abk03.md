@@ -9,11 +9,11 @@
 
 此选项用于控制瞬态或稳态响应的非耦合热传递。
 
-**产品：** Abaqus/Standard  Abaqus/CFD  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CFD  Abaqus/CAE
 
-**类型：** 历史数据  
+**类型：** 历史数据
 
-**级别：** 步骤  
+**级别：** 步骤
 
 **Abaqus/CAE：** Step 模块
 
@@ -67,7 +67,3 @@ MXDEM
 ### **定义 Abaqus/CFD 实体热传递分析的数据行（TYPE=THERMAL FLOW）：**
 
 **第一（也是唯一）行：**
-
-
-
-

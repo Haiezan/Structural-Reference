@@ -108,7 +108,3 @@ An odb_String specifying the name of the [AnalyticalField](#ker-analyticalfield-
 *transverseShear*
 
 A [TransverseShearShell](pt02ch63pyo25.md) object specifying the transverse shear stiffness properties.
-
-
-
-

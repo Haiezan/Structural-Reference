@@ -49,15 +49,15 @@ session.odbs[*name*].materials[*name*].CrushableFoam
 **表格数据**
 
 如果 *hardening*=VOLUMETRIC，表格数据指定以下内容：
-- 单轴压缩初始屈服应力 ![](../graphics/ker_eqn00152.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ![](../graphics/ker_eqn00143.gif)；0.0 ![](../graphics/ker_eqn00154.gif) 3.0。
-- 静水拉伸屈服应力 ![](../graphics/ker_eqn00156.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ![](../graphics/ker_eqn00155.gif)。默认值为 1.0。
+- 单轴压缩初始屈服应力 ![](../graphics/ker_eqn00143.gif)![](../graphics/ker_eqn00152.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ；0.0 ![](../graphics/ker_eqn00154.gif) 3.0。
+- 静水拉伸屈服应力 ![](../graphics/ker_eqn00155.gif)![](../graphics/ker_eqn00156.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ![](../graphics/ker_eqn00143.gif)。默认值为 1.0。
 - 温度（如果数据依赖于温度）。
 - 第一个场变量的值（如果数据依赖于场变量）。
 - 第二个场变量的值。
 - 依此类推。
 
 如果 *hardening*=ISOTROPIC，表格数据指定以下内容：
-- 单轴压缩初始屈服应力 ![](../graphics/ker_eqn00152.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ![](../graphics/ker_eqn00143.gif)；0.0 ![](../graphics/ker_eqn00157.gif) 3.0。
+- 单轴压缩初始屈服应力 ![](../graphics/ker_eqn00152.gif) 与静水压缩初始屈服应力 ![](../graphics/ker_eqn00153.gif) 的比值 ；0.0 ![](../graphics/ker_eqn00157.gif) 3.0。
 - 塑性泊松比。![](../graphics/ker_eqn00158.gif)；-1![](../graphics/ker_eqn00159.gif)0.5。
 - 温度（如果数据依赖于温度）。
 - 第一个场变量的值（如果数据依赖于场变量）。
@@ -110,7 +110,3 @@ CrushableFoam 对象具有与 [CrushableFoam](pt01ch29pyo27.md#ker-crushablefoam
 
 | [*CRUSHABLE FOAM](../key/key-link.md#usb-kws-mcrushfoam) |
 | --- |
-
-
-
-

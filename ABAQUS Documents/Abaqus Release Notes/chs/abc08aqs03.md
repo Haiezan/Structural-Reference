@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**您现在可以将具有 prescribed 压力值的声学介质与模式分析中不同约束点的不同值一起使用（类似于直接解稳态动态分析中的功能）。此功能在汽车行业中有用；例如，用于分析消音器和燃油箱。
 
@@ -27,4 +27,3 @@
 
 **Abaqus Keywords Reference Guide**
 - [*BASE MOTION](../key/key-link.md#usb-kws-hbasemotion)
-

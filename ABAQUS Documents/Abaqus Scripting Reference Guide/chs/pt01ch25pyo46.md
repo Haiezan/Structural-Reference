@@ -34,6 +34,3 @@ IncidentWaveState 对象具有以下成员：
 
 | [*INCIDENT WAVE INTERACTION](../key/key-link.md#usb-kws-hincidentwaveinteraction) |
 | --- |
-
-
-

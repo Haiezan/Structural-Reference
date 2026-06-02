@@ -54,7 +54,3 @@ ConcentratedChargeState 对象具有以下成员：
 
 | [*CECHARGE](../key/key-link.md#usb-kws-hcecharge) |
 | --- |
-
-
-
-

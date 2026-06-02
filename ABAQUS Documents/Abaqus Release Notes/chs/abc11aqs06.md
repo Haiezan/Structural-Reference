@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**将 Abaqus 结果转换到模态中性文件的速度显著加快，模态中性文件的大小可能比以前版本小得多。
 
@@ -15,4 +15,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["Translating Abaqus data to MSC.ADAMS modal neutral files," Section 3.2.36](../usb/usb-link.md#usb-int-dabaadmproc)
-

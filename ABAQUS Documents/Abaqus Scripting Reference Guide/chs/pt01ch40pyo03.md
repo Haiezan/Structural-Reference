@@ -90,4 +90,3 @@ DGContourOptions 对象可以具有以下成员：
 *intervalLineAttributes*
 
  SymbolicConstant 元组的元组，指定当 *contourType*=LINE 时图中每个间隔的线型和线宽。外层序列的大小必须等于 *numIntervals*-1。内部序列由两个 SymbolicConstant 组成，指定线型和线宽。可选值请参阅 [DGCommonOptions](pt01ch40pyo02.md) 对象的 *edgeLineStyle* 和 *edgeLineThickness* 成员。默认值为 ((SOLID, VERY_THIN), )。
-

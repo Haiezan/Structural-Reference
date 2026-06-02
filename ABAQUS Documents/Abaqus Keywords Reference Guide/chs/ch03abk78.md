@@ -1,4 +1,4 @@
-# *CO-SIMULATION
+***CO-SIMULATION**
 
 
 
@@ -9,9 +9,9 @@
 
 此选项用于识别用于与 Abaqus 联合仿真的分析程序以及用于定义耦合和会合方案的联合仿真控制。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -53,7 +53,3 @@ CONTROLS
 对于 PROGRAM=DIRECT 或 PROGRAM=MULTIPHYSICS，联合仿真控制在联合仿真配置文件中定义。
 
 ### **此选项没有关联的数据行。**
-
-
-
-

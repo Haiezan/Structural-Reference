@@ -32,22 +32,10 @@
    **I12** 惯性积，<img src="../graphics/usi_eqn00698.gif">。
    **I13** 惯性积，<img src="../graphics/usi_eqn00699.gif">。
    **I23** 惯性积，<img src="../graphics/usi_eqn00700.gif">。
-6. 如果要更改转动惯量的坐标系（**CSYS**），请单击![](../graphics/ico_selectBlue.png)并使用以下方法之一：
-   - 在视口中选择现有的基准坐标系。
-   - 按名称选择现有的基准坐标系。
-     1. 在提示区域中单击**Datum CSYS List**以显示基准坐标系列表。
-     2. 从列表中选择一个名称，然后单击**OK**。
-   - 单击提示区域中的**Use Global CSYS**以返回全局坐标系。默认情况下，使用全局坐标系来定义转动惯性。
-7. 使用**Damping**标签页定义质量或惯性比例阻尼。对于Abaqus/Standard分析，您还可以定义复合阻尼。您可以为质量和复合阻尼或惯性和复合阻尼指定值；但是，Abaqus仅使用与特定动态分析过程相关的阻尼。如果质量和转动惯性需要不同的阻尼值，则必须创建单独的惯性定义。
-   - 在**Alpha**字段中，输入<img src="../graphics/usi_eqn00272.gif">因子以为直接积分动态或显式动态分析创建质量或惯性比例阻尼。此值在模态动态分析中被忽略。默认值为0.0。
-   - 在**Composite**字段中，输入临界阻尼分数<img src="../graphics/usi_eqn00715.gif>，用于在模态动态分析中计算复合阻尼因子。此值在直接积分动态分析中被忽略。默认值为0.0。
-8. 单击**OK**保存数据并关闭对话框。符号出现在视口中，代表您刚创建的点质量和旋转惯性。
-
-![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任一项：
+6. 如果要更改转动惯量的坐标系（**CSYS**），请单击有关相关主题的信息，请单击以下任一项：
 - ["控制属性的显示"，第76.15节](pt07ch76hla14.md)
 - ["表示特殊工程特征的符号"，第C.3节](ap03s03.md)
 <!-- image-count-supplement:start -->
-<!-- Supplemental image/formula references preserved from the English source for QA parity. -->
 ![](../graphics/usi_eqn00712.gif)
 ![](../graphics/usi_eqn00713.gif)
 ![](../graphics/usi_eqn00714.gif)
@@ -57,6 +45,6 @@
 ![](../graphics/usi_eqn00698.gif)
 ![](../graphics/usi_eqn00699.gif)
 ![](../graphics/usi_eqn00700.gif)
-![](../graphics/usi_eqn00272.gif)
-![](../graphics/usi_eqn00715.gif)
+![](../graphics/ico_selectBlue.png)![](../graphics/usi_eqn00272.gif)
+![](../graphics/usi_eqn00715.gif)![](../graphics/images/black4rule.gif)
 <!-- image-count-supplement:end -->

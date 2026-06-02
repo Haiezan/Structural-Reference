@@ -115,6 +115,3 @@ An Int indicating the number of items in the repository.
 **Exceptions**
 
 None.
-
-
-

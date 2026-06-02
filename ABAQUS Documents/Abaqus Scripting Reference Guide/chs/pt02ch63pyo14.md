@@ -67,7 +67,3 @@ The HomogeneousSolidSection object has members with the same names and descripti
 
 | [*SOLID SECTION](../key/key-link.md#usb-kws-msolidsection) |
 | --- |
-
-
-
-

@@ -12,11 +12,11 @@
 
 此选项用于开始部件定义。它必须与[*ASSEMBLY](ch01abk14.md)、[*END PART](ch05abk19.md)和[*INSTANCE](ch09abk19.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**部件模块
 

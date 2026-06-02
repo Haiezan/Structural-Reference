@@ -190,7 +190,3 @@ AnimationController 对象可以具有以下成员：
 *viewports*
 
 一个 String 对元组，指定动画处于活动状态的视口名称，后跟图层名称，或 SymbolicConstant ALL。如果未提供图层名称，则使用当前图层。如果视口处于单显示模式，则如果指定了图层名称则忽略图层名称。默认值为空序列。
-
-
-
-

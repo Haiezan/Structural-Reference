@@ -112,4 +112,3 @@ PsdDefinition 对象具有与 [PsdDefinition](pt02ch56pyo08.md#ker-psddefinition
 
 | [*PSD-DEFINITION](../key/key-link.md#usb-kws-mpsddef) |
 | --- |
-

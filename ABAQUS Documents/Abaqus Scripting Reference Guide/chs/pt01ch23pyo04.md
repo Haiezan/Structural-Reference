@@ -17,8 +17,3 @@ session.viewports[*name*].odbDisplay.modelVariableList
 ### 23.4.1 成员
 
 OdbModelFieldVarList 对象没有成员。
-
-
-
-
-

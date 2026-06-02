@@ -64,8 +64,3 @@ session.viewports[*name*].layers[*name*].assemblyDisplay.constraintOptions
 ### 17.3.2 成员
 
 ConstraintDisplayOptions 对象的成员与 [setValues](pt01ch17pyo03.md#ker-constraintdisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

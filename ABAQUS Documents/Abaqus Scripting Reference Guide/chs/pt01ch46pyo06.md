@@ -149,4 +149,3 @@ CompositeShellSection 对象的成员与 [CompositeShellSection](pt01ch46pyo06.m
 | [*SHELL SECTION*](../key/key-link.md#usb-kws-mshellsection) |
 | --- |
 | [*SHELL GENERAL SECTION*](../key/key-link.md#usb-kws-mshellgensect) |
-

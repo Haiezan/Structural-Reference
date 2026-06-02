@@ -118,7 +118,3 @@ BrittleCracking 对象具有与 [BrittleCracking](pt01ch29pyo05.md#ker-brittlecr
 
 | [*BRITTLE CRACKING](../key/key-link.md#usb-kws-mcracking) |
 | --- |
-
-
-
-

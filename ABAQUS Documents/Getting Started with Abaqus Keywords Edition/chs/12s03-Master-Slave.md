@@ -28,7 +28,7 @@
 
 **图12-5** 摩擦行为。
 
-![Frictional behavior](../graphics/gss-friction-nls.png)
+![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00271.gif)![](../graphics/gsa_eqn00272.gif)![](../graphics/gsa_eqn00176.gif)![](../graphics/gsa_eqn00273.gif)![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00272.gif)![](../graphics/gsa_eqn00274.gif)![](../graphics/gsa_eqn00273.gif)![Frictional behavior](../graphics/gss-friction-nls.png)
 
 在Abaqus/Standard中，两种状态（粘着或滑移）之间的不连续性可能在模拟过程中导致收敛问题。只有当摩擦对模型响应有重大影响时，才应在Abaqus/Standard模拟中包含摩擦。如果包含摩擦的接触模拟遇到收敛问题，在诊断困难时首先应该尝试的修改之一是重新运行不带摩擦的分析。通常，摩擦对Abaqus/Explicit不会造成额外的计算困难。
 
@@ -40,7 +40,7 @@
 
 **图12-6** 指数衰减摩擦模型。
 
-![Exponential decay friction model](../graphics/afriction-exponential-decay.png)
+![Exponential decay friction model](../graphics/afriction-exponential-decay.png)![](../graphics/gsa_eqn00270.gif)![](../graphics/gsa_eqn00270.gif)
 
 在Abaqus/Standard中，在模型中包含摩擦会向正在求解的方程组添加不对称项。如果小于约0.2，这些项的大小和影响非常小，常规对称求解器效果很好（除非接触表面具有高曲率）。对于较高的摩擦系数，不对称求解器会自动被调用，因为它将提高收敛速度。不对称求解器需要比对称求解器多一倍的计算机内存和临时磁盘空间。较大的值通常不会在Abaqus/Explicit中造成任何困难。
 

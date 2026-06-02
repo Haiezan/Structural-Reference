@@ -79,7 +79,3 @@ A [RebarLayers](pt02ch63pyo19.md) object specifying reinforcement properties.
 
 | [*SURFACE SECTION](../key/key-link.md#usb-kws-msurfacesection) |
 | --- |
-
-
-
-

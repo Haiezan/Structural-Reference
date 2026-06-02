@@ -124,7 +124,3 @@ ConcreteTensionStiffening 对象具有与 [ConcreteTensionStiffening](pt01ch29py
 
 | [*CONCRETE TENSION STIFFENING](../key/key-link.md#usb-kws-mconcretetensstiff) |
 | --- |
-
-
-
-

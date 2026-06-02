@@ -98,7 +98,3 @@ CombinedTestData 对象具有与 [CombinedTestData](pt01ch29pyo17.md#ker-combine
 
 | [*COMBINED TEST DATA](../key/key-link.md#usb-kws-mcombinedtestdata) |
 | --- |
-
-
-
-

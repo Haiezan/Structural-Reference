@@ -129,6 +129,3 @@ IncidentWave 对象的成员与 [IncidentWave](pt01ch25pyo44.md#ker-incidentwave
 
 | [*INCIDENT WAVE INTERACTION](../key/key-link.md#usb-kws-hincidentwaveinteraction) |
 | --- |
-
-
-

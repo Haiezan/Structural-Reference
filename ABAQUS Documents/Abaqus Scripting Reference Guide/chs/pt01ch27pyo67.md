@@ -142,7 +142,3 @@ A SymbolicConstant specifying how the load is distributed spatially. Possible va
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

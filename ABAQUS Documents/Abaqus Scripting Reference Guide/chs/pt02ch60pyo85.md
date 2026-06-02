@@ -55,38 +55,10 @@ RateDependent(const odb_SequenceSequenceDouble& table,
 **表数据**
 
 如果 *type*=POWER_LAW，表数据指定以下内容：
-- ![](../graphics/ker_eqn00172.gif]。
-- ![](../graphics/ker_eqn00088.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=YIELD_RATIO，表数据指定以下内容：
-- 屈服应力比，![](../graphics/ker_eqn00357.gif]。
-- 等效塑性应变率，![](../graphics/ker_eqn00337.gif]。
-- 温度（如果数据依赖温度）。
-- 第一个场变量的值（如果数据依赖场变量）。
-- 第二个场变量的值。
-- 依此类推。
-
-如果 *type*=JOHNSON_COOK，表数据指定以下内容：
-- ![](../graphics/ker_eqn00039.gif]。
-- ![](../graphics/ker_eqn00358.gif]。
-
-**返回值**
-
-一个 RateDependent 对象。
-
-**异常**
-
-RangeError。
-
-### 60.85.2 成员
-
-RateDependent 对象的成员与 [RateDependent](pt02ch60pyo85.md#ker-ratedependent-ratedependent-cpp) 方法的参数具有相同的名称和描述。
+- ![](../graphics/ker_eqn00172.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00357.gif)![](../graphics/ker_eqn00337.gif)![](../graphics/ker_eqn00039.gif)![](../graphics/ker_eqn00358.gif) 方法的参数具有相同的名称和描述。
 
 ### 60.85.3 对应的分析关键字
 
 | [*RATE DEPENDENT](../key/key-link.md#usb-kws-mratedependent) |
 | --- |
+### 60.85.3 Corresponding analysis keywords

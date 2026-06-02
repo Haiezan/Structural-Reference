@@ -34,7 +34,3 @@ An odb_String specifying the repository key.
 *transverseShear*
 
 A [TransverseShearShell](pt02ch63pyo25.md) object specifying the transverse shear stiffness properties.
-
-
-
-

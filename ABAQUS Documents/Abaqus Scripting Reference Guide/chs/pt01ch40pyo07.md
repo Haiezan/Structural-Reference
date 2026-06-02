@@ -27,4 +27,3 @@ HistoryVariable 对象具有以下成员：
 - *stepLabel*：字符串，指定步骤标签。
 - *stepNumber*：Int，指定步骤编号。
 - *procedureDomain*：SymbolicConstant，指定步骤的分析类型，可以是 "TIME"、"FREQUENCY" 或 "MODAL"。
-

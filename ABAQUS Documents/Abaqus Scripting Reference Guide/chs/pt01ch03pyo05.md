@@ -92,6 +92,3 @@ DecayAmplitude 对象具有与 [DecayAmplitude](pt01ch03pyo05.md#ker-decayamplit
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

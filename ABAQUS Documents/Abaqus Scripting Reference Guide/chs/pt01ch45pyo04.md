@@ -357,4 +357,3 @@ Set 对象具有以下成员：
 *referencePoints*
 
  [ReferencePointArray](pt01ch07pyo13.md) 对象。
-

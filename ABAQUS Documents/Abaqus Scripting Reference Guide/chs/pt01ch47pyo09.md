@@ -62,5 +62,3 @@ NumberFormat 对象。
 ### 47.9.2 成员
 
 NumberFormat 对象的成员与 [NumberFormat](pt01ch47pyo09.md#ker-numberformat-numberformat-pyc) 方法的参数具有相同的名称和描述。
-
-

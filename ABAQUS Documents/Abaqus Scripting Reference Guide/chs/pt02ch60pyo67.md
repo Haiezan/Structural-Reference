@@ -55,27 +55,7 @@ LowDensityFoam(bool elementRemoval,
 
 *mu0*
 
-一个 Double，指定松弛系数 ![](../graphics/ker_eqn00288.gif]。默认值为 10–4。
-
-*mu1*
-
-一个 Double，指定松弛系数 ![](../graphics/ker_eqn00070.gif]。默认值为 0.510–2。
-
-*alpha*
-
-一个 Double，指定松弛系数 ![](../graphics/ker_eqn00090.gif]。默认值为 2.0。
-
-**返回值**
-
-一个 LowDensityFoam 对象。
-
-**异常**
-
-RangeError。
-
-### 60.67.2 成员
-
-LowDensityFoam 对象的成员与 [LowDensityFoam](pt02ch60pyo67.md#ker-lowdensityfoam-lowdensityfoam-cpp) 方法的参数具有相同的名称和描述。
+一个 Double，指定松弛系数 ![](../graphics/ker_eqn00288.gif)![](../graphics/ker_eqn00070.gif)![](../graphics/ker_eqn00090.gif) 方法的参数具有相同的名称和描述。
 
 此外，LowDensityFoam 对象可以具有以下成员：
 
@@ -98,3 +78,4 @@ odb_UniaxialTestData uniaxialCompressionTestData() const;
 
 | [*LOW DENSITY FOAM](../key/key-link.md#usb-kws-mlowdensfoam) |
 | --- |
+### 60.67.3 Corresponding analysis keywords

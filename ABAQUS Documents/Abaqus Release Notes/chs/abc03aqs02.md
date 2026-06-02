@@ -21,7 +21,3 @@
 **Abaqus/CAE User's Guide**
 - [“Creating and editing a design response，” Section 18.7.1](../usi/usi-link.md#usi-opz-designresponseditor)
 - [“Selecting the data source of a design response，” Section 18.7.2](../usi/usi-link.md#usi-opz-designresponse-source)
-
-
-
-

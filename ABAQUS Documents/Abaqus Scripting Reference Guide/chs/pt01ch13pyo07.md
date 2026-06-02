@@ -99,4 +99,3 @@ MultipointConstraint 对象的成员与 [MultipointConstraint](pt01ch13pyo07.md#
 
 | [*MPC](../key/key-link.md#usb-kws-mmpc) |
 | --- |
-

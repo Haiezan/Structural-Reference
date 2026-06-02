@@ -51,8 +51,3 @@ GraphicsInfo 对象具有以下成员：
 *glxClientVendor*
 
 一个 String，指定客户端的 glx 开发者。
-
-
-
-
-

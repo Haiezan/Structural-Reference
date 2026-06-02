@@ -12,4 +12,3 @@ session.mdbData[*name*].steps[*i*].frames[*i*]
 ### 40.28.1 成员
 
 MdbDataFrame 对象没有成员。
-

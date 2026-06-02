@@ -25,7 +25,3 @@ Job 模块：
 
 **Abaqus/CAE User's Guide**
 - [“Combining optimization results，” Section 19.12.8](../usi/usi-link.md#usi-ana-optman-combinebtn)
-
-
-
-

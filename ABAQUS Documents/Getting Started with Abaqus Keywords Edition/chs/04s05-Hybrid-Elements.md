@@ -1,5 +1,5 @@
 # 4.5 相关 Abaqus 示例
-
+![](../images/blu4rule.gif)
 如果您有兴趣了解更多关于在 Abaqus 中使用连续体单元的内容，您应该研究以下问题：
 
 - 《Abaqus Benchmarks Guide》第 2.1.2 节，"悬臂梁的几何非线性分析"

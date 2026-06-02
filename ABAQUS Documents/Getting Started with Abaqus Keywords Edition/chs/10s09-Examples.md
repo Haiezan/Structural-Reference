@@ -8,7 +8,7 @@
 
 **图10-70** 两个角点都进行细化的改进网格。
 
-![改进网格](../graphics/gss-vlock-mesh-v.png)
+![](../graphics/gsa_eqn00261.gif)![](../graphics/gsa_eqn00262.gif)![](../graphics/gsa_eqn00261.gif)![](../graphics/gsa_eqn00262.gif)![](../graphics/gsa_eqn00263.gif)![](../graphics/gsa_eqn00264.gif)![](../graphics/gsa_eqn00265.gif)![](../graphics/gsa_eqn00266.gif)![](../graphics/gsa_eqn00267.gif)![](../graphics/gsa_eqn00268.gif)![改进网格](../graphics/gss-vlock-mesh-v.png)
 
 该模型的变形形状如图10-71所示。
 

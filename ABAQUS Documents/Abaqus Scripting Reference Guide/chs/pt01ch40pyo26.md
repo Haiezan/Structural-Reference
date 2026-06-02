@@ -185,4 +185,3 @@ session.viewports[*name*].detailPlotOptions.plyStackPlotOptions
 ### 40.26.2 成员
 
 PlyStackPlotOptions 对象的成员与 [setValues](pt01ch40pyo26.md#ker-plystackplotoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-

@@ -18,7 +18,3 @@
 6. 单击鼠标按钮 2 退出删除附件过程。
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下任意项目：-["Understanding attachment points and lines," Section 59.1](pt06ch59s01.md)-["About fasteners," Section 29.1](pt04ch29s01.md)
-
-
-
-

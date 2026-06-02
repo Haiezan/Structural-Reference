@@ -110,8 +110,3 @@
 | **GUI_IN_TOOL_PANE** | GUI 在 Tools 下拉窗格中有组件。 |
 | **GUI_IN_TOOLBAR** | GUI 在工具栏中有组件。 |
 | **GUI_IN_TOOLBOX** | GUI 在工具箱中有组件。 |
-
-
-
-
-

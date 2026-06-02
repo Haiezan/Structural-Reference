@@ -9,11 +9,11 @@
 
 此选项用于定义垫片的膜和横向剪切行为的弹性参数。
 
-**产品：** Abaqus/Standard  Abaqus/CAE  
+**产品：** Abaqus/Standard  Abaqus/CAE
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 **Abaqus/CAE：** Property 模块
 
@@ -56,7 +56,3 @@ VARIABLE
 **后续行（仅在 DEPENDENCIES 参数的值大于五时需要）：**
 
 根据需要重复此组数据行，以将杨氏模量和泊松比定义为温度和场变量的函数。
-
-
-
-

@@ -15,4 +15,3 @@ DetailPlotOptions 对象具有以下成员：
 *plyStackPlotOptions*
 
  [PlyStackPlotOptions](pt01ch40pyo26.md) 对象。
-

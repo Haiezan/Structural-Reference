@@ -1,5 +1,5 @@
 # *PERMEABILITY
-
+![](../graphics/key_eqn00932.gif)![](../graphics/key_eqn00556.gif)![](../graphics/key_eqn00933.gif)![](../graphics/key_eqn00934.gif)![](../graphics/key_eqn00897.gif)![](../graphics/key_eqn00935.gif)![](../graphics/key_eqn00936.gif)![](../graphics/key_eqn00934.gif)![](../graphics/key_eqn00897.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项用于在涉及渗流和多孔介质的问题中定义孔隙流体流动的渗透率。
 
-**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

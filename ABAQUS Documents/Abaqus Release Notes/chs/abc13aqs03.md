@@ -20,7 +20,3 @@
 
 **Abaqus用户子程序参考指南**
 - ["UMAT，" 第1.1.41节](../sub/sub-link.md#sub-rtn-uumat)
-
-
-
-

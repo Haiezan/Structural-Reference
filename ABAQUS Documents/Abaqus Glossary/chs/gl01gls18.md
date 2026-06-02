@@ -22,6 +22,3 @@ Abaqus/CAE 工具集，允许您获取有关模型的信息。Abaqus/CAE 在消�
 更多信息：- [「远程提交作业，」Abaqus/CAE User's Guide 第 19.2.7 节](../usi/usi-link.md#usi-ana-conc-remote)
 
 - [「自定义 Abaqus/CAE 启动，」Abaqus Installation and Licensing Guide 第 4.3.3 节](../sgb/sgb-link.md#sgb-env-exa-custom-startup)
-
-
-

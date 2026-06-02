@@ -10,11 +10,11 @@
 
 This option is used to associate a surface with a coordinate system and/or a reference node to track the average motion of the surface. It can also be used in conjunction with an integrated output request to obtain output of quantities integrated over a surface.
 
-**Products: **Abaqus/Explicit  Abaqus/CAE  
+**Products: **Abaqus/Explicit  Abaqus/CAE
 
-**Type: **Model data  
+**Type: **Model data
 
-**Level: **Part,  Part instance,  Assembly  
+**Level: **Part,  Part instance,  Assembly
 
 **Abaqus/CAE: **Step module
 
@@ -45,7 +45,7 @@ If this parameter is omitted, the global coordinate system is used.
 
 POSITION
 
-This parameter is relevant only if the REF NODE parameter is included. 
+This parameter is relevant only if the REF NODE parameter is included.
 
 Set POSITION=INPUT (default) if the location of the reference node is to be defined by the user.
 
@@ -72,6 +72,3 @@ Set REF NODE MOTION=AVERAGE TRANSLATION if the reference node must translate wit
 Set REF NODE MOTION=AVERAGE  if the reference node must both translate and rotate with the average motion of the surface. This choice is relevant only if the reference node is not connected to the rest of the model.
 
 **There are no data lines associated with this option.**
-
-
-

@@ -21,7 +21,3 @@
 
 **Abaqus验证指南**
 - ["`VUCHARLENGTH`，" 第4.1.32节](../ver/ver-link.md#ver-sub-vucharlength)
-
-
-
-

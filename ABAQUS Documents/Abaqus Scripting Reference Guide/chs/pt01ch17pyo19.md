@@ -1,5 +1,5 @@
 # 17.19 ViewportAnnotationOptions 对象
-
+![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)![](../graphics/ker_eqn00013.gif)
 
 
 
@@ -180,8 +180,3 @@ RangeError。
 ### 17.19.2 成员
 
 ViewportAnnotationOptions 对象的成员与 [setValues](pt01ch17pyo19.md#ker-viewportannotationoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

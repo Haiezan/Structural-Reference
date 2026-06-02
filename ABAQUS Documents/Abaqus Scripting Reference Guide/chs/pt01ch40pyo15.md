@@ -20,4 +20,3 @@ OdbDataSection 对象具有以下成员：
 *elements*
 
 字符串到 Int 元组 Dictionary 的 Dictionary，指定集合中的单元。此属性为只读。
-

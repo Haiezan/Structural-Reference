@@ -36,6 +36,3 @@
 
 Abaqus/CAE 模块，用于定义预设条件（如载荷、边界条件和预定义场）。
 更多信息：- [第 16 章，「The Load module，」Abaqus/CAE User's Guide](../usi/usi-link.md#usi-lbi)
-
-
-

@@ -1,6 +1,6 @@
-# 第13章　使用Abaqus/Explicit进行准静态分析
+**第13章　使用Abaqus/Explicit进行准静态分析**
 
-## 目录
+**目录**
 
 - [13.1 显式动力学的类比](#131-显式动力学的类比)
 - [13.2 加载速率](#132-加载速率)
@@ -43,7 +43,7 @@ Abaqus/Explicit特别适合模拟金属成形问题，原因如下：
 
 Abaqus提供了一个简单的内置平滑步幅曲线，自动创建一个平滑的加载振幅。当定义平滑步幅曲线时，Abaqus会自动用一阶和二阶导数都平滑且在每个数据点处值为零的曲线连接各数据对。由于这两个导数都是平滑的，因此可以使用平滑步幅曲线仅用初始和最终数据点施加位移加载，中间的运动将是平滑的。使用这种类型的加载振幅可以进行准静态分析，而不会因加载施加速率的不连续性而产生波。图13-2显示了一个平滑步幅曲线的示例。
 
-![图13-2　使用平滑步幅曲线定义振幅](../graphics/gsx-amplitude-def-nls.png)
+![](../graphics/gsx-fast-case-nls.png)![图13-2　使用平滑步幅曲线定义振幅](../graphics/gsx-amplitude-def-nls.png)
 
 ### 13.2.2 结构问题
 
@@ -105,7 +105,7 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 为了用简单示例说明能量平衡，考虑如图13-6所示的单轴拉伸测试。准静态测试的能量历史将如图13-7所示。
 
-![图13-6　单轴拉伸测试](../graphics/gsx-uni-tensile-test.png)
+![](../graphics/gsa_eqn00277.gif)![](../graphics/gsa_eqn00157.gif)![](../graphics/gsa_eqn00158.gif)![](../graphics/gsa_eqn00278.gif)![](../graphics/gsa_eqn00162.gif)![](../graphics/gsa_eqn00162.gif)![](../graphics/gsa_eqn00279.gif)![](../graphics/gsa_eqn00280.gif)![](../graphics/gsa_eqn00280.gif)![](../graphics/gsa_eqn00187.gif)![](../graphics/gsa_eqn00188.gif)![](../graphics/gsa_eqn00189.gif)![](../graphics/gsa_eqn00190.gif)![](../graphics/gsa_eqn00191.gif)![](../graphics/gsa_eqn00192.gif)![](../graphics/gsa_eqn00193.gif)![](../graphics/gsa_eqn00194.gif)![](../graphics/gsa_eqn00195.gif)![](../graphics/gsa_eqn00196.gif)![](../graphics/gsa_eqn00197.gif)![](../graphics/gsa_eqn00198.gif)![](../graphics/gsa_eqn00198.gif)![图13-6　单轴拉伸测试](../graphics/gsx-uni-tensile-test.png)
 
 ![图13-7　准静态拉伸测试的能量历史](../graphics/gsx-hist-tensile-test-nls.png)
 
@@ -117,13 +117,13 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 ---
 
-## 13.5 示例：在Abaqus/Explicit中成形通道
+**13.5 示例：在Abaqus/Explicit中成形通道**
 
 在这个示例中，您将使用Abaqus/Explicit求解第12章"接触"中的通道成形问题。然后您将比较Abaqus/Standard和Abaqus/Explicit分析的结果。
 
 您将对为Abaqus/Standard分析创建的模型进行修改，以便能够在Abaqus/Explicit中运行。这些修改包括：在材料模型中添加密度、更改单元库以及更改步。在运行Abaqus/Explicit分析之前，您将使用Abaqus/Standard中的频率提取程序来确定获得适当准静态响应所需的时间周期。
 
-### 13.5.1 预处理——使用Abaqus/Explicit重新运行模型
+**13.5.1 预处理——使用Abaqus/Explicit重新运行模型**
 
 使用Abaqus/CAE修改模型以进行此模拟。Abaqus提供了复制此问题完整分析模型的脚本。如果您遇到困难或希望检查工作，可以运行这些脚本。
 
@@ -157,7 +157,7 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 频率分析表明，坯料的基本频率为140 Hz，对应于0.00714 s的周期。图13-8显示了该第二种模式的位移形状。现在我们知道，成形分析的最小步长时间为0.00714 s。
 
-![图13-8　从Abaqus/Standard频率分析得出的坯料第二种模式](../graphics/gsa-channel-frequency-compare.png)
+![](../graphics/gsa_eqn00281.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../images/arrow.gif)![](../graphics/ico_plotDeformed.png)![图13-8　从Abaqus/Standard频率分析得出的坯料第二种模式](../graphics/gsa-channel-frequency-compare.png)
 
 **创建Abaqus/Explicit成形分析**
 
@@ -219,7 +219,7 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 整个模型的动能和内能历史图分别如图13-9和图13-10所示。
 
-![图13-9　成形分析第一次尝试的动能历史](../graphics/gsa-quasi-kinetic-first-nls.png)
+![](../graphics/ico_meshVerify.png)![](../images/arrow.gif)![图13-9　成形分析第一次尝试的动能历史](../graphics/gsa-quasi-kinetic-first-nls.png)
 
 ![图13-10　成形分析第一次尝试的内能历史](../graphics/gsa-quasi-internal-first-nls.png)
 
@@ -229,7 +229,7 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 尽管模型的动能是内能的一小部分，但它仍然相当嘈杂。因此，我们应该以某种方式改变模拟以获得更平滑的响应。
 
-### 13.5.2 成形分析——第二次尝试
+**13.5.2 成形分析——第二次尝试**
 
 尽管冲头实际上以接近恒定的速度移动，但第一次模拟尝试的结果表明，使用不同的振幅曲线是理想的，该振幅曲线允许坯料更平滑地加速。在考虑使用何种类型的加载振幅时，请记住，平滑性在准静态分析的所有方面都很重要。首选方法是以所需的时间用所需的距离尽可能平滑地移动冲头。
 
@@ -253,7 +253,7 @@ $$E_I + E_{VD} + E_{FD} + E_K + E_H = W_{Ext} + W_{CP} + W_{CL} + W_{PM}$$
 
 ![图13-13　两次成形尝试的内能比较](../graphics/gsa-quasi-internal-nls.png)
 
-### 13.5.3 两次成形尝试的讨论
+**13.5.3 两次成形尝试的讨论**
 
 我们评估结果可接受性的初始标准是动能应该与内能相比很小。我们发现，即使对于最严重的情况（第一次尝试），这个条件似乎也得到了充分的满足。添加平滑步幅曲线有助于减少动能中的振荡，产生令人满意的准静态响应。
 
@@ -307,7 +307,7 @@ Abaqus/Explicit结果与Abaqus/Standard结果相比有明显的噪声，因为Ab
 
 从这些比较可以清楚地看出，Abaqus/Standard和Abaqus/Explicit都能够处理此类困难的接触分析。但是，在Abaqus/Explicit中运行此类分析有一些优势：Abaqus/Explicit能够更轻松地处理复杂的接触条件。然而，当选择Abaqus/Explicit进行准静态分析时，您应该意识到您可能需要迭代适当的加载速率。在确定加载速率时，建议从较快的加载速率开始，并在必要时降低加载速率。这将有助于优化分析的运行时间。
 
-### 13.5.4 加速分析的方法
+**13.5.4 加速分析的方法**
 
 既然我们已经获得了成形分析的可接受解，我们可以尝试使用更少的计算机时间获得类似的可接受结果。大多数成形分析需要过多的计算机时间才能以其物理时间尺度运行，因为成形事件的实际时间周期对于显式动力学来说较大；以可接受的计算机时间运行通常需要对他分析进行更改以降低计算成本。有两种方法可以降低分析成本：
 
@@ -332,13 +332,13 @@ Abaqus/Explicit结果与Abaqus/Standard结果相比有明显的噪声，因为Ab
 
 质量缩放因子为5的情况产生的结果与加载速率增加产生的结果没有显著差异。质量缩放因子为10的情况显示出较高的动能与内能比率，但结果似乎与较慢加载速率获得的结果合理。因此，这可能接近此分析可以加速的极限。最后一种情况，质量缩放因子为25，显示出强烈动态效应的证据：动能与内能比率相当高，并且三种情况的最终变形形状的比较表明，最后一种情况的变形形状受到显著影响。
 
-![图13-18　缩放为$\sqrt{5}$（质量缩放为5）的等效塑性应变PEEQ](../graphics/gsa-channel-mass-scale-5.png)
+![](../graphics/gsa_eqn00282.gif)![](../graphics/gsa_eqn00279.gif)![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00284.gif)![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00284.gif)![](../graphics/gsa_eqn00283.gif)![图13-18　缩放为$\sqrt{5}$（质量缩放为5）的等效塑性应变PEEQ](../graphics/gsa-channel-mass-scale-5.png)
 
-![图13-19　缩放为$\sqrt{10}$（质量缩放为10）的等效塑性应变PEEQ](../graphics/gsa-channel-mass-scale-10.png)
+![](../graphics/gsa_eqn00284.gif)![图13-19　缩放为$\sqrt{10}$（质量缩放为10）的等效塑性应变PEEQ](../graphics/gsa-channel-mass-scale-10.png)
 
 ![图13-20　缩放为5（质量缩放为25）的等效塑性应变PEEQ](../graphics/gsa-channel-mass-scale-25.png)
 
-![图13-21　分别对应缩放因子$\sqrt{5}$、$\sqrt{10}$和5（质量缩放因子5、10和25）的动能和内能历史](../graphics/gsa-quasi-internal-comparison-nls.png)
+![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00284.gif)![图13-21　分别对应缩放因子$\sqrt{5}$、$\sqrt{10}$和5（质量缩放因子5、10和25）的动能和内能历史](../graphics/gsa-quasi-internal-comparison-nls.png)
 
 **加速方法的讨论**
 
@@ -346,7 +346,7 @@ Abaqus/Explicit结果与Abaqus/Standard结果相比有明显的噪声，因为Ab
 
 较小的加速（如$\sqrt{5}$）不会显著改变结果。这些结果对于大多数应用（包括回弹分析）来说是足够的。随着缩放因子为10，结果质量开始下降，而结果的一般大小和趋势保持完整。相应地，动能与内能的比率明显增加。这种情况的结果对于许多应用来说是足够的，但对于准确的回弹分析来说不够。
 
-### 13.5.5 在Abaqus/Standard中进行回弹分析
+**13.5.5 在Abaqus/Standard中进行回弹分析**
 
 虽然可以在Abaqus/Explicit内执行回弹分析，但Abaqus/Standard在求解回弹分析方面效率更高。由于回弹分析只是没有外部载荷或接触的静态模拟，Abaqus/Standard只需几个增量步就能获得回弹解。相反，Abaqus/Explicit必须在足够长的时间周期内获得动态解，以达到稳态。为了提高效率，Abaqus具有在Abaqus/Explicit和Abaqus/Standard之间来回传输结果的能力，允许您在Abaqus/Explicit中执行成形分析，在Abaqus/Standard中执行回弹分析。
 
@@ -378,7 +378,7 @@ Abaqus/Explicit结果与Abaqus/Standard结果相比有明显的噪声，因为Ab
 
 图13-22叠加了成形和回弹阶段后坯料的变形形状（成形阶段对应于Abaqus/Explicit输出数据库文件的最后一帧，而回弹阶段对应于Abaqus/Standard输出数据库文件的最终帧）。回弹结果必然依赖于其前面的成形阶段的准确性。事实上，回弹结果对成形阶段的误差高度敏感，比成形阶段本身的结果更敏感。
 
-![图13-22　成形和回弹后的变形模型形状](../graphics/gsa-disp-springback-nls.png)
+![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00283.gif)![](../graphics/gsa_eqn00283.gif)![](../graphics/ico_mesh.png)![](../images/arrow.gif)![图13-22　成形和回弹后的变形模型形状](../graphics/gsa-disp-springback-nls.png)
 
 您还应该绘制坯料的内能`ALLIE`并将其与静态稳定能量`ALLSD`进行比较。稳定能量应该占内能的很小一部分，以便对结果有信心。图13-23显示了这两种能量的图；静态稳定能量确实很小，因此没有显著影响结果。
 
@@ -386,7 +386,7 @@ Abaqus/Explicit结果与Abaqus/Standard结果相比有明显的噪声，因为Ab
 
 ---
 
-## 13.6 小结
+**13.6 小结**
 
 - 如果在自然时间尺度内进行准静态分析，解应该与真正的静态解几乎相同。
 - 通常需要使用加载速率缩放或质量缩放来以更少的CPU时间获得准静态解。

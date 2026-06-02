@@ -108,7 +108,3 @@ ConcreteTensionDamage 对象具有与 [ConcreteTensionDamage](pt01ch29pyo22.md#k
 
 | [*CONCRETE TENSION DAMAGE](../key/key-link.md#usb-kws-mconcretetensdamage) |
 | --- |
-
-
-
-

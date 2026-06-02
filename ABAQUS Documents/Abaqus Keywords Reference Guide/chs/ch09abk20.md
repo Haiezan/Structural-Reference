@@ -10,9 +10,9 @@
 
 This option is used to write integrated quantities over a surface, such as the total force transmitted across a surface, to the output database. It must be used in conjunction with the [*OUTPUT](ch15abk03.md), HISTORY option.
 
-**Products: **Abaqus/Explicit  Abaqus/CAE  
+**Products: **Abaqus/Explicit  Abaqus/CAE
 
-**Type: **History data 
+**Type: **History data
 
 **Level: **Step
 
@@ -55,7 +55,3 @@ If this parameter is omitted, the integrated output variables for output must be
 **First line:**
 
 Repeat this data line as often as necessary to define the list of variables to be written to the output database.
-
-
-
-

@@ -140,67 +140,11 @@ Hyperelastic(const odb_SequenceSequenceDouble& table,
 **表数据**
 
 如果 *type*=ARRUDA_BOYCE，表数据指定以下内容：
-- ![](../graphics/ker_eqn00041.gif]。
-- ![](../graphics/ker_eqn00264.gif]。
-- ![](../graphics/ker_eqn00172.gif]。
-- 温度（如果数据依赖温度）。
-
-如果 *type*=MOONEY_RIVLIN，表数据指定以下内容：
-- ![](../graphics/ker_eqn00265.gif]。
-- ![](../graphics/ker_eqn00266.gif]。
-- ![](../graphics/ker_eqn00267.gif]。
-- 温度（如果数据依赖温度）。
-
-如果 *type*=NEO_HOOKE，表数据指定以下内容：
-- ![](../graphics/ker_eqn00265.gif]。
-- ![](../graphics/ker_eqn00267.gif]。
-- 温度（如果数据依赖温度）。
-
-如果 *type*=OGDEN，对于 ![](../graphics/ker_eqn00088.gif) 的值，表数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)，为 ![](../graphics/ker_eqn00268.gif) 和 ![](../graphics/ker_eqn00269.gif]。
-- ![](../graphics/ker_eqn00088.gif] 个系数 ![](../graphics/ker_eqn00271.gif]。
-- 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，4 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
-
-如果 *type*=POLYNOMIAL，对于 ![](../graphics/ker_eqn00088.gif) 的值，表数据指定以下内容：
-- 对于从 ![](../graphics/ker_eqn00274.gif) 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)，其中 ![](../graphics/ker_eqn00276.gif)] 从 ![](../graphics/ker_eqn00274.gif) 减小到零，![](../graphics/ker_eqn00276.gif)] 从零增加到 ![](../graphics/ker_eqn00274.gif)，为 ![](../graphics/ker_eqn00273.gif]。
-- ![](../graphics/ker_eqn00088.gif] 个系数 ![](../graphics/ker_eqn00271.gif]。
-- 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，3 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
+- ![](../graphics/ker_eqn00041.gif)![](../graphics/ker_eqn00264.gif)![](../graphics/ker_eqn00172.gif)![](../graphics/ker_eqn00265.gif)![](../graphics/ker_eqn00266.gif)![](../graphics/ker_eqn00267.gif)![](../graphics/ker_eqn00265.gif)![](../graphics/ker_eqn00267.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00268.gif)![](../graphics/ker_eqn00269.gif)![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00271.gif)![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00273.gif)![](../graphics/ker_eqn00274.gif)![](../graphics/ker_eqn00275.gif) 的值，表数据指定以下内容：
+- 对于从 1 到 ![](../graphics/ker_eqn00088.gif)] 的 ![](../graphics/ker_eqn00270.gif)，为 ] 从 ![](../graphics/ker_eqn00274.gif) 减小到零，![](../graphics/ker_eqn00276.gif)] 从零增加到 ![](../graphics/ker_eqn00274.gif)，为  6 时不允许温度依赖。
 
 如果 *type*=REDUCED_POLYNOMIAL，对于 ![](../graphics/ker_eqn00088.gif) 的值，表数据指定以下内容：
-- 对于从 1 到 ![](../graphics/ker_eqn00088.gif] 的 ![](../graphics/ker_eqn00270.gif]，为 ![](../graphics/ker_eqn00277.gif]。
-- ![](../graphics/ker_eqn00088.gif] 个系数 ![](../graphics/ker_eqn00271.gif]。
-- 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中，4 ![](../graphics/ker_eqn00272.gif) 6 时不允许温度依赖。
-
-如果 *type*=VAN_DER_WAALS，表数据指定以下内容：
-- ![](../graphics/ker_eqn00041.gif]。
-- ![](../graphics/ker_eqn00264.gif]。
-- ![](../graphics/ker_eqn00278.gif]。
-- ![](../graphics/ker_eqn00095.gif]。
-- ![](../graphics/ker_eqn00172.gif]。
-- 温度（如果数据依赖温度）。
-
-如果 *type*=YEOH，表数据指定以下内容：
-- ![](../graphics/ker_eqn00265.gif]。
-- ![](../graphics/ker_eqn00279.gif]。
-- ![](../graphics/ker_eqn00280.gif]。
-- ![](../graphics/ker_eqn00267.gif]。
-- ![](../graphics/ker_eqn00281.gif]。
-- ![](../graphics/ker_eqn00282.gif]。
-- 温度（如果数据依赖温度）。在 Abaqus/Explicit 分析中不允许温度依赖。
-
-如果 *testData*=ON，则默认值为 `None` 对象。
-
-**返回值**
-
-一个 Hyperelastic 对象。
-
-**异常**
-
-InvalidNameError 和 RangeError。
-
-### 60.60.2 成员
-
-Hyperelastic 对象的成员与 [Hyperelastic](pt02ch60pyo60.md#ker-hyperelastic-hyperelastic-cpp) 方法的参数具有相同的名称和描述。
+- 对于从 1 到 ![](../graphics/ker_eqn00271.gif)![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00277.gif)![](../graphics/ker_eqn00270.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00088.gif)![](../graphics/ker_eqn00271.gif)![](../graphics/ker_eqn00272.gif)![](../graphics/ker_eqn00041.gif)![](../graphics/ker_eqn00264.gif)![](../graphics/ker_eqn00278.gif)![](../graphics/ker_eqn00095.gif)![](../graphics/ker_eqn00172.gif)![](../graphics/ker_eqn00265.gif)![](../graphics/ker_eqn00279.gif)![](../graphics/ker_eqn00280.gif)![](../graphics/ker_eqn00267.gif)![](../graphics/ker_eqn00281.gif)![](../graphics/ker_eqn00282.gif) 方法的参数具有相同的名称和描述。
 
 此外，Hyperelastic 对象可以具有以下成员：
 
@@ -238,3 +182,4 @@ odb_Hysteresis hysteresis() const;
 
 | [*HYPERELASTIC](../key/key-link.md#usb-kws-mhyperelast) |
 | --- |
+### 60.60.3 Corresponding analysis keywords

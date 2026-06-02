@@ -499,7 +499,7 @@ A SymbolicConstant indicating a method for creating blends. This argument is a r
 
 *path*
 
-An Edge object that connects *side1* to *side2* and specifies the path for creating the blend. This argument is required if *method*=SPECIFY_PATH; otherwise, it is ignored. 
+An Edge object that connects *side1* to *side2* and specifies the path for creating the blend. This argument is required if *method*=SPECIFY_PATH; otherwise, it is ignored.
 
 **Return value**
 
@@ -595,7 +595,7 @@ None.
 
 ### 37.2.19 ConvertToPrecise(...)
 
-This method attempts to change imprecise entities so that the geometry becomes precise. 
+This method attempts to change imprecise entities so that the geometry becomes precise.
 
 **Path**
 
@@ -641,7 +641,7 @@ A sequence of Edge objects specifying the edges that bound the new face.
 
 *tryAnalytical*
 
-A Boolean specifying whether the newly created face should be analytical or not. The default is False. 
+A Boolean specifying whether the newly created face should be analytical or not. The default is False.
 
 **Return value**
 
@@ -649,7 +649,7 @@ A Feature object.
 
 **Exceptions**
 
-If the given boundary is not a closed loop: 
+If the given boundary is not a closed loop:
 
 ```
 Parterror: Cannot find a closed loop
@@ -749,7 +749,7 @@ A Float specifying the extrusion depth. If *depth* is specified, the cut will be
 
 *upToFace*
 
-A Face specifying the face up to which to cut. If *upToFace* is specified, the cut will be an up-to-face cut. The default is to not specify a face. 
+A Face specifying the face up to which to cut. If *upToFace* is specified, the cut will be an up-to-face cut. The default is to not specify a face.
 
 **Note:**If neither *depth* nor *upToFace* is specified, the cut will be a through-all cut.
 
@@ -817,7 +817,7 @@ A Float specifying the magnitude of the *endTangent*. This argument is to be use
 
 *globalSmoothing*
 
-A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally. 
+A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally.
 - If the path is applied locally, its effect is felt only on faces created from the edges on the *loftSections* through which the *paths* pass through.
 - If the path is applied globally, an averaging algorithm is applied over all the paths defined and is distributed over all the faces created.
 
@@ -907,53 +907,53 @@ mdb.models[*name*].parts[*name*].CutSweep
 
 *path*
 
- Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.                       
+ Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.
 
 *profile*
 
- Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object specifying the section to be swept.                       
+ Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object specifying the section to be swept.
 
 **Optional arguments**
 
 *pathPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathOrientation*
 
- A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as a [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.                       
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as a [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.
 
 *sketchUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchOrientation*
 
- A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *draftAngle*
 
- A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.                       
+ A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *pitch*
 
- A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.                       
+ A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *profileNormal*
 
- A Boolean specifying whether to keep the profile normal same as original or varying through out the sweep path. When *profileNormal*=OFF, the profile normal will vary through out the sweep path. When *profileNormal*=ON, the profile normal will be same as original through out the sweep path. The default value is OFF.                       
+ A Boolean specifying whether to keep the profile normal same as original or varying through out the sweep path. When *profileNormal*=OFF, the profile normal will vary through out the sweep path. When *profileNormal*=ON, the profile normal will be same as original through out the sweep path. The default value is OFF.
 
 *flipSweepDirection*
 
- A Boolean specifying whether to flip the direction in which sweep operation will be performed. When *flipSweepDirection*=OFF, sweep operation will be performed in the direction of path direction. When *flipSweepDirection*=ON, sweep operation will be performed in the direction opposite to the path direction. The default value is OFF.                       
+ A Boolean specifying whether to flip the direction in which sweep operation will be performed. When *flipSweepDirection*=OFF, sweep operation will be performed in the direction of path direction. When *flipSweepDirection*=ON, sweep operation will be performed in the direction opposite to the path direction. The default value is OFF.
 
 **Return value**
 
@@ -1035,7 +1035,7 @@ A Boolean specifying whether the created geometry face should be stitched with e
 
 *stitchTolerance*
 
-A Float indicating the maximum gap to be stitched. The value should be smaller than the minimum feature size and bigger than the maximum gap expected to be stitched in the model. Otherwise this command may remove small (sliver) edges that are smaller than the tolerance. If stitch tolerance is not provided then default value of 0.001 will be used for stitching. 
+A Float indicating the maximum gap to be stitched. The value should be smaller than the minimum feature size and bigger than the maximum gap expected to be stitched in the model. Otherwise this command may remove small (sliver) edges that are smaller than the tolerance. If stitch tolerance is not provided then default value of 0.001 will be used for stitching.
 
 *analyticFitTolerance*
 
@@ -1043,7 +1043,7 @@ A Float indicating the analytical surface fitting tolerance. If analytical toler
 
 *associateFace*
 
-A Boolean specifying whether the created geometry face should be associated with the mesh. Default value is TRUE. 
+A Boolean specifying whether the created geometry face should be associated with the mesh. Default value is TRUE.
 
 **Return value**
 
@@ -1276,7 +1276,7 @@ A Float indicating the fraction of the distance to the closest or the farthest p
 
 *trimToReferenceRep*
 
-A Boolean indicating whether to extend the offset faces and trim them along their intersection with the reference representation. 
+A Boolean indicating whether to extend the offset faces and trim them along their intersection with the reference representation.
 
 **Return value**
 
@@ -1402,7 +1402,7 @@ A sequence of Edge objects specifying the edges to be removed.
 
 *removeEdgeVertices*
 
-A Boolean specifying whether the vertices of the redundant edges need to be removed. The default is True. 
+A Boolean specifying whether the vertices of the redundant edges need to be removed. The default is True.
 
 **Return value**
 
@@ -1490,17 +1490,17 @@ A Face object specifying the face on which the sliver is located.
 
 *point1*
 
-A point specifying the location for partition creation. It can be a Vertex object, an Interesting Point or three coordinates specifying the point on an edge of the *face*. 
+A point specifying the location for partition creation. It can be a Vertex object, an Interesting Point or three coordinates specifying the point on an edge of the *face*.
 
 *point2*
 
-A point specifying the location for partition creation. It can be a Vertex object, an Interesting Point or three coordinates specifying the point on an edge of the *face*.  
+A point specifying the location for partition creation. It can be a Vertex object, an Interesting Point or three coordinates specifying the point on an edge of the *face*.
 
 **Optional argument**
 
 *toleranceChecks*
 
-A Boolean specifying whether to use internal tolerance checks to restrict the size of the sliver face being removed. The default is True. 
+A Boolean specifying whether to use internal tolerance checks to restrict the size of the sliver face being removed. The default is True.
 
 **Return value**
 
@@ -1530,7 +1530,7 @@ A sequence of Edge objects.
 
 *toleranceChecks*
 
-A Boolean specifying whether to use internal tolerance checks to restrict the size of the edges being removed. The default is True. 
+A Boolean specifying whether to use internal tolerance checks to restrict the size of the edges being removed. The default is True.
 
 **Return value**
 
@@ -1560,7 +1560,7 @@ A sequence of Face objects.
 
 *toleranceChecks*
 
-A Boolean specifying whether to use internal tolerance checks to restrict the size of the faces being removed. The default is True. 
+A Boolean specifying whether to use internal tolerance checks to restrict the size of the faces being removed. The default is True.
 
 **Return value**
 
@@ -1590,7 +1590,7 @@ A sequence of Face objects to be replaced.
 
 *stitch*
 
-A Boolean specifying whether the newly created face needs to be stitched to the existing geometry. The default is True. 
+A Boolean specifying whether the newly created face needs to be stitched to the existing geometry. The default is True.
 
 **Return value**
 
@@ -1792,7 +1792,7 @@ A sequence of sequences of edges that pass through each section in the loft feat
 
 *globalSmoothing*
 
-A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally. 
+A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally.
 - If the path is applied locally, its effect is felt only on faces created from the edges on the *loftsections* through which the *paths* pass through.
 - If the path is applied globally, an averaging algorithm is applied over all the paths defined and is distributed over all the faces created.
 
@@ -1890,61 +1890,61 @@ mdb.models[*name*].parts[*name*].ShellSweep
 
 *path*
 
- Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.                       
+ Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.
 
 *profile*
 
- Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the section to be swept.                       
+ Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the section to be swept.
 
 **Optional arguments**
 
 *pathPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathOrientation*
 
- A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.                       
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.
 
 *sketchUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchOrientation*
 
- A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                       
+ A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *draftAngle*
 
- A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.                       
+ A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *pitch*
 
- A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.                       
+ A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *profileNormal*
 
- A Boolean specifying whether to keep the profile normal same as original or varying through out the sweep path. When *profileNormal*=OFF, the profile normal will vary through out the sweep path. When *profileNormal*=ON, the profile normal will be same as original through out the sweep path. The default value is OFF.                       
+ A Boolean specifying whether to keep the profile normal same as original or varying through out the sweep path. When *profileNormal*=OFF, the profile normal will vary through out the sweep path. When *profileNormal*=ON, the profile normal will be same as original through out the sweep path. The default value is OFF.
 
 *flipSweepDirection*
 
- A Boolean specifying whether to flip the direction in which sweep operation will be performed. When *flipSweepDirection*=OFF, sweep operation will be performed in the direction of path direction. When *flipSweepDirection*=ON, sweep operation will be performed in the direction opposite to the path direction. The default value is OFF.                       
+ A Boolean specifying whether to flip the direction in which sweep operation will be performed. When *flipSweepDirection*=OFF, sweep operation will be performed in the direction of path direction. When *flipSweepDirection*=ON, sweep operation will be performed in the direction opposite to the path direction. The default value is OFF.
 
 *keepInternalBoundaries*
 
- A Boolean specifying whether internal boundaries will be retained. The default value is OFF.                       
+ A Boolean specifying whether internal boundaries will be retained. The default value is OFF.
 
 **Return value**
 
-A Feature object. 
+A Feature object.
 
 **Exceptions**
 
@@ -2064,7 +2064,7 @@ A sequence of sequences of edges that pass through each section in the loft feat
 
 *globalSmoothing*
 
-A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally. 
+A Boolean specifying whether each path defined in the *paths* argument is applied locally or globally.
 - If the path is applied locally, its effect is felt only on faces created from the edges on the *loftsections* through which the *paths* pass through.
 - If the path is applied globally, an averaging algorithm is applied over all the paths defined and is distributed over all the faces created.
 
@@ -2150,7 +2150,7 @@ None.
 
 ### 37.2.52 SolidSweep(...)
 
-This method creates an additional Feature object by sweeping the given [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object along a path which may be a [ConstrainedSketch](pt01ch48pyo01.md) or a sequence of [Edge](pt01ch07pyo03.md) objects, creating a solid swept protrusion. If the profile section is a [ConstrainedSketch](pt01ch48pyo01.md) object, it must define a closed profile. The section sketch can be created at the normal plane at the start of the sweep path or it may be created on a [Datum](pt01ch15pyo01.md) plane or a planar [Face](pt01ch07pyo05.md). No checks are made for self-intersection.                   
+This method creates an additional Feature object by sweeping the given [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object along a path which may be a [ConstrainedSketch](pt01ch48pyo01.md) or a sequence of [Edge](pt01ch07pyo03.md) objects, creating a solid swept protrusion. If the profile section is a [ConstrainedSketch](pt01ch48pyo01.md) object, it must define a closed profile. The section sketch can be created at the normal plane at the start of the sweep path or it may be created on a [Datum](pt01ch15pyo01.md) plane or a planar [Face](pt01ch07pyo05.md). No checks are made for self-intersection.
 
 **Path**
 
@@ -2162,45 +2162,45 @@ mdb.models[*name*].parts[*name*].SolidSweep
 
 *path*
 
- Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.                          
+ Path may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a sequence of [Edge](pt01ch07pyo03.md) objects specifying the path of the sweep.
 
 *profile*
 
- Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object specifying the section to be swept.                         
+ Profile may either be a [ConstrainedSketch](pt01ch48pyo01.md) object or a [Face](pt01ch07pyo05.md) object specifying the section to be swept.
 
 **Optional arguments**
 
 *pathPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                         
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                         
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *pathOrientation*
 
- A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.                         
+ A SymbolicConstant specifying the orientation of *pathUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when path is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchPlane*
 
- A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.                         
+ A [Datum](pt01ch15pyo01.md) plane object or a planar [Face](pt01ch07pyo05.md) object specifying the plane on which to sketch the profile. Not required when profile is a [Face](pt01ch07pyo05.md) object. When profile is chosen as [ConstrainedSketch](pt01ch48pyo01.md) object, user may or may not give this as input. If user does not give this as input, the normal plane at the start of the path will be the sketchPlane.
 
 *sketchUpEdge*
 
- An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                         
+ An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *sketchOrientation*
 
- A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.                         
+ A SymbolicConstant specifying the orientation of *sketchUpEdge* on the sketch. Possible values are RIGHT, LEFT, TOP, and BOTTOM. Default value is RIGHT. Only required when profile is a [ConstrainedSketch](pt01ch48pyo01.md) object.
 
 *draftAngle*
 
- A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.                         
+ A Float specifying the draft angle in degrees. Possible values are -90.0 ![](../graphics/ker_eqn00013.gif) *draftAngle* ![](../graphics/ker_eqn00013.gif) 90.0. By convention, for a positive draft angle an outer loop will draft outward and an inner loop will draft inward. The opposite is true for a negative draft angle. The default value, 0, implies a normal extrude. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *pitch*
 
- A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.                         
+ A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are –105 ![](../graphics/ker_eqn00013.gif) *pitch* ![](../graphics/ker_eqn00013.gif) 105. The arguments *draftAngle* and *pitch* are mutually exclusive.
 
 *profileNormal*
 
@@ -2337,24 +2337,24 @@ This method creates an additional Feature object by creating a polyline wire tha
 **Path**
 
 ```
-         mdb.models[*name*].parts[*name*].WirePolyLine       
+         mdb.models[*name*].parts[*name*].WirePolyLine
 ```
 
 **Required argument**
 
 *points*
 
-               A sequence of Vertex, Datum point, or InterestingPoint objects specifying the points through which the polyline wire will pass. *points* can also be a sequence of tuples of Floats. You must specify at least two values in the sequence.             
+               A sequence of Vertex, Datum point, or InterestingPoint objects specifying the points through which the polyline wire will pass. *points* can also be a sequence of tuples of Floats. You must specify at least two values in the sequence.
 
 **Optional arguments**
 
 *mergeType*
 
-               A SymbolicConstant specifying the merge behavior of the wire with existing geometry. If *mergeType* is MERGE, Abaqus merges the wire into solid regions of the part if the wire passes through them. If *mergeType* is IMPRINT, Abaqus imprints the wire on existing geometry as edges. If *mergeType* is SEPARATE, Abaqus neither merges nor imprints the spline wire with existing geometry. It creates the wire separately. The default value is IMPRINT.             
+               A SymbolicConstant specifying the merge behavior of the wire with existing geometry. If *mergeType* is MERGE, Abaqus merges the wire into solid regions of the part if the wire passes through them. If *mergeType* is IMPRINT, Abaqus imprints the wire on existing geometry as edges. If *mergeType* is SEPARATE, Abaqus neither merges nor imprints the spline wire with existing geometry. It creates the wire separately. The default value is IMPRINT.
 
 **Return value**
 
-         A Feature object.       
+         A Feature object.
 
 **Exceptions**
 
@@ -2367,14 +2367,14 @@ This method creates an additional Feature object by creating a Wire by selecting
 **Path**
 
 ```
-mdb.models[*name*].parts[*name*].WireFromEdge                   
+mdb.models[*name*].parts[*name*].WireFromEdge
 ```
 
 **Required argument**
 
 *edgeList*
 
-A list of [Edge](pt01ch07pyo03.md) objects specifying the edges from which the wire is to be created.                            
+A list of [Edge](pt01ch07pyo03.md) objects specifying the edges from which the wire is to be created.
 
 **Optional arguments**
 
@@ -2382,11 +2382,8 @@ None.
 
 **Return value**
 
-A Feature object.                   
+A Feature object.
 
 **Exceptions**
 
 None.
-
-
-

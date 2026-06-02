@@ -8,9 +8,9 @@
 
 此选项用于选择在Abaqus/Standard分析中将写入结果（`.fil`）文件或在Abaqus/Explicit分析中将写入所选结果（`.sel`）文件的单元变量。在Abaqus/Explicit分析中，它必须与 [*FILE OUTPUT](ch06abk09.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -90,7 +90,3 @@ REBAR
 **第一行：**
 
 根据需要重复此数据行，以定义要输出到所选结果文件的变量列表。
-
-
-
-

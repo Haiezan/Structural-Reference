@@ -138,4 +138,3 @@ DGSymbolOptions 对象可以具有以下成员：
 *tensorSelectedPrinColor*
 
  String，指定所选主张量符号的颜色。默认值为 "Red"。
-

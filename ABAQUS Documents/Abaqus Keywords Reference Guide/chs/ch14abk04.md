@@ -12,9 +12,9 @@
 
 将节点从一个坐标系映射到另一个坐标系，并旋转、平移或缩放节点坐标。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
 **级别：**此选项在基于部件实例装配定义的模型中不支持。
 
@@ -128,4 +128,4 @@ DEFINITION
 
 **图14.4-1** 坐标系；角度以度为单位。
 
-![](../graphics/knmap-coordsys-nls.png)
+![](../graphics/key_eqn00917.gif)![](../graphics/key_eqn00917.gif)![](../graphics/key_eqn00918.gif)![](../graphics/key_eqn00919.gif)![](../graphics/key_eqn00920.gif)![](../graphics/key_eqn00919.gif)![](../graphics/key_eqn00921.gif)![](../graphics/key_eqn00917.gif)![](../graphics/key_eqn00918.gif)![](../graphics/key_eqn00919.gif)![](../graphics/key_eqn00922.gif)![](../graphics/key_eqn00921.gif)![](../graphics/key_eqn00922.gif)![](../graphics/key_eqn00878.gif)![](../graphics/key_eqn00075.gif)![](../graphics/key_eqn00921.gif)![](../graphics/key_eqn00923.gif)![](../graphics/key_eqn00924.gif)![](../graphics/key_eqn00925.gif)![](../graphics/key_eqn00923.gif)![](../graphics/key_eqn00924.gif)![](../graphics/key_eqn00925.gif)![](../graphics/knmap-coordsys-nls.png)

@@ -29,7 +29,3 @@ AMS 特征值求解器计算的耦合结构-声学模式在以下使用 SIM 架�
 
 **Abaqus Theory Guide**
 - [“Coupled acoustic-structural medium analysis，” Section 2.9.1](../stm/stm-link.md#stm-anl-acouststruct)
-
-
-
-

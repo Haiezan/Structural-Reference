@@ -125,11 +125,11 @@ InvalidNameError。
 **路径**
 
 ```
-odb.parts()[*name*].NodeSet                   
+odb.parts()[*name*].NodeSet
 ```
 
 ```
-odb.rootAssembly().instances()[*name*].NodeSet                   
+odb.rootAssembly().instances()[*name*].NodeSet
 ```
 
 **原型**
@@ -214,11 +214,11 @@ NodeSet(const odb_String& name,
 **路径**
 
 ```
-odb.parts()[*name*].ElementSet                   
+odb.parts()[*name*].ElementSet
 ```
 
 ```
-odb.rootAssembly().instances()[*name*].ElementSet                   
+odb.rootAssembly().instances()[*name*].ElementSet
 ```
 
 **原型**
@@ -303,11 +303,11 @@ ElementSet(const odb_String& name,
 **路径**
 
 ```
-odb.parts()[*name*].Surface                   
+odb.parts()[*name*].Surface
 ```
 
 ```
-odb.rootAssembly().instances()[*name*].Surface                   
+odb.rootAssembly().instances()[*name*].Surface
 ```
 
 **原型**
@@ -361,11 +361,11 @@ Surface(const odb_String& name,
 **路径**
 
 ```
-odb.parts()[*name*].Surface                   
+odb.parts()[*name*].Surface
 ```
 
 ```
-odb.rootAssembly().instances()[*name*].Surface                   
+odb.rootAssembly().instances()[*name*].Surface
 ```
 
 **原型**

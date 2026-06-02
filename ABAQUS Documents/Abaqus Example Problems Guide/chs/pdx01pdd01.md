@@ -377,7 +377,3 @@
 
 | [Section 15.1.7](ch15s01aex160.md) | Translating Abaqus data to modal neutral file format for analysis in MSC.ADAMS |
 | --- | --- |
-
-
-
-

@@ -47,4 +47,3 @@ RegisteredList 对象支持与标准 Python 列表对象相同的方法。
 ### 14.4.3 成员
 
 RegisteredList 对象没有成员。
-

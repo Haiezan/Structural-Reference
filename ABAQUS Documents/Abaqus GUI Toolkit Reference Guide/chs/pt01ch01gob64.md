@@ -271,8 +271,3 @@
 | **AFXTUPLE_EVALUATE** | 求值整数和浮点元素。 |
 | **AFXTUPLE_STYLE_DEFAULT** | 使用元组默认元素样式。 |
 | **AFXTUPLE_STYLE_MASK** | 元素样式的掩码。 |
-
-
-
-
-

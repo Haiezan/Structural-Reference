@@ -66,7 +66,3 @@ AdaptivityIteration 对象具有与 [AdaptivityIteration](pt01ch02pyo05.md#ker-a
 *ruleResults*
 
 一个 [RuleResult](pt01ch02pyo12.md) 对象仓库，指定来自此迭代适应性过程的大小函数对应的计算结果。
-
-
-
-

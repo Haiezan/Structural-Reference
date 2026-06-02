@@ -156,7 +156,3 @@ Annotation 对象具有以下成员：
 *name*
 
 一个 String，指定注释仓库键。
-
-
-
-

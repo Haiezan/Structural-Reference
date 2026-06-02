@@ -24,4 +24,3 @@ MdbData 对象具有以下成员：
 *instances*
 
  [MdbDataInstance](pt01ch40pyo29.md) 对象存储库，指定实例列表。此存储库为只读。
-

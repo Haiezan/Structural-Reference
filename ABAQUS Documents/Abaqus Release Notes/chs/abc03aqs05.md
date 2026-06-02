@@ -26,7 +26,3 @@
 
 **Abaqus/CAE User's Guide**
 - [“Configuring advanced options” in “Configuring a topology optimization task，” Section 18.6.2](../usi/usi-link.md#usi-opz-topo-taskconfigure-general-advanced)
-
-
-
-

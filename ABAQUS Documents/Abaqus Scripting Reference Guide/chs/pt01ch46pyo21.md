@@ -28,5 +28,3 @@ String，指定存储库键。
 *transverseShear*
 
 [TransverseShearShell](pt01ch46pyo25.md) 对象，指定横向剪切刚度属性。
-
-

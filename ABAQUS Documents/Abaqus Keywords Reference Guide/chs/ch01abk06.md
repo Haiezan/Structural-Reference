@@ -8,7 +8,7 @@
 
 此选项用于控制应用于自适应网格域的自适应网格划分和对流算法的各个方面。它只能与[*ADAPTIVE MESH](ch01abk04.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**历史数据
 

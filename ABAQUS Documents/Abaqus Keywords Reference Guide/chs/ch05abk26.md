@@ -45,6 +45,3 @@ TYPE
 将此参数设置为在[*ENRICHMENT](ch05abk25.md)选项上指定的富集特征类型。目前仅支持 TYPE=PROPAGATION CRACK（默认）。
 
 ### **此选项没有关联的数据行。**
-
-
-

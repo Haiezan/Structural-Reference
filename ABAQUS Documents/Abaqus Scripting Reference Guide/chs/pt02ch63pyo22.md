@@ -29,7 +29,3 @@ odb_String name() const;
 *name*
 
 An odb_String specifying the repository key.
-
-
-
-

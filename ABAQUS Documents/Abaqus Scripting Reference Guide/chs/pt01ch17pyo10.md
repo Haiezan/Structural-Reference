@@ -77,8 +77,3 @@ RangeError。
 ### 17.10.2 成员
 
 InteractionDisplayOptions 对象的成员与 [setValues](pt01ch17pyo10.md#ker-interactiondisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

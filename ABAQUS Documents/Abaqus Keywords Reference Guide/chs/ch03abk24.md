@@ -9,11 +9,11 @@
 
 此选项用于定义粘聚单元的属性。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例  
+**级别：**部件、部件实例
 
 **Abaqus/CAE: **属性模块
 
@@ -75,7 +75,3 @@ THICKNESS
 ### **用于定义粘聚单元属性的数据行：**
 
 **第一行（也是唯一行）：**
-
-
-
-

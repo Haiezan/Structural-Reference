@@ -16,7 +16,3 @@
 **Abaqus Scripting参考指南**
 - ["OdbSet对象，" 第34.23节](../ker/ker-link.md#ker-odbset-pyc)
 - ["OdbSet对象，" 第61.24节](../ker/ker-link.md#ker-odbset-cpp)
-
-
-
-

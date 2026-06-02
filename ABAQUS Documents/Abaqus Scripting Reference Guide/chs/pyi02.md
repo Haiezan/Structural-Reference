@@ -52,7 +52,3 @@ No changes.
 **Infrastructure commands**
 
 [Sequence.odb_SequenceType(<initialSize, *growSize*>)](../ker/ker-link.md#ker-inf-seq-seq-cpp)
-
-
-
-

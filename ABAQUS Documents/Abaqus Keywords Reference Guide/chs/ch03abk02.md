@@ -9,11 +9,11 @@
 
 此选项用于定义帽盖蠕变模型和材料属性。此选项定义的蠕变行为仅在 [*SOILS](ch18abk21.md)、CONSOLIDATION；[*COUPLED TEMPERATURE-DISPLACEMENT](ch03abk81.md)；和 [*VISCO](ch21abk03.md) 程序中激活。必须与 [*CAP PLASTICITY](ch03abk04.md) 和 [*CAP HARDENING](ch03abk03.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -69,7 +69,3 @@ TIME
 **后续行（仅在 DEPENDENCIES 参数值大于三时需要）：**
 
 根据需要重复此数据行集，以定义蠕变常数对温度和其他预定义场变量的依赖性。
-
-
-
-

@@ -341,7 +341,3 @@ mdb.models[*name*].rootAssembly.ParallelFace
 **异常**
 
 AbaqusException。
-
-
-
-

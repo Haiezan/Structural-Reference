@@ -87,7 +87,3 @@ ContactArea 对象具有与 [ContactArea](pt01ch29pyo25.md#ker-contactarea-conta
 
 | [*GASKET CONTACT AREA](../key/key-link.md#usb-kws-mgasketcontactarea) |
 | --- |
-
-
-
-

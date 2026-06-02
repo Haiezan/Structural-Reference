@@ -9,11 +9,11 @@
 
 此选项用于导入在先前的 Abaqus/Explicit 或 Abaqus/Standard 分析中定义的单元集定义。如果使用了 [*IMPORT ELSET](ch09abk06.md) 选项，它必须出现在 [*IMPORT](ch09abk04.md) 选项之后。如果省略此选项或指定时没有任何数据行，则将导入与分析相关的所有单元集。
 
-**产品：** Abaqus/Standard  Abaqus/Explicit  
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
-**类型：** 模型数据  
+**类型：** 模型数据
 
-**级别：** 模型  
+**级别：** 模型
 
 ##### **参考文献：**
 
@@ -27,7 +27,3 @@
 **第一行：**
 
 根据需要重复此数据行，以指定要导入的单元集定义。每行最多可列出 16 个单元集。
-
-
-
-

@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**GPGPU 加速的直接方程求解器的性能得到了改进，GPGPU 内存需求已减少。
 
@@ -20,4 +20,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["Parallel execution in Abaqus/Standard," Section 3.5.2](../usb/usb-link.md#usb-int-astdparallel)
-

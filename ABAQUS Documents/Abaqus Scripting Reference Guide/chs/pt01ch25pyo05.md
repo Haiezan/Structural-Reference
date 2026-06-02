@@ -105,6 +105,3 @@ ActuatorSensor 对象的成员与 [ActuatorSensor](pt01ch25pyo05.md#ker-actuator
 | --- |
 | [*USER ELEMENT](../key/key-link.md#usb-kws-muserelement) |
 | [*INITIAL CONDITIONS](../key/key-link.md#usb-kws-minitialcond), TYPE=SOLUTION |
-
-
-

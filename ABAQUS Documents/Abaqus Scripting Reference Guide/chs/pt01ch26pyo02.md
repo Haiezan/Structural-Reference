@@ -162,8 +162,3 @@ JobFromInputFile 对象的成员与 [JobFromInputFile](pt01ch26pyo02.md#ker-jobf
 *environment*
 
 字符串元组，指定环境变量及其值。
-
-
-
-
-

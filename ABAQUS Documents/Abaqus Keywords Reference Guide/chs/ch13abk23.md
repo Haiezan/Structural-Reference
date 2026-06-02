@@ -1,5 +1,5 @@
 # *MOHR COULOMB
-
+![](../graphics/key_eqn00903.gif)![](../graphics/key_eqn00878.gif)![](../graphics/key_eqn00904.gif)![](../graphics/key_eqn00222.gif)![](../graphics/key_eqn00223.gif)
 
 
 
@@ -12,11 +12,11 @@
 
 此选项用于为使用莫尔-库仑塑性模型的弹塑性材料定义屈服面和流动势参数。它必须与[*MOHR COULOMB HARDENING](ch13abk24.md)选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 

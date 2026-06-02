@@ -66,6 +66,3 @@ ConcentratedRadiationToAmbientState 对象具有以下成员：
 
 | [*CRADIATE](../key/key-link.md#usb-kws-hcradiate) |
 | --- |
-
-
-

@@ -43,7 +43,7 @@ A [Region](pt01ch45pyo03.md) object specifying the region to which the load is a
 
 *magnitude*
 
-A Float or Complex specifying the load magnitude. *magnitude* is optional if *distributionType*=USER_DEFINED 
+A Float or Complex specifying the load magnitude. *magnitude* is optional if *distributionType*=USER_DEFINED
 
 **Optional arguments**
 
@@ -168,7 +168,3 @@ A String specifying the name of the [AnalyticalField](pt01ch21pyo02.md) object a
 *region*
 
 A [Region](pt01ch45pyo03.md) object specifying the region to which the load is applied.
-
-
-
-

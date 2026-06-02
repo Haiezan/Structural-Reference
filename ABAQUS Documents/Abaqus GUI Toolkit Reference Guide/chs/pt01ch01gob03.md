@@ -113,7 +113,3 @@
 
 | **AFXCOLORBUTTON_VERTICAL** | 将标签置于按钮上方。 |
 | --- | --- |
-
-
-
-

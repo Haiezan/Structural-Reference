@@ -47,8 +47,3 @@ TYPE
 **图19.11-3** 球形变换选项。
 
 ![](../graphics/ktransform-spherical-nls.png)
-
-
-
-
-

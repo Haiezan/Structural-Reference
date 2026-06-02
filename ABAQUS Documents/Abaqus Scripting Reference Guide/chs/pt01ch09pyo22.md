@@ -59,7 +59,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 
 | [*BOUNDARY](../key/key-link.md#usb-kws-hboundary) (degree of freedom: 9) |
 | --- |
-
-
-
-

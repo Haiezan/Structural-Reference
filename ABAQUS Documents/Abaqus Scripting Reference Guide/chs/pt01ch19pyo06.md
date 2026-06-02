@@ -114,8 +114,3 @@ DiscreteFastener 对象具有与 [DiscreteFastener](pt01ch19pyo06.md#ker-discret
 
 | [*COUPLING](../key/key-link.md#usb-kws-mcoupling), [*DISTRIBUTING](../key/key-link.md#usb-kws-mdistributing) |
 | --- |
-
-
-
-
-

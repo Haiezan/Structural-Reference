@@ -44,8 +44,3 @@ Message 对象具有以下成员：
 *data*
 
 [Dictionary](#ker-dictionary-pyc) 对象，指定分析产品返回的数据。值取决于返回的消息有关 [DataObject](pt01ch32pyo01.md) 的成员列表。
-
-
-
-
-

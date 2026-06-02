@@ -8,11 +8,11 @@
 
 此选项用于为使用扩展Drucker-Prager塑性模型之一的弹塑性材料定义屈服面和流动势参数。它必须与 [*DRUCKER PRAGER HARDENING](ch04abk36.md) 选项结合使用，并且如果Abaqus/Standard分析中包含蠕变材料行为，还必须与 [*DRUCKER PRAGER CREEP](ch04abk35.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE：**属性模块
 
@@ -79,7 +79,3 @@ TEST DATA
 **后续行（仅在 DEPENDENCIES 参数值大于三时需要）：**
 
 根据需要重复此组数据行，以将材料参数对温度和其他预定义场变量的依赖性定义为函数。
-
-
-
-

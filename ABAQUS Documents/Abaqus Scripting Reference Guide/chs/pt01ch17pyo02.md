@@ -96,8 +96,3 @@ session.viewports[*name*].layers[*name*].assemblyDisplay.bcOptions
 ### 17.2.2 成员
 
 BCDisplayOptions 对象的成员与 [setValues](pt01ch17pyo02.md#ker-bcdisplayoptions-setvalues-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

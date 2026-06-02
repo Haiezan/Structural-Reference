@@ -9,11 +9,11 @@
 
 此选项用于为使用 Drucker-Prager/帽盖屈服面的弹塑性材料指定材料模型的硬化部分。必须与 [*CAP PLASTICITY](ch03abk04.md) 选项结合使用，并且在 Abaqus/Standard 分析中包含蠕变材料行为时，还须与 [*CAP CREEP](ch03abk02.md) 选项结合使用。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**模型  
+**级别：**模型
 
 **Abaqus/CAE: **属性模块
 
@@ -40,7 +40,3 @@ SCALESTRESS
 **后续行（仅在 DEPENDENCIES 参数值大于五时需要）：**
 
 根据需要重复此数据行集，以定义静水屈服应力对体积非弹性应变（在 Abaqus/Standard 中）或体积塑性应变（在 Abaqus/Explicit 中）的依赖性，以及在需要时对温度和其他预定义场变量的依赖性。
-
-
-
-

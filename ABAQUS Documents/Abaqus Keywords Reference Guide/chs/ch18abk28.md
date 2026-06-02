@@ -112,7 +112,3 @@ FILE
 **如果省略DAMPING GENERATE参数时的第二行：**
 
 **如果包含DAMPING GENERATE参数时的第二行：**
-
-
-
-

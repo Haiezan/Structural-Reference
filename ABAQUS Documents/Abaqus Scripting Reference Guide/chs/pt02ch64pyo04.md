@@ -6,7 +6,7 @@
 
 
 
-An odb_Sequence object is a repository used to hold an ordered list of objects of a specific type. Data are added using the `append` method. The odb_Sequence object will automatically allocate memory to contain the appended object; the user may, however, control the efficiency of the memory allocation process through the constructor. 
+An odb_Sequence object is a repository used to hold an ordered list of objects of a specific type. Data are added using the `append` method. The odb_Sequence object will automatically allocate memory to contain the appended object; the user may, however, control the efficiency of the memory allocation process through the constructor.
 
 ### 64.4.1 odb_Sequence*Type*(...)
 
@@ -184,6 +184,3 @@ An Int indicating the number of items in the sequence.
 **Exceptions**
 
 None.
-
-
-

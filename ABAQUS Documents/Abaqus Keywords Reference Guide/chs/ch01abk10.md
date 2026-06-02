@@ -8,7 +8,7 @@
 
 此选项用于定义通用各向异性超弹性材料的材料常数。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
 **类型：**模型数据
 

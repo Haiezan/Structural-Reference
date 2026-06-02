@@ -150,4 +150,3 @@ SectionAssignment 对象的成员与 [SectionAssignment](pt01ch44pyo01.md#ker-se
 *suppressed*
 
  Boolean，指定截面分配是否被抑制。默认值为 OFF。
-

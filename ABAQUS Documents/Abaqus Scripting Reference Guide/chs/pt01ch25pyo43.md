@@ -69,6 +69,3 @@ GeometricProperties 对象的成员与 [GeometricProperties](pt01ch25pyo43.md#ke
 
 | [*SURFACE INTERACTION](../key/key-link.md#usb-kws-hsurfaceinteraction) |
 | --- |
-
-
-

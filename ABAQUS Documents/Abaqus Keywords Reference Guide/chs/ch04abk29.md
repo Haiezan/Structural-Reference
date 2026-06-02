@@ -8,11 +8,11 @@
 
 此选项用于定义空间分布。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CFD  Abaqus/CAE
 
-**类型：**模型数据  
+**类型：**模型数据
 
-**级别：**部件、部件实例、装配、模型  
+**级别：**部件、部件实例、装配、模型
 
 **Abaqus/CAE：**属性模块
 
@@ -163,7 +163,3 @@ INPUT
 **首先指定体积时的第一行：**
 
 根据需要重复此数据行，以定义压力和体积的数据。
-
-
-
-

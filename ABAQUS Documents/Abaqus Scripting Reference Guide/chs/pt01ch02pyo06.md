@@ -112,7 +112,3 @@ AdaptivityProcess 对象具有与 [AdaptivityProcess](pt01ch02pyo06.md#ker-adapt
 *iterations*
 
 一个 [AdaptivityIteration](pt01ch02pyo05.md) 对象仓库，指定在运行适应性过程期间接收到的 [AdaptivityIteration](pt01ch02pyo05.md) 对象。
-
-
-
-

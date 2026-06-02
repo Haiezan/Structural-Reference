@@ -95,4 +95,3 @@ MaterialAssignment 对象的成员与 [MaterialAssignment](pt01ch42pyo11.md#ker-
 
 | [*INITIAL CONDITIONS*](../key/key-link.md#usb-kws-minitialcond), TYPE=EULERIAN MATERIAL |
 | --- |
-

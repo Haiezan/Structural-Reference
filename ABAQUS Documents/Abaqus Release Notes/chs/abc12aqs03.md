@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/Standard  
+**产品：**Abaqus/Standard
 
 **优点：**如果 Abaqus/Standard 分析中的通用步骤未能收敛，则将最后收敛增量的结果写入输出数据库。这有助于诊断收敛失败的原因。
 
@@ -15,4 +15,3 @@
 
 **Abaqus Analysis User's Guide**
 - ["Output to the output database," Section 4.1.3](../usb/usb-link.md#usb-out-odboutput)
-

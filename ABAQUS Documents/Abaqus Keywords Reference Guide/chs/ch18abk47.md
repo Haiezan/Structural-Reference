@@ -234,7 +234,3 @@ SCALE THICK
 **图18.47-2** [*SURFACE](ch18abk47.md)，TYPE=REVOLUTION。
 
 ![](../graphics/krigidsurface-rev-nls.png)
-
-
-
-

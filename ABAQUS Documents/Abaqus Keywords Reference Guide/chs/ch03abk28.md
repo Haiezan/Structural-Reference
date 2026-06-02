@@ -12,7 +12,7 @@
 
 [*BRITTLE CRACKING](ch02abk13.md)选项用于在Abaqus/Explicit分析中分析混凝土（请参见["混凝土裂纹模型"，Abaqus Analysis User's Guide第23.6.2节](../usb/usb-link.md#usb-mat-ccracking)）。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
 **类型：**模型数据
 
@@ -40,7 +40,3 @@ DEPENDENCIES
 **后续行（仅在DEPENDENCIES参数的值大于五时需要）：**
 
 根据需要重复此组数据行，以定义压缩屈服应力对塑性应变的依赖关系，以及对温度和其他预定义场变量（如需要）的依赖关系。
-
-
-
-

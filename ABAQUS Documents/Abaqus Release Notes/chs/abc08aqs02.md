@@ -6,7 +6,7 @@
 
 
 
-**产品：**Abaqus/CFD  
+**产品：**Abaqus/CFD
 
 **优点：**为湍流模型变量指定初始条件和边界条件的过程已得到增强，使其更加直观和灵活。
 
@@ -23,4 +23,3 @@
 **Abaqus Keywords Reference Guide**
 - [*FLUID BOUNDARY](../key/key-link.md#usb-kws-hfluidboundary)
 - [*INITIAL CONDITIONS](../key/key-link.md#usb-kws-minitialcond)
-

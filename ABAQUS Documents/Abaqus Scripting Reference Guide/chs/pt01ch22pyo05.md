@@ -96,8 +96,3 @@ OperatorFilter 对象具有与 [OperatorFilter](pt01ch22pyo05.md#ker-operatorfil
 
 | [*FILTER*](../key/key-link.md#usb-kws-mfilter) |
 | --- |
-
-
-
-
-

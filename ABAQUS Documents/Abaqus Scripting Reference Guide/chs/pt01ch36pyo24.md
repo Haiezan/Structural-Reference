@@ -8,7 +8,7 @@
 
 The SizingFrozenArea object defines a sizing frozen area geometric restriction.
 
-         The SizingFrozenArea  object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.       
+         The SizingFrozenArea  object is derived from the [GeometricRestriction](pt01ch36pyo08.md) object.
 
 **Access**
 
@@ -21,7 +21,7 @@ The SizingFrozenArea object defines a sizing frozen area geometric restriction.
 
 ### 36.24.1 SizingFrozenArea (...)
 
-           This method creates a SizingFrozenArea  object.         
+           This method creates a SizingFrozenArea  object.
 
 **Path**
 
@@ -39,7 +39,7 @@ A String specifying the geometric restriction repository key.
 
 *region*
 
-  A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.  
+  A [Region](pt01ch45pyo03.md) object specifying the region to which the geometric restriction is applied.
 
 **Optional arguments**
 
@@ -47,7 +47,7 @@ None.
 
 **Return value**
 
-    A SizingFrozenArea  object.         
+    A SizingFrozenArea  object.
 
 **Exceptions**
 
@@ -55,7 +55,7 @@ None.
 
 ### 36.24.2 setValues(...)
 
-           This method modifies the SizingFrozenArea  object.         
+           This method modifies the SizingFrozenArea  object.
 
 **Required arguments**
 
@@ -63,7 +63,7 @@ None.
 
 **Optional arguments**
 
-             The optional arguments to `setValues` are the same as the arguments to the [SizingFrozenArea](pt01ch36pyo24.md#ker-sizingfrozenarea-sizingfrozenarea-pyc) method, except for the *name* argument.           
+             The optional arguments to `setValues` are the same as the arguments to the [SizingFrozenArea](pt01ch36pyo24.md#ker-sizingfrozenarea-sizingfrozenarea-pyc) method, except for the *name* argument.
 
 **Return value**
 
@@ -75,8 +75,4 @@ None.
 
 ### 36.24.3 Members
 
-         The SizingFrozenArea  object has members with the same names and descriptions as the arguments to the [SizingFrozenArea](pt01ch36pyo24.md#ker-sizingfrozenarea-sizingfrozenarea-pyc) method.       
-
-
-
-
+         The SizingFrozenArea  object has members with the same names and descriptions as the arguments to the [SizingFrozenArea](pt01ch36pyo24.md#ker-sizingfrozenarea-sizingfrozenarea-pyc) method.

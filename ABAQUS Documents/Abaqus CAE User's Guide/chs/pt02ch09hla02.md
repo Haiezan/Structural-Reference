@@ -41,7 +41,3 @@ Abaqus Scripting Interface命令以ASCII文本形式存储。您可以使用标�
 
 ![](../graphics/images/black4rule.gif)有关相关主题的信息，请单击以下项目：- ["创建和运行宏，"第9.5.5节"](pt02ch09s05s05.md)
 - [Abaqus Scripting User's Guide](../cmd/cmd-link.md#cmd)
-
-
-
-

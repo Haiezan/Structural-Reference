@@ -103,7 +103,7 @@ If *behavior*=NONLINEAR and *coupling*=UNCOUPLED, then each sequence of the tabl
 - Value of the second field variable.
 - Etc.
 
-If *behavior*=LINEAR and *coupling*=COUPLED, the table data specify the symmetric portion of the elastic stiffness matrix for the specified components followed by any temperature data and then any field data. For example, if components 2, 3, and 5 are specified, the table portion of the command is as follows: 
+If *behavior*=LINEAR and *coupling*=COUPLED, the table data specify the symmetric portion of the elastic stiffness matrix for the specified components followed by any temperature data and then any field data. For example, if components 2, 3, and 5 are specified, the table portion of the command is as follows:
 ```
 table=( (![](../graphics/ker_eqn00031.gif), ![](../graphics/ker_eqn00032.gif), ![](../graphics/ker_eqn00033.gif), ![](../graphics/ker_eqn00034.gif), ![](../graphics/ker_eqn00035.gif), ![](../graphics/ker_eqn00036.gif),),
 )
@@ -170,7 +170,3 @@ A [ConnectorOptions](pt02ch58pyo09.md) object specifying the [ConnectorOptions](
 
 | [*CONNECTOR ELASTICITY](../key/key-link.md#usb-kws-mconnectorelasticity) |
 | --- |
-
-
-
-

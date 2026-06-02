@@ -8,9 +8,9 @@
 
 此选项用于在Abaqus/Standard分析中提供动态应力/位移响应的直接积分，通常用于非线性情况。它用于在Abaqus/Explicit中使用显式积分执行动态应力/位移分析。Abaqus/Standard和Abaqus/Explicit中的分析也可以是绝热的。
 
-**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/Explicit  Abaqus/CAE
 
-**类型：**历史数据 
+**类型：**历史数据
 
 **级别：**步骤
 
@@ -181,7 +181,3 @@ SCALE FACTOR
 ### **使用 FIXED TIME INCREMENTATION 的固定时间增量的数据行：**
 
 **第一行（也是唯一一行）：**
-
-
-
-

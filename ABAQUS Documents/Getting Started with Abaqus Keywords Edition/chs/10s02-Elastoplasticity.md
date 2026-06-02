@@ -86,7 +86,7 @@ Abaqus中的经典金属塑性模型定义了大多数金属的屈服后行为�
 
 用于定义塑性行为的材料试验数据中提供的应变不一定是材料中的塑性应变。相反，它们可能是材料中的总应变。您必须将这些总应变值分解为弹性和塑性应变分量。塑性应变通过从总应变值中减去弹性应变来获得，弹性应变定义为真应力除以杨氏模量（参见图10-3）。
 
-![图 10-3](../graphics/gss-total-strain-nls.png)
+![](../graphics/gsa_eqn00210.gif)![](../graphics/gsa_eqn00211.gif)![](../graphics/gsa_eqn00212.gif)![](../graphics/gsa_eqn00213.gif)![](../graphics/gsa_eqn00214.gif)![](../graphics/gsa_eqn00215.gif)![](../graphics/gsa_eqn00216.gif)![](../graphics/gsa_eqn00217.gif)![](../graphics/gsa_eqn00218.gif)![](../graphics/gsa_eqn00219.gif)![](../graphics/gsa_eqn00220.gif)![](../graphics/gsa_eqn00221.gif)![](../graphics/gsa_eqn00222.gif)![](../graphics/gsa_eqn00223.gif)![](../graphics/gsa_eqn00224.gif)![](../graphics/gsa_eqn00225.gif)![图 10-3](../graphics/gss-total-strain-nls.png)
 
 **图 10-3** 总应变分解为弹性和塑性分量。
 
@@ -110,7 +110,7 @@ Abaqus中的经典金属塑性模型定义了大多数金属的屈服后行为�
 
 图10-4中的公称应力-应变曲线将作为如何将定义材料塑性行为的试验数据转换为Abaqus适当输入格式的示例。图10-4中显示的六个点将用于确定塑性数据。
 
-![图 10-4](../graphics/gss-elastoplast-nls.png)
+![](../graphics/gsa_eqn00226.gif)![](../graphics/gsa_eqn00227.gif)![](../graphics/gsa_eqn00228.gif)![](../graphics/gsa_eqn00229.gif)![](../graphics/gsa_eqn00230.gif)![图 10-4](../graphics/gss-elastoplast-nls.png)
 
 **图 10-4** 弹塑性材料行为。
 

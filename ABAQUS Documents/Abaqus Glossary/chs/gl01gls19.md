@@ -125,6 +125,3 @@ Abaqus/CAE GUI 的组件，提供会话中可用输出数据的可视描述，�
 
 用于减少应力集中的零件内部角落的凹形过渡；也称为 fillet。您可以使用 Part 模块中的混合工具将当前 viewport 中选定边缘倒圆到所需半径。
 更多信息：- [「混合特征，」Abaqus/CAE User's Guide 第 11.9.5 节](../usi/usi-link.md#usi-prt-conc-round)
-
-
-

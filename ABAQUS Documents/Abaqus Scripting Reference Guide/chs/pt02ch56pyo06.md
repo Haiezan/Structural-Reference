@@ -107,4 +107,3 @@ ModulatedAmplitude 对象具有与 [ModulatedAmplitude](pt02ch56pyo06.md#ker-mod
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-

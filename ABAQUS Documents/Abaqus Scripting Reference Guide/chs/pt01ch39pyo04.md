@@ -20,4 +20,3 @@ NodeQuery 对象具有以下成员：
 *nodePos*
 
  Float 元组，指定最近查询的节点的 *X*、*Y* 和 *Z* 坐标。
-

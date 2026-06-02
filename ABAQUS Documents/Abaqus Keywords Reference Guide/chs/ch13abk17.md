@@ -1,5 +1,5 @@
 # *MODAL DAMPING
-
+![](../graphics/key_eqn00898.gif)![](../graphics/key_eqn00899.gif)![](../graphics/key_eqn00900.gif)![](../graphics/key_eqn00901.gif)![](../graphics/key_eqn00902.gif)![](../graphics/key_eqn00898.gif)![](../graphics/key_eqn00899.gif)![](../graphics/key_eqn00900.gif)![](../graphics/key_eqn00901.gif)![](../graphics/key_eqn00902.gif)
 
 
 
@@ -12,9 +12,9 @@
 
 此选项用于为基于模式的程序指定阻尼。它通常与[*SELECT EIGENMODES](ch18abk07.md)选项结合使用，以选择模态叠加的特征模式。如果未使用[*SELECT EIGENMODES](ch18abk07.md)选项，则所有在先前[*FREQUENCY](ch06abk35.md)步骤中提取的特征模式都将使用[*MODAL DAMPING](ch13abk17.md)选项下指定的阻尼值。如果未使用[*MODAL DAMPING](ch13abk17.md)选项，则假定阻尼值为零。
 
-**产品：**Abaqus/Standard  Abaqus/CAE  
+**产品：**Abaqus/Standard  Abaqus/CAE
 
-**类型：**历史数据  
+**类型：**历史数据
 
 **级别：**步骤
 

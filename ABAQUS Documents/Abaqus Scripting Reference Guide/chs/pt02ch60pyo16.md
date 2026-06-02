@@ -70,8 +70,8 @@ ClayPlasticity(const odb_SequenceSequenceDouble& table,
 
 如果 *hardening*=TABULAR，表数据指定以下内容：
 - 临界状态应力比，![](../graphics/ker_eqn00108.gif)。
-- 对应于 ![](../graphics/ker_eqn00112.gif) 的初始体积塑性应变，![](../graphics/ker_eqn00111.gif)，根据 [ClayHardening](pt02ch60pyo15.md) 定义。
-- ![](../graphics/ker_eqn00095.gif)，定义临界状态"湿"侧屈服面大小的参数。
+- 对应于  的初始体积塑性应变，![](../graphics/ker_eqn00111.gif)，根据 [ClayHardening](pt02ch60pyo15.md) 定义。
+- ![](../graphics/ker_eqn00112.gif)![](../graphics/ker_eqn00095.gif)，定义临界状态"湿"侧屈服面大小的参数。
 - ![](../graphics/ker_eqn00099.gif)，三轴拉伸流动应力与三轴压缩流动应力之比。![](../graphics/ker_eqn00110.gif)。
 - 温度（如果数据依赖温度）。
 - 第一个场变量的值（如果数据依赖场变量）。

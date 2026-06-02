@@ -244,6 +244,3 @@ Abaqus/CAE 绘图，显示在分析的指定步骤和帧处特定向量或张量
 
 Abaqus/CAE 在会话中每个支持动画的 viewport 中同时动画数据的过程，以便在逐帧检查数据、动画模型绘图或动画时间相关 *X–Y* 绘图时，viewports 一起播放、停止和递增。
 更多信息：- [「控制多个 viewports 中的动画，」Abaqus/CAE User's Guide 第 49.4.6 节](../usi/usi-link.md#usv-anm-synch)
-
-
-

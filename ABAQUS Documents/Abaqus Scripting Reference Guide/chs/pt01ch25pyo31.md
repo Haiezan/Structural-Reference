@@ -131,8 +131,3 @@ FilmCondition 对象。
 ### 25.31.4 成员
 
 FilmCondition 对象的成员与 [FilmCondition](pt01ch25pyo31.md#ker-filmcondition-filmcondition-pyc) 方法的参数具有相同的名称和描述。
-
-
-
-
-

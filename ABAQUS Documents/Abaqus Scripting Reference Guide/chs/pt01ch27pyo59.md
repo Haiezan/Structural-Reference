@@ -65,7 +65,3 @@ A String specifying the name of the amplitude reference. The String is empty if 
 | [*SUBMODEL](../key/key-link.md#usb-kws-msubmodel) |
 | --- |
 | [*DSLOAD](../key/key-link.md#usb-kws-hdsload), SUBMODEL |
-
-
-
-

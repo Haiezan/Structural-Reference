@@ -80,6 +80,3 @@ SmoothStepAmplitude 对象具有与 [SmoothStepAmplitude](pt01ch03pyo10.md#ker-s
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
-
-

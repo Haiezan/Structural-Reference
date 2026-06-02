@@ -114,4 +114,3 @@ odb_BaselineCorrection baselineCorrection() const;
 
 | [*AMPLITUDE](../key/key-link.md#usb-kws-mamplitude) |
 | --- |
-
