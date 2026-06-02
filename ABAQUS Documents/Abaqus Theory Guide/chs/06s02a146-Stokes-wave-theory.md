@@ -1,4 +1,4 @@
-![](../graphics/stm_eqn08060.gif)# 6.2.3 Stokes波理论
+# 6.2.3 Stokes波理论
 
 ### 6.2.3 Stokes波理论
 
@@ -50,7 +50,7 @@
 
 ![](../graphics/stm_eqn08049.gif)![](../graphics/stm_eqn08050.gif)Skjelbreia和Hendrickson通过在自由表面边界条件和中匹配相等幂和中的项，获得了18个常数、和。他们将这些常数作为的函数给出：
 
-![](../graphics/stm_eqn07154.gif)![](../graphics/stm_eqn08058.gif)![](../graphics/stm_eqn08051.gif)Skjelbreia和Hendrickson（1960）在的方程中有一个因子+2592乘以。这被Nishimura等人（1970）纠正为2592。
+![](../graphics/stm_eqn08051.gif)Skjelbreia和Hendrickson（1960）在的方程中有一个因子+2592乘以。这被Nishimura等人（1970）纠正为2592。
 
 ![](../graphics/stm_eqn08052.gif)然后他们获得了和的方程。波高为
 
@@ -87,8 +87,10 @@
 Stokes波场是波场的空间描述。所有波场量都计算到瞬时流体水平。波场为所有时间值在空间位置定义速度、加速度和动压力。因此，通过在适当方程中使用结构在当前时间的当前（对于几何非线性分析）或参考（对于几何线性分析）位置来确定速度、加速度和动压力。波场方程中使用的时间是分析的总时间，累积于分析中的所有步骤（静态、动态等）。
 ![](../graphics/stm_eqn08069.gif)![](../graphics/stm_eqn00155.gif)
 ### 参考
+
+### 参考
 ![](../graphics/stm_eqn08070.gif)
 ### 参考
 ![](../graphics/stm_eqn08071.gif)
-![](../graphics/stm_eqn01111.gif)![](../graphics/stm_eqn08066.gif)![](../graphics/stm_eqn08037.gif)"Abaqus Analysis User's Guide"第6.11.1节"Abaqus/Aqua分析"
-![](../graphics/stm_eqn08072.gif)
+"Abaqus Analysis User's Guide"第6.11.1节"Abaqus/Aqua分析"
+![](../graphics/stm_eqn08072.gif)![](../graphics/stm_eqn08073.gif)![](../graphics/stm_eqn08074.gif)

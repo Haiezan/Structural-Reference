@@ -10,9 +10,7 @@
 
 带相关流动的Mises屈服函数意味着没有体积塑性应变；由于弹性体积模量相当大，体积变化将很小。因此，我们可以定义体积应变为
 
-![](../graphics/stm_eqn05605.gif)因此，偏应变为
-
-![](../graphics/stm_eqn05606.gif)![](../graphics/stm_eqn05606.gif)
+![](../graphics/stm_eqn05606.gif)
 ### 材料模型定义
 
 应变率分解为
@@ -21,7 +19,7 @@
 
 ![](../graphics/stm_eqn05608.gif)
 
-![](../graphics/stm_eqn01854.gif)弹性是线性各向同性的，因此，可以用两个温度相关材料参数写为。出于此推导的目的，最合适的是选择这些参数为体积模量*K*和剪切模量*G*。这些可以从用户输入的杨氏模量*E*和泊松比![](../graphics/stm_eqn01854.gif)算为
+弹性是线性各向同性的，因此，可以用两个温度相关材料参数写为。出于此推导的目的，最合适的是选择这些参数为体积模量*K*和剪切模量*G*。这些可以从用户输入的杨氏模量*E*和泊松比![](../graphics/stm_eqn01854.gif)算为
 
 ![](../graphics/stm_eqn05609.gif)和
 
@@ -51,7 +49,7 @@
 
 塑性要求材料满足单轴应力塑性应变率关系。如果材料与率无关，这是屈服条件：
 
-![](../graphics/stm_eqn05619.gif)其中![](../graphics/stm_eqn05620.gif)屈服应力，由用户定义为等效塑性应变（![](../graphics/stm_eqn05621.gif)函数）和温度（![](../graphics/stm_eqn05622.gif)其中*h*是一个已知函数。例如，率相关材料模型提供形式为
+![](../graphics/stm_eqn05619.gif)其中![](../graphics/stm_eqn05620.gif)屈服应力，由用户定义为等效塑性应变（![](../graphics/stm_eqn05621.gif)函数）和温度（![](../graphics/stm_eqn01111.gif)![](../graphics/stm_eqn05622.gif)其中*h*是一个已知函数。例如，率相关材料模型提供形式为
 
 ![](../graphics/stm_eqn05623.gif)的过应力幂律模型，其中![](../graphics/stm_eqn05624.gif)![](../graphics/stm_eqn05625.gif)用户定义的温度相关材料参数，![](../graphics/stm_eqn05620.gif)静屈服应力。
 
@@ -59,13 +57,13 @@
 
 ![](../graphics/stm_eqn05626.gif)
 
-![](../graphics/stm_eqn05621.gif)此方程可以求逆（必要时数值地）给出*q*作为增量结束时![](../graphics/stm_eqn05621.gif)函数。
+![](../graphics/stm_eqn05621.gif)此方程可以求逆（必要时数值地）给出*q*作为增量结束时函数。
 
 因此，率无关模型和积分率相关模型都给出一般单轴形式
 
 ![](../graphics/stm_eqn05627.gif)其中对于率无关模型，![](../graphics/stm_eqn05628.gif)对于率相关模型，![](../graphics/stm_eqn05629.gif)[公式4.3.2-6](04s03a104.md)的求逆获得。
 
-![](../graphics/stm_eqn05285.gif)[公式4.3.2-1](04s03a104.md)到[公式4.3.2-7](04s03a104.md)定义材料行为。在任何发生塑性流动的增量中（由基于纯弹性响应评估*q*并发现其值超过![](../graphics/stm_eqn05285.gif)确定），这些方程必须被积分并求解增量结束时的状态。如"金属塑性模型，"第4.3.1节中的一般讨论，积分通过将后向Euler方法应用于流动规则（[公式4.3.2-4](04s03a104.md)）完成，给出
+![](../graphics/stm_eqn05285.gif)[公式4.3.2-1](04s03a104.md)到[公式4.3.2-7](04s03a104.md)定义材料行为。在任何发生塑性流动的增量中（由基于纯弹性响应评估*q*并发现其值超过确定），这些方程必须被积分并求解增量结束时的状态。如"金属塑性模型，"第4.3.1节中的一般讨论，积分通过将后向Euler方法应用于流动规则（[公式4.3.2-4](04s03a104.md)）完成，给出
 
 ![](../graphics/stm_eqn05630.gif)
 
@@ -73,7 +71,7 @@
 
 ![](../graphics/stm_eqn05631.gif)
 
-![](../graphics/stm_eqn00483.gif)使用积分流动规则（[公式4.3.2-8](04s03a104.md)），连同Mises流动方向定义，![](../graphics/stm_eqn00483.gif)在[公式4.3.2-4](04s03a104.md)中），这变为
+使用积分流动规则（[公式4.3.2-8](04s03a104.md)），连同Mises流动方向定义，![](../graphics/stm_eqn00483.gif)在[公式4.3.2-4](04s03a104.md)中），这变为
 
 ![](../graphics/stm_eqn05632.gif)
 
@@ -89,15 +87,15 @@
 
 ![](../graphics/stm_eqn05636.gif)
 
-![](../graphics/stm_eqn00483.gif)Mises等效应力*q*必须满足[公式4.3.2-7](04s03a104.md)中定义的单轴形式，因此从[公式4.3.2-11](04s03a104.md)，
+Mises等效应力*q*必须满足[公式4.3.2-7](04s03a104.md)中定义的单轴形式，因此从[公式4.3.2-11](04s03a104.md)，
 
 ![](../graphics/stm_eqn05637.gif)
 
-![](../graphics/stm_eqn05638.gif)![](../graphics/stm_eqn05629.gif)![](../graphics/stm_eqn05639.gif)这是一个关于![](../graphics/stm_eqn05638.gif)非线性方程，当![](../graphics/stm_eqn05629.gif)赖于等效塑性应变时（即，当材料是率相关的，或当存在非零加工硬化时）。（对于率无关完美塑性，它是关于![](../graphics/stm_eqn05640.gif)
+![](../graphics/stm_eqn05638.gif)![](../graphics/stm_eqn05629.gif)![](../graphics/stm_eqn05639.gif)这是一个关于赖于等效塑性应变时（即，当材料是率相关的，或当存在非零加工硬化时）。（对于率无关完美塑性，它是关于![](../graphics/stm_eqn05640.gif)
 
 ![](../graphics/stm_eqn05641.gif)我们迭代直到收敛。
 
-![](../graphics/stm_eqn05642.gif)一旦![](../graphics/stm_eqn05642.gif)知，解被完全定义：使用[公式4.3.2-5](04s03a104.md)，
+一旦![](../graphics/stm_eqn05642.gif)知，解被完全定义：使用[公式4.3.2-5](04s03a104.md)，
 
 ![](../graphics/stm_eqn05643.gif)因此，从[公式4.3.2-10](04s03a104.md)，
 
@@ -111,11 +109,11 @@
 
 ![](../graphics/stm_eqn05647.gif)因此解被完全定义。平面应力
 
-![](../graphics/stm_eqn02690.gif)对于平面应力，![](../graphics/stm_eqn02690.gif)由运动学定义，而是由平面应力约束
+![](../graphics/stm_eqn02690.gif)对于平面应力，由运动学定义，而是由平面应力约束
 
 ![](../graphics/stm_eqn05648.gif)
 
-![](../graphics/stm_eqn05649.gif)这个附加方程（或等效地![](../graphics/stm_eqn05649.gif)必须与屈服条件和[公式4.3.2-9](04s03a104.md)一起求解。预测的第三应变分量
+这个附加方程（或等效地![](../graphics/stm_eqn05649.gif)必须与屈服条件和[公式4.3.2-9](04s03a104.md)一起求解。预测的第三应变分量
 
 ![](../graphics/stm_eqn05650.gif)其中
 
@@ -148,7 +146,7 @@
 
 ![](../graphics/stm_eqn05660.gif)
 
-![](../graphics/stm_eqn05628.gif)![](../graphics/stm_eqn05627.gif)![](../graphics/stm_eqn05629.gif)![](../graphics/stm_eqn05661.gif)从![](../graphics/stm_eqn05661.gif)定义（见[公式4.3.2-11](04s03a104.md)），
+从![](../graphics/stm_eqn05661.gif)定义（见[公式4.3.2-11](04s03a104.md)），
 
 ![](../graphics/stm_eqn05662.gif)因此，
 
@@ -181,4 +179,4 @@
 
 ### 参考
 
-![](../graphics/stm_eqn05620.gif)![](../graphics/stm_eqn05619.gif)![](../graphics/stm_eqn05621.gif)![](../graphics/stm_eqn01111.gif)![](../graphics/stm_eqn05617.gif)![](../graphics/stm_eqn05618.gif)"Classical metal plasticity," Section 23.2.1 of the Abaqus Analysis User's Guide
+"Classical metal plasticity," Section 23.2.1 of the Abaqus Analysis User's Guide

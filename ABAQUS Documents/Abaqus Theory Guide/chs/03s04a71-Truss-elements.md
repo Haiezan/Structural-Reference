@@ -2,7 +2,7 @@
 
 ### 3.4.2 桁架单元
 
-![](../graphics/stm_eqn03460.gif)**产品：** Abaqus/Standard  Abaqus/Explicit
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
 桁架单元是假设仅通过轴向拉伸变形的 一维杆或棒。它们在节点处是销接头，因此离散化中仅使用平移位移和每个节点的初始位置向量。当应变较大时，通过假定桁架由不可压缩材料制成来简化公式。
 
@@ -17,7 +17,7 @@ Abaqus中有两个桁架单元：一个2节点线性插值桁架和一个3节点
 
 ![](../graphics/stm_eqn03452.gif)其中![](../graphics/stm_eqn01385.gif)、![](../graphics/stm_eqn01386.gif)和![](../graphics/stm_eqn03453.gif)是变量在节点处的值，![](../graphics/stm_eqn03454.gif)其中*l*测量当前配置中沿桁架轴线的长度：
 
-![](../graphics/stm_eqn03456.gif)![](../graphics/stm_eqn03457.gif)测量原始配置中沿轴线的长度。
+![](../graphics/stm_eqn03455.gif)![](../graphics/stm_eqn03456.gif)![](../graphics/stm_eqn03457.gif)测量原始配置中沿轴线的长度。
 
 对于几何非线性分析，我们使用对数应变度量：
 
@@ -61,4 +61,6 @@ Abaqus中有两个桁架单元：一个2节点线性插值桁架和一个3节点
 
 ### 参考
 
-![](../graphics/stm_eqn03454.gif)![](../graphics/stm_eqn01386.gif)![](../graphics/stm_eqn03453.gif)![](../graphics/stm_eqn03452.gif)![](../graphics/stm_eqn01385.gif)"Abaqus Analysis User's Guide"第29.2.1节"桁架单元"
+### 参考
+
+"Abaqus Analysis User's Guide"第29.2.1节"桁架单元"

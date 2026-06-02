@@ -52,7 +52,7 @@
 
 ![](../graphics/stm_eqn00530.gif)
 
-这个结果对第二Piola-Kirchhoff应力在小应变但任意大旋转情况下的物理解释非常简单：![](../graphics/stm_eqn00522.gif) 的分量是 ![](../graphics/stm_eqn00033.gif) 的旋转轴分量。也就是说，![](../graphics/stm_eqn00522.gif) 的分量是与参考配置中方向相关的应力分量。因此，如果我们使用矩形笛卡尔基系统，![](../graphics/stm_eqn00522.gif) 的 ![](../graphics/stm_eqn00531.gif) 分量 ![](../graphics/stm_eqn00532.gif) 是作用在参考配置中垂直于 *X* 轴的表面上的每单位面积的法向力分量，无论该表面当前方向如何。
+这个结果对第二Piola-Kirchhoff应力在小应变但任意大旋转情况下的物理解释非常简单：![](../graphics/stm_eqn00522.gif) 的分量是 ![](../graphics/stm_eqn00033.gif) 的旋转轴分量。也就是说，![](../graphics/stm_eqn00522.gif) 的分量是与参考配置中方向相关的应力分量。因此，如果我们使用矩形笛卡尔基系统， 的 ![](../graphics/stm_eqn00531.gif) 分量 ![](../graphics/stm_eqn00522.gif)![](../graphics/stm_eqn00532.gif) 是作用在参考配置中垂直于 *X* 轴的表面上的每单位面积的法向力分量，无论该表面当前方向如何。
 
 例如，考虑其轴线最初平行于 *X* 轴的梁。然后，在整个变形过程中，![](../graphics/stm_eqn00532.gif) 将始终是梁中的轴向应力，无论梁旋转或弯曲多少（只要应变保持比1小得多）。因此，对于这种情况，我们可以将 ![](../graphics/stm_eqn00522.gif) 视为"材料"或"共旋转"应力：材料应力和应变是唯一的，在近似阶数上，只要应变保持较小。
 

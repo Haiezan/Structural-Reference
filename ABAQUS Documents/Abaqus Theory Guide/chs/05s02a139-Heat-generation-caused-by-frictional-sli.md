@@ -2,7 +2,7 @@
 
 ### 5.2.5 由摩擦滑动引起的热生成
 
-![](../graphics/stm_eqn07796.gif)![](../graphics/stm_eqn07797.gif)![](../graphics/stm_eqn07816.gif)![](../graphics/stm_eqn07795.gif)![](../graphics/stm_eqn07814.gif)**产品：** Abaqus/Standard  Abaqus/Explicit
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
 ![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn03328.gif)![](../graphics/stm_eqn07791.gif)对于Abaqus/Standard中的耦合温度-位移和耦合热-电-结构分析，用户可以引入一个因子，定义转化为热量的摩擦功分数。生成热量进入第一和第二表面的分数也可以定义。此热生成能力仅用于耦合温度-位移和耦合热-电-结构分析。
 
@@ -58,4 +58,6 @@
 
 ![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn01604.gif)![](../graphics/stm_eqn07822.gif)"Abaqus Analysis User's Guide"第6.7.4节"完全耦合热-电-结构分析"
 
-![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07822.gif)![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07822.gif)![](../graphics/stm_eqn01604.gif)"Abaqus Analysis User's Guide"第37.2.1节"热接触属性"
+![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07822.gif)![](../graphics/stm_eqn07821.gif)![](../graphics/stm_eqn07822.gif)![](../graphics/stm_eqn01604.gif)![](../graphics/stm_eqn07404.gif)![](../graphics/stm_eqn01604.gif)![](../graphics/stm_eqn07823.gif)"Abaqus Analysis User's Guide"第37.2.1节"热接触属性"
+### 参考
+### 参考

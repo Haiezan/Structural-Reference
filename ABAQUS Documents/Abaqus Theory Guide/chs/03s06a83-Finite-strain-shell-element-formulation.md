@@ -2,7 +2,7 @@
 
 ### 3.6.5 有限应变壳单元公式
 
-![](../graphics/stm_eqn04406.gif)![](../graphics/stm_eqn04404.gif)![](../graphics/stm_eqn04405.gif)![](../graphics/stm_eqn04408.gif)![](../graphics/stm_eqn04407.gif)![](../graphics/stm_eqn04242.gif)![](../graphics/stm_eqn00156.gif)![](../graphics/stm_eqn03570.gif)![](../graphics/stm_eqn04240.gif)**产品：** Abaqus/Standard  Abaqus/Explicit
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
 本节描述四边形有限膜应变单元S4R、三角形单元S3R和通过S4R退化获得的S3，以及完全积分的有限膜应变单元S4的公式。
 ### 几何描述
@@ -38,7 +38,7 @@
 
 壳参考表面中点的位置用参数插值函数![](../graphics/stm_eqn04211.gif)通过离散节点位置来描述。函数是![](../graphics/stm_eqn04212.gif)是非正交、非距离测量的参数坐标。因此，对于参考表面位置，一个获得
 
-![](../graphics/stm_eqn04213.gif)相对于![](../graphics/stm_eqn04214.gif)的位置梯度为
+![](../graphics/stm_eqn01209.gif)![](../graphics/stm_eqn04213.gif)相对于![](../graphics/stm_eqn04214.gif)的位置梯度为
 
 ![](../graphics/stm_eqn04215.gif)注意大写罗马上标（如*I*）表示单元的节点，重复上标意味着对单元所有节点求和。
 
@@ -54,11 +54,11 @@
 
 ![](../graphics/stm_eqn04221.gif)获得。由于原始参考表面法线梯度是通过对正交距离测量坐标求导获得的，我们将称![](../graphics/stm_eqn04222.gif)利用这个表达式，我们可以在当前状态中定义梯度算子：
 
-![](../graphics/stm_eqn04224.gif)当前状态中的梯度算子也可以定义为相对于沿基向量![](../graphics/stm_eqn01706.gif)因此，
+![](../graphics/stm_eqn04223.gif)![](../graphics/stm_eqn04224.gif)当前状态中的梯度算子也可以定义为相对于沿基向量![](../graphics/stm_eqn01359.gif)![](../graphics/stm_eqn01706.gif)因此，
 
-![](../graphics/stm_eqn04226.gif)因此，可以为![](../graphics/stm_eqn04227.gif)因为
+![](../graphics/stm_eqn04225.gif)![](../graphics/stm_eqn04226.gif)因此，可以为![](../graphics/stm_eqn04227.gif)因为
 
-![](../graphics/stm_eqn04229.gif)在增量分析中，我们也可以定义增量变形张量
+![](../graphics/stm_eqn04228.gif)![](../graphics/stm_eqn04229.gif)在增量分析中，我们也可以定义增量变形张量
 
 ![](../graphics/stm_eqn04230.gif)及其逆
 
@@ -71,7 +71,7 @@
 
 为了获得更新的![](../graphics/stm_eqn01706.gif)（遵循Abaqus约定）。随后，我们计算
 
-![](../graphics/stm_eqn04234.gif)然后我们对向量应用面内旋转![](../graphics/stm_eqn04235.gif)：![](../graphics/stm_eqn04233.gif)：
+![](../graphics/stm_eqn04233.gif)![](../graphics/stm_eqn04234.gif)然后我们对向量应用面内旋转![](../graphics/stm_eqn04235.gif)：![](../graphics/stm_eqn04233.gif)：
 
 ![](../graphics/stm_eqn04236.gif)
 
@@ -84,7 +84,7 @@
 ![](../graphics/stm_eqn04241.gif)
 ### 曲率变化
 
-![](../graphics/stm_eqn04211.gif)![](../graphics/stm_eqn03595.gif)我们假定节点自旋将用插值函数![](../graphics/stm_eqn04211.gif)有限旋转向量可以分解为旋转幅度![](../graphics/stm_eqn03570.gif)和旋转轴![](../graphics/stm_eqn00156.gif)
+![](../graphics/stm_eqn04211.gif)![](../graphics/stm_eqn03595.gif)我们假定节点自旋将用插值函数![](../graphics/stm_eqn04242.gif)有限旋转向量可以分解为旋转幅度![](../graphics/stm_eqn03570.gif)和旋转轴![](../graphics/stm_eqn00156.gif)
 
 ![](../graphics/stm_eqn04243.gif)为了旋转壳法线，我们使用四元数代数。增量节点旋转由旋转四元数![](../graphics/stm_eqn03564.gif)表示，定义为
 
@@ -98,23 +98,23 @@
 
 ![](../graphics/stm_eqn04249.gif)像![](../graphics/stm_eqn03564.gif)）。因此，我们可以写成
 
-![](../graphics/stm_eqn04250.gif)其中我们形式上定义了增量梯度更新向量
+![](../graphics/stm_eqn03565.gif)![](../graphics/stm_eqn04250.gif)其中我们形式上定义了增量梯度更新向量
 
-![](../graphics/stm_eqn04251.gif)它必须用增量旋转梯度表示。从增量四元数![](../graphics/stm_eqn03564.gif)因此，对于![](../graphics/stm_eqn04253.gif)，再次使用增量四元数定义
+![](../graphics/stm_eqn04251.gif)它必须用增量旋转梯度表示。从增量四元数![](../graphics/stm_eqn03564.gif)因此，对于![](../graphics/stm_eqn04252.gif)![](../graphics/stm_eqn04253.gif)，再次使用增量四元数定义
 
 ![](../graphics/stm_eqn04254.gif)从![](../graphics/stm_eqn03570.gif)定义得出
 
-![](../graphics/stm_eqn04255.gif)代入![](../graphics/stm_eqn04253.gif)注意当![](../graphics/stm_eqn03575.gif)时，![](../graphics/stm_eqn04257.gif)。
+![](../graphics/stm_eqn00156.gif)![](../graphics/stm_eqn04255.gif)代入![](../graphics/stm_eqn04253.gif)注意当![](../graphics/stm_eqn04256.gif)时，![](../graphics/stm_eqn04257.gif)。
 
-对于更新壳法线的梯度![](../graphics/stm_eqn04258.gif)，我们获得
+对于更新壳法线的梯度![](../graphics/stm_eqn03575.gif)![](../graphics/stm_eqn04258.gif)，我们获得
 
 ![](../graphics/stm_eqn04259.gif)：
 
-![](../graphics/stm_eqn04260.gif)注意![](../graphics/stm_eqn04258.gif)的*变化*独立于![](../graphics/stm_eqn04261.gif)。
+![](../graphics/stm_eqn03511.gif)![](../graphics/stm_eqn04260.gif)注意![](../graphics/stm_eqn04258.gif)的*变化*独立于![](../graphics/stm_eqn04261.gif)。
 
 ![](../graphics/stm_eqn04258.gif)的计算涉及相对于参考配置求导。使用参考表面曲率张量
 
-![](../graphics/stm_eqn04262.gif)![](../graphics/stm_eqn04263.gif)![](../graphics/stm_eqn04263.gif)使得更新方程可以写成
+![](../graphics/stm_eqn04262.gif)![](../graphics/stm_eqn04263.gif)使得更新方程可以写成
 
 ![](../graphics/stm_eqn04264.gif)这个表达式使得仅通过在最新更新状态中的梯度就能计算参考表面曲率的更新。
 ### 变形梯度
@@ -134,7 +134,7 @@
 
 膜应变增量从增量拉伸张量![](../graphics/stm_eqn00572.gif)得出，其分量从增量变形梯度![](../graphics/stm_eqn04271.gif)得出。
 
-设![](../graphics/stm_eqn04273.gif)和![](../graphics/stm_eqn04274.gif)分别是增量开始和结束时的变形梯度。按定义![](../graphics/stm_eqn04275.gif)。增量变形梯度得出为
+设![](../graphics/stm_eqn04272.gif)![](../graphics/stm_eqn04273.gif)和![](../graphics/stm_eqn04274.gif)分别是增量开始和结束时的变形梯度。按定义![](../graphics/stm_eqn04275.gif)。增量变形梯度得出为
 
 ![](../graphics/stm_eqn04276.gif)由于![](../graphics/stm_eqn04277.gif)是正交矩阵的分量，增量拉伸张量的平方可以通过以下获得
 
@@ -147,9 +147,9 @@
 ![](../graphics/stm_eqn04281.gif)
 ### 曲率增量
 
-![](../graphics/stm_eqn04282.gif)遵循Koiter-Sanders壳理论，并补偿基向量相对于材料的旋转，我们将物理曲率增量![](../graphics/stm_eqn04282.gif)忽略相对于![](../graphics/stm_eqn04285.gif)的![](../graphics/stm_eqn04284.gif)阶项，这个表达式可以重写为
+![](../graphics/stm_eqn04282.gif)遵循Koiter-Sanders壳理论，并补偿基向量相对于材料的旋转，我们将物理曲率增量![](../graphics/stm_eqn04283.gif)的![](../graphics/stm_eqn04284.gif)阶项，这个表达式可以重写为
 
-![](../graphics/stm_eqn04286.gif)其中使用了曲率更新公式。注意增量开始时的曲率，![](../graphics/stm_eqn04287.gif)，不出现在这个方程中。因此，不需要计算初始曲率![](../graphics/stm_eqn04288.gif)，我们可以假定![](../graphics/stm_eqn04289.gif)。因此，变形梯度也可以简化为
+![](../graphics/stm_eqn04285.gif)![](../graphics/stm_eqn04286.gif)其中使用了曲率更新公式。注意增量开始时的曲率，![](../graphics/stm_eqn04287.gif)，不出现在这个方程中。因此，不需要计算初始曲率![](../graphics/stm_eqn04288.gif)，我们可以假定![](../graphics/stm_eqn04289.gif)。因此，变形梯度也可以简化为
 
 ![](../graphics/stm_eqn04290.gif)对于壳厚度一点处的材料应变增量，Koiter-Sanders理论因此给出
 
@@ -172,7 +172,7 @@
 
 通过在增量曲率上求变分来获得曲率的变分，这给出
 
-![](../graphics/stm_eqn04301.gif)我们忽略![](../graphics/stm_eqn04282.gif)阶的项，也忽略![](../graphics/stm_eqn04302.gif)我们在当前状态（增量结束时）相对于![](../graphics/stm_eqn04304.gif)求值。因此，对于求值，我们可以假定![](../graphics/stm_eqn04305.gif)。此外，我们忽略![](../graphics/stm_eqn04306.gif)阶的项，因为它们与![](../graphics/stm_eqn04282.gif)成正比。因此，我们获得
+![](../graphics/stm_eqn04301.gif)我们忽略![](../graphics/stm_eqn04282.gif)阶的项，也忽略![](../graphics/stm_eqn04302.gif)我们在当前状态（增量结束时）相对于![](../graphics/stm_eqn04303.gif)![](../graphics/stm_eqn04304.gif)求值。因此，对于求值，我们可以假定![](../graphics/stm_eqn04305.gif)。此外，我们忽略![](../graphics/stm_eqn04306.gif)阶的项，因为它们与![](../graphics/stm_eqn04282.gif)成正比。因此，我们获得
 
 ![](../graphics/stm_eqn04307.gif)代入![](../graphics/stm_eqn04308.gif)的表达式给出
 
@@ -211,9 +211,9 @@
 
 我们需要计算曲率的二阶变分以从曲率计算初始应力贡献：
 
-![](../graphics/stm_eqn04332.gif)为了简化计算，我们依靠曲率的内在定义，并用相对于等参坐标的导数表示曲率。因此，
+![](../graphics/stm_eqn04331.gif)![](../graphics/stm_eqn04332.gif)为了简化计算，我们依靠曲率的内在定义，并用相对于等参坐标的导数表示曲率。因此，
 
-![](../graphics/stm_eqn04333.gif)是以正交坐标系（![](../graphics/stm_eqn04335.gif)中表示的分量，通过![](../graphics/stm_eqn04336.gif)变换。
+![](../graphics/stm_eqn04333.gif)是以正交坐标系（![](../graphics/stm_eqn04334.gif)![](../graphics/stm_eqn04335.gif)中表示的分量，通过![](../graphics/stm_eqn04336.gif)变换。
 
 用相对于等参坐标的导数表示为![](../graphics/stm_eqn04337.gif)，曲率的二阶变分为
 
@@ -224,7 +224,7 @@
 
 已经提出了几种插值方案来避免剪切锁定，这通常是当板或壳的厚度趋于零时出现的。这里我们使用基于Hu-Washizu原理的假设应变方法。这个方案源于[MacNeal（1978）](07s01a01-References.md)，随后在[Hughes和Tezduyar（1981）](07s01a01-References.md)和[MacNeal（1982）](07s01a01-References.md)中扩展和重新公式化，并在[Bathe和Dvorkin（1984）](07s01a01-References.md)中重新审视。非线性理论的计算方面在[Simo、Fox和Rifai（1989）](07s01a01-References.md)中用于完全积分的四边形壳单元。对于可同时用于隐式和显式积分的缩减积分四边形和三角形壳单元，这种假设应变方法需要修改。我们在下面总结用于完全积分单元的假设应变方法，然后是Abaqus中使用的单点积分加稳定化所需的修改。假设应变场的构造
 
-![](../graphics/stm_eqn04499.gif)![](../graphics/stm_eqn04495.gif)![](../graphics/stm_eqn04498.gif)![](../graphics/stm_eqn04500.gif)![](../graphics/stm_eqn04497.gif)![](../graphics/stm_eqn04496.gif)![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn03564.gif)![](../graphics/stm_eqn04243.gif)![](../graphics/stm_eqn04343.gif)考虑一个典型的等参有限单元，如[图3.6.5-1](03s06a83-Finite-strain-shell-element-formulation.md)所示，并用![](../graphics/stm_eqn04343.gif)![](../graphics/stm_eqn04214.gif)![](../graphics/stm_eqn04218.gif)![](../graphics/stm_eqn04351.gif)
+![](../graphics/stm_eqn04343.gif)考虑一个典型的等参有限单元，如[图3.6.5-1](03s06a83-Finite-strain-shell-element-formulation.md)所示，并用![](../graphics/stmstrain-notation.png)
 
 使用以下假设横向剪切应变场：
 
@@ -250,7 +250,7 @@
 
 ![](../graphics/stm_eqn04355.gif)本构关系
 
-![](../graphics/stm_eqn04334.gif)![](../graphics/stm_eqn04333.gif)![](../graphics/stm_eqn04336.gif)![](../graphics/stm_eqn04335.gif)![](../graphics/stm_eqn04237.gif)![](../graphics/stm_eqn04238.gif)对于Kirchhoff曲线坐标分量 resultant横向剪切力的St. Venant-Kirchhoff本构模型写成横向剪切应变的形式
+对于Kirchhoff曲线坐标分量 resultant横向剪切力的St. Venant-Kirchhoff本构模型写成横向剪切应变的形式
 
 ![](../graphics/stm_eqn04356.gif)其中![](../graphics/stm_eqn04357.gif)是曲线坐标中的横向剪切刚度。对于单个各向同性层，
 
@@ -258,7 +258,7 @@
 
 ![](../graphics/stm_eqn04362.gif)定义。壳正交坐标系![](../graphics/stm_eqn04363.gif)中的柯西或真实横向剪切力分量用坐标变换![](../graphics/stm_eqn04364.gif)计算为
 
-![](../graphics/stm_eqn04365.gif)![](../graphics/stm_eqn04365.gif)然后初始应力贡献写成
+![](../graphics/stm_eqn04365.gif)![](../graphics/stm_eqn04366.gif)然后初始应力贡献写成
 
 ![](../graphics/stm_eqn04367.gif)其中![](../graphics/stm_eqn04368.gif)是当前配置中的面积度量，![](../graphics/stm_eqn04369.gif)是初始应力的（对称）横向剪切贡献，定义如下。让![](../graphics/stm_eqn00064.gif)是![](../graphics/stm_eqn04370.gif)单位矩阵；然后定义对称矩阵
 
@@ -278,7 +278,7 @@
 
 ![](../graphics/stm_eqn04379.gif)单元畸变系数![](../graphics/stm_eqn04380.gif)和![](../graphics/stm_eqn04381.gif)是由单元参考几何确定的常数。对于具有恒定Jacobian变换的几何，![](../graphics/stm_eqn04382.gif)。沙漏应变向量![](../graphics/stm_eqn04383.gif)的分量定义为边应变的形式
 
-![](../graphics/stm_eqn04384.gif)系数![](../graphics/stm_eqn04385.gif)、![](../graphics/stm_eqn04386.gif)、![](../graphics/stm_eqn04387.gif)和![](../graphics/stm_eqn04388.gif)是由单元参考几何确定的常数。对于矩形单元，![](../graphics/stm_eqn04389.gif)、![](../graphics/stm_eqn04390.gif)、![](../graphics/stm_eqn04391.gif)、![](../graphics/stm_eqn04392.gif)和![](../graphics/stm_eqn04393.gif)可以被识别为与旋转"蝴蝶"变形模式相关的应变。我们称![](../graphics/stm_eqn04394.gif)中添加crop circle应变![](../graphics/stm_eqn04394.gif)有两个重要后果。首先，它使横向剪切响应对三角形单元的节点连接性不敏感。也就是说，当四边形单元的一边塌陷形成三角形时，单元的响应与节点编号的选择无关。其次，对于显式动力学分析，系数![](../graphics/stm_eqn04380.gif)和![](../graphics/stm_eqn04381.gif)被选择为使横向剪切响应均匀部分相关的最高频率最小化。
+![](../graphics/stm_eqn04384.gif)系数![](../graphics/stm_eqn04385.gif)、![](../graphics/stm_eqn04386.gif)、![](../graphics/stm_eqn04387.gif)和![](../graphics/stm_eqn04388.gif)是由单元参考几何确定的常数。对于矩形单元，![](../graphics/stm_eqn04389.gif)、![](../graphics/stm_eqn04390.gif)、![](../graphics/stm_eqn04391.gif)、![](../graphics/stm_eqn04392.gif)和![](../graphics/stm_eqn04393.gif)可以被识别为与旋转"蝴蝶"变形模式相关的应变。我们称![](../graphics/stm_eqn04394.gif)中添加crop circle应变![](../graphics/stm_eqn04394.gif)有两个重要后果。首先，它使横向剪切响应对三角形单元的节点连接性不敏感。也就是说，当四边形单元的一边塌陷形成三角形时，单元的响应与节点编号的选择无关。其次，对于显式动力学分析，系数![](../graphics/stm_eqn04395.gif)![](../graphics/stm_eqn04380.gif)和![](../graphics/stm_eqn04381.gif)被选择为使横向剪切响应均匀部分相关的最高频率最小化。
 
 为了说明crop circle和蝴蝶横向剪切模式，考虑一个方形、初始平坦的单元。此外，考虑板理论运动学；即，节点处的两个旋转和一个垂直偏转。crop circle模式在节点处有零垂直偏转，节点旋转向量模式如图[图3.6.5-2](03s06a83-Finite-strain-shell-element-formulation.md)所示。
 
@@ -324,7 +324,7 @@
 
 ![](../graphics/stm_eqn04419.gif)还定义斜对称矩阵
 
-![](../graphics/stm_eqn04488.gif)![](../graphics/stm_eqn04490.gif)![](../graphics/stm_eqn04420.gif)然后![](../graphics/stm_eqn04418.gif)注意一旦在![](../graphics/stm_eqn04418.gif)中定义了矩阵条目，![](../graphics/stm_eqn04418.gif)就像从![](../graphics/stm_eqn04369.gif)一样填充。
+![](../graphics/stm_eqn04420.gif)然后![](../graphics/stm_eqn04418.gif)注意一旦在![](../graphics/stm_eqn04421.gif)![](../graphics/stm_eqn04418.gif)中定义了矩阵条目，![](../graphics/stm_eqn04418.gif)就像从![](../graphics/stm_eqn04369.gif)一样填充。
 
 来自均匀部分的初始应力贡献包括两项，一项来自假设应变公式（在![](../graphics/stm_eqn04422.gif)处求值），另一项来自crop circle模式添加。这两项可以写成
 
@@ -374,7 +374,7 @@
 
 ![](../graphics/stm_eqn04450.gif)是斜对称的。观察![](../graphics/stm_eqn04200.gif)的混合导数可以用沙漏应变张量表示为
 
-![](../graphics/stm_eqn04451.gif)在未变形配置中，我们假定![](../graphics/stm_eqn04452.gif)。![](../graphics/stm_eqn04453.gif)的随后值增量获得。从![](../graphics/stm_eqn04454.gif)在这个表达式中，我们还忽略包含相对于![](../graphics/stm_eqn04447.gif)和![](../graphics/stm_eqn04448.gif)导数乘积的所有项。因此，上述表达式简化为
+![](../graphics/stm_eqn04451.gif)在未变形配置中，我们假定![](../graphics/stm_eqn04452.gif)。![](../graphics/stm_eqn04453.gif)的随后值增量获得。从![](../graphics/stm_eqn04454.gif)在这个表达式中，我们还忽略包含相对于![](../graphics/stm_eqn04455.gif)![](../graphics/stm_eqn04447.gif)和![](../graphics/stm_eqn04448.gif)导数乘积的所有项。因此，上述表达式简化为
 
 ![](../graphics/stm_eqn04456.gif)右侧的第二项可以写成形式
 
@@ -382,7 +382,7 @@
 
 ![](../graphics/stm_eqn04458.gif)像![](../graphics/stm_eqn03564.gif)）；因此，我们可以写成
 
-![](../graphics/stm_eqn04459.gif)其中我们形式上定义了增量沙漏更新向量
+![](../graphics/stm_eqn03565.gif)![](../graphics/stm_eqn04459.gif)其中我们形式上定义了增量沙漏更新向量
 
 ![](../graphics/stm_eqn04460.gif)它必须用增量旋转沙漏模式表示。从增量四元数![](../graphics/stm_eqn03564.gif)定义得出，同时忽略![](../graphics/stm_eqn04447.gif)和![](../graphics/stm_eqn04448.gif)导数的乘积：
 
@@ -392,9 +392,9 @@
 
 ![](../graphics/stm_eqn04464.gif)代入![](../graphics/stm_eqn04462.gif)的表达式并经过一些代数运算后获得
 
-![](../graphics/stm_eqn04465.gif)注意当![](../graphics/stm_eqn03575.gif)时，![](../graphics/stm_eqn04466.gif)。对于更新的沙漏张量，一个容易获得
+![](../graphics/stm_eqn04465.gif)注意当时，![](../graphics/stm_eqn04466.gif)。对于更新的沙漏张量，一个容易获得
 
-![](../graphics/stm_eqn04467.gif)这个表达式通过引入沙漏向量
+![](../graphics/stm_eqn03575.gif)![](../graphics/stm_eqn04467.gif)这个表达式通过引入沙漏向量
 
 ![](../graphics/stm_eqn04468.gif)进一步简化，这给出更新公式
 
@@ -410,7 +410,7 @@
 
 为了在显式动力学分析中的数值效率，期望稳定时间增量由结构的膜响应决定。由于这个原因，基于单元参考几何的旋转惯性缩放包含在Abaqus/Explicit中。
 
-在显式动力学分析中，稳定时间增量与单元的最高频率成正比。因此，我们必须确保横向剪切响应的最高频率不超过膜响应的最高频率。对于厚单元（即，厚度相对于单元中特征长度为一阶的单元），膜频率是主要的。选择适当缩放的主要考虑是，当单元的厚度趋于零时，横向剪切频率保持在膜频率以下。回想一下，对于一维弹簧-质量振荡器，自然频率![](../graphics/stm_eqn01091.gif)可以用刚度*K*和质量*M*表示为
+在显式动力学分析中，稳定时间增量与单元的最高频率成正比。因此，我们必须确保横向剪切响应的最高频率不超过膜响应的最高频率。对于厚单元（即，厚度相对于单元中特征长度为一阶的单元），膜频率是主要的。选择适当缩放的主要考虑是，当单元的厚度趋于零时，横向剪切频率保持在膜频率以下。回想一下，对于一维弹簧-质量振荡器，固有频率![](../graphics/stm_eqn01091.gif)可以用刚度*K*和质量*M*表示为
 
 ![](../graphics/stm_eqn04474.gif)对于横向剪切响应，与厚度的立方成正比的旋转惯性，起着系统质量的作用。所有其他量——膜刚度、与膜变形相关的质量、以及横向剪切刚度——都与厚度成正比。因此，当单元的厚度趋于零时，与横向剪切相关的频率趋于无穷大，与厚度成反比，而膜频率保持不变。如果没有缩放，当厚度变小时，稳定时间增量将趋于零。旋转惯性缩放
 
@@ -433,7 +433,7 @@
 
 对于位移自由度，体积粘度引入与体积应变相关的阻尼。线性体积粘度或截断频率阻尼用于阻尼导致解中不需要的噪声或响应幅度中的伪超调的高频振铃。出于同样原因，在壳中，我们需要用作用于平均曲率应变率的线性体积粘度阻尼旋转自由度中的高频振铃。这种阻尼产生体积粘度"压力矩"，*m*，它线性于平均曲率应变率：
 
-![](../graphics/stm_eqn04486.gif)其中*b*是阻尼系数（默认= 0.06），![](../graphics/stm_eqn01077.gif)是原始厚度，![](../graphics/stm_eqn00593.gif)是质量密度，![](../graphics/stm_eqn01078.gif)是当前膨胀波速，*L*是用于旋转惯性缩放的特征长度，![](../graphics/stm_eqn01079.gif)平均曲率增量两倍。膨胀波速用有效的Lam常数表示为
+![](../graphics/stm_eqn04485.gif)![](../graphics/stm_eqn04486.gif)其中*b*是阻尼系数（默认= 0.06），![](../graphics/stm_eqn01077.gif)是原始厚度，![](../graphics/stm_eqn00593.gif)是质量密度，![](../graphics/stm_eqn01078.gif)是当前膨胀波速，*L*是用于旋转惯性缩放的特征长度，![](../graphics/stm_eqn01079.gif)平均曲率增量两倍。膨胀波速用有效的Lam常数表示为
 
 ![](../graphics/stm_eqn04487.gif)结果压力矩![](../graphics/stm_eqn01081.gif)，其中*h*是当前厚度，被加到矩直接分量上。
 ### 完全积分的有限膜应变壳公式
@@ -444,9 +444,7 @@
 
 用于S4的膜公式不依赖于S4是壳单元的事实。因此，下面的讨论从膜响应受平面应力状态三维体平衡支配的角度详细阐述公式。
 
-![](../graphics/stm_eqn04488.gif)![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04489.gif)考虑变形率张量![](../graphics/stm_eqn00424.gif)*增强*![](../graphics/stm_eqn04488.gif)我们引入增强的变形率张量，![](../graphics/stm_eqn04489.gif)为
-
-![](../graphics/stm_eqn04488.gif)![](../graphics/stm_eqn04490.gif)其中![](../graphics/stm_eqn04488.gif)后定义。
+![](../graphics/stm_eqn04488.gif)![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04489.gif)考虑变形率张量![](../graphics/stm_eqn04490.gif)其中![](../graphics/stm_eqn04488.gif)后定义。
 
 还引入变形率的允许变分
 
@@ -454,19 +452,19 @@
 
 ![](../graphics/stm_eqn04492.gif)
 
-![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04493.gif)我们现在引入对增强![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04493.gif)约束：
+![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04493.gif)我们现在引入对增强约束：
 
 ![](../graphics/stm_eqn04494.gif)以便修改的虚功声明可以写成形式
 
-![](../graphics/stm_eqn04295.gif)其中![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn04496.gif)上的给定牵引，和![](../graphics/stm_eqn04497.gif)![](../graphics/stm_eqn04498.gif)。![](../graphics/stm_eqn04499.gif)任意应力场，本构方程![](../graphics/stm_eqn04500.gif)（![](../graphics/stm_eqn04489.gif)逐点强制执行。
+![](../graphics/stm_eqn04495.gif)其中![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn04496.gif)上的给定牵引，和![](../graphics/stm_eqn04497.gif)![](../graphics/stm_eqn04498.gif)。![](../graphics/stm_eqn04499.gif)任意应力场，本构方程![](../graphics/stm_eqn04500.gif)（![](../graphics/stm_eqn04489.gif)逐点强制执行。
 
-![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04501.gif)![](../graphics/stm_eqn00503.gif)![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn04502.gif)![](../graphics/stm_eqn04499.gif)在修改的虚功声明中，所有运动量和相应变分（![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04501.gif)![](../graphics/stm_eqn00503.gif)都是![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn04502.gif)参考配置的已知函数。公式有效性的基本要求是修改的虚功声明导致适当的平衡方程。如果![](../graphics/stm_eqn04499.gif)任意的，约束方程可以重写为
+![](../graphics/stm_eqn04489.gif)![](../graphics/stm_eqn00424.gif)![](../graphics/stm_eqn04501.gif)![](../graphics/stm_eqn00503.gif)![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn04502.gif)![](../graphics/stm_eqn04499.gif)在修改的虚功声明中，所有运动量和相应变分（任意的，约束方程可以重写为
 
 ![](../graphics/stm_eqn04503.gif)将这两个关系代入修改的虚功方程给出
 
 ![](../graphics/stm_eqn04504.gif)其中我们使用了本构方程![](../graphics/stm_eqn04500.gif) ![](../graphics/stm_eqn04505.gif)。我们认识到这个变分声明是通常的虚功方程，直接应用散度定理导致标准平衡方程。
 
-![](../graphics/stm_eqn04499.gif)![](../graphics/stm_eqn04506.gif)在实际实现中，我们选择仅对分段恒定应力场![](../graphics/stm_eqn04499.gif)足约束。因此，在单元域![](../graphics/stm_eqn04506.gif)我们要求
+在实际实现中，我们选择仅对分段恒定应力场![](../graphics/stm_eqn04499.gif)足约束。因此，在单元域![](../graphics/stm_eqn04506.gif)我们要求
 
 ![](../graphics/stm_eqn04507.gif)选择增强![](../graphics/stm_eqn04488.gif)![](../graphics/stm_eqn04508.gif)得它们消除面内弯曲的剪切锁定。此外，直接应变场被增强以近似由弯曲中的泊松效应引起的应变。分片测试
 
@@ -475,6 +473,8 @@
 
 ### 参考
 
+### 参考
+
 "Abaqus Analysis User's Guide"第29.6.1节"壳单元：概述"
 
-![](../graphics/stm_eqn04418.gif)![](../graphics/stm_eqn04421.gif)![](../graphics/stm_eqn04369.gif)![](../graphics/stm_eqn04330.gif)![](../graphics/stm_eqn04329.gif)![](../graphics/stm_eqn04229.gif)"Abaqus Analysis User's Guide"第29.6.4节"壳截面行为"
+"Abaqus Analysis User's Guide"第29.6.4节"壳截面行为"

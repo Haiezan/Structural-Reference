@@ -2,13 +2,7 @@
 
 ### 3.6.2 轴对称壳单元
 
-![](../graphics/stm_eqn04059.gif)**产品：** Abaqus/Standard  Abaqus/Explicit
-
-这两个壳单元是上一节描述的壳的轴对称版本，使用[Hughes等人（1977）](07s01a01-References.md)的"缩减积分惩罚"方法。虽然这些是壳单元，它们也是二维梁单元B21和B22的简单扩展。扩展包括周向项。因此，这些单元是一维的，在径向平面中变形。该平面中的笛卡尔坐标是*r*（半径）和*z*（轴向位置）。沿这种平面中壳参考表面测量的距离由材料坐标*S*表示（见[图3.6.2-1](03s06a80-Axisymmetric-shell-elements.md)）。
-
-图3.6.2-1 轴对称壳。
-
-![](../graphics/stm_eqn04051.gif)![](../graphics/stm_eqn04052.gif)![](../graphics/stmaxishellfig-nls.png)
+![](../graphics/stmaxishellfig-nls.png)
 ### 插值和积分
 
 2节点单元（SAX1）使用线性插值函数的单点积分来分布载荷。质量矩阵是集中的。3节点单元（SAX2）使用二次插值函数的二点积分来计算刚度，三次插值函数的三个点来分布载荷。SAX2使用一致质量矩阵。所有积分使用Gauss方法。沿厚度的积分遵循Abaqus中使用的常规数值或精确方案。
@@ -62,13 +56,13 @@
 
 ![](../graphics/stm_eqn04034.gif)是参考曲面曲率张量（二次基本形式）的近似。如果
 
-![](../graphics/stm_eqn04036.gif)![](../graphics/stm_eqn04035.gif)将正是通常定义的曲率张量。只有对于这些单元，由于允许小的横向剪切，这近似为真。
+![](../graphics/stm_eqn04035.gif)将正是通常定义的曲率张量。只有对于这些单元，由于允许小的横向剪切，这近似为真。
 
 在增量开始时，同样的量为
 
-![](../graphics/stm_eqn04037.gif)
+![](../graphics/stm_eqn04036.gif)![](../graphics/stm_eqn04037.gif)
 
-承受轴对称变形的轴对称壳有一个极大的简化，即主方向不旋转。因此，通过假定![](../graphics/stm_eqn04038.gif)和![](../graphics/stm_eqn04039.gif) orient in these principal directions（![](../graphics/stm_eqn04040.gif)是经向的，![](../graphics/stm_eqn03939.gif)是周向的），这些方向内发生的拉伸比在增量中写为
+承受轴对称变形的轴对称壳有一个极大的简化，即主方向不旋转。因此，通过假定![](../graphics/stm_eqn04038.gif)和![](../graphics/stm_eqn04039.gif) orient in these principal directions（![](../graphics/stm_eqn04040.gif)是经向的，![](../graphics/stm_eqn04039.gif)是周向的），这些方向内发生的拉伸比在增量中写为
 
 ![](../graphics/stm_eqn04041.gif)其中从这点往后，对于指标![](../graphics/stm_eqn00904.gif)和![](../graphics/stm_eqn01219.gif)省略了求和约定。使用[公式3.6.2-3](03s06a80-Axisymmetric-shell-elements.md)和[公式3.6.2-4](03s06a80-Axisymmetric-shell-elements.md)并截断到![](../graphics/stm_eqn02098.gif)的一阶给出
 
@@ -96,7 +90,7 @@
 
 ![](../graphics/stm_eqn04056.gif)其中![](../graphics/stm_eqn04057.gif)的定义
 
-![](../graphics/stm_eqn04059.gif)横向剪切应变写成
+![](../graphics/stm_eqn04058.gif)![](../graphics/stm_eqn04059.gif)横向剪切应变写成
 
 ![](../graphics/stm_eqn04060.gif)使用这个简单形式是因为这些应变总是假定为很小。这完成了增量应变定义的陈述，因此连同表示平衡的虚功声明——一种理论是可用的。然而，有必要满足理论在适当运动下提供常应变这个最低要求。如果理论要适合许多实际案例，特别是涉及热加载的案例，这是必不可少的。有趣的是，[Rodal和Witmer（1979）](07s01a01-References.md)中的理论似乎违反了这个要求。为了实现这一点，定义了修正的增量曲率变化度量
 
@@ -120,7 +114,7 @@
 
 ![](../graphics/stm_eqn04070.gif)并假定
 
-![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn01219.gif)![](../graphics/stm_eqn04041.gif)![](../graphics/stm_eqn00904.gif)![](../graphics/stm_eqn04071.gif)满足要求。[公式3.6.2-9](03s06a80-Axisymmetric-shell-elements.md)可以通过代入[公式3.6.2-7](03s06a80-Axisymmetric-shell-elements.md)中![](../graphics/stm_eqn04072.gif)的定义简化为
+![](../graphics/stm_eqn04071.gif)满足要求。[公式3.6.2-9](03s06a80-Axisymmetric-shell-elements.md)可以通过代入[公式3.6.2-7](03s06a80-Axisymmetric-shell-elements.md)中![](../graphics/stm_eqn04072.gif)的定义简化为
 
 ![](../graphics/stm_eqn04073.gif)因此
 
@@ -140,7 +134,7 @@
 
 ![](../graphics/stm_eqn04078.gif)
 
-![](../graphics/stm_eqn04031.gif)是[公式3.6.2-10](03s06a80-Axisymmetric-shell-elements.md)中应变增量的变分；
+是[公式3.6.2-10](03s06a80-Axisymmetric-shell-elements.md)中应变增量的变分；
 
 ![](../graphics/stm_eqn04079.gif)
 
@@ -165,4 +159,4 @@
 
 ### 参考
 
-![](../graphics/stm_eqn04045.gif)![](../graphics/stm_eqn04044.gif)"Abaqus Analysis User's Guide"第29.6.9节"轴对称壳单元库"
+"Abaqus Analysis User's Guide"第29.6.9节"轴对称壳单元库"

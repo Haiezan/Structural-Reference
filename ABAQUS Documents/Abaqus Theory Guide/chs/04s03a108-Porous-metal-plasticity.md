@@ -13,7 +13,7 @@
 
 ![](../graphics/stm_eqn05782.gif)是宏观Cauchy应力张量的偏量部分；
 
-![](../graphics/stm_eqn05783.gif)是Mises应力；
+![](../graphics/stm_eqn00033.gif)![](../graphics/stm_eqn05783.gif)是Mises应力；
 
 ![](../graphics/stm_eqn05784.gif)是静水压力；*f*是材料中孔洞的体积分数；![](../graphics/stm_eqn05785.gif)是基体材料在完全致密状态下的屈服应力，作为基体中等效塑性应变![](../graphics/stm_eqn05786.gif)的函数。[Tvergaard（1981）](07s01a01-References.md)引入了常数![](../graphics/stm_eqn05787.gif)、![](../graphics/stm_eqn05788.gif)和![](../graphics/stm_eqn05789.gif)（作为孔体积分数和压力项的系数），以使Gurson模型的预测与平面应变拉伸场中有序孔洞材料的数值研究相一致；通过设置![](../graphics/stm_eqn05790.gif)可以恢复原始Gurson模型。
 
@@ -49,9 +49,9 @@
 
 ![](../graphics/stm_eqn05803.gif)孔洞仅在拉伸中形核；如果应力状态是压缩的，Abaqus将不考虑材料点处的形核项。
 
-[图4.3.6-3](04s03a108.md)展示了对于不同值的参数![](../graphics/stm_eqn05801.gif)，假定为正态分布的形核函数![](../graphics/stm_eqn05805.gif)。[图4.3.6-4](04s03a108.md)展示了对于不同值的![](../graphics/stm_eqn05802.gif)，多孔材料单轴拉伸试验中的软化程度。
+[图4.3.6-3](04s03a108.md)展示了对于不同值的参数![](../graphics/stm_eqn05804.gif)![](../graphics/stm_eqn05801.gif)，假定为正态分布的形核函数。[图4.3.6-4](04s03a108.md)展示了对于不同值的![](../graphics/stm_eqn05802.gif)，多孔材料单轴拉伸试验中的软化程度。
 
-图4.3.6-3 形核函数![](../graphics/stm_eqn05805.gif)。
+图4.3.6-3 形核函数。
 
 ![](../graphics/stm_eqn05805.gif)![](../graphics/cpormetplas-nucleation-nls.png)
 
@@ -110,4 +110,4 @@
 
 ### 参考
 
-![](../graphics/stm_eqn05782.gif)![](../graphics/stm_eqn00033.gif)"Porous metal plasticity,"  Section 23.2.9 of the Abaqus Analysis User's Guide
+"Porous metal plasticity,"  Section 23.2.9 of the Abaqus Analysis User's Guide

@@ -49,9 +49,9 @@
 
 ![](../graphics/stm_eqn03525.gif)然后，我们通过
 
-![](../graphics/stm_eqn03526.gif)相对于![](../graphics/stm_eqn00522.gif)对这些向量进行正交化，随后通过
+相对于![](../graphics/stm_eqn00522.gif)对这些向量进行正交化，随后通过
 
-![](../graphics/stm_eqn03527.gif)相对于彼此进行正交化，其中已假定![](../graphics/stm_eqn03528.gif)和![](../graphics/stm_eqn00522.gif)形成右手系统。这提供了![](../graphics/stm_eqn03529.gif)。
+![](../graphics/stm_eqn03526.gif)![](../graphics/stm_eqn03527.gif)相对于彼此进行正交化，其中已假定![](../graphics/stm_eqn03528.gif)和![](../graphics/stm_eqn00522.gif)形成右手系统。这提供了![](../graphics/stm_eqn03529.gif)。
 
 原始配置中的曲率和扭转直接从![](../graphics/stm_eqn03528.gif)计算为
 
@@ -109,9 +109,9 @@
 
 ![](../graphics/stm_eqn03572.gif)这些结果提供
 
-![](../graphics/stm_eqn03573.gif)我们看到，如果![](../graphics/stm_eqn03575.gif)，则![](../graphics/stm_eqn03574.gif)。
+![](../graphics/stm_eqn03573.gif)我们看到，如果，则![](../graphics/stm_eqn03574.gif)。
 
-对于第二项，我们用增量开始时的曲率和扭转表示![](../graphics/stm_eqn03535.gif)，这给出
+对于第二项，我们用增量开始时的曲率和扭转表示![](../graphics/stm_eqn03575.gif)![](../graphics/stm_eqn03535.gif)，这给出
 
 ![](../graphics/stm_eqn03576.gif)组合这些项，
 
@@ -213,7 +213,7 @@
 
 ![](../graphics/stm_eqn03638.gif)我们在一个共旋系统中计算![](../graphics/stm_eqn00319.gif)的分量，近似为![](../graphics/stm_eqn03639.gif)。这提供
 
-![](../graphics/stm_eqn03640.gif)我们再次忽略![](../graphics/stm_eqn03642.gif)中![](../graphics/stm_eqn03641.gif)阶的所有项，除了涉及![](../graphics/stm_eqn03643.gif)的项。方程然后简化为
+![](../graphics/stm_eqn03640.gif)我们再次忽略中![](../graphics/stm_eqn03641.gif)阶的所有项，除了涉及![](../graphics/stm_eqn03642.gif)![](../graphics/stm_eqn03643.gif)的项。方程然后简化为
 
 ![](../graphics/stm_eqn03644.gif)与传统壳和梁理论一致，我们稍微调整涉及初始曲率![](../graphics/stm_eqn03645.gif)的项——不是用它乘以![](../graphics/stm_eqn00280.gif)，而是用*f*乘它。这样的更改不会显著增加曲率计算中的误差，因为我们无论如何都没有正确地考虑体积积分中的初始曲率。因此，我们为![](../graphics/stm_eqn03646.gif)发现：
 
@@ -298,12 +298,7 @@
 
 ![](../graphics/stm_eqn03701.gif)这将虚功贡献变换为
 
-![](../graphics/stm_eqn03700.gif)观察，总扭矩*T*相对于截面质心是扭转矩和翘曲矩之和：
-
-![](../graphics/stm_eqn03701.gif)
-![](../graphics/stm_eqn03702.gif)### 虚功的变化率
-
-![](../graphics/stm_eqn03703.gif)为了获得虚功的变化率，我们首先将虚功方程中的积分变换到原始体积，使得
+为了获得虚功的变化率，我们首先将虚功方程中的积分变换到原始体积，使得
 
 ![](../graphics/stm_eqn03702.gif)相对于原始状态的应变变分为
 
@@ -348,13 +343,11 @@
 
 ![](../graphics/stm_eqn03730.gif)在Abaqus中，我们忽略个别材料点上横向剪切引起的剪切应力的影响。因此，我们将始终假定横向剪切中的截面弹性行为，导致关系
 
-![](../graphics/stm_eqn03727.gif)其中![](../graphics/stm_eqn03728.gif)是横向剪切力，作用在剪切中心，![](../graphics/stm_eqn03729.gif)是用于防止剪切刚度在细长梁中变得过大的"细长补偿因子"。细长补偿因子定义为
 
-![](../graphics/stm_eqn03730.gif)
 
 ![](../graphics/stm_eqn03731.gif)其中![](../graphics/stm_eqn03732.gif)是单元的长度，*I*是惯性矩![](../graphics/stm_eqn03733.gif)和![](../graphics/stm_eqn03734.gif)中的较大者。因此，横向剪切项不需要在任何进一步细节中考虑。
 
-![](../graphics/stm_eqn03740.gif)![](../graphics/stm_eqn03741.gif)横向剪切力被单独考虑这一事实允许我们写成
+横向剪切力被单独考虑这一事实允许我们写成
 
 ![](../graphics/stm_eqn03735.gif)其中![](../graphics/stm_eqn03736.gif)和![](../graphics/stm_eqn03737.gif)是由于横向剪切力引起的应变和应力，![](../graphics/stm_eqn03738.gif)和![](../graphics/stm_eqn03739.gif)是由于围绕剪切中心的扭转引起的应变和应力。代入扭转和翘曲矩的表达式给出
 
@@ -377,13 +370,13 @@
 ![](../graphics/stm_eqn03748.gif)并且由于
 
 ![](../graphics/stm_eqn03749.gif)由此得出
-![](../graphics/stm_eqn03680.gif)![](../graphics/stm_eqn03751.gif)
+
 ![](../graphics/stm_eqn03750.gif)
 ### 翘曲未受约束的梁
 
 对于这种梁类型，不考虑翘曲约束。因此我们假定![](../graphics/stm_eqn03680.gif)。此外，我们假定翘曲引起的轴向应变可以忽略不计：![](../graphics/stm_eqn03751.gif)。
 
-![](../graphics/stm_eqn03753.gif)对于材料点的应变，这给出
+对于材料点的应变，这给出
 
 ![](../graphics/stm_eqn03752.gif)对于应变变分
 
@@ -404,9 +397,7 @@
 
 ![](../graphics/stm_eqn03763.gif)考虑剪切应力由线性弹性响应从剪切应变定义的情况，剪切模量恒定为*G*：
 
-![](../graphics/stm_eqn03762.gif)这允许我们为扭转和翘曲矩写成：
-
-![](../graphics/stm_eqn03763.gif)将这些表达式代入与扭转相关的虚功方程部分给出
+将这些表达式代入与扭转相关的虚功方程部分给出
 
 ![](../graphics/stm_eqn03764.gif)注意，关于质心的扭矩*T*为
 
@@ -416,7 +407,7 @@
 
 ![](../graphics/stm_eqn03767.gif)其中*F*、![](../graphics/stm_eqn03728.gif)、![](../graphics/stm_eqn03755.gif)和*W*如前定义。
 
-![](../graphics/stm_eqn03769.gif)对于虚功的变化率，我们类似地获得
+对于虚功的变化率，我们类似地获得
 
 ![](../graphics/stm_eqn03768.gif)
 
@@ -427,19 +418,14 @@
 
 对于这种截面，不存在翘曲。因此，
 ![](../graphics/stm_eqn02064.gif)![](../graphics/stm_eqn02064.gif)![](../graphics/stm_eqn03771.gif)
-![](../graphics/stm_eqn03770.gif)
-![](../graphics/stm_eqn03772.gif)### 实心非圆形截面
-
-矩形或梯形等实心截面属于此类。翘曲函数![](../graphics/stm_eqn02064.gif)是调和函数，受条件约束，即没有剪切应力分量可以垂直于横截面边界作用。虽然可以以此种方式确定翘曲函数![](../graphics/stm_eqn02064.gif)，但由于其简单性，我们选择使用Saint-Venant应力函数来处理。按照标准程序，我们对这个函数进行归一化，使得（弹性）剪切应变可以直接从中导出。我们引入函数![](../graphics/stm_eqn03771.gif)，它在横截面中可微，具有性质
+，它在横截面中可微，具有性质
 
 ![](../graphics/stm_eqn03772.gif)应力函数通过求解形式为
 
 ![](../graphics/stm_eqn03773.gif)的微分方程确定，其中*S*表示截面的边界。这个边界条件确保没有剪切应力分量可以垂直于边界作用。
 
 对于实心非圆形截面，这个微分方程使用二阶等参有限元数值求解。杆的扭转常数然后等于归一化应力函数曲面下体积的两倍。
-![](../graphics/stm_eqn03774.gif)![](../graphics/stm_eqn03775.gif)### 闭合薄壁截面
-
-![](../graphics/stm_eqn03776.gif)在这种情况下，我们假定垂直于截面的剪切应变必须消失，使得
+在这种情况下，我们假定垂直于截面的剪切应变必须消失，使得
 
 ![](../graphics/stm_eqn03774.gif)由于![](../graphics/stm_eqn03775.gif)，这给出
 
@@ -452,9 +438,9 @@
 ![](../graphics/stm_eqn03780.gif)其中*t*是壁厚。用Lagrange乘子![](../graphics/stm_eqn01087.gif)约束最小化能量给出
 
 ![](../graphics/stm_eqn03781.gif)因此，![](../graphics/stm_eqn03782.gif)组合定义
-![](../graphics/stm_eqn01258.gif)![](../graphics/stm_eqn01258.gif)
+
 ![](../graphics/stm_eqn03783.gif)这允许基于截面几何在任何点计算![](../graphics/stm_eqn03784.gif)。
-![](../graphics/stm_eqn03785.gif)![](../graphics/stm_eqn03786.gif)### 薄壁开口截面
+### 薄壁开口截面
 
 表现出显着翘曲的最重要截面是薄壁开口截面。对于单个分支截面，我们可以方便地将![](../graphics/stm_eqn01258.gif)表示为沿截面的坐标*s*和垂直于截面的坐标*z*的函数。![](../graphics/stm_eqn01258.gif)的合适近似为
 
@@ -476,11 +462,17 @@
 
 注意，耦合项仍然存在，但它们被纳入广义应变-位移关系中。扭转和延伸之间的耦合由![](../graphics/stm_eqn03799.gif)控制，这是翘曲函数在横截面坐标系原点处的值。如果原点在截面上，可以正确评估这个值。如果原点不在截面上（这意味着节点未连接到截面），我们假定![](../graphics/stm_eqn03800.gif)。
 
-![](../graphics/stm_eqn03802.gif)![](../graphics/stm_eqn03803.gif)扭转积分*J*容易获得为
+扭转积分*J*容易获得为
 
 ![](../graphics/stm_eqn03801.gif)极惯性矩由表达式给出
 
 ![](../graphics/stm_eqn03802.gif)上述推导涵盖了单分支开口截面。多分支开口截面可以通过将一个分支的末端与下一个分支的开始用厚度为![](../graphics/stm_eqn03803.gif)的截面连接，转换成单分支开口截面。这样的虚拟截面不会对面积、惯性矩或扭转积分产生任何贡献，因此对结果没有影响。
+### Solid noncircular sections
+### Closed, thin walled cross-sections
+### Thin walled open sections
+### 参考
+### 参考
+
 ### 参考
 
 ### 参考

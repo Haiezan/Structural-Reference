@@ -104,15 +104,15 @@ S4RS单元基于[Belytschko等人（1984）](07s01a01-References.md)。通过在
 
 ![](../graphics/stm_eqn04559.gif)
 
-![](../graphics/stm_eqn04560.gif)给出，其中节点旋转分量![](../graphics/stm_eqn04561.gif)和![](../graphics/stm_eqn04562.gif)基于投影和变换。考虑三个相邻的局部单元节点*K*、*I*和*J*，如图3.6.6-2所示。构造垂直于单元边![](../graphics/stm_eqn04565.gif)和![](../graphics/stm_eqn04566.gif)的外向向量![](../graphics/stm_eqn04563.gif)和![](../graphics/stm_eqn04564.gif)。此外，它们与参考表面在边中点相切。
+![](../graphics/stm_eqn04560.gif)给出，其中节点旋转分量![](../graphics/stm_eqn04561.gif)和![](../graphics/stm_eqn04562.gif)基于投影和变换。考虑三个相邻的局部单元节点*K*、*I*和*J*，如图3.6.6-2所示。构造垂直于单元边的外向向量![](../graphics/stm_eqn04563.gif)和![](../graphics/stm_eqn04564.gif)。此外，它们与参考表面在边中点相切。
 
 图3.6.6-2 S4RSW单元中剪切投影的向量和边定义。
 
-![](../graphics/stms4rsw-vertexedge-nls.png)
+![](../graphics/stm_eqn04565.gif)![](../graphics/stm_eqn04566.gif)![](../graphics/stms4rsw-vertexedge-nls.png)
 
-然后，通过节点投影给出关于外向向量![](../graphics/stm_eqn04564.gif)的角速度![](../graphics/stm_eqn04567.gif)
+然后，通过节点投影给出关于外向向量的角速度![](../graphics/stm_eqn04567.gif)
 
-![](../graphics/stm_eqn04568.gif)其中![](../graphics/stm_eqn04569.gif)是节点*I*关于![](../graphics/stm_eqn04564.gif)的旋转速度，![](../graphics/stm_eqn04570.gif)是节点*J*关于![](../graphics/stm_eqn04564.gif)的旋转速度，![](../graphics/stm_eqn04571.gif)是边*I*的长度。最后，用于横向剪切速度应变的节点旋转分量![](../graphics/stm_eqn04561.gif)和![](../graphics/stm_eqn04562.gif)由变换给出
+![](../graphics/stm_eqn04564.gif)![](../graphics/stm_eqn04568.gif)其中![](../graphics/stm_eqn04569.gif)是节点*I*关于![](../graphics/stm_eqn04564.gif)的旋转速度，![](../graphics/stm_eqn04570.gif)是节点*J*关于![](../graphics/stm_eqn04564.gif)的旋转速度，![](../graphics/stm_eqn04571.gif)是边*I*的长度。最后，用于横向剪切速度应变的节点旋转分量![](../graphics/stm_eqn04561.gif)和![](../graphics/stm_eqn04562.gif)由变换给出
 
 ![](../graphics/stm_eqn04572.gif)
 
@@ -169,7 +169,7 @@ S4RS单元基于[Belytschko等人（1984）](07s01a01-References.md)。通过在
 
 ![](../graphics/stm_eqn04591.gif)这些方程分别表示关于![](../graphics/stm_eqn04514.gif)轴的力矩平衡、关于![](../graphics/stm_eqn04516.gif)轴的力矩平衡，以及![](../graphics/stm_eqn04526.gif)方向上的力平衡。
 ### 沙漏控制
-![](../graphics/stm_eqn04591.gif)![](../graphics/stm_eqn04514.gif)![](../graphics/stm_eqn04516.gif)![](../graphics/stm_eqn04526.gif)
+
 由于使用单点积分，四边形单元可能出现几种伪模式，通常称为沙漏模式。为了抑制沙漏模式，使用了[Belytschko等人（1984）](07s01a01-References.md)描述的一致伪模式控制。沙漏形状向量![](../graphics/stm_eqn04428.gif)定义为
 
 ![](../graphics/stm_eqn04592.gif)沙漏应变率由
@@ -188,7 +188,7 @@ S4RS单元基于[Belytschko等人（1984）](07s01a01-References.md)。通过在
 
 ![](../graphics/stm_eqn04607.gif)
 
-![](../graphics/stm_eqn04607.gif)对应于广义沙漏应力的节点沙漏力和力矩为
+对应于广义沙漏应力的节点沙漏力和力矩为
 
 ![](../graphics/stm_eqn04608.gif)
 
@@ -196,7 +196,7 @@ S4RS单元基于[Belytschko等人（1984）](07s01a01-References.md)。通过在
 
 ![](../graphics/stm_eqn04610.gif)这些沙漏力和力矩直接加到前面描述的局部节点力和力矩上。
 ### 参考
-![](../graphics/stm_eqn04610.gif)
+
 ### 参考
 
 "Choosing a shell element," Section 29.6.2 of the Abaqus Analysis User's Guide

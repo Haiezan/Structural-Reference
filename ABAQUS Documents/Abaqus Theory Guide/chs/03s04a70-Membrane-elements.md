@@ -64,7 +64,7 @@
 
 ![](../graphics/stm_eqn03428.gif)然后立即获得变形梯度。
 
-对于弹性体，我们直接使用![](../graphics/stm_eqn03429.gif)和![](../graphics/stm_eqn03430.gif)。对于非弹性材料模型，我们需要增量应变和平均材料旋转的度量，我们从由![](../graphics/stm_eqn03431.gif)定义的![](../graphics/stm_eqn00434.gif)计算，其中![](../graphics/stm_eqn03432.gif)是当前增量开始时的变形梯度（在增量"*n*"处）：
+对于弹性体，我们直接使用![](../graphics/stm_eqn03429.gif)和![](../graphics/stm_eqn03430.gif)。对于非弹性材料模型，我们需要增量应变和平均材料旋转的度量，我们从由定义的![](../graphics/stm_eqn00434.gif)计算，其中![](../graphics/stm_eqn03431.gif)![](../graphics/stm_eqn03432.gif)是当前增量开始时的变形梯度（在增量"*n*"处）：
 
 ![](../graphics/stm_eqn03433.gif)我们可以定义![](../graphics/stm_eqn03434.gif)的分量
 

@@ -7,7 +7,7 @@
 颗粒材料和聚合物材料的行为很复杂。然而，在基本单调加载条件下，相当简单的本构模型可以提供有用的设计信息。这些本构模型本质上是压力相关塑性模型，在岩土工程领域有着悠久的历史。然而，最近它们也被发现对某些在拉伸和压缩中表现出显著不同屈服行为的聚合物和复合材料建模有用。
 
 这里描述的模型是原始Drucker-Prager模型（[Drucker和Prager，1952](07s01a01-References.md)）的扩展。在岩土材料背景下，感兴趣的扩展包括在子午面上使用曲线屈服面、在偏应力平面上使用非圆形屈服面，以及使用非相关流动法则。在聚合物和复合材料背景下，感兴趣的扩展主要包括使用非相关流动法则和包含率相关效应。在这两种背景下，模型都已扩展为包含蠕变。
-### 可用的屈服准则
+**可用的屈服准则**
 
 这组模型提供了三种屈服准则。它们在子午面（*p*-*q*平面）上提供不同形状的屈服面：线性形式、双曲形式和一般指数形式（见[图4.4.2-1](04s04a114.md)）。
 
@@ -18,7 +18,7 @@
 线性模型（在Abaqus/Standard和Abaus/Explicit中可用）在偏量（![](../graphics/stm_eqn06097.gif)）平面上提供非圆形截面，在偏量平面上提供相关非弹性流动，并提供单独的膨胀角和摩擦角。偏量平面上使用的平滑表面与表现出顶点的真实Mohr-Coulomb表面不同。这有限制性含义，特别是对于颗粒材料的流动局部化研究，但在许多常规设计应用中可能不是主要问题。输入数据参数定义偏量平面上屈服面和流动面的形状以及摩擦角和膨胀角，从而提供一系列简单理论；例如，原始Drucker-Prager模型（[Drucker和Prager，1952](07s01a01-References.md)）在此模型中可用。
 
 双曲和一般指数模型（仅在Abaqus/Standard中可用）在偏量应力平面上使用von Mises（圆形）截面，配合相关塑性流动。子午面上使用双曲流动势，这通常意味着非相关流动。
-### 硬化、率依赖性和蠕变
+**硬化、率依赖性和蠕变**
 
 这些模型提供完美塑性和各向同性硬化。各向同性硬化通常被认为是适用于塑性应变远超初始屈服状态（Bauschinger效应明显）的问题的合适模型（[Rice，1975](07s01a01-References.md)）。因此，这种硬化理论用于涉及大塑性应变且塑性应变率不会急剧反向的过程；即，这些模型适用于基本单调加载的问题，区别于循环加载。
 
@@ -82,21 +82,18 @@
 
 线性模型中假定势流动，因此
 ![](../graphics/stm_eqn06133.gif)
-![](../graphics/stm_eqn06133.gif)其中
+其中
 ![](../graphics/stm_eqn06134.gif)
-![](../graphics/stm_eqn06134.gif)和
-![](../graphics/stm_eqn06135.gif)
+
 ![](../graphics/stm_eqn06135.gif)*G*是流动势，在此模型中选择为
 ![](../graphics/stm_eqn06136.gif)![](../graphics/stm_eqn06137.gif)![](../graphics/stm_eqn02064.gif)![](../graphics/stm_eqn06138.gif)![](../graphics/stm_eqn06139.gif)
-![](../graphics/stm_eqn06136.gif)其中![](../graphics/stm_eqn06137.gif)*p*-*t*平面中的膨胀角。[图4.4.2-3](04s04a114.md)的*t*-*p*图中展示了![](../graphics/stm_eqn02064.gif)的几何解释。在以单轴压缩定义的硬化情况下，此流动规则定义排除膨胀角![](../graphics/stm_eqn06138.gif) 71.5（![](../graphics/stm_eqn06139.gif)3）。这不被视为限制，因为真实材料不太可能出现这种情况。
-![](../graphics/stm_eqn02064.gif)![](../graphics/stm_eqn01219.gif)![](../graphics/stm_eqn06140.gif)![](../graphics/stm_eqn06141.gif)![](../graphics/stm_eqn06141.gif)![](../graphics/stm_eqn06142.gif)
+
 比较[公式4.4.2-3](04s04a114.md)和[公式4.4.2-5](04s04a114.md)表明流动在偏量平面中是相关的，因为屈服面和流动势都对*t*有相同的函数依赖。然而，膨胀角![](../graphics/stm_eqn02064.gif)材料摩擦角![](../graphics/stm_eqn01219.gif)能不同，因此模型在*p*-*t*平面中可能不是相关的。对于![](../graphics/stm_eqn06140.gif)，材料是非膨胀的；如果![](../graphics/stm_eqn06141.gif)则模型是完全相关的——该模型是[Drucker和Prager（1952）](07s01a01-References.md)首次引入的类型。对于![](../graphics/stm_eqn06141.gif)![](../graphics/stm_eqn06142.gif)恢复原始Drucker-Prager模型。
 ### 双曲和一般指数模型
 
 双曲和一般指数模型仅在Abaqus/Standard中可用，用前两个应力不变量表示。双曲屈服准算是Rankine（拉伸截止）的最大拉伸应力条件与高约束应力下线性Drucker-Prager条件的连续组合。它写为
 ![](../graphics/stm_eqn06143.gif)![](../graphics/stm_eqn06144.gif)![](../graphics/stm_eqn06145.gif)![](../graphics/stm_eqn06146.gif)![](../graphics/stm_eqn06147.gif)![](../graphics/stm_eqn06129.gif)![](../graphics/stm_eqn06148.gif)
-![](../graphics/stm_eqn06143.gif)其中![](../graphics/stm_eqn06144.gif)![](../graphics/stm_eqn06145.gif)材料的初始静水拉伸强度，![](../graphics/stm_eqn06146.gif)![](../graphics/stm_eqn06147.gif)初始值，且![](../graphics/stm_eqn06129.gif)如图[图4.4.2-1](04s04a114.md)(b)所示在高约束压力下测得的摩擦角。![](../graphics/stm_eqn06148.gif)硬化参数，从测试数据中获得：
-![](../graphics/stm_eqn06149.gif)![](../graphics/stm_eqn01219.gif)
+
 ![](../graphics/stm_eqn06149.gif)该模型中假定的各向同性硬化将![](../graphics/stm_eqn01219.gif)为关于应力的常数，并如图[图4.4.2-4](04s04a114.md)所示。该模型的校准在Abaqus Analysis User's Guide中描述。
 
 图4.4.2-4 双曲模型在*p*-*q*平面中硬化的示意图。
@@ -105,18 +102,11 @@
 
 一般指数形式提供了此类模型中最通用的屈服准则。屈服函数写为
 ![](../graphics/stm_eqn06150.gif)![](../graphics/stm_eqn06151.gif)![](../graphics/stm_eqn06152.gif)![](../graphics/stm_eqn06153.gif)![](../graphics/stm_eqn06153.gif)
-![](../graphics/stm_eqn06150.gif)其中![](../graphics/stm_eqn06151.gif)![](../graphics/stm_eqn06152.gif)独立于塑性变形的材料参数，且![](../graphics/stm_eqn06153.gif)表示材料静水拉伸强度的硬化参数，如图[图4.4.2-1](04s04a114.md)(c)所示。![](../graphics/stm_eqn06153.gif)测试数据的关系为
+测试数据的关系为
 ![](../graphics/stm_eqn06154.gif)
-![](../graphics/stm_eqn06154.gif)该模型中假定的各向同性硬化将*a*和*b*视为关于应力的常数，并如图[图4.4.2-5](04s04a114.md)所示。
-
-图4.4.2-5 一般指数模型在*p*-*q*平面中硬化的示意图。
-
-![](../graphics/stm_eqn01219.gif)![](../graphics/stm_eqn01219.gif)![](../graphics/cdruckprag-expon-yield-p-q-nls.png)
+![](../graphics/cdruckprag-expon-yield-p-q-nls.png)
 ![](../graphics/stm_eqn06155.gif)![](../graphics/stm_eqn06155.gif)
-可以直接给出材料参数*a*、*b*和![](../graphics/stm_eqn06155.gif)或者，如果有多轴试验数据可用，Abaqus将从多轴试验数据确定材料参数。使用最小二乘拟合来最小化应力相对误差，以获得*a*、*b*和![](../graphics/stm_eqn06155.gif)"最佳拟合"值。
-### 流动规则
-
-![](../graphics/stm_eqn06156.gif)双曲和一般指数模型中假定势流动，因此
+可以直接给出材料参数*a*、*b*和双曲和一般指数模型中假定势流动，因此
 
 ![](../graphics/stm_eqn06156.gif)其中*f*取决于硬化如何定义（通过单轴压缩、单轴拉伸或纯剪切数据），但通常可以写为
 
@@ -128,7 +118,7 @@
 
 图4.4.2-6 *p*-*q*平面中双曲流动势族。
 
-![](../graphics/stm_eqn02064.gif)![](../graphics/stm_eqn01219.gif)![](../graphics/stm_eqn06161.gif)![](../graphics/stm_eqn06162.gif)![](../graphics/cdruckprag-expon-fam-p-q.png)
+![](../graphics/cdruckprag-expon-fam-p-q.png)
 
 在这两个模型中，流动在偏量应力平面中都是相关的。在一般指数模型中，流动在子午*p*-*q*平面中始终是非相关的。在双曲模型中，比较[公式4.4.2-6](04s04a114.md)和[公式4.4.2-9](04s04a114.md)表明，当膨胀角![](../graphics/stm_eqn02064.gif)材料摩擦角![](../graphics/stm_eqn01219.gif)同时，流动在*p*-*q*平面中是非相关的。双曲模型仅在![](../graphics/stm_eqn06161.gif)![](../graphics/stm_eqn06162.gif)在*p*-*q*平面中提供相关流动。
 ### 蠕变模型
@@ -141,11 +131,8 @@
 ### 蠕变行为
 
 我们采用蠕变等值面（或等效蠕变面）的概念，即共享相同蠕变"强度"的应力点的等值面，用等效蠕变应力测量。当材料发生塑性变形时，等效蠕变面应与屈服面重合；因此，我们通过均匀缩小屈服面来定义等效蠕变面。在*p*-*q*平面上，这转化为与屈服面的平行线，如图[图4.4.2-7](04s04a114.md)所示。
-![](../graphics/stm_eqn06163.gif)
-图4.4.2-7 定义为剪应力的等效蠕变应力。
-![](../graphics/stm_eqn06164.gif)![](../graphics/stm_eqn06165.gif)
-![](../graphics/cdruckprag-equiv-creep-nls.png)Abaqus要求通过用于定义功硬化属性的相同类型的测试数据来定义蠕变属性。等效蠕变应力![](../graphics/stm_eqn06163.gif)确定为等效蠕变面与适当应力路径的交点。因此，
-![](../graphics/stm_eqn06166.gif)![](../graphics/stm_eqn06163.gif)
+
+![](../graphics/cdruckprag-equiv-creep-nls.png)Abaqus要求通过用于定义功硬化属性的相同类型的测试数据来定义蠕变属性。等效蠕变应力![](../graphics/stm_eqn06163.gif)
 ![](../graphics/stm_eqn06164.gif)其中![](../graphics/stm_eqn06165.gif)材料摩擦角。
 
 [图4.4.2-7](04s04a114.md)显示了当材料属性通过剪切试验定义时如何确定等效蠕变应力：绘制一条与屈服面平行的线，使其通过材料点；该线与试验应力路径（![](../graphics/stm_eqn06166.gif)交点产生![](../graphics/stm_eqn06163.gif)
@@ -155,11 +142,7 @@
 可以使用内置Abaqus蠕变律或通过用户子程序CREEP定义的单轴律。蠕变应变率的积分首先尝试显式进行，如"率相关金属塑性（蠕变），"第4.3.4节所述。如果超过稳定性限制、进行几何非线性分析或塑性变得活跃，则使用后向Euler方法进行积分，如"率相关金属塑性（蠕变），"第4.3.4节所述。
 ![](../graphics/stm_eqn06168.gif)![](../graphics/stm_eqn06169.gif)### 蠕变流动规则
 
-![](../graphics/stm_eqn06170.gif)![](../graphics/stm_eqn06171.gif)![](../graphics/stm_eqn00596.gif)![](../graphics/stm_eqn06172.gif)蠕变流动规则从蠕变势![](../graphics/stm_eqn06167.gif)导出，使得
-
-![](../graphics/stm_eqn06168.gif)其中![](../graphics/stm_eqn06169.gif)等效蠕变应变率，必须与等效蠕变应力功共轭：
-
-![](../graphics/stm_eqn06170.gif)由于![](../graphics/stm_eqn00596.gif)共轭，![](../graphics/stm_eqn06172.gif)义为
+![](../graphics/stm_eqn06170.gif)![](../graphics/stm_eqn06171.gif)![](../graphics/stm_eqn00596.gif)![](../graphics/stm_eqn06172.gif)蠕变流动规则从蠕变势义为
 
 ![](../graphics/stm_eqn06173.gif)等效蠕变应变率然后从"单轴"蠕变律确定：
 
@@ -169,7 +152,7 @@
 
 ![](../graphics/stm_eqn06175.gif)其中![](../graphics/stm_eqn06137.gif)，在高约束压力下在*p*-*q*平面中测得的膨胀角；![](../graphics/stm_eqn06176.gif)初始屈服应力；且![](../graphics/stm_eqn02163.gif)是一个参数，称为偏心率，定义函数接近渐近线的速率（当偏心率趋于零时，蠕变势趋于直线）。此蠕变势是连续且平滑的，确保蠕变流动方向始终被唯一确定。该函数在高约束压力应力下渐近接近线性Drucker-Prager蠕变势，并以90度角与静水压力轴相交。子午应力平面中的一族双曲势如图[图4.4.2-6](04s04a114.md)所示。蠕变势是偏量应力平面（![](../graphics/stm_eqn06097.gif)面）中的von Mises圆。
 
-![](../graphics/stm_eqn06178.gif)[公式4.4.2-10](04s04a114.md)和[公式4.4.2-11](04s04a114.md)产生完整的流动规则
+[公式4.4.2-10](04s04a114.md)和[公式4.4.2-11](04s04a114.md)产生完整的流动规则
 
 ![](../graphics/stm_eqn06177.gif)其中
 
@@ -177,9 +160,9 @@
 
 ![](../graphics/stm_eqn06179.gif)![](../graphics/stm_eqn06172.gif)表达式表明，当通过单轴压缩数据定义蠕变属性时，如果
 
-![](../graphics/stm_eqn06180.gif)则![](../graphics/stm_eqn06172.gif)变为负。
+则![](../graphics/stm_eqn06172.gif)变为负。
 
-![](../graphics/stm_eqn06185.gif)因此，在这个应力水平以下（对于典型材料来说非常低），应力向量和蠕变势的法线方向相反：
+![](../graphics/stm_eqn06180.gif)因此，在这个应力水平以下（对于典型材料来说非常低），应力向量和蠕变势的法线方向相反：
 
 ![](../graphics/stm_eqn06181.gif)这等价于
 
@@ -196,4 +179,4 @@
 
 ### 参考
 
-![](../graphics/stm_eqn05751.gif)"Extended Drucker-Prager models,"  Section 23.3.1 of the Abaqus Analysis User's Guide
+"Extended Drucker-Prager models,"  Section 23.3.1 of the Abaqus Analysis User's Guide

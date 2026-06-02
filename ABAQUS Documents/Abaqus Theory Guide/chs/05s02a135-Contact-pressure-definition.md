@@ -20,7 +20,7 @@
 
 ![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07404.gif)图5.2.1–1 使用指数定律的"软化"压力-过盈关系。
 
-![](../graphics/stm_eqn07611.gif)![](../graphics/ksurfacebehavior-soft-nls.png)
+![](../graphics/ksurfacebehavior-soft-nls.png)
 
 用户定义初始接触距离和典型压力值，即在零过盈时的压力值。然后，我们定义 for , | for , and | for , | for . 为了避免高穿透时的数值困难，使用具有连续斜率的线性化压力-过盈关系。
 
@@ -30,7 +30,7 @@
 
 ![](../graphics/stm_eqn07620.gif)图5.2.1–2 以表格形式定义的"软化"压力-过盈关系。
 
-![](../graphics/ksurfacebehavior-soft1-nls.png)
+
 ![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07404.gif)
 ### 使用线性压力-过盈关系定义的软化接触
 
@@ -43,7 +43,7 @@
 其中是接触压力，是实际过盈，是与接触压力相关的过盈。局部牛顿循环用于计算当前值的。虚功贡献的线性化形式为
 
 其中根据过盈评估。由于没有涉及的项，Jacobian对角线上有零。如果刚性体模式仅由接触元素约束，对角线上的零是不可取的，因为它可能导致方程求解器问题。因此，通过将接触压力分解为引入小的参考刚度：
-![](../graphics/stm_eqn07621.gif)![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07404.gif)![](../graphics/stm_eqn07622.gif)![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07623.gif)![](../graphics/stm_eqn02386.gif)
+![](../graphics/ksurfacebehavior-soft1-nls.png)![](../graphics/stm_eqn07621.gif)![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07404.gif)![](../graphics/stm_eqn07622.gif)![](../graphics/stm_eqn02386.gif)![](../graphics/stm_eqn07623.gif)![](../graphics/stm_eqn02386.gif)
 其中是拉格朗日乘子，是小的参考刚度（见上图）：
 ![](../graphics/stm_eqn07624.gif)![](../graphics/stm_eqn07625.gif)![](../graphics/stm_eqn07623.gif)![](../graphics/stm_eqn07626.gif)![](../graphics/stm_eqn06810.gif)
 将压力的表达式代入方程和，得到
@@ -76,10 +76,13 @@
 
 对于使用后向欧拉时间积分算子的动力学也适用前述表达式。对于使用Hilber-Hughes-Taylor时间积分算子的动力学，刚度贡献可以写成
 
-![](../graphics/stm_eqn01219.gif)![](../graphics/stm_eqn07651.gif)![](../graphics/stm_eqn01256.gif)![](../graphics/stm_eqn07646.gif)其中和是Hilber-Hughes-Taylor时间积分算子参数。粘性阻尼选项不能用于Riks分析，因为速度未定义。
+![](../graphics/stm_eqn07646.gif)其中和是Hilber-Hughes-Taylor时间积分算子参数。粘性阻尼选项不能用于Riks分析，因为速度未定义。
 
 ![](../graphics/stm_eqn07647.gif)### 参考
 
 ![](../graphics/stm_eqn07648.gif)### 参考
 
-![](../graphics/stm_eqn07649.gif)"Abaqus Analysis User's Guide"第37.1.2节"接触压力-过盈关系"
+![](../graphics/stm_eqn07649.gif)![](../graphics/stm_eqn07650.gif)![](../graphics/stm_eqn07651.gif)![](../graphics/stm_eqn01256.gif)![](../graphics/stm_eqn01219.gif)"Abaqus Analysis User's Guide"第37.1.2节"接触压力-过盈关系"
+### Viscous damping option
+### 参考
+### 参考

@@ -32,7 +32,7 @@ Newton方法的收敛性最好通过确保 ![](../graphics/stm_eqn00706.gif) 中
 
 ![](../graphics/stm_eqn00708.gif)通过迭代过程获得逆Jacobian。
 
-![](../graphics/stm_eqn00709.gif)有多种拟Newton方法。看起来更适合结构应用的方法在除最极端非线性情况外的所有情况下都表现良好——权衡是，与Newton方法相比，需要更多迭代才能收敛。虽然形成和求解Jacobian的 savings 看起来很大，但可能被残差评估（即计算 ![](../graphics/stm_eqn00709.gif)。在Abaqus/Standard中，这是通过假设基本节点变量 ![](../graphics/stm_eqn00711.gif) 在增量上线性变化来实现的，所以
+![](../graphics/stm_eqn00709.gif)有多种拟Newton方法。看起来更适合结构应用的方法在除最极端非线性情况外的所有情况下都表现良好——权衡是，与Newton方法相比，需要更多迭代才能收敛。虽然形成和求解Jacobian的 savings 看起来很大，但可能被残差评估（即计算 ![](../graphics/stm_eqn00710.gif)。在Abaqus/Standard中，这是通过假设基本节点变量 ![](../graphics/stm_eqn00711.gif) 在增量上线性变化来实现的，所以
 
 ![](../graphics/stm_eqn00712.gif)其中 ![](../graphics/stm_eqn00454.gif) 表示增量期间的"时间"。然后，对于任何历史相关变量 ![](../graphics/stm_eqn00713.gif)，我们在每次迭代计算
 

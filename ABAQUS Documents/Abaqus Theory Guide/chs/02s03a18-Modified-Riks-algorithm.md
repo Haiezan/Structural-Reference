@@ -23,7 +23,7 @@
 
 图 2.3.2-2 修正Riks算法。
 
-![](../graphics/stm_eqn00878.gif)![](../graphics/stmmodified-riks-alg-nls.png)
+![](../graphics/stmmodified-riks-alg-nls.png)
 
 假设解已开发到点 ![](../graphics/stm_eqn00836.gif)。形成切线刚度 ![](../graphics/stm_eqn00837.gif)，我们求解
 
@@ -31,9 +31,9 @@
 
 ![](../graphics/stm_eqn00841.gif)因此，
 
-![](../graphics/stm_eqn00842.gif)（这里 ![](../graphics/stm_eqn00843.gif) 是由 ![](../graphics/stm_eqn00831.gif) 缩放的 ![](../graphics/stm_eqn00844.gif)）。值 ![](../graphics/stm_eqn00840.gif) 最初由用户建议，并根据收敛速率由Abaqus/Standard自动荷载增量算法进行调整。![](../graphics/stm_eqn00845.gif) 的符号——沿切线的响应方向——选择为使得点积 ![](../graphics/stm_eqn00846.gif) 在前一次增量时的解上为正：
+![](../graphics/stm_eqn00842.gif)（这里 ![](../graphics/stm_eqn00843.gif) 是由  缩放的 ![](../graphics/stm_eqn00844.gif)）。值 ![](../graphics/stm_eqn00831.gif)![](../graphics/stm_eqn00840.gif) 最初由用户建议，并根据收敛速率由Abaqus/Standard自动荷载增量算法进行调整。![](../graphics/stm_eqn00845.gif) 的符号——沿切线的响应方向——选择为使得点积 ![](../graphics/stm_eqn00846.gif) 在前一次增量时的解上为正：
 
-![](../graphics/stm_eqn00848.gif)也就是
+![](../graphics/stm_eqn00847.gif)![](../graphics/stm_eqn00848.gif)也就是
 
 ![](../graphics/stm_eqn00849.gif)
 
@@ -59,9 +59,9 @@
 
 ![](../graphics/stm_eqn00867.gif)也就是说，我们同时求解两个荷载向量 ![](../graphics/stm_eqn00868.gif) 和 ![](../graphics/stm_eqn00869.gif)，并获得两个位移向量 ![](../graphics/stm_eqn00870.gif) 和 ![](../graphics/stm_eqn00871.gif)。
 
-现在缩放向量 ![](../graphics/stm_eqn00872.gif)，并将其添加到 ![](../graphics/stm_eqn00873.gif) 处，其中 ![](../graphics/stm_eqn00874.gif) 是缩放残差在 ![](../graphics/stm_eqn00875.gif) 上的投影，这样我们从 ![](../graphics/stm_eqn00864.gif) 移动到在与 ![](../graphics/stm_eqn00877.gif) 正交的平面中的 ![](../graphics/stm_eqn00876.gif)——参见 [图 2.3.2-2](02s03a18-Modified-Riks-algorithm.md)。这给出方程
+现在缩放向量 ![](../graphics/stm_eqn00872.gif)，并将其添加到 ![](../graphics/stm_eqn00873.gif) 处，其中 ![](../graphics/stm_eqn00874.gif) 是缩放残差在 ![](../graphics/stm_eqn00875.gif) 上的投影，这样我们从 ![](../graphics/stm_eqn00864.gif) 移动到在与  正交的平面中的 ![](../graphics/stm_eqn00876.gif)——参见 [图 2.3.2-2](02s03a18-Modified-Riks-algorithm.md)。这给出方程
 
-![](../graphics/stm_eqn00878.gif)简化为给出
+![](../graphics/stm_eqn00877.gif)![](../graphics/stm_eqn00878.gif)简化为给出
 
 ![](../graphics/stm_eqn00879.gif)解点现在是 ![](../graphics/stm_eqn00864.gif)：
 

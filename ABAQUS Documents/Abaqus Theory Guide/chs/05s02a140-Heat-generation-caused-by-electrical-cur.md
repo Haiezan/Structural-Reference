@@ -65,3 +65,5 @@
 "Abaqus Analysis User's Guide"第6.7.4节"完全耦合热-电-结构分析"
 
 "Abaqus Analysis User's Guide"第37.3.1节"电接触属性"
+### 参考
+### 参考

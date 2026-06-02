@@ -24,11 +24,11 @@
 
 ![](../graphics/stm_eqn05002.gif)
 
-钢筋间距拉伸![](../graphics/stm_eqn05003.gif)是钢筋平面内垂直于钢筋方向的拉伸。为确定间距拉伸![](../graphics/stm_eqn05003.gif)，利用垂直于变形钢筋方向![](../graphics/stm_eqn00479.gif)的单位法线![](../graphics/stm_eqn00156.gif)（在钢筋平面内）是
+钢筋间距拉伸![](../graphics/stm_eqn05003.gif)是钢筋平面内垂直于钢筋方向的拉伸。为确定间距拉伸![](../graphics/stm_eqn05003.gif)，利用垂直于变形钢筋方向的单位法线![](../graphics/stm_eqn00156.gif)（在钢筋平面内）是
 
-![](../graphics/stm_eqn05004.gif)可以容易地验证![](../graphics/stm_eqn00156.gif)是一个单位向量。为看出它垂直于![](../graphics/stm_eqn00479.gif)，取内积：
+![](../graphics/stm_eqn00479.gif)![](../graphics/stm_eqn05004.gif)可以容易地验证![](../graphics/stm_eqn00156.gif)是一个单位向量。为看出它垂直于![](../graphics/stm_eqn00479.gif)，取内积：
 
-![](../graphics/stm_eqn05005.gif)间距拉伸![](../graphics/stm_eqn05003.gif)可定义为垂直于参考钢筋方向的方向![](../graphics/stm_eqn00779.gif)变形的![](../graphics/stm_eqn00156.gif)分量。由于![](../graphics/stm_eqn00779.gif)的变形是![](../graphics/stm_eqn05006.gif)，间距拉伸由下式得出
+![](../graphics/stm_eqn05005.gif)间距拉伸![](../graphics/stm_eqn05003.gif)可定义为垂直于参考钢筋方向的方向变形的![](../graphics/stm_eqn00156.gif)分量。由于![](../graphics/stm_eqn00779.gif)![](../graphics/stm_eqn00779.gif)的变形是![](../graphics/stm_eqn05006.gif)，间距拉伸由下式得出
 
 ![](../graphics/stm_eqn05007.gif)由于![](../graphics/stm_eqn00779.gif)是一个单位向量，
 

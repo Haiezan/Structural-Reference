@@ -20,7 +20,7 @@
 
 ![](../graphics/stm_eqn01624.gif)在基于子空间的稳态动力学分析之前的特征频率步骤使用
 
-![](../graphics/stm_eqn01625.gif)提取了无阻尼系统的![](../graphics/stm_eqn01624.gif)个特征模态，其中![](../graphics/stm_eqn01091.gif)是弧度/时间的特征频率。该过程假设阻尼系统的复位移变化可以写为
+![](../graphics/stm_eqn01625.gif)提取了无阻尼系统的个特征模态，其中![](../graphics/stm_eqn01091.gif)是弧度/时间的特征频率。该过程假设阻尼系统的复位移变化可以写为
 
 ![](../graphics/stm_eqn01626.gif)其中![](../graphics/stm_eqn01627.gif)是复模态振幅。将[方程2.6.2-3](02s06a34-Subspace-based-steady-state-dynamic-anal.md)代入[方程2.6.2-1](02s06a34-Subspace-based-steady-state-dynamic-anal.md)并左乘![](../graphics/stm_eqn01628.gif)，提供了投影到子空间上的运动方程：
 

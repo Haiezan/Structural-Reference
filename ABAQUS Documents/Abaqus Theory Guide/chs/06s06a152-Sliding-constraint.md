@@ -2,7 +2,7 @@
 
 ### 6.6.1 滑动约束
 
-![](../graphics/stm_eqn08339.gif)![](../graphics/stm_eqn08338.gif)![](../graphics/stm_eqn00483.gif)**产品：** Abaqus/Standard  Abaqus/Explicit
+**产品：** Abaqus/Standard  Abaqus/Explicit
 
 滑动约束有多种用途。例如，此MPC与其他MPC类型结合使用，用于将壳单元网格约束到实体单元网格。MPC通过强制初始穿过厚度的直线保持直线（尽管有旋转和位移）来保持与标准壳理论的的一致性。当应用于壳-实体界面上的实体单元节点时，此MPC强制执行与壳模型运动学近似的兼容性。
 
@@ -72,4 +72,6 @@
 
 ![](../graphics/stm_eqn00483.gif)![](../graphics/stm_eqn08352.gif)### 参考
 
-![](../graphics/stm_eqn08316.gif)![](../graphics/stm_eqn08317.gif)![](../graphics/stm_eqn08353.gif)"Abaqus Analysis User's Guide"第35.2.2节"一般多点约束"
+![](../graphics/stm_eqn08353.gif)![](../graphics/stm_eqn08354.gif)"Abaqus Analysis User's Guide"第35.2.2节"一般多点约束"
+### 参考
+### 参考

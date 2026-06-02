@@ -6,7 +6,7 @@
 
 Abaqus中提供的Mullins效应材料模型旨在模拟应力软化现象，这种现象常见于填充橡胶弹性体中，是由于与应变相关的损伤造成的。当弹性体试样从原始状态进行简单拉伸后卸载，然后重新加载时，重新加载所需的应力小于初始加载时的应力（直到初始加载达到的最大拉伸）。这种应力软化现象被称为Mullins效应（Mullins, 1947）。
 
-![](../graphics/stm_eqn07043.gif)![](../graphics/stm_eqn07044.gif)![](../graphics/stm_eqn07044.gif)![](../graphics/stm_eqn07045.gif)![](../graphics/stm_eqn07046.gif)![](../graphics/stm_eqn07047.gif)![](../graphics/stm_eqn07047.gif)![](../graphics/stm_eqn07048.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07050.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07051.gif)![](../graphics/stm_eqn07049.gif)### 材料行为
+![](../graphics/stmmullins-idealized-response-nls.png)![](../graphics/stm_eqn07043.gif)![](../graphics/stm_eqn07044.gif)![](../graphics/stm_eqn07044.gif)![](../graphics/stm_eqn07045.gif)![](../graphics/stm_eqn07046.gif)![](../graphics/stm_eqn07047.gif)![](../graphics/stm_eqn07047.gif)![](../graphics/stm_eqn07048.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07050.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07049.gif)![](../graphics/stm_eqn07051.gif)![](../graphics/stm_eqn07049.gif)### 材料行为
 
 ![](../graphics/stm_eqn07048.gif)以下各节详细描述Abaqus中Mullins效应模型。理想化材料行为
 
@@ -14,7 +14,7 @@ Mullins效应在图4.7.1–1中定性地描述。
 
 ![](../graphics/stm_eqn07052.gif)![](../graphics/stm_eqn07053.gif)![](../graphics/stm_eqn07054.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)图4.7.1–1 具有Mullins效应的理想化响应。
 
-![](../graphics/stm_eqn07055.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn07054.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn07053.gif)![](../graphics/stm_eqn07056.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stmmullins-idealized-response-nls.png)
+![](../graphics/stm_eqn07055.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn07054.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn07053.gif)![](../graphics/stm_eqn07056.gif)![](../graphics/stm_eqn02098.gif)![](../graphics/stm_eqn02098.gif)
 
 本图及附带描述基于Ogden和Roxburgh的工作（Ogden and Roxburgh, 1999），该工作是Abaqus中实现的模型基础。考虑一个先前无应力材料的初始加载路径，当加载到任意点时，从该点卸载时遵循路径。当材料再次加载时，软化路径被重新追踪为。如果随后施加进一步加载，则遵循路径，其中是初始加载路径的延续（即如果没有卸载将遵循的路径）。如果现在在停止加载，则在卸载时遵循路径，然后在重新加载时重新追踪回。如果不施加超出范围的进一步加载，则曲线代表后续材料响应，此时为弹性。对于超出范围的加载，再次遵循主路径，并重复所述模式。这是Mullins效应的理想表示。关于实际行为的更多细节以及显示此类行为的测试数据如何用于校准Abaqus的Mullins效应模型，请参阅"Abaqus Analysis User's Guide"第22.6.1节的"Mullins效应"，以及"Abaqus Example Problems Guide"第3.1.7节的"带Mullins效应和永久变形的实心圆盘分析"。
 
@@ -85,6 +85,10 @@ Abaqus/Standard中的非线性求解过程需要材料切线刚度或材料Jacob
 图4.7.1–2 归一化耗散与变形的关系。
 
 ![](../graphics/stmmullins-dissip.png)
+### Damage dissipation
+### 参考
+### 参考
+
 ### 参考
 
 ### 参考

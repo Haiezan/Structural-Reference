@@ -15,11 +15,11 @@
 
 ![](../graphics/stm_eqn00378.gif)
 
-我们必须有 ![](../graphics/stm_eqn00379.gif)，所以在 ![](../graphics/stm_eqn00381.gif)（这是引入"应变"概念而不是仅使用拉伸比的主要原因）。此外，我们选择在 ![](../graphics/stm_eqn00381.gif) 时 ![](../graphics/stm_eqn00382.gif)，这样对于小应变，我们得到通常的应变定义——"每单位长度的变化"。这确保了在一维中，以这种方式定义的所有应变度量在小应变时将给出相同的数值（因为那时泰勒级数中的高阶项都可以忽略），与任何刚体旋转的大小无关。最后，我们要求对于所有物理上合理的 ![](../graphics/stm_eqn00280.gif) 值（即对于所有 ![](../graphics/stm_eqn00384.gif)）![](../graphics/stm_eqn00383.gif)，以便应变随拉伸单调增加；因此，每个拉伸值对应于唯一的应变值。（![](../graphics/stm_eqn00383.gif) 的选择是任意的：我们同样可以选择 ![](../graphics/stm_eqn00385.gif)，意味着当 ![](../graphics/stm_eqn00386.gif) 时应变在压缩中为正。这个替代选择通常在地质力学教科书中做出，因为岩土工程问题通常涉及压应力和应变。都是为了方便。在Abaqus中，我们始终使用正应变在拉伸中为正的约定当 ![](../graphics/stm_eqn00387.gif)。这个选择在Abaqus中一直保持一致，包括在岩土工程选项中。）
+我们必须有 ![](../graphics/stm_eqn00379.gif)，所以在 ![](../graphics/stm_eqn00380.gif)（这是引入"应变"概念而不是仅使用拉伸比的主要原因）。此外，我们选择在 ![](../graphics/stm_eqn00381.gif) 时 ![](../graphics/stm_eqn00382.gif)，这样对于小应变，我们得到通常的应变定义——"每单位长度的变化"。这确保了在一维中，以这种方式定义的所有应变度量在小应变时将给出相同的数值（因为那时泰勒级数中的高阶项都可以忽略），与任何刚体旋转的大小无关。最后，我们要求对于所有物理上合理的 ![](../graphics/stm_eqn00381.gif)![](../graphics/stm_eqn00383.gif)![](../graphics/stm_eqn00280.gif) 值（即对于所有 ![](../graphics/stm_eqn00384.gif)），以便应变随拉伸单调增加；因此，每个拉伸值对应于唯一的应变值。（![](../graphics/stm_eqn00383.gif) 的选择是任意的：我们同样可以选择 ![](../graphics/stm_eqn00385.gif)，意味着当 ![](../graphics/stm_eqn00386.gif) 时应变在压缩中为正。这个替代选择通常在地质力学教科书中做出，因为岩土工程问题通常涉及压应力和应变。都是为了方便。在Abaqus中，我们始终使用正应变在拉伸中为正的约定当 ![](../graphics/stm_eqn00387.gif)。这个选择在Abaqus中一直保持一致，包括在岩土工程选项中。）
 
-有了这些合理的限制（![](../graphics/stm_eqn00388.gif) 和 ![](../graphics/stm_eqn00382.gif) 在 ![](../graphics/stm_eqn00381.gif)，且对于所有 ![](../graphics/stm_eqn00384.gif) ![](../graphics/stm_eqn00383.gif)），许多应变度量是可能的，其中一些是常用的。一些例子是
+有了这些合理的限制（![](../graphics/stm_eqn00388.gif) 和 ![](../graphics/stm_eqn00382.gif) 在 ![](../graphics/stm_eqn00381.gif)，且对于所有  ![](../graphics/stm_eqn00383.gif)），许多应变度量是可能的，其中一些是常用的。一些例子是
 
-![](../graphics/stm_eqn00389.gif)在均匀应变的单轴试样中，其中 *l* 是当前标距长度，*L* 是原始标距长度，应变测量为 ![](../graphics/stm_eqn00390.gif)。这个定义是工程师进行 stiff 试样单轴测试时最熟悉的定义。
+![](../graphics/stm_eqn00384.gif)![](../graphics/stm_eqn00389.gif)在均匀应变的单轴试样中，其中 *l* 是当前标距长度，*L* 是原始标距长度，应变测量为 ![](../graphics/stm_eqn00390.gif)。这个定义是工程师进行 stiff 试样单轴测试时最熟悉的定义。
 
 ![](../graphics/stm_eqn00391.gif)这种应变度量常用于金属塑性。这样选择的一个动机是，当"真"应力（当前面积上的力）相对于对数应变绘制时，拉伸、压缩和扭转测试结果紧密吻合。稍后我们将看到，这种应变度量在数学上适合这类材料，因为对于这些材料，可以假设应变的弹性部分很小。
 
@@ -32,7 +32,7 @@
 
 ![](../graphics/stm_eqn00395.gif) 将是沿第一主方向 ![](../graphics/stm_eqn00298.gif) 的应变；![](../graphics/stm_eqn00396.gif) 将是沿 ![](../graphics/stm_eqn00299.gif) 的应变；![](../graphics/stm_eqn00397.gif) 将是沿 ![](../graphics/stm_eqn00300.gif) 的应变。
 
-![](../graphics/stm_eqn00398.gif)![](../graphics/stm_eqn00399.gif)矩阵
+矩阵
 
 ![](../graphics/stm_eqn00398.gif)完全表征了材料点的应变状态。注意这与拉伸矩阵定义的相似性 [方程 1.4.1-10](01s04a04-Deformation.md)：我们可以认为 ![](../graphics/stm_eqn00399.gif) 由矩阵函数定义
 
@@ -54,9 +54,7 @@
 
 ![](../graphics/stm_eqn00408.gif)Green应变在一维中定义为
 
-![](../graphics/stm_eqn00408.gif)
-
-![](../graphics/stm_eqn00409.gif)![](../graphics/stm_eqn00291.gif)![](../graphics/stm_eqn00330.gif)将这个一维定义与 [方程 1.4.2-2](01s04a05-Strain-measures.md) 和 [方程 1.4.2-3](01s04a05-Strain-measures.md) 比较，我们看到
+将这个一维定义与 [方程 1.4.2-2](01s04a05-Strain-measures.md) 和 [方程 1.4.2-3](01s04a05-Strain-measures.md) 比较，我们看到
 
 ![](../graphics/stm_eqn00409.gif)然后是Green应变在一维中的推广。（Green应变矩阵更标准的定义是通过使用 ![](../graphics/stm_eqn00291.gif) 而不是 ![](../graphics/stm_eqn00330.gif) 获得，所以应变矩阵以参考配置而不是当前配置为基：
 
@@ -66,7 +64,7 @@ Green应变矩阵因此可以直接从变形梯度获得，而无需首先求解
 
 ![](../graphics/stm_eqn00412.gif)最后，值得指出的是，大多数初等弹性教科书中使用的熟悉的"小应变"度量，
 
-![](../graphics/stm_eqn00412.gif)仅对小位移梯度有用——也就是说，应变和旋转都必须很小，这种应变度量才是适当的。这可以通过考虑试样的纯旋转来证明：即使材料没有被拉伸，这种应变度量的分量也会随着旋转的增加而变为非零。
+仅对小位移梯度有用——也就是说，应变和旋转都必须很小，这种应变度量才是适当的。这可以通过考虑试样的纯旋转来证明：即使材料没有被拉伸，这种应变度量的分量也会随着旋转的增加而变为非零。
 ### 参考
 
 ### 参考

@@ -35,3 +35,5 @@
 ![](../graphics/stm_eqn08398.gif)![](../graphics/stm_eqn08399.gif)![](../graphics/stm_eqn05299.gif)![](../graphics/stm_eqn05300.gif)![](../graphics/stm_eqn08398.gif)![](../graphics/stm_eqn08399.gif)### 参考
 
 "Abaqus Analysis User's Guide"第35.2.2节"一般多点约束"
+### 参考
+### 参考

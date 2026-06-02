@@ -42,4 +42,6 @@
 
 ![](../graphics/stm_eqn08376.gif)### 参考
 
-![](../graphics/stm_eqn08377.gif)![](../graphics/stm_eqn08378.gif)"Abaqus Analysis User's Guide"第35.2.2节"一般多点约束"
+![](../graphics/stm_eqn08377.gif)![](../graphics/stm_eqn08378.gif)![](../graphics/stm_eqn08379.gif)![](../graphics/stm_eqn08380.gif)![](../graphics/stm_eqn08374.gif)![](../graphics/stm_eqn08375.gif)"Abaqus Analysis User's Guide"第35.2.2节"一般多点约束"
+### 参考
+### 参考

@@ -26,9 +26,9 @@
 
 ![](../graphics/stm_eqn00419.gif)因为 ![](../graphics/stm_eqn00420.gif) 被定义为两个相邻材料粒子之间的速度差，并且，既然已经选择了这些粒子，它们之间的参考配置标距长度 ![](../graphics/stm_eqn00272.gif) 在整个运动中是相同的，因此没有时间导数。
 
-比较以参考配置标距长度 ![](../graphics/stm_eqn00272.gif) 表示的 ![](../graphics/stm_eqn00420.gif) 的两个表达式，我们看到
+比较以参考配置标距长度  表示的 ![](../graphics/stm_eqn00420.gif) 的两个表达式，我们看到
 
-![](../graphics/stm_eqn00421.gif)或
+![](../graphics/stm_eqn00272.gif)![](../graphics/stm_eqn00421.gif)或
 
 ![](../graphics/stm_eqn00422.gif)
 
@@ -38,7 +38,7 @@
 
 ![](../graphics/stm_eqn00426.gif)
 
-这些是特别简单和熟悉的形式；例如，如果我们用位移 ![](../graphics/stm_eqn00428.gif) 替换粒子速度 ![](../graphics/stm_eqn00427.gif)，![](../graphics/stm_eqn00118.gif) 与"小应变"的初等定义相同。在一维中 ![](../graphics/stm_eqn00118.gif) 是
+这些是特别简单和熟悉的形式；例如，如果我们用位移 ，![](../graphics/stm_eqn00118.gif) 与"小应变"的初等定义相同。在一维中 ![](../graphics/stm_eqn00427.gif)![](../graphics/stm_eqn00428.gif)![](../graphics/stm_eqn00118.gif) 是
 
 ![](../graphics/stm_eqn00429.gif)这识别 ![](../graphics/stm_eqn00430.gif) 为对数应变率，
 
@@ -60,7 +60,7 @@
 
 ![](../graphics/stm_eqn00439.gif)那么我们对 ![](../graphics/stm_eqn00118.gif) 的积分是在增量结束时的基上的矩阵 ![](../graphics/stm_eqn00432.gif)，定义为
 
-![](../graphics/stm_eqn00430.gif)![](../graphics/stm_eqn00429.gif)![](../graphics/stm_eqn00440.gif)使用 [方程 1.4.3-2](01s04a06-Rate-of-deformation-and-strain-increment.md)，这是
+![](../graphics/stm_eqn00440.gif)使用 [方程 1.4.3-2](01s04a06-Rate-of-deformation-and-strain-increment.md)，这是
 
 ![](../graphics/stm_eqn00441.gif)由于
 
@@ -82,7 +82,7 @@
 
 ![](../graphics/stm_eqn00451.gif)所以，最终，从 [方程 1.4.3-3](01s04a06-Rate-of-deformation-and-strain-increment.md)，
 
-![](../graphics/stm_eqn00452.gif)因此，只要我们假设在增量期间任何时候的拉伸与增量总拉伸（写在增量开始的固定基上）具有相同的主方向，对数应变增量的定义提供了变形率表示的应变率的所需积分。这个假设可能在大增量时值得商榷，但它与在本构积分中使用的近似水平是一致的。因此，我们有一种简单的方法来计算用于此类本构模型的应变增量，而与本构积分本身已经接受的准确性相比，没有额外的准确性损失。
+![](../graphics/stm_eqn00452.gif)![](../graphics/stm_eqn00453.gif)![](../graphics/stm_eqn00454.gif)因此，只要我们假设在增量期间任何时候的拉伸与增量总拉伸（写在增量开始的固定基上）具有相同的主方向，对数应变增量的定义提供了变形率表示的应变率的所需积分。这个假设可能在大增量时值得商榷，但它与在本构积分中使用的近似水平是一致的。因此，我们有一种简单的方法来计算用于此类本构模型的应变增量，而与本构积分本身已经接受的准确性相比，没有额外的准确性损失。
 ### 参考
 
 ### 参考

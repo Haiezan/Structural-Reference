@@ -22,7 +22,7 @@
 
 这种向量和张量的表示对于推导理论非常通用和方便，因此可以容易地根据其物理含义理解方程。然而，在实际计算中我们必须处理单个数字，因此向量和张量必须以其分量表示。这些分量与一个基系统相关联，该基系统在空间中的每个点定义一组基向量。最简单的基系统是矩形笛卡尔系统，因为基向量是在所有点方向相同的正交单位向量。不幸的是，我们需要比这更多的通用性，因为我们将要处理壳和梁，其中应力、应变等最方便地根据壳表面的方向（或与梁轴线相关的方向）来描述，而这些通常随着我们在表面上移动而改变。为了保持这种必要的通用性并将向量和矩阵表示为分量形式，我们引入一组通用基向量 ![](../graphics/stm_eqn00008.gif)、![](../graphics/stm_eqn00009.gif)，它们不一定正交或单位长度，但足以定义向量的分量（为此目的它们不能平行或长度为零）。然后向量 ![](../graphics/stm_eqn00001.gif) 可以写成
 
-![](../graphics/stm_eqn00010.gif)其中数字 ![](../graphics/stm_eqn00011.gif)、![](../graphics/stm_eqn00012.gif) 和 ![](../graphics/stm_eqn00013.gif) 是与 ![](../graphics/stm_eqn00014.gif)、![](../graphics/stm_eqn00015.gif) 和 ![](../graphics/stm_eqn00016.gif) 相关的 ![](../graphics/stm_eqn00001.gif) 的分量。
+![](../graphics/stm_eqn00010.gif)其中数字 ![](../graphics/stm_eqn00011.gif)、![](../graphics/stm_eqn00012.gif) 和 ![](../graphics/stm_eqn00013.gif) 是与 ![](../graphics/stm_eqn00001.gif)![](../graphics/stm_eqn00014.gif)、![](../graphics/stm_eqn00015.gif) 和 ![](../graphics/stm_eqn00016.gif) 相关的  的分量。
 
 在实际案例中，![](../graphics/stm_eqn00008.gif) 是为了方便而选择的（例如，参见Abaqus Analysis User's Guide第1.2.2节"约定"中关于Abaqus中如何为表面单元选择基向量的描述），然后获得 ![](../graphics/stm_eqn00017.gif)。
 
@@ -77,7 +77,7 @@
 
 ![](../graphics/stm_eqn00040.gif)在整个本指南中，我们将隐式假设，当对时间取导数时，我们指的是物质时间导数；也就是说，当观察一个特定的材料粒子时，变量相对于时间的变化。当某个特定方程不是这种情况时，在方程出现时会明确说明。
 
-只要我们按照上面的图示小心解释 ![](../graphics/stm_eqn00041.gif)，初等微积分的标准概念显然成立；例如，如果 ![](../graphics/stm_eqn00001.gif) 是向量值函数 ![](../graphics/stm_eqn00026.gif) 的向量值函数，而 ![](../graphics/stm_eqn00026.gif) 又是 ![](../graphics/stm_eqn00027.gif) 的向量值函数，即 ![](../graphics/stm_eqn00042.gif)，那么
+只要我们按照上面的图示小心解释 ![](../graphics/stm_eqn00041.gif)，初等微积分的标准概念显然成立；例如，如果 ![](../graphics/stm_eqn00001.gif) 是向量值函数 ![](../graphics/stm_eqn00026.gif) 的向量值函数，而  又是 ![](../graphics/stm_eqn00027.gif) 的向量值函数，即 ![](../graphics/stm_eqn00042.gif)，那么
 
 ![](../graphics/stm_eqn00043.gif)或者，如果 ![](../graphics/stm_eqn00044.gif)：
 
@@ -94,13 +94,13 @@
 
 ![](../graphics/stm_eqn00057.gif)我们可以简洁地写成
 
-![](../graphics/stm_eqn00058.gif)其中如果 ![](../graphics/stm_eqn00060.gif)，则 ![](../graphics/stm_eqn00059.gif)，否则 ![](../graphics/stm_eqn00061.gif)。（![](../graphics/stm_eqn00062.gif) 称为"克罗内克符号"。）在矩阵表示中 ![](../graphics/stm_eqn00049.gif) 是单位矩阵 ![](../graphics/stm_eqn00064.gif)：我们也可以将定义 ![](../graphics/stm_eqn00049.gif)、![](../graphics/stm_eqn00051.gif) 和 ![](../graphics/stm_eqn00053.gif) 的上述方程以矩阵形式写成
+![](../graphics/stm_eqn00058.gif)其中如果 ，则 ![](../graphics/stm_eqn00059.gif)，否则 ![](../graphics/stm_eqn00060.gif)![](../graphics/stm_eqn00061.gif)。（![](../graphics/stm_eqn00062.gif) 称为"克罗内克符号"。）在矩阵表示中 ![](../graphics/stm_eqn00063.gif) 是单位矩阵 ![](../graphics/stm_eqn00064.gif)：我们也可以将定义 ![](../graphics/stm_eqn00049.gif)、![](../graphics/stm_eqn00051.gif) 和 ![](../graphics/stm_eqn00053.gif) 的上述方程以矩阵形式写成
 
 ![](../graphics/stm_eqn00065.gif)因此，如果知道一组基向量——比如说 ![](../graphics/stm_eqn00022.gif)——就可以很容易地获得其他基向量。
 
 有了这组额外的基向量，我们就可以立即获得向量或矩阵的分量，如下所示。
 
-考虑向量 ![](../graphics/stm_eqn00001.gif)。然后 ![](../graphics/stm_eqn00066.gif)（使用基向量 ![](../graphics/stm_eqn00067.gif) 以分量形式写出 ![](../graphics/stm_eqn00001.gif)），并且由于 ![](../graphics/stm_eqn00068.gif)，仅当 ![](../graphics/stm_eqn00060.gif) 时，
+考虑向量 ![](../graphics/stm_eqn00001.gif)。然后 ![](../graphics/stm_eqn00066.gif)（使用基向量  以分量形式写出 ![](../graphics/stm_eqn00001.gif)），并且由于 ![](../graphics/stm_eqn00067.gif)![](../graphics/stm_eqn00068.gif)，仅当 ![](../graphics/stm_eqn00060.gif) 时，
 
 ![](../graphics/stm_eqn00069.gif)完全相同的方式，我们可以写出
 
@@ -149,9 +149,9 @@
 
 考虑向量值函数 ![](../graphics/stm_eqn00026.gif)，它在基系统 ![](../graphics/stm_eqn00008.gif) 上以分量形式表示。设向量值函数 ![](../graphics/stm_eqn00001.gif) 依赖于 ![](../graphics/stm_eqn00026.gif)：![](../graphics/stm_eqn00096.gif)。然后
 
-![](../graphics/stm_eqn00097.gif) 所以与变化 ![](../graphics/stm_eqn00099.gif) 相关的 ![](../graphics/stm_eqn00098.gif) 的分量是
+![](../graphics/stm_eqn00097.gif) 所以与变化  相关的 ![](../graphics/stm_eqn00098.gif) 的分量是
 
-![](../graphics/stm_eqn00100.gif)为了方便，我们写成
+![](../graphics/stm_eqn00099.gif)![](../graphics/stm_eqn00100.gif)为了方便，我们写成
 
 ![](../graphics/stm_eqn00101.gif)意思是
 
@@ -177,7 +177,7 @@
 
 例如，考虑应变率的通常表达式，
 
-![](../graphics/stm_eqn00114.gif)需要计算矩阵 ![](../graphics/stm_eqn00115.gif)，其中 ![](../graphics/stm_eqn00116.gif) 是当前流经空间点 ![](../graphics/stm_eqn00117.gif) 的材料的速度。让我们现在推导当 ![](../graphics/stm_eqn00116.gif) 和 ![](../graphics/stm_eqn00117.gif) 的基系统都是我们通常为轴对称问题选择的圆柱系统时的 ![](../graphics/stm_eqn00118.gif) 的分量，基向量为
+![](../graphics/stm_eqn00114.gif)需要计算矩阵 ![](../graphics/stm_eqn00115.gif)，其中 ![](../graphics/stm_eqn00116.gif) 是当前流经空间点 ![](../graphics/stm_eqn00117.gif) 的材料的速度。让我们现在推导当 ![](../graphics/stm_eqn00118.gif)![](../graphics/stm_eqn00116.gif) 和 ![](../graphics/stm_eqn00117.gif) 的基系统都是我们通常为轴对称问题选择的圆柱系统时的  的分量，基向量为
 
 ![](../graphics/stm_eqn00119.gif)（在Abaqus中对于轴对称情况，我们总是按此顺序取分量——径向、轴向、周向）。这些基向量是正交和单位长度的，所以 ![](../graphics/stm_eqn00120.gif)
 
@@ -221,20 +221,7 @@
 ![](../graphics/stm_eqn00139.gif)这是虚向量场 ![](../graphics/stm_eqn00140.gif) 的空间梯度的对称部分。如果 ![](../graphics/stm_eqn00140.gif) 是虚速度场，则此符号对应于虚变形率（应变率的一种度量）。
 ### 初始位置和当前位置
 
-大多数结构问题涉及描述结构在加载时的行为方式及其从参考配置开始的变形历史。最初位于空间中某位置 ![](../graphics/stm_eqn00141.gif) 的材料粒子将移动到新位置 ![](../graphics/stm_eqn00117.gif)：由于我们假设材料不能出现或消失，![](../graphics/stm_eqn00117.gif) 和 ![](../graphics/stm_eqn00141.gif) 之间将存在一对一对应关系，因此我们始终可以将粒子位置的历史写成
-
-![](../graphics/stm_eqn00267.gif)并且这个关系可以反转——当我们知道 ![](../graphics/stm_eqn00117.gif) 和 *t* 时，我们知道 ![](../graphics/stm_eqn00141.gif)。现在考虑两个相邻粒子，位于初始配置中的 ![](../graphics/stm_eqn00141.gif) 和 ![](../graphics/stm_eqn00268.gif) 处。在当前配置中我们必须有
-
-![](../graphics/stm_eqn00269.gif)使用"映射" [方程 1.4.1-1](01s04a04-Deformation.md)。
-
-矩阵
-![](../graphics/stm_eqn00142.gif)![](../graphics/stm_eqn00001.gif)![](../graphics/stm_eqn00143.gif)![](../graphics/stm_eqn00144.gif)![](../graphics/stm_eqn00145.gif)![](../graphics/stm_eqn00146.gif)![](../graphics/stm_eqn00144.gif)
-![](../graphics/stm_eqn00270.gif)称为变形梯度矩阵，[方程 1.4.1-2](01s04a04-Deformation.md) 写成
-![](../graphics/stm_eqn00004.gif)![](../graphics/stm_eqn00002.gif)![](../graphics/stm_eqn00147.gif)
-![](../graphics/stm_eqn00271.gif)
-![](../graphics/stm_eqn00148.gif)![](../graphics/stm_eqn00149.gif)### 节点变量
-
-![](../graphics/stm_eqn00150.gif)![](../graphics/stm_eqn00151.gif)到目前为止，我们已经讨论了被认为与模型中所有点相关的量。有限元近似基于假设插值，通过它，位移、位置以及通常其他变量在任何材料点由有限数量的节点变量定义。在本指南中，我们使用大写上标来指代单个节点变量或节点向量，并对这些索引采用求和约定。
+大多数结构问题涉及描述结构在加载时的行为方式及其从参考配置开始的变形历史。最初位于空间中某位置 并且这个关系可以反转——当我们知道 ![](../graphics/stm_eqn00117.gif) 和 *t* 时，我们知道 ![](../graphics/stm_eqn00141.gif)。现在考虑两个相邻粒子，位于初始配置中的 ![](../graphics/stm_eqn00141.gif) 和 ![](../graphics/stm_eqn00117.gif)到目前为止，我们已经讨论了被认为与模型中所有点相关的量。有限元近似基于假设插值，通过它，位移、位置以及通常其他变量在任何材料点由有限数量的节点变量定义。在本指南中，我们使用大写上标来指代单个节点变量或节点向量，并对这些索引采用求和约定。
 
 因此，插值可以相当普遍地写成
 
@@ -242,4 +229,5 @@
 
 在本指南的某些章节中，我们需要描述整个有限元方程系统的节点变量操作。在这些章节中，我们使用经典矩阵-向量表示法。在这种表示法中，![](../graphics/stm_eqn00004.gif) 表示包含节点变量的列向量，![](../graphics/stm_eqn00002.gif) 表示行向量，矩阵写为 ![](../graphics/stm_eqn00147.gif)。常见操作是两个向量之间的标量积，
 
-![](../graphics/stm_eqn00148.gif)（在指标表示法中等价于 ![](../graphics/stm_eqn00149.gif)（在指标表示法中等价于 ![](../graphics/stm_eqn00151.gif)）。
+![](../graphics/stm_eqn00148.gif)（在指标表示法中等价于 ![](../graphics/stm_eqn00149.gif)（在指标表示法中等价于 ![](../graphics/stm_eqn00150.gif)![](../graphics/stm_eqn00151.gif)）。
+### Nodal variables

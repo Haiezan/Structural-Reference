@@ -6,7 +6,7 @@
 
 在任何结构问题中，分析员描述结构的初始配置，并关注其在整个加载历史过程中的变形。最初位于空间中某位置 ![](../graphics/stm_eqn00141.gif) 的材料粒子将移动到新位置 ![](../graphics/stm_eqn00117.gif)：由于我们假设材料不能出现或消失，![](../graphics/stm_eqn00117.gif) 和 ![](../graphics/stm_eqn00141.gif) 之间将存在一对一对应关系，因此我们始终可以将粒子位置的历史写成
 
-![](../graphics/stm_eqn00267.gif)并且这个关系可以反转——当我们知道 ![](../graphics/stm_eqn00117.gif) 和 *t* 时，我们知道 ![](../graphics/stm_eqn00141.gif)。现在考虑两个相邻粒子，位于初始配置中的 ![](../graphics/stm_eqn00141.gif) 和 ![](../graphics/stm_eqn00268.gif) 处。在当前配置中我们必须有
+![](../graphics/stm_eqn00267.gif)并且这个关系可以反转——当我们知道  和 *t* 时，我们知道 ![](../graphics/stm_eqn00141.gif)。现在考虑两个相邻粒子，位于初始配置中的 ![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn00141.gif) 和 ![](../graphics/stm_eqn00268.gif) 处。在当前配置中我们必须有
 
 ![](../graphics/stm_eqn00269.gif)使用"映射" [方程 1.4.1-1](01s04a04-Deformation.md)。
 
@@ -16,9 +16,9 @@
 
 ![](../graphics/stm_eqn00271.gif)
 
-由于材料行为取决于材料的应变而非其刚体运动，因此必须区分材料点邻域中的运动部分。观察从初始位于 ![](../graphics/stm_eqn00141.gif) 的粒子发出的无限小标距长度 ![](../graphics/stm_eqn00272.gif)，我们可以测量其初始长度和当前长度
+由于材料行为取决于材料的应变而非其刚体运动，因此必须区分材料点邻域中的运动部分。观察从初始位于  的粒子发出的无限小标距长度 ![](../graphics/stm_eqn00272.gif)，我们可以测量其初始长度和当前长度
 
-![](../graphics/stm_eqn00273.gif)所以这个标距长度的"拉伸比"是
+![](../graphics/stm_eqn00141.gif)![](../graphics/stm_eqn00273.gif)所以这个标距长度的"拉伸比"是
 
 ![](../graphics/stm_eqn00274.gif)
 
@@ -28,7 +28,7 @@
 
 ![](../graphics/stm_eqn00277.gif)其中 ![](../graphics/stm_eqn00278.gif) 是标距长度 ![](../graphics/stm_eqn00272.gif) 方向的单位向量。
 
-[方程 1.4.1-6](01s04a04-Deformation.md) 显示了如何测量与任何材料点上任何方向 ![](../graphics/stm_eqn00278.gif) 相关的拉伸比。当我们在特定材料点上改变由 ![](../graphics/stm_eqn00279.gif) 定义的方向并寻找拉伸比 ![](../graphics/stm_eqn00280.gif) 的驻值时，会获得有用的结果。由于 ![](../graphics/stm_eqn00278.gif) 必须始终是单位向量，![](../graphics/stm_eqn00281.gif) 的驻值通过求解约束变分方程获得
+[方程 1.4.1-6](01s04a04-Deformation.md) 显示了如何测量与任何材料点上任何方向 ![](../graphics/stm_eqn00278.gif) 相关的拉伸比。当我们在特定材料点上改变由 ![](../graphics/stm_eqn00141.gif)![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn00279.gif) 定义的方向并寻找拉伸比 ![](../graphics/stm_eqn00280.gif) 的驻值时，会获得有用的结果。由于 ![](../graphics/stm_eqn00278.gif) 必须始终是单位向量，![](../graphics/stm_eqn00281.gif) 的驻值通过求解约束变分方程获得
 
 ![](../graphics/stm_eqn00282.gif)其中 ![](../graphics/stm_eqn00283.gif) 是引入的拉格朗日乘子，以保留约束
 
@@ -50,15 +50,15 @@
 
 ![](../graphics/stm_eqn00303.gif)其中 ![](../graphics/stm_eqn00304.gif) 在每个方程中是相同的纯刚体旋转矩阵。纯刚体运动矩阵具有其逆是其转置的性质：![](../graphics/stm_eqn00305.gif)。比较当前配置和原始配置中的主拉伸方向，因此分离了刚体旋转和拉伸。找到主拉伸比及其方向从而提供了解决在材料点邻域中分离应变运动和刚体运动问题的方案。
 
-现在考虑参考配置中沿 ![](../graphics/stm_eqn00295.gif) 方向的标距长度 d ![](../graphics/stm_eqn00306.gif)。当前配置中相同的无限小材料线将沿 ![](../graphics/stm_eqn00298.gif) 方向并被拉伸 ![](../graphics/stm_eqn00292.gif)，所以
+现在考虑参考配置中沿  方向的标距长度 d ![](../graphics/stm_eqn00306.gif)。当前配置中相同的无限小材料线将沿 ![](../graphics/stm_eqn00295.gif)![](../graphics/stm_eqn00298.gif) 方向并被拉伸 ![](../graphics/stm_eqn00292.gif)，所以
 
 ![](../graphics/stm_eqn00307.gif)类似地，沿其他主方向，
 
 ![](../graphics/stm_eqn00308.gif)和
 
-![](../graphics/stm_eqn00309.gif)由于（![](../graphics/stm_eqn00295.gif)、![](../graphics/stm_eqn00296.gif)、![](../graphics/stm_eqn00297.gif)）是参考配置中的一组标准正交基向量，![](../graphics/stm_eqn00141.gif) 处的任何无限小材料线（标距长度）![](../graphics/stm_eqn00272.gif) 可以写成其在此基中的分量：
+![](../graphics/stm_eqn00309.gif)由于（![](../graphics/stm_eqn00295.gif)、![](../graphics/stm_eqn00296.gif)、![](../graphics/stm_eqn00297.gif)）是参考配置中的一组标准正交基向量， 处的任何无限小材料线（标距长度）![](../graphics/stm_eqn00272.gif) 可以写成其在此基中的分量：
 
-![](../graphics/stm_eqn00310.gif)其中
+![](../graphics/stm_eqn00141.gif)![](../graphics/stm_eqn00310.gif)其中
 
 ![](../graphics/stm_eqn00311.gif)每个向量 ![](../graphics/stm_eqn00312.gif) 移动并拉伸到对应的 ![](../graphics/stm_eqn00313.gif)，如上所定义。因此，当前标距长度 ![](../graphics/stm_eqn00314.gif) 是
 
@@ -70,7 +70,7 @@
 
 与变形梯度的定义 [方程 1.4.1-4](01s04a04-Deformation.md) 比较，
 
-![](../graphics/stm_eqn00318.gif)这就是极分解定理——任何运动都可以表示为纯刚体旋转，然后是三个正交方向的纯拉伸。极分解定理很重要，因为它允许我们区分运动的应变部分和刚体旋转。具体来说，![](../graphics/stm_eqn00319.gif) 完全定义了初始位于参考配置中 ![](../graphics/stm_eqn00141.gif) 的材料粒子邻域中材料粒子的相对运动；左拉伸矩阵 ![](../graphics/stm_eqn00320.gif) 完全定义了 ![](../graphics/stm_eqn00141.gif) 处材料粒子的变形。旋转矩阵 ![](../graphics/stm_eqn00304.gif) 定义了应变主方向（参考配置中的 ![](../graphics/stm_eqn00295.gif)）的刚体旋转。![](../graphics/stm_eqn00304.gif) 仅以某种平均意义表示该点处材料的刚体旋转：在一般运动中，从材料粒子发出的每个无限小标距长度具有不同的旋转量。当我们必须讨论各向异性材料的大变形时，应变主方向的旋转 ![](../graphics/stm_eqn00304.gif) 与材料中个别方向的旋转之间的区别变得很重要。然而，我们已经建立了一个重要结果：如果仅 ![](../graphics/stm_eqn00321.gif)，我们知道在初始位于 ![](../graphics/stm_eqn00141.gif) 且当前位于 ![](../graphics/stm_eqn00322.gif) 的点附近材料没有变形，因为此时 ![](../graphics/stm_eqn00323.gif) 因此 ![](../graphics/stm_eqn00324.gif)。![](../graphics/stm_eqn00325.gif) 必须非零才能使该点处材料有任何变形：从这个意义上说，![](../graphics/stm_eqn00325.gif)（因此 ![](../graphics/stm_eqn00320.gif) 本身）足以定义运动中除点的纯刚体旋转外的变形部分（它包含除纯刚体旋转外的所有信息的完整内容）。出于这个原因——这样，在以后的推导中，我们将能够将运动学与材料应力联系起来——我们需要能够从 ![](../graphics/stm_eqn00319.gif) 中分离出 ![](../graphics/stm_eqn00320.gif)。很容易获得 ![](../graphics/stm_eqn00326.gif)，因为
+![](../graphics/stm_eqn00318.gif)这就是极分解定理——任何运动都可以表示为纯刚体旋转，然后是三个正交方向的纯拉伸。极分解定理很重要，因为它允许我们区分运动的应变部分和刚体旋转。具体来说，![](../graphics/stm_eqn00319.gif) 完全定义了初始位于参考配置中 ![](../graphics/stm_eqn00141.gif) 的材料粒子邻域中材料粒子的相对运动；左拉伸矩阵 ![](../graphics/stm_eqn00320.gif) 完全定义了 ![](../graphics/stm_eqn00141.gif) 处材料粒子的变形。旋转矩阵 ![](../graphics/stm_eqn00304.gif) 定义了应变主方向（参考配置中的 ![](../graphics/stm_eqn00295.gif)）的刚体旋转。![](../graphics/stm_eqn00298.gif)![](../graphics/stm_eqn00304.gif) 仅以某种平均意义表示该点处材料的刚体旋转：在一般运动中，从材料粒子发出的每个无限小标距长度具有不同的旋转量。当我们必须讨论各向异性材料的大变形时，应变主方向的旋转 ![](../graphics/stm_eqn00304.gif) 与材料中个别方向的旋转之间的区别变得很重要。然而，我们已经建立了一个重要结果：如果仅 ![](../graphics/stm_eqn00321.gif)，我们知道在初始位于 ![](../graphics/stm_eqn00141.gif) 且当前位于 ![](../graphics/stm_eqn00322.gif) 的点附近材料没有变形，因为此时 ![](../graphics/stm_eqn00323.gif) 因此 ![](../graphics/stm_eqn00324.gif)。![](../graphics/stm_eqn00325.gif) 必须非零才能使该点处材料有任何变形：从这个意义上说，![](../graphics/stm_eqn00325.gif)（因此 ![](../graphics/stm_eqn00320.gif) 本身）足以定义运动中除点的纯刚体旋转外的变形部分（它包含除纯刚体旋转外的所有信息的完整内容）。出于这个原因——这样，在以后的推导中，我们将能够将运动学与材料应力联系起来——我们需要能够从  中分离出 ![](../graphics/stm_eqn00320.gif)。很容易获得 ![](../graphics/stm_eqn00319.gif)![](../graphics/stm_eqn00326.gif)，因为
 
 ![](../graphics/stm_eqn00327.gif)因为 ![](../graphics/stm_eqn00305.gif) 且 ![](../graphics/stm_eqn00320.gif) 是对称的。
 
@@ -90,25 +90,25 @@
 
 ![](../graphics/stm_eqn00340.gif)和逆变度量张量
 
-![](../graphics/stm_eqn00340.gif)
+
 
 我们可以通过将变形梯度 ![](../graphics/stm_eqn00319.gif) 投影到基上来数值表示它：
 
 ![](../graphics/stm_eqn00341.gif)回忆 ![](../graphics/stm_eqn00319.gif) 的定义：
 
-![](../graphics/stm_eqn00342.gif)由于 ![](../graphics/stm_eqn00114.gif) 沿 ![](../graphics/stm_eqn00008.gif) 的分量是 ![](../graphics/stm_eqn00343.gif) 且我们可以写成 ![](../graphics/stm_eqn00344.gif)，
+![](../graphics/stm_eqn00342.gif)由于 ![](../graphics/stm_eqn00314.gif) 沿 ![](../graphics/stm_eqn00008.gif) 的分量是 ![](../graphics/stm_eqn00343.gif) 且我们可以写成 ![](../graphics/stm_eqn00344.gif)，
 
 ![](../graphics/stm_eqn00345.gif)因此，写成 ![](../graphics/stm_eqn00346.gif) 定义
 
-![](../graphics/stm_eqn00347.gif)我们必须继续记住，![](../graphics/stm_eqn00348.gif) 的第一个索引与当前配置中沿基向量的分量相关联（在本例中为 ![](../graphics/stm_eqn00008.gif)），而其第二个索引与参考配置中沿基向量的分量相关联（![](../graphics/stm_eqn00349.gif)）。
+![](../graphics/stm_eqn00347.gif)我们必须继续记住，![](../graphics/stm_eqn00348.gif) 的第一个索引与当前配置中沿基向量的分量相关联（在本例中为 ![](../graphics/stm_eqn00319.gif)![](../graphics/stm_eqn00008.gif)），而其第二个索引与参考配置中沿基向量的分量相关联（![](../graphics/stm_eqn00319.gif)![](../graphics/stm_eqn00349.gif)）。
 
 ![](../graphics/stm_eqn00350.gif)![](../graphics/stm_eqn00351.gif)从 [方程 1.4.1-13](01s04a04-Deformation.md) 我们可以写出
 
-![](../graphics/stm_eqn00350.gif)其中 ![](../graphics/stm_eqn00351.gif) 是我们在参考配置中选择的基系统的逆变度量。
+ 是我们在参考配置中选择的基系统的逆变度量。
 
-主拉伸比平方及其方向的特征值问题通过求解矩阵 ![](../graphics/stm_eqn00352.gif) 的特征值来求解。特征向量将作为当前配置中沿 ![](../graphics/stm_eqn00048.gif) 基向量的分量 ![](../graphics/stm_eqn00353.gif) 出现。由于我们已将左拉伸定义为
+主拉伸比平方及其方向的特征值问题通过求解矩阵 ![](../graphics/stm_eqn00352.gif) 的特征值来求解。特征向量将作为当前配置中沿  基向量的分量 ![](../graphics/stm_eqn00353.gif) 出现。由于我们已将左拉伸定义为
 
-![](../graphics/stm_eqn00354.gif)我们将其分量写在当前配置的基上为
+![](../graphics/stm_eqn00048.gif)![](../graphics/stm_eqn00354.gif)我们将其分量写在当前配置的基上为
 
 ![](../graphics/stm_eqn00355.gif)并且，由于
 
@@ -116,7 +116,7 @@
 
 ![](../graphics/stm_eqn00357.gif)
 
-![](../graphics/stm_eqn00358.gif)极分解给出
+极分解给出
 
 ![](../graphics/stm_eqn00358.gif)所以
 
@@ -135,4 +135,4 @@
 
 ### 参考
 
-![](../graphics/stm_eqn00327.gif)![](../graphics/stm_eqn00305.gif)![](../graphics/stm_eqn00320.gif)"Abaqus Analysis User's Guide" 第1.2.2节"约定"
+"Abaqus Analysis User's Guide" 第1.2.2节"约定"

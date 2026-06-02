@@ -50,7 +50,7 @@
 
 ![](../graphics/stm_eqn03996.gif)
 
-让我们将翘曲函数表示为三部分之和：叠加在未知刚性平移![](../graphics/stm_eqn03998.gif)和关于未知剪切中心![](../graphics/stm_eqn03999.gif)的刚性旋转上的翘曲函数![](../graphics/stm_eqn03997.gif)。这个假设可以写成
+让我们将翘曲函数表示为三部分之和：叠加在未知刚性平移![](../graphics/stm_eqn03997.gif)![](../graphics/stm_eqn03998.gif)和关于未知剪切中心![](../graphics/stm_eqn03999.gif)的刚性旋转上的翘曲函数。这个假设可以写成
 
 ![](../graphics/stm_eqn04000.gif)将以上代入弹性能量表达式，使用剪切中心的性质，并相对于翘曲函数最小化能量，我们得到
 

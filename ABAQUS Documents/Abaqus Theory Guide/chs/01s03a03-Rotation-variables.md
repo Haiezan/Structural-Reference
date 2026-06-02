@@ -6,9 +6,9 @@
 
 由于Abaqus包含诸如梁和壳等结构单元的功能，需要定义任意大小的旋转，因此需要一种方便的方法来存储节点处的旋转。旋转向量 ![](../graphics/stm_eqn00152.gif) 的分量存储在任何需要旋转的节点的自由度4、5和6中。
 
-有限旋转向量 ![](../graphics/stm_eqn00152.gif) 由旋转幅度 ![](../graphics/stm_eqn00153.gif) 和空间中的旋转轴或方向 ![](../graphics/stm_eqn00154.gif) 组成。从物理上讲，旋转 ![](../graphics/stm_eqn00152.gif) 被解释为绕轴 ![](../graphics/stm_eqn00156.gif) 旋转 ![](../graphics/stm_eqn00155.gif) 弧度。为了用数学方法表征这个有限旋转，旋转向量 ![](../graphics/stm_eqn00152.gif) 用于定义正交变换或旋转矩阵。为此，首先定义与 ![](../graphics/stm_eqn00152.gif) 相关的斜对称矩阵 ![](../graphics/stm_eqn00157.gif)，关系为
+有限旋转向量 ![](../graphics/stm_eqn00152.gif) 由旋转幅度 ![](../graphics/stm_eqn00153.gif) 和空间中的旋转轴或方向 ![](../graphics/stm_eqn00154.gif) 组成。从物理上讲，旋转 ![](../graphics/stm_eqn00152.gif) 被解释为绕轴  旋转 ![](../graphics/stm_eqn00155.gif) 弧度。为了用数学方法表征这个有限旋转，旋转向量 ![](../graphics/stm_eqn00156.gif) 用于定义正交变换或旋转矩阵。为此，首先定义与 ![](../graphics/stm_eqn00152.gif) 相关的斜对称矩阵 ![](../graphics/stm_eqn00157.gif)，关系为
 
-![](../graphics/stm_eqn00158.gif)![](../graphics/stm_eqn00152.gif) 称为斜对称矩阵 ![](../graphics/stm_eqn00157.gif) 的轴向量。在相对于标准欧几里得基的矩阵分量中，如果 ![](../graphics/stm_eqn00159.gif)，则
+![](../graphics/stm_eqn00152.gif)![](../graphics/stm_eqn00158.gif)![](../graphics/stm_eqn00152.gif) 称为斜对称矩阵 ![](../graphics/stm_eqn00157.gif) 的轴向量。在相对于标准欧几里得基的矩阵分量中，如果 ![](../graphics/stm_eqn00159.gif)，则
 
 ![](../graphics/stm_eqn00160.gif)在下面的内容中，![](../graphics/stm_eqn00161.gif) 将用于表示具有轴向量 ![](../graphics/stm_eqn00001.gif) 的斜对称矩阵。
 
@@ -46,9 +46,9 @@
 
 ![](../graphics/stm_eqn00189.gif)或等价的递归关系，
 
-![](../graphics/stm_eqn00190.gif)重要的是要注意，![](../graphics/stm_eqn00191.gif)（解释为叠加在有限旋转 ![](../graphics/stm_eqn00162.gif) 上的有限旋转 ![](../graphics/stm_eqn00192.gif)）与 ![](../graphics/stm_eqn00193.gif)（解释为叠加在有限旋转 ![](../graphics/stm_eqn00192.gif) 上的有限旋转 ![](../graphics/stm_eqn00162.gif)）不同。
+![](../graphics/stm_eqn00190.gif)重要的是要注意，![](../graphics/stm_eqn00191.gif)（解释为叠加在有限旋转 （解释为叠加在有限旋转 ![](../graphics/stm_eqn00192.gif) 上的有限旋转 ![](../graphics/stm_eqn00162.gif)）不同。
 
-尽管复合旋转是用正交矩阵定义的，但在数值上下文中，与旋转矩阵相关的旋转向量（或等价的四元数参数）是自由度。复合旋转执行如下：给定四元数参数化 ![](../graphics/stm_eqn00194.gif) 和增量（有限）旋转 ![](../graphics/stm_eqn00195.gif)，其中 ![](../graphics/stm_eqn00196.gif) 根据 [方程 1.3.1-2](01s03a03-Rotation-variables.md) 用增量旋转向量 ![](../graphics/stm_eqn00197.gif) 定义，总旋转或复合旋转由四元数 ![](../graphics/stm_eqn00198.gif) 给出，计算如下：
+尽管复合旋转是用正交矩阵定义的，但在数值上下文中，与旋转矩阵相关的旋转向量（或等价的四元数参数）是自由度。复合旋转执行如下：给定四元数参数化 ![](../graphics/stm_eqn00193.gif)![](../graphics/stm_eqn00162.gif)![](../graphics/stm_eqn00192.gif)![](../graphics/stm_eqn00194.gif) 和增量（有限）旋转 ![](../graphics/stm_eqn00195.gif)，其中 ![](../graphics/stm_eqn00196.gif) 根据 [方程 1.3.1-2](01s03a03-Rotation-variables.md) 用增量旋转向量 ![](../graphics/stm_eqn00197.gif) 定义，总旋转或复合旋转由四元数 ![](../graphics/stm_eqn00198.gif) 给出，计算如下：
 
 ![](../graphics/stm_eqn00199.gif)这里 ![](../graphics/stm_eqn00200.gif) 表示四元数乘积，定义为
 

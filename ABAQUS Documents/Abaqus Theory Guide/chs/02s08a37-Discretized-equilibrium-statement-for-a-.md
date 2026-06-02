@@ -2,7 +2,7 @@
 
 ### 2.8.2 多孔介质离散平衡方程
 
-![](../graphics/stm_eqn01757.gif)![](../graphics/stm_eqn00868.gif)**产品：** Abaqus/Standard
+**产品：** Abaqus/Standard
 
 平衡通过在时间*t*的当前配置中写出所考虑体积的虚功原理来表达：
 
@@ -24,7 +24,7 @@
 
 虚变形率插值为
 
-![](../graphics/stm_eqn01754.gif)其中，在最简单的情况下，
+![](../graphics/stm_eqn01753.gif)其中，在最简单的情况下，
 
 ![](../graphics/stm_eqn01754.gif)尽管在Abaqus的一些单元中使用了更一般的形式。
 
@@ -32,15 +32,15 @@
 
 ![](../graphics/stm_eqn01755.gif)其中假设![](../graphics/stm_eqn00660.gif)独立的。
 
-![](../graphics/stm_eqn00660.gif)![](../graphics/stm_eqn01215.gif)方程左边与![](../graphics/stm_eqn00660.gif)轭的项随后称为内力数组，![](../graphics/stm_eqn01215.gif)
+![](../graphics/stm_eqn00660.gif)![](../graphics/stm_eqn01215.gif)方程左边与
 
 ![](../graphics/stm_eqn01756.gif)
 
-![](../graphics/stm_eqn00868.gif)同样，外力数组![](../graphics/stm_eqn00868.gif)自右边：
+同样，外力数组![](../graphics/stm_eqn00868.gif)自右边：
 
 ![](../graphics/stm_eqn01757.gif)（![](../graphics/stm_eqn00868.gif)括任何达朗贝尔力）。
 
-![](../graphics/stm_eqn00660.gif)依次选择每个![](../graphics/stm_eqn00660.gif)零，将平衡表达为内外力的平衡：
+依次选择每个![](../graphics/stm_eqn00660.gif)零，将平衡表达为内外力的平衡：
 
 ![](../graphics/stm_eqn01758.gif)
 
@@ -52,7 +52,7 @@
 
 ![](../graphics/stm_eqn01765.gif)其中
 
-![](../graphics/stm_eqn01766.gif)![](../graphics/stm_eqn01766.gif)当前配置中体积与参考配置中体积之比。
+![](../graphics/stm_eqn01766.gif)当前配置中体积与参考配置中体积之比。
 
 项![](../graphics/stm_eqn01767.gif)是
 
@@ -60,7 +60,7 @@
 
 第一项包括![](../graphics/stm_eqn01769.gif)，这是由节点位置和孔隙液体压力值的变化引起的应力变化。在连续体意义上（即，在求解变量的空间离散化之前），这项由有效应力原理和材料使用的本构假设定义，并在下面详细讨论。将空间离散化引入第二项提供了对初始应力矩阵的贡献。
 
-![](../graphics/stm_eqn01727.gif)由于有效应力![](../graphics/stm_eqn01727.gif)常存储为与空间方向相关的分量，因此在增量过程中材料的旋转必须包含在formulation中。这个问题在"变形率与应变增量"第1.4.3节、"应力率"第1.5.3节、"状态存储"第1.5.4节和"固体单元公式"第3.2.2节中详细讨论。为了当前发展的目的，我们假设应力的变化为
+由于有效应力![](../graphics/stm_eqn01727.gif)常存储为与空间方向相关的分量，因此在增量过程中材料的旋转必须包含在formulation中。这个问题在"变形率与应变增量"第1.4.3节、"应力率"第1.5.3节、"状态存储"第1.5.4节和"固体单元公式"第3.2.2节中详细讨论。为了当前发展的目的，我们假设应力的变化为
 
 ![](../graphics/stm_eqn01770.gif)其中![](../graphics/stm_eqn01771.gif)有效应力的变化，与材料中的本构响应相关（即，由应变或其他状态变量的变化引起），![](../graphics/stm_eqn01772.gif)材料的自旋。使用此假设，来自多孔介质中应力的Jacobian贡献为
 
@@ -73,4 +73,4 @@
 
 "Abaqus Analysis User's Guide"第6.8.1节"耦合孔隙流体扩散与应力分析"
 
-![](../graphics/stm_eqn00868.gif)"Abaqus Analysis User's Guide"第6.8.2节"地静应力状态"
+"Abaqus Analysis User's Guide"第6.8.2节"地静应力状态"

@@ -16,7 +16,7 @@ Abaqus/Standard提供了两种 formulations 用于模拟两个可变形体之间
 
 考虑从表面上的节点 ![](../graphics/stm_eqn07472.gif) 与主表面段 ![](../graphics/stm_eqn07473.gif)、![](../graphics/stm_eqn07474.gif)、![](../graphics/stm_eqn04900.gif)（由节点描述）之间的接触，其中节点数量取决于段的阶数。对于线性段，节点数为2；对于二次段，节点数为3。对于线性滑线的平滑段，节点数也为3；对于二次滑线的平滑段，节点数为5。如果接触发生在两个段的（凸）顶点处，则只有一个节点将进入方程。典型的线性段如图5.1.2-1所示，二次段如图5.1.2-2所示。平滑段在本节后面显示。
 
-为了推导控制这些单元的方程，我们考虑滑线平面中的坐标。对于轴对称单元，该平面与二维空间重合。首先，我们确定从表面上最接近点 ![](../graphics/stm_eqn07393.gif) 的段上的点 ![](../graphics/stm_eqn00117.gif)。我们还确定该点处段的法向 ![](../graphics/stm_eqn00483.gif) 和切向 ![](../graphics/stm_eqn00479.gif)。点 ![](../graphics/stm_eqn00117.gif) 和法向 ![](../graphics/stm_eqn00483.gif) 可以通过以下关系与过盈量 ![](../graphics/stm_eqn07404.gif) 相关联
+为了推导控制这些单元的方程，我们考虑滑线平面中的坐标。对于轴对称单元，该平面与二维空间重合。首先，我们确定从表面上最接近点  的段上的点 ![](../graphics/stm_eqn00117.gif)。我们还确定该点处段的法向 ![](../graphics/stm_eqn07393.gif)![](../graphics/stm_eqn00483.gif) 和切向 ![](../graphics/stm_eqn00479.gif)。点 ![](../graphics/stm_eqn00117.gif) 和法向 ![](../graphics/stm_eqn00483.gif) 可以通过以下关系与过盈量 ![](../graphics/stm_eqn07404.gif) 相关联
 
 ![](../graphics/stm_eqn07475.gif)
 
@@ -28,9 +28,9 @@ Abaqus/Standard提供了两种 formulations 用于模拟两个可变形体之间
 
 ![](../graphics/stmquad-slideline-nls.png)由于 ![](../graphics/stm_eqn00117.gif) 在段上，其位置完全由该段的插值函数 ![](../graphics/stm_eqn07476.gif)、位置 ![](../graphics/stm_eqn07477.gif) 以及作为段一部分的节点位置 ![](../graphics/stm_eqn07478.gif)、![](../graphics/stm_eqn07479.gif) 定义。这允许我们写出[方程5.1.2-1](05s01a133.md)的表达式
 
-![](../graphics/stm_eqn07480.gif)其中 ![](../graphics/stm_eqn07481.gif) 和 ![](../graphics/stm_eqn07482.gif)、![](../graphics/stm_eqn07483.gif)、![](../graphics/stm_eqn04900.gif) 是 ![](../graphics/stm_eqn07477.gif) 的函数。例如，对于线性段，你得到 ![](../graphics/stm_eqn07484.gif)、![](../graphics/stm_eqn07485.gif)。对于二次段，使用 ![](../graphics/stm_eqn07486.gif)、![](../graphics/stm_eqn07487.gif)、![](../graphics/stm_eqn07488.gif)。对于滑线的平滑段可获得类似的表达式。滑线上点 ![](../graphics/stm_eqn00117.gif) 处的切向 ![](../graphics/stm_eqn00479.gif) 通过以下方式得到
+![](../graphics/stm_eqn07480.gif)其中 ![](../graphics/stm_eqn07481.gif) 和 ![](../graphics/stm_eqn07482.gif)、![](../graphics/stm_eqn07483.gif)、![](../graphics/stm_eqn04900.gif) 是 ![](../graphics/stm_eqn07477.gif) 的函数。例如，对于线性段，你得到 ![](../graphics/stm_eqn07484.gif)、![](../graphics/stm_eqn07485.gif)。对于二次段，使用 ![](../graphics/stm_eqn07486.gif)、![](../graphics/stm_eqn07487.gif)、![](../graphics/stm_eqn07488.gif)。对于滑线的平滑段可获得类似的表达式。滑线上点  处的切向 ![](../graphics/stm_eqn00479.gif) 通过以下方式得到
 
-![](../graphics/stm_eqn07489.gif)其中
+![](../graphics/stm_eqn00117.gif)![](../graphics/stm_eqn07489.gif)其中
 
 ![](../graphics/stm_eqn07490.gif)点 ![](../graphics/stm_eqn00117.gif) 的位置由法向和切向必须正交的条件决定，这导致以下关于 ![](../graphics/stm_eqn07477.gif) 的方程：
 
