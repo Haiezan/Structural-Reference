@@ -1,0 +1,161 @@
+<HTML>
+<HEAD>
+<TITLE>PEER Structural Performance Database: Search </TITLE>
+<META NAME="generator" CONTENT="Sausage Software HotDog Professional 4">
+</HEAD>
+<BODY>
+<TABLE ALIGN="LEFT" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR>
+<TD ALIGN="LEFT" BGCOLOR="#265AA6">
+<IMG SRC="/spd/graphics/banner.jpg" BORDER="0" WIDTH="600" HEIGHT="120">
+</TD>
+</TR>
+</TABLE>
+<BR CLEAR="ALL">
+<DIV ALIGN="RIGHT">
+<A HREF="/spd/index.html"><IMG SRC="/spd/graphics/home.jpg" BORDER="0"></A>
+<A HREF="/spd/search.html"><IMG SRC="/spd/graphics/search.jpg" BORDER="0"></A>
+<A HREF="/spd/about.html"><IMG SRC="/spd/graphics/about.jpg" BORDER="0"></A>
+<BR>
+</DIV>
+
+<form method="post" action="/spd/servlet/search">
+<table width="100%" cellpadding="2" cellspacing="2" border="0">
+<tr valign="top">
+
+<td><!--left-->
+<table>
+<tr valign="top">
+<td>Author</td>
+<td><input type="text" name="author" size="20" maxlength="20"></td>
+</tr>
+
+<tr valign="top">
+<td>Column Type</td>
+<td>
+<SELECT NAME="type" SIZE="1">
+<OPTION VALUE="" SELECTED>
+<OPTION VALUE="R">Rectangular
+<OPTION VALUE="C">Spiral
+</SELECT>
+</td>
+</tr>
+
+<tr valign="top">
+<td>Test Configuration</td>
+<td>
+<SELECT NAME="config" SIZE="1">
+<OPTION VALUE="" SELECTED>
+<OPTION VALUE="C">Cantilever
+<OPTION VALUE="HH">Cantilever with Hammer Head
+<OPTION VALUE="CFB">Cantilever with Flexible Base
+<OPTION VALUE="DC">Double Cantilever
+<OPTION VALUE="DE">Double Ended
+</SELECT>
+</td>
+</tr>
+
+<tr valign="top">
+<td>Span-to-Depth Ratio</td>
+<td>
+<input type="text" name="sdrlo" size="4" maxlength="4"> - <input type="text" name="sdrhi" size="4" maxlength="4">
+ (range 0-10) <a href="/spd/servlet/plot?pt=sdr">histogram</a> 
+</td>
+</tr>
+
+<tr valign="top">
+<td>Axial Load Ratio</td>
+<td>
+<input type="text" name="alrlo" size="4" maxlength="4"> - <input type="text" name="alrhi" size="4" maxlength="4">
+ (range -0.1-0.9) <a href="/spd/servlet/plot?pt=alr">histogram</a>
+</td>
+</tr>
+
+<tr valign="top">
+<td>Longitudinal Reinf Ratio</td>
+<td>
+<input type="text" name="lrrlo" size="4" maxlength="4"> - <input type="text" name="lrrhi" size="4" maxlength="4">
+ (range 0.002-0.06) <a href="/spd/servlet/plot?pt=lrr">histogram</a>
+</td>
+</tr>
+
+</table>
+</td>
+
+<td><!--right-->
+<table>
+<tr valign="top">
+<td>Failure Type</td>
+<td align="left">
+<SELECT NAME="failure" SIZE="1">
+<OPTION VALUE="" SELECTED>
+<OPTION VALUE="1">Flexure
+<OPTION VALUE="2">Shear
+<OPTION VALUE="3">Flexure-Shear
+</SELECT>
+</td>
+</tr>
+
+<tr valign="top">
+<td>Damage <br>Observation</td>
+<td align="left">
+<INPUT TYPE="checkbox"  NAME="crushing" >Concrete Crushing
+<br><INPUT TYPE="checkbox"  NAME="spalling" >Significant Spalling
+<br><INPUT TYPE="checkbox"  NAME="buckling" >Long Bar Buckling
+<br><INPUT TYPE="checkbox"  NAME="longbarfrac" >Long Bar Fracture
+<br><INPUT TYPE="checkbox"  NAME="spiralfrac" >Spiral Fracture
+<br><INPUT TYPE="checkbox"  NAME="lossaxial" >Loss of Axial Load Capacity
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+<INPUT TYPE="submit" NAME="submit" VALUE="Search">
+<INPUT TYPE="reset" NAME="reset" VALUE="Clear">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</form>
+
+<p>
+For the ratios, enter a range of values to search in combination with other column attributes or view the histogram showing the distribution of values in the database and click any bar to view record details.
+</p>
+
+<h3>Download</h3>
+
+<p>
+Download tab-delimited data files for rectangular or spiral columns (Save as text.) Column headers are on the first row. Notation is documented on the <a href="/spd/about.html">about</a> page. 
+</p>
+
+<p>
+Rectangular columns : <a href="/spd/rectangular_properties.txt">Properties</a> | Damage 
+<br>Spiral columns : <a href="/spd/spiral_properties.txt">Properties</a> | Damage 
+</p>
+
+<!--
+<p>
+Rectangular columns : <a href="/spd/servlet/tab?type=R&data=prop">Properties</a> | Damage 
+<br>Spiral columns : <a href="/spd/servlet/tab?type=C&data=prop">Properties</a> | Damage 
+</p>
+-->
+
+<TABLE WIDTH="100%" CELLPADDING="10" CELLSPACING="0" BORDER="0">
+<TR>
+<TD>
+<A HREF="/spd/"><IMG SRC="/spd/graphics/spd.jpg" BORDER="0" ALIGN="LEFT"></A>
+</TD>
+<TD>
+<FONT SIZE="-1">
+The Structural Performance Database is a project of the <A HREF="http://peer.berkeley.edu/">Pacific Earthquake Engineering Research Center</A>, funded by the <A HREF="http://www.nsf.gov/">National Science Foundation</A>.
+Contact <A HREF="mailto:eberhard@u.washington.edu">Marc Eberhard</A> at the University of Washington with questions or comments. Report technical problems to the <A HREF="mailto:eerclibrary@berkeley.edu">server administrator</A>. Copyright 2003.
+</FONT>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

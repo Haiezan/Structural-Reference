@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="https://peer.berkeley.edu/profiles/openberkeley/themes/openberkeley_theme_brand/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="twitter:dnt" content="on">
+  <title>Publications | Pacific Earthquake Engineering Research Center</title>
+  <link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_TnnMw6Mh72mEvaDujXjSbFOpptbdTbtXwXrVO5d8QpM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_VTJqEpJ_kbGhyWnq6E__HtNmim_pFNj_xmqT2CnuFyk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_P7--I-hb0gcJsTQhFYqCt9Bbt--MYpgAtnA2MzSE2j8.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_ComR9u66r4EDtgkpwS3Bb82cMZ1TzloCfBsuGIeTp-I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_fTfJo-dPtzirDva2c_4irCYiTua1w5HvujwppmNQxcE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_l0nY-aVTB09v9_xTUkXAdhv2Pm24M2ixkWW-la0gqA0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_qpsIBcs9JSa7ccwyEmky_c737hDf6nNOZA81Rs9WHqg.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://peer.berkeley.edu/sites/default/files/css/css_vVHKxTM0GJ1H06xa3A56ODjmnaQjaHfKtNGjZ_0rAHQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" media="all" />
+<link type="text/css" rel="stylesheet" href="//use.typekit.net/aeg3kye.css" media="all" />
+  <script type="application/json" data-drupal-selector="drupal-settings-json">{"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"openberkeley_theme_brand","theme_token":"6OzPgwMlMZ5BEEUEOylFT3RegaJf9mnDTMs2J8vM0Zo","js":{"profiles\/openberkeley\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_admin\/openberkeley_admin_siteimprove.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/js\/bootstrap-accessibility.js":1,"profiles\/openberkeley\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/drupal-settings-loader.js":1,"profiles\/openberkeley\/libraries\/bootstrap\/js\/bootstrap.min.js":1,"profiles\/openberkeley\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/openberkeley\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/openberkeley\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"profiles\/openberkeley\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"misc\/form-single-submit.js":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"profiles\/openberkeley\/modules\/contrib\/entityreference\/js\/entityreference.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_faq\/openberkeley_faq.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_portfolio\/openberkeley_portfolio.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_theme\/openberkeley_theme.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_twitter\/js\/openberkeley-twitter.js":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_wysiwyg_override\/js\/openberkeley-wysiwyg-override.js":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/openberkeley\/modules\/contrib\/caption_filter\/js\/caption-filter.js":1,"profiles\/openberkeley\/libraries\/maphilight\/jquery.maphilight.min.js":1,"profiles\/openberkeley\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1,"misc\/autocomplete.js":1,"misc\/tableheader.js":1,"profiles\/openberkeley\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-2351372-1":1,"public:\/\/js\/google-analytics-ae0a914b4141f149747e8c361b0502b9.js":1,"profiles\/openberkeley\/modules\/contrib\/extlink\/js\/extlink.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/js\/responsive-image-maps\/ios-orientationchange-fix.min.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/js\/responsive-image-maps\/jquery.rwdImageMaps.min.js":1,"profiles\/openberkeley\/themes\/radix\/assets\/js\/radix.script.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/js\/openberkeley_theme_base.script.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/js\/drupal-announce.js":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/js\/openberkeley_theme_brand.script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"modules\/field\/theme\/field.css":1,"profiles\/openberkeley\/modules\/contrib\/mvpcreator_theme\/css\/mvpcreator-theme.css":1,"modules\/node\/node.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_brand_widgets\/css\/openberkeley-widgets-hero.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_brand_widgets\/css\/openberkeley-widgets-image.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_brand_widgets\/css\/openberkeley-widgets-modal.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_brand_widgets\/css\/openberkeley-widgets-promo.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_brand_widgets\/css\/openberkeley-widgets-thumbnail-list.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_faq\/openberkeley_faq.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_news\/openberkeley_news.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_people\/openberkeley_people.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_portfolio\/openberkeley_portfolio.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_pubs\/openberkeley_pubs.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_theme\/openberkeley-theme.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_search\/openberkeley_top_results\/openberkeley_top_results.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_wysiwyg_override\/css\/openberkeley-wysiwyg-override-list-properties.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_theme\/css\/panopoly-featured.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_theme\/css\/panopoly-layouts.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_wysiwyg\/panopoly-wysiwyg.css":1,"profiles\/openberkeley\/modules\/contrib\/radix_layouts\/radix_layouts.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/openberkeley\/modules\/contrib\/extlink\/css\/extlink.css":1,"profiles\/openberkeley\/modules\/contrib\/views\/css\/views.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_widgets\/openberkeley_widgets.css":1,"profiles\/openberkeley\/modules\/contrib\/caption_filter\/caption-filter.css":1,"profiles\/openberkeley\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/openberkeley\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/bootstrap-custom.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/css\/bootstrap-accessibility.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/css\/openberkeley_theme_base.style.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/openberkeley_theme_brand.style.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_event.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_event_reg.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_news.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_portfolio.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_privatepages.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_pubs.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_people.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_search.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/brand_openberkeley_faq.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_brand\/assets\/css\/print.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_theme\/openberkeley-theme-collapsible.css":1,"profiles\/openberkeley\/modules\/openberkeley\/openberkeley_wysiwyg_override\/css\/openberkeley-wysiwyg-override.css":1,"profiles\/openberkeley\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/fonts\/fontawesome-v6\/css\/fontawesome.min.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/fonts\/fontawesome-v6\/css\/brands.min.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/fonts\/fontawesome-v6\/css\/solid.min.css":1,"profiles\/openberkeley\/themes\/openberkeley_theme_base\/assets\/fonts\/fontawesome-v6\/css\/v4-font-face.min.css":1,"\/\/fonts.googleapis.com\/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800":1,"\/\/use.typekit.net\/aeg3kye.css":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"automatic"},"urlIsAjaxTrusted":{"\/publications\/peer_reports\/reports_1998\/9801.pdf":true,"\/search\/node":true},"better_exposed_filters":{"views":{"openberkeley_pubs_search_view":{"displays":{"openberkeley_pubs_search_pane":{"filters":{"keywords":{"required":false},"author":{"required":false},"topics":{"required":false},"pubtype":{"required":false}}}}}}},"googleanalytics":{"account":["UA-2351372-1","G-F9ZPBDXNNZ"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"extlink":{"extTarget":0,"extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":0,"extExclude":"(peer\\.berkeley\\.edu)","extInclude":"","extCssExclude":"map","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)","extUseFontAwesome":false},"openberkeley_theme_base":{"disable_linearizable_tables":false,"file_link_icons":0}}</script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_SJgtMdhzo0raDjyuHJR-mtSH_mzSDwMhzOyHsnAskDQ.js"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_J1LDKrZlf6nq7Ka0onHwg3MUNfwG75SSQi30oTn81HA.js"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_o6JxHJwYuFeHU49Apb7_MQH2oigkyhJTFgwHfPvixCM.js"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_bzv36AZFTQMzUYBkefC_UDRTQ1s2b8a43k8x3vLKR1g.js"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-2351372-1"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_8GZpUqjH9wedmcD_etgeBzm8RH1l5_j64OmOv-eq7js.js"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_dLmXSnakSlQtnZLfaN1SzmwinPEDYG7s4CVD6dWEOCk.js"></script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-publications page-publications-peer-reports page-publications-peer-reports-reports-1998 page-publications-peer-reports-reports-1998-9801pdf region-content panel-layout-radix_boxton panel-region-contentmain no-slogan site-name-super-long site-name-option-one" >
+  <div id="skip-link" role="navigation" aria-label="Skip links">
+    <a href="#main" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+      <header id="header" class="header">
+  <div class="container">
+    <div class="navbar navbar-default">
+      <div class="home-branding">
+        <a href="https://www.berkeley.edu" class="home-link"><div id="new-wordmark"><img src="/profiles/openberkeley/themes/openberkeley_theme_base/assets/images/logo-berkeley-white-2.svg" alt="UC Berkeley"></div></a>
+              </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-header">
+        <div class="navbar-brand">
+                    <div id="site-name-and-slogan">
+                                                      <div id="site-name">
+                                      <a href="/" rel="home" title="Home">
+                      Pacific Earthquake Engineering Research Center                    </a>
+                                  </div>
+                                    </div>
+        </div>
+      </div> <!-- /.navbar-header -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <nav class="collapse navbar-collapse" id="navbar-collapse" aria-label="Primary">
+                  <form class="search-form clearfix navbar-form navbar-right" role="search" aria-label="Sitewide search" action="/search/node" method="post" id="search-form--2" accept-charset="UTF-8"><div><div class="container-inline form-inline form-wrapper" id="edit-basic--2"><div class="form-item form-type-textfield form-item-keys form-group">
+  <label class="element-invisible" for="edit-keys--2">Search Terms </label>
+ <input placeholder="Search this site" class="form-control form-control form-text" type="text" id="edit-keys--2" name="keys" value="" size="20" maxlength="255" />
+</div>
+<button type="submit" id="edit-submit--2" name="op" value="Submit Search" class="form-submit btn btn-default btn-primary"><span class="fa fa-search"></span> <span class="button-text">Submit Search</span></button></div><input type="hidden" name="form_build_id" value="form-CZRxAoPD0iGECaw--Rw4YJSwsNpyDhJ3pcLfwj_yRGc" />
+<input type="hidden" name="form_id" value="search_form" />
+</div></form>                <div id="primary-nav">
+                      <ul id="main-menu" class="menu nav navbar-nav">
+              <li class="first leaf menu-link-home"><a href="/home" title="home page">Home</a></li>
+<li class="expanded dropdown menu-link-news-and-events-"><a href="/news-and-events/news" title="" class="dropdown-toggle" data-toggle="dropdown" data-target="#">News and Events <span class="fa fa-caret-down"></span></a><ul class="dropdown-menu"><li class="first leaf menu-link-all-news"><a href="/news-and-events/news">All News</a></li>
+<li class="leaf menu-link-peer-annual-meetings"><a href="/news-and-events/peer-annual-meetings">PEER Annual Meetings</a></li>
+<li class="leaf menu-link-blind-prediction-contests"><a href="/news-and-events/blind-prediction-contests">Blind Prediction Contests</a></li>
+<li class="leaf menu-link-peer-workshops"><a href="/news-and-events/peer-workshops">PEER Workshops</a></li>
+<li class="last leaf menu-link-other-peer-events"><a href="/news-and-events/other-peer-events">Other PEER Events</a></li>
+</ul></li>
+<li class="leaf menu-link-research"><a href="/research">Research</a></li>
+<li class="leaf menu-link-tools"><a href="/tools" title="Changed from Databases to Tools May 13">Tools</a></li>
+<li class="leaf menu-link-publications"><a href="/peer-publications">Publications</a></li>
+<li class="leaf menu-link-laboratories"><a href="/laboratories">Laboratories</a></li>
+<li class="leaf menu-link-library"><a href="/library">Library</a></li>
+<li class="last expanded dropdown menu-link-about-"><a href="/about" class="dropdown-toggle" data-toggle="dropdown" data-target="#">About <span class="fa fa-caret-down"></span></a><ul class="dropdown-menu"><li class="first leaf menu-link-people"><a href="/about/people">People</a></li>
+<li class="leaf menu-link-mission-and-goals"><a href="/about/mission-and-goals">Mission and Goals</a></li>
+<li class="leaf menu-link-core-institutions"><a href="/about/core-institutions-0">Core Institutions</a></li>
+<li class="leaf menu-link-educational-affiliates"><a href="/about/peers-educational-affiliates">Educational Affiliates</a></li>
+<li class="collapsed menu-link-business-and-industry-partnership-bip"><a href="/about/business-and-industry-partnership-bip">Business and Industry Partnership (BIP)</a></li>
+<li class="collapsed menu-link-peer-student-committee"><a href="/about/peer-student-committee">PEER Student Committee</a></li>
+<li class="leaf menu-link-benefits-to-california"><a href="/about/benefits-california">Benefits to California</a></li>
+<li class="last leaf menu-link-faqs"><a href="/about/faqs">FAQs</a></li>
+</ul></li>
+            </ul>
+                  </div>
+        <div id="secondary-nav">
+          <div class="container">
+            <div class="secondary-nav-quick-links-wrapper">
+                              <h2 class="visible-xs visible-sm">Secondary navigation</h2>
+                <ul id="secondary-menu" class="menu nav navbar-nav navbar-right">
+                  <li class="first last leaf menu-link-caltech--osu--stanford--uc-davis--uci--ucla--ucsd--unr--usc--uw"><a href="https://peer.berkeley.edu/node/23" title="" rel="noreferrer">Caltech | OSU | Stanford | UC Davis | UCI | UCLA | UCSD | UNR | USC | UW</a></li>
+
+                                  </ul>
+                          </div>
+          </div>
+        </div>
+      </nav><!-- /.navbar-collapse -->
+    </div><!-- /.navbar -->
+  </div> <!-- /.container -->
+</header>
+
+<div id="main-wrapper" class="main-wrapper ">
+  <nav id="pre-content" class="container" aria-label="Breadcrumbs">
+    <div class="row">
+      <div class="col-md-12">
+                  <div id="breadcrumb" class="visible-desktop">
+            <div class="item-list"><ul class="breadcrumb"><li class="first"><a href="/home">Home</a></li>
+<li><span >Publications</span></li>
+<li class="last">Publications</li>
+</ul></div>          </div>
+              </div>
+    </div>
+  </nav> <!-- /#pre-content -->
+  <div id="main" role="main" tabIndex="-1">
+    <div id="title-pre-content" class="container">
+      <div class="row">
+        <div class="col-md-12">
+                  <div class="page-title">
+            <div class="container">
+              <h1 class="title">Publications</h1>
+            </div>
+          </div>
+                  <div id="page-header">
+                                        </div>
+        </div>
+      </div>
+    </div> <!-- /#title-pre-content -->
+        <div id="main-content" class="container">
+          <div id="content" class="col-md-12">
+        <div class="main">
+          <div id="main-inner">
+              <div class="region region-content">
+    
+<div class="panel-display boxton clearfix radix-boxton" >
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="panel-pane pane-views-panes pane-openberkeley-pubs-search-view-openberkeley-pubs-search-pane"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-openberkeley-pubs-search-view view-id-openberkeley_pubs_search_view view-display-id-openberkeley_pubs_search_pane view-dom-id-d83b48cccd775efe7bf4ef9c272d317e openberkeley-views-table">
+        
+      <div class="view-filters">
+      <form action="/publications/peer_reports/reports_1998/9801.pdf" method="get" id="views-exposed-form-openberkeley-pubs-search-view-openberkeley-pubs-search-pane" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-keywords-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext_1">
+                  <label for="edit-keywords">
+            Keywords          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-keywords form-group">
+ <input class="form-control form-text" type="text" id="edit-keywords" name="keywords" value="" size="30" maxlength="128" />
+</div>
+        </div>
+              </div>
+          <div id="edit-author-wrapper" class="views-exposed-widget views-widget-filter-field_openberkeley_pubs_author">
+                  <label for="edit-author">
+            Author          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-author form-group">
+ <input class="form-control form-text form-autocomplete" type="text" id="edit-author" name="author" value="" size="30" maxlength="128" /><input type="hidden" id="edit-author-autocomplete" value="https://peer.berkeley.edu/index.php?q=openberkeley_pubs/author_autocomplete" disabled="disabled" class="autocomplete" />
+</div>
+        </div>
+              </div>
+          <div id="edit-topics-wrapper" class="views-exposed-widget views-widget-filter-field_openberkeley_topics">
+                  <label for="edit-topics">
+            Topics          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-topics form-group">
+ <select class="form-control form-select" id="edit-topics" name="topics"><option value="All" selected="selected">- Any -</option><option value="20">PEER Reports</option><option value="49">Reports Listing</option></select>
+</div>
+        </div>
+              </div>
+          <div id="edit-pubtype-wrapper" class="views-exposed-widget views-widget-filter-field_openberkeley_pubs_type">
+                  <label for="edit-pubtype">
+            Publication type          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-pubtype form-group">
+ <select class="form-control form-select" id="edit-pubtype" name="pubtype"><option value="All" selected="selected">- Any -</option><option value="40">Journal Article</option><option value="41">Technical Report</option></select>
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-openberkeley-pubs-search-view" name="" value="Search" class="form-submit btn btn-default btn-primary" />    </div>
+          <div class="views-exposed-widget views-reset-button">
+        <input type="submit" id="edit-reset" name="op" value="Reset" class="form-submit btn btn-default" />      </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  
+      <div class="view-content">
+      <div class="table-responsive">
+  <table class="views-table sticky-enabled cols-4 table table-striped table-bordered" >
+               <thead>
+        <tr>
+                      <th class="views-field views-field-title" >
+              Title            </th>
+                      <th class="views-field views-field-field-openberkeley-pubs-author" >
+              Author            </th>
+                      <th class="views-field views-field-field-openberkeley-pubs-pdate" >
+              Year            </th>
+                      <th class="views-field views-field-field-openberkeley-pubs-type" >
+              Publication type            </th>
+                  </tr>
+      </thead>
+        <tbody>
+              <tr class="odd views-row-first">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-17">Shake Table Testing of a Representative Surface Natural Gas Piping Subsystem, PEER Report 2025-17</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Sherif Elfass; David McCallen; Suiwen Wu            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-16">Experimental Study on the Cyclic Behavior of Welded Steel Tee Joints and Elbows, PEER Report 2025-16</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Elide Pantoli; Tara Hutchinson            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-15">Numerical Modeling and Seismic Fragility Curve Development: Components and Subsystems of the Natural Gas Surface Infrastructure, PEER Report 2025-15</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Elide Pantoli; Tara Hutchinson            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-14">Fragility Curves for Gas Leakage Through Caprock of the Underground Gas Storage Reservoir in California, PEER Report 2025-14</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Yingqi Zhang; Jonny Rutqvist; Preston Jordan; William Foxall            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-13">Fragility of Wells due to Dynamic Shaking—The Impact of Ground Shaking on the Integrity of Natural Gas Storage Wells in California, PEER Report 2025-13</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Keurfon Luu; Preston Jordan; Floriana Petrone; William Foxall; Jonny Rutqvist            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-12">Fragility of Wells due to Fault Shearing—The Impact of Fault Displacement on the Integrity of Natural Gas Storage Wells in California, PEER Report 2025-12</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Tsubasa Sasaki; Preston Jordan; Floriana Petrone; William Foxall; Jonny Rutqvist            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-11">Fragility Analysis of Buried Pipelines Derived from Finite-Element Soil-Pipeline Interaction Analysis, PEER Report 2025-11</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Daniel Hutabarat; Christopher A. Bain; Jonathan D. Bray; Thomas D. O&#039;Rourke; Norman Abrahamson; Scott Lindvall            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-10">OpenSRA Ground Failure Hazard Demands, PEER Report 2025-10</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Christopher A. Bain; Jonathan D. Bray; Thomas D. O&#039;Rourke; Scott Lindvall; Daniel Hutabarat            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-09">Sensing and Monitoring Technologies for Natural Gas and Pipeline Systems, PEER Report 2025-09</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Chien-Chih Wang; Sumeet Kimar Sinha; Peter Hubbard; Yong Liang; Kenichi Soga            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-08">Efficient Risk Calculation and Epistemic Uncertainty Propagation for Performance-Based Earthquake Engineering Distributed Systems, PEER Report 2025-08</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Maxime Lacour; Norman A. Abrahamson            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-07">System Wide Natural Gas Infrastructure Response and Fragility Model Report, PEER Report 2025-07</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Jennie Watson-Lamprey; Micaela Largent; Barry Zheng            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-06">OpenSRA Validation Report, PEER Report 2025-06</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Christopher A. Bain; Thomas D. O&#039;Rourke; Jonathan D. Bray; Scott Lindvall; Daniel Hutabarat; Norman Abrahamson; Barry Zheng; Tara Hutchinson; Elide Pantoli; Preston Jordan; Tsubasa Sasaki; Keurfon Luu; Yingqi Zhang; William Foxall; Jonny Rutqvist            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-05">Open-source Seismic Risk Assessment (OpenSRA) Software Development, PEER Report 2025-05</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Barry Zheng; Micaela Largent; Jennie Watson-Lamprey            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-04">Developing Software to Assess the Seismic Risk of Natural Gas Infrastructure: OpenSRA, PEER Report 2025-04</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Micaela Largent; Jonathan Bray; Jennie Watson-Lamprey; Norman Abrahamson; Barry Zheng            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-03">Ground Improvement-Based Protection of Transportation Infrastructure: Validation of Performance Based Engineering via Centrifuge Shake Table Testing, PEER Report 2025-03</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Jeffrey T. Newgard; Tara C. Hutchinson; John S. McCartney            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-02">Structural Evaluation of Overhead Box Beam Highway Sign Structures, PEER Report 2025-02</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Khalid Mosalam; Wenhao Ruan; Jiawei Chen; M. Selim Günay; Amarnath Kasalanati            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2025-01">Towards Deep Learning-Based Structural Response Prediction and Ground Motion Reconstruction, PEER Report 2025-01</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Khalid M. Mosalam; Issac K.T. Pang; Selim Günay            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2025</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-11">Evaluation and Calibration of an OpenSees Layered Shell Element Model for Simulating the Earthquake Response of Flexure-Controlled Reinforced Concrete Walls, PEER Report 2024-11</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Joshua Stokley; Laura N. Lowes            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-10">The 21st Working Conference of the IFIP Working Group 7.5 on Reliability and Optimization of Structural Systems (IFIP WG7.5 2024) , PEER Report 2024-10</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Ziqi Wang; Jungho Kim            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-09">Correlation of Ground Motion Duration with Spectral Acceleration and Implications for Expected Bridge Performance, PEER Report 2024-09</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Maria Camila Lopez Ruiz; Micaela Largent; Tracy Becker; Jennie Watson-Lamprey            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-08">Experimental and Numerical Investigation of Ballistic Impact Response of Polymethylmetacrylate, PEER Report 2024-08</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Youngjoon Jeon; Khalid Mosalam            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-07">Dynamic Modeling of the UC San Diego NHERI Six-Degree-of-Freedom Large High-Performance Outdoor Shake Table, PEER Report 2024-07</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Chin-Ta Lai; Joel P. Conte            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-06">Ground Failure of Hydraulic Fills in Chiba, Japan and Data Archival in Community Database, PEER Report 2024-06</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Scott J. Brandenberg; Jonathan P. Stewart; Kenneth S. Hudson; Dong Youp Kwak; Paolo Zimmaro; Quin Parker            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-05">A Granular Framework for Modeling the Capacity Loss and Recovery of Regional Transportation Networks under Seismic Hazards: A Case Study on the Port of Los Angeles, PEER Report 2024-05</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Michael Benedict Virtucio; Barbaros Cetiner; Bingyu Zhao; Kenichi Soga; Ertugrul Taciroglu            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-04">Two-Dimensional Debris-Fluid-Structure Interaction with the Particle Finite Element Method, PEER Report 2024-04</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Minjie Zhu; Michael H. Scott            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-03">An International Workshop on Large-Scale Shake Table Testing for the Assessment of Soil-Foundation-Structure System Response for Seismic Safety of DOE Nuclear Facilities, A Virtual Workshop – 17-18 May 2021, PEER Report 2024-03</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Ramin Motamed; David McCallen; Swasti Saxena            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-02">Seismic Performance of Isolated Bridges Under Beyond Design Basis Shaking, PEER Report 2024-02</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Claudio Sepulveda; Ricardo Bustamante; Gilberto Mosqueda            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2024-01">Response Modification of Structures with Supplemental Rotational Inertia, PEER Report 2024-01</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Gholamreza Moghimi; Nicos Makris            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2024</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2023-02">PEER Workshop on Liquefaction Susceptibility, PEER Report 2023-02</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Armin W. Stuedlein; Besrat Alemu; T. Matthew Evans; Steven L. Kramer; Jonathan P. Stewart; Kristin Ulmer; Katerina Ziotopoulou            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2023</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2023-01">Models for the Cyclic Resistance of Silts and Evaluation of Cyclic Failure during Subduction Zone Earthquakes, PEER Report 2023-01</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Armin W. Stuedlein; Ali Dadashiserej; Amalesh Jana            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2023</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-06">Parallel Level-Set DEM (LS-DEM) Development and Application to the Study of Deformation and Flow of Granular Media, PEER Report 2022-06</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Peng Tan; Nicholas Sitar            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-05">Hyperbolic Hydro-mechanical Model for Seismic Compression Prediction of Unsaturated Soils in the Funicular Regime, PEER Report 2022-05</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Dellena Kinikles; John S. McCartney            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-04">The PEER International Pacific Rim Forum 2021: Regional-Scale Simulation of Earthquake Ground Motions and Infrastructure Response for Performance-Based Earthquake Engineering, PEER Report 2022-04</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              David McCallen; Floriana Petrone; Elnaz Esmaeilzadeh Seylabi; Arben Pitarka; Norman Abrahamson; Sherif Elfass            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-03">Moment Resisting Frames Coupled with Rocking Walls Subjected to Earthquakes, PEER Report 2022-03</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Mehrdad Aghagholizadeh; Nicos Makris            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-02">Micro-Inspired Continuum Modeling Using Virtual Experiments, PEER Report 2022-02</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Jose E. Andrade            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2022-01">Capacity Limit States for Nonductile Bridge Columns, PEER Report 2022-01</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Jin Zhou; Sashi K Kunnath            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2022</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-11">PEER Annual Report 2020–2021, PEER Report 2021-11</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Khalid M. Mosalam; Amarnath Kasalanati            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-10">Seismic Performance of Column-to-Drilled-Shaft Connections in Reinforced Concrete Bridges, PEER Report 2021-10</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Michelle Chang; John Stanton; Marc Eberhard            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-09">Use of Corridors for Decision Making in Transportation Networks in Seismic Regions, PEER Report 2021-09</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Rodrigo I. Silva-Lopez; Jack W. Baker            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-08">Seismic Design and Detailing of Bridge Columns to Account for Ground-Motion Duration, PEER Report 2021-08</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              S. Mojtaba Alian Amiri; Mohamed A. Moustafa; David H. Sanders            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-07">Shake Table Tests on a Shallow Foundation on Liquefiable Soils Supported on Helical Piles, PEER Report 2021-07</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Milad Jahed Orang; Ramin Motamed            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-06">F-Rec Framework: Novel Framework for Probabilistic Evaluation of Functional Recovery of Building Systems, PEER Report 2021-06</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Vesna Terzic; Peny K. Villaneuva; Daniel Saldana; Dong Y. Yoo            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-05">City-Scale Multi-Infrastructure Network Resilience Simulation Tool, PEER Report 2021-05</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Kenichi Soga; Renjie Wu; Bingyu Zhao; Chaofeng Want            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-04">Towards Multi-Tier Modeling of Liquefaction Impacts on Transportation Infrastructure, PEER Report 2021-04</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Brett Maurer; Mertcan Geyin; Alex J. Baird            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-03">Effective Stress Analysis of Liquefaction Sites and Evaluation of Sediment Ejecta Potential, PEER Report 2021-03</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Daniel Hutabarat; Jonathan D. Bray            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-02">Implementation, Verification, and Validation of the PM4Sand Model in OpenSees, PEER Report 2021-02</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Long Chen; Pedro Arduino            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2021-01">Fire-Induced Structural Collapse on Pier 45 at Fisherman&#039;s Wharf, San Francisco, California, May 23, 2020, PEER Report 2021-01</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Mohammadreza Eslami; Khalid Mosalam; Ankit Angrawal; Amarnath Kasalanati            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2021</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2020-26">Long-Term Monitoring of Bridge Settlements using Vision-Based Embedded System, PEER Report 2020-26</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Henry L. Teng; Khalid Mosalam            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2020</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2020-25">Regionalized Ground-Motion Models for Subduction Earthquakes Based on the NGA-SUB Database, PEER Report 2020-25</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Norman Abrahamson; Zeynep Gülerce            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2020</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+              <tr class="even views-row-last">
+                      <td class="views-field views-field-title" >
+              <a href="/publications/2020-24">Seismic Performance of Single-Family Wood-Frame Houses: Comparing Analytical and Industry Catastrophe Models (PEER-CEA Project), PEER Report 2020-24</a>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-author" >
+              Evan Reis            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-pdate" >
+              <span  class="date-display-single">2020</span>            </td>
+                      <td class="views-field views-field-field-openberkeley-pubs-type" >
+              Technical Report            </td>
+                  </tr>
+          </tbody>
+  </table>
+</div>
+    </div>
+  
+      <div class="text-center"><div class="item-list"><ul class="pagination pager"><li class="pager-current active first"><span>1<span class="element-invisible"> of 8 Full listing table: Publications (Current page)</span></span></li>
+<li class="pager-item"><a title="Go to page 2" href="/publications/peer_reports/reports_1998/9801.pdf?page=1">2<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 3" href="/publications/peer_reports/reports_1998/9801.pdf?page=2">3<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 4" href="/publications/peer_reports/reports_1998/9801.pdf?page=3">4<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 5" href="/publications/peer_reports/reports_1998/9801.pdf?page=4">5<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 6" href="/publications/peer_reports/reports_1998/9801.pdf?page=5">6<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 7" href="/publications/peer_reports/reports_1998/9801.pdf?page=6">7<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-item"><a title="Go to page 8" href="/publications/peer_reports/reports_1998/9801.pdf?page=7">8<span class="element-invisible"> of 8 Full listing table: Publications</span></a></li>
+<li class="pager-next"><a title="Go to next page" href="/publications/peer_reports/reports_1998/9801.pdf?page=1">next ›<span class="element-invisible"> Full listing table: Publications</span></a></li>
+<li class="pager-last last"><a title="Go to last page" href="/publications/peer_reports/reports_1998/9801.pdf?page=7">last »<span class="element-invisible"> Full listing table: Publications</span></a></li>
+</ul></div></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+  </div>
+          </div>
+        </div> <!-- /.main -->
+      </div> <!-- /#content -->
+                </div> <!-- /#main-content -->
+  </div> <!-- role main -->
+</div> <!-- /#main-wrapper -->
+
+<footer id="footer" class="footer">
+    <div id="footer-slogan-wrapper" class="footer-slogan-color-founders-rock">
+    <div id="footer-slogan">
+      PEER    </div>
+  </div>
+    <div id="footer-main">
+    <div class="container">
+              <div class="row">
+          <div class="col-md-7">
+                          <a href="https://www.berkeley.edu" rel="external" id="footer-logo">
+                <img src="/profiles/openberkeley/themes/openberkeley_theme_brand/assets/images/logo-berkeley-gold.svg" alt="UC Berkeley" />
+              </a>
+            
+                          <div id="social-links">
+                <div class="item-list"><h3>Follow us:</h3><ul><li class="first"><a href="https://www.facebook.com/peerctr" title="Facebook" rel="noreferrer"><span class="fa-brands fa fa-facebook"><span class="element-invisible">Facebook</span></span></a></li>
+<li><a href="https://twitter.com/PEER_Center" title="X (formerly Twitter)" rel="noreferrer"><span class="fa-brands fa fa-x-twitter"><span class="element-invisible">X (formerly Twitter)</span></span></a></li>
+<li><a href="https://www.linkedin.com/groups/4931867/profile" title="LinkedIn" rel="noreferrer"><span class="fa-brands fa fa-linkedin"><span class="element-invisible">LinkedIn</span></span></a></li>
+<li class="last"><a href="https://www.youtube.com/user/peervideos" title="YouTube" rel="noreferrer"><span class="fa-brands fa fa-youtube"><span class="element-invisible">YouTube</span></span></a></li>
+</ul></div>              </div>
+                      </div>
+          <div class="col-md-5">
+            <div id="footer-main-first" class="clearfix">
+                <div class="region region-footer">
+    <div class="block block-menu block--">
+
+      
+  <div class="block__content">
+    <ul class="nav nav-pills"><li class="first leaf menu-link-give-to-peer"><a href="https://give.berkeley.edu/fund/?f=FN3264000" title="" rel="noreferrer">Give To PEER</a></li>
+<li class="leaf menu-link-subscribe"><a href="http://eepurl.com/dd6Guj" title="" rel="noreferrer">Subscribe</a></li>
+<li class="leaf menu-link-contact-us"><a href="/about/people" title="">Contact Us</a></li>
+<li class="last leaf menu-link-peer-archive"><a href="http://apps.peer.berkeley.edu/" title="go to peer repository" rel="noreferrer">PEER Archive</a></li>
+</ul>  </div>
+</div>
+  </div>
+            </div>
+            <div id="footer-main-last" class="clearfix">
+                <div class="region region-footer-third">
+    <div class="block block-block block--links">
+
+      
+  <div class="block__content">
+    <h4><span><strong>Headquarters - <strong><span>Pacific Earthquake Engineering Research Center</span></strong></strong></span></h4>
+<p style="text-align:left">325 Davis Hall, University of California, Berkeley, CA 94720-1792 </p>
+<p style="text-align:left"><span>Phone: (510) 642-3437 <br></span></p>
+<p style="text-align:left"><span>Email: <a href="mailto:peer_center@berkeley.edu" rel="noreferrer">peer_center@berkeley.edu</a></span></p>
+<hr>
+<h4><strong>Laboratory - </strong><strong>Richmond Field Station</strong></h4>
+<p style="text-align:left">1301 S. 46th Street, Richmond, California 94804-4698</p>
+<p style="text-align:left">Phone: (510) 665-3409<br>Email: <a href="mailto:PEERLab@berkeley.edu" target="_blank" rel="noopener noreferrer">PEERLab@berkeley.edu</a></p>
+<hr>
+<h4><strong>NISEE Library - </strong><strong>Richmond Field Station</strong></h4>
+<p style="text-align:left">1301 S. 46th Street, Richmond, California 94804-4698<br><br>Email: <a href="mailto:nisee@berkeley.edu" rel="noreferrer">nisee@berkeley.edu</a></p>
+<hr>
+<ul>
+<li>
+<h4><span style="color:#003262"><a href="https://peer.berkeley.edu/about/directions">Directions to PEER Headquarters  </a></span></h4>
+</li>
+<li>
+<h4><a href="https://peer.berkeley.edu/directions-richmond-field-station">Directions to Richmond Field Station</a></h4>
+</li>
+</ul>
+<ul>
+<li>
+<h4><span style="color:#003262"><a href="https://peer.berkeley.edu/about/hotel-accommodations">Hotel Accommodations</a></span></h4>
+</li>
+</ul>
+  </div>
+</div>
+  </div>
+            </div>
+          </div>
+        </div>
+          </div>
+  </div>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row">
+              </div>
+      <div class="row">
+                  <div class="col-md-6">
+            <ul class="openberkeley-list-unbullet">
+                          <li id="openberkeley"><small><a href="https://open.berkeley.edu">Powered by Open Berkeley</a></small></li>
+              <li id="accessibility-info"><small><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility<span class="element-invisible"> Statement</span></a></small></li>
+              <li id="nondiscrimination"><small><a href="https://ophd.berkeley.edu/policies-and-procedures/nondiscrimination-policy-statement">Nondiscrimination<span class="element-invisible"> Policy Statement</span></a></small></li>
+              <li id="openberkeley-privacy-statement"><small><a href="https://open.berkeley.edu/privacy-statement">Privacy<span class="element-invisible"> Statement</span></a></small></li>
+                                      <li class="copyright"><small>Copyright © 2026 UC Regents; all rights reserved
+</small></li>
+                        </ul>
+          </div>
+          <div class="col-md-6">
+            <p><small class="back-to-top"><a href="#skip-link">Back to Top</a></small></p>
+          </div>
+              </div>
+    </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_i91eXA1hlQ19ij0gQj-5Pyt3dDwj7KAen7yCjk7GTzY.js"></script>
+<script type="text/javascript" src="https://peer.berkeley.edu/sites/default/files/js/js_lt1kI2u-wMEf8J8KYX6ak2cSk8aYuY7vOgFkCdX5-B0.js"></script>
+</body>
+</html>
