@@ -29,8 +29,7 @@ jobs:
           node-version: 22
 
       - name: Generate website data
-        working-directory: website
-        run: npm run generate
+        run: node website/scripts/generate-data.mjs
 
       - name: Disable Jekyll
         run: touch website/.nojekyll
